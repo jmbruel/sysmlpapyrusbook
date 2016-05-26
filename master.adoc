@@ -9,6 +9,7 @@
 :data-uri:
 :lang: fr
 :language: javadocript
+:icons: images/icons
 
 [preface]
 //include::chapters/about.adoc[]
