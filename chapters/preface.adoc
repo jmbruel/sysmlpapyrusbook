@@ -1,10 +1,10 @@
 = Avant-propos
 
-Ce que n'est pas ce livre :
+== Ce que n'est pas ce livre :
 
 - Ce n'est pas un livre sur la meilleure approche méthodologique,
 
-Pourquoi lire ce livre ?
+== Pourquoi lire ce livre ?
 
 - Je veux fiabiliser mon processus d'IS.
 - je veux gagner du temps.
@@ -15,19 +15,22 @@ Pourquoi lire ce livre ?
 
 NOTE: Modéliser versus dessiner !  + Modèles versus documents ! => modéliser fournit la capacité à assister par l'ordinateur l'ingénierie système => réduire les temps de dév, augmenter.
 
-Comment lire ce livre ?
+== Comment lire ce livre ?
 
 - Préciser ici que l'objectif du livre étant de fournir un support de formation à SysML par la pratique, le chapitre "Bien démarrer" est primordiale.
 
-A qui s'adresse le livre ?
+== À qui s'adresse le livre ?
 
 - Ignorant, débutant, ou avancé en SysML ?
 - Ignorant, débutant, ou avancé en IS ?
 - Ignorant, débutant, ou avancé en MBSE ?
 
-Comment se préparer à lire au mieux ce livre ?
+== Comment se préparer à lire au mieux ce livre ?
 
 => Proposer des pistes  de « formation » pour rentrer dans le cadre le cas échéant.
+
 => Description de la mise en place de l’environnement pour la mise en pratique.
+
 => Fournir un petit outillage d  ala ise ne pratique des conseils du livre. ?
+
 => Fournir un petit outillage Papyrus dédié à la mise en pratique du livre (Spécialisation particulière, projet type, exemple de modèle, cheat sheet, etc.) que l'on pourrait mettre à disposition via le site de Papyrus www.eclipse.org/papyrus/
