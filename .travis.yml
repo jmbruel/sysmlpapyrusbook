@@ -22,7 +22,7 @@ after_failure:
 after_success:
   - cd output
   - ls -al
-  - mv README.html index.html
+  - mv master.html index.html
   - cp -R ../images images
   - git init
   - git config user.name "${GH_USER_NAME}"
