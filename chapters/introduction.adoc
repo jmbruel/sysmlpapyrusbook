@@ -1,67 +1,33 @@
-= Chapter 1
+= Avant-propos
 
-((Lorem ipsum)) dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+Ce que n'est pas ce livre :
 
-[quote, John Smith, Memories]
-Lorem ipsum dolor sit amet, ((consectetur)) adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+- Ce n'est pas un livre sur la meilleure approche méthodologique,
 
+Pourquoi lire ce livre ?
 
-== Section Title
+- Je veux fiabiliser mon processus d'IS.
+- je veux gagner du temps.
+- Je veux utiliser des solutions open-source pour l'IS.
+- je veux utiliser des normes d'IS.
+- Je veux apprendre SysML par la pratique.
+- Je veux utiliser Papyrus-SysML.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud ((exercitation ullamco)) laboris nisi ut aliquip ex
-ea commodo consequat. Duis aute irure dolor in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+NOTE: Modéliser versus dessiner !  + Modèles versus documents ! => modéliser fournit la capacité à assister par l'ordinateur l'ingénierie système => réduire les temps de dév, augmenter.
 
-[source]
---------------------------------------
-var http = require("http"); //
-var server = http.createServer(); // 
-server.listen(8888);
---------------------------------------
+Comment lire ce livre ?
 
+- Préciser ici que l'objectif du livre étant de fournir un support de formation à SysML par la pratique, le chapitre « Bien démarrer » est primordiale.
 
-=== Subsection Title
+A qui s'adresse le livre ?
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute ((irure dolor)) in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+- Ignorant, débutant, ou avancé en SysML ?
+- Ignorant, débutant, ou avancé en IS ?
+- Ignorant, débutant, ou avancé en MBSE ?
 
-[NOTE]
-.Some note about what you are reading
-=====================================================================
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
-=====================================================================
+Comment se préparer à lire au mieux ce livre ?
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+=> Proposer des pistes  de « formation » pour rentrer dans le cadre le cas échéant.
+=> Description de la mise en place de l’environnement pour la mise en pratique.
+=> Fournir un petit outillage d  ala ise ne pratique des conseils du livre. ?
+=> Fournir un petit outillage Papyrus dédié à la mise en pratique du livre (Spécialisation particulière, projet type, exemple de modèle, cheat sheet, etc.) que l'on pourrait mettre à disposition via le site de Papyrus www.eclipse.org/papyrus/
