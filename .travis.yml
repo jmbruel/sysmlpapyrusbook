@@ -20,7 +20,10 @@ after_failure:
   - docker logs asciidoc-to-pdf
 
 after_success:
-  - cd output ; mv master.html index.html ; cp -R ../images images
+  - cd output
+  - ls -al
+  - mv master.html index.html
+  - cp -R ../images images
   - git init
   - git config user.name "${GH_USER_NAME}"
   - git config user.email "{GH_USER_EMAIL}"

@@ -1,0 +1,4 @@
+= SysML par la pratique avec Papyrus
+
+Ce dépôt est un dépôt de travail pour construire un livre
+sur la notation SysML au travers de l'utilisation de l'outil Papyrus.
