@@ -1,0 +1,4 @@
+= Étude de cas
+
+Présenter le cas d'étude avec des illustrations SysML mais avec un look métier.
+Deux étapes : dans un premier temps, le cas d'étude est décrit globalement au travers de ses diagrammes sans s'attacher aux diagrammes en soit. Dans un second temps, détail de chaque diagramme.
