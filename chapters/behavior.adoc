@@ -1,0 +1,4 @@
+= Comportement (au sens atomique , local, block)
+
+Diagramme de machine à états-transitions (aspects contrôle) et diagramme d'activité (description algorithme ?)
+Utilisation OpaqueBehavior ?

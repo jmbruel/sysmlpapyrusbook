@@ -1,0 +1,11 @@
+= Modéliser oui, mais...
+
+Versionner et configurer
+Comparer et fusionner
+Simuler
+Analyser
+Comment utiliser les paramétrique pour faire le liens entre les outils de moélisation et les outils d'analyse)
+Tester
+Générer du code
+Documenter
+Personnalisation de l'outil à un contexte/domaine spécifique

@@ -1,0 +1,3 @@
+= Interaction
+
+Diagramme de séquence et d’activité en version description global de comportement (description de processus => BPMN ?).

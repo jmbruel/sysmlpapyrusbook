@@ -21,17 +21,27 @@ include::chapters/introduction.adoc[leveloffset=+1]
 
 include::chapters/caseStudy.adoc[leveloffset=+1]
 
-//////
+include::chapters/overview.adoc[leveloffset=+1]
 
-include::chapters/chapter3.adoc[]
+include::chapters/install.adoc[leveloffset=+1]
 
-[colophon]
-include::chapters/colophon.adoc[]
+include::chapters/requirements.adoc[leveloffset=+1]
 
-include::chapters/bibliography.adoc[]
+include::chapters/structure.adoc[leveloffset=+1]
 
-[appendix]
-include::chapters/appendix.adoc[]
+include::chapters/behavior.adoc[leveloffset=+1]
+
+include::chapters/interaction.adoc[leveloffset=+1]
+
+include::chapters/crossCuting.adoc[leveloffset=+1]
+
+include::chapters/realLife.adoc[leveloffset=+1]
+
+:numbered!:
+
+include::chapters/bibliography.adoc[leveloffset=+1]
+
+include::chapters/appendix.adoc[leveloffset=+1]
 
 ifdef::backend-docbook[]
 [index]
@@ -39,4 +49,20 @@ Index
 -----
 endif::backend-docbook[]
 
-//////
+/////
+=== Divers
+
+Au sujet de SysML => s'appuyer sur les niveaux tels que définit dans le certificat SysML de l'OMG.
+
+Limite du nombre de pages => 250 pages
+
+Liens avec le livre SysML de Sandy ?
+
+Solutions possibles d’organisation globales :
+*	si public débutant seulement alors un chapitre sur les possibilités avancés incluant les facilités de personnalisation, intégration avec d'autres formalismes/outils, etc.
+*	si public débutant et avancé, alors :
+**	Deux parties dédiés.
+**	Pour chaque chapitre (quand cela fait du sens), avoir deux niveaux de présentation, débutant et avancé.
+**	Des parties bien marquées « avancé » au fil de l'eau.
+
+/////

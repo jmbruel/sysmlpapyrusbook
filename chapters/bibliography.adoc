@@ -1,5 +1,4 @@
-Références
-------------
+= Références
 
 .Livres
 
@@ -23,7 +22,4 @@ Références
 .Websites
 
 [bibliography]
-- http://nodejs.org/[Official Node.js Website]
-- http://nodejs.org/docs/latest/api/index.html[Latest Node.js documentation]
-- http://nodeguide.com/style.html[Node.js Style Guide]
-- http://www.nodebeginner.org/[Node.js Tutorial]
+- https://www.eclipse.org/papyrus/[Papyrus]

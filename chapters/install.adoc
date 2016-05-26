@@ -1,0 +1,6 @@
+= Avant de démarrer
+Installation de base et au sujet de l'organisation des modèles.
+Information sur le matériel disponible autour du livre (examples, forums, etc.).
+Besoins, exigences et usages
+Introduit SysML Req, les diagrammes d'exigences et les diagrammes de cas d’utilisation, les diagrammes de séquence « système » pour décrire les scénarios d'usage associés.
+Après avoir parler des concepts SysML pour traiter de ce sujet, dire qu'il peut être nécessaire d’organiser les exigences => diagramme de paquetage.
