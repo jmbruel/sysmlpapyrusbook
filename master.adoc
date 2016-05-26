@@ -1,0 +1,38 @@
+= eBook Template
+:author: Jean-Michel Bruel & Sébastien Gérard
+:email:  jbruel@gmail.com
+:revnumber: 1.0
+:revdate:   {localdate}
+:doctype: book
+:toc:
+:icons:
+:data-uri:
+:lang: fr
+:language: javadocript
+
+[preface]
+//include::chapters/about.adoc[]
+//include::chapters/preface.adoc[]
+
+include::chapters/introduction.adoc[leveloffset=+1]
+
+//////
+include::chapters/chapter2.adoc[]
+
+include::chapters/chapter3.adoc[]
+
+[colophon]
+include::chapters/colophon.adoc[]
+
+include::chapters/bibliography.adoc[]
+
+[appendix]
+include::chapters/appendix.adoc[]
+
+ifdef::backend-docbook[]
+[index]
+Index
+-----
+endif::backend-docbook[]
+
+//////
