@@ -1,4 +1,4 @@
-= eBook Template
+= SysML par la pratique avec Papyrus
 :author: Jean-Michel Bruel & Sébastien Gérard
 :email:  jbruel@gmail.com
 :revnumber: 1.0
