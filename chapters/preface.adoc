@@ -34,3 +34,10 @@ NOTE: Modéliser versus dessiner !  + Modèles versus documents ! => modélise
 => Fournir un petit outillage d  ala ise ne pratique des conseils du livre. ?
 
 => Fournir un petit outillage Papyrus dédié à la mise en pratique du livre (Spécialisation particulière, projet type, exemple de modèle, cheat sheet, etc.) que l'on pourrait mettre à disposition via le site de Papyrus www.eclipse.org/papyrus/
+
+.Niveaux de concepts SysML
+[NOTE]
+======
+Les différents niveaux de concepts SysML que nous utilisons dans ce livre sont alignés sur
+ceux du programme de certification de l'OMG <<OCSMP>>.
+======
