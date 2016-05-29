@@ -49,20 +49,18 @@ Index
 -----
 endif::backend-docbook[]
 
-/////
-=== Divers
 
-Au sujet de SysML => s'appuyer sur les niveaux tels que définit dans le certificat SysML de l'OMG.
+== Divers (notes et ToDoList)
 
-Limite du nombre de pages => 250 pages
 
-Liens avec le livre SysML de Sandy ?
-
-Solutions possibles d’organisation globales :
+- [x] Au sujet de SysML
+* s'appuyer sur les niveaux tels que définit dans le certificat SysML de l'OMG
+* Done. cf. <<niveauConcepts>>
+- [ ] Limite du nombre de pages => 250 pages
+- [ ] Liens avec le livre SysML de Sandy ?
+- [ ] Solutions possibles d’organisation globales :
 *	si public débutant seulement alors un chapitre sur les possibilités avancés incluant les facilités de personnalisation, intégration avec d'autres formalismes/outils, etc.
 *	si public débutant et avancé, alors :
 **	Deux parties dédiés.
 **	Pour chaque chapitre (quand cela fait du sens), avoir deux niveaux de présentation, débutant et avancé.
 **	Des parties bien marquées « avancé » au fil de l'eau.
-
-/////
