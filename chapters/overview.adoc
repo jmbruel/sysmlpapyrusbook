@@ -3,3 +3,5 @@
 Introduire également ici la méthodologie simplifiée adoptée pour le livre. Au travers de cette présentation, on introduira également les différents diagrammes de SysML.
 
 L'objet de ce chapitre est de présenter l'ensemble des diagrammes SysML et à quel(s) questions ils peuvent permettre de répondre par rapport à des problématique d'IS.
+
+Références sur les méthodos : <<Estefan>>, <<Ramos>>, <<Dickerson>>.

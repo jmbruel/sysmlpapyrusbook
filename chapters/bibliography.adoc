@@ -1,9 +1,12 @@
 = Références
 
-.Livres
+.Articles et livres
 
 [bibliography]
 - [[[OCSMP]]] Certified Systems Modeling Professional. http://www.omg.org/ocsmp/
+- [[[Estefan]]] 2007/2008  INCOSE
+- [[[Ramos]]] 2012 IEEE
+- [[[Dickerson]]] 2013  
 
 .Websites
 
