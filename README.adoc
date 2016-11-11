@@ -4,4 +4,5 @@
 
 Ce dépôt est un dépôt de travail pour construire un livre sur la notation {SysML} au travers de l'utilisation de l'outil {Papyrus}.
 
-La version en ligne du livre est disponible ici : https://jmbruel.github.io/sysmlpapyrusbook.
+- La version web du livre est disponible https://jmbruel.github.io/sysmlpapyrusbook[ici].
+- La version PDF du livre est disponible https://jmbruel.github.io/sysmlpapyrusbook/master.pdf[ici].
