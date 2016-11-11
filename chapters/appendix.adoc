@@ -1,6 +1,9 @@
-= Annexes
-
+[appendix]
+[[index]]
 == Index (Reference guide)
 Liste des concepts et renvoies vers leur description dans le livre.
 
+
+[appendix]
+[[histoire]]
 == Les histoires de SysML et de Papyrus

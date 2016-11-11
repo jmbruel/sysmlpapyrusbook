@@ -1,15 +1,12 @@
 = SysML par la pratique avec Papyrus
-:author: Jean-Michel Bruel & Sébastien Gérard
-:email:  jbruel@gmail.com
-:revnumber: 1.0
-:revdate:   {localdate}
+Jean-Michel Bruel <bruel@irit.fr>; Sébastien Gérard <Sebastien.Gerard@cea.fr>
+v1.1, {localdate}
+:myinitials: JMB
 :doctype: book
-:toc:
-:icons:
+:toc: left
 :data-uri:
 :lang: fr
-:language: javadocript
-:icons: images/icons
+:icons: font
 
 [preface]
 include::chapters/about.adoc[leveloffset=+1]
@@ -41,7 +38,7 @@ include::chapters/realLife.adoc[leveloffset=+1]
 
 include::chapters/bibliography.adoc[leveloffset=+1]
 
-include::chapters/appendix.adoc[leveloffset=+1]
+include::chapters/appendix.adoc[]
 
 ifdef::backend-docbook[]
 [index]
@@ -52,15 +49,17 @@ endif::backend-docbook[]
 
 == Divers (notes et ToDoList)
 
-
-- [x] Au sujet de SysML
-* s'appuyer sur les niveaux tels que définit dans le certificat SysML de l'OMG
-* Done. cf. <<niveauConcepts>>
-- [ ] Limite du nombre de pages => 250 pages
-- [ ] Liens avec le livre SysML de Sandy ?
-- [ ] Solutions possibles d’organisation globales :
-*	si public débutant seulement alors un chapitre sur les possibilités avancés incluant les facilités de personnalisation, intégration avec d'autres formalismes/outils, etc.
-*	si public débutant et avancé, alors :
-**	Deux parties dédiés.
-**	Pour chaque chapitre (quand cela fait du sens), avoir deux niveaux de présentation, débutant et avancé.
-**	Des parties bien marquées « avancé » au fil de l'eau.
+- Au sujet de SysML
+[options=interactive]
+* [*] s'appuyer sur les niveaux tels que définit dans le certificat SysML de l'OMG
+ cf. <<niveauConcepts>>
+- Sur le format :
+[options=interactive]
+* [ ] Limite du nombre de pages => 250 pages
+* [ ] Liens avec le livre SysML de Sandy ?
+* [ ] Solutions possibles d’organisation globales :
+**	si public débutant seulement alors un chapitre sur les possibilités avancés incluant les facilités de personnalisation, intégration avec d'autres formalismes/outils, etc.
+**	si public débutant et avancé, alors :
+***	Deux parties dédiés.
+***	Pour chaque chapitre (quand cela fait du sens), avoir deux niveaux de présentation, débutant et avancé.
+***	Des parties bien marquées « avancé » au fil de l'eau.
