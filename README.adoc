@@ -1,4 +1,7 @@
 = SysML par la pratique avec Papyrus image:https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
+:papyrus: http://www.eclipse.org/papyrus/[Papyrus]
+:sysml: http://www.omgsysml.org/[SysML(TM)]
 
-Ce dépôt est un dépôt de travail pour construire un livre
-sur la notation SysML au travers de l'utilisation de l'outil Papyrus.
+Ce dépôt est un dépôt de travail pour construire un livre sur la notation {SysML} au travers de l'utilisation de l'outil {Papyrus}.
+
+La version en ligne du livre est disponible ici : https://jmbruel.github.io/sysmlpapyrusbook.
