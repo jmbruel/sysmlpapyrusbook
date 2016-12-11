@@ -9,6 +9,7 @@ v1.1, {localdate}
 :lang: fr
 :icons: font
 :final!: //enlever le '!' pour enlever tous les commentaires
+:imagesdir: images
 
 include::definitions.txt[]
 
