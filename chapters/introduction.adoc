@@ -1,4 +1,20 @@
 = Introduction
 
+*****
 Aborder le fait qu'il y a bcp de méthodes qui existent et que ici on est agnostique.
 En revanche, on en choisit une (simplifié) pour l'illustration pour la mise en pratique de SysML dans Papyrus.
+*****
+
+SysML est un langage de modélisation, certains diraient une notation.
+La principale difficulté, avec SysML, c'est que cette notation n'est associée a aucune méthode en particulier.
+Il s'agit là d'une volonté délibérée des concepteurs ({OMG}/{INCOSE}\), pour permettre la plus grande adoption de la notation dans les entreprises.
+Il vous sera donc possible d'appliquer votre propre démarche, votre propre processus interne de développement.
+Contrairement à l'outil {capella} par exemple, fortement couplé à la méthode {Arcadia}, l'outil {papyrus} n'impose aucune démarche particulière.
+Nous allons aborder <<methods,en fin de ce chapitre>> les processus connus et courants en ingénierie système généralement associés à SysML.
+Pour les besoins de ce livre nous avons retenu la démarche préconisée par Friedenthal dans <<Friedenthal2016,son livre>>.
+
+
+[[methods]]
+== Démarches et méthodes de développement
+
+Références sur les méthodos : <<Estefan>>, <<Ramos>>, <<Dickerson>>.

@@ -1,4 +1,27 @@
+[[etudeCas]]
 = Étude de cas
+:FichierExigences: https://docs.google.com/spreadsheets/d/1-yaW8fZHG9i6r7vJ7NOU9-66-hnDYY66Vd9cmZTYs2A/edit?usp=sharing
 
+//-----------------------------------------------
+ifndef::final[]
+[CAUTION.comment,caption=Comment]
+====
 Présenter le cas d'étude avec des illustrations SysML mais avec un look métier.
-Deux étapes : dans un premier temps, le cas d'étude est décrit globalement au travers de ses diagrammes sans s'attacher aux diagrammes en soit. Dans un second temps, détail de chaque diagramme.
+Deux étapes : dans un premier temps, le cas d'étude est décrit globalement au
+travers de ses diagrammes sans s'attacher aux diagrammes eux-même.
+Dans un second temps, détail de chaque diagramme.
+====
+//-----------------------------------------------
+endif::final[]
+
+Nous allons modéliser dans cet ouvrage un système complexe réel, la Maison
+Intelligente de Blagnac ({MIB}).
+
+.La Maison Intelligente de Blagnac
+image::mib.png[MIB,width=50%,scaledwidth=90%]
+
+La {mib} est un appartement permettant la supervision de patients à domicile.
+La description de ce système (notre spécification initiale) sont disponible sur le site {miburl}.
+Pour permettre de démarrer la modélisation, nous partirons d'un {FichierExigences}[fichier partagé] des exigences initiales.
+
+NOTE: Nous ne nous intéresserons qu'à la partie intelligente de la maison, et non à ses caractéristiques architecturales.

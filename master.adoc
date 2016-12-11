@@ -4,9 +4,13 @@ v1.1, {localdate}
 :myinitials: JMB
 :doctype: book
 :toc: left
+:toc-title: Table des Matières
 :data-uri:
 :lang: fr
 :icons: font
+:final!: //enlever le '!' pour enlever tous les commentaires
+
+include::definitions.txt[]
 
 [preface]
 include::chapters/about.adoc[leveloffset=+1]
