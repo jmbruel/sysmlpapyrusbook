@@ -10,6 +10,7 @@
 - [[[Estefan]]] 2007/2008  INCOSE
 - [[[Ramos]]] 2012 IEEE
 - [[[Friedenthal2016]]] Le livre de Friedenthal
+- [[[SysML1.4]]] OMG Systems Modeling Language (OMG SysML). Version 1.4. formal/2015-06-03. Available http://www.omg.org/spec/SysML/1.4/[here].
 
 .Websites
 

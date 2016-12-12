@@ -1,20 +1,147 @@
 = Introduction
 
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
 *****
 Aborder le fait qu'il y a bcp de méthodes qui existent et que ici on est agnostique.
 En revanche, on en choisit une (simplifié) pour l'illustration pour la mise en pratique de SysML dans Papyrus.
 *****
+====
+//-----------------------------------------------
+endif::final[]
 
 SysML est un langage de modélisation, certains diraient une notation.
 La principale difficulté, avec SysML, c'est que cette notation n'est associée a aucune méthode en particulier.
-Il s'agit là d'une volonté délibérée des concepteurs ({OMG}/{INCOSE}\), pour permettre la plus grande adoption de la notation dans les entreprises.
+Il s'agit là d'une volonté délibérée des concepteurs, l'{OMG} et l'{INCOSE}, pour permettre la plus grande adoption de la notation dans les entreprises.
 Il vous sera donc possible d'appliquer votre propre démarche, votre propre processus interne de développement.
 Contrairement à l'outil {capella} par exemple, fortement couplé à la méthode {Arcadia}, l'outil {papyrus} n'impose aucune démarche particulière.
 Nous allons aborder <<methods,en fin de ce chapitre>> les processus connus et courants en ingénierie système généralement associés à SysML.
-Pour les besoins de ce livre nous avons retenu la démarche préconisée par Friedenthal dans <<Friedenthal2016,son livre>>.
+Pour les besoins de ce livre nous avons retenu la démarche préconisée par Friedenthal dans <<Friedenthal2016>>.
 
+== Pourquoi et quoi modéliser
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Parler de l'importance de modéliser, des points forts du MBSE, etc.
+*****
+====
+//-----------------------------------------------
+endif::final[]
 
 [[methods]]
 == Démarches et méthodes de développement
 
+Ce livre n'est pas un livre sur l'ingénierie système.
+Il ne s'agit donc pas pour nous de rappeler les grandes démarches de développement de système.
+Nous renvoyons pour cela le lecteur aux grands classiques (xxx,yyy).
+
 Références sur les méthodos : <<Estefan>>, <<Ramos>>, <<Dickerson>>.
+
+ifdef::backend-pdf[<<<]
+== Matrice des concepts
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+À voir si on garde pour pas cette idée icon:smile-o[]
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+La [[Matrice]]matrice qui nous servira de "carte de base" pour placer les activités
+ou les modèles, sera celle-ci :
+
+include::matrice-base.asc[]
+
+Cette matrice permet de situer les différents éléments qui seront vus dans ce cours dans un cadre
+utile pour comparer ces éléments les uns aux autres.
+Nous vous conseillons de vous faire votre propre matrice.
+L'essentiel est de toujours bien se représenter les différents éléments qu'on aborde
+dans une carte mentale précise. Cela permet une meilleure mémorisation.
+
+=== Points de vue
+
+Dans un axe horizontal, nous avons différencié quatre grands points de vue :
+
+{Requirements}::
+Les exigences et leur prises en compte sont un éléments critique pour le
+  succès du développement de tout système.
+  Sans explorer l'ensemble des activités d'ingénierie système (ce qui
+  nécessiterait tout un volume du type de <<reqs>>) nous insisterons sur cet aspect.
+
+{Structure}::
+La description de l'architecture et des éléments constitutifs du système,
+avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important.
+C'est souvent la partie de modélisation qui pose le moins de problème aux débutants.
+
+{Behavior}::
+Le comportement d'un système est du point de vue de l'utilisateur final beaucoup plus important que la structure elle-même. C'est la partie
+	qu'il est la plus à même d'exprimer, de comprendre (vos modèles) et de valider.
+
+{Crosscutting}::
+Un certains nombre de concepts sont transverses aux trois points de vue précédents.
+Il s'agira principalement de parler de cohérence ou de traçabilité entre les phases de développement ou entre les points de vue.
+
+
+Ces différents points de vue ne doivent pas être confondus avec les différentes phases de développement (cf. <<paragraphe suivant,devphase>>).
+Ils sont plutôt à rapprocher de la notion de préoccupation.
+C'est ainsi que nous avons choisi de distinguer trois points de vue
+qui se retrouvent souvent en modélisation : le point de vue des exigences qui permet de se focaliser sur les besoins des clients ;
+le point de vue structurel qui permet de se focaliser sur les différents composants du système ;
+et le point de vue comportemental qui permet de se focaliser sur le comportement du système.
+Ces trois points de vue n'étant pas indépendants les uns des autres, nous avons intégré un quatrième point de vue transversal.
+
+[[devphase]]
+=== Phase de développement
+
+Dans un axe vertical, nous avons différencié quatre grandes phases du cycle de vie du développement :
+
+{organisation}::
+Une étape indépendante du type de cycle de développement envisagé (en V, agile, etc.) mais qui concerne la mise en place
+d'un cadre de travail qui permette un développement de qualité (outils, éditeurs, gestionnaire de version, de tâches, etc.).
+
+{analysis}::
+Cette phase vise plutôt à examiner le domaine du problème. Elle se focalise sur les cahiers des charges et les exigences.
+	L'analyse débouche sur un dossier d'analyse qui décrit les grandes lignes (cas d'utilisation, architecture principale) du système.
+
+{design}::
+Cette phase vise plutôt à examiner le domaine de la solution. Elle débouche sur un dossier de conception qui décrit les détails
+	conceptuels de la solution envisagée (structure détaillée, comportement, etc.)
+
+{implementation}::
+Cette phase traite des développements finaux (construction ou approvisionnement en matériel, développement de codes, etc.).
+
+
+Il s'agit ici classiquement des grandes étapes de développement d'un système.
+On pourrait être surpris par l'étape que nous avons appelé "{organisation}".
+C'est une étape que nous considérons importante, particulièrement pour l'enseignement.
+Avant toute activité de modélisation ou de même de développement, il convient en effet de s'organiser en termes de choix d'outils, choix d'environnement, etc.
+Cette étape est souvent négligée par les étudiants.
+C'est pour cela que nous avons décidé de faire figurer cette étape de manière explicite.
+Bien sûr dans une organisation existante cette étape sera contrainte par les habitudes "maison".
+
+
+== Organisation de ce livre
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Décrire la suite...
+*****
+====
+//-----------------------------------------------
+endif::final[]

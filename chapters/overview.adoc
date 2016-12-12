@@ -1,8 +1,166 @@
+[[overview]]
 = Les contours de SysML (introduction à SysML)
 
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
 *****
-Introduire également ici la méthodologie simplifiée adoptée pour le livre.
+Introduire ici la méthodologie simplifiée adoptée pour le livre.
 Au travers de cette présentation, on introduira également les différents diagrammes de SysML.
 *****
+====
+//-----------------------------------------------
+endif::final[]
 
-L'objet de ce chapitre est de présenter l'ensemble des diagrammes SysML et à quelles questions ils peuvent permettre de répondre par rapport à des problématique d'IS.
+Si vous ne devez lire qu'un seul chapitre, c'est celui-ci.
+L'objectif de ce chapitre est de présenter l'ensemble des diagrammes {SysML} et à
+quelles questions ils peuvent permettre de répondre par rapport à des problématique d'{IS}.
+
+[[notation]]
+== Pourquoi une nouvelle notation (par rapport à UML)
+//---------------------------------------------------------------------
+
+[quote, Bertrand Russell, The World of Mathematics (1956)]
+____________________________________________________________________
+A good notation has subtlety and suggestiveness which at times makes
+it almost seem like a live teacher.
+____________________________________________________________________
+
+Il existe une notation qui se veut "unifiée" pour les modèles : {uml}.
+Néanmoins cette notation est peu adaptée pour l'{is} :
+
+* UML 1.x était complètement inadaptée :
+** Principalement pour les systèmes d'information
+** Peu de liens entre les diagrammes
+** Peu de liens entre les modèles et les exigences
+* UML 2.x n'est pas beaucoup mieux si ce n'est :
+** Implication des ingénieurs systèmes pour sa définition
+** Introduction du diagramme de structure composite
+
+En conclusion {UML} est une bonne base :
+
+* Standard _De facto_ en génie logiciel
+* Fournit beaucoup de concepts utiles pour décrire des systèmes (même complexes)
+* Stable et extensible (grâce notamment au mécanisme de _profile_)
+* Beaucoup d'outils disponibles
+
+Mais...
+
+* Manque de certains concepts clés d'{is}
+* Vocabulaire beaucoup trop « software » pour être utilisé par les ingénieurs systèmes
+(concept de `classe` ou d' `héritage` par exemple)
+* Trop de diagrammes (14 sortes!)
+
+== Introduction à SysML
+//---------------------------------------------------------------------------------
+
+=== Fiche d'identité
+
+Voici à quoi pourrait ressembler la fiche d'identité de {sysml} :
+
+include::fiche.txt[]
+
+=== SysML, c'est...
+
+Un ensemble de 9 types de diagrammes::
+* Diagrammes structuraux
+** Diagrammes de définition de blocs (`{bdd}`)
+** Diagrammes internes de blocs (`{ibd}`)
+** Diagrammes paramétriques (`{par}`)
+** Diagrammes de packages (`{pkg}`)
+* Diagrammes comportementaux
+** Diagrammes de séquence (`{seq}`)
+** Diagrammes d'activité (`{act}`)
+** Diagrammes de cas d'utilisation (`{uc}`)
+** Diagrammes d'états (`{stm}`)
+* Diagramme d'exigence (`{req}`)
+Un profil {uml}::
+	C'est à dire une *extension* de cette notation, un ensemble de nouveaux concepts et éléments qui sont définis à partir des éléments de base d'{uml}. Un exemple : le `bloc` {sysml} n'est qu'une redéfinition de la `classe` {uml}.
+Une notation::
+ 	Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de *référence* à la modélisation des systèmes.
+
+=== SysML, ce n'est pas...
+
+Une méthode::
+	 	En effet, contrairement à ce que beaucoup pensent en l'abordant, {sysml} ne propose pas de démarche particulière de développement de système. C'est à la fois sa force (votre méthode existante pourra continuer à être utilisée) comme sa faiblesse car cette absence de guide méthodologique fait souvent défaut à son utilisation.
+Un outil::
+		Nous verrons en effet que {sysml} ne fait que ce qu'on veut bien en faire. Comme tout langage il est limité dans son pouvoir d'expression, mais surtout il reste une simple notation qu'il convient d'utiliser avec des outils et des démarches associées.
+
+[NOTE]
+====
+Ne dites pas "le SysML" mais tout simplement "SysML".
+====
+
+=== Différence avec UML
+
+La figure <<liensdiag,suivante>>, tirée de la <<SysML1.4,spécification>>, résume bien les liens entre {sysml} et {uml}, à savoir que {sysml} reprend une partie seulement des concepts d'{uml} (appelée `UML4SysML`) en y ajoutant des concepts nouveaux.
+
+[[liensdiag]]
+.Liens entre UML et SysML (tiré de <<SysML1.4,SysML1.4,p. 7>>)
+image::diff.png[SysML and UML,width=50%,scaledwidth=50%]
+
+=== Qui est "derrière"?
+
+Industrie::
+American Systems, BAE Systems, Boeing, Deere & Company, EADS Astrium, Eurostep, Israel Aircraft Industries,  Lockheed Martin, Motorola, NIST, Northrop Grumman, oose.de, Raytheon, Thales, ...
+
+Vendeurs d'outils::
+Artisan, EmbeddedPlus, Gentleware, IBM, Mentor Graphics, PivotPoint Technology, Sparx Systems, Vitech, ...
+
+Autres organisations::
+AP-233, INCOSE, Georgia Institute of Technology, AFIS, ...
+
+[TIP]
+====
+La liste complète des membres de l'{omg} est accessible à l'URL : http://www.omg.org/cgi-bin/apps/membersearch.pl
+====
+
+=== Organisation des différents diagrammes
+
+{sysml} propose de couvrir la modélisation d'un système en 9 diagrammes. Ces diagrammes couvrent
+	les aspects structurels et comportementaux du système ainsi que les exigences. Le diagramme suivant
+	présente cette organisation en faisant au passage le lien avec ceux d'{uml} :
+
+.Les 9 diagrammes SysML et leur lien avec UML
+image::Figure4-1.png[9 diagrammes,width=90%,scaledwidth=90%]
+
+Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons souvent leur version abrégée
+(`{uc}` pour "diagramme des UC" par exemple). Ces abréviations, sont définies dans la spécification (cf. note suivante).
+
+.Version abrégée des diagrammes
+image::Figure4-1-bis.png[Version abrégée,width=90%,scaledwidth=90%]
+
+.Définition : image:sysml.jpeg[width=20] Types de diagrammes (OMG SysML v1.3, p. 170)
+[NOTE]
+====
+_SysML diagram kinds should have the following names or (abbreviations) as part of the heading..._
+====
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+En suivant la méthodologie simplifiée adoptée pour le livre, introduire les différents diagrammes de SysML.
+Voici un plan possible :
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+== Introduction à la démarche
+
+== Les exigences
+
+== Analyse opérationnelle
+
+== Analyse fonctionnelle
+
+== Description de l'architecture
+
+== Description du comportementaux
+
+== Allocation, traçabilité et autres points de cohérences

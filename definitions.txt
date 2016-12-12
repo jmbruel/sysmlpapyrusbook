@@ -3,6 +3,7 @@
 //Papyrus
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus]
 :papyrusversion: 2.0.1
+:siteurl: https://bit.ly/sysmlbook
 
 //Layouts
 :standHeight: 250
@@ -32,6 +33,8 @@ endif::[]
 :doors: http://www-03.ibm.com/software/products/fr/fr/ratidoor/[DOORS(TM)]
 :ea: http://www.sparxsystems.com.au/products/mdg/tech/sysml/index.html[Enterprise Architect]
 :eclipse: http://www.eclipse.org[eclipse]indexterm:[eclipse]
+:egit: http://wiki.eclipse.org/EGit[EGit]
+:emfcompare: https://www.eclipse.org/emf/compare/[EMFCompare]
 :emf: https://www.eclipse.org/modeling/emf/[EMF]
 :gemoc: http://gemoc.org/[GEMOC]
 :gherkin: link:http://cukes.info/gherkin.html[Gherkin]

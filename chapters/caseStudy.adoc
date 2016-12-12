@@ -4,12 +4,15 @@
 
 //-----------------------------------------------
 ifndef::final[]
-[CAUTION.comment,caption=Comment]
+.Commentaire
+[CAUTION]
 ====
+*****
 Présenter le cas d'étude avec des illustrations SysML mais avec un look métier.
 Deux étapes : dans un premier temps, le cas d'étude est décrit globalement au
 travers de ses diagrammes sans s'attacher aux diagrammes eux-même.
 Dans un second temps, détail de chaque diagramme.
+*****
 ====
 //-----------------------------------------------
 endif::final[]
@@ -18,7 +21,7 @@ Nous allons modéliser dans cet ouvrage un système complexe réel, la Maison
 Intelligente de Blagnac ({MIB}).
 
 .La Maison Intelligente de Blagnac
-image::mib.png[MIB,width=50%,scaledwidth=90%]
+image::mib.png[MIB,width=90%,scaledwidth=90%]
 
 La {mib} est un appartement permettant la supervision de patients à domicile.
 La description de ce système (notre spécification initiale) sont disponible sur le site {miburl}.
