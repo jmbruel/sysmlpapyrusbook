@@ -1,3 +1,13 @@
 = Préoccupations transverses de modélisation
 
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
 Traçabilité, allocation etc.
+*****
+====
+//-----------------------------------------------
+endif::final[]

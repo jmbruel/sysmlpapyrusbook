@@ -1,12 +1,20 @@
 = SysML par la pratique avec Papyrus
 Jean-Michel Bruel <bruel@irit.fr>; Sébastien Gérard <Sebastien.Gerard@cea.fr>
-v1.1, {localdate}
+v1.2, {localdate}
 :myinitials: JMB
 :doctype: book
 :toc: left
+:toc-title: Table des Matières
 :data-uri:
 :lang: fr
 :icons: font
+:final!: //enlever le '!' pour enlever tous les commentaires
+:imagesdir: images
+:experimental:
+:linkcss:
+:title-page-background-image: image:papyrus-logo.png[pdfwidth=25%]
+
+include::definitions.txt[]
 
 [preface]
 include::chapters/about.adoc[leveloffset=+1]

@@ -1,11 +1,49 @@
 = Modéliser oui, mais...
 
-Versionner et configurer
-Comparer et fusionner
-Simuler
-Analyser
-Comment utiliser les paramétrique pour faire le liens entre les outils de moélisation et les outils d'analyse)
-Tester
-Générer du code
-Documenter
-Personnalisation de l'outil à un contexte/domaine spécifique
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+On aborde ici des éléments souvent absent des livres : l'utilisation des outils en milieu industriel!
+Par exemple et en vrac :
+
+- Versionner et configurer, comparer et fusionner
+- Simuler
+- Analyser
+- Comment utiliser les paramétrique pour faire le liens entre les outils de moélisation et les outils d'analyse)
+- Tester
+- Générer du code
+- Documenter
+- Personnalisation de l'outil à un contexte/domaine spécifique
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+== Collaborer et gérer les version de modèles
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+JMB => reprendre l'exmérience du Master DL avec EMF Compare et Egit.
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+Pour pouvoir collaborer à plusieurs autour du même modèle, il est nécessaire d'utiliser des outils appropriés.
+Dans cette section nous illustrons l'utilisation des plugins {eclipse} {egit} et {emfcompare}.
+
+- Si vous avez installé directement {papyrus} (sans passer par le plugin {eclipse}),
+installez le composant Papyrus complémentaire menu:Help[Install Papyrus Additional Components > Papyrus UML Compare Feature].
+- Installez également le plugin suivant en allant sur menu:Help[Install New Software > ...] :
+http://download.eclipse.org/modeling/emf/compare/updates/logical/emf.compare/integration
+- Allez dans menu:Préférences[Team > Git > Synchronize] et sélectionner `Recursive Model Merge Strategy` dans `Preferred merge strategy`
+
+.Pensez à sélectionneer la bonne stratégie de Merge
+image::mergestrategy.png[Stratégie de Merge,width=60%,scaledwidth=60%]

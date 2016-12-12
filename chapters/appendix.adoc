@@ -1,9 +1,29 @@
 [appendix]
-[[index]]
-== Index (Reference guide)
-Liste des concepts et renvoies vers leur description dans le livre.
+[[acro]]
+== Acronymes
+Liste des acronymes utilisés dans ce livre.
+
+[horizontal]
+BDD::
+_**B**lock **D**efinition **D**iagram_
+
+IS::
+**I**ngénierie **S**ystème
 
 
 [appendix]
 [[histoire]]
 == Les histoires de SysML et de Papyrus
+
+=== SysML
+
+{SysML} est né...
+
+=== Papyrus
+
+{Papyrus} est né...
+
+[appendix]
+[[index]]
+== Index (Reference guide)
+Liste des concepts et renvoies vers leur description dans le livre.
