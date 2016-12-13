@@ -4,3 +4,13 @@
 Liste des concepts et renvoies vers leur description dans le livre.
 
 == Les histoires de SysML et de Papyrus
+
+........
+=> Diagrammes et jalons importants
+........
+
+== SysML 2.0
+
+........
+=> Le futur et les changements techniques à venir, dans les cartons de l'{omg}.
+........

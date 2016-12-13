@@ -12,6 +12,7 @@
 :icons: images/icons
 
 [preface]
+include::definitions.txt[]
 include::chapters/about.adoc[leveloffset=+1]
 include::chapters/preface.adoc[leveloffset=+1]
 

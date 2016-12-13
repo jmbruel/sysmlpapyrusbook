@@ -27,6 +27,7 @@ NOTE: Modéliser versus dessiner !  + Modèles versus documents ! => modélise
 
 == Comment se préparer à lire au mieux ce livre ?
 
+......
 => Proposer des pistes  de « formation » pour rentrer dans le cadre le cas échéant.
 
 => Description de la mise en place de l’environnement pour la mise en pratique.
@@ -34,6 +35,8 @@ NOTE: Modéliser versus dessiner !  + Modèles versus documents ! => modélise
 => Fournir un petit outillage d  ala ise ne pratique des conseils du livre. ?
 
 => Fournir un petit outillage Papyrus dédié à la mise en pratique du livre (Spécialisation particulière, projet type, exemple de modèle, cheat sheet, etc.) que l'on pourrait mettre à disposition via le site de Papyrus www.eclipse.org/papyrus/
+
+......
 
 [[niveauConcepts]]
 .Niveaux de concepts SysML
