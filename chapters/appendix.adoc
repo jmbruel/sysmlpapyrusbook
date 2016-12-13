@@ -1,16 +1,29 @@
-= Annexes
+[appendix]
+[[acro]]
+== Acronymes
+Liste des acronymes utilisés dans ce livre.
 
-== Index (Reference guide)
-Liste des concepts et renvoies vers leur description dans le livre.
+[horizontal]
+BDD::
+_**B**lock **D**efinition **D**iagram_
 
+IS::
+**I**ngénierie **S**ystème
+
+
+[appendix]
+[[histoire]]
 == Les histoires de SysML et de Papyrus
 
-........
-=> Diagrammes et jalons importants
-........
+=== SysML
 
-== SysML 2.0
+{SysML} est né...
 
-........
-=> Le futur et les changements techniques à venir, dans les cartons de l'{omg}.
-........
+=== Papyrus
+
+{Papyrus} est né...
+
+[appendix]
+[[index]]
+== Index (Reference guide)
+Liste des concepts et renvoies vers leur description dans le livre.

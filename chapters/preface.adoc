@@ -1,23 +1,21 @@
 = Avant-propos
 
-== Ce que n'est pas ce livre :
+== Ce que *n'est pas* ce livre :
 
-- Ce n'est pas un livre sur la meilleure approche méthodologique,
+Ce livre n'est pas un livre :
+
+- sur la meilleure approche méthodologique possible avec {sysml}
+- pour réviser l'examen de certification de l'{OMG} ou de l'{incose}, comme <<OCSMP>>
+- [red yellow-background]#XXX to be completed XXX#
 
 == Pourquoi lire ce livre ?
 
-- Je veux fiabiliser mon processus d'IS.
+- Je veux fiabiliser mon processus d'{IS}.
 - je veux gagner du temps.
-- Je veux utiliser des solutions open-source pour l'IS.
-- je veux utiliser des normes d'IS.
-- Je veux apprendre SysML par la pratique.
-- Je veux utiliser Papyrus-SysML.
-
-NOTE: Modéliser versus dessiner !  + Modèles versus documents ! => modéliser fournit la capacité à assister par l'ordinateur l'ingénierie système => réduire les temps de dév, augmenter.
-
-== Comment lire ce livre ?
-
-- Préciser ici que l'objectif du livre étant de fournir un support de formation à SysML par la pratique, le chapitre "Bien démarrer" est primordiale.
+- Je veux utiliser des solutions open-source pour l'{IS}.
+- je veux utiliser des normes d'{IS}.
+- Je veux apprendre {SysML} par la pratique.
+- Je veux maîtriser la version {sysml} de {Papyrus}.
 
 == À qui s'adresse le livre ?
 
@@ -25,16 +23,39 @@ NOTE: Modéliser versus dessiner !  + Modèles versus documents ! => modélise
 - Ignorant, débutant, ou avancé en IS ?
 - Ignorant, débutant, ou avancé en MBSE ?
 
+== Comment lire ce livre ?
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+- Préciser ici que l'objectif du livre étant de fournir un support de formation à
+SysML par la pratique, le chapitre "Bien démarrer" est primordiale.
+- Ajouter des ordres de chapitres en fonction des publiques (étudiants, ingénieur, etc.)
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
 == Comment se préparer à lire au mieux ce livre ?
 
-......
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
 => Proposer des pistes  de « formation » pour rentrer dans le cadre le cas échéant.
 
 => Description de la mise en place de l’environnement pour la mise en pratique.
 
-=> Fournir un petit outillage d  ala ise ne pratique des conseils du livre. ?
-
 => Fournir un petit outillage Papyrus dédié à la mise en pratique du livre (Spécialisation particulière, projet type, exemple de modèle, cheat sheet, etc.) que l'on pourrait mettre à disposition via le site de Papyrus www.eclipse.org/papyrus/
+*****
+====
+//-----------------------------------------------
+endif::final[]
 
 ......
 
@@ -42,6 +63,39 @@ NOTE: Modéliser versus dessiner !  + Modèles versus documents ! => modélise
 .Niveaux de concepts SysML
 [NOTE]
 ======
-Les différents niveaux de concepts SysML que nous utilisons dans ce livre sont alignés sur
-ceux du programme de certification de l'OMG <<OCSMP>>.
+Les différents niveaux de concepts {SysML} que nous utilisons dans ce livre sont alignés sur
+ceux du programme de certification de l'{OMG} <<OCSMP>>.
 ======
+
+
+
+== Conventions typographiques et symboles récurrents
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Ce symbole permet de repérer rapidements des commentaires pour nous-mêmes.
+Il ne doit pas figurer dans la version finale en ligne, ni dans le PDF.
+De même [red yellow-background]#XXX ces textes XXX# devraient être éliminés au fur et à mesure...
+
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+NOTE: Ceci est une simple note, un point remarquable.
+
+WARNING: Attention, piège ou erreur à éviter.
+
+IMPORTANT: Ceci est un point important.
+
+.Convention : Ceci est une convention ou une bonne pratique
+[TIP]
+====
+Dans ces notes, nous distillerons des conseils, des bonnes pratiques ou des conventions que nous recommandons d'adopter.
+====
+
+:icons: font

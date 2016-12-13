@@ -1,6 +1,40 @@
 = Avant de démarrer
-Installation de base et au sujet de l'organisation des modèles.
-Information sur le matériel disponible autour du livre (examples, forums, etc.).
-Besoins, exigences et usages
-Introduit SysML Req, les diagrammes d'exigences et les diagrammes de cas d’utilisation, les diagrammes de séquence « système » pour décrire les scénarios d'usage associés.
-Après avoir parler des concepts SysML pour traiter de ce sujet, dire qu'il peut être nécessaire d’organiser les exigences => diagramme de paquetage.
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Ce chapitre, technique, présente Papyrus, eclipse, etc.
+Il aborde également la question de l'organisation des modèles (packages, etc.).
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+== Papyrus
+
+Vérifiez que vous possédez bien sur votre machine : {papyrus} `{papyrusversion}`
+(ou une version supérieure).
+
+.Papyrus au lancement
+image::launching.png[papyrus,width=50%,scaledwidth=50%]
+
+TIP: Pour plus d'information, consultez https://www.eclipse.org/papyrus/download.html[guide d’installation du site de Papyrus].
+
+== Matériel de formation en complément de ce livre
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Information sur le matériel disponible autour du livre (site web, exemples, forums, etc.).
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+{siteurl}
