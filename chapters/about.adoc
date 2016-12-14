@@ -1,8 +1,8 @@
 = À propos des auteurs
 
-mailto:{email}[{author}] est ...
+mailto:{email}[{author}] est ... (SysML-France, CT MBSE de l'AFIS)
 
-mailto:{email_2}[{author_2}] est ...
+mailto:{email_2}[{author_2}] est ... (Papa de Papyrus :-)
 
 [.right]
 {myinitials} & {authorinitials_2}
