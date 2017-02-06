@@ -97,12 +97,12 @@ endif::[]
 :irit: http://www.irit.fr[IRIT](((IRIT)))
 :iut: http://www.iut-blagnac.fr/[IUT de Blagnac]
 :jmb: mailto:bruel@irit.fr[Jean-Michel Bruel]
-:rf: mailto:raphael.faudou@atos.net[Rapha��l Faudou]
+:rf: mailto:raphael.faudou@atos.net[Rapha��l Faudou]
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
 :tim: mailto:Tim.Weilkiens@oose.de[Tim Weilkiens]
 :univ-tlse: http://www.univ-toulouse.fr[Universit̩ de Toulouse]
 
-//------- Normes et R̩f̩rences
+//------- Normes et Références
 :arp4754a: http://sunnyday.mit.edu/16.355/arp4754a.pdf[ARP4754A]
 
 // SysML diagrams
