@@ -30,6 +30,9 @@ ifndef::final[]
 ====
 *****
 Parler de l'importance de modéliser, des points forts du MBSE, etc.
+Différences entre diagrammes, tables, vues, etc.
+Aborder l'importance de la différence entre les éléments de modèles et leur représentation.
+Aborder la "philosophie" de Papyrus en la matière.
 *****
 ====
 //-----------------------------------------------
@@ -42,7 +45,8 @@ Ce livre n'est pas un livre sur l'ingénierie système.
 Il ne s'agit donc pas pour nous de rappeler les grandes démarches de développement de système.
 Nous renvoyons pour cela le lecteur aux grands classiques (xxx,yyy).
 
-Références sur les méthodos : <<Estefan>>, <<Ramos>>, <<Dickerson>>.
+Références sur les méthodos : <<Estefan>>, <<Ramos>>, <<Dickerson>>,
+CESAME, Arcadia, SEBOK, OOSE, Tim Wilkiens, CORE (EFFB), Merise?
 
 ifdef::backend-pdf[<<<]
 == Matrice des concepts

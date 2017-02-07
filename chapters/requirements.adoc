@@ -1,14 +1,18 @@
 = Besoins clients et exigences
 
+
 //-----------------------------------------------
 ifndef::final[]
 .Commentaire
 [CAUTION]
 ====
 *****
-Introduit SysML Req, les diagrammes d'exigences et les diagrammes de cas d’utilisation, les diagrammes de séquence « système » pour décrire les scénarios d'usage associés.
+Introduit SysML Req, les diagrammes/tables d'exigences et les diagrammes de cas d’utilisation, les diagrammes de séquence « système » pour décrire les scénarios d'usage associés.
 Après avoir parlé des concepts SysML pour traiter de ce sujet, dire qu'il peut être nécessaire d’organiser les exigences => diagramme de paquetage.
 *****
 ====
 //-----------------------------------------------
 endif::final[]
+
+
+==

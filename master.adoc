@@ -23,22 +23,36 @@ include::chapters/preface.adoc[leveloffset=+1]
 :numbered:
 
 include::chapters/introduction.adoc[leveloffset=+1]
+// a la fin
 
 include::chapters/caseStudy.adoc[leveloffset=+1]
+// JMB
+// Cahier des charges?
+
+include::chapters/install.adoc[leveloffset=+1]
+// Getting started
 
 include::chapters/overview.adoc[leveloffset=+1]
 
-include::chapters/install.adoc[leveloffset=+1]
+== Langages vs Méthode
 
 include::chapters/requirements.adoc[leveloffset=+1]
+// SEB
+
+include::chapters/usages.adoc[leveloffset=+1]
+// SEB
 
 include::chapters/structure.adoc[leveloffset=+1]
+// JMB
 
 include::chapters/behavior.adoc[leveloffset=+1]
+// SEB
 
 include::chapters/interaction.adoc[leveloffset=+1]
+//JMB
 
 include::chapters/crossCuting.adoc[leveloffset=+1]
+// SEB
 
 include::chapters/realLife.adoc[leveloffset=+1]
 

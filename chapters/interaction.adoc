@@ -6,8 +6,11 @@ ifndef::final[]
 [CAUTION]
 ====
 *****
-Diagramme de séquence et d’activité en version description global de comportement (description de processus => BPMN ?).
+Diagramme de séquence (y compris haut niveau = DS Système). en version description global de comportement (description de processus => BPMN ?).
 *****
 ====
 //-----------------------------------------------
 endif::final[]
+
+
+== Interaction

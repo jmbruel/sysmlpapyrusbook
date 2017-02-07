@@ -1,0 +1,22 @@
+= Usages et interfaces
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Diagramme de contexte, BDD/IBD de haut
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+Avant de développer un système il faut définir le système => IBD
+
+== Diagramme de contexte
+
+- Soit par IBD pour insister sur le système clos (tout ce qui est à l'extérieur n'est pas pris en compte). => SystemClos
+- Soit par BDD => Context
+  
+== Diagramme de Uses Cases

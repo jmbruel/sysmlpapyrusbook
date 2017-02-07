@@ -151,16 +151,52 @@ Voici un plan possible :
 //-----------------------------------------------
 endif::final[]
 
-== Introduction à la démarche
+//== Introduction à la démarche
 
-== Les exigences
+== Carte d'identité
 
-== Analyse opérationnelle
+- Principaux concepts
+- Exemples d'utilisations (industrielles, ou en lien avec des méthodes)
+- Origine
+- Références
+- Exemple (issue de l'étude de cas)
 
-== Analyse fonctionnelle
+== Diagramme et table d'exigences
+// Sebastien
 
-== Description de l'architecture
+- Diagramme d'exigences (video)
+- Table d'exigences (video)
+//- Import d'exigences => dans la section détaillée correspondante
 
-== Description du comportementaux
+== Diagramme des cas d'utilisation
+
+== BDD
+
+- Diagramme de contexte
+
+== IBD
+
+- Version 2 du diagramme de contexte
+// Sebastien
+
+== DS
+
+=== DSS
+
+
+xxx à vérifier xxx
+
+=== Diagramme de séquences
+
+== Diagramme de Machine à états
+// Sebastien
+
+== Diagramme d'activités
+// Sebastien
+
+== Diagramme paramétrique
+// Sebastien
+
+== Diagramme de packages
 
 == Allocation, traçabilité et autres points de cohérences
