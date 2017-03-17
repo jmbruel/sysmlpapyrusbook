@@ -97,12 +97,12 @@ endif::[]
 :irit: http://www.irit.fr[IRIT](((IRIT)))
 :iut: http://www.iut-blagnac.fr/[IUT de Blagnac]
 :jmb: mailto:bruel@irit.fr[Jean-Michel Bruel]
-:rf: mailto:raphael.faudou@atos.net[Raphaël Faudou]
+:rf: mailto:raphael.faudou@atos.net[Rapha��l Faudou]
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
 :tim: mailto:Tim.Weilkiens@oose.de[Tim Weilkiens]
-:univ-tlse: http://www.univ-toulouse.fr[Université de Toulouse]
+:univ-tlse: http://www.univ-toulouse.fr[Universit̩ de Toulouse]
 
-//------- Normes et Références
+//------- Normes et R̩f̩rences
 :arp4754a: http://sunnyday.mit.edu/16.355/arp4754a.pdf[ARP4754A]
 
 // SysML diagrams
@@ -127,8 +127,8 @@ endif::[]
 :organisation: Organisation
 :analysis: Analyse
 :design: Conception
-:implementation: Implémentation
-:resume: En résumé
-:revisions: Questions de révision
-:is: Ingénierie Système(((IS)))
+:implementation: Impl̩mentation
+:resume: En r̩sum̩
+:revisions: Questions de r̩vision
+:is: Ing̩nierie Syst̬me(((IS)))
 :stakeholders: parties prenantes
