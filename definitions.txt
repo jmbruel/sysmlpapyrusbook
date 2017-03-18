@@ -4,6 +4,7 @@
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus]
 :papyrusversion: 2.0.1
 :siteurl: https://bit.ly/sysmlbook
+:gihuburl: https://github.com/jmbruel/sysmlpapyrusbook
 
 //Layouts
 :standHeight: 250
