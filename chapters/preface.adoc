@@ -4,9 +4,12 @@
 
 Ce livre n'est pas un livre :
 
+- de référence (pour cela, même s'il est en anglais, nous conseillons <<FMS>>)
 - sur la meilleure approche méthodologique possible avec {sysml}
 - pour réviser l'examen de certification de l'{OMG} ou de l'{incose}, comme <<OCSMP>>
+ (mieux vaut vous plonger dans la spécification <<SysML>>)
 - [red yellow-background]#XXX to be completed XXX#
+
 
 == Pourquoi lire ce livre ?
 
@@ -57,7 +60,6 @@ ifndef::final[]
 //-----------------------------------------------
 endif::final[]
 
-......
 
 [[niveauConcepts]]
 .Niveaux de concepts SysML
