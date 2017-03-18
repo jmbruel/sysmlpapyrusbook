@@ -97,7 +97,7 @@ endif::[]
 :irit: http://www.irit.fr[IRIT](((IRIT)))
 :iut: http://www.iut-blagnac.fr/[IUT de Blagnac]
 :jmb: mailto:bruel@irit.fr[Jean-Michel Bruel]
-:rf: mailto:raphael.faudou@atos.net[RaphaÌÇl Faudou]
+:rf: mailto:raphael.faudou@atos.net[RaphaÃ«l Faudou]
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
 :tim: mailto:Tim.Weilkiens@oose.de[Tim Weilkiens]
 :univ-tlse: http://www.univ-toulouse.fr[UniversitÌ© de Toulouse]
