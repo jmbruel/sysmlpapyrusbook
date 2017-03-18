@@ -16,8 +16,10 @@ v1.2, {localdate}
 
 include::definitions.txt[]
 
+ifndef::book[]
 image:https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
 (Fork me on https://github.com/jmbruel/sysmlpapyrusbook[icon:github[] GitHub])
+endif::book[]
 
 [preface]
 include::chapters/about.adoc[leveloffset=+1]

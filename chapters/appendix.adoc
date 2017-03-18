@@ -15,7 +15,7 @@ IS::
 [[histoire]]
 == Les histoires de SysML et de Papyrus
 
-=== SysML
+=== Histoire de SysML
 
 {SysML} est né...
 
@@ -27,7 +27,7 @@ IS::
 => Le futur et les changements techniques à venir, dans les cartons de l'{omg}.
 ........
 
-=== Papyrus
+=== Histoire de Papyrus
 
 {Papyrus} est né...
 
