@@ -171,7 +171,7 @@ Dans l'exemple ci-dessous, le diagramme "_Context_Overview_" est un _Block Defin
 qui représente un _package_, nommé "Context".
 
 .Exemple de diagramme SysML (source <<Kordon>>)
-image::pacemaker-context.png[width="80%"]
+image::pacemaker-context.png[width="80%",scaledwidth="80%"]
 
 //-----------------------------------------------
 ifndef::final[]
@@ -189,8 +189,8 @@ Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de
 cette section (nous utilisons ici le "plan" vu lors de l'introduction de la <<Matrice>>) :
 
 .Organisation
-ifdef::book[[cols="h,4*",options="header"]]
-ifndef::book[[cols="h,4*",options="header",width="90%"]]
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="50%"]]
 |======================
 |				| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
 | {organisation}	|		{pkg}			|     {pkg}, {bdd}   		|		{pkg}		|

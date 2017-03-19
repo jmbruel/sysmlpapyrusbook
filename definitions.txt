@@ -137,8 +137,8 @@ endif::[]
 :organisation: Organisation
 :analysis: Analyse
 :design: Conception
-:implementation: Impl̩mentation
-:resume: En r̩sum̩
-:revisions: Questions de r̩vision
-:is: Ing̩nierie Syst̬me(((IS)))
+:implementation: Implémentation
+:resume: En résumé
+:revisions: Questions de révision
+:is: Ingénierie Système(((IS)))
 :stakeholders: parties prenantes
