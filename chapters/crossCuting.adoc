@@ -12,16 +12,23 @@ Traçabilité, allocation etc.
 //-----------------------------------------------
 endif::final[]
 
-//---------------------------------------------------------------------------------
+On abordera :
+
+- Les <<org,aspects organisationnels>>
+- La <<trace,traçabilité des exigences>>
+- Les <<allocation,mécanismes d'allocation>>
+- Le <<paramt,diagramme paramétrique>> (aspects transveres)
+
 [[org]]
+//---------------------------------------------------------------------------------
 == Organisation
 //---------------------------------------------------------------------------------
 
 ifdef::backend-pdf[[cols="h,4*",options="header"]]
-ifndef::backend-pdf[[cols="h,4*",options="header",width="50%"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 |======================
 |					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
-| [red]*{organisation}*	|					|        		|				|
+| {organisation}	|					|        		|		| {here}
 | {analysis}		|					|        		|				|
 | {design}			|					|        		|				|
 | {implementation}	|					|        		|				|
@@ -135,21 +142,96 @@ _Allocation_::
   bout de la flèche (un `block` la plupart du temps),
 	représentée par le stéréotype `<<allocate>>`
 
-=== {resume}
+
+[[trace]]
+//---------------------------------------------------------------------------------
+== La traçabilité des exigences
+
+Nous avons vu déjà un certain nombre de mécanismes {sysml} qui permettent de tracer les exigences.
+Nous les regroupons ici dans une matrice spécifique (qui se lit dans le sens des relations, par exemple un élément de structure comme un bloc `\<<satisfy>>` une exigence).
+
+.Traçabilité
+ifdef::book[[cols="h,3*",options="header"]]
+ifndef::book[[cols="h,3*",options="header",width="50%"]]
+|======================
+|					| {Requirements} 							| {Structure}	| {Behavior}
+| {Requirements}	| `<<deriveRqt>>`, `<<refine>>`, `<<copy>>` |    			|
+| {Structure}		| `<<allocate>>`, `<<satisfy>>`				| 				| `<<allocate>>`
+| {Behavior}		| `<<refine>>`								|				|
+|======================
+
+Comme indiqué dans le tableau ci-dessus, en général, le lien de raffinement est utilisé entre une exigence et un élément comportemental (état, activité, `{uc}`, etc.) tandis que l'allocation concerne principalement les éléments de structures.
+
+[red]#XXX Mettre un exemple avec tous ces liens. XXX#
+
+[[allocation]]
+//---------------------------------------------------------------------------------
+== Les mécanismes d'allocation
+
+Un mécanisme nouveau en {sysml} et important pour l{is} est le mécanisme d'*allocation*.
+Il permet de préciser quel élément conceptuel (comme un comportement ou une activité) est alloué sur quel élément physique.
+Il est possible d'exprimer cette allocation de plusieurs manières.
+
+[red]#XXX ToDO XXX#
+
+- Parler du `\<<AllocatedTo>>`, compartiments des blocs et autres annotations.
+- Parler des zones d'allocation dans les machines à états où les diagrammes d'activités par exemple.
+- Parler des `\<<allocate>>`.
+
+[[paramt]]
+//---------------------------------------------------------------------------------
+== Le diagramme paramétrique
+
+C'est une forme particulière d'_Internal Block Definition_ (cf. <<param>>).
+On y retrouve les contraintes, déjà vues (cf. <<contraintes>>), mais cette fois-ci on a la représentation graphique des liens entre les données.
+
+.Exemple de diagramme paramétrique
+image::param.png[width="90%",scaledwidth=50%]
+
+[NOTE]
+====
+Il est regrettable que ce diagramme soit le moins utilisé (cf. <<OMG2009>>).
+
+.Diagrammes les plus utilisés (tiré de <<OMG2009>>)
+image::survey4.png[link="http://www.omgsysml.org/SysML_2009_RFI_Response_Summary-bone-cloutier.pdf",width="80%",scaledwidth=50%]
+====
+
+[NOTE]
+====
+Certaines approches (cf. <<MeDICIS>>) utilisent des feuilles excel pour traduire les diagrammes paramétriques et contrôler l'impact des changements de valeurs de tel ou tel paramètre.
+====
+
+== {resume}
 {sysml} propose un certain nombre de mécanismes pour organiser les différents modèles,
 tirés pour la plupart d'{uml}. Ces mécanismes seront plus faciles à comprendre au travers
 de leur utilisation concrète dans la suite.
 
 .Organisation
 ifdef::backend-pdf[[cols="h,4*",options="header"]]
-ifndef::backend-pdf[[cols="h,4*",options="header",width="50%"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 |======================
 |						| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
-| [red]*{organisation}*	| `package`			| `package`		| `package`		| `dependencies`
+| {organisation}	| `package`			| `package`		| `package`		| `dependencies`
 | ...					|					|        		|				|
 |======================
 
-=== {revisions}
+== {revisions}
 
 . Quels sont les 5 types de dépendances entre _packageable elements_ ?
 . À quoi cela peut-il servir de définir les dépendances (donnez des exemples concrets) ?
+. Quelles sont les différences entre `\<<satisfy>>` et `\<<allocate>>` ?
+. Pourquoi est-il important de relier un _use case_ à au moins un _requirement_ ?
+. L'inverse est-il aussi important ?
+
+ifdef::correction[]
+
+== Éléments de réponses :
+
+. Quelles sont les différences entre `\<<satisfy>>` et `\<<allocate>>` ?
+La satisfaction concerne une propriété (d'une solution vis à vis d'un problème) quand l'allocation permet de rajouter un information sur qui fait quoi.
+. Pourquoi est-il important de relier un _use case_ à au moins un _requirement_ ?
+Sinon on peut se demander s'il s'agit vraiment d'une utilisation du système qui nous concerne (une exigence a-t'elle été oubliée?).
+. L'inverse est-il aussi important ?
+Encore plus je dirais, au sens où une exigence n'est couverte par aucune utilisation du système (cela peut arriver lors d'une exigence non satisfiable!)
+
+endif::correction[]

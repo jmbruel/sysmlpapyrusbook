@@ -190,7 +190,7 @@ cette section (nous utilisons ici le "plan" vu lors de l'introduction de la <<Ma
 
 .Organisation
 ifdef::backend-pdf[[cols="h,4*",options="header"]]
-ifndef::backend-pdf[[cols="h,4*",options="header",width="50%"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 |======================
 |				| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
 | {organisation}	|		{pkg}			|     {pkg}, {bdd}   		|		{pkg}		|
@@ -226,8 +226,15 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="50%"]]
 == DS
 
 [[dss]]
-=== DSS
+=== Diagrammes de séquence système
 
+Les diagrammes de séquence système (DSS) sont des _Sequence Diagrams_ {uml} classiques où seul le système est représenté comme une boîte noire en interaction avec son environnement (les utilisateurs généralement).
+
+Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails.
+Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence classique (cf. section sur les <<seq>>).
+
+.Exemples de DSS
+image::dss.png[width="50%",scaledwidth="40%"]
 
 xxx à vérifier xxx
 

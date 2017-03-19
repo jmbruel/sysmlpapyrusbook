@@ -1,4 +1,7 @@
+//---------------------------------------------------------------------------------
+[[behavior]]
 = Comportement
+//---------------------------------------------------------------------------------
 
 //-----------------------------------------------
 ifndef::final[]
@@ -13,3 +16,31 @@ Utilisation OpaqueBehavior ?
 ====
 //-----------------------------------------------
 endif::final[]
+
+[[stm]]
+== Diagramme d'états
+
+{SysML} a repris le concept, déjà connu en {uml}, de machine à états  (_State Machines_).
+Ce diagramme représente les différents *états* possibles d’un bloc particulier, et comment ce bloc réagit à des événements en fonction de son état courant (en passant éventuellement dans un nouvel état).
+Cette réaction (nommée *transition*) possède un événement déclencheur, une condition (garde), un effet et un état cible.
+
+Le diagramme d’états comprend également deux *pseudo-états* :
+
+- l’état initial du diagramme d’états correspond à la création d’une instance ;
+- l’état final du diagramme d’états correspond à la destruction de l’instance.
+
+ifdef::backend-deckjs[==== Diagramme d'états (suite)]
+
+.Un exemple de diagramme d'état (R,UK)
+ifdef::book[image::{images}/stm1.png[scale=50]]
+ifndef::book[image::stm1.png["Un diagramme d'état",width="70%"]]
+
+ifdef::backend-deckjs[==== Diagramme d'états (suite)]
+
+Lorsqu'un état nécessite lui-même plus de détails, on créé un *état composite* (aussi appelé super-état)
+qui est lui-même une machine à état. On peut ainsi factoriser des transitions déclenchées par le même événement (et amenant vers le même état cible), tout en spécifiant des transitions particulières entre les sous-états.
+Il est également possible d'attacher un diagramme d'état (composite) à un état pour garder une représentation hiérarchique.
+
+Un diagramme d'état peut représenter des régions concurrentes (dont les activités peuvent évoluer en parallèle), graphiquement représentées par des zones séparées par des traits pointillés. Chaque région contient ses propres états et transitions.
+
+Il existe encore d'autres concepts avancés que nous ne présenterons pas dans cette introduction car ils sont beaucoup moins utilisés (+entry+, +exit+, +transition interne+, etc.).

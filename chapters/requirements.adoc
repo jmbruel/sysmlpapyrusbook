@@ -19,16 +19,15 @@ endif::final[]
 //---------------------------------------------------------------------------------
 == Fondements
 
-ifndef::backend-pdf[]
-[cols="h,4*",options="header",width="50%"]
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 |======================
-|					| [red]*{Requirements}* 	| {Structure}	| {Behavior} 	| {Crosscutting}
-| {organisation}	|					|        		|				|
-| {analysis}		|					|        		|				|
-| {design}			|					|        		|				|
-| {implementation}	|					|        		|				|
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|		{here}			|        		|				|
+| {analysis}		|		{here}			|        		|				|
+| {design}			|		{here}			|        		|				|
+| {implementation}	|	 {here}				|        		|				|
 |======================
-endif::backend-pdf[]
 
 Les exigences sont prises en compte à différent niveaux en {SysML}.
 Nous aborderons :
@@ -219,7 +218,7 @@ et des mécanismes dédiés aient été prévus en {sysml}.
 ifdef::backend-pdf[[cols="h,4*",options="header"]]
 ifndef::backend-pdf[[cols="h,2,1,1,1",options="header",width="90%"]]
 |======================
-|					| [red]*{Requirements}* 			| {Structure}	| {Behavior} 	| {Crosscutting}
+|					| {Requirements} 			| {Structure}	| {Behavior} 	| {Crosscutting}
 | {organisation}	| `⊕–`, `\<<deriveReqt>>`			|        		|				|
 | {analysis}		| `\<<satisfy>>`, `\<<refine>>`		|  `\<<satisfy>>` entre reqs et UC|	`\<<refine>>` |
 | {design}			| `\<<allocate>>`					|        		|				|
