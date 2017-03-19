@@ -117,6 +117,21 @@ AP-233, INCOSE, Georgia Institute of Technology, AFIS, ...
 La liste complète des membres de l'{omg} est accessible à l'URL : http://www.omg.org/cgi-bin/apps/membersearch.pl
 ====
 
+//---------------------------------------------------------------------------------
+[[Outils]]
+=== 	Outils SysML
+//---------------------------------------------------------------------------------
+
+
+Il va de soit que le meilleur outil {sysml} à ce jour est {papyrus}, dont ce livre
+vous détaille l'utilisation, mais il existe un certain nombre d'autres outils
+permettant de réaliser des modèles {SysML}.
+En voici une liste non exhaustive :
+
+include::outils.txt[]
+
+Vous trouverez sur Internet des comparatifs et des avis à jour sur les outils.
+
 === Organisation des différents diagrammes
 
 {sysml} propose de couvrir la modélisation d'un système en 9 diagrammes. Ces diagrammes couvrent
@@ -132,11 +147,31 @@ Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons sou
 .Version abrégée des diagrammes
 image::Figure4-1-bis.png[Version abrégée,width=90%,scaledwidth=90%]
 
-.Définition : image:sysml.jpeg[width=20] Types de diagrammes (OMG SysML v1.3, p. 170)
+.Définition : image:sysml.jpeg[width=20] Types de diagrammes (OMG SysML v1.4, p. 190)
 [NOTE]
 ====
 _SysML diagram kinds should have the following names or (abbreviations) as part of the heading..._
 ====
+
+//---------------------------------------------------------------------------------
+=== Cadre pour les diagrammes
+//---------------------------------------------------------------------------------
+
+Abordons quelques principes généraux de {sysml}, c'est à dire des éléments indépendants d'un diagramme en particulier :
+
+- chaque diagramme {SysML} décrit un élément précis (nommé) de modélisation,
+- chaque diagramme {SysML} doit être représenté à l'intérieur d'un cadre (_Diagram Frame_),
+- l'entête de ce cadre, appelé aussi *cartouche*, indique les informations sur le diagramme :
+* le *type* de diagramme (`{req}`, `{act}`, `{bdd}`, `{ibd}`, `{stm}`, etc. en gras) qui donne immédiatement une indication sur le point de vue porté à l'élément de modélisation (comportement, structure, etc.)
+* le type de l'élément (par exemple _package_, _block_, _activity_, etc.), optionnel
+* le nom de l'élément (unique)
+* le nom du diagramme ou de la vue, optionnel.
+
+Dans l'exemple ci-dessous, le diagramme "_Context_Overview_" est un _Block Definition Diagram_ (type `{bdd}`)
+qui représente un _package_, nommé "Context".
+
+.Exemple de diagramme SysML (source <<Kordon>>)
+image::pacemaker-context.png[width="80%",scaledwidth="80%"]
 
 //-----------------------------------------------
 ifndef::final[]
@@ -145,21 +180,27 @@ ifndef::final[]
 ====
 *****
 En suivant la méthodologie simplifiée adoptée pour le livre, introduire les différents diagrammes de SysML.
-Voici un plan possible :
 *****
 ====
 //-----------------------------------------------
 endif::final[]
 
+Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de
+cette section (nous utilisons ici le "plan" vu lors de l'introduction de la <<Matrice>>) :
+
+.Organisation
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="50%"]]
+|======================
+|				| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|		{pkg}			|     {pkg}, {bdd}   		|		{pkg}		|
+| {analysis}, {design}, {implementation} footnote:[En fonction du niveau de détail.]
+				|		{req}			|     {bdd}, {ibd}, {seq}, {par}   		| {uc}, {seq}, {stm}, {act}				| {par}
+|======================
+
+
+
 //== Introduction à la démarche
-
-== Carte d'identité
-
-- Principaux concepts
-- Exemples d'utilisations (industrielles, ou en lien avec des méthodes)
-- Origine
-- Références
-- Exemple (issue de l'étude de cas)
 
 == Diagramme et table d'exigences
 // Sebastien
@@ -170,17 +211,21 @@ endif::final[]
 
 == Diagramme des cas d'utilisation
 
+[[bdd]]
 == BDD
 
 - Diagramme de contexte
 
+[[ibd]]
 == IBD
 
 - Version 2 du diagramme de contexte
 // Sebastien
 
+[[sd]]
 == DS
 
+[[dss]]
 === DSS
 
 
@@ -188,15 +233,19 @@ xxx à vérifier xxx
 
 === Diagramme de séquences
 
+[[st]]
 == Diagramme de Machine à états
 // Sebastien
 
+[[act]]
 == Diagramme d'activités
 // Sebastien
 
+[[par]]
 == Diagramme paramétrique
 // Sebastien
 
+[[pkg]]
 == Diagramme de packages
 
 == Allocation, traçabilité et autres points de cohérences

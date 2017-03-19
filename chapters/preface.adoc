@@ -4,7 +4,7 @@
 
 Ce livre n'est pas un livre :
 
-- de référence (pour cela, même s'il est en anglais, nous conseillons <<FMS>>)
+- de référence (pour cela, même s'il est en anglais, nous conseillons <<Friedenthal2016>>)
 - sur la meilleure approche méthodologique possible avec {sysml}
 - pour réviser l'examen de certification de l'{OMG} ou de l'{incose}, comme <<OCSMP>>
  (mieux vaut vous plonger dans la spécification <<SysML>>)
@@ -42,6 +42,17 @@ SysML par la pratique, le chapitre "Bien démarrer" est primordiale.
 //-----------------------------------------------
 endif::final[]
 
+Ce document a été réalisé de manière à être lu de préférence
+dans sa version électronique, ce qui permet de
+naviguer entre les références et les renvois interactivement, de consulter
+directement les documents référencés par une URL, etc.
+
+[NOTE]
+====
+Si vous lisez la version papier de ce document, ces liens clickables ne
+vous servent à rien, mais n'hésitez pas à en consulter la version {siteurl}[électronique]!
+====
+
 == Comment se préparer à lire au mieux ce livre ?
 
 //-----------------------------------------------
@@ -69,9 +80,17 @@ Les différents niveaux de concepts {SysML} que nous utilisons dans ce livre son
 ceux du programme de certification de l'{OMG} <<OCSMP>>.
 ======
 
-
-
 == Conventions typographiques et symboles récurrents
+
+Nous avons utilisé un certain nombre de conventions personnelles pour rendre ce document le plus agréable à lire et le plus
+utile possible, grâce notamment à la puissance d'{asciidoc} :
+
+- des mises en formes particulières (e.g., `NomDeBloc` pour un élément de modèle),
+- des références bibliographiques (comme la spécification <<SysML>>), présentées en fin de document (cf. <<refs>>),
+- tous les flottants (figures, tableaux) sont listés à la suite de la table des matière, [red yellow-background]#XXX check this XXX#
+- les termes anglais (souvent incontournables) sont repérés en _italique_, non pas pour indiquer qu'il s'agit d'un
+mot anglais, mais pour indiquer au lecteur que nous employons volontairement ces termes (e.g., _Requirements_),
+- un certain nombre de symboles viennent identifier les notes :
 
 //-----------------------------------------------
 ifndef::final[]
@@ -100,4 +119,23 @@ IMPORTANT: Ceci est un point important.
 Dans ces notes, nous distillerons des conseils, des bonnes pratiques ou des conventions que nous recommandons d'adopter.
 ====
 
-:icons: font
+.Définition : Exemple (OMG SysML v1.3, p. 152)
+[NOTE,icon=sysml.jpeg]
+====
+Ces notes concernent des définitions tirées de la spécification {sysml} et sont donc précisément référencées.
+====
+
+== Historique
+
+Ce document est la compilation de plusieurs années d'enseignement de {sysml}
+ou de {papyrus} par les auteurs depuis plus de dix ans, que ce soit :
+
+- au http://dep-informatique.univ-pau.fr/live/masterTI[Master TI], de l'{uppa} (avec {nico}),
+- au http://spiderman-2.laas.fr/M2R-SAID/[Master Recherche SAID], de l'{UPS},
+- au http://mathsinfo.univ-tlse2.fr/accueil/formations/master-ice/[Master ICE] de l'{ut2j} (avec {pdss}),
+- au _Master of Science_ de Göteborg, Suède (introduction réalisée par {nico}),
+- à {uag}, au Mexique (40h de formation professionnelle à des employés de Continental Mexique),
+- [red yellow-background]#XXX to be completed by Seb XXX#
+- ou plus récemment au {dl} de {ups}.
+
+Vous trouverez en référence (cf. <<refs>>) les ouvrages et autres documents utilisés pour la réalisation de ce livre.

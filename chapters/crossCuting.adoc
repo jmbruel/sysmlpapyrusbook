@@ -11,3 +11,145 @@ Traçabilité, allocation etc.
 ====
 //-----------------------------------------------
 endif::final[]
+
+//---------------------------------------------------------------------------------
+[[org]]
+== Organisation
+//---------------------------------------------------------------------------------
+
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="50%"]]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| [red]*{organisation}*	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+=== Fondements
+
+On abordera :
+
+- Le _Package Diagram_
+- Les différent types de _packages_
+- Les organisations possibles
+- La notion de _Namespaces_
+- Les _Dependencies_
+
+[[package]]
+=== Le _Package Diagram_
+
+Le diagramme de paquetage permet de représenter l'organisation des modèles en paquetages.
+
+ifndef::backend-pdf[]
+* Il est identique à {uml}, et classique pour les développeurs (java notamment)
+* Il permet d'organiser les modèles en créant un espace de nommage (cf <<namespace>>)
+endif::backend-pdf[]
+ifdef::backend-pdf[]
+Ce diagramme est identique à celui d'{uml}, et le concept de paquetage (_package_) est classique pour les développeurs (java notamment).
+Il permet d'organiser les modèles en créant un espace de nommage (cf <<namespace>>).
+endif::backend-pdf[]
+
+=== Les différent types de _packages_
+
+Il existe plusieurs types de _packages_ :
+
+`models`::
+	un _package_ "top-level" dans une hiérarchie de _packages_
+`packages`::
+	le type le plus classique : un ensemble d'éléments de modèles
+`model librairies`::
+	un _package_ prévu pour être réutilisé (importé) par d'autres éléments
+`views`::
+	un _package_ spécial pour représenter les points de vue
+
+[TIP]
+====
+Un point de vue (_viewpoint_) est utilisé pour matérialiser une perspective particulière de modélisation.
+Il possède des propriétés standardisés (_concerns_, _language_, _purpose_, etc.) et permet d'indiquer qu'une
+vue (un _packetage_ particulier, stéréotypé `<<view>>`) est conforme (dépendance `<<conform>>`) à un point de vue.
+====
+
+[[organisation]]
+=== Les organisations possibles
+
+Les modèles peuvent être organisés selon toutes sortes de considération :
+
+- par hiérarchie "système" (e.g., entreprise, système, composant, ...)
+- par types de diagrammes (e.g., besoins, structure, comportements, ...)
+- par cycle de vie (e.g., analyse, conception, ...)
+- par équipes (e.g., architectes, <<IPT>>, ...)
+- par points de vue (e.g., sécurité, performance, ...)
+- etc.
+
+.Exemple d'organisation simple
+image::pkg-organisation2.png[width="70%",scaledwidth="80%"]
+
+.Représentation de cette organisation dans un outil
+image::pkg-organisation-modelview.png[width="40%",scaledwidth="40%"]
+
+[[namespace]]
+=== La notion de _Namespaces_
+
+Un _package_ permet de créer un espace de nommage pour tous les éléments qu'il contient.
+Ainsi, dans un _package_, on n'a pas à se soucier des noms des éléments.
+Même si d'autres utilisent les mêmes noms, il n'y aura pas ambiguïté.
+
+.Définition : _Namespace_ (OMG SysML v1.4, p. 21)
+[NOTE]
+====
+_The package defines a namespace for the packageable elements._
+====
+
+Pour éviter toute ambiguïté, on peut utiliser pour les éléments de modèles leur nom complet (_Qualified name_),
+c'est à dire le nom de l'élément préfixé par son (ou ses) _package(s)_
+(e.g., `Structure::Products::Clock`).
+
+[TIP]
+====
+Dans les outils {sysml}, il faut souvent demander explicitement à voir les noms complets (_Qualified names_)
+des éléments (la plupart du temps dans les options graphiques).
+
+====
+
+=== Les dépendances
+
+Un certain nombre de dépendances peuvent exister entre des éléments de _package_
+ou entre les _packages_ eux-mêmes :
+
+_Dependency_::
+	une dépendance "générale", non précisée,
+	représentée par une simple flèche pointillée +----->+
+_Use_::
+	l'élément "utilise" celui à l'autre bout de la flèche (un type par exemple),
+	représentée par le stéréotype `<<use>>`
+_Refine_::
+	l'élément est un raffinage (plus détaillé) de celui à l'autre bout de la flèche,
+	représentée par le stéréotype `<<refine>>`
+_Realization_::
+	l'élément est une "réalisation" (implémentation) de celui à l'autre bout de la flèche,
+	représentée par le stéréotype `<<realize>>`
+_Allocation_::
+	l'élément (e.g., une activité ou un _requirement_) est "alloué" sur celui à l'autre
+  bout de la flèche (un `block` la plupart du temps),
+	représentée par le stéréotype `<<allocate>>`
+
+=== {resume}
+{sysml} propose un certain nombre de mécanismes pour organiser les différents modèles,
+tirés pour la plupart d'{uml}. Ces mécanismes seront plus faciles à comprendre au travers
+de leur utilisation concrète dans la suite.
+
+.Organisation
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="50%"]]
+|======================
+|						| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| [red]*{organisation}*	| `package`			| `package`		| `package`		| `dependencies`
+| ...					|					|        		|				|
+|======================
+
+=== {revisions}
+
+. Quels sont les 5 types de dépendances entre _packageable elements_ ?
+. À quoi cela peut-il servir de définir les dépendances (donnez des exemples concrets) ?
