@@ -1,0 +1,2 @@
+[[paq]]
+Les paquetages permettent de regrouper les éléments de modélisation. Ils peuvent contenir d’autres sous-paquetages sans limites de niveaux.

@@ -1,0 +1,2 @@
+[[acteur]]
+Un acteur peut être une personne, un ensemble de personnes, un logiciel, un processus qui interagit avec un ou plusieurs <<uc,UC>>.
