@@ -29,6 +29,7 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 | {implementation}	|	 {here}				|        		|				|
 |======================
 
+
 Les exigences sont prises en compte à différent niveaux en {SysML}.
 Nous aborderons :
 
@@ -218,7 +219,7 @@ et des mécanismes dédiés aient été prévus en {sysml}.
 ifdef::backend-pdf[[cols="h,4*",options="header"]]
 ifndef::backend-pdf[[cols="h,2,1,1,1",options="header",width="90%"]]
 |======================
-|					| {Requirements} 			| {Structure}	| {Behavior} 	| {Crosscutting}
+|					| [red]*{Requirements}* 			| {Structure}	| {Behavior} 	| {Crosscutting}
 | {organisation}	| `⊕–`, `\<<deriveReqt>>`			|        		|				|
 | {analysis}		| `\<<satisfy>>`, `\<<refine>>`		|  `\<<satisfy>>` entre reqs et UC|	`\<<refine>>` |
 | {design}			| `\<<allocate>>`					|        		|				|

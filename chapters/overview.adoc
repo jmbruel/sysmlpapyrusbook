@@ -199,7 +199,6 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 |======================
 
 
-
 //== Introduction à la démarche
 
 == Diagramme et table d'exigences
@@ -232,6 +231,7 @@ Les diagrammes de séquence système (DSS) sont des _Sequence Diagrams_ {uml} cl
 
 Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails.
 Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence classique (cf. section sur les <<seq>>).
+
 
 .Exemples de DSS
 image::dss.png[width="50%",scaledwidth="40%"]

@@ -142,7 +142,6 @@ _Allocation_::
   bout de la flèche (un `block` la plupart du temps),
 	représentée par le stéréotype `<<allocate>>`
 
-
 [[trace]]
 //---------------------------------------------------------------------------------
 == La traçabilité des exigences
