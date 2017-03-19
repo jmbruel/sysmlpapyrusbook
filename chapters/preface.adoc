@@ -10,6 +10,7 @@ Ce livre n'est pas un livre :
  (mieux vaut vous plonger dans la spécification <<SysML>>)
 - [red yellow-background]#XXX to be completed XXX#
 
+
 == Pourquoi lire ce livre ?
 
 - Je veux fiabiliser mon processus d'{IS}.
