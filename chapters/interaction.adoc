@@ -12,5 +12,368 @@ Diagramme de séquence (y compris haut niveau = DS Système). en version descrip
 //-----------------------------------------------
 endif::final[]
 
+.Place des interactions
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|		{here}		|
+| {analysis}		|					|        		|		{here}		|
+| {design}			|					|        		|		{here}		|
+| {implementation}	|					|        		|		{here}		|
+|======================
 
-== Interaction
+//-----------------------------------------------
+== Fondements
+//-----------------------------------------------
+
+On abordera :
+
+- les <<usecase,_Use Case Diagrams_>>
+- les <<seq,_Sequence Diagrams_>>
+- les <<act,_Activity Diagrams_>>
+
+NOTE: Les _State Machines_ sont vues dans la partie sur les <<behavior,comportements>>.
+
+[[usecase]]
+//-----------------------------------------------
+== _Use Case Diagrams_
+//-----------------------------------------------
+
+Les éléments de base :
+
+Acteurs::
+	Les principaux éléments extérieurs au système considéré, et participant qui participent (on parle parfois d'acteurs principaux). Ils ont souvent un rôle.
+	ou qui bénéficient (on parle alors d'acteurs secondaires) du système.
+Cas d'utilisation::
+	représente un ensemble d’actions réalisées par le système intéressant pour au moins un acteur
+Association::
+	participation d'un acteur à un cas d'utilisation.
+Sujet::
+	le domaine étudié (qui peut être une partie seulement de tout le système, pas forcément modélisé dans son ensemble)
+
+[TIP]
+====
+Un *acteur* représente un *rôle* joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.
+====
+
+=== Le Diagramme des Cas d’Utilisation
+
+Le *Diagramme des Cas d'Utilisation* est un diagramme {UML} permettant de représenter :
+
+- les *UC* (_Use Case_ ou Cas d’Utilisation)
+- les *acteurs* (principaux et secondaires)
+- les *relations*
+* entre acteurs et _Use Case_
+* entre _Use Cases_
+
+ifdef::backend-deckjs[]
+:leveloffset: -2
+endif::backend-deckjs[]
+
+=== Cas d'Utilisation (_Use Case_)
+
+.Exemple de cas d'utilisation
+include::{defs}/uc.txt[]
+
+image::todo.jpg[width="80%",scaledwidth=50%]
+
+=== Exemple de cas d'utilisation (UML)
+
+Retrait par carte bancaire
+
+Scénario principal::
+	L'UC démarre lorsque le Guichet Automatique Bancaire (GAB) demande au client son numéro confidentiel après l’introduction de sa CB. Le client
+	entre son code et valide son entrée. Le GAB contrôle la validité du code. Si le code est valide, le GAB autorise
+	le retrait et l’UC se termine.
+Scénario alternatif n°1 ::
+	Le client peut à tout instant annuler l'opération. La carte est éjectée et l'UC se termine.
+Exemple de codification de l'UC::
+	UC01 ou RetraitCB (pour Retrait par carte bleue)
+
+=== Précisions
+
+Un cas d'utilisation peut être précisé par :
+
+- une description textuelle
+- un ou des diagrammes {UML} (séquence, activité)
+
+[NOTE]
+=====================================================================
+Dans les outils, cette "précision" se manifeste par le fait que l'on "attache"
+généralement un diagramme de séquence à un cas d'utilisation (clic droit sur un _Use Case_ -> nouveau `{seq}`).
+=====================================================================
+
+==== Acteur
+
+include::{defs}/acteur.txt[]
+
+On peut trouver plusieurs types d'acteurs :
+
+* extérieurs au système (cf. `actor` <<ucdiag>>)
+** les acteurs principaux
+** les acteurs secondaires
+* exemples de types d'acteurs prédéfinis dans UML :
+** `\<<utility>>`
+** `\<<process>>`
+** `\<<thread>>`
+
+[NOTE]
+====
+On peut utiliser des liens de généralisation/spécialisation entre acteurs
+pour représenter les possibilités pour le spécialisé d'avoir les mêmes
+prérogatives (notamment en terme d'utilisation du système) que le généralisé.
+====
+
+==== Relations entre acteurs et _Use Case_
+
+En général, une simple association relie acteurs et _Use Case_.
+On peut également orienter ces associations en plaçant une direction (flèche vide) au bout de l'association.
+
+.Relations orientées
+image::todo.jpg[]
+
+==== Relations entre _Use Case_
+
+Après avoir lister les cas d'utilisation, il est utile de les organiser et de montrer les relations entre eux.
+Plusieurs relations sont possibles :
+
+Extension (`\<<extend>>`)::
+	Indique que le _Use Case_ source est *éventuellement* exécutée en complément du _Use Case_ destination (cas particulier, erreur...). Le point précis où l'extension peut se produire est appelé _extension point_ (surtout utile quand il existe plusieurs extensions pour un même cas)
+Inclusion (`\<<include>>`)::
+	Indique que le _Use Case_ est inclus *obligatoirement* dans un autre _Use Case_ (notion de sous-fonction par exemple)
+Généralisation::
+	Relation entre un _Use Case_ général et un autre plus spécialisé qui hérite de ses caractéristiques et en rajoute (différents modes d'utilisation d'un système par exemple, ou encore différents acteurs impliqués)
+
+[[ucdiag]]
+.Notation dans le diagramme d'UC
+image::todo.jpg["Diagramme d'UC",width="35%",scaledwidth=50%]
+
+[TIP]
+=====================================================================
+On n'utilise généralement `<<include>>` que dans le cas où le sous-cas d'utilisation est
+inclut dans plusieurs UC. Si ce n'est pas le cas, il est généralement englobé dans l'UC.
+=====================================================================
+
+
+=== Pour construire un UC (de manière générale)
+
+. identifier les acteurs
+. identifier les cas d'utilisation
+. structurer en _packages_
+. finaliser les diagrammes de cas d'utilisation (ajouter les relations)
+
+[NOTE]
+====
+Certains méthodologistes (comme Tim Weilkiens) préconisent de ne pas utiliser les acteurs et les cas d'utilisation
+(cf. son http://model-based-systems-engineering.com/[blog])
+====
+
+[[seq]]
+//-----------------------------------------------
+== _Sequence Diagrams_
+//-----------------------------------------------
+
+=== Généralités
+
+Il permet de :
+
+* modéliser les interactions entre blocs
+* séquencer ces interactions dans le temps
+* représenter les échanges de messages
+* spécifier les scénarios des cas d'études
+
+Les éléments qui composent ce diagramme sont :
+
+Participants::
+	les éléments en interaction (des blocs généralement)
+Lignes de vie::
+	des lignes verticales qui permettent d'indiquer un départ ou une arrivée d'interaction
+Barres d'activation::
+	pour matérialiser quand l'élément est actif
+Messages::
+	ce qui "circule" d'un élément à l'autre (signal, appel de méthode, ...)
+
+[WARNING]
+=====================================================================
+Les participants (et leur ligne de vie) représentent des instances de blocs (souvent "anonymes").
+=====================================================================
+
+=== Exemple
+
+[red]#ToDo#
+
+=== Notions avancées
+
+On peut également représenter des instructions itératives et conditionnelles au travers de
+*cadres d'interaction* :
+
+* `loop` (boucle)
+* `alt` (alternative)
+* `opt` (optionel)
+* `{par}` (parallèle)
+* `region` (région critique - un seul _thread_ à la fois)
+
+[[fowler]]
+.Exemple d' algorithme... (source <<Fowler2004>>)
+image::fowl1.png["Un algorithme",width="30%",scaledwidth=50%]
+
+.Et le diagramme correpondant (source <<Fowler2004>>)
+image::fowl2.png["Sa modélisation",width="60%",scaledwidth=50%]
+
+==== Exemple de conceptions
+
+Le diagramme de séquences est un diagramme utile pour montrer les "responsabilités" de
+certains objets par rapport aux autres. Dans un code logiciel, on peut y déceler plus
+facilement que tel objet est plus chargé que d'autres. Les deux diagrammes suivants
+(tirés de <<Fowler2004>>) montrent deux conceptions différentes possibles pour l'implémentation d'une même
+fonctionnalité. On mesure visuellement assez bien la différence entre la version "centralisée"
+(<<fowler1>>) et la version "objet" (<<fowler2>>).
+
+ifdef::backend-deckjs[==== Exemple de conceptions (suite)]
+
+[[fowler1]]
+.Conception "centralisée" (source <<Fowler2004>>)
+image::fowl3.png["Conception 'centralisée'",width="60%",scaledwidth=50%]
+
+ifdef::backend-deckjs[==== Exemple de conceptions (suite)]
+
+[[fowler2]]
+.Conception "objet" (source <<Fowler2004>>)
+image::fowl4.png["Conception 'objet'",width="60%",scaledwidth=50%]
+
+
+[NOTE]
+====
+On utilise le diagramme de séquence pour représenter des algorithmes et des séquencements temporels. Lorsque le comportement se rapproche plus d'un flot, on utilise le diagramme d'activité (cf. section sur le <<act>>).
+====
+
+==== Lien entre UC, DSS et DS
+
+La décomposition hiérarchique permet une description "_TOP-DOWN_" du système à réaliser.
+
+On fait un Diagramme de Séquence Système pour chaque cas d'utilisation (issu du Diagramme d’UC) pour déterminer les échanges d’informations entre l’acteur et le système.
+
+Ensuite on fait un Diagramme de Séquence (DS) pour décrire comment les blocs composant le système (issus du `{bdd}`) collaborent pour réaliser le traitement demandé.
+
+ifdef::backend-deckjs[==== Lien entre UC, DSS et DS (suite)]
+
+[[exp1-uc]]
+.Diagramme d'UC
+image::ucexp1.png["Diagramme d'UC",width="30%",scaledwidth=50%]
+
+ifdef::backend-deckjs[==== Lien entre UC, DSS et DS (suite)]
+
+[[exp1-dss]]
+.Le DSS correspondant
+image::dssexp1.png["Le DSS correspondant",width="50%",scaledwidth=50%]
+
+ifdef::backend-deckjs[==== Lien entre UC, DSS et DS (suite)]
+
+[[exp1-ds]]
+.Le DS correspondant
+image::dsexp1.png["Le DS correspondant",width="70%",scaledwidth=50%]
+
+
+[[act]]
+//-----------------------------------------------
+== Diagrammes d'activité
+//-----------------------------------------------
+
+Les diagrammes d'activité (_Activity Diagrams_) est utilisé pour représenter les flots de données et de contrôle entre les actions. Il est utilisé pour raffiner en général un cas d'utilisation.
+Il est utilisé pour l’expression de la logique de contrôle et d’entrées/sorties. Le diagramme d’activité sert non seulement à préciser la séquence d’actions à réaliser, mais aussi ce qui est produit, consommé ou transformé au cours de l’exécution de cette activité.
+
+.Exemple de diagramme d'activité (tiré de <<SeeBook2012>>)
+image::act-pcmk1.png[width="70%",scaledwidth=50%]
+
+Les éléments de base du diagramme d’activité sont :
+
+- les actions,
+- les flots de contrôle entre actions,
+- les décisions (branchements conditionnels),
+- un début et une ou plusieurs fins possibles.
+
+=== Actions
+
+Les actions sont les unités fondamentales pour spécifier les comportements en {SysML}.
+Une action représente un traitement ou une transformation.
+Les actions sont contenues dans les activités, qui leur servent alors de contexte.
+
+=== Flots
+
+Un *flot de contrôle* permet le contrôle de l’exécution des noeuds d'activités.
+Les flots de contrôle sont des flèches reliant deux noeuds (actions, décisions, etc.).
+
+Le diagramme d’activité permet également d’utiliser des *flots d’objets* (reliant une action et un objet consommé ou produit).
+Les _object flow_, associés aux broches d'entrée/sortie (_input/output pin_) permettent alors de décrire les transformations sur les objets manipulés.
+
+.Un exemple de flot continu
+image::act-flow-continuous.png["Un flot continu",width="30%",scaledwidth=50%]
+
+Pour permettre la modélisation des *flots continus*, {SysML} ajoute à {UML} la possibilité de caractériser la nature du débit qui circule sur le flot : continu (par exemple, courant électrique, fluide, etc.) ou discret (par exemple, évenements, requêtes, etc.).
+On utilise pour cela des stéréotypes : `\<<continuous>>` et `\<<discrete>>`. Par défaut, un flot est supposé discret.
+
+
+.Définition : _FlowProperty_ (OMG SysML v1.4, p. 84)
+[NOTE]
+====
+_A FlowProperty signifies a single flow element to/from a block. A flow property has the same notation as a Property only with a direction prefix (in | out | inout). Flow properties are listed in a compartment labeled flow properties._
+====
+
+
+=== Décision
+
+Une décision est un noeud de contrôle représentant un choix dynamique entre plusieurs conditions (mutuellement exclusives).
+Elle est représentée par un losange qui possède un arc entrant et plusieurs arcs sortants. Il existe plusieurs noeuds de contrôle (cf. <<Control>>) :
+
+_fork_::
+Un _fork_ est un noeud de contrôle représentant un débranchement parallèle. Il est représenté par une barre (horizontale ou verticale) qui possède un arc entrant et plusieurs arcs sortants. Le _fork_ duplique le "jeton" entrant sur chaque flot sortant. Les jetons sur les arcs sortants sont indépendants et concurrents.
+_join_::
+Un _join_ est un noeud de contrôle structuré représentant une synchronisation entre actions (rendez-vous). Il est représenté par une barre (horizontale ou verticale) qui possède un arc sortant et plusieurs arcs entrants. Le _join_ ne produit son jeton de sortie que lorsqu’un jeton est disponible sur chaque flot entrant (d'où la synchronisation).
+_flow final_::
+Contrairement à la fin d’activité qui est globale à l’activité, la fin de flot est locale au flot concerné et n’a pas d’effet sur l’activité englobante.
+_merge_::
+La fusion est l’inverse de la décision : le même symbole du losange, mais cette fois-ci avec plusieurs flots entrants et un seul sortant.
+
+[[Control]]
+.Les différents contrôles de flow SysML
+image::flow-ctrl.png[width="20%",scaledwidth=50%]
+
+[NOTE]
+====
+Pour se rapprocher de {sart}, la norme prévoit la possibilité d'utiliser les pointillés pour les flux de contrôle.
+====
+
+.Définition : _ControlFlow_ (OMG SysML v1.4, p. 116)
+[NOTE]
+====
+Control flow may be notated with a dashed line and stick arrowhead...
+====
+
+== Réutilisation
+
+Les activités peuvent être réutilisées à travers des actions d’appel (_callBehaviorAction_).
+L’action d’appel est représentée graphiquement par une fourche à droite de la boîte d’action, ainsi que par la chaîne : `nom d’action : nom d’activité`. {SysML} propose encore bien d’autres concepts et notations, comme la région interruptible, la région d’expansion ou encore les flots de type _stream_ qui sortent du cadre de ce livre d'introduction.
+
+.Exemple de _callBehaviorAction_ (UK)
+image::act-call.png[width="20%",scaledwidth=50%]
+
+
+== {resume}
+
+Il existe de nombreux diagrammes pour exprimer les comportements. Ces modèles sont importants dans la mesure où ils peuvent servir à valider le futur système vis-à-vis de ces comportements exprimés. Ils ne sont donc véritablement utiles que lorsqu'ils sont couplés à des outils de simulation ou d'analyse (cf. <<Analyse>>).
+
+.Place du Comportement
+ifdef::book[[cols="h,4*",options="header"]]
+ifndef::book[[cols="h,4*",options="header",width="50%"]]
+|======================
+|					| {Requirements} 	| {Structure}	| [red]*{Behavior}* 	| {Crosscutting}
+| {organisation}	|					|        		| `{pkg}`				|
+| {analysis}		|					|        		| `{uc}` `{seq}`				|
+| {design}			|					|        		| `{dss}` `{seq}` `{act}`		|
+| {implementation}	|					|        		| `{stm}`			|
+|======================
+
+== {revisions}
+
+. Comment, pour exprimer un comportement, savoir si j'ai besoin d'un diagramme de séquence plutôt qu'un diagramme d'activité ou encore d'une machine à état ?

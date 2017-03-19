@@ -13,6 +13,7 @@ v1.2, {localdate}
 :experimental:
 :linkcss:
 :title-page-background-image: image:papyrus-logo.png[pdfwidth=25%]
+:defs: defs
 
 include::definitions.txt[]
 
