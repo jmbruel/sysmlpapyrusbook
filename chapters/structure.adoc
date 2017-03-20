@@ -1,3 +1,4 @@
+
 //---------------------------------------------------------------------------------
 [[archi]]
 = Structure et contraintes
@@ -305,7 +306,7 @@ la direction étant simplement indiquée par une flèche à l’intérieur du ca
 [[port13]]
 === Ports (SysML 1.3)
 
-La nouvelle spécification {norme} introduit les concepts de:
+La version 1.3 de la spécification {sysml} introduit les concepts de :
 
 _proxy port_::
 Ils doivent remplacer les ports 1.2 (ports de flots et ports standards) en en reprenant les caractéristiques
@@ -319,9 +320,22 @@ En fait il s'agit du même concept qu'une partie qui serait exposée à l'extér
 Pour une discussion sur les différences entre les deux ports : http://model-based-systems-engineering.com/2013/09/23/sysml-full-ports-versus-proxy-ports/
 ====
 
-======
+[[port14]]
+=== Ports (SysML 1.4)
+
+La version {norme}...
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
 Check if this is still true in 1.4
-======
+*****
+====
+//-----------------------------------------------
+endif::final[]
 
 [[param]]
 == _Parametric Diagrams_

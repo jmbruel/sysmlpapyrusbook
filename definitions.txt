@@ -11,7 +11,6 @@
 :standScreen: 500
 :standWidth: 250
 :mytablewidth: 50%
-:here: icon:map-marker[role=red]
 
 // config
 ifdef::env-github[]
@@ -29,6 +28,7 @@ endif::[]
 :bouml: http://www.bouml.fr[BOUML]
 :asciidoctorlink: http://asciidoctor.org/[Asciidoctor]indexterm:[Asciidoctor]
 :cea: http://www-list.cea.fr/[CEA LIST]
+:list: {cea}
 :cdo: http://www.eclipse.org/cdo/[CDO]
 :cucumber: link:http://cukes.info/[Cucumber]
 :doors: http://www-03.ibm.com/software/products/fr/fr/ratidoor/[DOORS(TM)]
@@ -106,7 +106,7 @@ endif::[]
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
 :tim: mailto:Tim.Weilkiens@oose.de[Tim Weilkiens]
 :uag: http://www.uag.mx/[Universitad Autónoma de Guadalajara]
-:univ-tlse: http://www.univ-toulouse.fr[Universit̩é de Toulouse]
+:univ-tlse: http://www.univ-toulouse.fr[Université de Toulouse]
 :uppa: http://www.univ-pau.fr/[Université de Pau et des Pays de l'Adour]
 :ups: http://www.univ-tlse3.fr[UPS]
 :univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Le Mirail]

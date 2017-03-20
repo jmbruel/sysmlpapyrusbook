@@ -1,0 +1,15 @@
+
+[[methode]]
+== Langages vs Méthode
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Je sais plus ce qu'on voulait mettre là...
+*****
+====
+//-----------------------------------------------
+endif::final[]
