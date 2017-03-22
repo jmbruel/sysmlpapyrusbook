@@ -1,3 +1,5 @@
+
+[[realLife]]
 = Modéliser oui, mais...
 
 //-----------------------------------------------
@@ -30,20 +32,28 @@ ifndef::final[]
 [CAUTION]
 ====
 *****
-JMB => reprendre l'exmérience du Master DL avec EMF Compare et Egit.
+JMB => reprendre l'expérience du Master DL avec EMF Compare et Egit.
 *****
 ====
 //-----------------------------------------------
 endif::final[]
 
 Pour pouvoir collaborer à plusieurs autour du même modèle, il est nécessaire d'utiliser des outils appropriés.
-Dans cette section nous illustrons l'utilisation des plugins {eclipse} {egit} et {emfcompare}.
+Dans cette section nous illustrons l'utilisation des plugins {eclipse} : {egit} et {emfcompare}.
+Nous avons expérimenté avec succèsfootnote:[dans le cadre du cours {sysml} du {m2dl}],
+l'utilisation de cette solution avec 24 étudiants collaborant sur le même modèle {Papurys}.
+
+=== Vade Mecum
+
+Voici quelques instructions qui vous permettrons de gérer simplement les version de vos modèles :
 
 - Si vous avez installé directement {papyrus} (sans passer par le plugin {eclipse}),
-installez le composant Papyrus complémentaire menu:Help[Install Papyrus Additional Components > Papyrus UML Compare Feature].
+installez le composant {Papyrus} complémentaire menu:Help[Install Papyrus Additional Components > Papyrus UML Compare Feature].
 - Installez également le plugin suivant en allant sur menu:Help[Install New Software > ...] :
 http://download.eclipse.org/modeling/emf/compare/updates/logical/emf.compare/integration
 - Allez dans menu:Préférences[Team > Git > Synchronize] et sélectionner `Recursive Model Merge Strategy` dans `Preferred merge strategy`
 
-.Pensez à sélectionneer la bonne stratégie de Merge
+.Pensez à sélectionner la bonne stratégie de Merge
 image::mergestrategy.png[Stratégie de Merge,width=60%,scaledwidth=60%]
+
+TIP: Si vous n'avez pas cette option à cocher, vous n'avez pas la bonne version des plugins! icon:smile-o[].

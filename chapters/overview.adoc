@@ -1,3 +1,4 @@
+
 [[overview]]
 = Les contours de SysML (introduction à SysML)
 
@@ -210,18 +211,15 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 
 == Diagramme des cas d'utilisation
 
-[[bdd]]
 == BDD
 
 - Diagramme de contexte
 
-[[ibd]]
 == IBD
 
 - Version 2 du diagramme de contexte
 // Sebastien
 
-[[sd]]
 == DS
 
 [[dss]]
@@ -240,19 +238,51 @@ xxx à vérifier xxx
 
 === Diagramme de séquences
 
-[[st]]
 == Diagramme de Machine à états
 // Sebastien
 
-[[act]]
 == Diagramme d'activités
 // Sebastien
 
-[[par]]
 == Diagramme paramétrique
 // Sebastien
 
-[[pkg]]
 == Diagramme de packages
 
 == Allocation, traçabilité et autres points de cohérences
+
+== {resume}
+
+== {revisions}
+
+[qanda]
+Associez les diagrammes suivants avec leurs acronymes (`{sd}`, `{dc}`, `{uc}`, `{pkg}`, `{dss}`)::
+- Diagramme de Paquetages
+- Diagramme des Cas d'Utilisation
+- Diagramme de Séquences Système
+- Diagramme de Classes
+- Diagramme de Séquences
+
+Placez dans la matrice ci-dessous les différents diagrammes {uml} que vous connaissez déjà (`{sd}`, `{dc}`, `{uc}`, `{pkg}`, `{dss}`)::
+include::matrice-base.asc[]
+
+ifdef::correction[]
+
+.Éléments de correction
+[CAUTION]
+====
+
+image::acronymes-cor.png[width=70%,scaledwidth=70%]
+
+[align="center",cols="h,3*^,1",options="header",width=100]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} | ...
+| {organisation}	|					|        `{pkg}`	| |
+| {analysis}		|		`{uc}`		|       `{dc}`	|	`{dss}` |
+| {design}			|					|       `{dc}`	|	`{sd}` |
+| ... | | | |
+|======================
+
+====
+
+endif::correction[]

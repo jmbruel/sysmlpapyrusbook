@@ -36,11 +36,13 @@ include::chapters/caseStudy.adoc[leveloffset=+1]
 // Cahier des charges?
 
 include::chapters/install.adoc[leveloffset=+1]
-// Getting started
+// Getting started => SEB
 
 include::chapters/overview.adoc[leveloffset=+1]
+// JMB
 
-== Langages vs Méthode
+include::chapters/methode.adoc[leveloffset=+1]
+// SEB
 
 include::chapters/requirements.adoc[leveloffset=+1]
 // SEB

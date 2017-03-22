@@ -1,30 +1,67 @@
+[[AvantPropos]]
 = Avant-propos
 
 == Ce que *n'est pas* ce livre :
 
-Ce livre n'est pas un livre :
+Ce livre *n'est pas* un livre :
 
 - de référence (pour cela, même s'il est en anglais, nous conseillons <<Friedenthal2016>>)
-- sur la meilleure approche méthodologique possible avec {sysml}
+- sur la meilleure approche méthodologique possible avec {sysml} (car il n'y en pas d'absolue)
 - pour réviser l'examen de certification de l'{OMG} ou de l'{incose}, comme <<OCSMP>>
- (mieux vaut vous plonger dans la spécification <<SysML>>)
-- [red yellow-background]#XXX to be completed XXX#
-
+ (mieux vaut vous plonger dans la spécification <<sysml>>)
 
 == Pourquoi lire ce livre ?
 
-- Je veux fiabiliser mon processus d'{IS}.
-- je veux gagner du temps.
-- Je veux utiliser des solutions open-source pour l'{IS}.
-- je veux utiliser des normes d'{IS}.
-- Je veux apprendre {SysML} par la pratique.
-- Je veux maîtriser la version {sysml} de {Papyrus}.
+Il peut y avoir plusieurs raisons pour lire ce livre, même partiellement.
+Voici les différentes raisons qui peuvent vous y avoir amené :
+
+Je veux fiabiliser mon processus d'{IS}::
+Vous êtes un professionnel, dans le domaine de l'{is}, et vous êtes intéressé par la modélisation.
+Nous espérons que les conseils pratiques, appliquées et appuyés sur l'outil {payrus},
+vous permettront de tester l'intérêt de {sysml} pour votre domaine.
+
+Je veux apprendre {SysML} par la pratique::
+Ce livre est entièrement réalisé dans cet objectif.
+Nous allons à l'essentiel des concepts et surtout nous vous permettons de les
+manipuler de manière concrète dans un l'outil {papyrus}.
+
+Je veux maîtriser la version {sysml} de {Papyrus}::
+Le logiciel prend une part de plus en plus importante dans le développement de systèmes complexes.
+Si vous utilisez déjà {papyrus} comme modeleur {uml}, et que vous souhaitiez apprendre {sysml} en conservant vos habitudes,
+ce livre, réalisé en collaboration avec l'équipe du {list} en charge du développement de {papyrus}, devrait vous y aider.
+
+Je veux utiliser des solutions _open-source_ pour l'{IS}::
+C'est un des avantages de {papyrus} : c'est un logiciel ouvert, auxquels de nombreux programmeurs contribuent,
+permettant ainsi la prise en compte rapide des remarques utilisateurs, la disponibilité d'un forum riche, etc.
+
+Je veux utiliser des normes d'{IS}::
+Si, comme généralement en {is}, vous basez vos processus et outils sur des standards, vous aurez
+avec {sysml}, une notation standard pour vos modèles (apprise en filière technologique des Lycées,
+en classe préparatoires et dans beaucoup d'écoles d'ingénieurs).
+Et vous aurez, avec {papyrus}, un outils 100% conforme à cette spécification.
+
+Je veux gagner du temps::
+Nous avons essayer de concevoir ce livre comme un manuelfootnote:[au sens latin du terme, qu'on peut
+avoir toujours à portée de main], outil et pratique, en travaillant l'organisation des concepts
+et des pratiques.
 
 == À qui s'adresse le livre ?
 
-- Ignorant, débutant, ou avancé en SysML ?
-- Ignorant, débutant, ou avancé en IS ?
-- Ignorant, débutant, ou avancé en MBSE ?
+En fonction de votre profil, vous pourrez avoir une lecture plus ou moins complète de cet ouvrage.
+Loin de nous l'idée de forcer la façon d'en aborder les chapitres, nous vous recommandons néanmoins
+les pistes de lectures suivantes selon la situation :
+
+.Conseils de lecture en fonction de votre niveau en SysML (en ligne) et en Papyrus (en colonne)
+[align="center",cols="h,3*^",options="header",width=100]
+|======================
+|	{sysml}{nbsp}{nbsp}{nbsp}/{nbsp}{nbsp}{nbsp}{papyrus}| Découverte              | Initié               | Professionnel
+| Découverte	     | <<Intro,1>>,<<etudeCas,2>>,<<install,3>>,<<overview,4>> | <<Intro,1>>,<<etudeCas,2>>,(<<install,3>>),<<overview,4>> | <<Intro,1>>,<<etudeCas,2>>,<<overview,4>>
+| Initié			     | (<<Intro,1>>),<<etudeCas,2>>,<<install,3>>,(<<overview,4>>),<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>	| (<<Intro,1>>),<<etudeCas,2>>,(<<install,3>>,<<overview,4>>),<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>	| (<<Intro,1>>),<<etudeCas,2>>,(<<overview,4>>),<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>
+| Professionnel		 |(<<Intro,1>>),<<etudeCas,2>>,<<install,3>>,(<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>),<<crossCuting,10>>,<<realLife,11>> | (<<Intro,1>>),<<etudeCas,2>>,(<<install,3>>,<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>),<<crossCuting,10>>,<<realLife,11>> | (<<Intro,1>>),<<etudeCas,2>>,(<<overview,4>>),<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>,<<crossCuting,10>>,<<realLife,11>>
+|======================
+
+Si vous êtes débutant en {IS}, nous vous conseillons en parallèle de vous initier.
+Le livre n'aborde pas directement les concepts systèmes.
 
 == Comment lire ce livre ?
 
