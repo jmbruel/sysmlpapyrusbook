@@ -372,7 +372,8 @@ image::param.png[width="90%",scaledwidth="50%"]
 
 === _Value Binding_
 
-Une fois les contraintes exprimées, il faut lier les paramètres (formels) à des valeurs (paramètre réel). C'est l'objet des _Value Binding_.
+Une fois les contraintes exprimées, il faut lier les paramètres (formels) à des valeurs (paramètre réel).
+C'est l'objet des _Value Binding_.
 
 Pour assigner des valeurs spécifiques, on utilise des _Block Configurations_;
 
