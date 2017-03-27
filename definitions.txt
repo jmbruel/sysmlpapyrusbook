@@ -143,3 +143,4 @@ endif::[]
 :is: Ingénierie Système(((IS)))
 :stakeholders: parties prenantes
 :here: icon:map-marker[role=red] You are here!
+:ModelUser: link:http://www.omg.org/ocsmp/coveragemap-user.htm[Model User]
