@@ -1,6 +1,6 @@
 
 [[methode]]
-== Langages vs Méthode
+= Langages vs Méthode
 
 //-----------------------------------------------
 ifndef::final[]
