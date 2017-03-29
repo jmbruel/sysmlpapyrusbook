@@ -16,7 +16,6 @@ Après avoir parlé des concepts SysML pour traiter de ce sujet, dire qu'il peut
 //-----------------------------------------------
 endif::final[]
 
-
 [[reqs]]
 //---------------------------------------------------------------------------------
 == Fondements

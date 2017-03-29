@@ -20,12 +20,92 @@ endif::final[]
 
 Nous allons modéliser dans cet ouvrage un système complexe réel, la Maison
 Intelligente de Blagnac ({MIB}).
+Nous avons volontairement choisi un domaine qui prend de l'ampleur : l'Internet des Objets (IoT - _Internet of Thing_).
 
 .La Maison Intelligente de Blagnac
 image::mib.png[MIB,width=90%,scaledwidth=90%]
 
-La {mib} est un appartement permettant la supervision de patients à domicile.
+La {mib} est un appartement permettant la supervision de personnes dépendantes (patients, personnes âgées, ...) à domicile.
 La description de ce système (notre spécification initiale) sont disponible sur le site {miburl}.
 Pour permettre de démarrer la modélisation, nous partirons d'un {FichierExigences}[fichier partagé] des exigences initiales.
 
 NOTE: Nous ne nous intéresserons qu'à la partie intelligente de la maison, et non à ses caractéristiques architecturales.
+
+== Description
+
+XXX A traduire (merci Nicolas Hili)!! XXX
+The variety of devices the consumer can access allow him or her to do a set of tasks including:
+Monitoring the energy consumption globally or for a specific electrical devices;
+Activating electrical actuators (adjusting a light bulb intensity, automating the opening of shutters according to the time of the day, ...);
+Monitoring information collected via a set of sensors, including temperature sensors, luminosity sensors, presence detectors, etc.
+The central theme of this use case is in-home support: providing individuals who require nursing care, elderly people, or disabled people with personalised and reliable care services they need in order to live almost autonomously in their domestic accommodation, while feeling secure. Sense of security is continuously provided by an architecture designed for them, potentially requiring human assistance. Designing domestic accommodation that offers security both in the physiological and the logistical levels is the challenge of this use case.
+
+Research in smart home systems have to address security, societal, legislative, economical, and ecological challenges. This part summarizes some services a Smart Home should provide to the inhabitants with respect to these challenges.
+
+=== Security
+
+As any other home, smart homes must provide a certain level of protection against intruders, burglars. This level has to be enforced as smart homes may be not only vulnerable to physical accesses, but are also open to cyber attacks. Security breaches or a low level of identification may allow hackers to intrude or to steal personal digital information about inhabitants. However, compared to classical homes, smart homes can leverage of smart devices in order to prevent or put a stop to undesirable intrusions (alarm, automatic call to the police station) while facilitating access to relevant and trustworthy authorities, such as firemen, policemen, and ambulances. Such authorities can be automatically alerted in the case of unexpected situation involving specific conditions of the inhabitants (e.g, when an elderly falls) with the help of smart sensors (e.g., fall detector).
+Another important concern of smart homes is the use and access to personal information by the different smart devices embedded into the house. Smart devices can come from different companies that require specific information, possibly collected in real-time and sent to remote third-party servers via Internet. Prevention measures must be therefore taken in order to ensure the authentication and access to personal information by trustworthy applications only, the protection of the information when stored on private hard drives or collected on external networks. Such mechanisms include data encryption, open API, etc.
+
+=== Accommodations to physical and mental conditions of individuals
+
+Smart homes can accommodate specific conditions of the inhabitants and adapt itself in response to them. Examples include accommodating the height of a kitchen cabinet in order to facilitate its use, access (e.g., to the upper drawers), and maintenance (e.g., dust the top of the shelves). In addition, inhabitants suffering from mental conditions may need assistance in order to accomplish day-to-day tasks. For example, LEDs inlayed in the floor can help individuals suffering from the Alzheimer's disease to remember the path of the bathroom the morning when getting out of the bed.
+In addition to accommodating physical and mental conditions, smart homes can also accommodate inhabitants’ preferences. Control interfaces provided to them or learning algorithms to learn from their habits can help accommodate inhabitants’ preferences. For example, inhabitants can use a control interface to set the range of temperature comfortable for the inhabitants. Furthermore, learning algorithms can automatically adapt this temperature according to the day of the week (providing different ranges for weekdays and week-end), the schedule of the inhabitants, ...
+
+=== Environment and economy
+An important aspect of smart homes is to provide mechanisms for reducing energy consumption. It can be done for different purposes. Economically first, but also to meet local regulations in terms of energy consumption. Using the above example, smart homes can reduce the temperature range according to time slots, or whenever the inhabitants leave the house. Temperature can be slightly decreased overnight and increased again in the morning. Overnight, most of the smart devices can also be put in sleeping mode and reactivated the morning. Information flux over Internet can also be reduced to specific time slots in order to reduce the consumption.
+In addition to reducing the energy consumption, smart homes must play a central home in producing green energy. This can be done by smart solar panels (e.g., solar sun flowers that can follow the position of the sun), geothermal energy converter, ...
+
+== Experimental platform
+A smart home experimental platform is located in Toulouse, on the campus of the IUT de Blagnac, which is a subdivision of the University of Toulouse II. This platform comes from an educational project initiated by the IUT of Blagnac, with strong collaborations with the faculties of psychology and sociology of the University of Toulouse II. It aims at supporting both academic and professional trainings, by gathering in the same place several proficiencies, expertises, and synergies around a delicate problematic of in-home support.
+
+The role of the platform is threefold:
+Precursor: technological surveillance site providing scientific and sociological research groups and laboratories with a complete experimental platform (design, realisation, tests, experimentations and validation);
+Pioneering: pioneering site for presentation, discovery, exposition, and demonstration for industrial and service provider companies. Technological window showing the landscape of expertises of companies in transversal domains ranging from property business to equipment manufacturers;
+Educative: site ideally equipped with experimental and pioneering products, the Smart Home experimental platform offers for local universities and faculties an exceptional area for undergraduate and graduate students.
+
+== List of requirements
+
+A list of requirements for the Smart Home use case is provided below. The list is not exhaustive and it is not mandatory to satisfy all of the suggested requirements. Additional requirements can be defined as well. Each requirement below is numbered so it can be easily referred.
+
+[align="center",cols="1,1,4",options="header",width=100]
+|======================
+| ID  | Category | Description
+| SH_01_010
+| Security
+| The Smart Home must prevent unauthorized physical intrusion.
+| SH_01_020
+| | The Smart Home must prevent computer intrusion.
+| SH_01_030
+| | The Smart Home must provide an identification-based access control system.
+| SH_01_040
+| | The Smart Home must call the police station in case of burglary or any other unauthorized intrusion.
+| SH_01_050
+| | The Smart Home must be able to detect smoke and to call the fire station in case of suspicion of fire.
+| SH_01_060
+| | The Smart Home must be able to detect accidental falls and to call an ambulance.
+| SH_01_070
+| | The Smart Home must provide authorized access for emergency services (firemen, hospital service, etc.).
+| SH_02_010
+| Accommodation
+| The Smart Home must accommodate physical and mental conditions of the inhabitants.
+| SH_02_020
+| | The Smart Home must accommodate specific preferences entered by the inhabitants.
+| SH_02_030
+| | The Smart Home must learn from the behaviour of inhabitants.
+| SH_02_040
+| | The Smart Home must assist the inhabitants with the everyday tasks regardless of their disabilities.
+| SH_02_050
+| | The Smart Home must be monitorable via a central interface located in the main room.
+| SH_02_060
+| | The Smart Home must support the connection of smart devices of the inhabitants.
+| SH_02_070
+| | The Smart Home must have a bed that accommodates to the disability of the inhabitants.
+| SH_03_010
+| Economy
+| The Smart Home must save energy.
+| SH_03_020
+| | The Smart Home annual consumption should be less than local regulations.
+| SH_03_030
+| | The Smart Home must prioritize self-produced energy.
+|======================

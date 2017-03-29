@@ -175,3 +175,12 @@ ou de {papyrus} par les auteurs depuis plus de dix ans, que ce soit :
 - ou plus récemment au {dl} de {ups}.
 
 Vous trouverez en référence (cf. <<refs>>) les ouvrages et autres documents utilisés pour la réalisation de ce livre.
+
+/////
+== Remerciements
+
+XXX Penser à remercier : {rf}, {pr}, {nico}, Nicolas Hili, ... XXX
+
+/////
+
+:icons: font
