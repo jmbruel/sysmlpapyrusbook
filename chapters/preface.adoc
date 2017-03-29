@@ -96,4 +96,11 @@ IMPORTANT: Ceci est un point important.
 Dans ces notes, nous distillerons des conseils, des bonnes pratiques ou des conventions que nous recommandons d'adopter.
 ====
 
+/////
+== Remerciements
+
+XXX Penser à remercier : {rf}, {pr}, {nb}, Nicolas Hili, ... XXX
+
+/////
+
 :icons: font
