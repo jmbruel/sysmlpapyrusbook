@@ -1,0 +1,2 @@
+[[uc]]
+Un cas d'utilisation représente un ensemble de *scénarios* que le système doit exécuter pour produire un résultat observable par un <<acteur,*acteur*>>.

@@ -13,8 +13,14 @@ v1.2, {localdate}
 :experimental:
 :linkcss:
 :title-page-background-image: image:papyrus-logo.png[pdfwidth=25%]
+:defs: defs
 
 include::definitions.txt[]
+
+ifndef::backend-pdf[]
+image:https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
+(Fork me on https://github.com/jmbruel/sysmlpapyrusbook[icon:github[] GitHub])
+endif::backend-pdf[]
 
 [preface]
 include::chapters/about.adoc[leveloffset=+1]
@@ -30,11 +36,13 @@ include::chapters/caseStudy.adoc[leveloffset=+1]
 // Cahier des charges?
 
 include::chapters/install.adoc[leveloffset=+1]
-// Getting started
+// Getting started => SEB
 
 include::chapters/overview.adoc[leveloffset=+1]
+// JMB
 
-== Langages vs Méthode
+include::chapters/methode.adoc[leveloffset=+1]
+// SEB
 
 include::chapters/requirements.adoc[leveloffset=+1]
 // SEB

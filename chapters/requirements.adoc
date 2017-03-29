@@ -1,3 +1,5 @@
+
+[[RE]]
 = Besoins clients et exigences
 
 
@@ -13,3 +15,227 @@ Après avoir parlé des concepts SysML pour traiter de ce sujet, dire qu'il peut
 ====
 //-----------------------------------------------
 endif::final[]
+
+[[reqs]]
+//---------------------------------------------------------------------------------
+== Fondements
+
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|		{here}			|        		|				|
+| {analysis}		|		{here}			|        		|				|
+| {design}			|		{here}			|        		|				|
+| {implementation}	|	 {here}				|        		|				|
+|======================
+
+
+Les exigences sont prises en compte à différent niveaux en {SysML}.
+Nous aborderons :
+
+- L'organization des _Requirements_
+- Les _Requirements properties_
+- Les _Requirements links_
+- Les _Requirements Diagrams_
+- Les considérations sur la traçabilité
+- Annotations des _Requirements_
+- Les _Use Case Diagrams_
+
+[TIP]
+====
+L'ingénierie des exigences est une discipline à part entière et nous n'abordons ici
+que les aspects en lien avec la modélisation système. Voir le livre de référence pour
+plus de détails (<<Sommerville1997>>) ou le guide de l'{afis} (<<REQ2012>>).
+====
+
+== L'organisation des _Requirements_
+
+Il ne s'agit pas ici de revenir sur les exigences elles-même, mais plutôt de voir comment {sysml} permet
+de les exprimer, de les manipuler et surtout de les lier avec le reste du système.
+
+=== Représentation de base
+
+Un _Requirement_ en {sysml} n'est qu'un bloc particulier.
+
+.Définition : _Requirements_ (OMG SysML v1.4, p. 157)
+[NOTE]
+====
+_A requirement specifies a capability or condition that must (or should) be satisfied...
+A requirement is defined as a stereotype of UML Class..._
+====
+
+.Un exemple de _Requirement_ en SysML
+image::todo.jpg[SysML and UML,width=50%,scaledwidth=50%]
+
+
+=== Différents types d'organisation
+
+L'ingénierie des exigences aboutit généralement à une liste organisée d'exigences, que ce soit en terme
+de fonctionnelles/non fonctionnelles, de prioritaires/secondaires, etc.
+Le principal support de {sysml} à cette organisation, outre la possibilité de les annoter (cf. section <<reqStereotypes,Stéréotyper les exigences>>), consiste à utiliser les  _packages_.
+
+Plusieurs types d'organisations sont possibles :
+
+- Par niveau d'abstraction
+* Besoins généraux (en lien avec les  _use cases_ par exemple)
+* Besoins techniques (en lien avec les éléments de conception)
+- Par point de vue
+* Besoins principaux (en lien avec les _use cases_)
+* Besoins spécifiques :
+** Fonctionnels
+** Marketing
+** Environnementaux
+** _Business_
+** ...
+- etc.
+
+=== Tableaux de _Requirements_
+
+Les _requirements_ sont habituellement stockés dans des tableaux (feuilles excel le plus souvent!).
+Il est donc recommandé par le norme et possible dans de nombreux outils de représenter les exigences
+sous forme tabulaire.
+
+.Définition : _Requirements Table_ (OMG SysML v1.4, p. 163)
+[NOTE]
+====
+_The tabular format is used to represent the requirements, their properties and relationships..._
+====
+
+
+.Exemples de tableaux d'exigences (OMG SysML v1.4, p. 163)
+image::req-table.png[Tableaux,width=70%,scaledwidth=70%]
+
+La plupart des outils modernes permettent le passage entre outils classiques de gestion des exigences (comme {doors})
+et outils de modélisation {sysml}.
+
+.Import Papyrus de tableau d'exigences
+image::todo.jpg[width="50%",scaledwidth="50%"]
+
+== Les _Requirements properties_
+
+Il est possible d'indiquer un certain nombre de propriétés sur un _requirement_ :
+
+- _priority_ (`high`, `low`, ...)
+- _source_ (`stakeolder`, `law`, `technical`, ...)
+- _risk_ (`high`, `low`, ...)
+- _status_ (`proposed`, `aproved`, ...)
+- _verification method_ (`analysis`, `tests`, ...)
+
+
+== Les _Requirements links_
+
+Les principales relations entre _requirement_ sont :
+
+_Containment_::
+	Pour décrire la décomposition d'une exigence en plusieurs sous-exigences (⊕–). Typiquement dès qu'une exigence est exprimée avec une conjonction "et" ("La voiture doit être rapide et économe.").
+_Refinement_::
+ 	Pour décrire un ajout de précision (`\<<refine>>`), comme par exemple une précision.
+_Derivation_::
+ 	Pour indiquer une différence de niveau d'abstraction (`\<<deriveReqt>>`), par exemple
+	entre un système et un de ses sous-systèmes.
+
+[TIP]
+====
+Lorsqu'une exigence possède plusieurs cas `\<<refine>>` qui pointent vers lui, on considère que ces différents cas sont des options possibles de raffinement (cf. <<conventions>>).
+====
+
+.Exemples de relations entre exigences
+image::req-exp1.png[width="50%",scaledwidth="50%"]
+
+Il existe ensuite les relations entre les besoins et les autres éléments de modélisation
+(les _block_ principalement) comme `\<<satisfy>>` ou `\<<verify>>`, mais nous les aborderons
+dans la partie <<transvers,transverse>>.
+
+.Relations liées au _requirements_ dans TOPCASED
+image::topcased-req-connections.png[width="20%",scaledwidth="20%"]
+
+== Les _Requirements Diagrams_
+
+Voici un exemple de `{req}` un peu plus étoffé, tiré de http://www.uml-sysml.org/sysml (voir aussi <<rationale>>) :
+
+.Exemples de composition d'exigences
+image::hsuv-reqs1.png[width="90%",scaledwidth="80%"]
+
+[[reqStereotypes]]
+== Stéréotyper les _Requirements_
+
+Tout comme pour n'importe quel bloc, il est possible de stéréotyper les _requirements_.
+Ceci permet de se définir ses propres priorités et classifications.
+Quelques exemples de stéréotypes utiles :
+
+- `\<<interfaceRequirement>>`, `\<<physicalRequirement>>`, ...
+- `\<<FunctionalRequirement>>`, `\<<nonFunctionalRequirement>>`
+
+[[reqAnnot]]
+== Annotations des _Requirements_
+
+Il est possible d'annoter les éléments de modélisation en précisant les raisons
+(_rationale_) ou les éventuels problèmes anticipés (_problem_).
+
+[[rationale]]
+.Exemples de _rationale_ et _problem_ (OMG SysML v1.4)
+image::rationale.png[width="80%",scaledwidth="80%"]
+
+== Les considérations sur la traçabilité
+
+Une fois que les _requirements_ ont été définis et organisés, il est utile de les lier au moins aux _use cases_
+(en utilisant `\<<refine>>` par exemple) et aux éléments structurels (en utilisant `\<<satisfy>>` par exemple), mais ceci
+sera abordé dans la partie sur les concepts <<transvers,transverses>>.
+
+[NOTE]
+====
+Par exemple, en général, chaque _requirement_ devrait être relié à au moins un
+artefact de conception (ne serait-ce qu'un _use case_)footnote:[et vice-versa!].
+====
+
+== Les _Use Case Diagrams_
+
+Bien que nous traitions les cas d'utilisation dans la partie <<behavior,comportement>>, nous les abordons
+	ici du fait de leur proximité avec les _requirements_.
+
+.Exemple de lien entre _use case_ et _requirements_
+image::req-uc-relation.png[width="40%",scaledwidth=40%]
+
+ifdef::backend-deckjs[=== Les _Use Case Diagrams_ (suite)]
+
+Ce diagramme est exactement identique à celui d'{uml}.
+
+.Exemple de diagramme des cas d'utilisation
+image::UCGestionNotes.png[width="70%",scaledwidth=70%]
+
+[TIP]
+====
+Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.
+====
+
+== {resume}
+
+Les exigences sont très importantes en ingénierie système, plus en tout cas qu'en ingénierie logiciel,
+du fait de la multiplication des sous-systèmes et donc des intermédiaires (fournisseurs, sous-traitants, etc.)
+avec qui les aspects contractuels seront souvent basés sur ces exigences. Il n'est donc pas étonnant qu'un  diagramme
+et des mécanismes dédiés aient été prévus en {sysml}.
+
+.Déclinaison des Exigences
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,2,1,1,1",options="header",width="90%"]]
+|======================
+|					| [red]*{Requirements}* 			| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	| `⊕–`, `\<<deriveReqt>>`			|        		|				|
+| {analysis}		| `\<<satisfy>>`, `\<<refine>>`		|  `\<<satisfy>>` entre reqs et UC|	`\<<refine>>` |
+| {design}			| `\<<allocate>>`					|        		|				|
+| {implementation}	|	`\<<satisfy>>`, `\<<verify>>`	|        		|				|
+|======================
+
+En terme de démarche, il est classique d'avoir de nombreux aller-retour entre la modélisation
+des exigences et la modélisation du système lui-même (cf. <<sysmod>>).
+
+[[sysmod]]
+.Exemple de démarche (_SYSMOD Zigzag pattern_)
+image::zigzag.png[width="70%",scaledwidth=70%,link="http://model-based-systems-engineering.com/2012/03/26/the-sysmod-zigzag-pattern/"]
+
+== {revisions}
+
+. Quelles sont les différences entre *besoins* et *exigences* ?
+. En quoi les cas d'utilisation sont-ils complémentaires des exigences?
+. Quelle est la différence entre un _package_ de type *_model_* et un _package_ de type *_package_*?
