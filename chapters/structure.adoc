@@ -1,4 +1,8 @@
+
+//---------------------------------------------------------------------------------
+[[archi]]
 = Structure et contraintes
+//---------------------------------------------------------------------------------
 
 //-----------------------------------------------
 ifndef::final[]
@@ -11,3 +15,397 @@ IBD, BDD et Parametric.
 ====
 //-----------------------------------------------
 endif::final[]
+
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
+|======================
+|					| {Requirements} 	| [red]*{Structure}*	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|				|
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+== Fondements
+
+On abordera :
+
+- l'organisation du système et des modèles
+- les _Block Definition Diagrams_
+- les _Internal Block Diagrams_
+- les _Parametric Diagrams_ (pour les contraintes physiques)
+- les _Sequence Diagrams_ (diagramme de séquence système)
+
+== Organisation du système et des modèles
+
+En terme d'organisation, le mécanisme clef est celui de _package_.
+Celui-ci va permettre d'organiser les modèles, pas le système lui-même.
+Nous avons abordé cette organisation (cf. <<package>>).
+
+Pour l'organisation du système, on trouve le plus souvent :
+
+- un diagramme décrivant le contexte (le système dans son environnement), décrit dans un _block definition diagram_ (cf. <<contextebdd>>)
+- un diagramme décrivant les éléments internes principaux du système,  décrit dans un _internal block diagram_
+
+[[bddsec]]
+== _Block Definition Diagrams_
+
+
+=== Principes de base
+
+Un `{bdd}` peut représenter :
+
+- un _package_
+- un bloc
+- un bloc de contrainte (_constraint block_)
+
+ifdef::backend-deckjs[==== Principes de base (suite)]
+
+Un diagramme de bloc décrit les relations entre les blocs (compositions, généralisations, ...).
+Ce diagramme utilise les mêmes éléments que le diagramme de classe {uml}.
+
+[[contextebdd]]
+.bdd du système dans son environnement
+image::pacemaker-context.png[width="80%",scaledwidth=50%]
+
+Un bloc est constitué d'un certain nombre de compartiments (_Compartments_) :
+
+_Properties_::
+	Equivalent {uml} des propriétés (e.g., attributs).
+_Operations_::
+	Les méthodes supportées par les instances du bloc.
+_Constraints_::
+	Les contraintes (cf. <<contraintes>>)
+_Allocations_::
+	Les allocations (cf. <<transvers>>)
+_Requirements_::
+	Les exigences liées à ce bloc.
+_User defined_::
+	On peut définir ses propres compartiments.
+
+[[contraintes]]
+.Exemple de définition de contraintes
+image::constraints.png[width="70%",scaledwidth=50%]
+
+
+==== Propriétés
+
+On peut différencier 4 types de propriétés d'un bloc :
+
+_value properties_::
+	Des caractéristiques (quantifiables), aussi appelées simplement _values_
+_parts_::
+	Les éléments qui composent le bloc (cf. <<ibd>>)
+_references_::
+	Les éléments auquel le bloc a accès (via des associations ou des agrégations)
+_constraint properties_::
+	Les contraintes que doivent respecter les propriétés (nous les verrons plus en détail, cf. <<param>>).
+
+[NOTE]
+====
+Les _values_ sont ce qui se rapproche le plus des attributs de classes UML.
+====
+
+==== _Value Types_
+
+Pour associer un type aux valeurs, {SysML} propose de définir des _Value Types_.
+
+.Définition de _Value Types_
+image::valueType.png[width="60%",scaledwidth=50%]
+
+==== Associations entre blocs
+
+Il existe deux types de relations entre blocs :
+
+- l’association (y compris l’agrégation et la composition)
+- la généralisation/spécialisation
+
+Ces deux types de relations, bien connues en {uml}, permettent de matérialiser les liens qui existent entre les éléments du système. Avant d'aborder les associations, il est important de différencier la description d'éléments structurels sous la forme d'un bloc (au travers d'un `{bdd}` par exemple) et ces éléments pris individuellement. Ces derniers sont des *instances* individuelles du même bloc. Cette notion, très présente dans les approches orientées objets est souvent plus ardue à appréhender pour les ingénieurs systèmes. Il faut bien comprendre que la modélisation d'un bloc consiste à représenter l'ensemble des éléments qui caractérisent tout une série d'objets (des moteurs, des pompes, des données, etc.). Il serait fastidieux de les représenter tous (individuellement), et c'est donc leur "signature" que l'on représente. C'est pour cela qu'un bloc n'est pas un élément physique, mais simplement sa représentation, tandis qu'une instance de ce bloc représentera elle cet élément physique. C'est le cas notamment des participants d'un diagramme de séquence ou encore des parties d'un composé, qui sont des instances et non des blocs.
+
+====  Association
+
+Une *association* est un ensemble de liens permanents existant entre les instances de deux ou plusieurs blocs.
+On dira qu’une association lie plusieurs blocs ou que les blocs *participent* à l’association.
+
+Une association possède plusieurs propriétés :
+
+Dimension d’une association::
+Nombre de blocs mis en jeu par l’association
+(binaire : 2, ternaire : 3, n-aire : n).
+
+[NOTE]
+.Exemple d’association binaire
+====
+Soient les bloc `Fournisseurs` et `Produits`.
+On veut indiquer quels sont les produits susceptibles d’être fournis par chaque fournisseur et quels sont les fournisseurs susceptibles de fournir chaque produit.
+
+image::prod-fourn.png[width="40%",scaledwidth=50%]
+====
+
+Nom d’une association::
+Afin de clarifier les informations, il est important de nommer les associations.
+Il existe trois façons de nommer une association :
+
+- un verbe à l’infinitif (e.g., `Fournir`)
+- un verbe conjugué avec un sens de lecture : `Fournit >`  ou  `< Est fourni par`
+- un rôle (placé à une extrémité de l’association)
+
+Cardinalité::
+Indique à combien d’instances minimum et maximum du bloc d’en face est lié toute instance du bloc de départ. Elle est représentée par un couple `(M..N)`.
+
+[CAUTION]
+====
+Attention, dans une cardinalité `M..N`, `M` doit toujours être inférieur ou égal à `N`.  Exemple : `3..10`.
+====
+
+.Exemple d'associtaion
+image::cardinalite.png[width="50%",scaledwidth=50%]
+//[Clients]1..2--1..*[Comptes]
+
+====  Vers le code : que signifie vraiment une association?
+
+En terme de logiciel, une *association* représente une contrainte sur la suite du développement : que ce soit un *code* (en langage orienté objet la plupart du temps) ou une *base de donnée*.
+
+Pour reprendre l'exemple précédent, cela signifie concrètement au niveau d'un code par exemple
+que depuis une variable `Produits` on doit être capable d'accéder à une variable (correspondante)
+de type tableau (ou liste, ou ...) de `Fournisseurs`.
+
+Ce qui peut donner en java :
+
+[source,java]
+-----------------------------
+public class Produits
+{
+//Produits Attributes
+private String idPro;
+private String designation;
+private float poids;
+
+//Produits Associations
+private List<Fournisseurs> fournisseurs;
+...
+-----------------------------
+
+En terme d'ingénierie système, on utilisera plutôt des associations spécifiques (surtout la composition).
+
+.Deux façon de représenter une propriété de type `B`
+image::aggreg-comp.png[link="http://stackoverflow.com/questions/7718035/uml-association-and-dependency",width="60%",scaledwidth=50%]
+
+En terme d'{is}, une composition indique que l'élément est une partie intégrante (on parle de _part_) du tout (un composant, comme le moteur d'une voiture par exemple) tandis q'une agrégation indique que l'élément est une partie "externe" (on parle de _reference_) comme la batterie d'un portable.
+
+[NOTE]
+====
+Un moyen simple en terme logiciel de déterminer si une association `A->B` est une association dirigée (navigable dans un sens), une agrégation ou une composition est de raisonner en terme d'implémentation :
+
+- c'est une agrégation si `b` est initialisé dans le constructeur de `A` ;
+- c'est une composition si il est aussi détruit dans le destructeur de `A` ;
+- c'est une association dirigée simple si aucun des deux cas précédent ne s'applique.
+====
+
+.Exemple de composition
+image::compo.png[width="50%",scaledwidth=50%]
+//[<<block>>\nVoiture]@+-1>[<<block>>\nMoteur]
+
+====  Généralisation/Spécialisation
+
+Lorsque plusieurs blocs ont des caractéristiques en communs (propriétés, associations, comportement), il peut être utile de "factoriser" ces éléments en un bloc dont les autres vont "hériter".
+Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un") en partant des blocs différents pour établir un nouveau bloc contenant les points communs on parle de *généralisation*.
+À l'inverse, quand on constate qu'un bloc possède réellement plusieurs déclinaisons différentes et que l'on créé alors des blocs spécifiques, on parle alors de *spécialisation*.
+
+.Exemple de lien de généralisation/spécialisation
+image::genspec.png[width="50%",scaledwidth=50%]
+//[<<block>>\nMoteur]^-[<<block>>\nMoteurExplosion], [<<block>>\nMoteur]^-[<<block>>\nMoteurElectrique]
+
+On retrouve cette association entre blocs, mais aussi entre acteurs, cas d'utilisation, etc.
+
+[[ibd]]
+== _Internal Block Diagrams_
+
+Un `{ibd}` décrit la structure interne d’un bloc sous forme de :
+
+parts::
+	Les parties qui constituent le système (ses sous-systèmes)
+ports::
+	Elément d'interaction avec un bloc
+connecteurs::
+	Liens entre ports
+
+=== Parts
+
+Les parties sont représentés par les éléments au bout d'une composition dans un `{bdd}`.
+Elles sont créés à la création du bloc qui les contient et sont détruites avec lui s'il
+est détruit (dépendance de vie).
+
+[CAUTION]
+====
+Il ne s'agit pas de redessiner le BDD. Les _parts_ sont des instances et non des classes (au sens objet).
+====
+
+On représente les _parts_ comme des bloc en traits pleins
+et les _references_ comme des blocs en trait pointillés.
+
+.Exemple de _Parts_
+image::parts.png[width="40%",scaledwidth="50%"]
+
+.Autre exemple de _Parts_
+image::parts2.png[width="60%",scaledwidth="50%"]
+
+==== Ports (SysML 1.2)
+
+[CAUTION]
+====
+La dernière version de la spécification {norme} préconise l'abandon des ports tels que définis
+dans la version 1.2. Nous présentons les nouvelles notions dans la <<port13,section qui suit>>.
+
+Néanmoins, de par l'importance des exemples qui utilisent les notions habituelles de ports,
+et vu que tous les outils ne supportent pas encore les nouveaux ports, nous indiquons ici
+leur définition et recommandons pour l'instant de les utiliser.
+====
+
+Les ports :
+
+- préservent l'encapsulation du bloc
+- matérialise le fait que les interactions avec l'extérieur (via un port)
+sont transmise à une partie (via un connecteur)
+- les ports connectés doivent correspondre (_kind_, _type_, _direction_, etc.)
+
+[NOTE]
+====
+Les ports définissent les points d’interaction offerts (`«provided»`) et requis (`«required»`) entre les blocs.
+Les connecteurs peuvent traverser les "frontières" sans exiger de ports à chaque hiérarchie.
+====
+
+.Exemples de flots
+image::ports-flots.png[width="60%",scaledwidth="50%"]
+
+.Définition : Ports (OMG SysML v1.4, p. 71)
+[NOTE]
+====
+_Ports are points at which external entities can connect to and interact with a block in different or more limited ways than connecting directly to the block itself._
+====
+
+.Exemples de flots multi-physique entre ports
+image::flots.png[width="90%",scaledwidth="50%"]
+
+Les ports peuvent être de nature classique (comme en {UML}) et représenter la fourniture ou le besoin de services. On parle alors
+de _*standard flows*_.
+
+Ils peuvent aussi être de nature "flux physique", on parle de _*flow ports*_.
+
+Les `Flux` peuvent être :
+
+- atomiques (un seul flux),
+- composites (agrégation de flux de natures différentes).
+
+[NOTE]
+====
+Un _flow port_ atomique ne spécifie qu’un seul type de flux en entrée ou en sortie (ou les deux),
+la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un bloc ou un _Value Type_ représentant le type d’élément pouvant circuler en entrée ou en sortie du port.
+====
+
+[[port13]]
+=== Ports (SysML 1.3)
+
+<<<<<<< HEAD
+La nouvelle spécification {norme} introduit les concepts de:
+=======
+La version 1.3 de la spécification {sysml} introduit les concepts de :
+>>>>>>> jmb
+
+_proxy port_::
+Ils doivent remplacer les ports 1.2 (ports de flots et ports standards) en en reprenant les caractéristiques
+et en ajoutant la possibilité d'imbrication et de spécification renforcée.
+
+_full port_::
+En fait il s'agit du même concept qu'une partie qui serait exposée à l'extérieur.
+
+[NOTE]
+====
+Pour une discussion sur les différences entre les deux ports : http://model-based-systems-engineering.com/2013/09/23/sysml-full-ports-versus-proxy-ports/
+====
+
+<<<<<<< HEAD
+======
+Check if this is still true in 1.4
+======
+=======
+[[port14]]
+=== Ports (SysML 1.4)
+
+La version {norme}...
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Check if this is still true in 1.4
+*****
+====
+//-----------------------------------------------
+endif::final[]
+>>>>>>> jmb
+
+[[param]]
+== _Parametric Diagrams_
+
+Afin de capturer de manière précise les contraintes entre valeurs, ou encore les liens entre les sorties et les entrées d'un bloc, {sysml} utilise trois concepts clefs :
+
+- _Constraints_ (un type de bloc)
+- _Parametric diagram_ (un type d'`{ibd}`)
+- _Value binding_
+
+=== Contraintes
+
+C'est un bloc particulier :
+
+- avec un stéréotype `<<constraint>>` (au lieu de bloc)
+- des paramètres en guise d'attributs
+- des relations liant (contraignant) ces paramètres
+
+.Exemple de contraintes
+image::constraints.png[width="80%",scaledwidth="50%"]
+
+.Définition : _ConstraintBlock_ (OMG SysML v1.4, p. 101)
+[NOTE]
+====
+_A constraint block is a block that packages the statement of a constraint so it may be applied in a reusable way to constrain properties of other blocks._
+====
+
+=== Diagramme paramétrique
+
+C'est une forme particulière de _Internal Block Definition_
+
+.Exemple de diagramme paramétrique
+image::param.png[width="90%",scaledwidth="50%"]
+
+=== _Value Binding_
+
+Une fois les contraintes exprimées, il faut lier les paramètres (formels) à des valeurs (paramètre réel).
+C'est l'objet des _Value Binding_.
+
+Pour assigner des valeurs spécifiques, on utilise des _Block Configurations_;
+
+.Exemple de bloc de configuration
+image::blockconf.png[width="90%",scaledwidth="50%", link="http://books.google.fr/books?id=8KY2YZIiXv0C&pg=PA174&lpg=PA174&dq=SYSml+%22block+configuration%22&source=bl&ots=ZdxokRYj6l&sig=PlDHvR8qGZC97W-C_08Yk9Xb1RY&hl=fr&sa=X&ei=1jizUOXKBsXAhAeinYHACg&ved=0CEEQ6AEwAg#v=onepage&q=SYSml%20%22block%20configuration%22&f=false"]
+
+
+== {resume}
+En résumé, il existe plusieurs diagrammes permettant d'exprimer la structure du système à concevoir. En fonction du niveau de détail nécessaire on peut voir les sous-systèmes comme des boîtes noires (des blocs) ou comme des boîtes blanches (grâce à l'`{ibd}` correspondant).
+
+.Place des aspects structurels
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
+|======================
+|					| {Requirements} 	| [red]*{Structure}*		| {Behavior} 	| {Crosscutting}
+| {organisation}	|					| `package`					|				|
+| {analysis}		|					| `{bdd}` `{par}`       		|				|
+| {design}			|					| `{bdd}` `{par}` `{ibd}` `{dss}`	|				|
+| {implementation}	|					| `{bdd}` `{par}` `{ibd}` `{dss}`	|				|
+|======================
+
+== {revisions}
+
+. Quelles sont les différences entre une association dirigée (`->`), une composition (losange noir) et l'agrégation (losange blanc) ?
+. Puisqu'un `{bdd}` me donne souvent la liste des sous-systèmes (liens de composition), pourquoi ai-je besoin d'un `{ibd}` ?

@@ -1,3 +1,4 @@
+
 [appendix]
 [[acro]]
 == Acronymes
@@ -7,6 +8,9 @@ Liste des acronymes utilisés dans ce livre.
 BDD::
 _**B**lock **D**efinition **D**iagram_
 
+IDD::
+_**I**nternal **B**lock **D**iagram_
+
 IS::
 **I**ngénierie **S**ystème
 
@@ -15,13 +19,107 @@ IS::
 [[histoire]]
 == Les histoires de SysML et de Papyrus
 
-=== SysML
+=== Histoire de SysML
 
 {SysML} est né...
 
-=== Papyrus
+........
+=> Diagrammes et jalons importants
+........
+
+........
+=> Le futur et les changements techniques à venir, dans les cartons de l'{omg}.
+........
+
+=== Histoire de Papyrus
 
 {Papyrus} est né...
+
+=== Couverture des concepts
+
+Comme indiqué en avant-propos de ce livre, nous n'abordons qu'une partie des concepts {sysml}, les plus importants.
+Nous nous sommes basés sur la classification du système de certification de l'{omg} <<OCSMP>>.
+
+Nous indiquons dans le tableau ci-dessous le différents concepts du niveau
+initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM)
+et où ils sont abordés dans le livre.
+
+
+==== Modèles d'exigences
+
+[align="center",cols="3,1*^",options="header",width=100]
+|======================
+|	Concept         |   Lien
+| Exigences       |		<<reqs>>
+| derive, verify, satisfy, refine, trace, containment |
+| Diagramme d'exigences |
+| Diagramme des cas d'utilisation |
+| Diagramme d'exigences |
+| use case, actor, and subject | <<uc-concepts>>
+| association, include, extend, generalization | <<uc-concepts>>
+|======================
+
+==== Modèles structurels
+
+[align="center",cols="3,1*^",options="header",width=100]
+|======================
+|	Concept         |   Lien
+| Package Diagram       |
+| ownership, namespace |
+| containment, dependency |
+| view, viewpoint |
+| Block definition, Block usage |
+| valuetype (with units) |
+| value properties, parts, references, and operations |
+| Block Definition Diagram |
+|	Concept         |   Lien
+| compartments |
+| specialization, associations (including compositefootnote:[but not shared aggregation]), multiplicities|
+| Internal Block Diagram |
+| enclosing block |
+| flow ports and standard ports |
+|	Concept         |   Lien
+| connectors and item flows |
+|  representation of parts |
+| constraint blocks |
+| Parametric Diagram |
+|  constraint properties, constraint parameters, and constraint expressions |
+| connecting constraint properties and value properties with binding connectors |
+|======================
+
+==== Modèles comportementaux
+
+[align="center",cols="3,1*^",options="header",width=100]
+|======================
+| Activity Diagram |
+| I/O flow including object flow, parameters and parameter nodes, and pins |
+|  control flow including control nodes |
+| activity partitions (swimlanes) |
+| actions |
+| send signal action |
+| accept event action |
+| Sequence Diagram|
+| lifelines; asynchronous and synchronous messages |
+| interaction references |
+| State Machine Diagram |
+| states and regions |
+| transitions |
+| trigger by time and signal events, guard, and action |
+| behaviors (entry, exit, and do)|
+|======================
+
+==== Eléménts transverses
+
+[align="center",cols="3,1*^",options="header",width=100]
+|======================
+| Allocation |
+|  AllocatedFrom and AllocatedTo|
+| representation (callouts, compartments, allocate activity partitions, and tables) |
+| special notations for comment, rationale, problem, and constraint |
+|  diagram frames, ports, parameters, and anchors on diagram frames |
+| diagram header, and diagram description |
+| Stereotype |
+|======================
 
 [appendix]
 [[index]]

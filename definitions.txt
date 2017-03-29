@@ -4,13 +4,13 @@
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus]
 :papyrusversion: 2.0.1
 :siteurl: https://bit.ly/sysmlbook
+:gihuburl: https://github.com/jmbruel/sysmlpapyrusbook
 
 //Layouts
 :standHeight: 250
 :standScreen: 500
 :standWidth: 250
 :mytablewidth: 50%
-:here: icon:map-marker[role=red]
 
 // config
 ifdef::env-github[]
@@ -28,6 +28,7 @@ endif::[]
 :bouml: http://www.bouml.fr[BOUML]
 :asciidoctorlink: http://asciidoctor.org/[Asciidoctor]indexterm:[Asciidoctor]
 :cea: http://www-list.cea.fr/[CEA LIST]
+:list: {cea}
 :cdo: http://www.eclipse.org/cdo/[CDO]
 :cucumber: link:http://cukes.info/[Cucumber]
 :doors: http://www-03.ibm.com/software/products/fr/fr/ratidoor/[DOORS(TM)]
@@ -54,7 +55,7 @@ endif::[]
 :modelica: https://www.modelica.org/[Modelica(R)]
 :modelio: http://www.modeliosoft.com/[Modelio]
 :models: http://www.modelsconference.org/[MODELS]
-:norme: http://www.omg.org/spec/SysML/1.3/PDF/[OMG SysML v1.3]
+:norme: http://www.omg.org/spec/SysML/1.4/PDF/[SysML{nbsp}1.4]
 :omg: http://www.omg.org[OMG(TM)]indexterm:[OMG]
 :OSLC: http://open-services.net/[OSCL]
 :obeo: link:http://www.obeo.fr/[Obeo]
@@ -78,6 +79,7 @@ endif::[]
 :sosym: http://www.sosym.org/[SoSyM]
 :sym: http://www.omg.org/spec/SyM/[SysML-Modelica]
 :sysml: http://www.omgsysml.org/[SysML(TM)]indexterm:[SysML]
+:topcased: http://www.topcased.org[TOPCASED]indexterm:[Topcased]
 :uml: http://www.uml.org/[UML(TM)]indexterm:[UML(TM)]
 :umlspec: http://www.omg.org/spec/UML/2.4.1/Infrastructure/PDF/[UML 2.4.2 Specifictation]
 :umple: http://cruise.eecs.uottawa.ca/umple/[Umple]
@@ -92,32 +94,40 @@ endif::[]
 :arcadia: link:https://www.polarsys.org/capella/arcadia.html[Arcadia]
 :capella: link:https://polarsys.org/capella/[Capella]
 :cealist: http://www-list.cea.fr/[CEA Tech List]
+:dl: http://www.master-developpement-logiciel.fr/[Master DL]
 :incose: link:http://www.incose.org/[INCOSE]indexterm:[INCOSE](((INCOSE)))
 :iso: http://www.iso.org/[ISO](((ISO)))
 :irit: http://www.irit.fr[IRIT](((IRIT)))
 :iut: http://www.iut-blagnac.fr/[IUT de Blagnac]
 :jmb: mailto:bruel@irit.fr[Jean-Michel Bruel]
-:rf: mailto:raphael.faudou@atos.net[Rapha��l Faudou]
+:nico: mailto:nicolas.belloir@univ-pau.fr[Nicolas Belloir]
+:pdss:  Pierre de Saqui Sannes
+:rf: mailto:raphael.faudou@atos.net[Raphaël Faudou]
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
 :tim: mailto:Tim.Weilkiens@oose.de[Tim Weilkiens]
-:univ-tlse: http://www.univ-toulouse.fr[Universit̩ de Toulouse]
+:uag: http://www.uag.mx/[Universitad Autónoma de Guadalajara]
+:univ-tlse: http://www.univ-toulouse.fr[Université de Toulouse]
+:uppa: http://www.univ-pau.fr/[Université de Pau et des Pays de l'Adour]
+:ups: http://www.univ-tlse3.fr[UPS]
+:univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Le Mirail]
+:ut2j: {univ-tlse2}
 
 //------- Normes et Références
 :arp4754a: http://sunnyday.mit.edu/16.355/arp4754a.pdf[ARP4754A]
 
 // SysML diagrams
-:act: act(((act)))
-:bdd: bdd(((bdd)))
-:dc: dc(((dc)))
-:dss: dss(((dss)))
-:ibd: ibd(((ibd)))
-:stm: stm(((stm)))
-:req: req(((req)))
-:uc: uc(((uc)))
-:pkg: pkg(((pkg)))
-:par: par(((par)))
-:seq: sd(((sd)))
-:sd: sd(((sd)))
+:act: <<act,act>>(((act)))
+:bdd: <<bdd,bdd>>(((bdd)))
+:dc: <<dc,dc>>(((dc)))
+:dss: <<dss,dss>>(((dss)))
+:ibd: <<ibd,ibd>>(((ibd)))
+:stm: <<stm,stm>>(((stm)))
+:req: <<req,req>>(((req)))
+:uc: <<uc,uc>>(((uc)))
+:pkg: <<pkg,pkg>>(((pkg)))
+:par: <<par,par>>(((par)))
+:seq: <<sd,sd>>(((sd)))
+:sd: <<sd,sd>>(((sd)))
 
 // data divers
 :Requirements: <<reqs,Exigences>>
@@ -127,8 +137,10 @@ endif::[]
 :organisation: Organisation
 :analysis: Analyse
 :design: Conception
-:implementation: Impl̩mentation
-:resume: En r̩sum̩
-:revisions: Questions de r̩vision
-:is: Ing̩nierie Syst̬me(((IS)))
+:implementation: Implémentation
+:resume: En résumé
+:revisions: Questions de révision
+:is: Ingénierie Système(((IS)))
 :stakeholders: parties prenantes
+:here: icon:map-marker[role=red] You are here!
+:ModelUser: link:http://www.omg.org/ocsmp/coveragemap-user.htm[Model User]

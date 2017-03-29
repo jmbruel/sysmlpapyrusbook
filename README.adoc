@@ -6,3 +6,7 @@ Ce dépôt est un dépôt de travail pour construire un livre sur la notation {S
 
 - La version web du livre est disponible https://jmbruel.github.io/sysmlpapyrusbook[ici].
 - La version PDF du livre est disponible https://jmbruel.github.io/sysmlpapyrusbook/master.pdf[ici].
+
+== Note for contributors
+
+- Source files should be in UTF-8 (`grep -axv '.*' file .txt`)

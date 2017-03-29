@@ -13,33 +13,54 @@ v1.2, {localdate}
 :experimental:
 :linkcss:
 :title-page-background-image: image:papyrus-logo.png[pdfwidth=25%]
+:defs: defs
 
 include::definitions.txt[]
+
+ifndef::backend-pdf[]
+image:https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
+(Fork me on https://github.com/jmbruel/sysmlpapyrusbook[icon:github[] GitHub])
+endif::backend-pdf[]
 
 [preface]
-include::definitions.txt[]
 include::chapters/about.adoc[leveloffset=+1]
 include::chapters/preface.adoc[leveloffset=+1]
 
 :numbered:
 
 include::chapters/introduction.adoc[leveloffset=+1]
+// a la fin
 
 include::chapters/caseStudy.adoc[leveloffset=+1]
-
-include::chapters/overview.adoc[leveloffset=+1]
+// JMB
+// Cahier des charges?
 
 include::chapters/install.adoc[leveloffset=+1]
+// Getting started => SEB
+
+include::chapters/overview.adoc[leveloffset=+1]
+// JMB
+
+include::chapters/methode.adoc[leveloffset=+1]
+// SEB
 
 include::chapters/requirements.adoc[leveloffset=+1]
+// SEB
+
+include::chapters/usages.adoc[leveloffset=+1]
+// SEB
 
 include::chapters/structure.adoc[leveloffset=+1]
+// JMB
 
 include::chapters/behavior.adoc[leveloffset=+1]
+// SEB
 
 include::chapters/interaction.adoc[leveloffset=+1]
+//JMB
 
 include::chapters/crossCuting.adoc[leveloffset=+1]
+// SEB
 
 include::chapters/realLife.adoc[leveloffset=+1]
 

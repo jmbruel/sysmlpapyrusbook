@@ -1,3 +1,5 @@
+
+[[Intro]]
 = Introduction
 
 //-----------------------------------------------
@@ -30,10 +32,48 @@ ifndef::final[]
 ====
 *****
 Parler de l'importance de modéliser, des points forts du MBSE, etc.
+Différences entre diagrammes, tables, vues, etc.
+Aborder l'importance de la différence entre les éléments de modèles et leur représentation.
+Aborder la "philosophie" de Papyrus en la matière.
 *****
 ====
 //-----------------------------------------------
 endif::final[]
+
+=== Pourquoi modéliser
+
+=== Différence entre modèle et dessin
+
+{SysML} n'est pas une palette de dessins et d'éléments de base servant à faire
+des diagrammes. Il existe une représentation graphique des éléments modélisés en {SysML}. Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c'est *le modèle* qui importe le plus.
+
+C'est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes {SysML} footnote:[Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.], mais d'utiliser des outils dédiés (cf. <<Outils>>).
+Ils respectent en général la norme {norme} (bien qu'il faille se méfier).
+
+[NOTE]
+====
+Notez que la norme permet de faire des adaptations graphiques (cf. la discussion http://www.realtimeatwork.com/2011/08/is-sysml-too-abstract/).
+====
+
+// Merci à Raphaël Faudou pour cette partie
+
+Un des intérêts de la modélisation est de faciliter la communication, notamment
+au travers des diagrammes et leur aspect graphique et synthétique.
+Un dessin est donc un plus par rapport à du texte. Néanmoins, il ne faut pas se
+contenter d'un simple dessin pour au moins deux raisons importantes :
+
+- un dessin n'est pas assez formel (comment être sûr d'avoir correctement utilisé tel ou tel symbole, cf. les deux exemples ci-dessous) ;
+- il est impossible d'assurer la cohérence globale des modèles dans le cas d'un dessin.
+
+Un modèle est une sorte de base de donnée qui regroupe des éléments issues de différents points de vue (saisis le plus
+souvent au travers de diagrammes). Un diagramme est une vue partielle du modèle (donc incomplète).
+Le modèle est la vraie plus value car il va permettre de détecter les incohérences sur les exigences, les problèmes de complétude,
+lancer des analyses, faire des transformations vers d'autres langages ou formats, etc.
+Par exemple dans un outil de modélisation il y a une grande différence entre supprimer un élément d'un diagramme (on parlera
+alors de "masquer" un élément d'un diagramme) et supprimer un élément de modèle (ce qui aura pour effet de supprimer cet élément de
+tous les diagrammes où il était présent).
+
+=== Quoi modéliser
 
 [[methods]]
 == Démarches et méthodes de développement
@@ -42,7 +82,8 @@ Ce livre n'est pas un livre sur l'ingénierie système.
 Il ne s'agit donc pas pour nous de rappeler les grandes démarches de développement de système.
 Nous renvoyons pour cela le lecteur aux grands classiques (xxx,yyy).
 
-Références sur les méthodos : <<Estefan>>, <<Ramos>>, <<Dickerson>>.
+Références sur les méthodos : <<Estefan>>, <<Ramos>>, <<Dickerson>>,
+CESAME, Arcadia, SEBOK, OOSE, Tim Wilkiens, CORE (EFFB), Merise?
 
 ifdef::backend-pdf[<<<]
 == Matrice des concepts

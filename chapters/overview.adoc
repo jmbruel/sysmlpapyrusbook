@@ -1,3 +1,4 @@
+
 [[overview]]
 = Les contours de SysML (introduction à SysML)
 
@@ -95,10 +96,10 @@ Ne dites pas "le SysML" mais tout simplement "SysML".
 
 === Différence avec UML
 
-La figure <<liensdiag,suivante>>, tirée de la <<SysML1.4,spécification>>, résume bien les liens entre {sysml} et {uml}, à savoir que {sysml} reprend une partie seulement des concepts d'{uml} (appelée `UML4SysML`) en y ajoutant des concepts nouveaux.
+La figure <<liensdiag,suivante>>, tirée de la <<SysML,spécification>>, résume bien les liens entre {sysml} et {uml}, à savoir que {sysml} reprend une partie seulement des concepts d'{uml} (appelée `UML4SysML`) en y ajoutant des concepts nouveaux.
 
 [[liensdiag]]
-.Liens entre UML et SysML (tiré de <<SysML1.4,SysML1.4,p. 7>>)
+.Liens entre UML et SysML (tiré de <<SysML,SysML 1.4,p. 7>>)
 image::diff.png[SysML and UML,width=50%,scaledwidth=50%]
 
 === Qui est "derrière"?
@@ -117,6 +118,21 @@ AP-233, INCOSE, Georgia Institute of Technology, AFIS, ...
 La liste complète des membres de l'{omg} est accessible à l'URL : http://www.omg.org/cgi-bin/apps/membersearch.pl
 ====
 
+//---------------------------------------------------------------------------------
+[[Outils]]
+=== 	Outils SysML
+//---------------------------------------------------------------------------------
+
+
+Il va de soit que le meilleur outil {sysml} à ce jour est {papyrus}, dont ce livre
+vous détaille l'utilisation, mais il existe un certain nombre d'autres outils
+permettant de réaliser des modèles {SysML}.
+En voici une liste non exhaustive :
+
+include::outils.txt[]
+
+Vous trouverez sur Internet des comparatifs et des avis à jour sur les outils.
+
 === Organisation des différents diagrammes
 
 {sysml} propose de couvrir la modélisation d'un système en 9 diagrammes. Ces diagrammes couvrent
@@ -132,11 +148,31 @@ Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons sou
 .Version abrégée des diagrammes
 image::Figure4-1-bis.png[Version abrégée,width=90%,scaledwidth=90%]
 
-.Définition : image:sysml.jpeg[width=20] Types de diagrammes (OMG SysML v1.3, p. 170)
+.Définition : image:sysml.jpeg[width=20] Types de diagrammes (OMG SysML v1.4, p. 190)
 [NOTE]
 ====
 _SysML diagram kinds should have the following names or (abbreviations) as part of the heading..._
 ====
+
+//---------------------------------------------------------------------------------
+=== Cadre pour les diagrammes
+//---------------------------------------------------------------------------------
+
+Abordons quelques principes généraux de {sysml}, c'est à dire des éléments indépendants d'un diagramme en particulier :
+
+- chaque diagramme {SysML} décrit un élément précis (nommé) de modélisation,
+- chaque diagramme {SysML} doit être représenté à l'intérieur d'un cadre (_Diagram Frame_),
+- l'entête de ce cadre, appelé aussi *cartouche*, indique les informations sur le diagramme :
+* le *type* de diagramme (`{req}`, `{act}`, `{bdd}`, `{ibd}`, `{stm}`, etc. en gras) qui donne immédiatement une indication sur le point de vue porté à l'élément de modélisation (comportement, structure, etc.)
+* le type de l'élément (par exemple _package_, _block_, _activity_, etc.), optionnel
+* le nom de l'élément (unique)
+* le nom du diagramme ou de la vue, optionnel.
+
+Dans l'exemple ci-dessous, le diagramme "_Context_Overview_" est un _Block Definition Diagram_ (type `{bdd}`)
+qui représente un _package_, nommé "Context".
+
+.Exemple de diagramme SysML (source <<Kordon>>)
+image::pacemaker-context.png[width="80%",scaledwidth="80%"]
 
 //-----------------------------------------------
 ifndef::final[]
@@ -145,22 +181,108 @@ ifndef::final[]
 ====
 *****
 En suivant la méthodologie simplifiée adoptée pour le livre, introduire les différents diagrammes de SysML.
-Voici un plan possible :
 *****
 ====
 //-----------------------------------------------
 endif::final[]
 
-== Introduction à la démarche
+Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de
+cette section (nous utilisons ici le "plan" vu lors de l'introduction de la <<Matrice>>) :
 
-== Les exigences
+.Organisation
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
+|======================
+|				| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|		{pkg}			|     {pkg}, {bdd}   		|		{pkg}		|
+| {analysis}, {design}, {implementation} footnote:[En fonction du niveau de détail.]
+				|		{req}			|     {bdd}, {ibd}, {seq}, {par}   		| {uc}, {seq}, {stm}, {act}				| {par}
+|======================
 
-== Analyse opérationnelle
 
-== Analyse fonctionnelle
+//== Introduction à la démarche
 
-== Description de l'architecture
+== Diagramme et table d'exigences
+// Sebastien
 
-== Description du comportementaux
+- Diagramme d'exigences (video)
+- Table d'exigences (video)
+//- Import d'exigences => dans la section détaillée correspondante
+
+== Diagramme des cas d'utilisation
+
+== BDD
+
+- Diagramme de contexte
+
+== IBD
+
+- Version 2 du diagramme de contexte
+// Sebastien
+
+== DS
+
+[[dss]]
+=== Diagrammes de séquence système
+
+Les diagrammes de séquence système (DSS) sont des _Sequence Diagrams_ {uml} classiques où seul le système est représenté comme une boîte noire en interaction avec son environnement (les utilisateurs généralement).
+
+Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails.
+Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence classique (cf. section sur les <<seq>>).
+
+
+.Exemples de DSS
+image::dss.png[width="50%",scaledwidth="40%"]
+
+xxx à vérifier xxx
+
+=== Diagramme de séquences
+
+== Diagramme de Machine à états
+// Sebastien
+
+== Diagramme d'activités
+// Sebastien
+
+== Diagramme paramétrique
+// Sebastien
+
+== Diagramme de packages
 
 == Allocation, traçabilité et autres points de cohérences
+
+== {resume}
+
+== {revisions}
+
+[qanda]
+Associez les diagrammes suivants avec leurs acronymes (`{sd}`, `{dc}`, `{uc}`, `{pkg}`, `{dss}`)::
+- Diagramme de Paquetages
+- Diagramme des Cas d'Utilisation
+- Diagramme de Séquences Système
+- Diagramme de Classes
+- Diagramme de Séquences
+
+Placez dans la matrice ci-dessous les différents diagrammes {uml} que vous connaissez déjà (`{sd}`, `{dc}`, `{uc}`, `{pkg}`, `{dss}`)::
+include::matrice-base.asc[]
+
+ifdef::correction[]
+
+.Éléments de correction
+[CAUTION]
+====
+
+image::acronymes-cor.png[width=70%,scaledwidth=70%]
+
+[align="center",cols="h,3*^,1",options="header",width=100]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} | ...
+| {organisation}	|					|        `{pkg}`	| |
+| {analysis}		|		`{uc}`		|       `{dc}`	|	`{dss}` |
+| {design}			|					|       `{dc}`	|	`{sd}` |
+| ... | | | |
+|======================
+
+====
+
+endif::correction[]
