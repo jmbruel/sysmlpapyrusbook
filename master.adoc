@@ -5,7 +5,7 @@ v1.2, {localdate}
 :doctype: book
 :toc: left
 :toc-title: Table des Matières
-:data-uri:
+//:data-uri:
 :lang: fr
 :icons: font
 :final!: //enlever le '!' pour enlever tous les commentaires
