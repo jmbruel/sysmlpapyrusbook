@@ -25,7 +25,7 @@ Ce livre est entièrement réalisé dans cet objectif.
 Nous allons à l'essentiel des concepts et surtout nous vous permettons de les
 manipuler de manière concrète dans un l'outil {papyrus}.
 
-Je veux maîtriser la version {sysml} de {Papyrus}::
+Je veux maîtriser Papyrus-SysML::
 Le logiciel prend une part de plus en plus importante dans le développement de systèmes complexes.
 Si vous utilisez déjà {papyrus} comme modeleur {uml}, et que vous souhaitiez apprendre {sysml} en conservant vos habitudes,
 ce livre, réalisé en collaboration avec l'équipe du {list} en charge du développement de {papyrus}, devrait vous y aider.
