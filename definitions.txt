@@ -1,7 +1,7 @@
 :definitions:
 
 //Papyrus
-:papyrus: http://www.eclipse.org/papyrus/[Papyrus]
+:papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
 :papyrusversion: 2.0.1
 :siteurl: https://bit.ly/sysmlbook
 :gihuburl: https://github.com/jmbruel/sysmlpapyrusbook
@@ -30,6 +30,7 @@ endif::[]
 :cea: http://www-list.cea.fr/[CEA LIST]
 :list: {cea}
 :cdo: http://www.eclipse.org/cdo/[CDO]
+:c-s: link:http://www.c-s.fr/[CS]
 :cucumber: link:http://cukes.info/[Cucumber]
 :doors: http://www-03.ibm.com/software/products/fr/fr/ratidoor/[DOORS(TM)]
 :ea: http://www.sparxsystems.com.au/products/mdg/tech/sysml/index.html[Enterprise Architect]

@@ -5,7 +5,7 @@ v1.2, {localdate}
 :doctype: book
 :toc: left
 :toc-title: Table des Matières
-:data-uri:
+//:data-uri:
 :lang: fr
 :icons: font
 :final!: //enlever le '!' pour enlever tous les commentaires
@@ -42,6 +42,9 @@ include::chapters/overview.adoc[leveloffset=+1]
 // JMB
 
 include::chapters/methode.adoc[leveloffset=+1]
+// SEB
+
+== Getting started with Papyrus-SysML
 // SEB
 
 include::chapters/requirements.adoc[leveloffset=+1]

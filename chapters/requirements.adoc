@@ -90,6 +90,13 @@ Plusieurs types d'organisations sont possibles :
 ** ...
 - etc.
 
+.Exemple concret
+[TIP]
+====
+Dans l'entrepris {c-s}, les exigences sont organisées en calquant l'arborescence sur les documents textuels que les ingénieurs ont l'habitude d'utiliser.
+Ceci facilite le travail d'organisation des exigences pour les ingénieurs <<Neptune17>>.
+====
+
 === Tableaux de _Requirements_
 
 Les _requirements_ sont habituellement stockés dans des tableaux (feuilles excel le plus souvent!).
