@@ -1,7 +1,7 @@
 :definitions:
 
 //Papyrus
-:papyrus: http://www.eclipse.org/papyrus/[Papyrus]
+:papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
 :papyrusversion: 2.0.1
 :siteurl: https://bit.ly/sysmlbook
 :gihuburl: https://github.com/jmbruel/sysmlpapyrusbook
