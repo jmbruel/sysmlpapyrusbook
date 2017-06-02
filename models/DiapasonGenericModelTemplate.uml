@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+  <uml:Model xmi:id="_Q7ZNACRxEeCaCLd1YXNfIQ" name="&lt;Project Name>">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_XpkjEHb7EeOHCpFb_yGTPQ">
+      <body>Reading scenario:&#xD;
+Step #1 - Investigate model {@link #_o5WlgCRyEeCaCLd1YXNfIQ} (double click on it to start)&#xD;
+Step #2 - Investigate model {@link #_j5KicE3oEeO5W83O6raoHw} (double click on it to start)&#xD;
+Step #3 - Investigate model {@link #_OXE1ICR8EeCaCLd1YXNfIQ} (double click on it to start)&#xD;
+PS: Glossary of the project is defined within the model {@link #_yt5KoFHQEeORnr76KmtUgw} (double click on it to see the details)</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Model" xmi:id="_yt5KoFHQEeORnr76KmtUgw" name="&lt;Project Short Name> Glossary">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_5nRjMHbxEeOJLbWaesGeMg" annotatedElement="_yt5KoFHQEeORnr76KmtUgw">
+        <body>This package consists of classes denoting the items of the glossary of the {@link #_GVomQFHREeORnr76KmtUgw} project.</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GVomQFHREeORnr76KmtUgw" name="&lt;Project Short Name>">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Nf4xAFHSEeORnr76KmtUgw">
+          <body>&lt;Project Name></body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_o5WlgCRyEeCaCLd1YXNfIQ" name="&lt;Project Short Name> Requirements">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_KwtU0DeAEeGpFZREwIhCZA" annotatedElement="_o5WlgCRyEeCaCLd1YXNfIQ">
+        <body>This model formalizes the requirement description of the &lt;Project Name> (in short &lt;Project Short Name>). This model is derived from a textual description of the &lt;Project Short Name> requirements as defined in the document referenced &lt;to be completed>.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_-9Y20HbyEeOJLbWaesGeMg" annotatedElement="_bExNsHbyEeOJLbWaesGeMg _43vuQHbyEeOJLbWaesGeMg">
+        <body>The requirement model, {@link #_o5WlgCRyEeCaCLd1YXNfIQ}, can be further decompopsed into sub-models in order to organize the requirement description. This decomposition matches requirements categories that may reflect various criteria as for example, functional or non-functional criteria.&#xD;
+Requirements models can be viewed either using SysML requirements diagrams or using SysML requirements tables as respectively illustrated for both models {@link #_bExNsHbyEeOJLbWaesGeMg} and {@link #_43vuQHbyEeOJLbWaesGeMg}. </body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_wVyvUH7JEeOc0bxsTW21JA">
+        <body>Model reading scenario:&#xD;
+Step #1 - Investigate model {@link #_yt5KoFHQEeORnr76KmtUgw} (double click on it to start)&#xD;
+Step #2 - Investigate model {@link #_bExNsHbyEeOJLbWaesGeMg} (double click on it to start)</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Model" xmi:id="_bExNsHbyEeOJLbWaesGeMg" name="&lt;Project Short Name> SubReqModel1">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_tsJecH7HEeOc0bxsTW21JA" annotatedElement="_ask2EH7HEeOc0bxsTW21JA">
+          <body>This is a requirement model element (concept defined in SysML). It has two properties that are respectively an id and a text. Both properties are free text-based description.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_uedk0H7KEeOc0bxsTW21JA">
+          <body>Model reading scenario:&#xD;
+Here, the detailled of the Req_1 decomposition is also shown in a SysML requirement table: (double click on {@link #_ask2EH7HEeOc0bxsTW21JA} to open it)</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ask2EH7HEeOc0bxsTW21JA" name="Req_1">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_D5r3oH7IEeOc0bxsTW21JA" name="Req_1.1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Niou4H7IEeOc0bxsTW21JA" name="Req_1.2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Pf2CcH7IEeOc0bxsTW21JA" name="Req_1.3"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_43vuQHbyEeOJLbWaesGeMg" name="&lt;Project Short Name> SubReqModel2"/>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_txtuoDtFEee1tf4JDltoag">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tx3foDtFEee1tf4JDltoag" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_tx3foTtFEee1tf4JDltoag">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tx3fojtFEee1tf4JDltoag" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_j5KicE3oEeO5W83O6raoHw" name="&lt;Project Short Name> External Specification">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_9mrY4FFeEeOLhP-_UGopcg" annotatedElement="_j5KicE3oEeO5W83O6raoHw">
+        <body>This model refines partially the {@link #_o5WlgCRyEeCaCLd1YXNfIQ} model abstracting its internal and providing a black-box view of the &lt;Project Short Name>.</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_fUtqYE3pEeO5W83O6raoHw" name="FromReq2ExtSpec" client="_j5KicE3oEeO5W83O6raoHw" supplier="_o5WlgCRyEeCaCLd1YXNfIQ">
+        <mapping xmi:type="uml:OpaqueExpression" xmi:id="_dBkGkE3qEeO5W83O6raoHw" name="FromReq2ExtSpec_MappingDescription" language="" body=""/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_RDQ_oF3uEeGTC7jtR9befw" name="&lt;Project Short Name> Use Cases">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_PwMs8FkIEeO46MKyR1zbAg" name="&lt;Use Case 001 Name>" subject="_gCDnUFkHEeO46MKyR1zbAg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_7-5v4FkLEeO46MKyR1zbAg" annotatedElement="_Pbm9AFkIEeO46MKyR1zbAg _z9MpYHb-EeOHCpFb_yGTPQ">
+            <body>This is a use case model element. It denotes some behavior of the system under consideration. It is further refined via interaction description using as for example sequence diagrams.&#xD;
+N.B.: each use case shall have a comment denoting it textually.</body>
+          </ownedComment>
+          <ownedBehavior xmi:type="uml:Interaction" xmi:id="_CsLOQFkOEeO46MKyR1zbAg" name="Interaction001_UseCase001">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_5lbWYH7DEeOc0bxsTW21JA" annotatedElement="_zOBvcH7DEeOc0bxsTW21JA">
+              <body>This is a lifeline model element. It represents the system under specification which is abstracted here as black box. The interaction modelled here via this sequence diagram focuses on the messages exchanged between the system and the actors involved in the use case owning the interaction.</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_KEWjMHb-EeOHCpFb_yGTPQ" annotatedElement="_PwMs8FkIEeO46MKyR1zbAg">
+              <body>&lt;Insert here a textual description of the use case>.&#xD;
+N.B.: the comment may be hidden and shown as for example in a table gathering all use cases contained in one use cases pakage, e.g. in the table named &quot;List of use cases contained in the &lt;Project Short Name> Use Cases package.&quot;. </body>
+            </ownedComment>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_zOBvcH7DEeOc0bxsTW21JA" name="Lifeline" represents="_xxK3QH7AEeO3zebKuAwZtw"/>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Q5JDQFkOEeO46MKyR1zbAg" name="Interaction002_UseCase001">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_LU5MUH7FEeOc0bxsTW21JA" annotatedElement="_PwMs8FkIEeO46MKyR1zbAg">
+              <body>&lt;Insert here a textual description of the use case>.&#xD;
+N.B.: the comment may be hidden and shown as for example in a table gathering all use cases contained in one use cases pakage, e.g. in the table named &quot;List of use cases contained in the &lt;Project Short Name> Use Cases package.&quot;. </body>
+            </ownedComment>
+          </ownedBehavior>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_Pbm9AFkIEeO46MKyR1zbAg" name="&lt;Use Case 002 Name>" subject="_gCDnUFkHEeO46MKyR1zbAg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_z9MpYHb-EeOHCpFb_yGTPQ" annotatedElement="_Pbm9AFkIEeO46MKyR1zbAg">
+            <body>&lt;Insert here a textual description of the use case>.</body>
+          </ownedComment>
+          <ownedBehavior xmi:type="uml:Interaction" xmi:id="_KUcnMFkOEeO46MKyR1zbAg" name="Interaction001_UseCase002"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_IeJMMH7GEeOc0bxsTW21JA" name="UC001_refinedIn_Interaction001" client="_CsLOQFkOEeO46MKyR1zbAg" supplier="_PwMs8FkIEeO46MKyR1zbAg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_JauJMH7GEeOc0bxsTW21JA" name="UC001_refinedIn_Interaction002" client="_Q5JDQFkOEeO46MKyR1zbAg" supplier="_PwMs8FkIEeO46MKyR1zbAg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_BVatoH7UEeOjPqz2xMsJPg" name="FromReq_1_to_UC001" client="_PwMs8FkIEeO46MKyR1zbAg" supplier="_ask2EH7HEeOc0bxsTW21JA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_YF3z4FkHEeO46MKyR1zbAg" name="&lt;Project Short Name> Actors">
+        <packagedElement xmi:type="uml:Actor" xmi:id="_o9C5QDiAEeGe4_sFLbM3Hw" name="Actor_1">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_TwNwUFkJEeO46MKyR1zbAg" annotatedElement="_o9C5QDiAEeGe4_sFLbM3Hw">
+            <body>This is an actor model element. It represents a type of role played by an entity that interacts with the system under consideraton, the so-called subject of the use case diagram.</body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Actor" xmi:id="_oBYiQDiAEeGe4_sFLbM3Hw" name="Actor_2"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_aZpX4FkIEeO46MKyR1zbAg" name="A_actor_1_usecase001_ofyoursystem" memberEnd="_aZpX4VkIEeO46MKyR1zbAg _aZpX5FkIEeO46MKyR1zbAg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_aZpX4VkIEeO46MKyR1zbAg" name="actor_1" type="_o9C5QDiAEeGe4_sFLbM3Hw" association="_aZpX4FkIEeO46MKyR1zbAg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aZpX4lkIEeO46MKyR1zbAg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aZpX41kIEeO46MKyR1zbAg" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_aZpX5FkIEeO46MKyR1zbAg" name="usecase001_ofyoursystem" type="_PwMs8FkIEeO46MKyR1zbAg" association="_aZpX4FkIEeO46MKyR1zbAg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aZpX5VkIEeO46MKyR1zbAg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aZpX5lkIEeO46MKyR1zbAg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_bIYtMFkIEeO46MKyR1zbAg" name="A_actor_1_usecase002_ofyoursystem" memberEnd="_bIYtMVkIEeO46MKyR1zbAg _bIYtNFkIEeO46MKyR1zbAg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_bIYtMVkIEeO46MKyR1zbAg" name="actor_1" type="_o9C5QDiAEeGe4_sFLbM3Hw" association="_bIYtMFkIEeO46MKyR1zbAg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bIYtMlkIEeO46MKyR1zbAg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bIYtM1kIEeO46MKyR1zbAg" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_bIYtNFkIEeO46MKyR1zbAg" name="usecase002_ofyoursystem" type="_Pbm9AFkIEeO46MKyR1zbAg" association="_bIYtMFkIEeO46MKyR1zbAg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bIYtNVkIEeO46MKyR1zbAg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bIYtNlkIEeO46MKyR1zbAg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_b4tW4FkIEeO46MKyR1zbAg" name="A_usecase002_ofyoursystem_actor_2" memberEnd="_b4tW4VkIEeO46MKyR1zbAg _b4tW5FkIEeO46MKyR1zbAg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_b4tW4VkIEeO46MKyR1zbAg" name="usecase002_ofyoursystem" type="_Pbm9AFkIEeO46MKyR1zbAg" association="_b4tW4FkIEeO46MKyR1zbAg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b4tW4lkIEeO46MKyR1zbAg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b4tW41kIEeO46MKyR1zbAg" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_b4tW5FkIEeO46MKyR1zbAg" name="actor_2" type="_oBYiQDiAEeGe4_sFLbM3Hw" association="_b4tW4FkIEeO46MKyR1zbAg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b4tW5VkIEeO46MKyR1zbAg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b4tW5lkIEeO46MKyR1zbAg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aewdMFkPEeO46MKyR1zbAg" name="SurroundedSystem">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_eDOjIFt4EeO46MKyR1zbAg" annotatedElement="_aewdMFkPEeO46MKyR1zbAg">
+          <body>This composite structure gathers the &lt;Project Name> system and all external actors inetracting with the system.&#xD;
+&#xD;
+</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xxK3QH7AEeO3zebKuAwZtw" name="&lt;Instance of Project Name>" type="_gCDnUFkHEeO46MKyR1zbAg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3e9kcH9YEeOjPqz2xMsJPg" name="actor_1" type="_o9C5QDiAEeGe4_sFLbM3Hw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4YdYQH9YEeOjPqz2xMsJPg" name="actor_2" type="_oBYiQDiAEeGe4_sFLbM3Hw"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_gCDnUFkHEeO46MKyR1zbAg" name="&lt;Project Name>" useCase="_Pbm9AFkIEeO46MKyR1zbAg _PwMs8FkIEeO46MKyR1zbAg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_klgH4FkIEeO46MKyR1zbAg" annotatedElement="_gCDnUFkHEeO46MKyR1zbAg">
+            <body>This model element (a structured class) abstracts the system under specification conforming a &quot;black-box&quot; point of view. It is said to be the subject of the use case diagram.</body>
+          </ownedComment>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_iw0rAH9kEeOjPqz2xMsJPg" name="FromActor_1_to_actor_1" client="_3e9kcH9YEeOjPqz2xMsJPg" supplier="_o9C5QDiAEeGe4_sFLbM3Hw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_pHi8gH9kEeOjPqz2xMsJPg" name="FromActor_2_to_actor_2" client="_4YdYQH9YEeOjPqz2xMsJPg" supplier="_oBYiQDiAEeGe4_sFLbM3Hw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_OXE1ICR8EeCaCLd1YXNfIQ" name="&lt;Project Short Name> Internal Specification">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_9lKggFFfEeOLhP-_UGopcg" annotatedElement="_OXE1ICR8EeCaCLd1YXNfIQ">
+        <body>The {@link #_OXE1ICR8EeCaCLd1YXNfIQ} model refines both models, {@link #_o5WlgCRyEeCaCLd1YXNfIQ} and {@link #_j5KicE3oEeO5W83O6raoHw}. This model is focussed on the internal description of the &lt;Project Short Name> also called the whitebox point of view of the system.</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fksiACn-EeCso_wGb2NO1w" name="&lt;Project Short Name> Internal Model Elements">
+        <packagedElement xmi:type="uml:Class" xmi:id="_pumR4GOJEeG8YZh1nU9dHA" name="Elevator Controller" classifierBehavior="_uPjicGR3EeG8YZh1nU9dHA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cvV-pmO0EeG8YZh1nU9dHA" name="floor elevator entrance" type="_XOtVgGOREeG8YZh1nU9dHA" association="_cvV-oGO0EeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cvV-qGO0EeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cvV-p2O0EeG8YZh1nU9dHA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7V4No2O1EeG8YZh1nU9dHA" name="elevator" type="_UQIEgGOREeG8YZh1nU9dHA" association="_7V4NoGO1EeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7V4NpWO1EeG8YZh1nU9dHA" value="2"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7V4NpGO1EeG8YZh1nU9dHA" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_pxs_QGREEeG8YZh1nU9dHA" name="Operator Command" type="_uFar0GRzEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pzyp8GREEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pzyp8WREEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_88WPMGREEeG8YZh1nU9dHA" name="Fire Detection" type="_z_mLQGRzEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_88WPMWREEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_88gAMGREEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_CiTLEGRFEeG8YZh1nU9dHA" name="Passenger Command" type="_yDqqEGRzEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CiTLEWRFEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CiTLEmRFEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6PpCUmOJEeG8YZh1nU9dHA" name="elevator context" type="_yPQrYGOJEeG8YZh1nU9dHA" association="_6PfRUGOJEeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6PpCVGOJEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6PpCU2OJEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_uPjicGR3EeG8YZh1nU9dHA" name="Elevator Controller Modes">
+            <region xmi:type="uml:Region" xmi:id="_wGkucGR3EeG8YZh1nU9dHA" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_3ockcGR3EeG8YZh1nU9dHA" name="" source="_y11KAGR3EeG8YZh1nU9dHA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_CgRCkGR4EeG8YZh1nU9dHA" name="" source="_Lq5KQEeKEeO6fbTf7vsdIQ" target="_qCzj4EeKEeO6fbTf7vsdIQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_K9gUoGR4EeG8YZh1nU9dHA" name="" source="_zM4_IGR3EeG8YZh1nU9dHA" target="_Lq5KQEeKEeO6fbTf7vsdIQ"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_y11KAGR3EeG8YZh1nU9dHA" name=""/>
+              <subvertex xmi:type="uml:State" xmi:id="_zM4_IGR3EeG8YZh1nU9dHA" name="On">
+                <region xmi:type="uml:Region" xmi:id="_41g0gGR3EeG8YZh1nU9dHA" name="Region0">
+                  <transition xmi:type="uml:Transition" xmi:id="_FPOjMGR4EeG8YZh1nU9dHA" name="t1" source="_qCzj4EeKEeO6fbTf7vsdIQ" target="_xVixsEeKEeO6fbTf7vsdIQ"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_G71O8GR4EeG8YZh1nU9dHA" name="t2" source="_xVixsEeKEeO6fbTf7vsdIQ" target="_93ZvwEeKEeO6fbTf7vsdIQ"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_Hi9gYGR4EeG8YZh1nU9dHA" name="t3" source="_qCzj4EeKEeO6fbTf7vsdIQ" target="_93ZvwEeKEeO6fbTf7vsdIQ"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_JQwe8GR4EeG8YZh1nU9dHA" name="t4" source="_93ZvwEeKEeO6fbTf7vsdIQ" target="_qCzj4EeKEeO6fbTf7vsdIQ"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_qCzj4EeKEeO6fbTf7vsdIQ" name="Hold"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_xVixsEeKEeO6fbTf7vsdIQ" name="Auto"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_93ZvwEeKEeO6fbTf7vsdIQ" name="Maintain"/>
+                </region>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_Lq5KQEeKEeO6fbTf7vsdIQ" name="Off"/>
+            </region>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_kq8jMGR4EeG8YZh1nU9dHA" name="Activity1" specification="_mY6oQGR1EeG8YZh1nU9dHA">
+            <edge xmi:type="uml:ControlFlow" xmi:id="_xl1sUGR4EeG8YZh1nU9dHA" name="" target="_sl0vEGR4EeG8YZh1nU9dHA" source="_naM-wGR4EeG8YZh1nU9dHA">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_xl1sUWR4EeG8YZh1nU9dHA" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_xl1sUmR4EeG8YZh1nU9dHA"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_8_H4wGR4EeG8YZh1nU9dHA" name="Elevator Mode Change Possible" target="_8GJpYGR4EeG8YZh1nU9dHA" source="_4YQbUGR4EeG8YZh1nU9dHA">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_8_H4wWR4EeG8YZh1nU9dHA" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_8_H4wmR4EeG8YZh1nU9dHA"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_MqdwQGR5EeG8YZh1nU9dHA" name="" target="_4YQbUGR4EeG8YZh1nU9dHA" source="_sl0vEGR4EeG8YZh1nU9dHA">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_MqdwQWR5EeG8YZh1nU9dHA" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_MqdwQmR5EeG8YZh1nU9dHA"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_i5CrQGR5EeG8YZh1nU9dHA" name="" target="_VniY8GR5EeG8YZh1nU9dHA" source="_8GJpYGR4EeG8YZh1nU9dHA">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_i5L1MGR5EeG8YZh1nU9dHA" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_i5L1MWR5EeG8YZh1nU9dHA"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_kW6XcGR5EeG8YZh1nU9dHA" name="" target="_Yf34AGR5EeG8YZh1nU9dHA" source="_VniY8GR5EeG8YZh1nU9dHA">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_kW6XcWR5EeG8YZh1nU9dHA" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_kW6XcmR5EeG8YZh1nU9dHA"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_lkRicGR5EeG8YZh1nU9dHA" name="" target="_SMZHwGR5EeG8YZh1nU9dHA" source="_Yf34AGR5EeG8YZh1nU9dHA">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_lkbTcGR5EeG8YZh1nU9dHA" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_lkbTcWR5EeG8YZh1nU9dHA"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_o3PIAGR5EeG8YZh1nU9dHA" name="" target="_nxUBwGR5EeG8YZh1nU9dHA" source="_8GJpYGR4EeG8YZh1nU9dHA">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_o3PIAWR5EeG8YZh1nU9dHA" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_o3PIAmR5EeG8YZh1nU9dHA"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_rQLVUGR5EeG8YZh1nU9dHA" name="" target="_nxUBwGR5EeG8YZh1nU9dHA" source="_SMZHwGR5EeG8YZh1nU9dHA">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_rQVGUGR5EeG8YZh1nU9dHA" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_rQVGUWR5EeG8YZh1nU9dHA"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_tSDtgGR5EeG8YZh1nU9dHA" name="" target="_oDRJ4GR4EeG8YZh1nU9dHA" source="_nxUBwGR5EeG8YZh1nU9dHA">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_tSNegGR5EeG8YZh1nU9dHA" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_tSNegWR5EeG8YZh1nU9dHA"/>
+            </edge>
+            <node xmi:type="uml:InitialNode" xmi:id="_naM-wGR4EeG8YZh1nU9dHA" name="InitialNode1" outgoing="_xl1sUGR4EeG8YZh1nU9dHA"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="_oDRJ4GR4EeG8YZh1nU9dHA" name="ActivityFinalNode1" incoming="_tSDtgGR5EeG8YZh1nU9dHA"/>
+            <node xmi:type="uml:AcceptEventAction" xmi:id="_sl0vEGR4EeG8YZh1nU9dHA" name="Change Elevator Mode Command" incoming="_xl1sUGR4EeG8YZh1nU9dHA" outgoing="_MqdwQGR5EeG8YZh1nU9dHA"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_4YQbUGR4EeG8YZh1nU9dHA" name="Check Elevator Mode" incoming="_MqdwQGR5EeG8YZh1nU9dHA" outgoing="_8_H4wGR4EeG8YZh1nU9dHA"/>
+            <node xmi:type="uml:DecisionNode" xmi:id="_8GJpYGR4EeG8YZh1nU9dHA" name="DecisionNode1" incoming="_8_H4wGR4EeG8YZh1nU9dHA" outgoing="_i5CrQGR5EeG8YZh1nU9dHA _o3PIAGR5EeG8YZh1nU9dHA"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_SMZHwGR5EeG8YZh1nU9dHA" name="Mode Change" incoming="_lkRicGR5EeG8YZh1nU9dHA" outgoing="_rQLVUGR5EeG8YZh1nU9dHA"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_VniY8GR5EeG8YZh1nU9dHA" name="Inhibit Operations" incoming="_i5CrQGR5EeG8YZh1nU9dHA" outgoing="_kW6XcGR5EeG8YZh1nU9dHA"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_Yf34AGR5EeG8YZh1nU9dHA" name="Passenger Security Mode" incoming="_kW6XcGR5EeG8YZh1nU9dHA" outgoing="_lkRicGR5EeG8YZh1nU9dHA"/>
+            <node xmi:type="uml:MergeNode" xmi:id="_nxUBwGR5EeG8YZh1nU9dHA" name="MergeNode1" incoming="_o3PIAGR5EeG8YZh1nU9dHA _rQLVUGR5EeG8YZh1nU9dHA" outgoing="_tSDtgGR5EeG8YZh1nU9dHA"/>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:Interaction" xmi:id="_DwYNkFEIEeOOVOJGuVEKBw" name="Interaction1">
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_FJTIUFEIEeOOVOJGuVEKBw" name="Lifeline" coveredBy="_LFpK8FEIEeOOVOJGuVEKBw _TfACkFEIEeOOVOJGuVEKBw"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_FjtzcFEIEeOOVOJGuVEKBw" name="Lifeline0" coveredBy="_LFzjAFEIEeOOVOJGuVEKBw _TfYdEFEIEeOOVOJGuVEKBw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TfACkFEIEeOOVOJGuVEKBw" name="Message0Send" covered="_FJTIUFEIEeOOVOJGuVEKBw" message="_TehhcFEIEeOOVOJGuVEKBw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TfYdEFEIEeOOVOJGuVEKBw" name="Message0Recv" covered="_FjtzcFEIEeOOVOJGuVEKBw" message="_TehhcFEIEeOOVOJGuVEKBw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LFpK8FEIEeOOVOJGuVEKBw" name="MessageSend" covered="_FJTIUFEIEeOOVOJGuVEKBw" message="_LFhPIFEIEeOOVOJGuVEKBw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LFzjAFEIEeOOVOJGuVEKBw" name="MessageRecv" covered="_FjtzcFEIEeOOVOJGuVEKBw" message="_LFhPIFEIEeOOVOJGuVEKBw"/>
+            <message xmi:type="uml:Message" xmi:id="_LFhPIFEIEeOOVOJGuVEKBw" name="Message" messageSort="asynchCall" receiveEvent="_LFzjAFEIEeOOVOJGuVEKBw" sendEvent="_LFpK8FEIEeOOVOJGuVEKBw"/>
+            <message xmi:type="uml:Message" xmi:id="_TehhcFEIEeOOVOJGuVEKBw" name="2:Message0" messageSort="asynchCall" receiveEvent="_TfYdEFEIEeOOVOJGuVEKBw" sendEvent="_TfACkFEIEeOOVOJGuVEKBw"/>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mY6oQGR1EeG8YZh1nU9dHA" name="Change Elevator Mode" method="_kq8jMGR4EeG8YZh1nU9dHA"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_UQIEgGOREeG8YZh1nU9dHA" name="Elevator">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_7V4NpmO1EeG8YZh1nU9dHA" name="elevator controller" type="_pumR4GOJEeG8YZh1nU9dHA" association="_7V4NoGO1EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7V4NqGO1EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7V4Np2O1EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_fpYfI2O6EeG8YZh1nU9dHA" name="in-car button panel" type="_EohdsGO2EeG8YZh1nU9dHA" aggregation="composite" association="_fpYfIGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpYfJWO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpYfJGO6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iJBKU2O6EeG8YZh1nU9dHA" name="in-car floor indicator" type="_Dx7M4GO2EeG8YZh1nU9dHA" aggregation="composite" association="_iJBKUGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iJBKVWO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iJBKVGO6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_jyzLk2O6EeG8YZh1nU9dHA" name="sheave motor" type="_D75BMGO2EeG8YZh1nU9dHA" aggregation="composite" association="_jyzLkGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jyzLlWO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jyzLlGO6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_lFXms2O6EeG8YZh1nU9dHA" name="position sensor" type="_EDxx4GO2EeG8YZh1nU9dHA" aggregation="composite" association="_lFXmsGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lFXmtWO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lFXmtGO6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_nDrGc2O6EeG8YZh1nU9dHA" name="doorway sensor" type="_ELXnoGO2EeG8YZh1nU9dHA" aggregation="composite" association="_nDrGcGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nDrGdWO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nDrGdGO6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_oS-LIGO6EeG8YZh1nU9dHA" name="alarm bell" type="_ET2OMGO2EeG8YZh1nU9dHA" aggregation="composite" association="_oS1BMGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oS-LImO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oS-LIWO6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_piIF42O6EeG8YZh1nU9dHA" name="load sensor" type="__VRekGO5EeG8YZh1nU9dHA" aggregation="composite" association="_piIF4GO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_piIF5WO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_piIF5GO6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_qiiaAmO6EeG8YZh1nU9dHA" name="car door" type="_EcU0wGO2EeG8YZh1nU9dHA" aggregation="composite" association="_qiZQEGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qiiaBGO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qiiaA2O6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_XOtVgGOREeG8YZh1nU9dHA" name="Floor Elevator Entrance">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_pZYWM2OREeG8YZh1nU9dHA" name="floor door" type="_fcLGMGOREeG8YZh1nU9dHA" aggregation="composite" association="_pZYWMGOREeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pZYWNWOREeG8YZh1nU9dHA" value="2"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pZYWNGOREeG8YZh1nU9dHA" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_rR4v8mOREeG8YZh1nU9dHA" name="up down button panel" type="_gs9YoGOREeG8YZh1nU9dHA" aggregation="composite" association="_rRu-8GOREeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rR4v9GOREeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rR4v82OREeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_spNvQWOREeG8YZh1nU9dHA" name="floor indicator" type="_idb3wGOREeG8YZh1nU9dHA" aggregation="composite" association="_spD-QGOREeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_spNvQ2OREeG8YZh1nU9dHA" value="2"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_spNvQmOREeG8YZh1nU9dHA" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_cvV-o2O0EeG8YZh1nU9dHA" name="elevator controller" type="_pumR4GOJEeG8YZh1nU9dHA" association="_cvV-oGO0EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cvV-pWO0EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cvV-pGO0EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_fcLGMGOREeG8YZh1nU9dHA" name="Floor Door">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_pZYWNmOREeG8YZh1nU9dHA" name="floor elevator entrance" type="_XOtVgGOREeG8YZh1nU9dHA" association="_pZYWMGOREeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pZYWOGOREeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pZYWN2OREeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_gs9YoGOREeG8YZh1nU9dHA" name="Up down Button Panel">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_rR4v9WOREeG8YZh1nU9dHA" name="floor elevator entrance" type="_XOtVgGOREeG8YZh1nU9dHA" association="_rRu-8GOREeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rR4v92OREeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rR4v9mOREeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_idb3wGOREeG8YZh1nU9dHA" name="Floor Indicator">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_spNvRGOREeG8YZh1nU9dHA" name="floor elevator entrance" type="_XOtVgGOREeG8YZh1nU9dHA" association="_spD-QGOREeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_spNvRmOREeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_spNvRWOREeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_hI2VgGO0EeG8YZh1nU9dHA" name="Elevator Control Room">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_tYxPA2O0EeG8YZh1nU9dHA" name="elevator controller" type="_pumR4GOJEeG8YZh1nU9dHA" association="_tYxPAGO0EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tYxPBWO0EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tYxPBGO0EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Dx7M4GO2EeG8YZh1nU9dHA" name="In-Car Floor Indicator">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iJBKVmO6EeG8YZh1nU9dHA" name="elevator" type="_UQIEgGOREeG8YZh1nU9dHA" association="_iJBKUGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iJBKWGO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iJBKV2O6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_D75BMGO2EeG8YZh1nU9dHA" name="Sheave Motor">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_jyzLlmO6EeG8YZh1nU9dHA" name="elevator" type="_UQIEgGOREeG8YZh1nU9dHA" association="_jyzLkGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jyzLmGO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jyzLl2O6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_EDxx4GO2EeG8YZh1nU9dHA" name="Position Sensor">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_lFXmtmO6EeG8YZh1nU9dHA" name="elevator" type="_UQIEgGOREeG8YZh1nU9dHA" association="_lFXmsGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lFXmuGO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lFXmt2O6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ELXnoGO2EeG8YZh1nU9dHA" name="Doorway Sensor">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_nD03cGO6EeG8YZh1nU9dHA" name="elevator" type="_UQIEgGOREeG8YZh1nU9dHA" association="_nDrGcGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nD03cmO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nD03cWO6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_ET2OMGO2EeG8YZh1nU9dHA" name="Alarm Bell">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_oS-LI2O6EeG8YZh1nU9dHA" name="elevator" type="_UQIEgGOREeG8YZh1nU9dHA" association="_oS1BMGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oS-LJWO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oS-LJGO6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_EcU0wGO2EeG8YZh1nU9dHA" name="Car Door">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_qiiaBWO6EeG8YZh1nU9dHA" name="elevator" type="_UQIEgGOREeG8YZh1nU9dHA" association="_qiZQEGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qiiaB2O6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qiiaBmO6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_EohdsGO2EeG8YZh1nU9dHA" name="In-Car Button Panel">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_fpYfJmO6EeG8YZh1nU9dHA" name="elevator" type="_UQIEgGOREeG8YZh1nU9dHA" association="_fpYfIGO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpYfKGO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpYfJ2O6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="__VRekGO5EeG8YZh1nU9dHA" name="Load Sensor">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_piIF5mO6EeG8YZh1nU9dHA" name="elevator" type="_UQIEgGOREeG8YZh1nU9dHA" association="_piIF4GO6EeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_piIF6GO6EeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_piIF52O6EeG8YZh1nU9dHA" value="1"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yPQrYGOJEeG8YZh1nU9dHA" name="Elevator Context" classifierBehavior="_AlQOwGR1EeG8YZh1nU9dHA">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6PpCVWOJEeG8YZh1nU9dHA" name="elevator controller" type="_pumR4GOJEeG8YZh1nU9dHA" association="_6PfRUGOJEeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6PpCV2OJEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6PpCVmOJEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OVDRY2OKEeG8YZh1nU9dHA" name="operator" type="_-iuBEGOJEeG8YZh1nU9dHA" aggregation="composite" association="_OVDRYGOKEeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OVDRZWOKEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OVDRZGOKEeG8YZh1nU9dHA" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_V8QDkEcBEeO6fbTf7vsdIQ" value="sdfsdfsdf"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SEFu82OKEeG8YZh1nU9dHA" name="passenger" type="_-6rOEGOJEeG8YZh1nU9dHA" aggregation="composite" association="_SEFu8GOKEeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SEFu9WOKEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SEFu9GOKEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UHJy42OKEeG8YZh1nU9dHA" name="fire detection system" type="__RJNUGOJEeG8YZh1nU9dHA" aggregation="composite" association="_UHJy4GOKEeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UHJy5WOKEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UHJy5GOKEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_4k8xIGREEeG8YZh1nU9dHA" name="Operator Display" type="_5Prk0GRzEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4lGiIGREEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4lPsEGREEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_8fCoIGREEeG8YZh1nU9dHA" name="Fire Detection" type="_z_mLQGRzEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8fCoIWREEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8fLyEGREEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_B_7d0GRFEeG8YZh1nU9dHA" name="Elevator Display" type="_3g_OYGRzEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B_7d0WRFEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B_7d0mRFEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_IxQmsGRQEeG8YZh1nU9dHA" name="">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Ix2ckGRQEeG8YZh1nU9dHA" role="_B_7d0GRFEeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ix2ckmRQEeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ix2ckWRQEeG8YZh1nU9dHA" value="1"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Ix2ck2RQEeG8YZh1nU9dHA" partWithPort="_SEFu82OKEeG8YZh1nU9dHA" role="_BU8AEGRFEeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ix2clWRQEeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ix2clGRQEeG8YZh1nU9dHA" value="1"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_SyeM8GRQEeG8YZh1nU9dHA" name="">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Syn98GRQEeG8YZh1nU9dHA" role="_4k8xIGREEeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Syn98mRQEeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Syn98WRQEeG8YZh1nU9dHA" value="1"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Syn982RQEeG8YZh1nU9dHA" partWithPort="_OVDRY2OKEeG8YZh1nU9dHA" role="_5bGWAGREEeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Syn99WRQEeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Syn99GRQEeG8YZh1nU9dHA" value="1"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_Te84cGRQEeG8YZh1nU9dHA" name="">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_TfGpcGRQEeG8YZh1nU9dHA" role="_8fCoIGREEeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TfGpcmRQEeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TfGpcWRQEeG8YZh1nU9dHA" value="1"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_TfGpc2RQEeG8YZh1nU9dHA" partWithPort="_UHJy42OKEeG8YZh1nU9dHA" role="_79RX0GREEeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TfGpdWRQEeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TfGpdGRQEeG8YZh1nU9dHA" value="1"/>
+            </end>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_-7aqgGRxEeG8YZh1nU9dHA" name="Passenger Command">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_-7kbgGRxEeG8YZh1nU9dHA" partWithPort="_SEFu82OKEeG8YZh1nU9dHA" role="_8qg-4GRxEeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-7kbgmRxEeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-7kbgWRxEeG8YZh1nU9dHA" value="1"/>
+            </end>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_-7kbg2RxEeG8YZh1nU9dHA" role="_B_7d0GRFEeG8YZh1nU9dHA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-7kbhWRxEeG8YZh1nU9dHA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-7kbhGRxEeG8YZh1nU9dHA" value="1"/>
+            </end>
+          </ownedConnector>
+          <ownedBehavior xmi:type="uml:Interaction" xmi:id="_AlQOwGR1EeG8YZh1nU9dHA" name="Interaction1">
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_GA70UGR1EeG8YZh1nU9dHA" name="Lifeline" represents="_6PpCVWOJEeG8YZh1nU9dHA" coveredBy="_mce5oWR1EeG8YZh1nU9dHA _uN1WEGR1EeG8YZh1nU9dHA _Eh6cImR2EeG8YZh1nU9dHA _EiENIWR2EeG8YZh1nU9dHA _EiENIGR2EeG8YZh1nU9dHA _MqxZomR2EeG8YZh1nU9dHA _U3NPkmR2EeG8YZh1nU9dHA"/>
+            <lifeline xmi:type="uml:Lifeline" xmi:id="_Wfl_IGR1EeG8YZh1nU9dHA" name="Lifeline0" represents="_OVDRY2OKEeG8YZh1nU9dHA" coveredBy="_mcVIoGR1EeG8YZh1nU9dHA _uN1WEmR1EeG8YZh1nU9dHA _FtpPcGR2EeG8YZh1nU9dHA _FtpPcmR2EeG8YZh1nU9dHA _FtpPcWR2EeG8YZh1nU9dHA _MqxZoGR2EeG8YZh1nU9dHA _U3WZgWR2EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mcVIoGR1EeG8YZh1nU9dHA" name="Change Elevator Mode_MessageSend" covered="_Wfl_IGR1EeG8YZh1nU9dHA" message="_mblhwGR1EeG8YZh1nU9dHA" event="_mcCNsGR1EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mce5oWR1EeG8YZh1nU9dHA" name="Change Elevator Mode_MessageRecv" covered="_GA70UGR1EeG8YZh1nU9dHA" message="_mblhwGR1EeG8YZh1nU9dHA" event="_mce5oGR1EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uN1WEGR1EeG8YZh1nU9dHA" name="Ack_Mode_Change_MessageSend" covered="_GA70UGR1EeG8YZh1nU9dHA" message="_uNsMIGR1EeG8YZh1nU9dHA" event="_uNsMIWR1EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_Eh6cImR2EeG8YZh1nU9dHA" name="ActionExecSpecStart" covered="_GA70UGR1EeG8YZh1nU9dHA" execution="_EiENIGR2EeG8YZh1nU9dHA" event="_Eh6cIGR2EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uN1WEmR1EeG8YZh1nU9dHA" name="Ack_Mode_Change_MessageRecv" covered="_Wfl_IGR1EeG8YZh1nU9dHA" message="_uNsMIGR1EeG8YZh1nU9dHA" event="_uN1WEWR1EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_EiENIGR2EeG8YZh1nU9dHA" name="ActionExecSpec" covered="_GA70UGR1EeG8YZh1nU9dHA" finish="_EiENIWR2EeG8YZh1nU9dHA" start="_Eh6cImR2EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_FtpPcGR2EeG8YZh1nU9dHA" name="ActionExecSpec0Start" covered="_Wfl_IGR1EeG8YZh1nU9dHA" execution="_FtpPcWR2EeG8YZh1nU9dHA" event="_FtfecGR2EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_FtpPcWR2EeG8YZh1nU9dHA" name="ActionExecSpec0" covered="_Wfl_IGR1EeG8YZh1nU9dHA" finish="_FtpPcmR2EeG8YZh1nU9dHA" start="_FtpPcGR2EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MqxZoGR2EeG8YZh1nU9dHA" name="MessageSend" covered="_Wfl_IGR1EeG8YZh1nU9dHA" message="_MqoPsGR2EeG8YZh1nU9dHA" event="_MqoPsWR2EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MqxZomR2EeG8YZh1nU9dHA" name="MessageRecv" covered="_GA70UGR1EeG8YZh1nU9dHA" message="_MqoPsGR2EeG8YZh1nU9dHA" event="_MqxZoWR2EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_U3NPkmR2EeG8YZh1nU9dHA" name="MessageSend0" covered="_GA70UGR1EeG8YZh1nU9dHA" message="_U3NPkGR2EeG8YZh1nU9dHA" event="_U3NPkWR2EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_U3WZgWR2EeG8YZh1nU9dHA" name="MessageRecv0" covered="_Wfl_IGR1EeG8YZh1nU9dHA" message="_U3NPkGR2EeG8YZh1nU9dHA" event="_U3WZgGR2EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_EiENIWR2EeG8YZh1nU9dHA" name="ActionExecSpecFinish" covered="_GA70UGR1EeG8YZh1nU9dHA" execution="_EiENIGR2EeG8YZh1nU9dHA" event="_Eh6cIWR2EeG8YZh1nU9dHA"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_FtpPcmR2EeG8YZh1nU9dHA" name="ActionExecSpec0Finish" covered="_Wfl_IGR1EeG8YZh1nU9dHA" execution="_FtpPcWR2EeG8YZh1nU9dHA" event="_FtfecWR2EeG8YZh1nU9dHA"/>
+            <message xmi:type="uml:Message" xmi:id="_mblhwGR1EeG8YZh1nU9dHA" name="change Elevator Mode_Message" messageSort="asynchCall" receiveEvent="_mce5oWR1EeG8YZh1nU9dHA" sendEvent="_mcVIoGR1EeG8YZh1nU9dHA"/>
+            <message xmi:type="uml:Message" xmi:id="_uNsMIGR1EeG8YZh1nU9dHA" name="ack_Mode_Change_Message" messageSort="asynchSignal" receiveEvent="_uN1WEmR1EeG8YZh1nU9dHA" sendEvent="_uN1WEGR1EeG8YZh1nU9dHA"/>
+            <message xmi:type="uml:Message" xmi:id="_MqoPsGR2EeG8YZh1nU9dHA" name="maintain" receiveEvent="_MqxZomR2EeG8YZh1nU9dHA" sendEvent="_MqxZoGR2EeG8YZh1nU9dHA"/>
+            <message xmi:type="uml:Message" xmi:id="_U3NPkGR2EeG8YZh1nU9dHA" name="end_maintain" messageSort="reply" receiveEvent="_U3WZgWR2EeG8YZh1nU9dHA" sendEvent="_U3NPkmR2EeG8YZh1nU9dHA"/>
+          </ownedBehavior>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_6PfRUGOJEeG8YZh1nU9dHA" name="Association1" memberEnd="_6PpCUmOJEeG8YZh1nU9dHA _6PpCVWOJEeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6PpCUGOJEeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6PpCUWOJEeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-iuBEGOJEeG8YZh1nU9dHA" name="Operator">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MxhCEWOKEeG8YZh1nU9dHA" name="elevator context" type="_yPQrYGOJEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MxhCE2OKEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MxhCEmOKEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OVMbUGOKEeG8YZh1nU9dHA" name="elevator context" type="_yPQrYGOJEeG8YZh1nU9dHA" association="_OVDRYGOKEeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OVMbUmOKEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OVMbUWOKEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_5bGWAGREEeG8YZh1nU9dHA" name="Operator Command" type="_uFar0GRzEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5bGWAWREEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5bGWAmREEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-6rOEGOJEeG8YZh1nU9dHA" name="Passenger">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SEFu9mOKEeG8YZh1nU9dHA" name="elevator context" type="_yPQrYGOJEeG8YZh1nU9dHA" association="_SEFu8GOKEeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SEFu-GOKEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SEFu92OKEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_BU8AEGRFEeG8YZh1nU9dHA" name="Passenger Display" type="_3g_OYGRzEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BU8AEWRFEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BU8AEmRFEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_8qg-4GRxEeG8YZh1nU9dHA" name="Passenger Command" type="_yDqqEGRzEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8qg-4WRxEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8qg-4mRxEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="__RJNUGOJEeG8YZh1nU9dHA" name="Fire Detection System">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UHJy5mOKEeG8YZh1nU9dHA" name="elevator context" type="_yPQrYGOJEeG8YZh1nU9dHA" association="_UHJy4GOKEeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UHJy6GOKEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UHJy52OKEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_79RX0GREEeG8YZh1nU9dHA" name="Fire Detection " type="_z_mLQGRzEeG8YZh1nU9dHA" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_79kSwGREEeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_79kSwWREEeG8YZh1nU9dHA" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_OVDRYGOKEeG8YZh1nU9dHA" name="Association2" memberEnd="_OVDRY2OKEeG8YZh1nU9dHA _OVMbUGOKEeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OVDRYWOKEeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OVDRYmOKEeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_SEFu8GOKEeG8YZh1nU9dHA" name="Association3" memberEnd="_SEFu82OKEeG8YZh1nU9dHA _SEFu9mOKEeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SEFu8WOKEeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SEFu8mOKEeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_UHJy4GOKEeG8YZh1nU9dHA" name="Association4" memberEnd="_UHJy42OKEeG8YZh1nU9dHA _UHJy5mOKEeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UHJy4WOKEeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UHJy4mOKEeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_pZYWMGOREeG8YZh1nU9dHA" name="Association5" memberEnd="_pZYWM2OREeG8YZh1nU9dHA _pZYWNmOREeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pZYWMWOREeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pZYWMmOREeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_rRu-8GOREeG8YZh1nU9dHA" name="Association6" memberEnd="_rR4v8mOREeG8YZh1nU9dHA _rR4v9WOREeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rR4v8GOREeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rR4v8WOREeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_spD-QGOREeG8YZh1nU9dHA" name="Association7" memberEnd="_spNvQWOREeG8YZh1nU9dHA _spNvRGOREeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_spD-QWOREeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_spNvQGOREeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cvV-oGO0EeG8YZh1nU9dHA" name="Association8" memberEnd="_cvV-o2O0EeG8YZh1nU9dHA _cvV-pmO0EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cvV-oWO0EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cvV-omO0EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_tYxPAGO0EeG8YZh1nU9dHA" name="Association9" memberEnd="_tYxPA2O0EeG8YZh1nU9dHA _tYxPBmO0EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tYxPAWO0EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tYxPAmO0EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_tYxPBmO0EeG8YZh1nU9dHA" name="elevator control room" type="_hI2VgGO0EeG8YZh1nU9dHA" association="_tYxPAGO0EeG8YZh1nU9dHA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tYxPCGO0EeG8YZh1nU9dHA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tYxPB2O0EeG8YZh1nU9dHA" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_7V4NoGO1EeG8YZh1nU9dHA" name="Association10" memberEnd="_7V4No2O1EeG8YZh1nU9dHA _7V4NpmO1EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7V4NoWO1EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7V4NomO1EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_fpYfIGO6EeG8YZh1nU9dHA" name="Association11" memberEnd="_fpYfI2O6EeG8YZh1nU9dHA _fpYfJmO6EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fpYfIWO6EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fpYfImO6EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_iJBKUGO6EeG8YZh1nU9dHA" name="Association12" memberEnd="_iJBKU2O6EeG8YZh1nU9dHA _iJBKVmO6EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iJBKUWO6EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iJBKUmO6EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_jyzLkGO6EeG8YZh1nU9dHA" name="Association13" memberEnd="_jyzLk2O6EeG8YZh1nU9dHA _jyzLlmO6EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jyzLkWO6EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jyzLkmO6EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_lFXmsGO6EeG8YZh1nU9dHA" name="Association14" memberEnd="_lFXms2O6EeG8YZh1nU9dHA _lFXmtmO6EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lFXmsWO6EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lFXmsmO6EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_nDrGcGO6EeG8YZh1nU9dHA" name="Association15" memberEnd="_nDrGc2O6EeG8YZh1nU9dHA _nD03cGO6EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nDrGcWO6EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nDrGcmO6EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_oS1BMGO6EeG8YZh1nU9dHA" name="Association16" memberEnd="_oS-LIGO6EeG8YZh1nU9dHA _oS-LI2O6EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oS1BMWO6EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oS1BMmO6EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_piIF4GO6EeG8YZh1nU9dHA" name="Association17" memberEnd="_piIF42O6EeG8YZh1nU9dHA _piIF5mO6EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_piIF4WO6EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_piIF4mO6EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_qiZQEGO6EeG8YZh1nU9dHA" name="Association18" memberEnd="_qiiaAmO6EeG8YZh1nU9dHA _qiiaBWO6EeG8YZh1nU9dHA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qiiaAGO6EeG8YZh1nU9dHA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qiiaAWO6EeG8YZh1nU9dHA" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_KQ6bkGRQEeG8YZh1nU9dHA" name="" client="_pxs_QGREEeG8YZh1nU9dHA" supplier="_4k8xIGREEeG8YZh1nU9dHA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_UhwZQGRQEeG8YZh1nU9dHA" name="" client="_B_7d0GRFEeG8YZh1nU9dHA" supplier="_CiTLEGRFEeG8YZh1nU9dHA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_VDhpkGRQEeG8YZh1nU9dHA" name="" client="_8fCoIGREEeG8YZh1nU9dHA" supplier="_88WPMGREEeG8YZh1nU9dHA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_LUeR4GRyEeG8YZh1nU9dHA" name="Dependency1" client="_CiTLEGRFEeG8YZh1nU9dHA" supplier="_B_7d0GRFEeG8YZh1nU9dHA"/>
+        <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_mcCNsGR1EeG8YZh1nU9dHA" name="SendOperationEvent" operation="_mY6oQGR1EeG8YZh1nU9dHA"/>
+        <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_mce5oGR1EeG8YZh1nU9dHA" name="ReceiveOperationEvent" operation="_mY6oQGR1EeG8YZh1nU9dHA"/>
+        <packagedElement xmi:type="uml:SendSignalEvent" xmi:id="_uNsMIWR1EeG8YZh1nU9dHA" name="SendSignalEvent" signal="_uMf5UGR1EeG8YZh1nU9dHA"/>
+        <packagedElement xmi:type="uml:ReceiveSignalEvent" xmi:id="_uN1WEWR1EeG8YZh1nU9dHA" name="ReceiveSignalEvent" signal="_uMf5UGR1EeG8YZh1nU9dHA"/>
+        <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_Eh6cIGR2EeG8YZh1nU9dHA" name="ExecutionEvent"/>
+        <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_Eh6cIWR2EeG8YZh1nU9dHA" name="ExecutionEvent0"/>
+        <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_FtfecGR2EeG8YZh1nU9dHA" name="ExecutionEvent1"/>
+        <packagedElement xmi:type="uml:ExecutionEvent" xmi:id="_FtfecWR2EeG8YZh1nU9dHA" name="ExecutionEvent2"/>
+        <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_MqoPsWR2EeG8YZh1nU9dHA" name="SendOperationEvent0"/>
+        <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_MqxZoWR2EeG8YZh1nU9dHA" name="ReceiveOperationEvent0"/>
+        <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_U3NPkWR2EeG8YZh1nU9dHA" name="SendOperationEvent1"/>
+        <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_U3WZgGR2EeG8YZh1nU9dHA" name="ReceiveOperationEvent1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eQjr8GRzEeG8YZh1nU9dHA" name="&lt;Project Short Name> Specific Data Types">
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_uFar0GRzEeG8YZh1nU9dHA" name="Operator Commands"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_yDqqEGRzEeG8YZh1nU9dHA" name="Passenger Commands"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_z_mLQGRzEeG8YZh1nU9dHA" name="Fire Detection"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_3g_OYGRzEeG8YZh1nU9dHA" name="Elevator Displays"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_5Prk0GRzEeG8YZh1nU9dHA" name="Operator Displays"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_X_98UE3nEeO5W83O6raoHw" name="&lt;Project Short Name> Specific Signals">
+        <packagedElement xmi:type="uml:Signal" xmi:id="_uMf5UGR1EeG8YZh1nU9dHA" name="Ack_Mode_Change"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_wM9Z4E3pEeO5W83O6raoHw" name="FromExtSpec2IntSpec" client="_OXE1ICR8EeCaCLd1YXNfIQ" supplier="_j5KicE3oEeO5W83O6raoHw">
+        <mapping xmi:type="uml:OpaqueExpression" xmi:id="_pY_9UE3qEeO5W83O6raoHw" name="FromExtSpec2IntSpec_MappingDescription">
+          <language>Natural language</language>
+          <body>The mapping formalizing the refinement relationship from the model denoting the ECS external specification to the model denoting its internal specification.</body>
+        </mapping>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_N-NGcHb6EeOHCpFb_yGTPQ" name="FromReq2ExtSpec" client="_OXE1ICR8EeCaCLd1YXNfIQ" supplier="_o5WlgCRyEeCaCLd1YXNfIQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_-nEIcE3oEeO5W83O6raoHw" name="&lt;Project Short Name> Traceability Model">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_XA8JcH7VEeOjPqz2xMsJPg">
+        <body>Model review scenario:&#xD;
+- Double-click on the refinement dependency to open the graphical description of the refinement between both {@link #_o5WlgCRyEeCaCLd1YXNfIQ} and {@link #_j5KicE3oEeO5W83O6raoHw} models.</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_8FGskE3pEeO5W83O6raoHw" name="ECS_ReqD" client="_-nEIcE3oEeO5W83O6raoHw" supplier="_o5WlgCRyEeCaCLd1YXNfIQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_AkY7UE3qEeO5W83O6raoHw" name="ECS_HLS" client="_-nEIcE3oEeO5W83O6raoHw" supplier="_j5KicE3oEeO5W83O6raoHw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_DcmekE3qEeO5W83O6raoHw" name="ECS_DeS" client="_-nEIcE3oEeO5W83O6raoHw" supplier="_OXE1ICR8EeCaCLd1YXNfIQ"/>
+      <packagedElement xmi:type="uml:Model" xmi:id="_YlijAH7FEeOc0bxsTW21JA" name="Internal Traceability Model External Specification">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_nzU-wH9oEeOjPqz2xMsJPg">
+          <body>&lt;&lt;mapping>>&#xD;
+Interactions refining the use cases of the system are graphically denoted using sequence diagrams. However, in UML, only model element being ConnectableElement can be represented by lifelines within sequence diagrams. While an actor is not a ConnectableElement in UML, one create specific parts </body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_fjQ_UH9jEeOjPqz2xMsJPg" name="ExtSpecAbtraction_TraceabilityPoV" client="_YlijAH7FEeOc0bxsTW21JA" supplier="_j5KicE3oEeO5W83O6raoHw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_150CcH7SEeOjPqz2xMsJPg" name="FromReq2ExtSpec"/>
+      <packagedElement xmi:type="uml:Model" xmi:id="_5fXz4H7SEeOjPqz2xMsJPg" name="FromExt2IntSpec"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_tK8aYE3pEeO5W83O6raoHw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tLcJoE3pEeO5W83O6raoHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/StandardL2.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_QwCvMDtFEee1tf4JDltoag">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QwjskDtFEee1tf4JDltoag" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Refine xmi:id="_umcvEE3pEeO5W83O6raoHw" base_Abstraction="_fUtqYE3pEeO5W83O6raoHw"/>
+  <standard:Refine xmi:id="_2p1WsE3pEeO5W83O6raoHw" base_Abstraction="_wM9Z4E3pEeO5W83O6raoHw"/>
+  <standard:Refine xmi:id="_V5jMYHb6EeOHCpFb_yGTPQ" base_Abstraction="_N-NGcHb6EeOHCpFb_yGTPQ"/>
+  <standard:Refine xmi:id="_npyI0H7GEeOc0bxsTW21JA" base_Abstraction="_IeJMMH7GEeOc0bxsTW21JA"/>
+  <standard:Refine xmi:id="_pS2_cH7GEeOc0bxsTW21JA" base_Abstraction="_JauJMH7GEeOc0bxsTW21JA"/>
+  <standard:Refine xmi:id="_SDZt4H7UEeOjPqz2xMsJPg" base_Abstraction="_BVatoH7UEeOjPqz2xMsJPg"/>
+  <Requirements:Requirement xmi:id="_Sx41sDtGEee1tf4JDltoag" base_Class="_ask2EH7HEeOc0bxsTW21JA"/>
+</xmi:XMI>

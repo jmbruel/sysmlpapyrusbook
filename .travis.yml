@@ -14,10 +14,12 @@ script:
 
 after_error:
   - docker logs asciidoc-to-html
+  - docker logs run-tests
   - docker logs asciidoc-to-pdf
 
 after_failure:
   - docker logs asciidoc-to-html
+  - docker logs run-tests
   - docker logs asciidoc-to-pdf
 
 after_success:
