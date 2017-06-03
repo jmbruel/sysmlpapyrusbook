@@ -9,7 +9,7 @@ before_install:
 
 script:
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor -D /documents/output master.adoc
-  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name run-tests asciidoctor/docker-asciidoctor gem install minitest; ruby test/figures_test.rb
+#  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name run-tests asciidoctor/docker-asciidoctor gem install minitest; ruby test/figures_test.rb
   - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf asciidoctor/docker-asciidoctor asciidoctor-pdf -D /documents/output master.adoc
 
 after_error:
