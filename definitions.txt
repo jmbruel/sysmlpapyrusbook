@@ -103,6 +103,7 @@ endif::[]
 :jmb: mailto:bruel@irit.fr[Jean-Michel Bruel]
 :nico: mailto:nicolas.belloir@univ-pau.fr[Nicolas Belloir]
 :pdss:  Pierre de Saqui Sannes
+:prfc: http://www.prfc.fr/[Pascal Roques]
 :rf: mailto:raphael.faudou@atos.net[Raphaël Faudou]
 :sysmlfrance: http://www.sysml-france.fr[SysML-France]indexterm:[SysML-France]
 :tim: mailto:Tim.Weilkiens@oose.de[Tim Weilkiens]

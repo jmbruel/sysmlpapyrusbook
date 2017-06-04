@@ -16,12 +16,15 @@ En revanche, on en choisit une (simplifié) pour l'illustration pour la mise en 
 endif::final[]
 
 SysML est un langage de modélisation, certains diraient une notation.
-La principale difficulté, avec SysML, c'est que cette notation n'est associée a aucune méthode en particulier.
+La principale difficulté, avec SysML, c'est que cette notation n'est associée a aucune méthode en particulier, ni aucun outil en particulier (cf. <<sysmlprfc>>).
 Il s'agit là d'une volonté délibérée des concepteurs, l'{OMG} et l'{INCOSE}, pour permettre la plus grande adoption de la notation dans les entreprises.
 Il vous sera donc possible d'appliquer votre propre démarche, votre propre processus interne de développement.
 Contrairement à l'outil {capella} par exemple, fortement couplé à la méthode {Arcadia}, l'outil {papyrus} n'impose aucune démarche particulière.
 Nous allons aborder <<methods,en fin de ce chapitre>> les processus connus et courants en ingénierie système généralement associés à SysML.
 Pour les besoins de ce livre nous avons retenu la démarche préconisée par Friedenthal dans <<Friedenthal2016>>.
+
+.Langages, méthodes et outils : 3 piliers complémentaires (inspiré par http://www.prfc.fr/[Pascal Roques])
+image::SysML-PRFC.svg[width=40%,align=center]
 
 == Pourquoi et quoi modéliser
 
@@ -42,12 +45,24 @@ endif::final[]
 
 === Pourquoi modéliser
 
+[quote, Marvin Minski, "Matter, mind, and models (Semantic Information Processing 1968)""]
+____________________________________________________________________
+Pour un observateur A, M est un *modèle* de l’objet O, si M aide A à répondre aux
+questions qu’il se pose sur O
+____________________________________________________________________
+
+Il n'est pas dans les objectifs de ce livre d'explorer cette vaste question (voir
+  <<Jézéquel>> ou <<Cabot>>), mais disons simplement que nous considérons la définition
+  ci-dessus comme essentielle.
+Les modèles permettent de communiquer (entre personnes, entre outils) et d'appréhender la complexité des véritables systèmes en développement.
+
 === Différence entre modèle et dessin
 
-{SysML} n'est pas une palette de dessins et d'éléments de base servant à faire
-des diagrammes. Il existe une représentation graphique des éléments modélisés en {SysML}. Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c'est *le modèle* qui importe le plus.
+{SysML} n'est pas une palette de dessins et d'éléments de base servant à faire des diagrammes.
+Il existe une représentation graphique des éléments modélisés en {SysML}.
+Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c'est *le modèle* qui importe le plus.
 
-C'est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes {SysML} footnote:[Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.], mais d'utiliser des outils dédiés (cf. <<Outils>>).
+C'est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes {SysML} footnote:[Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.], mais d'utiliser des outils dédiés comme {Papyrus}.
 Ils respectent en général la norme {norme} (bien qu'il faille se méfier).
 
 [NOTE]
@@ -57,23 +72,19 @@ Notez que la norme permet de faire des adaptations graphiques (cf. la discussion
 
 // Merci à Raphaël Faudou pour cette partie
 
-Un des intérêts de la modélisation est de faciliter la communication, notamment
-au travers des diagrammes et leur aspect graphique et synthétique.
-Un dessin est donc un plus par rapport à du texte. Néanmoins, il ne faut pas se
-contenter d'un simple dessin pour au moins deux raisons importantes :
+Un des intérêts de la modélisation est de faciliter la communication, notamment au travers des diagrammes et leur aspect graphique et synthétique.
+Un dessin est donc un plus par rapport à du texte. Néanmoins, il ne faut pas se contenter d'un simple dessin pour au moins deux raisons importantes :
 
-- un dessin n'est pas assez formel (comment être sûr d'avoir correctement utilisé tel ou tel symbole, cf. les deux exemples ci-dessous) ;
+- un dessin n'est pas assez formel (comment être sûr d'avoir correctement utilisé tel ou tel symbole) ;
 - il est impossible d'assurer la cohérence globale des modèles dans le cas d'un dessin.
 
 Un modèle est une sorte de base de donnée qui regroupe des éléments issues de différents points de vue (saisis le plus
 souvent au travers de diagrammes). Un diagramme est une vue partielle du modèle (donc incomplète).
 Le modèle est la vraie plus value car il va permettre de détecter les incohérences sur les exigences, les problèmes de complétude,
 lancer des analyses, faire des transformations vers d'autres langages ou formats, etc.
-Par exemple dans un outil de modélisation il y a une grande différence entre supprimer un élément d'un diagramme (on parlera
-alors de "masquer" un élément d'un diagramme) et supprimer un élément de modèle (ce qui aura pour effet de supprimer cet élément de
-tous les diagrammes où il était présent).
+Par exemple dans un outil de modélisation il y a une grande différence entre supprimer un élément d'un diagramme (on parlera alors de "masquer" un élément d'un diagramme) et supprimer un élément de modèle (ce qui aura pour effet de supprimer cet élément de tous les diagrammes où il était présent).
 
-=== Quoi modéliser
+//=== Quoi modéliser
 
 [[methods]]
 == Démarches et méthodes de développement
@@ -85,7 +96,7 @@ Nous renvoyons pour cela le lecteur aux grands classiques (xxx,yyy).
 Références sur les méthodos : <<Estefan>>, <<Ramos>>, <<Dickerson>>,
 CESAME, Arcadia, SEBOK, OOSE, Tim Wilkiens, CORE (EFFB), Merise?
 
-ifdef::backend-pdf[<<<]
+[[Matrice]]
 == Matrice des concepts
 
 //-----------------------------------------------
@@ -100,16 +111,14 @@ ifndef::final[]
 //-----------------------------------------------
 endif::final[]
 
-La [[Matrice]]matrice qui nous servira de "carte de base" pour placer les activités
+La matrice qui nous servira de "carte de base" pour placer les activités
 ou les modèles, sera celle-ci :
 
 include::matrice-base.asc[]
 
-Cette matrice permet de situer les différents éléments qui seront vus dans ce cours dans un cadre
-utile pour comparer ces éléments les uns aux autres.
+Cette matrice permet de situer les différents éléments qui seront vus dans ce cours dans un cadre utile pour comparer ces éléments les uns aux autres.
 Nous vous conseillons de vous faire votre propre matrice.
-L'essentiel est de toujours bien se représenter les différents éléments qu'on aborde
-dans une carte mentale précise. Cela permet une meilleure mémorisation.
+L'essentiel est de toujours bien se représenter les différents éléments qu'on aborde dans une carte mentale précise. Cela permet une meilleure mémorisation.
 
 === Points de vue
 
@@ -122,13 +131,11 @@ Les exigences et leur prises en compte sont un éléments critique pour le
   nécessiterait tout un volume du type de <<reqs>>) nous insisterons sur cet aspect.
 
 {Structure}::
-La description de l'architecture et des éléments constitutifs du système,
-avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important.
+La description de l'architecture et des éléments constitutifs du système, avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important.
 C'est souvent la partie de modélisation qui pose le moins de problème aux débutants.
 
 {Behavior}::
-Le comportement d'un système est du point de vue de l'utilisateur final beaucoup plus important que la structure elle-même. C'est la partie
-	qu'il est la plus à même d'exprimer, de comprendre (vos modèles) et de valider.
+Le comportement d'un système est du point de vue de l'utilisateur final beaucoup plus important que la structure elle-même. C'est la partiequ'il est la plus à même d'exprimer, de comprendre (vos modèles) et de valider.
 
 {Crosscutting}::
 Un certains nombre de concepts sont transverses aux trois points de vue précédents.
@@ -163,7 +170,6 @@ Cette phase vise plutôt à examiner le domaine de la solution. Elle débouche s
 {implementation}::
 Cette phase traite des développements finaux (construction ou approvisionnement en matériel, développement de codes, etc.).
 
-
 Il s'agit ici classiquement des grandes étapes de développement d'un système.
 On pourrait être surpris par l'étape que nous avons appelé "{organisation}".
 C'est une étape que nous considérons importante, particulièrement pour l'enseignement.
@@ -186,3 +192,18 @@ Décrire la suite...
 ====
 //-----------------------------------------------
 endif::final[]
+
+Suite à cette introduction, nous allons présenter l'étude de cas qui nous servira de "fil rouge" (chapitre <<etudeCas>>).
+Nous donnons ensuite les instructions pour installer l'environnement minimal pour réaliser les exercices de ce livre (chapitre <<install>>).
+Nous donnons ensuite un aperçu de tous les diagrammes {sysml}, pour que le lecteur ait une bonne vue d'ensemble et puisse faire les connexions nécessaires entre tous les diagrammes.
+Ensuite... (chapitre <<methode>>).
+Ensuite... (chapitre <<start>>).
+Nous rentrons dans le détail avec les chapitres suivants.
+Nous commençons par les exigences (chapitre <<RE>>).
+Nous poursuivons par l'utilisation du système (cas d'utilisation et interfaces, chapitre <<Usages>>).
+Ensuite nous traitons des éléments structurels (chapitre <<archi>>) et
+comportementaux (chapitre <<behavior>>).
+Interaction... (chapitre <<interaction>>).
+Préoccupations transveres... (chapitre <<crossCuting>>).
+Nous terminons par différents aspects complémentaires (chapitre <<realLife>>).
+Un certain nombres d'<<acro,annexes>> complètent le livre.

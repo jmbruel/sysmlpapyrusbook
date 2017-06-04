@@ -265,7 +265,7 @@ image::todo.jpg[]
 
 =====
 
-== Diagrammes de séquence (seq)
+== Diagrammes de séquence (sd)
 
 Participants, acteurs, ligne de vie, etc.
 
@@ -297,7 +297,7 @@ xxx à vérifier xxx
 .Exemple de diagramme de séquence
 image::todo.jpg[]
 
-== Diagramme de Machine à états
+== Diagramme d'états
 // Sebastien
 
 == Diagramme d'activités

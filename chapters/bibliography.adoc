@@ -17,6 +17,8 @@
 - [[[Fowler2004]]] Martin Fowler. UML 2.0 INFORMATIQUE PROFESSIONNELLE, 2004.
 - [[[OMG2009]]] The Current State of Model Based Systems Engineering: Results from the OMG SysML Request for Information.
 - [[[Neptune17]]] Conférence Neptune'2017. CNAM Paris. 01/06/2017.
+- [[[Jézéquel]]] Le bouquin sur l'ingénierie des modèles de Benoit et al.
+- [[[Cabot]]] Le bouquin de Jordi
 
 .Websites
 
