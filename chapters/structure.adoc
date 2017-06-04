@@ -353,7 +353,7 @@ endif::final[]
 Afin de capturer de manière précise les contraintes entre valeurs, ou encore les liens entre les sorties et les entrées d'un bloc, {sysml} utilise trois concepts clefs :
 
 - _Constraints_ (un type de bloc)
-- _Parametric diagram_ (un type d'`{ibd}`)
+- _Parametric diagram_ (un type d'{ibd} )
 - _Value binding_
 
 === Contraintes

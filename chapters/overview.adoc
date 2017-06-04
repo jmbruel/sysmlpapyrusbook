@@ -102,7 +102,13 @@ La figure <<liensdiag,suivante>>, tirée de la <<SysML,spécification>>, résume
 .Liens entre UML et SysML (tiré de <<SysML,SysML 1.4,p. 7>>)
 image::diff.png[SysML and UML,width=50%,scaledwidth=50%]
 
+{sysml} et {uml} sont parfois utilisés de manière complémentaire, mais la plupart du temps, {uml} est utilisé pour modéliser les aspects logiciels et {sysml} pour modéliser les systèmes.
+
 === Qui est "derrière"?
+
+Il est intéressant de se rappeler que {sysml} est un standard qui vient des utilisateurs,
+qui participent à sa définition et à ses évolutions.
+Voici une liste non exhaustive des entreprises et des acteurs qui participent à son évolution :
 
 Industrie::
 American Systems, BAE Systems, Boeing, Deere & Company, EADS Astrium, Eurostep, Israel Aircraft Industries,  Lockheed Martin, Motorola, NIST, Northrop Grumman, oose.de, Raytheon, Thales, ...
@@ -123,23 +129,23 @@ La liste complète des membres de l'{omg} est accessible à l'URL : http://www.o
 === 	Outils SysML
 //---------------------------------------------------------------------------------
 
-
-Il va de soit que le meilleur outil {sysml} à ce jour est {papyrus}, dont ce livre
-vous détaille l'utilisation, mais il existe un certain nombre d'autres outils
+Il va de soit que le meilleur outil {sysml} à ce jour est {papyrus}footnote:[La partialité des auteurs peut être questionnée, mais d'un point de vue complétude et respect de la norme, cette affirmation est régulièrement admise par la communauté.], dont ce livre vous détaille l'utilisation, mais il existe un certain nombre d'autres outils
 permettant de réaliser des modèles {SysML}.
 En voici une liste non exhaustive :
 
 include::outils.txt[]
 
-Vous trouverez sur Internet des comparatifs et des avis à jour sur les outils.
+//Vous trouverez sur Internet des comparatifs et des avis à jour sur les outils.
 
 === Organisation des différents diagrammes
 
-{sysml} propose de couvrir la modélisation d'un système en 9 diagrammes. Ces diagrammes couvrent
-	les aspects structurels et comportementaux du système ainsi que les exigences. Le diagramme suivant
-	présente cette organisation en faisant au passage le lien avec ceux d'{uml} :
+Les ingénieurs systèmes ont l'habitude d'utiliser des représentations graphiques (plans,
+	graphes, ...).
+{sysml} propose de couvrir la modélisation d'un système au travers de 9 diagrammes.
+Ces diagrammes couvrent	les aspects structurels et comportementaux du système ainsi que les exigences.
+La figure suivante présente cette organisation en faisant, au passage, le lien avec ceux d'{uml} :
 
-.Les 9 diagrammes SysML et leur lien avec UML
+.Les 9 diagrammes SysML et leur lien (historique) avec UML
 image::Figure4-1.png[9 diagrammes,width=90%,scaledwidth=90%]
 
 Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons souvent leur version abrégée
@@ -165,7 +171,7 @@ Abordons quelques principes généraux de {sysml}, c'est à dire des éléments 
 - l'entête de ce cadre, appelé aussi *cartouche*, indique les informations sur le diagramme :
 * le *type* de diagramme (`{req}`, `{act}`, `{bdd}`, `{ibd}`, `{stm}`, etc. en gras) qui donne immédiatement une indication sur le point de vue porté à l'élément de modélisation (comportement, structure, etc.)
 * le type de l'élément (par exemple _package_, _block_, _activity_, etc.), optionnel
-* le nom de l'élément (unique)
+* le nom de l'élément modélisé (unique)
 * le nom du diagramme ou de la vue, optionnel.
 
 Dans l'exemple ci-dessous, le diagramme "_Context_Overview_" est un _Block Definition Diagram_ (type `{bdd}`)
@@ -205,22 +211,72 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 == Diagramme et table d'exigences
 // Sebastien
 
-- Diagramme d'exigences (video)
-- Table d'exigences (video)
+La gestion des exigences est une activité cruciale pour le développement correct de tout système.
+Dans {sysml} les exigences peuvent être représentées sous deux formes complémentaires :
+
+- Diagramme d'exigences ({req}), utiles pour représenter les relations entre exigences
+- Table d'exigences, utiles dès qu'il y a un grand nombre d'exigences
+
+=== Diagramme d'exigences
+
+Ce diagramme sera vu plus en détail dans la section <<RE>>, mais en voici un exemple.
+
+.Exemple de diagramme d'exigences
+image::todo.jpg[]
+
+=== Table d'exigences
 //- Import d'exigences => dans la section détaillée correspondante
+
+.Exemple de table d'exigences
+image::todo.jpg[]
 
 == Diagramme des cas d'utilisation
 
-== BDD
+.Exemple de diagramme de cas d'utilisation
+image::todo.jpg[]
 
-- Diagramme de contexte
+== Diagramme de blocks
+
+.Exemple de diagramme de blocks
+image::todo.jpg[]
+
+.Diagramme de contexte
+[NOTE]
+=====
+Un diagramme de blocks un peu particulier consiste à représenter le système dans son environnement.
+Ce "diagramme de contexte" est pratique d'un point de vue modélisation car le système et les autres éléments en interaction avec lui, sont très tôt identifiés et "référençables" (des `connectableElement` en termes {sysml}).
+
+.Exemple de diagramme de contexte
+image::todo.jpg[]
+
+=====
 
 == IBD
 
-- Version 2 du diagramme de contexte
+.Diagramme de contexte
+[NOTE]
+=====
 // Sebastien
+Nous avons parlé du diagramme de contexte dans la section précédente sur le diagramme de block.
+Une autre façon de représenter le système dans son environnement est d'utiliser le diagramme de bloc interne
 
-== DS
+.Exemple de diagramme de contexte
+image::todo.jpg[]
+
+=====
+
+== Diagrammes de séquence (sd)
+
+Participants, acteurs, ligne de vie, etc.
+
+Le diagramme de séquence est un diagramme populaire pour représenter les interactions entre composants.
+
+Il est souvent intéressant de procéder par étapes, en définissant un premier diagramme représentant
+les interactions entre le système (vue comme une boîte noire) et les différents acteurs impliqués dans
+ces interactions.
+Dans ce diagramme, appelé diagrammes de séquence système (DSS), le seul participant (en dehors des acteurs) est le système lui-même.
+
+Il est ensuite possible de représenter le même cas d'utilisation, mais en considérant cette fois-ci le système comme une "boîte blanche", c'est àa dire en précisant les différents composants impliqués par ce cas.
 
 [[dss]]
 === Diagrammes de séquence système
@@ -238,7 +294,10 @@ xxx à vérifier xxx
 
 === Diagramme de séquences
 
-== Diagramme de Machine à états
+.Exemple de diagramme de séquence
+image::todo.jpg[]
+
+== Diagramme d'états
 // Sebastien
 
 == Diagramme d'activités

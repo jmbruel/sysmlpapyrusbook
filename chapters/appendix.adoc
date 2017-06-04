@@ -5,15 +5,47 @@
 Liste des acronymes utilisés dans ce livre.
 
 [horizontal]
-BDD::
-_**B**lock **D**efinition **D**iagram_
+ACT::
+_**ACT**ivity Diagram_, le diagramme d'activité  (cf. <<act>>)
 
-IDD::
-_**I**nternal **B**lock **D**iagram_
+BDD::
+_**B**lock **D**efinition **D**iagram_, le diagramme de définition de bloc (cf. <<bddsec>>)
+
+DS::
+**D**iagramme de **S**équence (cf. <<seq>>)
+
+DSS::
+**D**iagramme de **S**équence **S**ystème (cf. <<seq>>)
+
+IBD::
+_**I**nternal **B**lock **D**iagram_, le diagramme de blocs internes  (cf. <<ibd>>)
 
 IS::
 **I**ngénierie **S**ystème
 
+PAR::
+_**P**arametric **D**iagram_, le diagramme paramétrique (cf. <<param>>)
+
+PKG::
+_**P**ackage **D**iagram_, le diagramme des paquetages (cf. <<package>>)
+
+REQ::
+_**REQ**uirements **D**iagram_, le diagramme des exigences (cf. <<RE>>)
+
+SD::
+_**S**equence **D**iagram_, le diagramme de séquence (cf. <<seq>>)
+
+STM::
+_**ST**ate **M**achine Diagram_, le diagramme d'état (cf. <<stm>>)
+
+SysML::
+_**S**ystems **M**odeling **L**anguage_
+
+UC::
+_**U**se **C**ase Diagram_, le diagramme des cas d'utilisation (cf. <<uc>>)
+
+UML::
+_**U**nified **M**odeling **L**anguage_
 
 [appendix]
 [[histoire]]
