@@ -68,6 +68,15 @@ A requirement is defined as a stereotype of UML Class..._
 .Un exemple de _Requirement_ en SysML
 image::todo.jpg[SysML and UML,width=50%,scaledwidth=50%]
 
+[[req15]]
+=== Nouveauté de SysML 1.5
+
+La dernière version de {sysml} en date du 1er mai 2017 apporte des progrès significatifs en ce qui concerne les exigences.
+
+http://model-based-systems-engineering.com/2017/05/09/whats-new-in-sysml-1-5-requirements-modeling/
+
+.N'importe quel élément de modèle (qui a un nom) peut être une exigence (<<SysML>>, p.168)
+image::abstractReq.png[AbstractRequirement,width=50%,scaledwidth=50%]
 
 === Différents types d'organisation
 
