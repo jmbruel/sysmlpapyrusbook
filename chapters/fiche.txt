@@ -6,10 +6,7 @@ ifndef::slides[.Carte d'identité]
 //- Version actuelle : http://www.sysml.org/docs/specs/OMGSysML-v1.3-12-06-02.pdf[1.3] (12/06/2012)
 //- Version actuelle : http://www.omg.org/spec/SysML/1.4/[`1.4`] (03/06/2015)
 - Version actuelle : http://www.omg.org/spec/SysML/1.5/[`1.5`] (01/05/2017)
-<<<<<<< HEAD
 - ISO Standard ISO/IEC https://www.iso.org/standard/65231.html[19514:2017]
-=======
->>>>>>> 2d44ff79ac7f45d36b06c5e10b8fb51cbc8916c2
 - Paternité : {OMG} / {UML} + {INCOSE}
 - Auteurs principaux :
 * Conrad Bock
