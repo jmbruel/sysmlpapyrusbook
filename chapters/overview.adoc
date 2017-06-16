@@ -316,13 +316,13 @@ image::todo.jpg[]
 
 [qanda]
 Associez les diagrammes suivants avec leurs acronymes (`{sd}`, `{dc}`, `{uc}`, `{pkg}`, `{dss}`)::
-- Diagramme de Paquetages
-- Diagramme des Cas d'Utilisation
-- Diagramme de Séquences Système
-- Diagramme de Classes
-- Diagramme de Séquences
+- Diagramme de paquetages
+- Diagramme des cas d'utilisation
+- Diagramme de séquences système
+- Diagramme de classes
+- Diagramme de séquences
 
-Placez dans la matrice ci-dessous les différents diagrammes {uml} que vous connaissez déjà (`{sd}`, `{dc}`, `{uc}`, `{pkg}`, `{dss}`)::
+Placez dans la matrice ci-dessous les différents diagrammes {sysml} vus dans ce chapitre::
 include::matrice-base.asc[]
 
 ifdef::correction[]
