@@ -210,6 +210,7 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 
 == Diagramme et table d'exigences
 // Sebastien
+//---------------------------------------------------------------------------------
 
 La gestion des exigences est une activité cruciale pour le développement correct de tout système.
 Dans {sysml} les exigences peuvent être représentées sous deux formes complémentaires :
@@ -266,25 +267,33 @@ image::todo.jpg[]
 =====
 
 == Diagrammes de séquence (sd)
+// JMB
+//---------------------------------------------------------------------------------
+//Participants, acteurs, ligne de vie, etc.
 
-Participants, acteurs, ligne de vie, etc.
+Le diagramme de séquence est un diagramme populaire pour représenter les
+participants d'une interaction.
 
-Le diagramme de séquence est un diagramme populaire pour représenter les interactions entre composants.
+Il est souvent intéressant de procéder par étapes, en définissant un premier
+diagramme représentant les interactions entre le système (vue comme une boîte
+noire) et les différents acteurs impliqués dans ces interactions.
+Dans ce diagramme, appelé diagramme de séquence système (<<dss,DSS>>), le seul
+participant (en dehors des acteurs) est le système lui-même.
 
-Il est souvent intéressant de procéder par étapes, en définissant un premier diagramme représentant
-les interactions entre le système (vue comme une boîte noire) et les différents acteurs impliqués dans
-ces interactions.
-Dans ce diagramme, appelé diagrammes de séquence système (DSS), le seul participant (en dehors des acteurs) est le système lui-même.
-
-Il est ensuite possible de représenter le même cas d'utilisation, mais en considérant cette fois-ci le système comme une "boîte blanche", c'est àa dire en précisant les différents composants impliqués par ce cas.
+Il est ensuite possible de représenter le même cas d'utilisation, mais en
+considérant cette fois-ci le système comme une "boîte blanche", c'est à dire
+en précisant les différents participants impliqués par ce cas.
 
 [[dss]]
 === Diagrammes de séquence système
 
-Les diagrammes de séquence système (DSS) sont des _Sequence Diagrams_ {uml} classiques où seul le système est représenté comme une boîte noire en interaction avec son environnement (les utilisateurs généralement).
+Les diagrammes de séquence système (DSS) sont des _Sequence Diagrams_ {uml}
+classiques où seul le système est représenté comme une boîte noire en
+interaction avec son environnement (les utilisateurs généralement).
 
 Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails.
-Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence classique (cf. section sur les <<seq>>).
+Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence
+classique.
 
 
 .Exemples de DSS
@@ -294,21 +303,32 @@ xxx à vérifier xxx
 
 === Diagramme de séquences
 
+Le diagramme de séquence permet de représenter les différents participants
+(dont la ligne de vie représente une chronologie des événements) et les échanges
+de messages entre eux.
+
 .Exemple de diagramme de séquence
 image::todo.jpg[]
 
+Pour plus de détails, cf. <<seq>>.
+
 == Diagramme d'états
 // Sebastien
+//---------------------------------------------------------------------------------
 
 == Diagramme d'activités
 // Sebastien
+//---------------------------------------------------------------------------------
 
 == Diagramme paramétrique
 // Sebastien
+//---------------------------------------------------------------------------------
 
 == Diagramme de packages
+//---------------------------------------------------------------------------------
 
 == Allocation, traçabilité et autres points de cohérences
+//---------------------------------------------------------------------------------
 
 == {resume}
 
