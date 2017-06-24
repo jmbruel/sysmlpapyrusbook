@@ -180,25 +180,32 @@ Certains méthodologistes (comme Tim Weilkiens) préconisent de ne pas utiliser 
 
 Il permet de :
 
-* modéliser les interactions entre blocs
-* séquencer ces interactions dans le temps
+* modéliser les interactions
 * représenter les échanges de messages
-* spécifier les scénarios des cas d'études
+* séquencer ces échanges dans le temps
+* spécifier les scénarios des cas d'Utilisation
 
 Les éléments qui composent ce diagramme sont :
 
-Participants::
-	les éléments en interaction (des blocs généralement)
 Lignes de vie::
-	des lignes verticales qui permettent d'indiquer un départ ou une arrivée d'interaction
+	des lignes verticales pointillées représentant un élément en interaction, et
+	qui permettent d'indiquer un départ ou une arrivée d'interaction
 Barres d'activation::
-	pour matérialiser quand l'élément est actif
+	pour matérialiser sur une ligne de vie quand l'élément correspondant est actif
 Messages::
 	ce qui "circule" d'un élément à l'autre (signal, appel de méthode, ...)
 
+Par commodité nous parlerons aussi de :
+
+Participants::
+	les éléments en interaction (des parties ou des références généralement),
+	correspondant au nom et au type de la ligne de vie (cadre en haut des lignes
+  de vie).
+
 [WARNING]
 =====================================================================
-Les participants (et leur ligne de vie) représentent des instances de blocs (souvent "anonymes").
+Les participants représentent des instances, souvent "anonymes".
+Ils ne sont pas à proprement parler des éléments
 =====================================================================
 
 === Exemple
@@ -207,14 +214,21 @@ Les participants (et leur ligne de vie) représentent des instances de blocs (so
 
 === Notions avancées
 
-On peut également représenter des instructions itératives et conditionnelles au travers de
-*cadres d'interaction* :
+On peut également représenter des instructions itératives ou conditionnelles
+au travers de *fragments combinés* (_combined fragments_).
+Un fragment combiné possède un opérateur (_interaction operator_)
+et un ou plusieurs opérandes (_operands_).
+
+Les principaux opérateurs sont :
 
 * `loop` (boucle)
 * `alt` (alternative)
 * `opt` (optionel)
-* `{par}` (parallèle)
-* `region` (région critique - un seul _thread_ à la fois)
+* `par` (parallèle)
+//* `region` (région critique : un seul _thread_ à la fois)
+
+Chaque opérande est assortie d'une `guarde` qui permet de déterminer les
+conditions sous lesquelles cette partie du scénario s'exécute.
 
 [[fowler]]
 .Exemple d' algorithme... (source <<Fowler2004>>)
@@ -222,6 +236,7 @@ image::fowl1.png["Un algorithme",width="30%",scaledwidth=50%]
 
 .Et le diagramme correpondant (source <<Fowler2004>>)
 image::fowl2.png["Sa modélisation",width="60%",scaledwidth=50%]
+
 
 ==== Exemple de conceptions
 
@@ -276,11 +291,39 @@ ifdef::backend-deckjs[==== Lien entre UC, DSS et DS (suite)]
 .Le DS correspondant
 image::dsexp1.png["Le DS correspondant",width="70%",scaledwidth=50%]
 
+==== Cadres référence
+
+Les diagrammes de séquence représentent une interaction qui peut être
+utilisée dans une autre interaction (à la manière d'un appel de fonction
+en programmation). L'opérateur _ref_ est alors utilisé.
+
+.Exemple de diagramme de séquence référençant un autre diagramme de séquence
+image::todo.jpg[]
+
+==== Le temps dans les diagrammes de séquence
+
+Il est possible d'ajouter des contraintes liées au temps dans un diagramme de séquence :
+
+- des contraintes de durée entre 2 événements
+- des contraintes de temps pour spécifier des instants dans un scénario
+
+.Exemple de contrainte de durée dans un diagramme de séquence
+image::todo.jpg[]
+
+==== Pour aller plus loin...
+
+Nous n'avons pas présenté dans ce livre un certain nombre de concepts complémentaires :
+
+- certains opérateurs (`strict`, `break`, `critical`, ...), relativement peu utilisés;
+- les invariants d'état, qui permettent de contraindre les interactions en fonction
+de l'état dans lequel se trouve le participant;
+- la possibilité de décomposer les lignes de vie, pour représenter les comportements internes.
 
 [[act]]
 //-----------------------------------------------
 == Diagrammes d'activité
 //-----------------------------------------------
+// Seb, please check
 
 Les diagrammes d'activité (_Activity Diagrams_) est utilisé pour représenter les flots de données et de contrôle entre les actions. Il est utilisé pour raffiner en général un cas d'utilisation.
 Il est utilisé pour l’expression de la logique de contrôle et d’entrées/sorties. Le diagramme d’activité sert non seulement à préciser la séquence d’actions à réaliser, mais aussi ce qui est produit, consommé ou transformé au cours de l’exécution de cette activité.

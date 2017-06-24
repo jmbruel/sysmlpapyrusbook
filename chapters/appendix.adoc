@@ -140,7 +140,7 @@ et où ils sont abordés dans le livre.
 | behaviors (entry, exit, and do)|
 |======================
 
-==== Eléménts transverses
+==== Eléments transverses
 
 [align="center",cols="3,1*^",options="header",width=100]
 |======================
@@ -152,6 +152,21 @@ et où ils sont abordés dans le livre.
 | diagram header, and diagram description |
 | Stereotype |
 |======================
+
+[appendix]
+[[sysml15]]
+== Nouveautés de SysML 1.5
+
+Pour les lecteurs habitués à {sysml} `1.4` nous résumons ici les principales nouveautés de la version `1.5`.
+
+=== Exigences
+
+Nous avons traité en détail cet aspect dans la section <<req15>>.
+
+=== Suite
+
+http://model-based-systems-engineering.com/2017/05/17/whats-new-in-sysml-1-5-miscellaneous/
+
 
 [appendix]
 [[index]]
