@@ -155,7 +155,7 @@ IMPORTANT: Ceci est un point important.
 Dans ces notes, nous distillerons des conseils, des bonnes pratiques ou des conventions que nous recommandons d'adopter.
 ====
 
-.Définition : Exemple (OMG SysML v1.3, p. 152)
+.Définition : Exemple (OMG SysML v1.x, p. xyz)
 [NOTE,icon=sysml.jpeg]
 ====
 Ces notes concernent des définitions tirées de la spécification {sysml} et sont donc précisément référencées.

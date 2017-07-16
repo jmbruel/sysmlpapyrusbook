@@ -154,7 +154,7 @@ Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons sou
 .Version abrégée des diagrammes
 image::Figure4-1-bis.png[Version abrégée,width=90%,scaledwidth=90%]
 
-.Définition : image:sysml.jpeg[width=20] Types de diagrammes (OMG SysML v1.4, p. 190)
+.Définition : Types de diagrammes (OMG SysML v1.4, p. 190)
 [NOTE,icon=sysml.jpeg]
 ====
 _SysML diagram kinds should have the following names or (abbreviations) as part of the heading..._

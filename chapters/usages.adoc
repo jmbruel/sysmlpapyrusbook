@@ -8,22 +8,175 @@ ifndef::final[]
 [CAUTION]
 ====
 *****
-Diagramme de contexte, BDD/IBD de haut
+Diagramme de contexte, BDD/IBD de haut niveau.
+Diagramme des cas d'utilisation.
 *****
 ====
 //-----------------------------------------------
 endif::final[]
 
-Avant de développer un système il faut définir le système => IBD
+//---------------------------------------------------------------------------------
+== Fondements
 
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|   {here}     		|				|
+| {analysis}		|			|    {here}    		|				|
+| {design}			|			|        		|				|
+| {implementation}	|			|        		|				|
+|======================
+
+Avant de développer un système il faut définir les limites du système (<<contexte>>),
+ainsi que ce que fait le système (<<usecase>>).
+
+//-----------------------------------------------
+[[contexte]]
 == Diagramme de contexte
+//-----------------------------------------------
 
 - Soit par IBD pour insister sur le système clos (tout ce qui est à l'extérieur n'est pas pris en compte). => SystemClos
 - Soit par BDD => Context
 
-[[uc-concepts]]
+//-----------------------------------------------
+[[usecase]]
 == Diagramme des Uses Cases
+//-----------------------------------------------
 
+.Concepts définis dans cette section
+[NOTE,icon=sysml.jpeg]
+=====
 Nous aborderons les concepts du niveau
 initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM):
 use case, actor, subject, association, include, extend, et generalization.
+=====
+
+Les éléments de base :
+
+Acteurs::
+	Les principaux éléments extérieurs au système considéré, et participant qui participent (on parle parfois d'acteurs principaux). Ils ont souvent un rôle.
+	ou qui bénéficient (on parle alors d'acteurs secondaires) du système.
+Cas d'utilisation::
+	représente un ensemble d’actions réalisées par le système intéressant pour au moins un acteur
+Association::
+	participation d'un acteur à un cas d'utilisation.
+Sujet::
+	le domaine étudié (qui peut être une partie seulement de tout le système, pas forcément modélisé dans son ensemble)
+
+[TIP]
+====
+Un *acteur* représente un *rôle* joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.
+====
+
+=== Le Diagramme des Cas d’Utilisation
+
+Le *Diagramme des Cas d'Utilisation* est un diagramme {UML} permettant de représenter :
+
+- les *UC* (_Use Case_ ou Cas d’Utilisation)
+- les *acteurs* (principaux et secondaires)
+- les *relations*
+* entre acteurs et _Use Case_
+* entre _Use Cases_
+
+ifdef::backend-deckjs[]
+:leveloffset: -2
+endif::backend-deckjs[]
+
+=== Cas d'Utilisation (_Use Case_)
+
+.Exemple de cas d'utilisation
+include::{defs}/uc.txt[]
+
+image::todo.jpg[width="80%",scaledwidth=50%]
+
+=== Exemple de cas d'utilisation (UML)
+
+Retrait par carte bancaire
+
+Scénario principal::
+	L'UC démarre lorsque le Guichet Automatique Bancaire (GAB) demande au client son numéro confidentiel après l’introduction de sa CB. Le client
+	entre son code et valide son entrée. Le GAB contrôle la validité du code. Si le code est valide, le GAB autorise
+	le retrait et l’UC se termine.
+Scénario alternatif n°1 ::
+	Le client peut à tout instant annuler l'opération. La carte est éjectée et l'UC se termine.
+Exemple de codification de l'UC::
+	UC01 ou RetraitCB (pour Retrait par carte bleue)
+
+=== Précisions
+
+Un cas d'utilisation peut être précisé par :
+
+- une description textuelle
+- un ou des diagrammes {UML} (séquence, activité)
+
+[NOTE]
+=====================================================================
+Dans les outils, cette "précision" se manifeste par le fait que l'on "attache"
+généralement un diagramme de séquence à un cas d'utilisation (clic droit sur un _Use Case_ -> nouveau `{seq}`).
+=====================================================================
+
+==== Acteur
+
+include::{defs}/acteur.txt[]
+
+On peut trouver plusieurs types d'acteurs :
+
+* extérieurs au système (cf. `actor` <<ucdiag>>)
+** les acteurs principaux
+** les acteurs secondaires
+* exemples de types d'acteurs prédéfinis dans UML :
+** `\<<utility>>`
+** `\<<process>>`
+** `\<<thread>>`
+
+[NOTE]
+====
+On peut utiliser des liens de généralisation/spécialisation entre acteurs
+pour représenter les possibilités pour le spécialisé d'avoir les mêmes
+prérogatives (notamment en terme d'utilisation du système) que le généralisé.
+====
+
+==== Relations entre acteurs et _Use Case_
+
+En général, une simple association relie acteurs et _Use Case_.
+On peut également orienter ces associations en plaçant une direction (flèche vide) au bout de l'association.
+
+.Relations orientées
+image::todo.jpg[]
+
+==== Relations entre _Use Case_
+
+Après avoir lister les cas d'utilisation, il est utile de les organiser et de montrer les relations entre eux.
+Plusieurs relations sont possibles :
+
+Extension (`\<<extend>>`)::
+	Indique que le _Use Case_ source est *éventuellement* exécutée en complément du _Use Case_ destination (cas particulier, erreur...). Le point précis où l'extension peut se produire est appelé _extension point_ (surtout utile quand il existe plusieurs extensions pour un même cas)
+Inclusion (`\<<include>>`)::
+	Indique que le _Use Case_ est inclus *obligatoirement* dans un autre _Use Case_ (notion de sous-fonction par exemple)
+Généralisation::
+	Relation entre un _Use Case_ général et un autre plus spécialisé qui hérite de ses caractéristiques et en rajoute (différents modes d'utilisation d'un système par exemple, ou encore différents acteurs impliqués)
+
+[[ucdiag]]
+.Notation dans le diagramme d'UC
+image::todo.jpg["Diagramme d'UC",width="35%",scaledwidth=50%]
+
+[TIP]
+=====================================================================
+On n'utilise généralement +<<include>>+ que dans le cas où le sous-cas d'utilisation est
+inclut dans plusieurs UC. Si ce n'est pas le cas, il est généralement englobé dans l'UC.
+=====================================================================
+
+
+=== Pour construire un diagramme d'UC (de manière générale)
+
+. identifier les acteurs
+. identifier les cas d'utilisation
+. structurer en _packages_
+. finaliser les diagrammes de cas d'utilisation (ajouter les relations)
+
+[TIP]
+====
+Certains méthodologistes (comme Tim Weilkiens) préconisent de ne pas utiliser les acteurs et les cas d'utilisation
+(cf. son http://model-based-systems-engineering.com/[blog]).
+====
