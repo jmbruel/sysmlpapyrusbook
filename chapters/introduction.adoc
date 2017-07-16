@@ -135,7 +135,9 @@ La description de l'architecture et des éléments constitutifs du système, ave
 C'est souvent la partie de modélisation qui pose le moins de problème aux débutants.
 
 {Behavior}::
-Le comportement d'un système est du point de vue de l'utilisateur final beaucoup plus important que la structure elle-même. C'est la partiequ'il est la plus à même d'exprimer, de comprendre (vos modèles) et de valider.
+Le comportement d'un système est du point de vue de l'utilisateur final beaucoup plus important que la structure elle-même.
+C'est la partie qu'il est la plus à même d'exprimer, de comprendre (via les modèles) et de valider.
+Nous distinguons dans ce livre le comportement global (du système) du comportement local (des éléments constitutifs).
 
 {Crosscutting}::
 Un certains nombre de concepts sont transverses aux trois points de vue précédents.
@@ -147,7 +149,7 @@ Ils sont plutôt à rapprocher de la notion de préoccupation.
 C'est ainsi que nous avons choisi de distinguer trois points de vue
 qui se retrouvent souvent en modélisation : le point de vue des exigences qui permet de se focaliser sur les besoins des clients ;
 le point de vue structurel qui permet de se focaliser sur les différents composants du système ;
-et le point de vue comportemental qui permet de se focaliser sur le comportement du système.
+et le point de vue comportemental qui permet de se focaliser sur le comportement global et local.
 Ces trois points de vue n'étant pas indépendants les uns des autres, nous avons intégré un quatrième point de vue transversal.
 
 [[devphase]]
