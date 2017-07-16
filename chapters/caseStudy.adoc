@@ -1,5 +1,6 @@
 
 [[etudeCas]]
+[reftext="Étude de cas"]
 = Étude de cas
 :FichierExigences: https://docs.google.com/spreadsheets/d/1-yaW8fZHG9i6r7vJ7NOU9-66-hnDYY66Vd9cmZTYs2A/edit?usp=sharing
 

@@ -14,6 +14,7 @@ v1.2, {localdate}
 :linkcss:
 :title-page-background-image: image:papyrus-logo.png[pdfwidth=25%]
 :defs: defs
+:xrefstyle: full //short, basic, full
 
 include::definitions.txt[]
 

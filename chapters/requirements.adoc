@@ -1,5 +1,5 @@
 
-[[RE]]
+[[reqs]]
 = Besoins clients et exigences
 
 
@@ -16,7 +16,6 @@ Après avoir parlé des concepts SysML pour traiter de ce sujet, dire qu'il peut
 //-----------------------------------------------
 endif::final[]
 
-[[reqs]]
 //---------------------------------------------------------------------------------
 == Fondements
 
@@ -30,6 +29,13 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 | {implementation}	|	 {here}				|        		|				|
 |======================
 
+.Concepts définis dans cette section
+[NOTE,icon=sysml.jpeg]
+=====
+Nous aborderons les concepts du niveau
+initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM):
+requirement, requirement diagram, derive, verify, satisfy, refine, trace, containment.
+=====
 
 Les exigences sont prises en compte à différent niveaux en {SysML}.
 Nous aborderons :
@@ -56,10 +62,15 @@ de les exprimer, de les manipuler et surtout de les lier avec le reste du systè
 
 === Représentation de base
 
-Un _Requirement_ en {sysml} n'est qu'un bloc particulier.
+Un _Requirement_ en {sysml} permet de représenter une exigence, généralement
+référencée dans un document à part (ou dans un logiciel dédié).
+Une exigence est donc représentée par un bloc particulier (stéréotypé `<< requirement >>`), avec deux attributs
+obligatoires : _id_ qui représente une référence unique (généralement reprise du
+	document initiale d'où a été importée l'exigence), et _text_ qui reprend le texte
+	descriptif de l'exigence.
 
 .Définition : _Requirements_ (OMG SysML v1.4, p. 157)
-[NOTE]
+[NOTE,icon=sysml.jpeg]
 ====
 _A requirement specifies a capability or condition that must (or should) be satisfied...
 A requirement is defined as a stereotype of UML Class..._
@@ -67,6 +78,10 @@ A requirement is defined as a stereotype of UML Class..._
 
 .Un exemple de _Requirement_ en SysML
 image::todo.jpg[SysML and UML,width=50%,scaledwidth=50%]
+
+NOTE: Les *stéréotypes* sont très souvent utilisés en {UML} / {sysml}.
+Ils s'appliquent à d'autres éléments (comme des blocs ou des associations) pour en
+changer la signification par défaut.
 
 [[req15]]
 === Nouveauté de SysML 1.5
@@ -113,7 +128,7 @@ Il est donc recommandé par le norme et possible dans de nombreux outils de repr
 sous forme tabulaire.
 
 .Définition : _Requirements Table_ (OMG SysML v1.4, p. 163)
-[NOTE]
+[NOTE,icon=sysml.jpeg]
 ====
 _The tabular format is used to represent the requirements, their properties and relationships..._
 ====
@@ -207,7 +222,7 @@ artefact de conception (ne serait-ce qu'un _use case_)footnote:[et vice-versa!].
 
 == Les _Use Case Diagrams_
 
-Bien que nous traitions les cas d'utilisation dans la partie <<behavior,comportement>>, nous les abordons
+Bien que nous traitions les cas d'utilisation dans la partie <<usecase,interface>>, nous les abordons
 	ici du fait de leur proximité avec les _requirements_.
 
 .Exemple de lien entre _use case_ et _requirements_

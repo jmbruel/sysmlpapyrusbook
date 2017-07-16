@@ -83,12 +83,11 @@ et où ils sont abordés dans le livre.
 |======================
 |	Concept         |   Lien
 | Exigences       |		<<reqs>>
-| derive, verify, satisfy, refine, trace, containment |
-| Diagramme d'exigences |
-| Diagramme des cas d'utilisation |
-| Diagramme d'exigences |
-| use case, actor, and subject | <<uc-concepts>>
-| association, include, extend, generalization | <<uc-concepts>>
+| derive, verify, satisfy, refine, trace, containment | <<reqs>>
+| Diagramme d'exigences | <<reqs>>
+| Diagramme des cas d'utilisation | <<usecase>>
+| use case, actor, and subject | <<usecase>>
+| association, include, extend, generalization | <<usecase>>
 |======================
 
 ==== Modèles structurels
@@ -104,13 +103,11 @@ et où ils sont abordés dans le livre.
 | valuetype (with units) |
 | value properties, parts, references, and operations |
 | Block Definition Diagram |
-|	Concept         |   Lien
 | compartments |
 | specialization, associations (including compositefootnote:[but not shared aggregation]), multiplicities|
 | Internal Block Diagram |
 | enclosing block |
 | flow ports and standard ports |
-|	Concept         |   Lien
 | connectors and item flows |
 |  representation of parts |
 | constraint blocks |

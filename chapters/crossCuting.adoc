@@ -106,7 +106,7 @@ Ainsi, dans un _package_, on n'a pas à se soucier des noms des éléments.
 Même si d'autres utilisent les mêmes noms, il n'y aura pas ambiguïté.
 
 .Définition : _Namespace_ (OMG SysML v1.4, p. 21)
-[NOTE]
+[NOTE,icon=sysml.jpeg]
 ====
 _The package defines a namespace for the packageable elements._
 ====
