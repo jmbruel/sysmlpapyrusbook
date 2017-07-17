@@ -72,3 +72,6 @@ image:importGit.png[width="50%",scaledwidth="60%"]
 image:importGit2.png[width="50%",scaledwidth="60%"]
 * choisir la branche `master` du dépôt et l'emplacement de votre copie locale
 * Voilà!
+
+
+:imagesdir: {imageold}
