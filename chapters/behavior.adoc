@@ -45,3 +45,11 @@ Il est également possible d'attacher un diagramme d'état (composite) à un ét
 Un diagramme d'état peut représenter des régions concurrentes (dont les activités peuvent évoluer en parallèle), graphiquement représentées par des zones séparées par des traits pointillés. Chaque région contient ses propres états et transitions.
 
 Il existe encore d'autres concepts avancés que nous ne présenterons pas dans cette introduction car ils sont beaucoup moins utilisés (+entry+, +exit+, +transition interne+, etc.).
+
+== Diagramme d'activités
+
+Le diagramme d'activité est étudié dans ce livre plus en détail au chapitre
+<<act>>, dans la partie sur les interactions.
+Il s'agit d'un diagramme souvent utilisé pour représenter le comportement
+du système, notamment des scénarios des cas d'utilisation.
+Nous revoyons le lecteur au chapitre <<act>> pour plus de détails.

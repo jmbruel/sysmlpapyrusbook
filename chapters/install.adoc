@@ -1,7 +1,9 @@
 
 [[install]]
 = Avant de démarrer
-
+:papyrusversion: 3.0
+:imageold: {imagesdir}
+:imagesdir: {imagesdir}/{papyrusversion}
 //-----------------------------------------------
 ifndef::final[]
 .Commentaire
@@ -50,4 +52,23 @@ Information sur le matériel disponible autour du livre (site web, exemples, for
 //-----------------------------------------------
 endif::final[]
 
-{siteurl}
+Le site qui répertorie tous les matériels utiles en complément de ce livre
+(tutoriels, modèles, compléments, corrections, etc.) se trouve ici : {siteurl}.
+
+== Pour ceux qui veulent aller vite
+
+Les modèles de ce livre (cf. <<etudeCas>>) sont disponibles ici :
+{siteUseCase}.
+
+Pour créer un projet qui contienne ces modèles, suivez simplement les étapes suivantes :
+
+. Importez le projet git existant
+
+* menu:File[Import... > Git > Projects from Git > Next]
++
+image:importGit.png[width="50%",scaledwidth="60%"]
+* choisir menu:Clone URI[Next] et entrez l'URL du projet ({siteUseCase})
++
+image:importGit2.png[width="50%",scaledwidth="60%"]
+* choisir la branche `master` du dépôt et l'emplacement de votre copie locale
+* Voilà!

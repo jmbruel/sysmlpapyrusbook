@@ -5,6 +5,7 @@
 :papyrusversion: 2.0.1
 :siteurl: https://bit.ly/sysmlbook
 :gihuburl: https://github.com/jmbruel/sysmlpapyrusbook
+:siteUseCase: https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
 
 //Layouts
 :standHeight: 250

@@ -48,6 +48,14 @@ UML::
 _**U**nified **M**odeling **L**anguage_
 
 [appendix]
+[[acro]]
+== Traductions
+Liste des traductions françaises .
+
+[horizontal]
+_Activity Diagram_:: diagramme d'activité  (cf. <<act>>)
+
+[appendix]
 [[histoire]]
 == Les histoires de SysML et de Papyrus
 
