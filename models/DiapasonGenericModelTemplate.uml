@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
-  <uml:Model xmi:id="_Q7ZNACRxEeCaCLd1YXNfIQ" name="&lt;Project Name>">
+  <uml:Model xmi:id="_Q7ZNACRxEeCaCLd1YXNfIQ" name="SmartHomeCaseStudy">
     <ownedComment xmi:type="uml:Comment" xmi:id="_XpkjEHb7EeOHCpFb_yGTPQ">
       <body>Reading scenario:&#xD;
 Step #1 - Investigate model {@link #_o5WlgCRyEeCaCLd1YXNfIQ} (double click on it to start)&#xD;
@@ -8,19 +8,19 @@ Step #2 - Investigate model {@link #_j5KicE3oEeO5W83O6raoHw} (double click on it
 Step #3 - Investigate model {@link #_OXE1ICR8EeCaCLd1YXNfIQ} (double click on it to start)&#xD;
 PS: Glossary of the project is defined within the model {@link #_yt5KoFHQEeORnr76KmtUgw} (double click on it to see the details)</body>
     </ownedComment>
-    <packagedElement xmi:type="uml:Model" xmi:id="_yt5KoFHQEeORnr76KmtUgw" name="&lt;Project Short Name> Glossary">
+    <packagedElement xmi:type="uml:Model" xmi:id="_yt5KoFHQEeORnr76KmtUgw" name="SmartHome Glossary">
       <ownedComment xmi:type="uml:Comment" xmi:id="_5nRjMHbxEeOJLbWaesGeMg" annotatedElement="_yt5KoFHQEeORnr76KmtUgw">
         <body>This package consists of classes denoting the items of the glossary of the {@link #_GVomQFHREeORnr76KmtUgw} project.</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Class" xmi:id="_GVomQFHREeORnr76KmtUgw" name="&lt;Project Short Name>">
+      <packagedElement xmi:type="uml:Class" xmi:id="_GVomQFHREeORnr76KmtUgw" name="SmartHome">
         <ownedComment xmi:type="uml:Comment" xmi:id="_Nf4xAFHSEeORnr76KmtUgw">
-          <body>&lt;Project Name></body>
+          <body>SmartHomeCaseStudy</body>
         </ownedComment>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Model" xmi:id="_o5WlgCRyEeCaCLd1YXNfIQ" name="&lt;Project Short Name> Requirements">
+    <packagedElement xmi:type="uml:Model" xmi:id="_o5WlgCRyEeCaCLd1YXNfIQ" name="SmartHome Requirements">
       <ownedComment xmi:type="uml:Comment" xmi:id="_KwtU0DeAEeGpFZREwIhCZA" annotatedElement="_o5WlgCRyEeCaCLd1YXNfIQ">
-        <body>This model formalizes the requirement description of the &lt;Project Name> (in short &lt;Project Short Name>). This model is derived from a textual description of the &lt;Project Short Name> requirements as defined in the document referenced &lt;to be completed>.</body>
+        <body>This model formalizes the requirement description of the SmartHomeCaseStudy (in short SmartHome). This model is derived from a textual description of the SmartHome requirements as defined in the document referenced &lt;to be completed>.</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_-9Y20HbyEeOJLbWaesGeMg" annotatedElement="_bExNsHbyEeOJLbWaesGeMg _43vuQHbyEeOJLbWaesGeMg">
         <body>The requirement model, {@link #_o5WlgCRyEeCaCLd1YXNfIQ}, can be further decompopsed into sub-models in order to organize the requirement description. This decomposition matches requirements categories that may reflect various criteria as for example, functional or non-functional criteria.&#xD;
@@ -31,7 +31,7 @@ Requirements models can be viewed either using SysML requirements diagrams or us
 Step #1 - Investigate model {@link #_yt5KoFHQEeORnr76KmtUgw} (double click on it to start)&#xD;
 Step #2 - Investigate model {@link #_bExNsHbyEeOJLbWaesGeMg} (double click on it to start)</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Model" xmi:id="_bExNsHbyEeOJLbWaesGeMg" name="&lt;Project Short Name> SubReqModel1">
+      <packagedElement xmi:type="uml:Model" xmi:id="_bExNsHbyEeOJLbWaesGeMg" name="SmartHome SubReqModel1">
         <ownedComment xmi:type="uml:Comment" xmi:id="_tsJecH7HEeOc0bxsTW21JA" annotatedElement="_ask2EH7HEeOc0bxsTW21JA">
           <body>This is a requirement model element (concept defined in SysML). It has two properties that are respectively an id and a text. Both properties are free text-based description.</body>
         </ownedComment>
@@ -45,7 +45,7 @@ Here, the detailled of the Req_1 decomposition is also shown in a SysML requirem
           <nestedClassifier xmi:type="uml:Class" xmi:id="_Pf2CcH7IEeOc0bxsTW21JA" name="Req_1.3"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Model" xmi:id="_43vuQHbyEeOJLbWaesGeMg" name="&lt;Project Short Name> SubReqModel2"/>
+      <packagedElement xmi:type="uml:Model" xmi:id="_43vuQHbyEeOJLbWaesGeMg" name="SmartHome SubReqModel2"/>
       <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_txtuoDtFEee1tf4JDltoag">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tx3foDtFEee1tf4JDltoag" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
@@ -59,14 +59,14 @@ Here, the detailled of the Req_1 decomposition is also shown in a SysML requirem
         <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
       </profileApplication>
     </packagedElement>
-    <packagedElement xmi:type="uml:Model" xmi:id="_j5KicE3oEeO5W83O6raoHw" name="&lt;Project Short Name> External Specification">
+    <packagedElement xmi:type="uml:Model" xmi:id="_j5KicE3oEeO5W83O6raoHw" name="SmartHome External Specification">
       <ownedComment xmi:type="uml:Comment" xmi:id="_9mrY4FFeEeOLhP-_UGopcg" annotatedElement="_j5KicE3oEeO5W83O6raoHw">
-        <body>This model refines partially the {@link #_o5WlgCRyEeCaCLd1YXNfIQ} model abstracting its internal and providing a black-box view of the &lt;Project Short Name>.</body>
+        <body>This model refines partially the {@link #_o5WlgCRyEeCaCLd1YXNfIQ} model abstracting its internal and providing a black-box view of the SmartHome.</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_fUtqYE3pEeO5W83O6raoHw" name="FromReq2ExtSpec" client="_j5KicE3oEeO5W83O6raoHw" supplier="_o5WlgCRyEeCaCLd1YXNfIQ">
         <mapping xmi:type="uml:OpaqueExpression" xmi:id="_dBkGkE3qEeO5W83O6raoHw" name="FromReq2ExtSpec_MappingDescription" language="" body=""/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_RDQ_oF3uEeGTC7jtR9befw" name="&lt;Project Short Name> Use Cases">
+      <packagedElement xmi:type="uml:Package" xmi:id="_RDQ_oF3uEeGTC7jtR9befw" name="SmartHome Use Cases">
         <packagedElement xmi:type="uml:UseCase" xmi:id="_PwMs8FkIEeO46MKyR1zbAg" name="&lt;Use Case 001 Name>" subject="_gCDnUFkHEeO46MKyR1zbAg">
           <ownedComment xmi:type="uml:Comment" xmi:id="_7-5v4FkLEeO46MKyR1zbAg" annotatedElement="_Pbm9AFkIEeO46MKyR1zbAg _z9MpYHb-EeOHCpFb_yGTPQ">
             <body>This is a use case model element. It denotes some behavior of the system under consideration. It is further refined via interaction description using as for example sequence diagrams.&#xD;
@@ -78,14 +78,14 @@ N.B.: each use case shall have a comment denoting it textually.</body>
             </ownedComment>
             <ownedComment xmi:type="uml:Comment" xmi:id="_KEWjMHb-EeOHCpFb_yGTPQ" annotatedElement="_PwMs8FkIEeO46MKyR1zbAg">
               <body>&lt;Insert here a textual description of the use case>.&#xD;
-N.B.: the comment may be hidden and shown as for example in a table gathering all use cases contained in one use cases pakage, e.g. in the table named &quot;List of use cases contained in the &lt;Project Short Name> Use Cases package.&quot;. </body>
+N.B.: the comment may be hidden and shown as for example in a table gathering all use cases contained in one use cases pakage, e.g. in the table named &quot;List of use cases contained in the SmartHome Use Cases package.&quot;. </body>
             </ownedComment>
             <lifeline xmi:type="uml:Lifeline" xmi:id="_zOBvcH7DEeOc0bxsTW21JA" name="Lifeline" represents="_xxK3QH7AEeO3zebKuAwZtw"/>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:Interaction" xmi:id="_Q5JDQFkOEeO46MKyR1zbAg" name="Interaction002_UseCase001">
             <ownedComment xmi:type="uml:Comment" xmi:id="_LU5MUH7FEeOc0bxsTW21JA" annotatedElement="_PwMs8FkIEeO46MKyR1zbAg">
               <body>&lt;Insert here a textual description of the use case>.&#xD;
-N.B.: the comment may be hidden and shown as for example in a table gathering all use cases contained in one use cases pakage, e.g. in the table named &quot;List of use cases contained in the &lt;Project Short Name> Use Cases package.&quot;. </body>
+N.B.: the comment may be hidden and shown as for example in a table gathering all use cases contained in one use cases pakage, e.g. in the table named &quot;List of use cases contained in the SmartHome Use Cases package.&quot;. </body>
             </ownedComment>
           </ownedBehavior>
         </packagedElement>
@@ -99,7 +99,7 @@ N.B.: the comment may be hidden and shown as for example in a table gathering al
         <packagedElement xmi:type="uml:Abstraction" xmi:id="_JauJMH7GEeOc0bxsTW21JA" name="UC001_refinedIn_Interaction002" client="_Q5JDQFkOEeO46MKyR1zbAg" supplier="_PwMs8FkIEeO46MKyR1zbAg"/>
         <packagedElement xmi:type="uml:Abstraction" xmi:id="_BVatoH7UEeOjPqz2xMsJPg" name="FromReq_1_to_UC001" client="_PwMs8FkIEeO46MKyR1zbAg" supplier="_ask2EH7HEeOc0bxsTW21JA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_YF3z4FkHEeO46MKyR1zbAg" name="&lt;Project Short Name> Actors">
+      <packagedElement xmi:type="uml:Package" xmi:id="_YF3z4FkHEeO46MKyR1zbAg" name="SmartHome Actors">
         <packagedElement xmi:type="uml:Actor" xmi:id="_o9C5QDiAEeGe4_sFLbM3Hw" name="Actor_1">
           <ownedComment xmi:type="uml:Comment" xmi:id="_TwNwUFkJEeO46MKyR1zbAg" annotatedElement="_o9C5QDiAEeGe4_sFLbM3Hw">
             <body>This is an actor model element. It represents a type of role played by an entity that interacts with the system under consideraton, the so-called subject of the use case diagram.</body>
@@ -139,14 +139,14 @@ N.B.: the comment may be hidden and shown as for example in a table gathering al
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_aewdMFkPEeO46MKyR1zbAg" name="SurroundedSystem">
         <ownedComment xmi:type="uml:Comment" xmi:id="_eDOjIFt4EeO46MKyR1zbAg" annotatedElement="_aewdMFkPEeO46MKyR1zbAg">
-          <body>This composite structure gathers the &lt;Project Name> system and all external actors inetracting with the system.&#xD;
+          <body>This composite structure gathers the SmartHomeCaseStudy system and all external actors inetracting with the system.&#xD;
 &#xD;
 </body>
         </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_xxK3QH7AEeO3zebKuAwZtw" name="&lt;Instance of Project Name>" type="_gCDnUFkHEeO46MKyR1zbAg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_3e9kcH9YEeOjPqz2xMsJPg" name="actor_1" type="_o9C5QDiAEeGe4_sFLbM3Hw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_4YdYQH9YEeOjPqz2xMsJPg" name="actor_2" type="_oBYiQDiAEeGe4_sFLbM3Hw"/>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_gCDnUFkHEeO46MKyR1zbAg" name="&lt;Project Name>" useCase="_Pbm9AFkIEeO46MKyR1zbAg _PwMs8FkIEeO46MKyR1zbAg">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_gCDnUFkHEeO46MKyR1zbAg" name="SmartHomeCaseStudy" useCase="_Pbm9AFkIEeO46MKyR1zbAg _PwMs8FkIEeO46MKyR1zbAg">
           <ownedComment xmi:type="uml:Comment" xmi:id="_klgH4FkIEeO46MKyR1zbAg" annotatedElement="_gCDnUFkHEeO46MKyR1zbAg">
             <body>This model element (a structured class) abstracts the system under specification conforming a &quot;black-box&quot; point of view. It is said to be the subject of the use case diagram.</body>
           </ownedComment>
@@ -155,11 +155,11 @@ N.B.: the comment may be hidden and shown as for example in a table gathering al
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_iw0rAH9kEeOjPqz2xMsJPg" name="FromActor_1_to_actor_1" client="_3e9kcH9YEeOjPqz2xMsJPg" supplier="_o9C5QDiAEeGe4_sFLbM3Hw"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_pHi8gH9kEeOjPqz2xMsJPg" name="FromActor_2_to_actor_2" client="_4YdYQH9YEeOjPqz2xMsJPg" supplier="_oBYiQDiAEeGe4_sFLbM3Hw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Model" xmi:id="_OXE1ICR8EeCaCLd1YXNfIQ" name="&lt;Project Short Name> Internal Specification">
+    <packagedElement xmi:type="uml:Model" xmi:id="_OXE1ICR8EeCaCLd1YXNfIQ" name="SmartHome Internal Specification">
       <ownedComment xmi:type="uml:Comment" xmi:id="_9lKggFFfEeOLhP-_UGopcg" annotatedElement="_OXE1ICR8EeCaCLd1YXNfIQ">
-        <body>The {@link #_OXE1ICR8EeCaCLd1YXNfIQ} model refines both models, {@link #_o5WlgCRyEeCaCLd1YXNfIQ} and {@link #_j5KicE3oEeO5W83O6raoHw}. This model is focussed on the internal description of the &lt;Project Short Name> also called the whitebox point of view of the system.</body>
+        <body>The {@link #_OXE1ICR8EeCaCLd1YXNfIQ} model refines both models, {@link #_o5WlgCRyEeCaCLd1YXNfIQ} and {@link #_j5KicE3oEeO5W83O6raoHw}. This model is focussed on the internal description of the SmartHome also called the whitebox point of view of the system.</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Package" xmi:id="_fksiACn-EeCso_wGb2NO1w" name="&lt;Project Short Name> Internal Model Elements">
+      <packagedElement xmi:type="uml:Package" xmi:id="_fksiACn-EeCso_wGb2NO1w" name="SmartHome Internal Model Elements">
         <packagedElement xmi:type="uml:Class" xmi:id="_pumR4GOJEeG8YZh1nU9dHA" name="Elevator Controller" classifierBehavior="_uPjicGR3EeG8YZh1nU9dHA">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_cvV-pmO0EeG8YZh1nU9dHA" name="floor elevator entrance" type="_XOtVgGOREeG8YZh1nU9dHA" association="_cvV-oGO0EeG8YZh1nU9dHA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cvV-qGO0EeG8YZh1nU9dHA" value="1"/>
@@ -634,14 +634,14 @@ N.B.: the comment may be hidden and shown as for example in a table gathering al
         <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_U3NPkWR2EeG8YZh1nU9dHA" name="SendOperationEvent1"/>
         <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_U3WZgGR2EeG8YZh1nU9dHA" name="ReceiveOperationEvent1"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_eQjr8GRzEeG8YZh1nU9dHA" name="&lt;Project Short Name> Specific Data Types">
+      <packagedElement xmi:type="uml:Package" xmi:id="_eQjr8GRzEeG8YZh1nU9dHA" name="SmartHome Specific Data Types">
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_uFar0GRzEeG8YZh1nU9dHA" name="Operator Commands"/>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_yDqqEGRzEeG8YZh1nU9dHA" name="Passenger Commands"/>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_z_mLQGRzEeG8YZh1nU9dHA" name="Fire Detection"/>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_3g_OYGRzEeG8YZh1nU9dHA" name="Elevator Displays"/>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_5Prk0GRzEeG8YZh1nU9dHA" name="Operator Displays"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_X_98UE3nEeO5W83O6raoHw" name="&lt;Project Short Name> Specific Signals">
+      <packagedElement xmi:type="uml:Package" xmi:id="_X_98UE3nEeO5W83O6raoHw" name="SmartHome Specific Signals">
         <packagedElement xmi:type="uml:Signal" xmi:id="_uMf5UGR1EeG8YZh1nU9dHA" name="Ack_Mode_Change"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_wM9Z4E3pEeO5W83O6raoHw" name="FromExtSpec2IntSpec" client="_OXE1ICR8EeCaCLd1YXNfIQ" supplier="_j5KicE3oEeO5W83O6raoHw">
@@ -652,7 +652,7 @@ N.B.: the comment may be hidden and shown as for example in a table gathering al
       </packagedElement>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_N-NGcHb6EeOHCpFb_yGTPQ" name="FromReq2ExtSpec" client="_OXE1ICR8EeCaCLd1YXNfIQ" supplier="_o5WlgCRyEeCaCLd1YXNfIQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Model" xmi:id="_-nEIcE3oEeO5W83O6raoHw" name="&lt;Project Short Name> Traceability Model">
+    <packagedElement xmi:type="uml:Model" xmi:id="_-nEIcE3oEeO5W83O6raoHw" name="SmartHome Traceability Model">
       <ownedComment xmi:type="uml:Comment" xmi:id="_XA8JcH7VEeOjPqz2xMsJPg">
         <body>Model review scenario:&#xD;
 - Double-click on the refinement dependency to open the graphical description of the refinement between both {@link #_o5WlgCRyEeCaCLd1YXNfIQ} and {@link #_j5KicE3oEeO5W83O6raoHw} models.</body>

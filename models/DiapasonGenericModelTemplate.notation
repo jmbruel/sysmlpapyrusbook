@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:configuration="http://www.eclipse.org/papyrus/infra/viewpoints/configuration" xmlns:css="http://www.eclipse.org/papyrus/infra/gmfdiag/css" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:nattable="http://www.eclipse.org/papyrus/nattable/model" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisconfiguration="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:nattablelabelprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattablecontentprovider" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:style_1="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis http://www.eclipse.org/papyrus/nattable/model#//nattableaxis http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model#//nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattablecontentprovider http://www.eclipse.org/papyrus/nattable/model#//nattablelabelprovider">
-  <notation:Diagram xmi:id="_cGyucCRxEeCaCLd1YXNfIQ" type="PapyrusUMLClassDiagram" name="&lt;Project Short Name> requirements structure description." measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_cGyucCRxEeCaCLd1YXNfIQ" type="PapyrusUMLClassDiagram" name="SmartHome requirements structure description." measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_JGv0oN6wEeCDJ65xiEiXvQ" type="2007" fontName="Segoe UI" lineColor="0">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JG5loN6wEeCDJ65xiEiXvQ" source="ShadowFigure">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JG5lod6wEeCDJ65xiEiXvQ" key="ShadowFigure_Value" value="false"/>
@@ -25,8 +25,8 @@
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KseYw1HTEeORnr76KmtUgw" key="is_default_navigation" value="true"/>
           </eAnnotations>
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5p4uYFkNEeO46MKyR1zbAg" source="PapyrusHyperLink_Page" references="_KxbGEFOHEeORnr76KmtUgw">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5p4uYVkNEeO46MKyR1zbAg" key="tooltip_text" value="&lt;Project Short Name> Glossary"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5p4uYlkNEeO46MKyR1zbAg" key="pageName" value="&lt;Project Short Name> Glossary"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5p4uYVkNEeO46MKyR1zbAg" key="tooltip_text" value="SmartHome Glossary"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5p4uYlkNEeO46MKyR1zbAg" key="pageName" value="SmartHome Glossary"/>
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5p4uY1kNEeO46MKyR1zbAg" key="is_default_navigation" value="true"/>
           </eAnnotations>
           <children xmi:type="notation:DecorationNode" xmi:id="_yulHIFHQEeORnr76KmtUgw" type="5017"/>
@@ -125,7 +125,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XSR-EXbzEeOJLbWaesGeMg" id="(0.9970501474926253,0.575)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_F7Fq0CR9EeCaCLd1YXNfIQ" type="UseCase" name="&lt;Project Short Name> Use Cases Description." measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_F7Fq0CR9EeCaCLd1YXNfIQ" type="UseCase" name="SmartHome Use Cases Description." measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_oCR6IDiAEeGe4_sFLbM3Hw" type="Actor_Shape" fontName="Segoe UI" lineColor="0">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oCR6IjiAEeGe4_sFLbM3Hw" source="ShadowFigure">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oCR6IziAEeGe4_sFLbM3Hw" key="ShadowFigure_Value" value="false"/>
@@ -977,7 +977,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__KZn3s93EeWZ3b1W7Z6NAg"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_WuDOkGOIEeG8YZh1nU9dHA" type="PapyrusUMLClassDiagram" name="Model organisation of the &lt;Project Short Name> internal specification." measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_WuDOkGOIEeG8YZh1nU9dHA" type="PapyrusUMLClassDiagram" name="Model organisation of the SmartHome internal specification." measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_GAt3wH7XEeOjPqz2xMsJPg" type="2005">
       <children xmi:type="notation:DecorationNode" xmi:id="_GAue0H7XEeOjPqz2xMsJPg" type="5020"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_GAue0X7XEeOjPqz2xMsJPg" type="7009">
@@ -2731,7 +2731,7 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tSqKcmR5EeG8YZh1nU9dHA" points="[-3, 10, -4, -55]$[-3, 55, -4, -10]"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_S81HsE3pEeO5W83O6raoHw" type="PapyrusUMLClassDiagram" name="Outline of the &lt;Project Name> (&lt;Project Short Name>) modelling project organisation." measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_S81HsE3pEeO5W83O6raoHw" type="PapyrusUMLClassDiagram" name="Outline of the SmartHomeCaseStudy (SmartHome) modelling project organisation." measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_UWebME3pEeO5W83O6raoHw" type="Model_Shape">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_j62UcFHNEeORnr76KmtUgw" source="PapyrusHyperLink_Page" references="_cGyucCRxEeCaCLd1YXNfIQ">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j62UcVHNEeORnr76KmtUgw" key="tooltip_text" value="[Pkg] Main Requirements Package Diagram"/>
@@ -2755,8 +2755,8 @@
     </children>
     <children xmi:type="notation:Shape" xmi:id="_Vz6CgE3pEeO5W83O6raoHw" type="Model_Shape">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KE-yYFkPEeO46MKyR1zbAg" source="PapyrusHyperLink_Page" references="_F7Fq0CR9EeCaCLd1YXNfIQ">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KE-yYVkPEeO46MKyR1zbAg" key="tooltip_text" value="&lt;Project Short Name> Use Cases Description."/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KE-yYlkPEeO46MKyR1zbAg" key="pageName" value="&lt;Project Short Name> Use Cases Description."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KE-yYVkPEeO46MKyR1zbAg" key="tooltip_text" value="SmartHome Use Cases Description."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KE-yYlkPEeO46MKyR1zbAg" key="pageName" value="SmartHome Use Cases Description."/>
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KE-yY1kPEeO46MKyR1zbAg" key="is_default_navigation" value="true"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_Vz6pkE3pEeO5W83O6raoHw" type="Model_NameLabel"/>
@@ -2776,8 +2776,8 @@
     </children>
     <children xmi:type="notation:Shape" xmi:id="_WNFXgE3pEeO5W83O6raoHw" type="Model_Shape">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eU83oL8VEeOlDLoUAbW1UQ" source="PapyrusHyperLink_Page" references="_WuDOkGOIEeG8YZh1nU9dHA">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eU83ob8VEeOlDLoUAbW1UQ" key="tooltip_text" value="Model organisation of the &lt;Project Short Name> internal specification."/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eU83or8VEeOlDLoUAbW1UQ" key="pageName" value="Model organisation of the &lt;Project Short Name> internal specification."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eU83ob8VEeOlDLoUAbW1UQ" key="tooltip_text" value="Model organisation of the SmartHome internal specification."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eU83or8VEeOlDLoUAbW1UQ" key="pageName" value="Model organisation of the SmartHome internal specification."/>
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eU83o78VEeOlDLoUAbW1UQ" key="is_default_navigation" value="true"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_WNFXgk3pEeO5W83O6raoHw" type="Model_NameLabel"/>
@@ -3128,8 +3128,8 @@
   <notation:Diagram xmi:id="_1YOdcFEhEeOOVOJGuVEKBw" type="PapyrusUMLClassDiagram" name="Outline of the Elevator Controller System traceability model." measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_1YOdcVEhEeOOVOJGuVEKBw" type="2005">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l346IH7WEeOjPqz2xMsJPg" source="PapyrusHyperLink_Page" references="_cGyucCRxEeCaCLd1YXNfIQ">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l35hMH7WEeOjPqz2xMsJPg" key="tooltip_text" value="&lt;Project Short Name> requirements structure description."/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l35hMX7WEeOjPqz2xMsJPg" key="pageName" value="&lt;Project Short Name> requirements structure description."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l35hMH7WEeOjPqz2xMsJPg" key="tooltip_text" value="SmartHome requirements structure description."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l35hMX7WEeOjPqz2xMsJPg" key="pageName" value="SmartHome requirements structure description."/>
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l35hMn7WEeOjPqz2xMsJPg" key="is_default_navigation" value="true"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_1YOdclEhEeOOVOJGuVEKBw" type="5020"/>
@@ -3152,8 +3152,8 @@
     </children>
     <children xmi:type="notation:Shape" xmi:id="_1YOdflEhEeOOVOJGuVEKBw" type="2005">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mMqQQH7WEeOjPqz2xMsJPg" source="PapyrusHyperLink_Page" references="_kNAZAHb8EeOHCpFb_yGTPQ">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mMqQQX7WEeOjPqz2xMsJPg" key="tooltip_text" value="Model organisation of the &lt;Project Short Name> external specification."/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mMqQQn7WEeOjPqz2xMsJPg" key="pageName" value="Model organisation of the &lt;Project Short Name> external specification."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mMqQQX7WEeOjPqz2xMsJPg" key="tooltip_text" value="Model organisation of the SmartHome external specification."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mMqQQn7WEeOjPqz2xMsJPg" key="pageName" value="Model organisation of the SmartHome external specification."/>
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mMqQQ37WEeOjPqz2xMsJPg" key="is_default_navigation" value="true"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_1YOdf1EhEeOOVOJGuVEKBw" type="5020"/>
@@ -3317,7 +3317,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__loLS893EeWZ3b1W7Z6NAg"/>
     </edges>
   </notation:Diagram>
-  <nattable:Table xmi:id="_KxbGEFOHEeORnr76KmtUgw" name="&lt;Project Short Name> Glossary" currentRowAxisProvider="_KxbGElOHEeORnr76KmtUgw" currentColumnAxisProvider="_KxbGEVOHEeORnr76KmtUgw">
+  <nattable:Table xmi:id="_KxbGEFOHEeORnr76KmtUgw" name="SmartHome Glossary" currentRowAxisProvider="_KxbGElOHEeORnr76KmtUgw" currentColumnAxisProvider="_KxbGEVOHEeORnr76KmtUgw">
     <context xmi:type="uml:Model" href="DiapasonGenericModelTemplate.uml#_yt5KoFHQEeORnr76KmtUgw"/>
     <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#/"/>
     <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_KxbGEVOHEeORnr76KmtUgw" description="This axis provider provides available columns according to the rows of the table (features of the object displayed on the other axis)" name="UML Feature axis provider">
@@ -3412,7 +3412,7 @@
     <styles xmi:type="notation:StringValueStyle" xmi:id="__o5hsM93EeWZ3b1W7Z6NAg" name="diagram_compatibility_version" stringValue="1.1.0"/>
     <element xmi:type="uml:Interaction" href="DiapasonGenericModelTemplate.uml#_KUcnMFkOEeO46MKyR1zbAg"/>
   </notation:Diagram>
-  <notation:Diagram xmi:id="__0VAgFmTEeO46MKyR1zbAg" type="CompositeStructure" name="Context desription of the &lt;Project Short Name> ." measurementUnit="Pixel">
+  <notation:Diagram xmi:id="__0VAgFmTEeO46MKyR1zbAg" type="CompositeStructure" name="Context desription of the SmartHome ." measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="__0VAgVmTEeO46MKyR1zbAg" type="2073">
       <children xmi:type="notation:DecorationNode" xmi:id="__0VAglmTEeO46MKyR1zbAg" type="5156"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="__0VAg1mTEeO46MKyR1zbAg" type="7073">
@@ -3486,7 +3486,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vyBqsVt5EeOf1d2OhHQ60A" id="(0.942,0.444)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_kNAZAHb8EeOHCpFb_yGTPQ" type="PapyrusUMLClassDiagram" name="Model organisation of the &lt;Project Short Name> external specification." measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_kNAZAHb8EeOHCpFb_yGTPQ" type="PapyrusUMLClassDiagram" name="Model organisation of the SmartHome external specification." measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_zmg5oHb8EeOHCpFb_yGTPQ" type="2007">
       <children xmi:type="notation:DecorationNode" xmi:id="_zmhgsHb8EeOHCpFb_yGTPQ" type="5026"/>
       <children xmi:type="notation:DecorationNode" xmi:id="_zmhgsXb8EeOHCpFb_yGTPQ" type="7016">
@@ -3518,7 +3518,7 @@
     <styles xmi:type="notation:StringValueStyle" xmi:id="__lx8QM93EeWZ3b1W7Z6NAg" name="diagram_compatibility_version" stringValue="1.1.0"/>
     <element xmi:type="uml:Model" href="DiapasonGenericModelTemplate.uml#_j5KicE3oEeO5W83O6raoHw"/>
   </notation:Diagram>
-  <nattable:Table xmi:id="_UDa-8Hb_EeOHCpFb_yGTPQ" name="List of use cases contained in the &lt;Project Short Name> Use Cases package." currentRowAxisProvider="_UDa-8nb_EeOHCpFb_yGTPQ" currentColumnAxisProvider="_UDa-8Xb_EeOHCpFb_yGTPQ">
+  <nattable:Table xmi:id="_UDa-8Hb_EeOHCpFb_yGTPQ" name="List of use cases contained in the SmartHome Use Cases package." currentRowAxisProvider="_UDa-8nb_EeOHCpFb_yGTPQ" currentColumnAxisProvider="_UDa-8Xb_EeOHCpFb_yGTPQ">
     <context xmi:type="uml:Package" href="DiapasonGenericModelTemplate.uml#_RDQ_oF3uEeGTC7jtR9befw"/>
     <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#/"/>
     <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_UDa-8Xb_EeOHCpFb_yGTPQ" description="This axis provider provides available columns according to the rows of the table (features of the object displayed on the other axis)" name="UML Feature axis provider">
