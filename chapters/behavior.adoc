@@ -11,7 +11,7 @@ ifndef::final[]
 ====
 *****
 (au sens atomique , local, block)
-Diagramme de machine à états-transitions (aspects contrôle) et diagramme d'activité (description algorithme ?)
+Diagramme de machine à états (aspects contrôle) et diagramme d'activité (description algorithme ?)
 Utilisation OpaqueBehavior ?
 *****
 ====
@@ -46,7 +46,7 @@ Un diagramme d'état peut représenter des régions concurrentes (dont les activ
 
 Il existe encore d'autres concepts avancés que nous ne présenterons pas dans cette introduction car ils sont beaucoup moins utilisés (+entry+, +exit+, +transition interne+, etc.).
 
-== Diagramme d'activités
+== Diagramme d'activité
 
 Le diagramme d'activité est étudié dans ce livre plus en détail au chapitre
 <<act>>, dans la partie sur les interactions.
