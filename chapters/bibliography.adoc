@@ -10,7 +10,9 @@
 - [[[Estefan]]] 2007/2008  INCOSE
 - [[[Ramos]]] 2012 IEEE
 - [[[Friedenthal2016]]] Le livre de Friedenthal
-- [[[SysML]]] OMG Systems Modeling Language (OMG SysML). Version 1.4. formal/2015-06-03. Available http://www.omg.org/spec/SysML/1.4/[here].
+- [[[SysML]]] OMG Systems Modeling Language (OMG SysML).
+Version 1.5. formal/2017-05-01.
+Available http://www.omg.org/spec/SysML/1.5/[here].
 - [[[Kordon]]] Embedded Systems Analysis and Modeling with SysML, UML and AADL, F. Kordon, J. Hugues, A. Canals, A. Dohet, Wiley, 2013.
 - [[[REQ2012]]] Guide Bonnes Pratiques en Ingénierie des Exigences, AFIS 2012.
 - [[[Sommerville1997]]] Ian Sommerville, Pete Sawyer. Requirements Engineering: A Good Practice Guide. Wiley, 1997.

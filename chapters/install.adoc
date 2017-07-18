@@ -63,15 +63,18 @@ Les modèles de ce livre (cf. <<etudeCas>>) sont disponibles ici :
 Pour créer un projet qui contienne ces modèles, suivez simplement les étapes suivantes :
 
 . Importez le projet git existant
-
 * menu:File[Import... > Git > Projects from Git > Next]
 +
-image:importGit.png[width="50%",scaledwidth="60%"]
+image::importGit.png[width="60%",scaledwidth="60%"]
 * choisir menu:Clone URI[Next] et entrez l'URL du projet ({siteUseCase})
 +
-image:importGit2.png[width="50%",scaledwidth="60%"]
+image::importGit2.png[width="60%",scaledwidth="60%"]
 * choisir la branche `master` du dépôt et l'emplacement de votre copie locale
 * Voilà!
-
++
+image::voila.png[width="70%",scaledwidth="70%"]
+. Explorez le modèle via le `Model Explorer`
++
+image::explore.png[width="60%",scaledwidth="60%"]
 
 :imagesdir: {imageold}

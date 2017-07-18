@@ -65,19 +65,19 @@ de les exprimer, de les manipuler et surtout de les lier avec le reste du systè
 Un _Requirement_ en {sysml} permet de représenter une exigence, généralement
 référencée dans un document à part (ou dans un logiciel dédié).
 Une exigence est donc représentée par un bloc particulier (stéréotypé `<< requirement >>`), avec deux attributs
-obligatoires : _id_ qui représente une référence unique (généralement reprise du
+obligatoires : _Id_ qui représente une référence unique (généralement reprise du
 	document initiale d'où a été importée l'exigence), et _text_ qui reprend le texte
 	descriptif de l'exigence.
 
-.Définition : _Requirements_ (OMG SysML v1.4, p. 157)
+.Définition : _Requirements_ (OMG SysML v1.5, p. 161)
 [NOTE,icon=sysml.jpeg]
 ====
 _A requirement specifies a capability or condition that must (or should) be satisfied...
 A requirement is defined as a stereotype of UML Class..._
 ====
 
-.Un exemple de _Requirement_ en SysML
-image::todo.jpg[SysML and UML,width=50%,scaledwidth=50%]
+.Un exemple de _Requirement_ en SysML (source <<SysML>>, p. 159)
+image::requirement.png[SysML and UML,width=50%,scaledwidth=50%]
 
 NOTE: Les *stéréotypes* sont très souvent utilisés en {UML} / {sysml}.
 Ils s'appliquent à d'autres éléments (comme des blocs ou des associations) pour en
@@ -127,13 +127,13 @@ Les _requirements_ sont habituellement stockés dans des tableaux (feuilles exce
 Il est donc recommandé par le norme et possible dans de nombreux outils de représenter les exigences
 sous forme tabulaire.
 
-.Définition : _Requirements Table_ (OMG SysML v1.4, p. 163)
+.Définition : _Requirements Table_ (OMG SysML v1.5, p. 167)
 [NOTE,icon=sysml.jpeg]
 ====
 _The tabular format is used to represent the requirements, their properties and relationships..._
 ====
 
-
+// L'exemple a disparu de la 1.5
 .Exemples de tableaux d'exigences (OMG SysML v1.4, p. 163)
 image::req-table.png[Tableaux,width=70%,scaledwidth=70%]
 
@@ -186,7 +186,7 @@ image::topcased-req-connections.png[width="20%",scaledwidth="20%"]
 Voici un exemple de `{req}` un peu plus étoffé, tiré de http://www.uml-sysml.org/sysml (voir aussi <<rationale>>) :
 
 .Exemples de composition d'exigences
-image::hsuv-reqs1.png[width="90%",scaledwidth="80%"]
+image::rationale.png[width="90%",scaledwidth="80%"]
 
 [[reqStereotypes]]
 == Stéréotyper les _Requirements_
@@ -205,7 +205,7 @@ Il est possible d'annoter les éléments de modélisation en précisant les rais
 (_rationale_) ou les éventuels problèmes anticipés (_problem_).
 
 [[rationale]]
-.Exemples de _rationale_ et _problem_ (OMG SysML v1.4)
+.Exemples de _rationale_ et _problem_ (OMG SysML v1.5, p. 227)
 image::rationale.png[width="80%",scaledwidth="80%"]
 
 == Les considérations sur la traçabilité
