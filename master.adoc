@@ -20,7 +20,7 @@ include::definitions.txt[]
 
 ifndef::backend-pdf[]
 image:https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
-(Fork me on https://github.com/jmbruel/sysmlpapyrusbook[icon:github[] GitHub] -- Also available in http://jmbruel.github.io/sysmlpapyrusbook/master.pdf[PDF])
+(Fork me on https://github.com/jmbruel/sysmlpapyrusbook[icon:github[] GitHub] -- Also available in http://jmbruel.github.io/sysmlpapyrusbook/PapyrusSysMLinAction.pdf[PDF])
 endif::backend-pdf[]
 
 [preface]
