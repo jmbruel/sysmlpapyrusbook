@@ -1,6 +1,6 @@
 = SysML par la pratique avec Papyrus
 Jean-Michel Bruel <bruel@irit.fr>; Sébastien Gérard <Sebastien.Gerard@cea.fr>
-v1.2, {localdate}
+v1.3, {localdate}
 :myinitials: JMB
 :doctype: book
 :toc: left
@@ -20,7 +20,7 @@ include::definitions.txt[]
 
 ifndef::backend-pdf[]
 image:https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
-(Fork me on https://github.com/jmbruel/sysmlpapyrusbook[icon:github[] GitHub])
+(Fork me on https://github.com/jmbruel/sysmlpapyrusbook[icon:github[] GitHub] -- Also available in http://jmbruel.github.io/sysmlpapyrusbook/master.pdf[PDF])
 endif::backend-pdf[]
 
 [preface]
@@ -32,7 +32,8 @@ include::chapters/preface.adoc[leveloffset=+1]
 include::chapters/introduction.adoc[leveloffset=+1]
 // a la fin
 
-include::chapters/caseStudy.adoc[leveloffset=+1]
+//include::chapters/caseStudy.adoc[leveloffset=+1]
+include::chapters/etudeDeCas.adoc[leveloffset=+1]
 // JMB
 // Cahier des charges?
 
