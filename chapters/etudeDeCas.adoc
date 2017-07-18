@@ -1,0 +1,165 @@
+
+[[etudeCas]]
+[reftext="Étude de cas"]
+= Étude de cas
+:FichierExigences: https://docs.google.com/spreadsheets/d/1-yaW8fZHG9i6r7vJ7NOU9-66-hnDYY66Vd9cmZTYs2A/edit?usp=sharing
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Présenter le cas d'étude avec des illustrations SysML mais avec un look métier.
+Deux étapes : dans un premier temps, le cas d'étude est décrit globalement au
+travers de ses diagrammes sans s'attacher aux diagrammes eux-même.
+Dans un second temps, détail de chaque diagramme.
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+Nous allons modéliser dans cet ouvrage un système complexe, réel : la Maison
+Intelligente de Blagnac ({MIB}).
+Nous avons volontairement choisi un domaine qui prend de l'ampleur : l'Internet des Objets (IoT - _Internet of Thing_).
+
+.La "Maison Intelligente" de Blagnac
+image::mib.png[MIB,width=90%,scaledwidth=90%]
+
+La {mib} est un appartement permettant la supervision de personnes dépendantes (patients, personnes âgées, ...) à domicile.
+La description de ce système (notre spécification initiale) est disponible sur le site {miburl}.
+Pour permettre de démarrer la modélisation, nous partirons d'un {FichierExigences}[fichier partagé] des exigences initiales.
+
+[WARNING]
+=====
+. Nous ne nous intéresserons qu'à la partie intelligente de la maison (et non à ses caractéristiques architecturales par exemple).
+. Nous avons pris quelques libertés sur les caractéristiques de la maison réelle
+pour parfois les enrichir (comme l'exigence `SH_02_030` ci-dessous) ou parfois les simplifier.
+. Cette base d'exigences sert de base pour étudier la partie _elicitation_ des exigences.
+Elles ne sont donc pas parfaites...
+. Les exemples de modèles réalisés, pour des soucis de partage plus large avec la communauté, sont
+réalisés à partir de la version anglaise de cette description (disponible {siteUseCase}[ici]) et sont donc
+en anglais.
+=====
+
+== Description
+
+//merci Nicolas Hili
+La variété des équipements disponibles dans la {mib} permet à son occupant de
+réaliser un ensemble de tâches comme :
+
+- Surveiller (_Monitoring_) ma consommation énergétique (globale ou d'un équipement en particulier)
+- Activer des dispositifs (_actuators_) comme l'intensité d'une ampoule (_light bulb_), l'ouverture d'un rideau (_shutter_)
+- Surveiller les données collectées par des capteurs (_sensors_) comme la temperature, la luminosité, etc.
+
+L'objectif principal de la {mib} est d'être un support à l'assistance et au monitoring de
+personne à domicile qui sont autonome mais qui doivent être suivies ou aidées.
+Les éléments de conforts mais surtout de sécurité sont donc primordiaux et doivent
+être fournis de manière continue, et potentiellement nécessiter des moyens humains d'assistance.
+
+L'intérêt de ce cas d'étude (que nous appèlerons {projectName}, ou {projectShortName} dans ce livre)
+est qu'elle nécessite de prendre en compte les aspects sécurité (_security_), adaptation (_accommodation_),
+sociaux (_societal_), légaux (_legislative_), économiques (_economical_), et écologiques (_ecological_).
+Dans ce qui suit nous décrivons plus précisément quelques services attendus d'un tel système.
+
+=== Sécurité
+
+Comme n'importe quelle autre logement, la maison intelligente doit être sécurisée.
+Le _{projectName}_ doit donc fournir un certain niveau de protection contre les intrus et les voleurs.
+Ce niveau doit même être renforcé du fait de la vulnérabilité induite par l'ultra-connectivité du système.
+On profitera donc avantageusement du niveau d'équipement pour mettre en place les réponses adaptées
+(alarmes, alertes automatiques, etc.) sans pour autant oublier de donner un accès privilégié
+aux différents acteurs de la supervision (pompiers, médecins, etc.). Such
+L'accès aux données personnelles (notamment de santé) via les différents dispositifs connectés
+sera fortement contrôlé. Les notions d'identification, de certification ou de cryptage seront donc primordiales.
+
+=== Adaptation
+
+Le _{projectName}_ doit pouvoir s'adapter aux conditions physiques et mentales
+de l'occupantfootnote:[Pour des raisons de simplicité, et pour coller à la réalité de la {mib}, nous ne considérons
+qu'il n'y a qu'un(e) seul(e) habitant(e).].
+Par exemple, la hauteur des équipements de cuisine (meubles, éviers) s'abaissent
+automatiquement si l'occupant est en fauteuil roulant.
+Un autre exemple, qui concerne les personnes atteintes de troubles cognitifs, est
+la possibilité de guider l'occupant par la voix ou par un signal lumineux au sol,
+d'un point à un autre de la maison (par exemple le matin de son lit à la salle de bain).
+Le _{projectName}_ doit également permettre de configurer les nombreux équipements
+en fonction des préférences de l'occupant (par exemple, heure de fermeture des volets ou du réveil, etc.).
+
+=== Environnement et économie
+
+Une des caractéristique des maisons intelligentes modernes est leur prise en compte de
+l'environnement et donc des consommations énergétiques.
+L'objectif peut être économique, légal (suivre une norme ou un label), ou simplement social.
+Par exemple le _{projectName}_ pourra abaisser la température de la maison à certains moments
+(programmés ou opportuns). Les dispositifs inutiles à certains moments de la journée pourront
+être mis en sommeil, idem pour les débits Internet, etc.
+La maison pourra aussi être autonome en énergie, ou tout le moins, produire dans une certaine
+mesure sa propre énergie (éolienne, panneaux solaires, etc.).
+
+== Plateforme expérimentale
+
+Un véritable _{projectName}_ est disponible à la {mib}, sur le campus de l'{iut}, près de Toulouse.
+N'hésitez pas à nous contacter si vous êtes intéressé par des expérimentations réelles.
+
+== Liste des exigences
+
+Nous fournissons ci-dessous une liste précise d'exigences (_requirements_)
+pour le _{projectName}_.
+Cette liste est bien sûr non-exhaustive et nous permettra simplement de montrer le lien
+en {papyrus} entre ces exigences et les artefacts de modélisation.
+
+.Une liste initiale d'exigences
+[align="center",cols="1,1,5",options="header",width=100]
+|======================
+| ID  | Category | Description
+| SH_01_010
+//------------------
+| Sécurité
+| Le _{projectShortName}_ doit empêcher les accès non autorisés.
+| SH_01_020
+| | Le _{projectShortName}_ doit protéger les systèmes d'informations utilisés.
+| SH_01_030
+| | Le _{projectShortName}_ doit fournir un contrôle d'accès par identification.
+| SH_01_040
+| | Le _{projectShortName}_ doit appeler la police en cas d'intrusion ou d'effraction.
+| SH_01_050
+| | Le _{projectShortName}_ doit être capable de détecter la fumée et d'appeler les pompiers en cas de suspicion d'incendie.
+| SH_01_060
+| | Le _{projectShortName}_ doit être capable de détecter la chute accidentelle et d'appeler le SAMU en conséquence.
+| SH_01_070
+| | Le _{projectShortName}_ doit permettre un accès spécifique aux secours (pompiers, ambulanciers, etc.).
+| SH_02_010
+//------------------
+| Adaptation
+| Le _{projectShortName}_ doit s'adapter aux conditions physiques et/ou mentales de l'occupant.
+| SH_02_020
+| | Le _{projectShortName}_ doit s'adapter aux préférences spécifiques renseignées par l'occupant.
+| SH_02_030
+| | Le _{projectShortName}_ doit pouvoir apprendre du comportement de l'occupant.
+| SH_02_040
+| | Le _{projectShortName}_ doit aider l'occupant dans ses tâches quotidiennes en tenant compte le plus possible de ses difficultés.
+| SH_02_050
+| | Le _{projectShortName}_ doit pouvoir être supervisé par un dispositif central, dans la pièce principale de l'habitation.
+| SH_02_060
+| | Le _{projectShortName}_ doit permettre la connexion avec les équipements modernes de l'occupant (smartphone, montre, pèse-personne, etc.).
+| SH_02_070
+| | Le _{projectShortName}_ doit posséder un lit adaptés aux personnes à mobilité réduite.
+| SH_03_010
+//------------------
+| Economy
+| Le _{projectShortName}_ doit économiser l'énergie.
+| SH_03_020
+| | Le domicile doit être économe en énergie et ayant une consommation globale inférieure aux normes constatées localement.
+| SH_03_030
+| | Le _{projectShortName}_ doit donner la priorité aux énergies renouvelables.
+|======================
+
+== Pour aller plus loin
+
+Cette étude de cas a été utilisée dans le cadre d'un cours {sysml} au {DL} ainsi
+que pour le workshop {mdetools}. Ces deux sources peuvent fournir nombre de modèles
+complémentaires à ceux que vous trouverez dans ce livre.
+
+Pour une liste plus complète d'exigences, réalisée par les étudiants du {dl}, voir
+{FichierExigences}[ce lien].

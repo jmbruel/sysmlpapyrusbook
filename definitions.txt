@@ -147,3 +147,6 @@ endif::[]
 :stakeholders: parties prenantes
 :here: icon:map-marker[role=red] You are here!
 :ModelUser: link:http://www.omg.org/ocsmp/coveragemap-user.htm[Model User]
+:projectName: Smart Home System
+:projectShortName: SHS
+:mdeTools: http://mase.cs.queensu.ca/mdetools/ 
