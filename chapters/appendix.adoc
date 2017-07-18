@@ -36,7 +36,7 @@ SD::
 _**S**equence **D**iagram_, le diagramme de séquence (cf. <<seq>>)
 
 STM::
-_**ST**ate **M**achine Diagram_, le diagramme d'état (cf. <<stm>>)
+_**ST**ate **M**achine Diagram_, le diagramme d'états (cf. <<stm>>)
 
 SysML::
 _**S**ystems **M**odeling **L**anguage_
@@ -50,10 +50,42 @@ _**U**nified **M**odeling **L**anguage_
 [appendix]
 [[traductions]]
 == Traductions
-Liste des traductions françaises .
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Peut-être à merger avec l'index... Mais utile pour l'instant pour se mettre d'accord sur les termes français.
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+De nombreux utilisateur de {sysml} sont habitués aux termes anglais de
+cette notation.
+Nous reprenons ici la liste des traductions françaises que nous avons utilisées
+(et qui ne sont pas standard) pour premettre au lecteur de faire une correspondance.
 
 [horizontal]
-_Activity Diagram_:: diagramme d'activité  (cf. <<act>>)
+_Activity Diagram_:: Diagramme d'activité  (cf. <<act>>)
+_Actor_:: Acteur
+_Block Definition Diagram_:: Diagramme de définition de bloc (cf. <<bddsec>>)
+_Composite State_:: État composite (ou super-état)
+_Diagram Frame_ (et _Header_):: Cadre (et cartouche) (cf. <<cadre>>)
+_Internal Block Diagram_:: Diagramme de blocs internes  (cf. <<ibd>>)
+_Multiplicity_:: Cardinalité (ou Multiplicité)
+_Parametric Diagram_:: Diagramme paramétrique (cf. <<param>>)
+_Package_:: Paquetages, mais nous préférons garder Package, admis dans le vocabulaire courant,
+du moins en informatique.
+_Package Diagram_:: Diagramme des paquetages (cf. <<package>>)
+_Requirements_:: Exigences
+_Requirements Diagram_:: Diagramme des exigences (cf. <<RE>>)
+_Sequence Diagram_:: Diagramme de Séquence (cf. <<seq>>)
+_State Machine_:: Machine à état
+_State Machine Diagram_:: Diagramme d'états (cf. <<stm>>)
+_Use Case Diagram_:: Diagramme des cas d'utilisation (cf. <<uc>>)
 
 [appendix]
 [[histoire]]

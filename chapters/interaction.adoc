@@ -14,6 +14,10 @@ Diagramme de séquence (y compris haut niveau = DS Système). en version descrip
 //-----------------------------------------------
 endif::final[]
 
+//-----------------------------------------------
+== Fondements
+//-----------------------------------------------
+
 .Place des interactions
 ifdef::backend-pdf[[cols="h,4*",options="header"]]
 ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
@@ -24,10 +28,6 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 | {design}			|					|        		|		{here}		|
 | {implementation}	|					|        		|		{here}		|
 |======================
-
-//-----------------------------------------------
-== Fondements
-//-----------------------------------------------
 
 On abordera :
 
@@ -190,8 +190,11 @@ de l'état dans lequel se trouve le participant;
 //-----------------------------------------------
 // Seb, please check
 
-Les diagrammes d'activité (_Activity Diagrams_) est utilisé pour représenter les flots de données et de contrôle entre les actions. Il est utilisé pour raffiner en général un cas d'utilisation.
-Il est utilisé pour l’expression de la logique de contrôle et d’entrées/sorties. Le diagramme d’activité sert non seulement à préciser la séquence d’actions à réaliser, mais aussi ce qui est produit, consommé ou transformé au cours de l’exécution de cette activité.
+Le diagramme d'activité (_Activity Diagrams_) est utilisé pour représenter les flots de données et de contrôle entre les actions.
+Il est utilisé en général pour détailler un cas d'utilisation.
+Il est utilisé pour l’expression de la logique de contrôle et d’entrées/sorties.
+Le diagramme d’activité sert non seulement à préciser la séquence d’actions à réaliser,
+mais aussi ce qui est produit, consommé, ou transformé, au cours de l’exécution de cette activité.
 
 .Exemple de diagramme d'activité (tiré de <<SeeBook2012>>)
 image::act-pcmk1.png[width="70%",scaledwidth=50%]
@@ -224,10 +227,12 @@ Pour permettre la modélisation des *flots continus*, {SysML} ajoute à {UML} la
 On utilise pour cela des stéréotypes : `\<<continuous>>` et `\<<discrete>>`. Par défaut, un flot est supposé discret.
 
 
-.Définition : _FlowProperty_ (OMG SysML v1.4, p. 84)
+.Définition : _FlowProperty_ (OMG SysML v1.5, p. 82)
 [NOTE,icon=sysml.jpeg]
 ====
-_A FlowProperty signifies a single flow element to/from a block. A flow property has the same notation as a Property only with a direction prefix (in | out | inout). Flow properties are listed in a compartment labeled flow properties._
+_A FlowProperty signifies a single flow element to/from a block.
+A flow property has the same notation as a Property only with a direction prefix (in | out | inout).
+Flow properties are listed in a compartment labeled flow properties._
 ====
 
 
@@ -254,10 +259,10 @@ image::flow-ctrl.png[width="20%",scaledwidth=50%]
 Pour se rapprocher de {sart}, la norme prévoit la possibilité d'utiliser les pointillés pour les flux de contrôle.
 ====
 
-.Définition : _ControlFlow_ (OMG SysML v1.4, p. 116)
+.Définition : _ControlFlow_ (OMG SysML v1.5, p. 120)
 [NOTE,icon=sysml.jpeg]
 ====
-Control flow may be notated with a dashed line and stick arrowhead...
+_Control flow may be notated with a dashed line and stick arrowhead..._
 ====
 
 == Réutilisation

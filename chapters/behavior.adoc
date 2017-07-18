@@ -11,12 +11,25 @@ ifndef::final[]
 ====
 *****
 (au sens atomique , local, block)
-Diagramme de machine à états-transitions (aspects contrôle) et diagramme d'activité (description algorithme ?)
+Diagramme de machine à états (aspects contrôle) et diagramme d'activité (description algorithme ?)
 Utilisation OpaqueBehavior ?
 *****
 ====
 //-----------------------------------------------
 endif::final[]
+
+== Fondements
+
+.Place des comportements
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|		{here}		|
+| {analysis}		|					|        		|		{here}		|
+| {design}			|					|        		|		{here}		|
+| {implementation}	|					|        		|		{here}		|
+|======================
 
 [[stm]]
 == Diagramme d'états
@@ -32,7 +45,7 @@ Le diagramme d’états comprend également deux *pseudo-états* :
 
 ifdef::backend-deckjs[==== Diagramme d'états (suite)]
 
-.Un exemple de diagramme d'état (R,UK)
+.Un exemple de diagramme d'états
 ifdef::book[image::{images}/stm1.png[scale=50]]
 ifndef::book[image::stm1.png["Un diagramme d'état",width="70%"]]
 
@@ -40,13 +53,13 @@ ifdef::backend-deckjs[==== Diagramme d'états (suite)]
 
 Lorsqu'un état nécessite lui-même plus de détails, on créé un *état composite* (aussi appelé super-état)
 qui est lui-même une machine à état. On peut ainsi factoriser des transitions déclenchées par le même événement (et amenant vers le même état cible), tout en spécifiant des transitions particulières entre les sous-états.
-Il est également possible d'attacher un diagramme d'état (composite) à un état pour garder une représentation hiérarchique.
+Il est également possible d'attacher un diagramme d'états à un état (dit "composite") pour garder une représentation hiérarchique.
 
-Un diagramme d'état peut représenter des régions concurrentes (dont les activités peuvent évoluer en parallèle), graphiquement représentées par des zones séparées par des traits pointillés. Chaque région contient ses propres états et transitions.
+Un diagramme d'états peut représenter des régions concurrentes (dont les activités peuvent évoluer en parallèle), graphiquement représentées par des zones séparées par des traits pointillés. Chaque région contient ses propres états et transitions.
 
 Il existe encore d'autres concepts avancés que nous ne présenterons pas dans cette introduction car ils sont beaucoup moins utilisés (+entry+, +exit+, +transition interne+, etc.).
 
-== Diagramme d'activités
+== Diagramme d'activité
 
 Le diagramme d'activité est étudié dans ce livre plus en détail au chapitre
 <<act>>, dans la partie sur les interactions.
