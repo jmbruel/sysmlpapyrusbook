@@ -163,7 +163,8 @@ Il existe trois façons de nommer une association :
 - un rôle (placé à une extrémité de l’association)
 
 Cardinalité::
-Indique à combien d’instances minimum et maximum du bloc d’en face est lié toute instance du bloc de départ. Elle est représentée par un couple `(M..N)`.
+Indique à combien d’instances minimum et maximum du bloc d’en face est lié toute instance du bloc de départ.
+Elle est représentée par un couple `(M..N)`.
 
 [CAUTION]
 ====
@@ -173,6 +174,9 @@ Attention, dans une cardinalité `M..N`, `M` doit toujours être inférieur ou �
 .Exemple d'associtaion
 image::cardinalite.png[width="50%",scaledwidth=50%]
 //[Clients]1..2--1..*[Comptes]
+
+NOTE: Notez que le terme anglais est _multiplicity_, mais que le terme français multiplicité est
+moins souvent utilisé. Nous le réserverons pour les nombre de parties d'un bloc par exemple.
 
 ====  Vers le code : que signifie vraiment une association?
 

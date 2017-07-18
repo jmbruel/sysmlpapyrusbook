@@ -75,6 +75,7 @@ _Block Definition Diagram_:: Diagramme de définition de bloc (cf. <<bddsec>>)
 _Composite State_:: État composite (ou super-état)
 _Diagram Frame_ (et _Header_):: Cadre (et cartouche) (cf. <<cadre>>)
 _Internal Block Diagram_:: Diagramme de blocs internes  (cf. <<ibd>>)
+_Multiplicity_:: Cardinalité (ou Multiplicité)
 _Parametric Diagram_:: Diagramme paramétrique (cf. <<param>>)
 _Package_:: Paquetages, mais nous préférons garder Package, admis dans le vocabulaire courant,
 du moins en informatique.
