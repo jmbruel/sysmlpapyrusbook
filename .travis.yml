@@ -26,6 +26,7 @@ after_success:
   - cd output
   - ls -al
   - mv master.html index.html
+  - mv master.pdf PapyrusSysMLinAction.pdf
   - cp -R ../images images
   - git init
   - git config user.name "${GH_USER_NAME}"
