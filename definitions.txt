@@ -2,7 +2,7 @@
 
 //Papyrus
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
-:papyrusversion: 2.0.1
+:papyrusversion: 3.0
 :siteurl: https://bit.ly/sysmlbook
 :gihuburl: https://github.com/jmbruel/sysmlpapyrusbook
 :siteUseCase: https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
