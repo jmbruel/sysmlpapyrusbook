@@ -1,7 +1,6 @@
 
 [[install]]
 = Avant de démarrer
-:papyrusversion: 3.0
 :imageold: {imagesdir}
 :imagesdir: {imagesdir}/{papyrusversion}
 //-----------------------------------------------
@@ -77,4 +76,8 @@ image::voila.png[width="70%",scaledwidth="70%"]
 +
 image::explore.png[width="60%",scaledwidth="60%"]
 
+
+
+
+//-----------------------------------------------
 :imagesdir: {imageold}
