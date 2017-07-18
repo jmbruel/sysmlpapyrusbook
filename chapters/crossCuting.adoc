@@ -105,7 +105,7 @@ Un _package_ permet de créer un espace de nommage pour tous les éléments qu'i
 Ainsi, dans un _package_, on n'a pas à se soucier des noms des éléments.
 Même si d'autres utilisent les mêmes noms, il n'y aura pas ambiguïté.
 
-.Définition : _Namespace_ (OMG SysML v1.4, p. 21)
+.Définition : _Namespace_ (OMG SysML v1.5, p. 23)
 [NOTE,icon=sysml.jpeg]
 ====
 _The package defines a namespace for the packageable elements._

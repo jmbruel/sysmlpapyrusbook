@@ -17,7 +17,7 @@ Voici les différentes raisons qui peuvent vous y avoir amené :
 
 Je veux fiabiliser mon processus d'{IS}::
 Vous êtes un professionnel, dans le domaine de l'{is}, et vous êtes intéressé par la modélisation.
-Nous espérons que les conseils pratiques, appliquées et appuyés sur l'outil {payrus},
+Nous espérons que les conseils pratiques, appliquées et appuyés sur l'outil {papyrus},
 vous permettront de tester l'intérêt de {sysml} pour votre domaine.
 
 Je veux apprendre {SysML} par la pratique::
@@ -42,7 +42,7 @@ Et vous aurez, avec {papyrus}, un outils 100% conforme à cette spécification.
 
 Je veux gagner du temps::
 Nous avons essayer de concevoir ce livre comme un manuelfootnote:[au sens latin du terme, qu'on peut
-avoir toujours à portée de main], outil et pratique, en travaillant l'organisation des concepts
+avoir toujours à portée de main], outillé et pratique, en travaillant l'organisation des concepts
 et des pratiques.
 
 == À qui s'adresse le livre ?

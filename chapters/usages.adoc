@@ -178,4 +178,3 @@ inclut dans plusieurs UC. Si ce n'est pas le cas, il est généralement englobé
 Certains méthodologistes (comme Tim Weilkiens) préconisent de ne pas utiliser les acteurs et les cas d'utilisation
 (cf. son http://model-based-systems-engineering.com/[blog]).
 ====
->>>>>>> jmb

@@ -9,7 +9,7 @@ task :ascii  do
   system("asciidoctor -o output/master.html master.adoc")
   system("asciidoctor-epub3 -D output master.adoc")
 
-  system("asciidoctor-pdf -o output/master.pdf master.adoc ")
+  system("asciidoctor-pdf -a final -o output/master.pdf master.adoc ")
 end
 
 def install_plugin(name)

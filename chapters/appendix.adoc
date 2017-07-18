@@ -36,7 +36,7 @@ SD::
 _**S**equence **D**iagram_, le diagramme de séquence (cf. <<seq>>)
 
 STM::
-_**ST**ate **M**achine Diagram_, le diagramme d'état (cf. <<stm>>)
+_**ST**ate **M**achine Diagram_, le diagramme d'états (cf. <<stm>>)
 
 SysML::
 _**S**ystems **M**odeling **L**anguage_
@@ -82,7 +82,8 @@ _Package Diagram_:: Diagramme des paquetages (cf. <<package>>)
 _Requirements_:: Exigences
 _Requirements Diagram_:: Diagramme des exigences (cf. <<RE>>)
 _Sequence Diagram_:: Diagramme de Séquence (cf. <<seq>>)
-_State Machine Diagram_:: Diagramme d'état (cf. <<stm>>)
+_State Machine_:: Machine à état
+_State Machine Diagram_:: Diagramme d'états (cf. <<stm>>)
 _Use Case Diagram_:: Diagramme des cas d'utilisation (cf. <<uc>>)
 
 [appendix]

@@ -99,7 +99,7 @@ Ne dites pas "le SysML" mais tout simplement "SysML".
 La figure <<liensdiag,suivante>>, tirée de la <<SysML,spécification>>, résume bien les liens entre {sysml} et {uml}, à savoir que {sysml} reprend une partie seulement des concepts d'{uml} (appelée `UML4SysML`) en y ajoutant des concepts nouveaux.
 
 [[liensdiag]]
-.Liens entre UML et SysML (tiré de <<SysML,SysML 1.4,p. 7>>)
+.Liens entre UML et SysML (tiré de <<SysML,SysML 1.5, p. 9>>)
 image::diff.png[SysML and UML,width=50%,scaledwidth=50%]
 
 {sysml} et {uml} sont parfois utilisés de manière complémentaire, mais la plupart du temps, {uml} est utilisé pour modéliser les aspects logiciels et {sysml} pour modéliser les systèmes.
@@ -154,7 +154,7 @@ Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons sou
 .Version abrégée des diagrammes
 image::Figure4-1-bis.png[Version abrégée,width=90%,scaledwidth=90%]
 
-.Définition : Types de diagrammes (OMG SysML v1.4, p. 190)
+.Définition : Types de diagrammes (OMG SysML v1.5, p. 196)
 [NOTE,icon=sysml.jpeg]
 ====
 _SysML diagram kinds should have the following names or (abbreviations) as part of the heading..._
@@ -181,17 +181,9 @@ qui représente un _package_, nommé "Context".
 .Exemple de diagramme SysML (source <<Kordon>>)
 image::pacemaker-context.png[width="80%",scaledwidth="80%"]
 
-//-----------------------------------------------
-ifndef::final[]
-.Commentaire
-[CAUTION]
-====
-*****
-En suivant la méthodologie simplifiée adoptée pour le livre, introduire les différents diagrammes de SysML.
-*****
-====
-//-----------------------------------------------
-endif::final[]
+TIP: Un cadre peut contenir dans ses "bords" des éléments importants en fonction
+du type de modèle qui est représenté dans le cadre (ports d'un bloc, points d'entrée/sortie
+d'une machine à état, paramètres d'une activité, etc.).
 
 Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de
 cette section (nous utilisons ici le "plan" vu lors de l'introduction de la <<Matrice>>) :
