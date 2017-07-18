@@ -3,3 +3,5 @@ output/
 Gemfile.lock
 asciidoctor-epub3/
 asciidoctor-pdf/
+master.html
+master.pdf

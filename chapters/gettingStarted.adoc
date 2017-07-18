@@ -80,7 +80,8 @@ image::Model_Smart_Home_System_Outline_of_the_Smart_Home_System_SHS_modelling_pr
 
 IMPORTANT: Vous constaterez que l'export ne conserve pas l'entête (cartouche).
 C'est une des fonctionnalités attendues des utilisateurs et en cours de prise en compte
-par les développeurs du {cea}.
+par les développeurs du {cea}. Mais si vous voulez aider, votez pour que cette _feature_ soit
+implémentée au plus vite : https://bugs.eclipse.org/bugs/show_bug.cgi?id=354296.
 
 === Gen2Doc
 
