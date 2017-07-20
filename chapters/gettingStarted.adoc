@@ -86,12 +86,12 @@ _Properties_ qui permet d'accéder et de renseigner les détails de l'élément 
 
 [TIP]
 ======
-Pour retrouver la perspective {papyrus} ou en changer : menu:Window[Perspectives]
+Pour retrouver la perspective {papyrus} ou en changer : menu:Window[Perspective]
 (cf. <<meu-perspective>>)
 ou cliquez sur l'icône Papyrus en haut à droite (<<papyrus-perspective>>).
 
 [[meu-perspective]]
-.Menu menu:Window[Perspectives]
+.Menu Window > Perspective
 image::perspectives.png[width=30%,scaledwidth=30%]
 
 [[papyrus-perspective]]
