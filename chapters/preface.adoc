@@ -51,13 +51,22 @@ En fonction de votre profil, vous pourrez avoir une lecture plus ou moins compl�
 Loin de nous l'idée de forcer la façon d'en aborder les chapitres, nous vous recommandons néanmoins
 les pistes de lectures suivantes selon la situation :
 
-.Conseils de lecture en fonction de votre niveau en SysML (en ligne) et en Papyrus (en colonne)
+.Conseils de lecture en fonction de votre objectif vis-à-vis de SysML (en ligne) et/ou de Papyrus-SysML (en colonne)
 [align="center",cols="h,3*^",options="header",width=100]
 |======================
-|	{sysml}{nbsp}{nbsp}{nbsp}/{nbsp}{nbsp}{nbsp}{papyrus}| Découverte              | Initié               | Professionnel
-| Découverte	     | <<Intro,1>>,<<etudeCas,2>>,<<install,3>>,<<overview,4>> | <<Intro,1>>,<<etudeCas,2>>,(<<install,3>>),<<overview,4>> | <<Intro,1>>,<<etudeCas,2>>,<<overview,4>>
-| Initié			     | (<<Intro,1>>),<<etudeCas,2>>,<<install,3>>,(<<overview,4>>),<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>	| (<<Intro,1>>),<<etudeCas,2>>,(<<install,3>>,<<overview,4>>),<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>	| (<<Intro,1>>),<<etudeCas,2>>,(<<overview,4>>),<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>
-| Professionnel		 |(<<Intro,1>>),<<etudeCas,2>>,<<install,3>>,(<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>),<<crossCuting,10>>,<<realLife,11>> | (<<Intro,1>>),<<etudeCas,2>>,(<<install,3>>,<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>),<<crossCuting,10>>,<<realLife,11>> | (<<Intro,1>>),<<etudeCas,2>>,(<<overview,4>>),<<RE,5>>,<<usages,6>>,<<archi,7>>,<<behavour,8>>,<<interaction,9>>,<<crossCuting,10>>,<<realLife,11>>
+|	{sysml}{nbsp}\ {papyrus}| Découvrir | S'améliorer  | Maîtriser
+| Découvrir
+| <<Intro,1>>,(<<etudeCas,2>>),<<install,3>>,<<overview,4>>,(<<GettingStarted,6>>)
+| <<Intro,1>>,<<etudeCas,2>>,(<<install,3>>),<<overview,4>>,<<GettingStarted,6>>
+| <<Intro,1>>,<<etudeCas,2>>,(<<install,3>>),<<overview,4>>,<<GettingStarted,6>>,<<realLife,13>>
+| S'initier
+| (<<Intro,1>>,<<etudeCas,2>>),<<install,3>>,<<overview,4>>,(<<methode,5>>,<<GettingStarted,6>>),<<reqs,7>>,<<usage,8>>,<<archi,9>>,<<behavior,10>>,<<interaction,11>>,<<crossCuting,12>>
+| (<<Intro,1>>),<<etudeCas,2>>,(<<install,3>>),<<overview,4>>,<<methode,5>>,<<GettingStarted,6>>,<<reqs,7>>,<<usage,8>>,<<archi,9>>,<<behavior,10>>,<<interaction,11>>,<<crossCuting,12>>
+| (<<Intro,1>>),<<etudeCas,2>>,(<<install,3>>),<<overview,4>>,<<methode,5>>,<<GettingStarted,6>>,<<reqs,7>>,<<usage,8>>,<<archi,9>>,<<behavior,10>>,<<interaction,11>>,<<crossCuting,12>>,<<realLife,13>>
+| Maîtriser
+| (<<Intro,1>>,<<etudeCas,2>>),<<install,3>>,(<<methode,5>>,<<GettingStarted,6>>,<<reqs,7>>,<<usage,8>>,<<archi,9>>),<<crossCuting,10>>,<<interaction,11>>,<<crossCuting,12>>,<<realLife,13>>
+| (<<Intro,1>>),<<etudeCas,2>>,(<<install,3>>,<<methode,5>>,<<GettingStarted,6>>,<<reqs,7>>,<<usage,8>>,<<archi,9>>),<<crossCuting,10>>,<<interaction,11>>,<<crossCuting,12>>,<<realLife,13>>
+| (<<Intro,1>>),<<etudeCas,2>>,(<<install,3>>),<<methode,5>>,<<GettingStarted,6>>,<<reqs,7>>,<<usage,8>>,<<archi,9>>,<<crossCuting,10>>,<<interaction,11>>,<<crossCuting,12>>,<<realLife,13>>
 |======================
 
 Si vous êtes débutant en {IS}, nous vous conseillons en parallèle de vous initier.
