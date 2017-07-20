@@ -1,11 +1,18 @@
 = SysML par la pratique avec Papyrus image:https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
-:papyrus: http://www.eclipse.org/papyrus/[Papyrus]
+:papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
+:papyrusversion: 3.0
+:siteurl: https://bit.ly/sysmlbook
+:githuburl: https://github.com/jmbruel/sysmlpapyrusbook
+:pdfurl: {githuburl}/PapyrusSysMLinAction.pdf
+:siteUseCase: https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
 :sysml: http://www.omgsysml.org/[SysML(TM)]
 
-Ce dépôt est un dépôt de travail pour construire un livre sur la notation {SysML} au travers de l'utilisation de l'outil {Papyrus}.
+Ce dépôt est un dépôt de travail pour construire un livre sur la notation {SysML}
+au travers de l'utilisation de l'outil {Papyrus} version {papyrusversion}.
 
-- La version web du livre est disponible https://jmbruel.github.io/sysmlpapyrusbook[ici].
-- La version PDF du livre est disponible https://jmbruel.github.io/sysmlpapyrusbook/master.pdf[ici].
+- La version web du livre est disponible {githuburl}[ici].
+- La version PDF du livre est disponible {pdfurl}[ici].
+- Les modèles sont disponibles {siteUseCase}[ici]
 
 == Note for contributors
 
