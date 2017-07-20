@@ -30,11 +30,15 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 |======================
 
 Nous allons aborder dans ce chapitre l'utilisation de {papyrus}.
+Le lecteur pourra trouver des informations complémentaires sur la page de documentation :
+https://wiki.eclipse.org/Papyrus_User_Guide.
+
 
 == Configuration
 
 Comme indiqué au chapitre <<install>>, nous considérons que vous avez la
-version `{papyrusversion}` (ou plus) de {papyrus}.
+version `{papyrusversion}` (ou plus) de {papyrus}, pour la version _Oxygen_ (`4.7`)
+d'{eclipse}.
 
 image::about.png[width=60%,scaledwidth=60%]
 
@@ -58,8 +62,48 @@ image::newModel.png[width=60%,scaledwidth=60%]
 . Donnez un nom à votre projet
 . Cliquez sur btn:[Finish] (ou sur btn:[Next] si vous souhaitez configurer les éléments de départ)
 
+== L'environnement de modélisation
+
+Comme de nombreux outils basés sur {eclipse}, {Papyrus} propose une
+organisation type des fenêtres et panneaux, appelée _perspective_.
+
+.La perspective de base Papyrus-SysML
+image::panels.png[width=90%,scaledwidth=90%]
+
+Les éléments principaux de cette organisation sont :
+
+<1> Le _Project Explorer_, élément {eclipse} qui vous permet d'accéder à vos projets
+(pas seulement {papyrus})
+<2> Le _Model Explorer_, qui permet d'accéder à vos modèles et à tous vos artefacts de modélisation  (cf. section <<mod-art>>).
+<3> L'_Outline_, sorte de vue d'ensemble du diagramme ouvert (utile pour les très grands diagrammes)
+<4> L'éditeur de diagramme (_Multi diagram editor_), l'élément principale dans lequel vous ouvrirez et concevrez vos diagrammes.
+<5> La _Palette_, qui dépend du type de diagramme ouvert dans l'éditeur de diagramme et qui vous permet de "copier/coller"
+des éléments dans votre diagramme (cf. section <<mod-diag>>)
+<6> La _Properties view_, qui permet d'accéder à des informations détaillées. Généralement, l'onglet le plus utilisé est l'onglet
+_Properties_ qui permet d'accéder et de renseigner les détails de l'élément sélectionné (ici le bloc `Capteur`)
+<7> La barre de menu (_Toolbar_), qui contient certains raccourcis de manus sous forme d'icônes.
+
+
+[TIP]
+======
+Pour retrouver la perspective {papyrus} ou en changer : menu:Window[Perspectives]
+(cf. <<meu-perspective>>)
+ou cliquez sur l'icône Papyrus en haut à droite (<<papyrus-perspective>>).
+
+[[meu-perspective]]
+.Menu menu:Window[Perspectives]
+image::perspectives.png[width=30%,scaledwidth=30%]
+
+[[papyrus-perspective]]
+.Pour activer la perspective Papyrus
+image::papyrus-perspective.png[width=30%,scaledwidth=30%]
+
+======
+
+[[mod-diag]]
 == Modélisation par les diagrammes
 
+[[mod-art]]
 == Modélisation par les artefacts
 
 == Personnalisation
