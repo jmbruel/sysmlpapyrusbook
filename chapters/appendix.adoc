@@ -20,6 +20,10 @@ DSS::
 IBD::
 _**I**nternal **B**lock **D**iagram_, le diagramme de blocs internes  (cf. <<ibd>>)
 
+IDE::
+_**I**ntegrated **D**evelopment **E**nvironment_, environnement de développement intégré
+(comme {eclipse} ou {intelliJ})
+
 IS::
 **I**ngénierie **S**ystème
 

@@ -7,6 +7,7 @@
 :githuburl: https://github.com/jmbruel/sysmlpapyrusbook
 :pdfurl: {githuburl}/PapyrusSysMLinAction.pdf
 :siteUseCase: https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
+:specUseCase: http://bit.ly/SmartHomeUseCase
 
 //Layouts
 :standHeight: 250
@@ -44,6 +45,7 @@ endif::[]
 :gherkin: link:http://cukes.info/gherkin.html[Gherkin]
 :grafcet: http://fr.wikipedia.org/wiki/Grafcet[Grafcet]
 :gvle: link:http://www.vle-project.org/wiki/GVLE[GVLE]
+:intelliJ: link:https://www.jetbrains.com/idea/[IntelliJ]
 :java: https://www.java.com/fr/[Java]
 :javadoc: link:http://fr.wikipedia.org/wiki/Javadoc[Javadoc]
 :knxweb: http://www.knx.fr/[KNX]
