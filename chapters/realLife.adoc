@@ -57,3 +57,31 @@ http://download.eclipse.org/modeling/emf/compare/updates/logical/emf.compare/int
 image::mergestrategy.png[Stratégie de Merge,width=60%,scaledwidth=60%]
 
 TIP: Si vous n'avez pas cette option à cocher, vous n'avez pas la bonne version des plugins! icon:smile-o[].
+
+== Compléments Papyrus
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Voir avec Seb ce qu'on garde, ce qu'on remonte dans la partie principale (section <<gettingStarted>>), ce qu'on jette...
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+=== Personnaliser les styles
+
+=== Layer Support
+
+https://wiki.eclipse.org/Papyrus/UserGuide/Layers
+
+=== Model Execution
+
+=== Reverse Engineering
+
+=== Fragmenter un modèle
+
+=== Papyrus for Requirements
