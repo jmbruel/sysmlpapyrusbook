@@ -92,6 +92,9 @@ _State Machine Diagram_:: Diagramme d'états (cf. <<stm>>)
 _Use Case Diagram_:: Diagramme des cas d'utilisation (cf. <<uc>>)
 
 [appendix]
+include::notations.adoc[leveloffset=+1]
+
+[appendix]
 [[histoire]]
 == Les histoires de SysML et de Papyrus
 
