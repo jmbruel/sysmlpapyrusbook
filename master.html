@@ -20,7 +20,7 @@
 <span id="author2" class="author">Sébastien Gérard</span><br>
 <span id="email2" class="email"><a href="mailto:Sebastien.Gerard@cea.fr">Sebastien.Gerard@cea.fr</a></span><br>
 <span id="revnumber">version 1.3,</span>
-<span id="revdate">2017-07-18</span>
+<span id="revdate">2017-07-21</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table des Matières</div>
@@ -84,12 +84,11 @@
 <li><a href="#_fondements">6.1. Fondements</a></li>
 <li><a href="#_configuration">6.2. Configuration</a></li>
 <li><a href="#_préparation_et_organisation">6.3. Préparation et organisation</a></li>
-<li><a href="#_modélisation_par_les_diagrammes">6.4. Modélisation par les diagrammes</a></li>
-<li><a href="#_modélisation_par_les_artefacts">6.5. Modélisation par les artefacts</a></li>
-<li><a href="#_personnalisation">6.6. Personnalisation</a></li>
-<li><a href="#_génération_de_documentation">6.7. Génération de documentation</a></li>
-<li><a href="#_en_résumé_2">6.8. En résumé</a></li>
-<li><a href="#_questions_de_révision_2">6.9. Questions de révision</a></li>
+<li><a href="#_l_environnement_de_modélisation">6.4. L&#8217;environnement de modélisation</a></li>
+<li><a href="#mod-diag">6.5. Modélisation par les diagrammes</a></li>
+<li><a href="#mod-art">6.6. Modélisation par les artefacts</a></li>
+<li><a href="#_en_résumé_2">6.7. En résumé</a></li>
+<li><a href="#_questions_de_révision_2">6.8. Questions de révision</a></li>
 </ul>
 </li>
 <li><a href="#reqs">7. Besoins clients et exigences</a>
@@ -107,7 +106,7 @@
 <li><a href="#_questions_de_révision_3">7.11. Questions de révision</a></li>
 </ul>
 </li>
-<li><a href="#_usages_et_interfaces">8. Usages et interfaces</a>
+<li><a href="#usage">8. Usages et interfaces</a>
 <ul class="sectlevel2">
 <li><a href="#_fondements_3">8.1. Fondements</a></li>
 <li><a href="#contexte">8.2. Diagramme de contexte</a></li>
@@ -155,25 +154,31 @@
 <li><a href="#realLife">13. Modéliser oui, mais&#8230;&#8203;</a>
 <ul class="sectlevel2">
 <li><a href="#_collaborer_et_gérer_les_version_de_modèles">13.1. Collaborer et gérer les version de modèles</a></li>
+<li><a href="#_compléments_papyrus">13.2. Compléments Papyrus</a></li>
 </ul>
 </li>
 <li><a href="#refs">Références</a></li>
 <li><a href="#acro">Appendix A: Acronymes</a></li>
 <li><a href="#traductions">Appendix B: Traductions</a></li>
-<li><a href="#histoire">Appendix C: Les histoires de SysML et de Papyrus</a>
+<li><a href="#_notation">Appendix C: Notation</a>
+<ul class="sectlevel2">
+<li><a href="#_diagramme_des_exigences">Diagramme des exigences</a></li>
+</ul>
+</li>
+<li><a href="#histoire">Appendix D: Les histoires de SysML et de Papyrus</a>
 <ul class="sectlevel2">
 <li><a href="#_histoire_de_sysml">Histoire de SysML</a></li>
 <li><a href="#_histoire_de_papyrus">Histoire de Papyrus</a></li>
 <li><a href="#_couverture_des_concepts">Couverture des concepts</a></li>
 </ul>
 </li>
-<li><a href="#sysml15">Appendix D: Nouveautés de SysML 1.5</a>
+<li><a href="#sysml15">Appendix E: Nouveautés de SysML 1.5</a>
 <ul class="sectlevel2">
 <li><a href="#_exigences">Exigences</a></li>
 <li><a href="#_suite">Suite</a></li>
 </ul>
 </li>
-<li><a href="#index">Appendix E: Index (Reference guide)</a></li>
+<li><a href="#index">Appendix F: Index (Reference guide)</a></li>
 <li><a href="#_divers_notes_et_todolist">Divers (notes et ToDoList)</a></li>
 </ul>
 </div>
@@ -183,7 +188,7 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p><span class="image"><a class="image" href="https://travis-ci.org/jmbruel/sysmlpapyrusbook"><img src="https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master" alt="Build Status"></a></span>
-(Fork me on <a href="https://github.com/jmbruel/sysmlpapyrusbook"><span class="icon"><i class="fa fa-github"></i></span> GitHub</a>&#8201;&#8212;&#8201;Also available in <a href="http://jmbruel.github.io/sysmlpapyrusbook/master.pdf">PDF</a>)</p>
+(Fork me on <a href="https://github.com/jmbruel/sysmlpapyrusbook"><span class="icon"><i class="fa fa-github"></i></span> GitHub</a>&#8201;&#8212;&#8201;Also available in <a href="http://jmbruel.github.io/sysmlpapyrusbook/PapyrusSysMLinAction.pdf">PDF</a>)</p>
 </div>
 </div>
 </div>
@@ -286,7 +291,7 @@ Loin de nous l&#8217;idée de forcer la façon d&#8217;en aborder les chapitres,
 les pistes de lectures suivantes selon la situation :</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 1. Conseils de lecture en fonction de votre niveau en SysML (en ligne) et en Papyrus (en colonne)</caption>
+<caption class="title">Table 1. Conseils de lecture en fonction de votre objectif vis-à-vis de SysML (en ligne) et/ou de Papyrus-SysML (en colonne)</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -295,30 +300,30 @@ les pistes de lectures suivantes selon la situation :</p>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top"><a href="http://www.omgsysml.org/">SysML&#8482;</a>&#160;&#160;&#160;/&#160;&#160;&#160;<a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a></th>
-<th class="tableblock halign-center valign-top">Découverte</th>
-<th class="tableblock halign-center valign-top">Initié</th>
-<th class="tableblock halign-center valign-top">Professionnel</th>
+<th class="tableblock halign-left valign-top"><a href="http://www.omgsysml.org/">SysML&#8482;</a>&#160;\ <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a></th>
+<th class="tableblock halign-center valign-top">Découvrir</th>
+<th class="tableblock halign-center valign-top">S&#8217;améliorer</th>
+<th class="tableblock halign-center valign-top">Maîtriser</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Découverte</p></th>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#Intro">1</a>,<a href="#etudeCas">2</a>,<a href="#install">3</a>,<a href="#overview">4</a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#Intro">1</a>,<a href="#etudeCas">2</a>,(<a href="#install">3</a>),<a href="#overview">4</a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#Intro">1</a>,<a href="#etudeCas">2</a>,<a href="#overview">4</a></p></td>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Découvrir</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#Intro">1</a>,(<a href="#etudeCas">2</a>),<a href="#install">3</a>,<a href="#overview">4</a>,(<a href="#GettingStarted">6</a>)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#Intro">1</a>,<a href="#etudeCas">2</a>,(<a href="#install">3</a>),<a href="#overview">4</a>,<a href="#GettingStarted">6</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#Intro">1</a>,<a href="#etudeCas">2</a>,(<a href="#install">3</a>),<a href="#overview">4</a>,<a href="#GettingStarted">6</a>,<a href="#realLife">13</a></p></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Initié</p></th>
-<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>),<a href="#etudeCas">2</a>,<a href="#install">3</a>,(<a href="#overview">4</a>),<a href="#RE">5</a>,<a href="#usages">6</a>,<a href="#archi">7</a>,<a href="#behavour">8</a>,<a href="#interaction">9</a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>),<a href="#etudeCas">2</a>,(<a href="#install">3</a>,<a href="#overview">4</a>),<a href="#RE">5</a>,<a href="#usages">6</a>,<a href="#archi">7</a>,<a href="#behavour">8</a>,<a href="#interaction">9</a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>),<a href="#etudeCas">2</a>,(<a href="#overview">4</a>),<a href="#RE">5</a>,<a href="#usages">6</a>,<a href="#archi">7</a>,<a href="#behavour">8</a>,<a href="#interaction">9</a></p></td>
+<th class="tableblock halign-left valign-top"><p class="tableblock">S&#8217;initier</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>,<a href="#etudeCas">2</a>),<a href="#install">3</a>,<a href="#overview">4</a>,(<a href="#methode">5</a>,<a href="#GettingStarted">6</a>),<a href="#reqs">7</a>,<a href="#usage">8</a>,<a href="#archi">9</a>,<a href="#behavior">10</a>,<a href="#interaction">11</a>,<a href="#crossCuting">12</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>),<a href="#etudeCas">2</a>,(<a href="#install">3</a>),<a href="#overview">4</a>,<a href="#methode">5</a>,<a href="#GettingStarted">6</a>,<a href="#reqs">7</a>,<a href="#usage">8</a>,<a href="#archi">9</a>,<a href="#behavior">10</a>,<a href="#interaction">11</a>,<a href="#crossCuting">12</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>),<a href="#etudeCas">2</a>,(<a href="#install">3</a>),<a href="#overview">4</a>,<a href="#methode">5</a>,<a href="#GettingStarted">6</a>,<a href="#reqs">7</a>,<a href="#usage">8</a>,<a href="#archi">9</a>,<a href="#behavior">10</a>,<a href="#interaction">11</a>,<a href="#crossCuting">12</a>,<a href="#realLife">13</a></p></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Professionnel</p></th>
-<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>),<a href="#etudeCas">2</a>,<a href="#install">3</a>,(<a href="#RE">5</a>,<a href="#usages">6</a>,<a href="#archi">7</a>,<a href="#behavour">8</a>,<a href="#interaction">9</a>),<a href="#crossCuting">10</a>,<a href="#realLife">11</a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>),<a href="#etudeCas">2</a>,(<a href="#install">3</a>,<a href="#RE">5</a>,<a href="#usages">6</a>,<a href="#archi">7</a>,<a href="#behavour">8</a>,<a href="#interaction">9</a>),<a href="#crossCuting">10</a>,<a href="#realLife">11</a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>),<a href="#etudeCas">2</a>,(<a href="#overview">4</a>),<a href="#RE">5</a>,<a href="#usages">6</a>,<a href="#archi">7</a>,<a href="#behavour">8</a>,<a href="#interaction">9</a>,<a href="#crossCuting">10</a>,<a href="#realLife">11</a></p></td>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Maîtriser</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>,<a href="#etudeCas">2</a>),<a href="#install">3</a>,(<a href="#methode">5</a>,<a href="#GettingStarted">6</a>,<a href="#reqs">7</a>,<a href="#usage">8</a>,<a href="#archi">9</a>),<a href="#crossCuting">10</a>,<a href="#interaction">11</a>,<a href="#crossCuting">12</a>,<a href="#realLife">13</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>),<a href="#etudeCas">2</a>,(<a href="#install">3</a>,<a href="#methode">5</a>,<a href="#GettingStarted">6</a>,<a href="#reqs">7</a>,<a href="#usage">8</a>,<a href="#archi">9</a>),<a href="#crossCuting">10</a>,<a href="#interaction">11</a>,<a href="#crossCuting">12</a>,<a href="#realLife">13</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">(<a href="#Intro">1</a>),<a href="#etudeCas">2</a>,(<a href="#install">3</a>),<a href="#methode">5</a>,<a href="#GettingStarted">6</a>,<a href="#reqs">7</a>,<a href="#usage">8</a>,<a href="#archi">9</a>,<a href="#crossCuting">10</a>,<a href="#interaction">11</a>,<a href="#crossCuting">12</a>,<a href="#realLife">13</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2230,14 +2235,17 @@ de messages entre eux.</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Nous allons aborder dans ce chapitre l&#8217;utilisation de <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.</p>
+<p>Nous allons aborder dans ce chapitre l&#8217;utilisation de <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.
+Le lecteur pourra trouver des informations complémentaires sur la page de documentation :
+<a href="https://wiki.eclipse.org/Papyrus_User_Guide" class="bare">https://wiki.eclipse.org/Papyrus_User_Guide</a>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_configuration">6.2. Configuration</h3>
 <div class="paragraph">
 <p>Comme indiqué au chapitre <a href="#install">Avant de démarrer</a>, nous considérons que vous avez la
-version <code>3.0</code> (ou plus) de <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.</p>
+version <code>3.0</code> (ou plus) de <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, pour la version <em>Oxygen</em> (<code>4.7</code>)
+d&#8217;<a href="http://www.eclipse.org">eclipse</a>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2298,21 +2306,138 @@ ici : <a href="https://github.com/PapyrusSysMLinAction/SmartHomeUseCase" class="
 </div>
 </div>
 <div class="sect2">
-<h3 id="_modélisation_par_les_diagrammes">6.4. Modélisation par les diagrammes</h3>
-
+<h3 id="_l_environnement_de_modélisation">6.4. L&#8217;environnement de modélisation</h3>
+<div class="paragraph">
+<p>Comme de nombreux outils basés sur <a href="http://www.eclipse.org">eclipse</a>, <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> propose une
+organisation type des fenêtres et panneaux, appelée <em>perspective</em>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/3.0/panels.png" alt="panels" width="90%">
+</div>
+<div class="title">Figure 18. La perspective de base Papyrus-SysML</div>
+</div>
+<div class="paragraph">
+<p>Les éléments principaux de cette organisation sont :</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Le <em>Project Explorer</em>, élément <a href="http://www.eclipse.org">eclipse</a> qui vous permet d&#8217;accéder à vos projets
+(pas seulement <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>)</p>
+</li>
+<li>
+<p>Le <em>Model Explorer</em>, qui permet d&#8217;accéder à vos modèles et à tous vos artefacts de modélisation  (cf. section <a href="#mod-art">Modélisation par les artefacts</a>).</p>
+</li>
+<li>
+<p>L'<em>Outline</em>, sorte de vue d&#8217;ensemble du diagramme ouvert (utile pour les très grands diagrammes)</p>
+</li>
+<li>
+<p>L&#8217;éditeur de diagramme (<em>Multi diagram editor</em>), l&#8217;élément principale dans lequel vous ouvrirez et concevrez vos diagrammes.</p>
+</li>
+<li>
+<p>La <em>Palette</em>, qui dépend du type de diagramme ouvert dans l&#8217;éditeur de diagramme et qui vous permet de "copier/coller"
+des éléments dans votre diagramme (cf. section <a href="#mod-diag">Modélisation par les diagrammes</a>)</p>
+</li>
+<li>
+<p>La <em>Properties view</em>, qui permet d&#8217;accéder à des informations détaillées. Généralement, l&#8217;onglet le plus utilisé est l&#8217;onglet
+<em>Properties</em> qui permet d&#8217;accéder et de renseigner les détails de l&#8217;élément sélectionné (ici le bloc <code>Capteur</code>)</p>
+</li>
+<li>
+<p>La barre de menu (<em>Toolbar</em>), qui contient certains raccourcis de manus sous forme d&#8217;icônes.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Pour retrouver la perspective <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> ou en changer : <span class="menuseq"><span class="menu">Window</span>&#160;&#9656; <span class="menuitem">Perspective</span></span>
+(cf. <a href="#meu-perspective">Menu Window &gt; Perspective</a>)
+ou cliquez sur l&#8217;icône Papyrus en haut à droite (<a href="#papyrus-perspective">Pour activer la perspective Papyrus</a>).</p>
+</div>
+<div id="meu-perspective" class="imageblock">
+<div class="content">
+<img src="images/3.0/perspectives.png" alt="perspectives" width="30%">
+</div>
+<div class="title">Figure 19. Menu Window &gt; Perspective</div>
+</div>
+<div id="papyrus-perspective" class="imageblock">
+<div class="content">
+<img src="images/3.0/papyrus-perspective.png" alt="papyrus perspective" width="30%">
+</div>
+<div class="title">Figure 20. Pour activer la perspective Papyrus</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_modélisation_par_les_artefacts">6.5. Modélisation par les artefacts</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_personnalisation">6.6. Personnalisation</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_génération_de_documentation">6.7. Génération de documentation</h3>
+<h3 id="mod-diag">6.5. Modélisation par les diagrammes</h3>
 <div class="sect3">
-<h4 id="_export_des_diagrammes">6.7.1. Export des diagrammes</h4>
+<h4 id="_exemple_simple">6.5.1. Exemple simple</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_annoter_les_éléments_de_modèles">6.5.2. Annoter les éléments de modèles</h4>
+<div class="paragraph">
+<p>Il est important de documenter les modèles.
+Si vous souhaitez ensuite pouvoir générer une documentation intéressante
+(cf. section <a href="#_gen2doc">Gen2Doc</a>) ou analyser automatiquement les commentaires.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Pour ajouter ou supprimer des éléments de modèles sur lequel porte la
+note, contrôlez la partie <em>Annotated element</em> des propriétés (onglet UML).</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/3.0/annotated.png" alt="annotated" width="70%">
+</div>
+<div class="title">Figure 21. Lien entre une note et les éléments de modèles</div>
+</div>
+</li>
+<li>
+<p>Vous pouvez éditer des notes richement formatées.
+Il faut pour cela activer l&#8217;éditeur enrichi :
+<span class="menuseq"><span class="menu">Preferences</span>&#160;&#9656; <span class="submenu">Papyrus</span>&#160;&#9656; <span class="menuitem">Rich text</span></span> et cochez les cases.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/3.0/richtext.png" alt="richtext" width="70%">
+</div>
+<div class="title">Figure 22. Activation de l&#8217;éditeur interne enrichi</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/3.0/richtext-result.png" alt="richtext result" width="70%">
+</div>
+<div class="title">Figure 23. Nouveaux menus disponibles dans l&#8217;éditeur interne</div>
+</div>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="mod-art">6.6. Modélisation par les artefacts</h3>
+<div class="sect3">
+<h4 id="_export_des_diagrammes">6.6.1. Export des diagrammes</h4>
 <div class="paragraph">
 <p>Si vous souhaitez simplement obtenir des figures de vos diagrammes :</p>
 </div>
@@ -2339,7 +2464,7 @@ Nous vous recommandons de sélectionner <span class="menu">Prefix with qualified
 <div class="content">
 <img src="images/3.0/Model_Smart_Home_System_Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.SVG" alt="Model Smart Home System Outline of the Smart Home System SHS modelling project organisation" width="60%">
 </div>
-<div class="title">Figure 18. Exemple d&#8217;export de diagrammes</div>
+<div class="title">Figure 24. Exemple d&#8217;export de diagrammes</div>
 </div>
 </li>
 </ol>
@@ -2353,20 +2478,20 @@ Nous vous recommandons de sélectionner <span class="menu">Prefix with qualified
 <td class="content">
 Vous constaterez que l&#8217;export ne conserve pas l&#8217;entête (cartouche).
 C&#8217;est une des fonctionnalités attendues des utilisateurs et en cours de prise en compte
-par les développeurs du <a href="http://www-list.cea.fr/">CEA LIST</a>. Mais si vous voulez aider, votez pour que cette <em>feature</em> soit
-implémentée au plus vite : <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=354296" class="bare">https://bugs.eclipse.org/bugs/show_bug.cgi?id=354296</a>.
+par les développeurs du <a href="http://www-list.cea.fr/">CEA LIST</a>. Nous vous invitons à soutenir pour cette <em>feature</em> en allant
+voter sur : <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=354296" class="bare">https://bugs.eclipse.org/bugs/show_bug.cgi?id=354296</a>.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_gen2doc">6.7.2. Gen2Doc</h4>
+<h4 id="_gen2doc">6.6.2. Gen2Doc</h4>
 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_en_résumé_2">6.8. En résumé</h3>
+<h3 id="_en_résumé_2">6.7. En résumé</h3>
 <div class="paragraph">
 <p>La prise en main d&#8217;un outil comme <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> n&#8217;est pas quelque chose que l&#8217;on
 peut facilement résumer en quelques pages dans un livre.
@@ -2380,7 +2505,7 @@ nous renvoyons le lecteur aux tutoriels disponibles sur le site :
 </div>
 </div>
 <div class="sect2">
-<h3 id="_questions_de_révision_2">6.9. Questions de révision</h3>
+<h3 id="_questions_de_révision_2">6.8. Questions de révision</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2563,7 +2688,7 @@ A requirement is defined as a stereotype of UML Class&#8230;&#8203;</em></p>
 <div class="content">
 <img src="images/requirement.png" alt="SysML and UML" width="50%">
 </div>
-<div class="title">Figure 19. Un exemple de <em>Requirement</em> en SysML (source <a href="#SysML">[SysML]</a>, p. 159)</div>
+<div class="title">Figure 25. Un exemple de <em>Requirement</em> en SysML (source <a href="#SysML">[SysML]</a>, p. 159)</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2592,7 +2717,7 @@ changer la signification par défaut.
 <div class="content">
 <img src="images/abstractReq.png" alt="AbstractRequirement" width="50%">
 </div>
-<div class="title">Figure 20. N&#8217;importe quel élément de modèle (qui a un nom) peut être une exigence (<a href="#SysML">[SysML]</a>, p.168)</div>
+<div class="title">Figure 26. N&#8217;importe quel élément de modèle (qui a un nom) peut être une exigence (<a href="#SysML">[SysML]</a>, p.168)</div>
 </div>
 </div>
 <div class="sect3">
@@ -2700,7 +2825,7 @@ sous forme tabulaire.</p>
 <div class="content">
 <img src="images/req-table.png" alt="Tableaux" width="70%">
 </div>
-<div class="title">Figure 21. Exemples de tableaux d&#8217;exigences (OMG SysML v1.4, p. 163)</div>
+<div class="title">Figure 27. Exemples de tableaux d&#8217;exigences (OMG SysML v1.4, p. 163)</div>
 </div>
 <div class="paragraph">
 <p>La plupart des outils modernes permettent le passage entre outils classiques de gestion des exigences (comme <a href="http://www-03.ibm.com/software/products/fr/fr/ratidoor/">DOORS&#8482;</a>)
@@ -2710,7 +2835,7 @@ et outils de modélisation <a href="http://www.omgsysml.org/">SysML&#8482;</a>.<
 <div class="content">
 <img src="images/todo.jpg" alt="todo" width="50%">
 </div>
-<div class="title">Figure 22. Import Papyrus de tableau d&#8217;exigences</div>
+<div class="title">Figure 28. Import Papyrus de tableau d&#8217;exigences</div>
 </div>
 </div>
 </div>
@@ -2779,7 +2904,7 @@ entre un système et un de ses sous-systèmes.</p>
 <div class="content">
 <img src="images/req-exp1.png" alt="req exp1" width="50%">
 </div>
-<div class="title">Figure 23. Exemples de relations entre exigences</div>
+<div class="title">Figure 29. Exemples de relations entre exigences</div>
 </div>
 <div class="paragraph">
 <p>Il existe ensuite les relations entre les besoins et les autres éléments de modélisation
@@ -2790,7 +2915,7 @@ dans la partie <a href="#transvers">transverse</a>.</p>
 <div class="content">
 <img src="images/topcased-req-connections.png" alt="topcased req connections" width="20%">
 </div>
-<div class="title">Figure 24. Relations liées au <em>requirements</em> dans TOPCASED</div>
+<div class="title">Figure 30. Relations liées au <em>requirements</em> dans TOPCASED</div>
 </div>
 </div>
 <div class="sect2">
@@ -2802,7 +2927,7 @@ dans la partie <a href="#transvers">transverse</a>.</p>
 <div class="content">
 <img src="images/rationale.png" alt="rationale" width="90%">
 </div>
-<div class="title">Figure 25. Exemples de composition d&#8217;exigences</div>
+<div class="title">Figure 31. Exemples de composition d&#8217;exigences</div>
 </div>
 </div>
 <div class="sect2">
@@ -2833,7 +2958,7 @@ Quelques exemples de stéréotypes utiles :</p>
 <div class="content">
 <img src="images/rationale.png" alt="rationale" width="80%">
 </div>
-<div class="title">Figure 26. Exemples de <em>rationale</em> et <em>problem</em> (OMG SysML v1.5, p. 227)</div>
+<div class="title">Figure 32. Exemples de <em>rationale</em> et <em>problem</em> (OMG SysML v1.5, p. 227)</div>
 </div>
 </div>
 <div class="sect2">
@@ -2869,7 +2994,7 @@ artefact de conception (ne serait-ce qu&#8217;un <em>use case</em>)<sup class="f
 <div class="content">
 <img src="images/req-uc-relation.png" alt="req uc relation" width="40%">
 </div>
-<div class="title">Figure 27. Exemple de lien entre <em>use case</em> et <em>requirements</em></div>
+<div class="title">Figure 33. Exemple de lien entre <em>use case</em> et <em>requirements</em></div>
 </div>
 <div class="paragraph">
 <p>Ce diagramme est exactement identique à celui d&#8217;<a href="http://www.uml.org/">UML&#8482;</a>.</p>
@@ -2878,7 +3003,7 @@ artefact de conception (ne serait-ce qu&#8217;un <em>use case</em>)<sup class="f
 <div class="content">
 <img src="images/UCGestionNotes.png" alt="UCGestionNotes" width="70%">
 </div>
-<div class="title">Figure 28. Exemple de diagramme des cas d&#8217;utilisation</div>
+<div class="title">Figure 34. Exemple de diagramme des cas d&#8217;utilisation</div>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -2960,7 +3085,7 @@ des exigences et la modélisation du système lui-même (cf. <a href="#sysmod">E
 <div class="content">
 <a class="image" href="http://model-based-systems-engineering.com/2012/03/26/the-sysmod-zigzag-pattern/"><img src="images/zigzag.png" alt="zigzag" width="70%"></a>
 </div>
-<div class="title">Figure 29. Exemple de démarche (<em>SYSMOD Zigzag pattern</em>)</div>
+<div class="title">Figure 35. Exemple de démarche (<em>SYSMOD Zigzag pattern</em>)</div>
 </div>
 </div>
 <div class="sect2">
@@ -2982,7 +3107,7 @@ des exigences et la modélisation du système lui-même (cf. <a href="#sysmod">E
 </div>
 </div>
 <div class="sect1">
-<h2 id="_usages_et_interfaces">8. Usages et interfaces</h2>
+<h2 id="usage">8. Usages et interfaces</h2>
 <div class="sectionbody">
 <div class="admonitionblock caution">
 <table>
@@ -3292,7 +3417,7 @@ On peut également orienter ces associations en plaçant une direction (flèche 
 <div class="content">
 <img src="images/todo.jpg" alt="todo">
 </div>
-<div class="title">Figure 30. Relations orientées</div>
+<div class="title">Figure 36. Relations orientées</div>
 </div>
 </div>
 <div class="sect4">
@@ -3321,7 +3446,7 @@ Plusieurs relations sont possibles :</p>
 <div class="content">
 <img src="images/todo.jpg" alt="Diagramme d'UC" width="35%">
 </div>
-<div class="title">Figure 31. Notation dans le diagramme d&#8217;UC</div>
+<div class="title">Figure 37. Notation dans le diagramme d&#8217;UC</div>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -3391,7 +3516,8 @@ inclut dans plusieurs UC. Si ce n&#8217;est pas le cas, il est généralement en
 <div class="sidebarblock">
 <div class="content">
 <div class="paragraph">
-<p>IBD, BDD et Parametric.</p>
+<p>IBD, BDD et Parametric.
+Parler de l&#8217;exemple du diagramme de contexte pour illustrer la différence de vue IBD/BDD.</p>
 </div>
 </div>
 </div>
@@ -3542,7 +3668,7 @@ Ce diagramme utilise les mêmes éléments que le diagramme de classe <a href="h
 <div class="content">
 <img src="images/pacemaker-context.png" alt="pacemaker context" width="80%">
 </div>
-<div class="title">Figure 32. bdd du système dans son environnement</div>
+<div class="title">Figure 38. bdd du système dans son environnement</div>
 </div>
 <div class="paragraph">
 <p>Un bloc est constitué d&#8217;un certain nombre de compartiments (<em>Compartments</em>) :</p>
@@ -3579,7 +3705,7 @@ Ce diagramme utilise les mêmes éléments que le diagramme de classe <a href="h
 <div class="content">
 <img src="images/constraints.png" alt="constraints" width="70%">
 </div>
-<div class="title">Figure 33. Exemple de définition de contraintes</div>
+<div class="title">Figure 39. Exemple de définition de contraintes</div>
 </div>
 <div class="sect4">
 <h5 id="_propriétés">Propriétés</h5>
@@ -3630,7 +3756,7 @@ Ce diagramme utilise les mêmes éléments que le diagramme de classe <a href="h
 <div class="content">
 <img src="images/valueType.png" alt="valueType" width="60%">
 </div>
-<div class="title">Figure 34. Définition d&#8217;une <em>Value Types</em></div>
+<div class="title">Figure 40. Définition d&#8217;une <em>Value Types</em></div>
 </div>
 </div>
 <div class="sect4">
@@ -3736,7 +3862,7 @@ Elle est représentée par un couple <code>(M..N)</code>.</p>
 <div class="content">
 <img src="images/cardinalite.png" alt="cardinalite" width="50%">
 </div>
-<div class="title">Figure 35. Exemple d&#8217;associtaion</div>
+<div class="title">Figure 41. Exemple d&#8217;associtaion</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3786,7 +3912,7 @@ private List&lt;Fournisseurs&gt; fournisseurs;
 <div class="content">
 <a class="image" href="http://stackoverflow.com/questions/7718035/uml-association-and-dependency"><img src="images/aggreg-comp.png" alt="aggreg comp" width="60%"></a>
 </div>
-<div class="title">Figure 36. Deux façon de représenter une propriété de type <code>B</code></div>
+<div class="title">Figure 42. Deux façon de représenter une propriété de type <code>B</code></div>
 </div>
 <div class="paragraph">
 <p>En terme d&#8217;Ingénierie Système, une composition indique que l&#8217;élément est une partie intégrante (on parle de <em>part</em>) du tout (un composant, comme le moteur d&#8217;une voiture par exemple) tandis q&#8217;une agrégation indique que l&#8217;élément est une partie "externe" (on parle de <em>reference</em>) comme la batterie d&#8217;un portable.</p>
@@ -3822,7 +3948,7 @@ private List&lt;Fournisseurs&gt; fournisseurs;
 <div class="content">
 <img src="images/compo.png" alt="compo" width="50%">
 </div>
-<div class="title">Figure 37. Exemple de composition</div>
+<div class="title">Figure 43. Exemple de composition</div>
 </div>
 </div>
 <div class="sect4">
@@ -3836,7 +3962,7 @@ Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un"
 <div class="content">
 <img src="images/genspec.png" alt="genspec" width="50%">
 </div>
-<div class="title">Figure 38. Exemple de lien de généralisation/spécialisation</div>
+<div class="title">Figure 44. Exemple de lien de généralisation/spécialisation</div>
 </div>
 <div class="paragraph">
 <p>On retrouve cette association entre blocs, mais aussi entre acteurs, cas d&#8217;utilisation, etc.</p>
@@ -3894,13 +4020,13 @@ et les <em>references</em> comme des blocs en trait pointillés.</p>
 <div class="content">
 <img src="images/parts.png" alt="parts" width="40%">
 </div>
-<div class="title">Figure 39. Exemple de <em>Parts</em></div>
+<div class="title">Figure 45. Exemple de <em>Parts</em></div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/parts2.png" alt="parts2" width="60%">
 </div>
-<div class="title">Figure 40. Autre exemple de <em>Parts</em></div>
+<div class="title">Figure 46. Autre exemple de <em>Parts</em></div>
 </div>
 <div class="sect4">
 <h5 id="_ports_sysml_1_2">Ports (SysML 1.2)</h5>
@@ -3960,7 +4086,7 @@ Les connecteurs peuvent traverser les "frontières" sans exiger de ports à chaq
 <div class="content">
 <img src="images/ports-flots.png" alt="ports flots" width="60%">
 </div>
-<div class="title">Figure 41. Exemples de flots</div>
+<div class="title">Figure 47. Exemples de flots</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -3981,7 +4107,7 @@ Les connecteurs peuvent traverser les "frontières" sans exiger de ports à chaq
 <div class="content">
 <img src="images/flots.png" alt="flots" width="90%">
 </div>
-<div class="title">Figure 42. Exemples de flots multi-physique entre ports</div>
+<div class="title">Figure 48. Exemples de flots multi-physique entre ports</div>
 </div>
 <div class="paragraph">
 <p>Les ports peuvent être de nature classique (comme en <a href="http://www.uml.org/">UML&#8482;</a>) et représenter la fourniture ou le besoin de services. On parle alors
@@ -4119,7 +4245,7 @@ et en ajoutant la possibilité d&#8217;imbrication et de spécification renforc�
 <div class="content">
 <img src="images/constraints.png" alt="constraints" width="80%">
 </div>
-<div class="title">Figure 43. Exemple de contraintes</div>
+<div class="title">Figure 49. Exemple de contraintes</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4146,7 +4272,7 @@ et en ajoutant la possibilité d&#8217;imbrication et de spécification renforc�
 <div class="content">
 <img src="images/param.png" alt="param" width="90%">
 </div>
-<div class="title">Figure 44. Exemple de diagramme paramétrique</div>
+<div class="title">Figure 50. Exemple de diagramme paramétrique</div>
 </div>
 </div>
 <div class="sect3">
@@ -4162,7 +4288,7 @@ C&#8217;est l&#8217;objet des <em>Value Binding</em>.</p>
 <div class="content">
 <a class="image" href="http://books.google.fr/books?id=8KY2YZIiXv0C&pg=PA174&lpg=PA174&dq=SYSml+%22block+configuration%22&source=bl&ots=ZdxokRYj6l&sig=PlDHvR8qGZC97W-C_08Yk9Xb1RY&hl=fr&sa=X&ei=1jizUOXKBsXAhAeinYHACg&ved=0CEEQ6AEwAg#v=onepage&q=SYSml%20%22block%20configuration%22&f=false"><img src="images/blockconf.png" alt="blockconf" width="90%"></a>
 </div>
-<div class="title">Figure 45. Exemple de bloc de configuration</div>
+<div class="title">Figure 51. Exemple de bloc de configuration</div>
 </div>
 </div>
 </div>
@@ -4336,7 +4462,7 @@ Cette réaction (nommée <strong>transition</strong>) possède un événement d�
 <div class="content">
 <img src="images/stm1.png" alt="Un diagramme d'état" width="70%">
 </div>
-<div class="title">Figure 46. Un exemple de diagramme d&#8217;états</div>
+<div class="title">Figure 52. Un exemple de diagramme d&#8217;états</div>
 </div>
 <div class="paragraph">
 <p>Lorsqu&#8217;un état nécessite lui-même plus de détails, on créé un <strong>état composite</strong> (aussi appelé super-état)
@@ -4574,13 +4700,13 @@ conditions sous lesquelles cette partie du scénario s&#8217;exécute.</p>
 <div class="content">
 <img src="images/fowl1.png" alt="Un algorithme" width="30%">
 </div>
-<div class="title">Figure 47. Exemple d' algorithme&#8230;&#8203; (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 53. Exemple d' algorithme&#8230;&#8203; (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/fowl2.png" alt="Sa modélisation" width="60%">
 </div>
-<div class="title">Figure 48. Et le diagramme correpondant (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 54. Et le diagramme correpondant (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div class="sect4">
 <h5 id="_exemple_de_conceptions">Exemple de conceptions</h5>
@@ -4596,13 +4722,13 @@ fonctionnalité. On mesure visuellement assez bien la différence entre la versi
 <div class="content">
 <img src="images/fowl3.png" alt="Conception 'centralisée'" width="60%">
 </div>
-<div class="title">Figure 49. Conception "centralisée" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 55. Conception "centralisée" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div id="fowler2" class="imageblock">
 <div class="content">
 <img src="images/fowl4.png" alt="Conception 'objet'" width="60%">
 </div>
-<div class="title">Figure 50. Conception "objet" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 56. Conception "objet" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4634,19 +4760,19 @@ fonctionnalité. On mesure visuellement assez bien la différence entre la versi
 <div class="content">
 <img src="images/ucexp1.png" alt="Diagramme d'UC" width="30%">
 </div>
-<div class="title">Figure 51. Diagramme d&#8217;UC</div>
+<div class="title">Figure 57. Diagramme d&#8217;UC</div>
 </div>
 <div id="exp1-dss" class="imageblock">
 <div class="content">
 <img src="images/dssexp1.png" alt="Le DSS correspondant" width="50%">
 </div>
-<div class="title">Figure 52. Le DSS correspondant</div>
+<div class="title">Figure 58. Le DSS correspondant</div>
 </div>
 <div id="exp1-ds" class="imageblock">
 <div class="content">
 <img src="images/dsexp1.png" alt="Le DS correspondant" width="70%">
 </div>
-<div class="title">Figure 53. Le DS correspondant</div>
+<div class="title">Figure 59. Le DS correspondant</div>
 </div>
 </div>
 <div class="sect4">
@@ -4660,7 +4786,7 @@ en programmation). L&#8217;opérateur <em>ref</em> est alors utilisé.</p>
 <div class="content">
 <img src="images/todo.jpg" alt="todo">
 </div>
-<div class="title">Figure 54. Exemple de diagramme de séquence référençant un autre diagramme de séquence</div>
+<div class="title">Figure 60. Exemple de diagramme de séquence référençant un autre diagramme de séquence</div>
 </div>
 </div>
 <div class="sect4">
@@ -4682,7 +4808,7 @@ en programmation). L&#8217;opérateur <em>ref</em> est alors utilisé.</p>
 <div class="content">
 <img src="images/todo.jpg" alt="todo">
 </div>
-<div class="title">Figure 55. Exemple de contrainte de durée dans un diagramme de séquence</div>
+<div class="title">Figure 61. Exemple de contrainte de durée dans un diagramme de séquence</div>
 </div>
 </div>
 <div class="sect4">
@@ -4720,7 +4846,7 @@ mais aussi ce qui est produit, consommé, ou transformé, au cours de l’exécu
 <div class="content">
 <img src="images/act-pcmk1.png" alt="act pcmk1" width="70%">
 </div>
-<div class="title">Figure 56. Exemple de diagramme d&#8217;activité (tiré de <a href="#SeeBook2012">[SeeBook2012]</a>)</div>
+<div class="title">Figure 62. Exemple de diagramme d&#8217;activité (tiré de <a href="#SeeBook2012">[SeeBook2012]</a>)</div>
 </div>
 <div class="paragraph">
 <p>Les éléments de base du diagramme d’activité sont :</p>
@@ -4763,7 +4889,7 @@ Les <em>object flow</em>, associés aux broches d&#8217;entrée/sortie (<em>inpu
 <div class="content">
 <img src="images/act-flow-continuous.png" alt="Un flot continu" width="30%">
 </div>
-<div class="title">Figure 57. Un exemple de flot continu</div>
+<div class="title">Figure 63. Un exemple de flot continu</div>
 </div>
 <div class="paragraph">
 <p>Pour permettre la modélisation des <strong>flots continus</strong>, <a href="http://www.omgsysml.org/">SysML&#8482;</a> ajoute à <a href="http://www.uml.org/">UML&#8482;</a> la possibilité de caractériser la nature du débit qui circule sur le flot : continu (par exemple, courant électrique, fluide, etc.) ou discret (par exemple, évenements, requêtes, etc.).
@@ -4817,7 +4943,7 @@ Elle est représentée par un losange qui possède un arc entrant et plusieurs a
 <div class="content">
 <img src="images/flow-ctrl.png" alt="flow ctrl" width="20%">
 </div>
-<div class="title">Figure 58. Les différents contrôles de flow SysML</div>
+<div class="title">Figure 64. Les différents contrôles de flow SysML</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4860,7 +4986,7 @@ L’action d’appel est représentée graphiquement par une fourche à droite d
 <div class="content">
 <img src="images/act-call.png" alt="act call" width="20%">
 </div>
-<div class="title">Figure 59. Exemple de <em>callBehaviorAction</em> (UK)</div>
+<div class="title">Figure 65. Exemple de <em>callBehaviorAction</em> (UK)</div>
 </div>
 </div>
 <div class="sect2">
@@ -5135,13 +5261,13 @@ vue (un <em>packetage</em> particulier, stéréotypé <code><a href="#view">[vie
 <div class="content">
 <img src="images/pkg-organisation2.png" alt="pkg organisation2" width="70%">
 </div>
-<div class="title">Figure 60. Exemple d&#8217;organisation simple</div>
+<div class="title">Figure 66. Exemple d&#8217;organisation simple</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/pkg-organisation-modelview.png" alt="pkg organisation modelview" width="40%">
 </div>
-<div class="title">Figure 61. Représentation de cette organisation dans un outil</div>
+<div class="title">Figure 67. Représentation de cette organisation dans un outil</div>
 </div>
 </div>
 <div class="sect3">
@@ -5309,7 +5435,7 @@ On y retrouve les contraintes, déjà vues (cf. <a href="#contraintes">Exemple d
 <div class="content">
 <img src="images/param.png" alt="param" width="90%">
 </div>
-<div class="title">Figure 62. Exemple de diagramme paramétrique</div>
+<div class="title">Figure 68. Exemple de diagramme paramétrique</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -5325,7 +5451,7 @@ On y retrouve les contraintes, déjà vues (cf. <a href="#contraintes">Exemple d
 <div class="content">
 <a class="image" href="http://www.omgsysml.org/SysML_2009_RFI_Response_Summary-bone-cloutier.pdf"><img src="images/survey4.png" alt="survey4" width="80%"></a>
 </div>
-<div class="title">Figure 63. Diagrammes les plus utilisés (tiré de <a href="#OMG2009">[OMG2009]</a>)</div>
+<div class="title">Figure 69. Diagrammes les plus utilisés (tiré de <a href="#OMG2009">[OMG2009]</a>)</div>
 </div>
 </td>
 </tr>
@@ -5515,7 +5641,7 @@ installez le composant <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</
 <div class="content">
 <img src="images/mergestrategy.png" alt="Stratégie de Merge" width="60%">
 </div>
-<div class="title">Figure 64. Pensez à sélectionner la bonne stratégie de Merge</div>
+<div class="title">Figure 70. Pensez à sélectionner la bonne stratégie de Merge</div>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -5529,6 +5655,54 @@ Si vous n&#8217;avez pas cette option à cocher, vous n&#8217;avez pas la bonne 
 </tr>
 </table>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_compléments_papyrus">13.2. Compléments Papyrus</h3>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="title">Commentaire</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p>Voir avec Seb ce qu&#8217;on garde, ce qu&#8217;on remonte dans la partie principale (section <a href="#gettingStarted">[gettingStarted]</a>), ce qu&#8217;on jette&#8230;&#8203;</p>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_personnaliser_les_styles">13.2.1. Personnaliser les styles</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_layer_support">13.2.2. Layer Support</h4>
+<div class="paragraph">
+<p><a href="https://wiki.eclipse.org/Papyrus/UserGuide/Layers" class="bare">https://wiki.eclipse.org/Papyrus/UserGuide/Layers</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_model_execution">13.2.3. Model Execution</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_reverse_engineering">13.2.4. Reverse Engineering</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_fragmenter_un_modèle">13.2.5. Fragmenter un modèle</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_papyrus_for_requirements">13.2.6. Papyrus for Requirements</h4>
+
 </div>
 </div>
 </div>
@@ -5641,6 +5815,15 @@ IBD
 </td>
 <td class="hdlist2">
 <p><em><strong>I</strong>nternal <strong>B</strong>lock <strong>D</strong>iagram</em>, le diagramme de blocs internes  (cf. <a href="#ibd"><em>Internal Block Diagrams</em></a>)</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+IDE
+</td>
+<td class="hdlist2">
+<p><em><strong>I</strong>ntegrated <strong>D</strong>evelopment <strong>E</strong>nvironment</em>, environnement de développement intégré
+(comme <a href="http://www.eclipse.org">eclipse</a> ou <a href="https://www.jetbrains.com/idea/">IntelliJ</a>)</p>
 </td>
 </tr>
 <tr>
@@ -5883,7 +6066,37 @@ du moins en informatique.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="histoire">Appendix C: Les histoires de SysML et de Papyrus</h2>
+<h2 id="_notation">Appendix C: Notation</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_diagramme_des_exigences">Diagramme des exigences</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 37.5%;">
+<col style="width: 12.5%;">
+<col style="width: 37.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exigence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="images/dessins/reqs.png" alt="reqs" width="90%"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Composition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="images/dessins/reqs.png" alt="reqs" width="90%"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exigence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="images/dessins/reqs.png" alt="reqs" width="90%"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exigence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="images/dessins/reqs.png" alt="reqs" width="90%"></span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="histoire">Appendix D: Les histoires de SysML et de Papyrus</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_histoire_de_sysml">Histoire de SysML</h3>
@@ -6170,7 +6383,7 @@ et où ils sont abordés dans le livre.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="sysml15">Appendix D: Nouveautés de SysML 1.5</h2>
+<h2 id="sysml15">Appendix E: Nouveautés de SysML 1.5</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Pour les lecteurs habitués à <a href="http://www.omgsysml.org/">SysML&#8482;</a> <code>1.4</code> nous résumons ici les principales nouveautés de la version <code>1.5</code>.</p>
@@ -6190,7 +6403,7 @@ et où ils sont abordés dans le livre.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="index">Appendix E: Index (Reference guide)</h2>
+<h2 id="index">Appendix F: Index (Reference guide)</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Liste des concepts et renvoies vers leur description dans le livre.</p>
@@ -6290,7 +6503,7 @@ cf. <a href="#niveauConcepts">Niveaux de concepts SysML</a></p>
 <div id="footer">
 <div id="footer-text">
 Version 1.3<br>
-Last updated 2017-07-18 15:54:45 CEST
+Last updated 2017-07-18 23:13:53 CEST
 </div>
 </div>
 </body>

@@ -1,0 +1,15 @@
+'-----------------------------------
+' SysML basic concepts illustrated
+' JMB 2017
+'-----------------------------------
+@startuml
+' File where const and functions are defined:
+!include Defs.txt
+'-----------------------------------
+
+class Security REQ {
+	Id = "SH_01_010"
+	text = "The Smart Home must support prevention \n and detection of unauthorized physical intrusion."
+}
+
+@enduml

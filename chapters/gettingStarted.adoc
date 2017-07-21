@@ -103,10 +103,35 @@ image::papyrus-perspective.png[width=30%,scaledwidth=30%]
 [[mod-diag]]
 == Modélisation par les diagrammes
 
+=== Exemple simple
+
+=== Annoter les éléments de modèles
+
+Il est important de documenter les modèles.
+Si vous souhaitez ensuite pouvoir générer une documentation intéressante
+(cf. section <<Gen2Doc>>) ou analyser automatiquement les commentaires.
+
+[TIP]
+====
+. Pour ajouter ou supprimer des éléments de modèles sur lequel porte la
+note, contrôlez la partie _Annotated element_ des propriétés (onglet UML).
++
+.Lien entre une note et les éléments de modèles
+image::annotated.png[width="70%"]
++
+. Vous pouvez éditer des notes richement formatées.
+Il faut pour cela activer l'éditeur enrichi :
+menu:Preferences[Papyrus > Rich text] et cochez les cases.
++
+.Activation de l'éditeur interne enrichi
+image::richtext.png[width="70%"]
+.Nouveaux menus disponibles dans l'éditeur interne
+image::richtext-result.png[width="70%"]
+====
+
 [[mod-art]]
 == Modélisation par les artefacts
 
-== Génération de documentation
 
 === Export des diagrammes
 

@@ -11,6 +11,7 @@ ifndef::final[]
 ====
 *****
 IBD, BDD et Parametric.
+Parler de l'exemple du diagramme de contexte pour illustrer la différence de vue IBD/BDD.
 *****
 ====
 //-----------------------------------------------

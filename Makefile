@@ -2,6 +2,7 @@
 ASCIIDOCTOR=asciidoctor
 EXT=adoc
 OUTPUT=.
+DESSINS=images/dessins
 #-----------------------------------------------------
 
 $(OUTPUT)/%.html: %.$(EXT)
@@ -17,3 +18,9 @@ $(OUTPUT)/%.pdf: %.$(EXT) $(DEP)
 		-b pdf \
 		-r asciidoctor-pdf \
 		-o $@ $<
+
+plant: $(DESSINS)/*.png
+
+$(DESSINS)/%.png: $(DESSINS)/%.plantuml
+	@echo '==> Compiling plantUML files to generate PNG'
+	java -jar ../plantuml.jar $<

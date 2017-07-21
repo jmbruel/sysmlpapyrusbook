@@ -1,0 +1,27 @@
+'-----------------------------------
+' UML concepts illustrated
+' Definitions file (to be included by !include Defs.txt)
+' JMB 2014
+'-----------------------------------
+@startuml
+
+' Default settings
+'-----------------------------------
+' left to right direction 'does not work for sequence diagrams :-(
+hide circle
+hide empty members
+hide methods
+
+' Attribute and name values (for translation purpose). Add anything you need, but don't modify!
+'-----------------------------------
+!define ACTOR ":Actor"
+!define EXTENDS << extends >>
+!define INCLUDE << include >>
+!define SYSTEM ":System"
+!define REQ <<requirement>>
+
+' Usefull functions
+'-----------------------------------
+!define objet(nom,type) class "<u>nom : type"
+
+@enduml
