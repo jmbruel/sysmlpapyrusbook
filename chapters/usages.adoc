@@ -41,7 +41,7 @@ ainsi que ce que fait le système (<<usecase>>).
 
 //-----------------------------------------------
 [[usecase]]
-== Diagramme des Uses Cases
+== Diagramme des cas d'utilisation
 //-----------------------------------------------
 
 .Concepts définis dans cette section

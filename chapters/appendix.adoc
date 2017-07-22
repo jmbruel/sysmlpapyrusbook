@@ -70,7 +70,7 @@ endif::final[]
 De nombreux utilisateur de {sysml} sont habitués aux termes anglais de
 cette notation.
 Nous reprenons ici la liste des traductions françaises que nous avons utilisées
-(et qui ne sont pas standard) pour premettre au lecteur de faire une correspondance.
+(et qui ne sont pas standard) pour permettre au lecteur de faire une correspondance.
 
 [horizontal]
 _Activity Diagram_:: Diagramme d'activité  (cf. <<act>>)
@@ -87,6 +87,7 @@ _Package Diagram_:: Diagramme des paquetages (cf. <<package>>)
 _Requirements_:: Exigences
 _Requirements Diagram_:: Diagramme des exigences (cf. <<RE>>)
 _Sequence Diagram_:: Diagramme de Séquence (cf. <<seq>>)
+_Stakeholders_:: Parties prenantes (du système)
 _State Machine_:: Machine à état
 _State Machine Diagram_:: Diagramme d'états (cf. <<stm>>)
 _Use Case Diagram_:: Diagramme des cas d'utilisation (cf. <<uc>>)

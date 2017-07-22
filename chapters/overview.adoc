@@ -185,6 +185,32 @@ TIP: Un cadre peut contenir dans ses "bords" des éléments importants en foncti
 du type de modèle qui est représenté dans le cadre (ports d'un bloc, points d'entrée/sortie
 d'une machine à état, paramètres d'une activité, etc.).
 
+=== Notre présentation des diagrammes
+
+Comme nous l'avons vu précédemment les 2 grandes catégories de diagrammes
+{sysml} sont les diagrammes structuraux et les diagrammes comportementaux.
+Si l'on met à part le <<reqs,diagramme des exigences>> (représentation visuelle des exigences) et
+le <<package,diagramme de _packages_>> (représentation visuelle des _packages_), les autres diagrammes
+nécessitent de préciser l'utilisation que nous préconisons d'en faire.
+
+Pour les diagrammes structuraux, quand il s'agira de représenter les architectures,
+nous utiliserons les <<bddsec,diagrammes de définition de blocs>>, et pour représenter l'intérieur d'un système,
+nous utiliserons le <<ibd,diagramme de blocs internes>>.
+Le <<param,diagramme paramétrique>> n'est qu'un diagramme de blocs internes dédié aux relations entre valeurs
+(pour représenter des lois physiques par exemple).
+
+Pour les diagrammes comportementaux, nous utilisons la distinction entre comportement
+global et local, comme indiqué dans la <<comportements,figure suivante>>.
+Ainsi les <<usecase,diagramme des cas d'utilisation>> et les <<seq,diagrammes de séquences>>
+seront plutôt utilisés pour représenter le coprtement global tel qu'attendu par les partie prenantes
+du système.
+Tandis que les <<act,diagrammes d'activité>> et les <<stm,diagrammes d'état>> seront plutôt
+utilisés en phase de conception.
+
+[[comportements]]
+.Différents diagrammes pour repésenter le comportement
+image::behavior.png[width="80%",scaledwidth="80%"]
+
 Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de
 cette section (nous utilisons ici le "plan" vu lors de l'introduction de la <<Matrice>>) :
 
@@ -193,35 +219,35 @@ ifdef::backend-pdf[[cols="h,4*",options="header"]]
 ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 |======================
 |				| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
-| {organisation}	|		{pkg}			|     {pkg}, {bdd}   		|		{pkg}		|
+| {organisation}	|		{pkg}			|     {pkg}, {bdd}, {ibd}   		|		{pkg}		|
 | {analysis}, {design}, {implementation} footnote:[En fonction du niveau de détail.]
-				|		{req}			|     {bdd}, {ibd}, {seq}, {par}   		| {uc}, {seq}, {stm}, {act}				| {par}
+				|		{req}, {uc}, {seq}		|     {bdd}, {ibd}, {par}   		| {uc}, {seq}, {stm}, {act}				| {par}, {pkg}
 |======================
 
 
 //== Introduction à la démarche
 
-== Diagramme et table d'exigences
+== Diagramme et table des exigences
 // Sebastien
 //---------------------------------------------------------------------------------
 
 La gestion des exigences est une activité cruciale pour le développement correct de tout système.
 Dans {sysml} les exigences peuvent être représentées sous deux formes complémentaires :
 
-- Diagramme d'exigences ({req}), utiles pour représenter les relations entre exigences
-- Table d'exigences, utiles dès qu'il y a un grand nombre d'exigences
+- Diagramme des exigences ({req}), utile pour représenter les relations entre exigences
+- Table d'exigences, utile dès qu'il y a un grand nombre d'exigences
 
-=== Diagramme d'exigences
+=== Diagramme des exigences
 
 Ce diagramme sera vu plus en détail dans la section <<RE>>, mais en voici un exemple.
 
 .Exemple de diagramme d'exigences
 image::todo.jpg[]
 
-=== Table d'exigences
+=== Table des exigences
 //- Import d'exigences => dans la section détaillée correspondante
 
-.Exemple de table d'exigences
+.Exemple de table des exigences
 image::todo.jpg[]
 
 == Diagramme des cas d'utilisation

@@ -105,6 +105,13 @@ image::papyrus-perspective.png[width=30%,scaledwidth=30%]
 
 === Exemple simple
 
+Commençons à manipuler {papyrus} avec un premier diagramme.
+
+TIP: Nous conseillons d’éviter les caractères spéciaux ou les blancs dans les
+noms des éléments de modélisation.
+Cela peut en effet poser des problèmes plus tard (<<execution,exécution de modèles>>,
+<<Gen2Doc,génération de documentation>>, etc.).
+
 === Annoter les éléments de modèles
 
 Il est important de documenter les modèles.
@@ -117,16 +124,16 @@ Si vous souhaitez ensuite pouvoir générer une documentation intéressante
 note, contrôlez la partie _Annotated element_ des propriétés (onglet UML).
 +
 .Lien entre une note et les éléments de modèles
-image::annotated.png[width="70%"]
+image::annotated.png[width="70%",scaledwidth=70%]
 +
 . Vous pouvez éditer des notes richement formatées.
 Il faut pour cela activer l'éditeur enrichi :
 menu:Preferences[Papyrus > Rich text] et cochez les cases.
 +
 .Activation de l'éditeur interne enrichi
-image::richtext.png[width="70%"]
+image::richtext.png[width="70%",scaledwidth=70%]
 .Nouveaux menus disponibles dans l'éditeur interne
-image::richtext-result.png[width="70%"]
+image::richtext-result.png[width="70%",scaledwidth=70%]
 ====
 
 [[mod-art]]
@@ -143,7 +150,7 @@ Si vous souhaitez simplement obtenir des figures de vos diagrammes :
 TIP: Nous vous recommandons de sélectionner menu:Prefix with qualified names[].
 +
 .Exemple d'export de diagrammes
-image::Model_Smart_Home_System_Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.SVG[width=60%,scaledwidth=60%]
+image::Model_Smart_Home_System_Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.SVG[width=60%,scaledwidth=70%]
 
 IMPORTANT: Vous constaterez que l'export ne conserve pas l'entête (cartouche).
 C'est une des fonctionnalités attendues des utilisateurs et en cours de prise en compte

@@ -123,16 +123,16 @@ endif::[]
 
 // SysML diagrams
 :act: <<act,act>>(((act)))
-:bdd: <<bdd,bdd>>(((bdd)))
+:bdd: <<bddsec,bdd>>(((bdd)))
 :dc: <<dc,dc>>(((dc)))
 :dss: <<dss,dss>>(((dss)))
 :ibd: <<ibd,ibd>>(((ibd)))
 :stm: <<stm,stm>>(((stm)))
 :req: <<req,req>>(((req)))
-:uc: <<uc,uc>>(((uc)))
-:pkg: <<pkg,pkg>>(((pkg)))
-:par: <<par,par>>(((par)))
-:seq: <<sd,sd>>(((sd)))
+:uc: <<usecase,uc>>(((uc)))
+:pkg: <<package,pkg>>(((pkg)))
+:par: <<param,par>>(((par)))
+:seq: <<seq,sd>>(((sd)))
 :sd: <<sd,sd>>(((sd)))
 
 // data divers
