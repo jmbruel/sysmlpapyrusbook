@@ -134,11 +134,12 @@
 <li><a href="#interaction">11. Interaction</a>
 <ul class="sectlevel2">
 <li><a href="#_fondements_6">11.1. Fondements</a></li>
-<li><a href="#seq">11.2. <em>Sequence Diagrams</em></a></li>
+<li><a href="#seq">11.2. Diagrammes de séquence</a></li>
 <li><a href="#act">11.3. Diagrammes d&#8217;activité</a></li>
 <li><a href="#_réutilisation">11.4. Réutilisation</a></li>
-<li><a href="#_en_résumé_5">11.5. En résumé</a></li>
-<li><a href="#_questions_de_révision_5">11.6. Questions de révision</a></li>
+<li><a href="#_À_vous_de_jouer_3">11.5. À vous de jouer</a></li>
+<li><a href="#_en_résumé_5">11.6. En résumé</a></li>
+<li><a href="#_questions_de_révision_5">11.7. Questions de révision</a></li>
 </ul>
 </li>
 <li><a href="#crossCuting">12. Préoccupations transverses de modélisation</a>
@@ -2055,7 +2056,7 @@ de messages entre eux.</p>
 <div class="title">Figure 16. Exemple de diagramme de séquence</div>
 </div>
 <div class="paragraph">
-<p>Pour plus de détails, cf. <a href="#seq"><em>Sequence Diagrams</em></a>.</p>
+<p>Pour plus de détails, cf. <a href="#seq">Diagrammes de séquence</a>.</p>
 </div>
 </div>
 </div>
@@ -4497,6 +4498,33 @@ Utilisation OpaqueBehavior ?</p>
 Ce diagramme représente les différents <strong>états</strong> possibles d’un élément particulier (généralement un bloc),
 et comment ce bloc réagit à des événements en fonction de son état courant (en passant éventuellement dans un nouvel état).</p>
 </div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title">Quand utiliser une machine à états?</div>
+<div class="paragraph">
+<p>Tous les éléments d&#8217;un système ne nécessitent pas d&#8217;avoir un comportement décrit de manière précise par une
+machine à état. Quelques situations typiques peuvent faire penser qu&#8217;il peut être judicieux de le faire :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>quand un bloc réagit de manière différente à plusieurs événements successifs pourtant identiques</p>
+</li>
+<li>
+<p>quand la description du comportement attendu du bloc est lui-même décrit avec des phrases du type
+"si &#8230;&#8203; et que &#8230;&#8203; alors &#8230;&#8203;".</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_transitions">10.2.2. Transitions</h4>
@@ -4545,6 +4573,9 @@ les concepts disponibles.</p>
 <ol class="arabic">
 <li>
 <p>Notez que les transitions sont toujours <strong>dirigées</strong> (flèche) d&#8217;un état de départ vers un état d&#8217;arrivée.</p>
+</li>
+<li>
+<p>Notez que les guardes sont entre [].</p>
 </li>
 <li>
 <p>Il peut y avoir autant de transitions sortantes d&#8217;un état que l&#8217;on veut. La seule attention qu&#8217;il faudra
@@ -4880,7 +4911,7 @@ Les <em>State Machines</em> sont vues dans la partie sur les <a href="#behavior"
 </div>
 </div>
 <div class="sect2">
-<h3 id="seq">11.2. <em>Sequence Diagrams</em></h3>
+<h3 id="seq">11.2. Diagrammes de séquence</h3>
 <div class="sect3">
 <h4 id="_généralités">11.2.1. Généralités</h4>
 <div class="paragraph">
@@ -5124,6 +5155,28 @@ de l&#8217;état dans lequel se trouve le participant;</p>
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_À_vous_de_jouer_2">11.2.4. À vous de jouer</h4>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="title">Commentaire</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p>Mise en pratique de Papyrus-SysML&#8230;&#8203;</p>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="act">11.3. Diagrammes d&#8217;activité</h3>
@@ -5146,6 +5199,9 @@ mais aussi ce qui est produit, consommé, ou transformé, au cours de l’exécu
 <div class="ulist">
 <ul>
 <li>
+<p>les activités,</p>
+</li>
+<li>
 <p>les actions,</p>
 </li>
 <li>
@@ -5160,7 +5216,28 @@ mais aussi ce qui est produit, consommé, ou transformé, au cours de l’exécu
 </ul>
 </div>
 <div class="sect3">
-<h4 id="_actions">11.3.1. Actions</h4>
+<h4 id="activity">11.3.1. Activités</h4>
+<div class="paragraph">
+<p>Une activité représente les aspects algorithmiques d&#8217;un comportement.
+Elle permet de modéliser un processus par exemple.
+Une activité possède :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>un ensemble de paramètres (<em>input</em>,<em>output</em>,<em>input/output</em>)</p>
+</li>
+<li>
+<p>un ensemble d&#8217;actions (lecture, écriture, &#8230;&#8203;)</p>
+</li>
+<li>
+<p>un ensemble de flots entre actions (de contrôle ou de données)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="action">11.3.2. Actions</h4>
 <div class="paragraph">
 <p>Les actions sont les unités fondamentales pour spécifier les comportements en <a href="http://www.omgsysml.org/">SysML&#8482;</a>.
 Une action représente un traitement ou une transformation.
@@ -5168,7 +5245,7 @@ Les actions sont contenues dans les activités, qui leur servent alors de contex
 </div>
 </div>
 <div class="sect3">
-<h4 id="_flots">11.3.2. Flots</h4>
+<h4 id="flow">11.3.3. Flots</h4>
 <div class="paragraph">
 <p>Un <strong>flot de contrôle</strong> permet le contrôle de l’exécution des noeuds d&#8217;activités.
 Les flots de contrôle sont des flèches reliant deux noeuds (actions, décisions, etc.).</p>
@@ -5206,7 +5283,7 @@ Flow properties are listed in a compartment labeled flow properties.</em></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_décision">11.3.3. Décision</h4>
+<h4 id="_décision">11.3.4. Décision</h4>
 <div class="paragraph">
 <p>Une décision est un noeud de contrôle représentant un choix dynamique entre plusieurs conditions (mutuellement exclusives).
 Elle est représentée par un losange qui possède un arc entrant et plusieurs arcs sortants. Il existe plusieurs noeuds de contrôle (cf. <a href="#Control">Les différents contrôles de flow SysML</a>) :</p>
@@ -5282,7 +5359,29 @@ L’action d’appel est représentée graphiquement par une fourche à droite d
 </div>
 </div>
 <div class="sect2">
-<h3 id="_en_résumé_5">11.5. En résumé</h3>
+<h3 id="_À_vous_de_jouer_3">11.5. À vous de jouer</h3>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="title">Commentaire</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p>Mise en pratique de Papyrus-SysML&#8230;&#8203;</p>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_en_résumé_5">11.6. En résumé</h3>
 <div class="paragraph">
 <p>Il existe de nombreux diagrammes pour exprimer les comportements. Ces modèles sont importants dans la mesure où ils peuvent servir à valider le futur système vis-à-vis de ces comportements exprimés. Ils ne sont donc véritablement utiles que lorsqu&#8217;ils sont couplés à des outils de simulation ou d&#8217;analyse (cf. <a href="#Analyse">[Analyse]</a>).</p>
 </div>
@@ -5337,7 +5436,7 @@ L’action d’appel est représentée graphiquement par une fourche à droite d
 </table>
 </div>
 <div class="sect2">
-<h3 id="_questions_de_révision_5">11.6. Questions de révision</h3>
+<h3 id="_questions_de_révision_5">11.7. Questions de révision</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -6090,7 +6189,7 @@ BDD
 DS
 </td>
 <td class="hdlist2">
-<p><strong>D</strong>iagramme de <strong>S</strong>équence (cf. <a href="#seq"><em>Sequence Diagrams</em></a>)</p>
+<p><strong>D</strong>iagramme de <strong>S</strong>équence (cf. <a href="#seq">Diagrammes de séquence</a>)</p>
 </td>
 </tr>
 <tr>
@@ -6098,7 +6197,7 @@ DS
 DSS
 </td>
 <td class="hdlist2">
-<p><strong>D</strong>iagramme de <strong>S</strong>équence <strong>S</strong>ystème (cf. <a href="#seq"><em>Sequence Diagrams</em></a>)</p>
+<p><strong>D</strong>iagramme de <strong>S</strong>équence <strong>S</strong>ystème (cf. <a href="#seq">Diagrammes de séquence</a>)</p>
 </td>
 </tr>
 <tr>
@@ -6155,7 +6254,7 @@ REQ
 SD
 </td>
 <td class="hdlist2">
-<p><em><strong>S</strong>equence <strong>D</strong>iagram</em>, le diagramme de séquence (cf. <a href="#seq"><em>Sequence Diagrams</em></a>)</p>
+<p><em><strong>S</strong>equence <strong>D</strong>iagram</em>, le diagramme de séquence (cf. <a href="#seq">Diagrammes de séquence</a>)</p>
 </td>
 </tr>
 <tr>
@@ -6326,7 +6425,7 @@ du moins en informatique.</p>
 <em>Sequence Diagram</em>
 </td>
 <td class="hdlist2">
-<p>Diagramme de Séquence (cf. <a href="#seq"><em>Sequence Diagrams</em></a>)</p>
+<p>Diagramme de Séquence (cf. <a href="#seq">Diagrammes de séquence</a>)</p>
 </td>
 </tr>
 <tr>
@@ -6406,8 +6505,14 @@ du moins en informatique.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Etats, transition</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="images/dessins/state.png" alt="state" width="90%"></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Etats, transition</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="images/dessins/state.png" alt="state" width="90%"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Etat initial</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="images/dessins/initState.png" alt="initState" width="90%"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Etat final</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="images/dessins/finalState.png" alt="finalState" width="90%"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Choice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="images/choice.png" alt="choice" width="90%"></span></p></td>
 </tr>
 </tbody>
 </table>

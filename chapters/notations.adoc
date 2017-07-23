@@ -21,7 +21,9 @@
 [align="center",cols="1,2,1,2",width=100]
 |======================
 | Etats, transition     |		image:state.png[width={conceptsize},scalewidth={conceptsize}]
-| Etats, transition     |		image:state.png[width={conceptsize},scalewidth={conceptsize}]
+| Etat initial     |		image:initState.png[width={conceptsize},scalewidth={conceptsize}]
+| Etat final     |		image:finalState.png[width={conceptsize},scalewidth={conceptsize}]
+| Choice     |		image:../choice.png[width={conceptsize},scalewidth={conceptsize}]
 |======================
 
 //-----------------------------------------------

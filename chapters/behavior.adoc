@@ -42,6 +42,17 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 Ce diagramme représente les différents *états* possibles d’un élément particulier (généralement un bloc),
 et comment ce bloc réagit à des événements en fonction de son état courant (en passant éventuellement dans un nouvel état).
 
+.Quand utiliser une machine à états?
+[TIP]
+====
+Tous les éléments d'un système ne nécessitent pas d'avoir un comportement décrit de manière précise par une
+machine à état. Quelques situations typiques peuvent faire penser qu'il peut être judicieux de le faire :
+
+- quand un bloc réagit de manière différente à plusieurs événements successifs pourtant identiques
+- quand la description du comportement attendu du bloc est lui-même décrit avec des phrases du type
+"si ... et que ... alors ...".
+====
+
 === Transitions
 
 Cette réaction (nommée *transition*) possède un événement déclencheur, une condition (garde), un effet et un état cible,
@@ -66,6 +77,7 @@ image::transEditor.png[width=40%,scalewidth=40%]
 [IMPORTANT]
 ====
 . Notez que les transitions sont toujours *dirigées* (flèche) d'un état de départ vers un état d'arrivée.
+. Notez que les guardes sont entre [].
 . Il peut y avoir autant de transitions sortantes d'un état que l'on veut. La seule attention qu'il faudra
 porter à cette situation est que toutes les transitions sont "exclusives" les unes par rapport aux autres,
 sinon on se retrouvera avec une machine dite "*indéterministe*".

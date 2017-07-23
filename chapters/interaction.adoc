@@ -38,7 +38,7 @@ NOTE: Les _State Machines_ sont vues dans la partie sur les <<behavior,comportem
 
 [[seq]]
 //-----------------------------------------------
-== _Sequence Diagrams_
+== Diagrammes de séquence
 //-----------------------------------------------
 
 === Généralités
@@ -184,6 +184,20 @@ Nous n'avons pas présenté dans ce livre un certain nombre de concepts complém
 de l'état dans lequel se trouve le participant;
 - la possibilité de décomposer les lignes de vie, pour représenter les comportements internes.
 
+=== À vous de jouer
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Mise en pratique de Papyrus-SysML...
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
 [[act]]
 //-----------------------------------------------
 == Diagrammes d'activité
@@ -201,17 +215,31 @@ image::act-pcmk1.png[width="70%",scaledwidth=50%]
 
 Les éléments de base du diagramme d’activité sont :
 
+- les activités,
 - les actions,
 - les flots de contrôle entre actions,
 - les décisions (branchements conditionnels),
 - un début et une ou plusieurs fins possibles.
 
+[[activity]]
+=== Activités
+
+Une activité représente les aspects algorithmiques d'un comportement.
+Elle permet de modéliser un processus par exemple.
+Une activité possède :
+
+- un ensemble de paramètres (_input_,_output_,_input/output_)
+- un ensemble d'actions (lecture, écriture, ...)
+- un ensemble de flots entre actions (de contrôle ou de données)
+
+[[action]]
 === Actions
 
 Les actions sont les unités fondamentales pour spécifier les comportements en {SysML}.
 Une action représente un traitement ou une transformation.
 Les actions sont contenues dans les activités, qui leur servent alors de contexte.
 
+[[flow]]
 === Flots
 
 Un *flot de contrôle* permet le contrôle de l’exécution des noeuds d'activités.
@@ -273,6 +301,19 @@ L’action d’appel est représentée graphiquement par une fourche à droite d
 .Exemple de _callBehaviorAction_ (UK)
 image::act-call.png[width="20%",scaledwidth=50%]
 
+== À vous de jouer
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Mise en pratique de Papyrus-SysML...
+*****
+====
+//-----------------------------------------------
+endif::final[]
 
 == {resume}
 
