@@ -34,31 +34,141 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 
 [[stm]]
 == Diagramme d'états
+//JMB
+
+=== Machines à état
 
 {SysML} a repris le concept, déjà connu en {uml}, de machine à états  (_State Machines_).
-Ce diagramme représente les différents *états* possibles d’un bloc particulier, et comment ce bloc réagit à des événements en fonction de son état courant (en passant éventuellement dans un nouvel état).
-Cette réaction (nommée *transition*) possède un événement déclencheur, une condition (garde), un effet et un état cible.
+Ce diagramme représente les différents *états* possibles d’un élément particulier (généralement un bloc),
+et comment ce bloc réagit à des événements en fonction de son état courant (en passant éventuellement dans un nouvel état).
 
-Le diagramme d’états comprend également deux *pseudo-états* :
+=== Transitions
 
-- l’état initial du diagramme d’états correspond à la création d’une instance ;
+Cette réaction (nommée *transition*) possède un événement déclencheur, une condition (garde), un effet et un état cible,
+comme illustré dans la <<transition,figure suivante>>, qui se lit :
+"Si le bloc est dans l'état 'Etat1' et que survient l'événement `événement` et que la condition `guarde` est vraie,
+alors exécuter `effet` et se plaver dans l'état `Etat2`."
+
+[[transition]]
+.Une transition entre états
+image::dessins/state.png[width=40%,scalewidth=40%]
+
+[TIP]
+====
+Quand vous clickez sur une transition (ou btn:[F2]), l'éditeur qui s'ouvre pour saisir
+le texte de la transition peut vous assister. En tapant btn:[Ctrl-Space], vous obtenez
+les concepts disponibles.
+
+.Editeur de transition "intelligent"
+image::transEditor.png[width=40%,scalewidth=40%]
+====
+
+[IMPORTANT]
+====
+. Notez que les transitions sont toujours *dirigées* (flèche) d'un état de départ vers un état d'arrivée.
+. Il peut y avoir autant de transitions sortantes d'un état que l'on veut. La seule attention qu'il faudra
+porter à cette situation est que toutes les transitions sont "exclusives" les unes par rapport aux autres,
+sinon on se retrouvera avec une machine dite "*indéterministe*".
+====
+
+=== Premiers "pseudo-états"
+
+Le diagramme d’états comprend également deux états particuliers (appelés pseudo-états) :
+
+- l’état initial du diagramme d’états correspond à l'état dans lequel on "démarre" la machine a état
+(à la création d’une instance par exemple);
++
+.Etat initial
+image::dessins/initState.png[width=20%,scalewidth=20%]
 - l’état final du diagramme d’états correspond à la destruction de l’instance.
++
+.Etat final
+image::dessins/finalState.png[width=20%,scalewidth=20%]
 
-ifdef::backend-deckjs[==== Diagramme d'états (suite)]
+NOTE: Nous verrons d'autres pseudo-états un peu plus tard.
 
+Voici un exemple complet de machine à état :
+
+[[complet]]
 .Un exemple de diagramme d'états
-ifdef::book[image::{images}/stm1.png[scale=50]]
-ifndef::book[image::stm1.png["Un diagramme d'état",width="70%"]]
+image::stm1.png[width=70%,scalewidth=70%]
 
-ifdef::backend-deckjs[==== Diagramme d'états (suite)]
+NOTE: Notez que cette machine à état n'a pas d'état final, son exécution est infinie.
 
-Lorsqu'un état nécessite lui-même plus de détails, on créé un *état composite* (aussi appelé super-état)
-qui est lui-même une machine à état. On peut ainsi factoriser des transitions déclenchées par le même événement (et amenant vers le même état cible), tout en spécifiant des transitions particulières entre les sous-états.
-Il est également possible d'attacher un diagramme d'états à un état (dit "composite") pour garder une représentation hiérarchique.
+=== Activités d'un état
 
-Un diagramme d'états peut représenter des régions concurrentes (dont les activités peuvent évoluer en parallèle), graphiquement représentées par des zones séparées par des traits pointillés. Chaque région contient ses propres états et transitions.
+Un état, outre l'intérêt conceptuel de représenter un situation particulièrement intéressante
+de l'élément qu'elle décrit (comme l'état `Full` de la pile de la <<complet,Stack de la figure précédente>>),
+peut avoir son propre comportement.
+Il est possible de préciser ce qui se passe (exécution de méthode, envoie de messages, etc.) :
 
-Il existe encore d'autres concepts avancés que nous ne présenterons pas dans cette introduction car ils sont beaucoup moins utilisés (+entry+, +exit+, +transition interne+, etc.).
+entry:: en entrant dans l'état (par exemple initialiser une variable)
+doActivity:: en cours d'état (et après toute `entry` spécifiée)
+exit:: au moment de sortir de l'état (et juste avant la transition sortante elle-même)
+
+=== États composites
+
+Lorsque le comportement d'un état nécessite plus de détails, on créé un *état composite* (aussi appelé super-état)
+qui est lui-même une machine à état.
+On peut ainsi factoriser des transitions déclenchées par le même événement (et amenant vers le même état cible),
+tout en spécifiant des transitions particulières entre les sous-états.
+Il est également possible d'attacher un diagramme d'états à un état (composite du coup) pour garder une représentation hiérarchique.
+
+.Exemple d'état composite
+image::todo.jpg[width=50%,scalewidth=50%]
+
+=== Régions concurrentes
+
+Un diagramme d'états peut représenter des régions concurrentes (dont les activités peuvent évoluer en parallèle),
+graphiquement représentées par des zones séparées par des traits pointillés.
+Chaque région contient ses propres états et transitions.
+
+.Exemple de régions concurrentes
+image::todo.jpg[width=30%,scalewidth=30%]
+
+=== Pseudo-états complémentaires
+
+Il existe d'autres concepts utiles :
+
+choice:: permet de représenter un branchement conditionnel (sur les guardes) d'une même transition.
++
+.Exemple d'utilisation du _choice_
+image::choice.png[width=40%,scalewidth=40%]
+fork:: permet de paralléliser une transition vers deux (ou plus) états de sortie.
+join:: permet de synchroniser deux (ou plus) transitions d'entrée. Par défaut il faut que toutes
+les transitions entrantes soit tirées (`ET`), mais il est possible de définir plus précisément le
+comportement du _join_.
+shallowHistory:: permet de replacer l'état composite dans les états au moment de la précedente sortie,
+mais uniquement au niveau où est placé le pseudo-état.
+deepHistory:: permet également de replacer l'état composite dans les états au moment de la précedente sortie,
+mais cette fois y compris dans tous les sous-états.
+
+=== Déclenchement des transitions
+
+Les événements déclencheurs d'une transition peuvent être de nature différente :
+
+Call Event:: déclenché par l'invocation d'une méthode, c'est à dire d'une opération fournie
+par l'élément considéré (le nom de l'opération est utilisé)
+Signal Event:: déclenché par l'arrivée d'un signal asynchrone (le nom du signal est utilisé)
+Time Event:: déclenché à un certain moment, que ce soit absolu (mot-clef `*at*`) ou relativement
+à l'entrée dans l'état (mot-clef `*after*`). Très utile pour représenter la notion de _Time-Out_.
+Change Event:: déclenché par le changement de valeur d'un élément (un attribut par exemple).
+On utilise le mot-clef `*when*`
+Exemple `[red]*when* "t==10"`
+
+=== À vous de jouer
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Mise en pratique de Papyrus-SysML...
+*****
+====
+//-----------------------------------------------
+endif::final[]
 
 == Diagramme d'activité
 
