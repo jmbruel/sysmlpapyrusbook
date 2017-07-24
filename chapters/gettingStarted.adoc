@@ -54,13 +54,22 @@ image::Model_Smart_Home_System_Outline_of_the_Smart_Home_System_SHS_modelling_pr
 
 Créez votre premier projet :
 
-. Alles dans menu:File[New > Papyrus Project]
-. Choisissez _Systems Engineering_ comme contexte
-. Cliquez sur btn:[Next]
+. Sélectionnez menu:File[New > Papyrus Project] et cochez `SysML 1.4` puis btn:[Next]
 +
-image::newModel.png[width=60%,scaledwidth=60%]
+image::newPProject.png[width="60%",scaledwidth="60%"]
 . Donnez un nom à votre projet
-. Cliquez sur btn:[Finish] (ou sur btn:[Next] si vous souhaitez configurer les éléments de départ)
+. Cliquez sur btn:[Next] (ou sur btn:[Finish] si vous ne souhaitez pas configurer les éléments de départ)
+. Choisissez les éléments dont vous savez déjà que vous allez avoir besoin
++
+image::newPProject2.png[width="60%",scaledwidth="60%"]
+. Cliquez sur btn:[Finish]. Vous y êtes.
+
+[TIP]
+====
+Vous pouvez aussi démarrer d'un projet {UML}.
+Par contre il faut changer en cliquant-droit sur le modèle dans le _Model Explorer_
+et en sélectionnant menu:Switch Architecture Context[] puis en cochant _Systems Engineering_.
+====
 
 == L'environnement de modélisation
 
@@ -105,12 +114,21 @@ image::papyrus-perspective.png[width=30%,scaledwidth=30%]
 
 === Exemple simple
 
-Commençons à manipuler {papyrus} avec un premier diagramme.
+Commençons à manipuler {papyrus} avec un premier diagramme...
 
 TIP: Nous conseillons d’éviter les caractères spéciaux ou les blancs dans les
 noms des éléments de modélisation.
 Cela peut en effet poser des problèmes plus tard (<<execution,exécution de modèles>>,
 <<Gen2Doc,génération de documentation>>, etc.).
+
+Pour notre modélisation du {projectName}, nous utilisons l'organisation suivantefootnote:[Issue du {CEA}.] :
+
+.Vue d'ensemble de notre projet de {projectName}
+image::{diagrams}/Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.PNG[width=80%,scaledwidth=90%]
+
+Comme vous pouvez le constater, nous annotons les éléments de modèles avec des commentaires, et
+pas seulement parce qu'il s'agit d'un exemple illustratif pour un livre, comme nous le détaillons
+dans la section suivante.
 
 === Annoter les éléments de modèles
 

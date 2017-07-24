@@ -234,26 +234,27 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 La gestion des exigences est une activité cruciale pour le développement correct de tout système.
 Dans {sysml} les exigences peuvent être représentées sous deux formes complémentaires :
 
-- Diagramme des exigences ({req}), utile pour représenter les relations entre exigences
+- Diagramme des exigences ({req} ), utile pour représenter les relations entre exigences
 - Table d'exigences, utile dès qu'il y a un grand nombre d'exigences
 
 === Diagramme des exigences
 
-Ce diagramme sera vu plus en détail dans la section <<RE>>, mais en voici un exemple.
+Ce diagramme permet de représenter graphiquement les exigences et leurs relations.
+Il sera vu plus en détail dans la section <<reqs>>, mais en voici un exemple.
 
 .Exemple de diagramme d'exigences
-image::todo.jpg[]
+image::{papyrusversion}/lierExigences.png[width="70%",scaledwidth=70%]
 
 === Table des exigences
 //- Import d'exigences => dans la section détaillée correspondante
 
-.Exemple de table des exigences
-image::todo.jpg[]
+.Exemple de table d'exigence pour le {projectName}
+image::{diagrams}/table.png[width=70%,scaledwidth=70%]
 
 == Diagramme des cas d'utilisation
 
 .Exemple de diagramme de cas d'utilisation
-image::todo.jpg[]
+image::{diagrams}/SHS_Use_Cases_Description.PNG[width=70%,scaledwidth=70%]
 
 == Diagramme de blocks
 
@@ -267,7 +268,7 @@ Un diagramme de blocks un peu particulier consiste à représenter le système d
 Ce "diagramme de contexte" est pratique d'un point de vue modélisation car le système et les autres éléments en interaction avec lui, sont très tôt identifiés et "référençables" (des `connectableElement` en termes {sysml}).
 
 .Exemple de diagramme de contexte
-image::todo.jpg[]
+image::{diagrams}/Context_Diagram.PNG[width=70%,scaledwidth=70%]
 
 =====
 
@@ -278,10 +279,10 @@ image::todo.jpg[]
 =====
 // Sebastien
 Nous avons parlé du diagramme de contexte dans la section précédente sur le diagramme de block.
-Une autre façon de représenter le système dans son environnement est d'utiliser le diagramme de bloc interne
+Une autre façon de représenter le système dans son environnement est d'utiliser le diagramme de bloc interne :
 
-.Exemple de diagramme de contexte
-image::todo.jpg[]
+.Exemple de diagramme de contexte (vue interne)
+image::{diagrams}/Context_description_of_the_SHS.PNG[width=70%,scaledwidth=70%]
 
 =====
 

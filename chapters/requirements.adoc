@@ -114,13 +114,27 @@ Plusieurs types d'organisations sont possibles :
 ** ...
 - etc.
 
-.Exemple concret
+.Exemple industriel
 [TIP]
 ====
 Dans l'entrepris {c-s}, les exigences sont organisées en calquant l'arborescence sur les documents textuels que les ingénieurs ont l'habitude d'utiliser.
 Ceci facilite le travail d'organisation des exigences pour les ingénieurs <<Neptune17>>.
 ====
 
+Dans le {projectName}, nous avons organisé les exigences en paquetages par grands types :
+
+.Notre organisation des exigences pour le cas d'étude
+image::{diagrams}/Description_of_the_SHS_requirements_organisation.PNG[width=50%,scaledwidth=50%]
+
+[NOTE]
+====
+Une autre façon d'organiser les exigences consiste à utiliser la relation de _Containment_
+(cf. <<A-vous-exigences>> pour plus de détails).
+
+.Composition entre exigences
+image::{diagrams}/SecurityRequirementDiagram.PNG[width=70%,scaledwidth=70%]
+
+====
 === Tableaux de _Requirements_
 
 Les _requirements_ sont habituellement stockés dans des tableaux (feuilles excel le plus souvent!).
@@ -143,6 +157,8 @@ et outils de modélisation {sysml}.
 .Import Papyrus de tableau d'exigences
 image::todo.jpg[width="50%",scaledwidth="50%"]
 
+[red]#XXX Parler des imports/exports ReqIf, de l'import/export excel etc.#
+
 == Les _Requirements properties_
 
 Il est possible d'indiquer un certain nombre de propriétés sur un _requirement_ :
@@ -158,6 +174,7 @@ Il est possible d'indiquer un certain nombre de propriétés sur un _requirement
 
 Les principales relations entre _requirement_ sont :
 
+[horizontal]
 _Containment_::
 	Pour décrire la décomposition d'une exigence en plusieurs sous-exigences (⊕–). Typiquement dès qu'une exigence est exprimée avec une conjonction "et" ("La voiture doit être rapide et économe.").
 _Refinement_::
@@ -172,14 +189,14 @@ Lorsqu'une exigence possède plusieurs cas `\<<refine>>` qui pointent vers lui, 
 ====
 
 .Exemples de relations entre exigences
-image::req-exp1.png[width="50%",scaledwidth="50%"]
+image::req-exp.png[width="40%",scaledwidth="40%"]
 
 Il existe ensuite les relations entre les besoins et les autres éléments de modélisation
 (les _block_ principalement) comme `\<<satisfy>>` ou `\<<verify>>`, mais nous les aborderons
 dans la partie <<transvers,transverse>>.
 
-.Relations liées au _requirements_ dans TOPCASED
-image::topcased-req-connections.png[width="20%",scaledwidth="20%"]
+.Relations liées au _requirements_ dans {papyrus}
+image::req-connections.png[width="20%",scaledwidth="20%"]
 
 == Les _Requirements Diagrams_
 
@@ -239,6 +256,65 @@ image::UCGestionNotes.png[width="70%",scaledwidth=70%]
 ====
 Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plutôt raisonner sur les rôles que sur les personnes elles-mêmes pour identifier les acteurs.
 ====
+
+[[A-vous-exigences]]
+== À vous de jouer...
+
+=== Tables d'exigences
+
+=== Diagramme d'exigences
+
+Réalisons maintenant un diagramme d'exigence.
+
+. btn:[ClickDroit] sur le dossier `SHS Requirements`
+. Sélectionnez menu:New Diagram[SysML 1.4 Requirement]
++
+image::{papyrusversion}/creerDiagExigences.png[width="50%",scaledwidth=50%]
+. Donnez un nom à votre diagramme
++
+image::{papyrusversion}/nommerDiagExigences.png[width="50%",scaledwidth=50%]
+. Sélectionnez un élément `Requirement` dans la palette en haut à droite et lachez-le
+sur la fenêtre principale correspondant à votre diagramme
++
+NOTE: Notez le petit `+` vert qui indique que vous êtes autorisé à lacher l'élément de la Palette à cet endroit du diagramme.
++
+. Renseignez les `Id` et `Text` à minima.
++
+image::{papyrusversion}/creerExigence.png[width="50%",scaledwidth=50%]
+. Sélectionnez toutes les exigences du _package_ `SHS Security Requirements` et lachez-les sur votre diagramme,
+puis reliez les à votre première exigence par des liens de _Containment_.
++
+image::{papyrusversion}/lierExigences.png[width="70%",scaledwidth=70%]
++
+[TIP]
+====
+Nous n'avons pas obtenu ce diagramme du premier coup.
+Voici la version initiale :
+
+image::{papyrusversion}/lierExigences-old.png[width="30%",scaledwidth=30%]
+
+Nous avons sélectionner tous les élements à arranger puis utilisé les icônes dédiées dans
+la _Toolbar_.
+
+image::{papyrusversion}/arrange.png[width="30%",scaledwidth=30%]
+====
+
+À ce stade il nous faut faire plusieurs observations :
+
+- Notre exigence `Secutity`, se retrouve au même niveau que le diagramme lui-même
+(c'est à dire dans le modèle `SHS Requirements`).
+- Les exigences qui composent notre exigence `Security` ont "disparues" de leur _package_
+initial et sont maintenant "dans" notre exigence.
++
+image::{papyrusversion}/containment.png[width="30%",scaledwidth=30%]
++
+On voit que la notion de _Containment_ n'est pas juste une métaphore.
+Cela peut poser des problèmes d'organisation. C'est pour cela  que nous vous conseillons
+plutôt de réaliser vos modèles <<mod-art,à partir des artefacts>>.
+On pourra solutionner ce problème en utilisant le lien de `<< copy>>` fait pour cela.
++
+image::{papyrusversion}/copy.png[width="30%",scaledwidth=30%]
+
 
 == {resume}
 

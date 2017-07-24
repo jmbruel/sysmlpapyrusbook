@@ -2,12 +2,9 @@
 
 //Papyrus
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
-:papyrusversion: 3.0
+:papyrusversion: 2.0.1
 :siteurl: https://bit.ly/sysmlbook
-:githuburl: https://github.com/jmbruel/sysmlpapyrusbook
-:pdfurl: {githuburl}/PapyrusSysMLinAction.pdf
-:siteUseCase: https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
-:specUseCase: http://bit.ly/SmartHomeUseCase
+:gihuburl: https://github.com/jmbruel/sysmlpapyrusbook
 
 //Layouts
 :standHeight: 250
@@ -45,7 +42,6 @@ endif::[]
 :gherkin: link:http://cukes.info/gherkin.html[Gherkin]
 :grafcet: http://fr.wikipedia.org/wiki/Grafcet[Grafcet]
 :gvle: link:http://www.vle-project.org/wiki/GVLE[GVLE]
-:intelliJ: link:https://www.jetbrains.com/idea/[IntelliJ]
 :java: https://www.java.com/fr/[Java]
 :javadoc: link:http://fr.wikipedia.org/wiki/Javadoc[Javadoc]
 :knxweb: http://www.knx.fr/[KNX]
@@ -60,7 +56,7 @@ endif::[]
 :modelica: https://www.modelica.org/[Modelica(R)]
 :modelio: http://www.modeliosoft.com/[Modelio]
 :models: http://www.modelsconference.org/[MODELS]
-:norme: http://www.omg.org/spec/SysML/1.5/PDF/[SysML{nbsp}1.5]
+:norme: http://www.omg.org/spec/SysML/1.4/PDF/[SysML{nbsp}1.4]
 :omg: http://www.omg.org[OMG(TM)]indexterm:[OMG]
 :OSLC: http://open-services.net/[OSCL]
 :obeo: link:http://www.obeo.fr/[Obeo]
@@ -118,21 +114,21 @@ endif::[]
 :univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Le Mirail]
 :ut2j: {univ-tlse2}
 
-//------- Normes et Références
+//------- Normes et R̩f̩rences
 :arp4754a: http://sunnyday.mit.edu/16.355/arp4754a.pdf[ARP4754A]
 
 // SysML diagrams
 :act: <<act,act>>(((act)))
-:bdd: <<bddsec,bdd>>(((bdd)))
+:bdd: <<bdd,bdd>>(((bdd)))
 :dc: <<dc,dc>>(((dc)))
 :dss: <<dss,dss>>(((dss)))
 :ibd: <<ibd,ibd>>(((ibd)))
 :stm: <<stm,stm>>(((stm)))
 :req: <<req,req>>(((req)))
-:uc: <<usecase,uc>>(((uc)))
-:pkg: <<package,pkg>>(((pkg)))
-:par: <<param,par>>(((par)))
-:seq: <<seq,sd>>(((sd)))
+:uc: <<uc,uc>>(((uc)))
+:pkg: <<pkg,pkg>>(((pkg)))
+:par: <<par,par>>(((par)))
+:seq: <<sd,sd>>(((sd)))
 :sd: <<sd,sd>>(((sd)))
 
 // data divers
@@ -150,6 +146,3 @@ endif::[]
 :stakeholders: parties prenantes
 :here: icon:map-marker[role=red] You are here!
 :ModelUser: link:http://www.omg.org/ocsmp/coveragemap-user.htm[Model User]
-:projectName: Smart Home System
-:projectShortName: SHS
-:mdeTools: http://mase.cs.queensu.ca/mdetools/

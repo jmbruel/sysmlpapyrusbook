@@ -72,41 +72,41 @@ A list of requirements for the Smart Home use case is provided below. The list i
 [align="center",cols="1,1,4",options="header",width=100]
 |======================
 | ID  | Category | Description
-| SH_01_010
+| SH_SEC_010
 | Security
 | The Smart Home must prevent unauthorized physical intrusion.
-| SH_01_020
+| SH_SEC_020
 | | The Smart Home must prevent computer intrusion.
-| SH_01_030
+| SH_SEC_030
 | | The Smart Home must provide an identification-based access control system.
-| SH_01_040
+| SH_SEC_040
 | | The Smart Home must call the police station in case of burglary or any other unauthorized intrusion.
-| SH_01_050
+| SH_SEC_050
 | | The Smart Home must be able to detect smoke and to call the fire station in case of suspicion of fire.
-| SH_01_060
+| SH_SEC_060
 | | The Smart Home must be able to detect accidental falls and to call an ambulance.
-| SH_01_070
+| SH_SEC_070
 | | The Smart Home must provide authorized access for emergency services (firemen, hospital service, etc.).
-| SH_02_010
+| SH_ACO_010
 | Accommodation
 | The Smart Home must accommodate physical and mental conditions of the inhabitants.
-| SH_02_020
+| SH_ACO_020
 | | The Smart Home must accommodate specific preferences entered by the inhabitants.
-| SH_02_030
+| SH_ACO_030
 | | The Smart Home must learn from the behaviour of inhabitants.
-| SH_02_040
+| SH_ACO_040
 | | The Smart Home must assist the inhabitants with the everyday tasks regardless of their disabilities.
-| SH_02_050
+| SH_ACO_050
 | | The Smart Home must be monitorable via a central interface located in the main room.
-| SH_02_060
+| SH_ACO_060
 | | The Smart Home must support the connection of smart devices of the inhabitants.
-| SH_02_070
+| SH_ACO_070
 | | The Smart Home must have a bed that accommodates to the disability of the inhabitants.
-| SH_03_010
+| SH_ECO_010
 | Economy
 | The Smart Home must save energy.
-| SH_03_020
+| SH_ECO_020
 | | The Smart Home annual consumption should be less than local regulations.
-| SH_03_030
+| SH_ECO_030
 | | The Smart Home must prioritize self-produced energy.
 |======================

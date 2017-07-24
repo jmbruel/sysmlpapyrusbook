@@ -212,6 +212,11 @@ Nous avons traité en détail cet aspect dans la section <<req15>>.
 
 http://model-based-systems-engineering.com/2017/05/17/whats-new-in-sysml-1-5-miscellaneous/
 
+[appendix]
+[[sysml2]]
+== Et le futur? SysML 2!
+
+Quelques mots en provenance de l'{omg}.
 
 [appendix]
 [[index]]

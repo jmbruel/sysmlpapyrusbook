@@ -1,6 +1,6 @@
 = SysML par la pratique avec Papyrus
 Jean-Michel Bruel <bruel@irit.fr>; Sébastien Gérard <Sebastien.Gerard@cea.fr>
-v1.3, {localdate}
+v1.2, {localdate}
 :myinitials: JMB
 :doctype: book
 :toc: left
@@ -14,13 +14,12 @@ v1.3, {localdate}
 :linkcss:
 :title-page-background-image: image:papyrus-logo.png[pdfwidth=25%]
 :defs: defs
-:xrefstyle: full //short, basic, full
 
 include::definitions.txt[]
 
 ifndef::backend-pdf[]
 image:https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
-(Fork me on https://github.com/jmbruel/sysmlpapyrusbook[icon:github[] GitHub] -- Also available in http://jmbruel.github.io/sysmlpapyrusbook/PapyrusSysMLinAction.pdf[PDF])
+(Fork me on https://github.com/jmbruel/sysmlpapyrusbook[icon:github[] GitHub])
 endif::backend-pdf[]
 
 [preface]
@@ -32,8 +31,7 @@ include::chapters/preface.adoc[leveloffset=+1]
 include::chapters/introduction.adoc[leveloffset=+1]
 // a la fin
 
-//include::chapters/caseStudy.adoc[leveloffset=+1]
-include::chapters/etudeDeCas.adoc[leveloffset=+1]
+include::chapters/caseStudy.adoc[leveloffset=+1]
 // JMB
 // Cahier des charges?
 
@@ -46,7 +44,8 @@ include::chapters/overview.adoc[leveloffset=+1]
 include::chapters/methode.adoc[leveloffset=+1]
 // SEB
 
-include::chapters/gettingStarted.adoc[leveloffset=+1]
+[[start]]
+== Getting started with Papyrus-SysML
 // SEB
 
 include::chapters/requirements.adoc[leveloffset=+1]
