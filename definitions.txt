@@ -8,6 +8,7 @@
 :pdfurl: {githuburl}/PapyrusSysMLinAction.pdf
 :siteUseCase: https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
 :specUseCase: http://bit.ly/SmartHomeUseCase
+:diagrams: /Users/bruel/git/SmartHomeUseCase/SmartHomeSystemProject/diagrams
 
 //Layouts
 :standHeight: 250

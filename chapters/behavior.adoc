@@ -61,8 +61,8 @@ comme illustré dans la <<transition,figure suivante>>, qui se lit :
 alors exécuter `effet` et se plaver dans l'état `Etat2`."
 
 [[transition]]
-.Une transition entre états
-image::dessins/state.png[width=40%,scalewidth=40%]
+//.Une transition entre états
+image::dessins/state.png[width=40%,scalewidth=80%]
 
 [TIP]
 ====
@@ -114,6 +114,7 @@ de l'élément qu'elle décrit (comme l'état `Full` de la pile de la <<complet,
 peut avoir son propre comportement.
 Il est possible de préciser ce qui se passe (exécution de méthode, envoie de messages, etc.) :
 
+[horizontal]
 entry:: en entrant dans l'état (par exemple initialiser une variable)
 doActivity:: en cours d'état (et après toute `entry` spécifiée)
 exit:: au moment de sortir de l'état (et juste avant la transition sortante elle-même)
@@ -142,6 +143,7 @@ image::todo.jpg[width=30%,scalewidth=30%]
 
 Il existe d'autres concepts utiles :
 
+[horizontal]
 choice:: permet de représenter un branchement conditionnel (sur les guardes) d'une même transition.
 +
 .Exemple d'utilisation du _choice_

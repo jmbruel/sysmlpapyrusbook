@@ -34,7 +34,7 @@ Pour permettre de démarrer la modélisation, nous partirons d'un {FichierExigen
 =====
 . Nous ne nous intéresserons qu'à la partie intelligente de la maison (et non à ses caractéristiques architecturales par exemple).
 . Nous avons pris quelques libertés sur les caractéristiques de la maison réelle
-pour parfois les enrichir (comme l'exigence `SH_02_030` ci-dessous) ou parfois les simplifier.
+pour parfois les enrichir (comme l'exigence `SH_ACO_030` ci-dessous) ou parfois les simplifier.
 . Cette base d'exigences sert de base pour étudier la partie _elicitation_ des exigences.
 Elles ne sont donc pas parfaites...
 . Les exemples de modèles réalisés, pour des soucis de partage plus large avec la communauté, sont
@@ -112,46 +112,46 @@ en {papyrus} entre ces exigences et les artefacts de modélisation.
 .Une liste initiale d'exigences
 [align="center",cols="1,1,5",options="header",width=100]
 |======================
-| ID  | Category | Description
-| SH_01_010
+| ID  | Categorie | Description
+| SH_SEC_010
 //------------------
 | Sécurité
 | Le _{projectShortName}_ doit empêcher les accès non autorisés.
-| SH_01_020
+| SH_SEC_020
 | | Le _{projectShortName}_ doit protéger les systèmes d'informations utilisés.
-| SH_01_030
+| SH_SEC_030
 | | Le _{projectShortName}_ doit fournir un contrôle d'accès par identification.
-| SH_01_040
+| SH_SEC_040
 | | Le _{projectShortName}_ doit appeler la police en cas d'intrusion ou d'effraction.
-| SH_01_050
+| SH_SEC_050
 | | Le _{projectShortName}_ doit être capable de détecter la fumée et d'appeler les pompiers en cas de suspicion d'incendie.
-| SH_01_060
+| SH_SEC_060
 | | Le _{projectShortName}_ doit être capable de détecter la chute accidentelle et d'appeler le SAMU en conséquence.
-| SH_01_070
+| SH_SEC_070
 | | Le _{projectShortName}_ doit permettre un accès spécifique aux secours (pompiers, ambulanciers, etc.).
-| SH_02_010
 //------------------
-| Adaptation
+| SH_ACO_010
+| Adaptativité
 | Le _{projectShortName}_ doit s'adapter aux conditions physiques et/ou mentales de l'occupant.
-| SH_02_020
+| SH_ACO_020
 | | Le _{projectShortName}_ doit s'adapter aux préférences spécifiques renseignées par l'occupant.
-| SH_02_030
+| SH_ACO_030
 | | Le _{projectShortName}_ doit pouvoir apprendre du comportement de l'occupant.
-| SH_02_040
+| SH_ACO_040
 | | Le _{projectShortName}_ doit aider l'occupant dans ses tâches quotidiennes en tenant compte le plus possible de ses difficultés.
-| SH_02_050
+| SH_ACO_050
 | | Le _{projectShortName}_ doit pouvoir être supervisé par un dispositif central, dans la pièce principale de l'habitation.
-| SH_02_060
+| SH_ACO_060
 | | Le _{projectShortName}_ doit permettre la connexion avec les équipements modernes de l'occupant (smartphone, montre, pèse-personne, etc.).
-| SH_02_070
+| SH_ACO_070
 | | Le _{projectShortName}_ doit posséder un lit adaptés aux personnes à mobilité réduite.
-| SH_03_010
 //------------------
-| Economy
+| SH_ECO_010
+| Économique
 | Le _{projectShortName}_ doit économiser l'énergie.
-| SH_03_020
+| SH_ECO_020
 | | Le domicile doit être économe en énergie et ayant une consommation globale inférieure aux normes constatées localement.
-| SH_03_030
+| SH_ECO_030
 | | Le _{projectShortName}_ doit donner la priorité aux énergies renouvelables.
 |======================
 

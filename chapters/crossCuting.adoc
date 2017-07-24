@@ -64,6 +64,7 @@ endif::backend-pdf[]
 
 Il existe plusieurs types de _packages_ :
 
+[horizontal]
 `models`::
 	un _package_ "top-level" dans une hiérarchie de _packages_
 `packages`::
@@ -127,6 +128,7 @@ des éléments (la plupart du temps dans les options graphiques).
 Un certain nombre de dépendances peuvent exister entre des éléments de _package_
 ou entre les _packages_ eux-mêmes :
 
+[horizontal]
 _Dependency_::
 	une dépendance "générale", non précisée,
 	représentée par une simple flèche pointillée +----->+

@@ -204,14 +204,16 @@ endif::final[]
 //-----------------------------------------------
 // Seb, please check
 
-Le diagramme d'activité (_Activity Diagrams_) est utilisé pour représenter les flots de données et de contrôle entre les actions.
+Le diagramme d'activité (_Activity Diagrams_) permet de décrire les traitements.
+Il sert très souvent à décrire plus en détail les cas d'utilisation.
+Il est utilisé pour représenter les flots de données et de contrôle entre les actions.
 Il est utilisé en général pour détailler un cas d'utilisation.
 Il est utilisé pour l’expression de la logique de contrôle et d’entrées/sorties.
 Le diagramme d’activité sert non seulement à préciser la séquence d’actions à réaliser,
 mais aussi ce qui est produit, consommé, ou transformé, au cours de l’exécution de cette activité.
 
 .Exemple de diagramme d'activité (tiré de <<SeeBook2012>>)
-image::act-pcmk1.png[width="70%",scaledwidth=50%]
+image::act-pcmk1.png[width="70%",scaledwidth=60%]
 
 Les éléments de base du diagramme d’activité sont :
 
@@ -229,15 +231,36 @@ Elle permet de modéliser un processus par exemple.
 Une activité possède :
 
 - un ensemble de paramètres (_input_,_output_,_input/output_)
-- un ensemble d'actions (lecture, écriture, ...)
+- un ensemble d'actions (appel de méthode, lecture, écriture, ...)
 - un ensemble de flots entre actions (de contrôle ou de données)
 
 [[action]]
 === Actions
 
 Les actions sont les unités fondamentales pour spécifier les comportements en {SysML}.
-Une action représente un traitement ou une transformation.
+Une action représente un traitement ou une transformation et ne peuvent pas être décomposées
+(vous êtes sûrement en présence d'une activité si vous ressentez le besoin de décomposer...).
 Les actions sont contenues dans les activités, qui leur servent alors de contexte.
+
+.Transmission d'objet entre 2 actions
+image::action.png[width="40%",scaledwidth=40%]
+
+Il existe un certain nombre de types d'actions prédéfinies en {sysml} (héritées d'{uml}) :
+
+[horizontal]
+_Call operation_:: invocation d'une opération sur un objet.
+Utilisé pour appeler une méthode.
+_Call behavior_:: invocation d'une activité.
+Utilisé pour réutiliser une activité déjà décrite.
+_Send_:: création d'un message et transmission (asynchrone) à un objet cible.
+Utilisé pour envoyer des signaux.
+_Accept event_:: attente de la réception du type d'événement spécifié (un signal le plus souvent).
+Utilisée pour recevoir des signaux (asynchrones).
+_Accept call_:: idem que le précédent mais pour les appels synchrones.
+_Reply_:: transmission d'un message en réponse à un _accept call_.
+_Create_:: création d'une instance (de bloc ou, plus généralement, d'objet).
+_Destroy_:: destruction d'une instance.
+_Raise exception_:: pour lever une exception.
 
 [[flow]]
 === Flots
@@ -249,7 +272,7 @@ Le diagramme d’activité permet également d’utiliser des *flots d’objets*
 Les _object flow_, associés aux broches d'entrée/sortie (_input/output pin_) permettent alors de décrire les transformations sur les objets manipulés.
 
 .Un exemple de flot continu
-image::act-flow-continuous.png["Un flot continu",width="30%",scaledwidth=50%]
+image::act-flow-continuous.png["Un flot continu",width="30%",scaledwidth=30%]
 
 Pour permettre la modélisation des *flots continus*, {SysML} ajoute à {UML} la possibilité de caractériser la nature du débit qui circule sur le flot : continu (par exemple, courant électrique, fluide, etc.) ou discret (par exemple, évenements, requêtes, etc.).
 On utilise pour cela des stéréotypes : `\<<continuous>>` et `\<<discrete>>`. Par défaut, un flot est supposé discret.
@@ -280,7 +303,7 @@ La fusion est l’inverse de la décision : le même symbole du losange, mais ce
 
 [[Control]]
 .Les différents contrôles de flow SysML
-image::flow-ctrl.png[width="20%",scaledwidth=50%]
+image::flow-ctrl.png[width="20%",scaledwidth=30%]
 
 [NOTE]
 ====

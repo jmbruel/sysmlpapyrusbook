@@ -247,13 +247,13 @@ image::todo.jpg[]
 === Table des exigences
 //- Import d'exigences => dans la section détaillée correspondante
 
-.Exemple de table des exigences
-image::todo.jpg[]
+.Exemple de table d'exigence pour le {projectName}
+image::{diagrams}/table.png[width=70%,scaledwidth=70%]
 
 == Diagramme des cas d'utilisation
 
 .Exemple de diagramme de cas d'utilisation
-image::todo.jpg[]
+image::{diagrams}/SHS_Use_Cases_Description.PNG[width=70%,scaledwidth=70%]
 
 == Diagramme de blocks
 
