@@ -102,10 +102,34 @@ include::notations.adoc[leveloffset=+1]
 === Histoire de SysML
 
 {SysML} est né...
+Après la définition, à la fin des années 90, du formalisme de modélisation unifié {UML},
+l'{INCOSE} a décidé en 2003 de faire d'{UML} ce langage commun pour l'IS.
+{UML} contenait en effet déjà à l'époque nombre de diagrammes indispensables,
+comme les diagrammes de séquence, d'états, de cas d'utilisation, etc.
+Le travail sur la nouvelle version UML 2.0, entamé à l'{OMG} à peu près à la
+même période, a abouti à la définition d'un langage de modélisation très proche
+du besoin des ingénieurs système, avec des améliorations notables sur les
+diagrammes d'activité et de séquence, ainsi que la mise au point du diagramme de
+structure composite.
+Cependant, il restait une barrière psychologique importante à l'adoption d'UML
+par la communauté de l'IS : sa teinture "logicielle" !
+La possibilité d'extension d'{UML}, grâce au concept de stéréotype, a permis
+d'adapter le vocabulaire pour les ingénieurs système.
+En éliminant les mots "objet" et "classe" au profit du terme plus neutre "bloc",
+c'est-à-dire en gommant les aspects les plus informatiques d'{UML}, et en
+renommant ce langage de modélisation, l'{OMG} veut promouvoir {SysML} comme un
+nouveau langage différent d'{UML}, tout en profitant de sa filiation directe.
+L'{OMG} a annoncé l'adoption de {SysML} en juillet 2006 et la disponibilité de
+la première version officielle (SysML v1.0) en septembre 2007.
+Une nouvelle spécification SysML v1.1 a été rendue publique en décembre 2008,
+puis la v1.2 en juin 2010,
+la v1.3 en juin 2012,
+la v1.4 en septembre 2015,
+et la révision courante {SysML} v1.5 a été publiée en mai 2017.
 
-........
-=> Diagrammes et jalons importants
-........
+//........
+//=> Diagrammes et jalons importants
+//........
 
 ........
 => Le futur et les changements techniques à venir, dans les cartons de l'{omg}.

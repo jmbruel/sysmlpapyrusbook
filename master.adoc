@@ -31,7 +31,7 @@ include::chapters/preface.adoc[leveloffset=+1]
 include::chapters/introduction.adoc[leveloffset=+1]
 // a la fin
 
-include::chapters/caseStudy.adoc[leveloffset=+1]
+include::chapters/etudeDeCas.adoc[leveloffset=+1]
 // JMB
 // Cahier des charges?
 

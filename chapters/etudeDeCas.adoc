@@ -57,7 +57,7 @@ personne à domicile qui sont autonome mais qui doivent être suivies ou aidées
 Les éléments de conforts mais surtout de sécurité sont donc primordiaux et doivent
 être fournis de manière continue, et potentiellement nécessiter des moyens humains d'assistance.
 
-L'intérêt de ce cas d'étude (que nous appèlerons {projectName}, ou {projectShortName} dans ce livre)
+L'intérêt de ce cas d'étude (que nous appèlerons _{projectName}_, ou {projectShortName} dans ce livre)
 est qu'elle nécessite de prendre en compte les aspects sécurité (_security_), adaptation (_accommodation_),
 sociaux (_societal_), légaux (_legislative_), économiques (_economical_), et écologiques (_ecological_).
 Dans ce qui suit nous décrivons plus précisément quelques services attendus d'un tel système.

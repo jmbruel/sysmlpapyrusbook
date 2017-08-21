@@ -347,6 +347,11 @@ Pour plus de détails, cf. <<seq>>.
 == Diagramme de packages
 //---------------------------------------------------------------------------------
 
+Ce type de diagramme permet d'organiser les éléments de modèle.
+Un _package_ peut contenir d'autres _package_, des blocs, des diagrammes, etc.
+
+NOTE: Un _package_ n'est pas un composant mais une unité d'organisation du modèle.
+
 == Allocation, traçabilité et autres points de cohérences
 //---------------------------------------------------------------------------------
 

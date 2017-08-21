@@ -144,7 +144,7 @@ Un certains nombre de concepts sont transverses aux trois points de vue précéd
 Il s'agira principalement de parler de cohérence ou de traçabilité entre les phases de développement ou entre les points de vue.
 
 
-Ces différents points de vue ne doivent pas être confondus avec les différentes phases de développement (cf. <<paragraphe suivant,devphase>>).
+Ces différents points de vue ne doivent pas être confondus avec les différentes phases de développement (cf. <<devphase, paragraphe suivant>>).
 Ils sont plutôt à rapprocher de la notion de préoccupation.
 C'est ainsi que nous avons choisi de distinguer trois points de vue
 qui se retrouvent souvent en modélisation : le point de vue des exigences qui permet de se focaliser sur les besoins des clients ;
@@ -201,7 +201,7 @@ Nous donnons ensuite un aperçu de tous les diagrammes {sysml}, pour que le lect
 Ensuite... (chapitre <<methode>>).
 Ensuite... (chapitre <<start>>).
 Nous rentrons dans le détail avec les chapitres suivants.
-Nous commençons par les exigences (chapitre <<RE>>).
+Nous commençons par les exigences (chapitre <<reqs>>).
 Nous poursuivons par l'utilisation du système (cas d'utilisation et interfaces, chapitre <<Usages>>).
 Ensuite nous traitons des éléments structurels (chapitre <<archi>>) et
 comportementaux (chapitre <<behavior>>).
