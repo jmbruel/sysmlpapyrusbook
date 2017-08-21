@@ -124,7 +124,7 @@ Cela peut en effet poser des problèmes plus tard (<<execution,exécution de mod
 Pour notre modélisation du {projectName}, nous utilisons l'organisation suivantefootnote:[Issue du {CEA}.] :
 
 .Vue d'ensemble de notre projet de {projectName}
-image::{diagrams}/Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.PNG[width=80%,scaledwidth=90%]
+image::{diagrams}/Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.PNG[width=80%,scaledwidth=80%]
 
 Comme vous pouvez le constater, nous annotons les éléments de modèles avec des commentaires, et
 pas seulement parce qu'il s'agit d'un exemple illustratif pour un livre, comme nous le détaillons

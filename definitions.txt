@@ -4,7 +4,11 @@
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
 :papyrusversion: 2.0.1
 :siteurl: https://bit.ly/sysmlbook
-:gihuburl: https://github.com/jmbruel/sysmlpapyrusbook
+:githuburl: https://github.com/jmbruel/sysmlpapyrusbook
+:pdfurl: {githuburl}/PapyrusSysMLinAction.pdf
+:siteUseCase: https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
+:specUseCase: http://bit.ly/SmartHomeUseCase
+:diagrams: /Users/bruel/git/SmartHomeUseCase/SmartHomeSystemProject/diagrams
 
 //Layouts
 :standHeight: 250
