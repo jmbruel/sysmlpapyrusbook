@@ -351,6 +351,8 @@ Ce type de diagramme permet d'organiser les éléments de modèle.
 Un _package_ peut contenir d'autres _package_, des blocs, des diagrammes, etc.
 
 NOTE: Un _package_ n'est pas un composant mais une unité d'organisation du modèle.
+Un _package_ constitue un espace de nommage (_namespace_) pour les éléments
+qu'il contient.
 
 == Allocation, traçabilité et autres points de cohérences
 //---------------------------------------------------------------------------------
