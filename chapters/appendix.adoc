@@ -27,6 +27,10 @@ _**I**ntegrated **D**evelopment **E**nvironment_, environnement de développemen
 IS::
 **I**ngénierie **S**ystème
 
+[[MBSE]]
+MBSE::
+_**M**odel-**B**ased **S**ystems **E**ngineering_
+
 PAR::
 _**P**arametric **D**iagram_, le diagramme paramétrique (cf. <<param>>)
 

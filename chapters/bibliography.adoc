@@ -21,6 +21,7 @@ Available http://www.omg.org/spec/SysML/1.5/[here].
 - [[[Neptune17]]] Conférence Neptune'2017. CNAM Paris. 01/06/2017.
 - [[[Jézéquel]]] Le bouquin sur l'ingénierie des modèles de Benoit et al.
 - [[[Cabot]]] Le bouquin de Jordi
+- [[[Roques]]] Le bouquin de Pascal
 
 .Websites
 

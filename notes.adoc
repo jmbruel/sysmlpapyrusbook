@@ -1,0 +1,72 @@
+= Notes et conventions typographiques
+Jean-Michel Bruel <bruel@irit.fr>; Sébastien Gérard <Sebastien.Gerard@cea.fr>
+v1.2, {localdate}
+:myinitials: JMB
+:doctype: book
+:toc: left
+:toc-title: Table des Matières
+//:data-uri:
+:lang: fr
+:icons: font
+:final!: //enlever le '!' pour enlever tous les commentaires
+:imagesdir: images
+:experimental:
+:linkcss:
+:title-page-background-image: image:papyrus-logo.png[pdfwidth=25%]
+:defs: defs
+:xrefstyle: full //short, basic, full
+
+include::definitions.txt[]
+
+:numbered!:
+== Notes entre nous
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Ceci est une note qui n'apparaitra plus dans la version finale.
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+== Notes pour le lecteur
+
+.Niveaux de concepts SysML
+[NOTE]
+======
+Les différents niveaux de concepts {SysML} que nous utilisons dans ce livre sont alignés sur
+ceux du programme de certification de l'{OMG} <<OCSMP>>.
+======
+
+WARNING: Attention, piège ou erreur à éviter.
+
+IMPORTANT: Ceci est un point important.
+
+.Convention : Ceci est une convention ou une bonne pratique
+[TIP]
+====
+Dans ces notes, nous distillerons des conseils, des bonnes pratiques ou des conventions que nous recommandons d'adopter.
+====
+
+.Définition : Exemple (OMG SysML v1.3, p. 152)
+[NOTE,icon=sysml.jpeg]
+====
+Ces notes concernent des définitions tirées de la spécification {sysml} et sont donc précisément référencées.
+====
+
+:icons: font
+
+.Exemple image:papyrus-logo2.png[width=5%] Papyrus-SysML : Un bdd
+[NOTE]
+====
+image::bdd.png[width=50%]
+====
+
+
+icon:comment[] This is a comment icon
+
+icon:file[] And a file icon

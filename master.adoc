@@ -44,8 +44,7 @@ include::chapters/overview.adoc[leveloffset=+1]
 include::chapters/methode.adoc[leveloffset=+1]
 // SEB
 
-[[start]]
-== Getting started with Papyrus-SysML
+include::chapters/gettingStarted.adoc[leveloffset=+1]
 // SEB
 
 include::chapters/requirements.adoc[leveloffset=+1]

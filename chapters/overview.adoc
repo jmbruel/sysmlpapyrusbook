@@ -32,6 +32,7 @@ ____________________________________________________________________
 Il existe une notation qui se veut "unifiée" pour les modèles : {uml}.
 Néanmoins cette notation est peu adaptée pour l'{is} :
 
+ifdef::slides[]
 * UML 1.x était complètement inadaptée :
 ** Principalement pour les systèmes d'information
 ** Peu de liens entre les diagrammes
@@ -39,6 +40,7 @@ Néanmoins cette notation est peu adaptée pour l'{is} :
 * UML 2.x n'est pas beaucoup mieux si ce n'est :
 ** Implication des ingénieurs systèmes pour sa définition
 ** Introduction du diagramme de structure composite
+endif::slides[]
 
 En conclusion {UML} est une bonne base :
 
@@ -65,7 +67,7 @@ include::fiche.txt[]
 
 === SysML, c'est...
 
-Un ensemble de 9 types de diagrammes::
+Un ensemble de 9 types de diagrammes (cf. <<diags>>)::
 * Diagrammes structuraux
 ** Diagrammes de définition de blocs (`{bdd}`)
 ** Diagrammes internes de blocs (`{ibd}`)
@@ -145,6 +147,7 @@ Les ingénieurs systèmes ont l'habitude d'utiliser des représentations graphiq
 Ces diagrammes couvrent	les aspects structurels et comportementaux du système ainsi que les exigences.
 La figure suivante présente cette organisation en faisant, au passage, le lien avec ceux d'{uml} :
 
+[[diags]]
 .Les 9 diagrammes SysML et leur lien (historique) avec UML
 image::Figure4-1.png[9 diagrammes,width=90%,scaledwidth=90%]
 
