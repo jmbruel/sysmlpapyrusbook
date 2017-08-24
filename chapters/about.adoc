@@ -2,12 +2,14 @@
 
 mailto:{email}[{author}] est
 Professeur des Universités à l'{univ-tlse},
-Co-fondateur de l'association {sysmlfrance} en 2009,
+en poste à l'{iut} depuis 2008,
+après avoir été Maître de Conférences à l'{uppa} de 1997 à 2008.
+Il est l'un des co-fondateurs de l'association {sysmlfrance} (depuis intégrée à l'{afis}),
 membre du comité éditorial de la revue _{sosym}_ depuis sa création en 2002,
 membre du _Steering Committee_ de la conférence ACM/IEEE {models} depuis 2008,
 ifndef::book[chef du département informatique de l'{iut} de 2009 à 2012,]
 ifndef::book[co-responsable de l'axe Systèmes Ambiants de l'{IRIT} depuis 2009,]
-membre du comité technique MBSE de l'{afis},
+membre du comité technique <<MBSE,MBSE>> de l'{afis},
 et enseigne la modélisation depuis 1995.
 
 mailto:{email_2}[{author_2}] est ... (Papa de Papyrus :-)
