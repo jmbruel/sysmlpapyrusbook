@@ -252,7 +252,7 @@ image::{papyrusversion}/lierExigences.png[width="70%",scaledwidth=70%]
 //- Import d'exigences => dans la section détaillée correspondante
 
 .Exemple de table d'exigence pour le {projectName}
-image::{diagrams}/table.png[width=70%,scaledwidth=70%]
+image::{papyrusversion}/table.png[width=70%,scaledwidth=70%]
 
 == Diagramme des cas d'utilisation
 
