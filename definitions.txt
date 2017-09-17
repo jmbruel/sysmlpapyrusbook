@@ -97,10 +97,12 @@ endif::[]
 :afis: http://www.afis.fr/[AFIS](((AFIS)))
 :ambler: http://www.agilemodeling.com/[Scott W. Ambler]
 :arcadia: link:https://www.polarsys.org/capella/arcadia.html[Arcadia]
+:bc: link:http://www.combemale.fr[Benoît Combemale]
 :capella: link:https://polarsys.org/capella/[Capella]
 :cealist: http://www-list.cea.fr/[CEA Tech List]
 :christelle: mailto:christelle.chaudet@irit.fr[Christelle Chaudet]
 :dl: http://www.master-developpement-logiciel.fr/[Master DL]
+:esir: link:https://esir.univ-rennes1.fr/[ESIR]
 :incose: link:http://www.incose.org/[INCOSE]indexterm:[INCOSE](((INCOSE)))
 :iso: http://www.iso.org/[ISO](((ISO)))
 :irit: http://www.irit.fr[IRIT](((IRIT)))

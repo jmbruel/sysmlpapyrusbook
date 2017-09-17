@@ -69,9 +69,13 @@ Le _{projectName}_ doit donc fournir un certain niveau de protection contre les 
 Ce niveau doit même être renforcé du fait de la vulnérabilité induite par l'ultra-connectivité du système.
 On profitera donc avantageusement du niveau d'équipement pour mettre en place les réponses adaptées
 (alarmes, alertes automatiques, etc.) sans pour autant oublier de donner un accès privilégié
-aux différents acteurs de la supervision (pompiers, médecins, etc.). Such
+aux différents acteurs de la supervision (pompiers, médecins, etc.).
 L'accès aux données personnelles (notamment de santé) via les différents dispositifs connectés
 sera fortement contrôlé. Les notions d'identification, de certification ou de cryptage seront donc primordiales.
+
+WARNING: Cette description mélange des aspects différents de sécurité : la sureté, la sécurité et la cybersécurité.
+Nous avons laissé volontairement ces ambiguités pour illustrer comment {sysml} peut être utilisé pour exprimer
+la composition d'exigences.
 
 === Adaptation
 
@@ -154,6 +158,30 @@ en {papyrus} entre ces exigences et les artefacts de modélisation.
 | SH_ECO_030
 | | Le _{projectShortName}_ doit donner la priorité aux énergies renouvelables.
 |======================
+
+== Quelques exemples de scénarios
+
+Dans ce qui suit, nous imaginerons que l'habitante qui occupe la maison s'appelle Alice
+et que son état de santé nécessite un suivi particulier :
+
+- Chaque matin, quand Alice s'éveille, un guidage lumineux au sol lui permet de simplement
+atteindre la salle de bain pour sa toilette. Si elle a choisi l'option, elle peut même
+bénéficier d'un guidage audio complémentaire.
+
+- Alice bénéficie d'un "majordome intelligent"footnote:[Scénario tiré du Projet ESIR3 NSOC donné par {bc} à l'{esir}.],
+capable de :
+* afficher un indicateur de santé de la maison, qui combine les informations provenant de la mesure de plusieurs grandeurs physiques
+(e.g., Température, Humidité, CO2, ...)
+* afficher des indicateurs détaillés sur différents domaines (en instantané et avec des graphiques) en le ramenant
+à des indicateurs intelligibles pour l’humain (Qualité de l’air,  Consommation électrique, ...)
+* afficher des prévisions pour la journée / semaine (Consommation électrique prévue, Production d’énergie prévue,
+La voiture sera chargée pour faire votre trajet quotidien à 16h30, ...)
+* afficher des conseils / alertes pour bénéficier au mieux des capacités passives de la maison (Ouvrir la fenêtre pendant 10 minutes,
+Ne pas faire entrer de nouveaux visiteurs, ...)
+
+- Quand Alice chute sur le sol et qu'elle reste immobile plus de 30s, et qu'elle ne répond pas à une première
+série de messages audio diffusés dans la maison, le {projectShortName} appelle les secours avec les informations rentrées au
+préalable dans le système.
 
 == Pour aller plus loin
 

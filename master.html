@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.6">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
 <meta name="author" content="Jean-Michel Bruel, Sébastien Gérard">
 <title>SysML par la pratique avec Papyrus</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -20,7 +20,7 @@
 <span id="author2" class="author">Sébastien Gérard</span><br>
 <span id="email2" class="email"><a href="mailto:Sebastien.Gerard@cea.fr">Sebastien.Gerard@cea.fr</a></span><br>
 <span id="revnumber">version 1.2,</span>
-<span id="revdate">2017-09-05</span>
+<span id="revdate">2017-09-17</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table des Matières</div>
@@ -48,7 +48,8 @@
 <li><a href="#_description">2.1. Description</a></li>
 <li><a href="#_plateforme_expérimentale">2.2. Plateforme expérimentale</a></li>
 <li><a href="#_liste_des_exigences">2.3. Liste des exigences</a></li>
-<li><a href="#_pour_aller_plus_loin">2.4. Pour aller plus loin</a></li>
+<li><a href="#_quelques_exemples_de_scénarios">2.4. Quelques exemples de scénarios</a></li>
+<li><a href="#_pour_aller_plus_loin">2.5. Pour aller plus loin</a></li>
 </ul>
 </li>
 <li><a href="#install">3. Avant de démarrer</a>
@@ -1030,9 +1031,23 @@ Le <em>SmartHomeSystem</em> doit donc fournir un certain niveau de protection co
 Ce niveau doit même être renforcé du fait de la vulnérabilité induite par l&#8217;ultra-connectivité du système.
 On profitera donc avantageusement du niveau d&#8217;équipement pour mettre en place les réponses adaptées
 (alarmes, alertes automatiques, etc.) sans pour autant oublier de donner un accès privilégié
-aux différents acteurs de la supervision (pompiers, médecins, etc.). Such
+aux différents acteurs de la supervision (pompiers, médecins, etc.).
 L&#8217;accès aux données personnelles (notamment de santé) via les différents dispositifs connectés
 sera fortement contrôlé. Les notions d&#8217;identification, de certification ou de cryptage seront donc primordiales.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Cette description mélange des aspects différents de sécurité : la sureté, la sécurité et la cybersécurité.
+Nous avons laissé volontairement ces ambiguités pour illustrer comment <a href="http://www.omgsysml.org/">SysML&#8482;</a> peut être utilisé pour exprimer
+la composition d&#8217;exigences.
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
@@ -1182,7 +1197,52 @@ en <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> entre ces exigenc
 </table>
 </div>
 <div class="sect2">
-<h3 id="_pour_aller_plus_loin">2.4. Pour aller plus loin</h3>
+<h3 id="_quelques_exemples_de_scénarios">2.4. Quelques exemples de scénarios</h3>
+<div class="paragraph">
+<p>Dans ce qui suit, nous imaginerons que l&#8217;habitante qui occupe la maison s&#8217;appelle Alice
+et que son état de santé nécessite un suivi particulier :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Chaque matin, quand Alice s&#8217;éveille, un guidage lumineux au sol lui permet de simplement
+atteindre la salle de bain pour sa toilette. Si elle a choisi l&#8217;option, elle peut même
+bénéficier d&#8217;un guidage audio complémentaire.</p>
+</li>
+<li>
+<p>Alice bénéficie d&#8217;un "majordome intelligent"<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</sup>,
+capable de :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>afficher un indicateur de santé de la maison, qui combine les informations provenant de la mesure de plusieurs grandeurs physiques
+(e.g., Température, Humidité, CO2, &#8230;&#8203;)</p>
+</li>
+<li>
+<p>afficher des indicateurs détaillés sur différents domaines (en instantané et avec des graphiques) en le ramenant
+à des indicateurs intelligibles pour l’humain (Qualité de l’air,  Consommation électrique, &#8230;&#8203;)</p>
+</li>
+<li>
+<p>afficher des prévisions pour la journée / semaine (Consommation électrique prévue, Production d’énergie prévue,
+La voiture sera chargée pour faire votre trajet quotidien à 16h30, &#8230;&#8203;)</p>
+</li>
+<li>
+<p>afficher des conseils / alertes pour bénéficier au mieux des capacités passives de la maison (Ouvrir la fenêtre pendant 10 minutes,
+Ne pas faire entrer de nouveaux visiteurs, &#8230;&#8203;)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Quand Alice chute sur le sol et qu&#8217;elle reste immobile plus de 30s, et qu&#8217;elle ne répond pas à une première
+série de messages audio diffusés dans la maison, le SHS appelle les secours avec les informations rentrées au
+préalable dans le système.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pour_aller_plus_loin">2.5. Pour aller plus loin</h3>
 <div class="paragraph">
 <p>Cette étude de cas a été utilisée dans le cadre d&#8217;un cours <a href="http://www.omgsysml.org/">SysML&#8482;</a> au <a href="http://www.master-developpement-logiciel.fr/">Master DL</a> ainsi
 que pour le workshop {mdetools}. Ces deux sources peuvent fournir nombre de modèles
@@ -1674,7 +1734,7 @@ Voici une liste non exhaustive des entreprises et des acteurs qui participent à
 <div class="sect3">
 <h4 id="Outils">4.2.6. Outils SysML</h4>
 <div class="paragraph">
-<p>Il va de soit que le meilleur outil <a href="http://www.omgsysml.org/">SysML&#8482;</a> à ce jour est <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a><sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</sup>, dont ce livre vous détaille l&#8217;utilisation, mais il existe un certain nombre d&#8217;autres outils
+<p>Il va de soit que le meilleur outil <a href="http://www.omgsysml.org/">SysML&#8482;</a> à ce jour est <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a><sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</sup>, dont ce livre vous détaille l&#8217;utilisation, mais il existe un certain nombre d&#8217;autres outils
 permettant de réaliser des modèles <a href="http://www.omgsysml.org/">SysML&#8482;</a>.
 En voici une liste non exhaustive :</p>
 </div>
@@ -1857,7 +1917,7 @@ cette section (nous utilisons ici le "plan" vu lors de l&#8217;introduction de l
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Analyse, Conception, Implémentation <sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</sup></p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Analyse, Conception, Implémentation <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnote_6" title="View footnote.">6</a>]</sup></p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#reqs">req</a>, <a href="#uc">uc</a>, <a href="#sd">sd</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#bdd">bdd</a>, <a href="#ibd">ibd</a>, <a href="#par">par</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#uc">uc</a>, <a href="#sd">sd</a>, <a href="#stm">stm</a>, <a href="#act">act</a></p></td>
@@ -2441,7 +2501,7 @@ Cela peut en effet poser des problèmes plus tard (<a href="#execution">exécuti
 </table>
 </div>
 <div class="paragraph">
-<p>Pour notre modélisation du SmartHomeSystem, nous utilisons l&#8217;organisation suivante<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnote_6" title="View footnote.">6</a>]</sup> :</p>
+<p>Pour notre modélisation du SmartHomeSystem, nous utilisons l&#8217;organisation suivante<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnote_7" title="View footnote.">7</a>]</sup> :</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -3094,7 +3154,7 @@ sera abordé dans la partie sur les concepts <a href="#transvers">transverses</a
 <td class="content">
 <div class="paragraph">
 <p>Par exemple, en général, chaque <em>requirement</em> devrait être relié à au moins un
-artefact de conception (ne serait-ce qu&#8217;un <em>use case</em>)<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnote_7" title="View footnote.">7</a>]</sup>.</p>
+artefact de conception (ne serait-ce qu&#8217;un <em>use case</em>)<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnote_8" title="View footnote.">8</a>]</sup>.</p>
 </div>
 </td>
 </tr>
@@ -3486,7 +3546,7 @@ Parler de l&#8217;exemple du diagramme de contexte pour illustrer la différence
 initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User</a></em>) de la certification <em>Certified Systems Modeling Professional</em>&#8482;:
 Package Diagram, ownership, namespace, containment, dependency, view, viewpoint,
 Block definition, Block usage, valuetype (with units), value properties, parts, references, operations,
-Block Definition Diagram, compartments, specialization, associations (including composite<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnote_8" title="View footnote.">8</a>]</sup>), multiplicities,
+Block Definition Diagram, compartments, specialization, associations (including composite<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnote_9" title="View footnote.">9</a>]</sup>), multiplicities,
 Internal Block Diagram, enclosing block, flow ports and standard ports, connectors and item flows, representation of parts, constraint blocks,
 Parametric Diagram, constraint properties, constraint parameters, constraint expressions</p>
 </div>
@@ -6011,7 +6071,7 @@ Par exemple et en vrac :</p>
 <div class="paragraph">
 <p>Pour pouvoir collaborer à plusieurs autour du même modèle, il est nécessaire d&#8217;utiliser des outils appropriés.
 Dans cette section nous illustrons l&#8217;utilisation des plugins <a href="http://www.eclipse.org">eclipse</a> : <a href="http://wiki.eclipse.org/EGit">EGit</a> et <a href="https://www.eclipse.org/emf/compare/">EMFCompare</a>.
-Nous avons expérimenté avec succès<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnote_9" title="View footnote.">9</a>]</sup>,
+Nous avons expérimenté avec succès<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnote_10" title="View footnote.">10</a>]</sup>,
 l&#8217;utilisation de cette solution avec 24 étudiants collaborant sur le même modèle {Papurys}.</p>
 </div>
 <div class="sect3">
@@ -6653,7 +6713,7 @@ et où ils sont abordés dans le livre.</p>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">specialization, associations (including composite<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnote_10" title="View footnote.">10</a>]</sup>), multiplicities</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">specialization, associations (including composite<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnote_11" title="View footnote.">11</a>]</sup>), multiplicities</p></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
@@ -6920,31 +6980,34 @@ cf. <a href="#niveauConcepts">Niveaux de concepts SysML</a></p>
 <a href="#_footnoteref_3">3</a>. Pour des raisons de simplicité, et pour coller à la réalité de la <a href="http://mi.iut-blagnac.fr/">MIB</a>, nous ne considérons qu&#8217;il n&#8217;y a qu&#8217;un(e) seul(e) habitant(e).
 </div>
 <div class="footnote" id="_footnote_4">
-<a href="#_footnoteref_4">4</a>. La partialité des auteurs peut être questionnée, mais d&#8217;un point de vue complétude et respect de la norme, cette affirmation est régulièrement admise par la communauté.
+<a href="#_footnoteref_4">4</a>. Scénario tiré du Projet ESIR3 NSOC donné par <a href="http://www.combemale.fr">Benoît Combemale</a> à l&#8217;<a href="https://esir.univ-rennes1.fr/">ESIR</a>.
 </div>
 <div class="footnote" id="_footnote_5">
-<a href="#_footnoteref_5">5</a>. En fonction du niveau de détail.
+<a href="#_footnoteref_5">5</a>. La partialité des auteurs peut être questionnée, mais d&#8217;un point de vue complétude et respect de la norme, cette affirmation est régulièrement admise par la communauté.
 </div>
 <div class="footnote" id="_footnote_6">
-<a href="#_footnoteref_6">6</a>. Issue du <a href="http://www-list.cea.fr/">CEA LIST</a>.
+<a href="#_footnoteref_6">6</a>. En fonction du niveau de détail.
 </div>
 <div class="footnote" id="_footnote_7">
-<a href="#_footnoteref_7">7</a>. et vice-versa!
+<a href="#_footnoteref_7">7</a>. Issue du <a href="http://www-list.cea.fr/">CEA LIST</a>.
 </div>
 <div class="footnote" id="_footnote_8">
-<a href="#_footnoteref_8">8</a>. but not shared aggregation
+<a href="#_footnoteref_8">8</a>. et vice-versa!
 </div>
 <div class="footnote" id="_footnote_9">
-<a href="#_footnoteref_9">9</a>. dans le cadre du cours <a href="http://www.omgsysml.org/">SysML&#8482;</a> du {m2dl}
+<a href="#_footnoteref_9">9</a>. but not shared aggregation
 </div>
 <div class="footnote" id="_footnote_10">
-<a href="#_footnoteref_10">10</a>. but not shared aggregation
+<a href="#_footnoteref_10">10</a>. dans le cadre du cours <a href="http://www.omgsysml.org/">SysML&#8482;</a> du {m2dl}
+</div>
+<div class="footnote" id="_footnote_11">
+<a href="#_footnoteref_11">11</a>. but not shared aggregation
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.2<br>
-Last updated 2017-08-23 10:50:12 WEST
+Last updated 2017-08-28 12:06:00 CEST
 </div>
 </div>
 </body>
