@@ -6070,9 +6070,7 @@ Par exemple et en vrac :</p>
 </div>
 <div class="paragraph">
 <p>Pour pouvoir collaborer à plusieurs autour du même modèle, il est nécessaire d&#8217;utiliser des outils appropriés.
-Dans cette section nous illustrons l&#8217;utilisation des plugins <a href="http://www.eclipse.org">eclipse</a> : <a href="http://wiki.eclipse.org/EGit">EGit</a> et <a href="https://www.eclipse.org/emf/compare/">EMFCompare</a>.
-Nous avons expérimenté avec succès<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnote_10" title="View footnote.">10</a>]</sup>,
-l&#8217;utilisation de cette solution avec 24 étudiants collaborant sur le même modèle {Papurys}.</p>
+Dans cette section nous illustrons l&#8217;utilisation des plugins <a href="http://www.eclipse.org">eclipse</a> : <a href="http://wiki.eclipse.org/EGit">EGit</a> et <a href="https://www.eclipse.org/emf/compare/">EMFCompare</a>.</p>
 </div>
 <div class="sect3">
 <h4 id="_vade_mecum">13.1.1. Vade Mecum</h4>
@@ -6111,6 +6109,39 @@ Si vous n&#8217;avez pas cette option à cocher, vous n&#8217;avez pas la bonne 
 </td>
 </tr>
 </table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_exemple_concret_d_utilisation">13.1.2. Exemple concret d&#8217;utilisation</h4>
+<div class="paragraph">
+<p>Nous avons expérimenté avec succès<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnote_10" title="View footnote.">10</a>]</sup>,
+l&#8217;utilisation de cette solution avec 24 étudiants collaborant sur le même modèle <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.</p>
+</div>
+<div class="paragraph">
+<p>Voici quelques principes généraux qui permettent de modéliser de manière collaborative
+sans trop de difficulté :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>les utilisateurs doivent maîtriser les concepts de versionnement et les commandes {git} en général</p>
+</li>
+<li>
+<p>la "racine" du modèle, à savoir les principaux éléments (par exemple un bloc <code>Capteur</code> dans notre étude de cas,
+duquel tous les capteurs spécifiques hériteront), les exigences initiales, le diagramme de contexte, etc. doivent
+être réalisé avant le démarrage de la partie collaborative pour que tout le monde parte du même système</p>
+</li>
+<li>
+<p>il est préférable que chaque contributeur travaille sur une partie relativement indépendante, pour éviter au maximum les conflits</p>
+</li>
+<li>
+<p>il est préférable que chaque contributeur travaille sur une branche dédiée et qu&#8217;il vérifie localement que l&#8217;intégration
+de sa branche dans la branche principale ne va pas poser de problème</p>
+</li>
+<li>
+<p>un seul contributeur est chargé de <em>merger</em> les branches individuelles sur la branche principale</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -6235,7 +6266,7 @@ Available <a href="http://www.omg.org/spec/SysML/1.5/">here</a>.</p>
 <h2 id="acro">Appendix A: Acronymes</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Liste des acronymes utilisés dans ce livre.</p>
+<p>Liste (non exhaustive) des acronymes utilisés dans ce livre.</p>
 </div>
 <div class="hdlist">
 <table>
@@ -6285,7 +6316,7 @@ IDE
 </td>
 <td class="hdlist2">
 <p><em><strong>I</strong>ntegrated <strong>D</strong>evelopment <strong>E</strong>nvironment</em>, environnement de développement intégré
-(comme <a href="http://www.eclipse.org">eclipse</a> ou {intelliJ})</p>
+(comme <a href="http://www.eclipse.org">eclipse</a> ou <a href="https://www.jetbrains.com/idea/">IntelliJ</a>)</p>
 </td>
 </tr>
 <tr>
@@ -6296,47 +6327,79 @@ IS
 <p><strong>I</strong>ngénierie <strong>S</strong>ystème</p>
 </td>
 </tr>
-</table>
-</div>
-<div id="MBSE" class="dlist">
-<dl>
-<dt class="hdlist1">MBSE</dt>
-<dd>
-<p><em><strong>M</strong>odel-<strong>B</strong>ased <strong>S</strong>ystems <strong>E</strong>ngineering</em></p>
-</dd>
-<dt class="hdlist1">PAR</dt>
-<dd>
+<tr>
+<td class="hdlist1">
+<a id="MBSE"></a> MBSE
+</td>
+<td class="hdlist2">
+<p><em><strong>M</strong>odel-<strong>B</strong>ased <strong>S</strong>ystems <strong>E</strong>ngineering</em>, Ingénierie systèmes basée modèles</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+PAR
+</td>
+<td class="hdlist2">
 <p><em><strong>P</strong>arametric <strong>D</strong>iagram</em>, le diagramme paramétrique (cf. <a href="#param"><em>Parametric Diagrams</em></a>)</p>
-</dd>
-<dt class="hdlist1">PKG</dt>
-<dd>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+PKG
+</td>
+<td class="hdlist2">
 <p><em><strong>P</strong>ackage <strong>D</strong>iagram</em>, le diagramme des paquetages (cf. <a href="#package">Le <em>Package Diagram</em></a>)</p>
-</dd>
-<dt class="hdlist1">REQ</dt>
-<dd>
-<p><em><strong>REQ</strong>uirements <strong>D</strong>iagram</em>, le diagramme des exigences (cf. <a href="#RE">[RE]</a>)</p>
-</dd>
-<dt class="hdlist1">SD</dt>
-<dd>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+REQ
+</td>
+<td class="hdlist2">
+<p><em><strong>REQ</strong>uirements <strong>D</strong>iagram</em>, le diagramme des exigences (cf. <a href="#reqs">Besoins clients et exigences</a>)</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+SD
+</td>
+<td class="hdlist2">
 <p><em><strong>S</strong>equence <strong>D</strong>iagram</em>, le diagramme de séquence (cf. <a href="#seq">Diagrammes de séquence</a>)</p>
-</dd>
-<dt class="hdlist1">STM</dt>
-<dd>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+STM
+</td>
+<td class="hdlist2">
 <p><em><strong>ST</strong>ate <strong>M</strong>achine Diagram</em>, le diagramme d&#8217;états (cf. <a href="#stm">Diagramme d&#8217;états</a>)</p>
-</dd>
-<dt class="hdlist1">SysML</dt>
-<dd>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+SysML
+</td>
+<td class="hdlist2">
 <p><em><strong>S</strong>ystems <strong>M</strong>odeling <strong>L</strong>anguage</em></p>
-</dd>
-<dt class="hdlist1">UC</dt>
-<dd>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+UC
+</td>
+<td class="hdlist2">
 <p><em><strong>U</strong>se <strong>C</strong>ase Diagram</em>, le diagramme des cas d&#8217;utilisation (cf. <a href="#uc">[uc]</a>)</p>
-</dd>
-<dt class="hdlist1">UML</dt>
-<dd>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+UML
+</td>
+<td class="hdlist2">
 <p><em><strong>U</strong>nified <strong>M</strong>odeling <strong>L</strong>anguage</em></p>
-</dd>
-</dl>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -6464,7 +6527,7 @@ du moins en informatique.</p>
 <em>Requirements Diagram</em>
 </td>
 <td class="hdlist2">
-<p>Diagramme des exigences (cf. <a href="#RE">[RE]</a>)</p>
+<p>Diagramme des exigences (cf. <a href="#reqs">Besoins clients et exigences</a>)</p>
 </td>
 </tr>
 <tr>

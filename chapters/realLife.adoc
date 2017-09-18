@@ -40,8 +40,6 @@ endif::final[]
 
 Pour pouvoir collaborer à plusieurs autour du même modèle, il est nécessaire d'utiliser des outils appropriés.
 Dans cette section nous illustrons l'utilisation des plugins {eclipse} : {egit} et {emfcompare}.
-Nous avons expérimenté avec succèsfootnote:[dans le cadre du cours {sysml} du {m2dl}],
-l'utilisation de cette solution avec 24 étudiants collaborant sur le même modèle {Papurys}.
 
 === Vade Mecum
 
@@ -57,6 +55,23 @@ http://download.eclipse.org/modeling/emf/compare/updates/logical/emf.compare/int
 image::mergestrategy.png[Stratégie de Merge,width=60%,scaledwidth=60%]
 
 TIP: Si vous n'avez pas cette option à cocher, vous n'avez pas la bonne version des plugins! icon:smile-o[].
+
+=== Exemple concret d'utilisation
+
+Nous avons expérimenté avec succèsfootnote:[dans le cadre du cours {sysml} du {m2dl}],
+l'utilisation de cette solution avec 24 étudiants collaborant sur le même modèle {Papyrus}.
+
+Voici quelques principes généraux qui permettent de modéliser de manière collaborative
+sans trop de difficulté :
+
+- les utilisateurs doivent maîtriser les concepts de versionnement et les commandes {git} en général
+- la "racine" du modèle, à savoir les principaux éléments (par exemple un bloc `Capteur` dans notre étude de cas,
+duquel tous les capteurs spécifiques hériteront), les exigences initiales, le diagramme de contexte, etc. doivent
+être réalisé avant le démarrage de la partie collaborative pour que tout le monde parte du même système
+- il est préférable que chaque contributeur travaille sur une partie relativement indépendante, pour éviter au maximum les conflits
+- il est préférable que chaque contributeur travaille sur une branche dédiée et qu'il vérifie localement que l'intégration
+de sa branche dans la branche principale ne va pas poser de problème
+- un seul contributeur est chargé de _merger_ les branches individuelles sur la branche principale
 
 == Compléments Papyrus
 

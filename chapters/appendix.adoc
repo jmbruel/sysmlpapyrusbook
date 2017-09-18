@@ -2,7 +2,7 @@
 [appendix]
 [[acro]]
 == Acronymes
-Liste des acronymes utilisés dans ce livre.
+Liste (non exhaustive) des acronymes utilisés dans ce livre.
 
 [horizontal]
 ACT::
@@ -27,9 +27,8 @@ _**I**ntegrated **D**evelopment **E**nvironment_, environnement de développemen
 IS::
 **I**ngénierie **S**ystème
 
-[[MBSE]]
-MBSE::
-_**M**odel-**B**ased **S**ystems **E**ngineering_
+[[MBSE]] MBSE::
+_**M**odel-**B**ased **S**ystems **E**ngineering_, Ingénierie systèmes basée modèles
 
 PAR::
 _**P**arametric **D**iagram_, le diagramme paramétrique (cf. <<param>>)
@@ -38,7 +37,7 @@ PKG::
 _**P**ackage **D**iagram_, le diagramme des paquetages (cf. <<package>>)
 
 REQ::
-_**REQ**uirements **D**iagram_, le diagramme des exigences (cf. <<RE>>)
+_**REQ**uirements **D**iagram_, le diagramme des exigences (cf. <<reqs>>)
 
 SD::
 _**S**equence **D**iagram_, le diagramme de séquence (cf. <<seq>>)
@@ -89,7 +88,7 @@ _Package_:: Paquetages, mais nous préférons garder Package, admis dans le voca
 du moins en informatique.
 _Package Diagram_:: Diagramme des paquetages (cf. <<package>>)
 _Requirements_:: Exigences
-_Requirements Diagram_:: Diagramme des exigences (cf. <<RE>>)
+_Requirements Diagram_:: Diagramme des exigences (cf. <<reqs>>)
 _Sequence Diagram_:: Diagramme de Séquence (cf. <<seq>>)
 _Stakeholders_:: Parties prenantes (du système)
 _State Machine_:: Machine à état
