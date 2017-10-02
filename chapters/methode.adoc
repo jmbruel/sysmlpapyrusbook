@@ -16,3 +16,30 @@ endif::final[]
 
 .Langages, méthodes et outils : 3 piliers complémentaires (inspiré par http://www.prfc.fr/[prfc Roques])
 image::SysML-PRFC.svg[width=50%,scaledwidth=50%]
+
+:imagesoutdir: images
+
+[plantuml, "diagram-classes", svg]
+....
+(*) --> ===B1===
+--> "Traçabilité \ndes exigences"
+--> ===B2===
+===B1=== --> "Organiser \nles modèles"
+--> "Analyser les \nexigences clients"
+--> "Spécifier les \nexigences système"
+--> "Générer les \nsolutions possibles"
+--> ===B2===
+===B1=== --> "Analyses de \nperformance"
+--> ===B2===
+
+--> (*)
+....
+
+Les différentes étapes de cette méthode simplifiée :
+
+- Organiser les modèles
+- Analyser les exigences clients
+- Spécifier les exigences système
+- Générer les solutions possibles
+- Analyses de performance
+- Traçabilité des exigences

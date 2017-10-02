@@ -2,7 +2,8 @@
 [[etudeCas]]
 [reftext="Étude de cas"]
 = Étude de cas
-:FichierExigences: https://docs.google.com/spreadsheets/d/1-yaW8fZHG9i6r7vJ7NOU9-66-hnDYY66Vd9cmZTYs2A/edit?usp=sharing
+//:FichierExigences: https://docs.google.com/spreadsheets/d/1-yaW8fZHG9i6r7vJ7NOU9-66-hnDYY66Vd9cmZTYs2A/edit?usp=sharing
+:FichierExigences: https://docs.google.com/spreadsheets/d/1i-zIZV0Mel5tY0e0op2l-pQHbrX4BoqF8FZbHqHeyR8/edit#gid=0
 
 //-----------------------------------------------
 ifndef::final[]

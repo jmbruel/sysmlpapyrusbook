@@ -198,8 +198,8 @@ nécessitent de préciser l'utilisation que nous préconisons d'en faire.
 
 Pour les diagrammes structuraux, quand il s'agira de représenter les architectures,
 nous utiliserons les <<bddsec,diagrammes de définition de blocs>>, et pour représenter l'intérieur d'un système,
-nous utiliserons le <<ibd,diagramme de blocs internes>>.
-Le <<param,diagramme paramétrique>> n'est qu'un diagramme de blocs internes dédié aux relations entre valeurs
+nous utiliserons le <<ibd,diagramme de bloc interne>>.
+Le <<param,diagramme paramétrique>> n'est qu'un diagramme de bloc interne dédié aux relations entre valeurs
 (pour représenter des lois physiques par exemple).
 
 Pour les diagrammes comportementaux, nous utilisons la distinction entre comportement
@@ -235,6 +235,9 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 //---------------------------------------------------------------------------------
 
 La gestion des exigences est une activité cruciale pour le développement correct de tout système.
+Il s'agit généralement de la première étape d'un développement : lister les besoins du client
+pour s'assurer qu'on les a bien compris et pour pouvoir lier la suite de la modélisation et
+du développement à des besoins bien particuliers.
 Dans {sysml} les exigences peuvent être représentées sous deux formes complémentaires :
 
 - Diagramme des exigences ({req} ), utile pour représenter les relations entre exigences
@@ -251,23 +254,49 @@ image::{papyrusversion}/lierExigences.png[width="70%",scaledwidth=70%]
 === Table des exigences
 //- Import d'exigences => dans la section détaillée correspondante
 
+Les exigences sont plus souvent manipulées et représentées sous une forme tabulaire comme illustré dans la figure suivante :
+
 .Exemple de table d'exigence pour le {projectName}
 image::{papyrusversion}/table.png[width=70%,scaledwidth=70%]
 
+En effet les principaux logiciels de gestion des exigences sont basés sur cette représentation tabulaire.
+
+TIP: Ce format tabulaire permet d'ailleur d'importer/exporter facilement des exigences dans {papyrus}
+(cf. [red]#XXX ??? XXX#).
+
 == Diagramme des cas d'utilisation
+
+Une autre façon de modéliser les besoins utilisteurs, plus orientée {uml}, consiste
+à représenter les acteurs (appelés _Actors_) qui manipulent le système en les reliant aux différentes
+utilisations (appelées _Use Cases_) possibles du système.
 
 .Exemple de diagramme de cas d'utilisation
 image::{diagrams}/SHS_Use_Cases_Description.PNG[width=70%,scaledwidth=70%]
 
-== Diagramme de blocks
+Ce diagramme sera vu plus en détail dans la section <<uc-concepts>>.
 
-.Exemple de diagramme de blocks
+== Diagramme de blocs (BDD)
+
+Les modèles d'un système se décomposent en deux grandes familles :
+
+- les modèles comportementaux,
+qui servent à représenter la dynamique du système, son comportement;
+- les modèles structuraux,
+qui servent à représenter l'organisation du système en sous-systèmes et
+ainsi de suite jusqu'à arriver à des composants élémentaires.
+
+Le diagramme de blocs (_Blocks Definition Diagram_) est un diagramme structurel
+qui permet de représenter les liens entre blocs du système.
+On parle parfois de "vue boîte noire" car on ne représente que les composants d'un
+système et non leur organisation dans ce système.
+
+.Exemple de diagramme de blocs
 image::todo.jpg[]
 
 .Diagramme de contexte
 [NOTE]
 =====
-Un diagramme de blocks un peu particulier consiste à représenter le système dans son environnement.
+Un diagramme de blocs un peu particulier consiste à représenter le système dans son environnement.
 Ce "diagramme de contexte" est pratique d'un point de vue modélisation car le système et les autres éléments en interaction avec lui, sont très tôt identifiés et "référençables" (des `connectableElement` en termes {sysml}).
 
 .Exemple de diagramme de contexte
@@ -275,26 +304,39 @@ image::{diagrams}/Context_Diagram.PNG[width=70%,scaledwidth=70%]
 
 =====
 
-== IBD
+Ce diagramme sera vu plus en détail dans la section <<bddsec>>.
+
+== Diagramme de bloc interne (IBD)
+
+Le deuxième diagramme structurel de {sysml}, peut-être encore plus utilisé que le diagramme de blocs,
+est le diagramme de bloc interne (_Internal Blocks Diagram_)
+On parle parfois de "vue boîte blanche" car on représente non seulement les
+composants d'un système mais aussi leur organisation dans ce système.
+
+.Exemple de diagramme de bloc interne
+image::todo.jpg[]
 
 .Diagramme de contexte
 [NOTE]
 =====
 // Sebastien
-Nous avons parlé du diagramme de contexte dans la section précédente sur le diagramme de block.
-Une autre façon de représenter le système dans son environnement est d'utiliser le diagramme de bloc interne :
+Nous avons parlé du diagramme de contexte dans la section précédente sur le diagramme de blocs.
+Le diagramme de bloc interne est souvent utilisé pour représenter le contexte d'un système
+car il est plus précis (il décrit notamment comment sont reliés les éléments constitutifs).
 
 .Exemple de diagramme de contexte (vue interne)
 image::{diagrams}/Context_description_of_the_SHS.PNG[width=70%,scaledwidth=70%]
 
 =====
 
-== Diagrammes de séquence (sd)
+Ce diagramme sera vu plus en détail dans la section <<ibd>>.
+
+== Diagrammes de séquence (SD)
 // JMB
 //---------------------------------------------------------------------------------
 //Participants, acteurs, ligne de vie, etc.
 
-Le diagramme de séquence est un diagramme populaire pour représenter les
+Le diagramme de séquence (_Sequence Diagram_) est un diagramme populaire pour représenter les
 participants d'une interaction.
 
 Il est souvent intéressant de procéder par étapes, en définissant un premier
@@ -333,7 +375,7 @@ de messages entre eux.
 .Exemple de diagramme de séquence
 image::todo.jpg[]
 
-Pour plus de détails, cf. <<seq>>.
+Le diagramme de séquence sera vu plus en détail dans la section <<seq>>.
 
 == Diagramme d'états
 // Sebastien

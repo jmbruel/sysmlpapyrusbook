@@ -74,7 +74,7 @@ Un `{bdd}` peut représenter :
 
 ifdef::backend-deckjs[==== Principes de base (suite)]
 
-Un diagramme de bloc décrit les relations entre les blocs (compositions, généralisations, ...).
+Un diagramme de blocs décrit les relations entre les blocs (compositions, généralisations, ...).
 Ce diagramme utilise les mêmes éléments que le diagramme de classe {uml}.
 
 [[contextebdd]]

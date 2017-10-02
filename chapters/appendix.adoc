@@ -18,7 +18,7 @@ DSS::
 **D**iagramme de **S**équence **S**ystème (cf. <<seq>>)
 
 IBD::
-_**I**nternal **B**lock **D**iagram_, le diagramme de blocs internes  (cf. <<ibd>>)
+_**I**nternal **B**lock **D**iagram_, le diagramme de bloc interne  (cf. <<ibd>>)
 
 IDE::
 _**I**ntegrated **D**evelopment **E**nvironment_, environnement de développement intégré
@@ -81,7 +81,7 @@ _Actor_:: Acteur
 _Block Definition Diagram_:: Diagramme de définition de bloc (cf. <<bddsec>>)
 _Composite State_:: État composite (ou super-état)
 _Diagram Frame_ (et _Header_):: Cadre (et cartouche) (cf. <<cadre>>)
-_Internal Block Diagram_:: Diagramme de blocs internes  (cf. <<ibd>>)
+_Internal Block Diagram_:: Diagramme de bloc interne  (cf. <<ibd>>)
 _Multiplicity_:: Cardinalité (ou Multiplicité)
 _Parametric Diagram_:: Diagramme paramétrique (cf. <<param>>)
 _Package_:: Paquetages, mais nous préférons garder Package, admis dans le vocabulaire courant,

@@ -7,7 +7,7 @@ DESSINS=images/dessins
 
 $(OUTPUT)/%.html: %.$(EXT)
 	@echo '==> Compiling asciidoc files to generate HTML'
-	$(ASCIIDOCTOR) -a linkcss -o $@ $<
+	$(ASCIIDOCTOR) -r asciidoctor-diagram -a linkcss -o $@ $<
 
 $(OUTPUT)/%.final.html: %.$(EXT)
 		@echo '==> Compiling asciidoc files to generate final HTML'
