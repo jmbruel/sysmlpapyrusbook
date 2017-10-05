@@ -166,8 +166,10 @@ Dans ce qui suit, nous imaginerons que l'habitante qui occupe la maison s'appell
 et que son état de santé nécessite un suivi particulier :
 
 - Chaque matin, quand Alice s'éveille, un guidage lumineux au sol lui permet de simplement
-atteindre la salle de bain pour sa toilette. Si elle a choisi l'option, elle peut même
-bénéficier d'un guidage audio complémentaire.
+atteindre la salle de bain pour sa toilette.
+Si elle a choisi l'option, elle peut même bénéficier d'un guidage audio complémentaire.
+
+WARNING: JMB => Traduire en scénario
 
 - Alice bénéficie d'un "majordome intelligent"footnote:[Scénario tiré du Projet ESIR3 NSOC donné par {bc} à l'{esir}.],
 capable de :
