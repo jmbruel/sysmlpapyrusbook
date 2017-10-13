@@ -1,5 +1,5 @@
 #-----------------------------------------------------
-ASCIIDOCTOR=asciidoctor
+ASCIIDOCTOR=asciidoctor -a data-uri
 EXT=adoc
 OUTPUT=.
 DESSINS=images/dessins
