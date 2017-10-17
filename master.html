@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.6.1">
+<meta name="generator" content="Asciidoctor 1.5.6">
 <meta name="author" content="Jean-Michel Bruel, Sébastien Gérard">
 <title>SysML par la pratique avec Papyrus</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -20,7 +20,7 @@
 <span id="author2" class="author">Sébastien Gérard</span><br>
 <span id="email2" class="email"><a href="mailto:Sebastien.Gerard@cea.fr">Sebastien.Gerard@cea.fr</a></span><br>
 <span id="revnumber">version 1.2,</span>
-<span id="revdate">2017-10-05</span>
+<span id="revdate">2017-10-10</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table des Matières</div>
@@ -77,7 +77,12 @@
 <li><a href="#_questions_de_révision">4.14. Questions de révision</a></li>
 </ul>
 </li>
-<li><a href="#methode">5. Langages vs Méthode</a></li>
+<li><a href="#methode">5. Langages vs Méthode</a>
+<ul class="sectlevel2">
+<li><a href="#_notre_méthode_simplifiée">5.1. Notre méthode simplifiée</a></li>
+<li><a href="#_compléments">5.2. Compléments</a></li>
+</ul>
+</li>
 <li><a href="#GettingStarted">6. Getting Started with Papyrus-SysML</a>
 <ul class="sectlevel2">
 <li><a href="#_fondements">6.1. Fondements</a></li>
@@ -1195,6 +1200,56 @@ en <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> entre ces exigenc
 </tr>
 </tbody>
 </table>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Cette liste contient des exigences de différentes sortes :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>des contraintes</p>
+</li>
+<li>
+<p>des besoins utilisateurs</p>
+</li>
+<li>
+<p>des exigences de très haut niveau (métier)</p>
+</li>
+<li>
+<p>des exigences techniques</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Elles respectent la définition canonique d&#8217;une exigence :</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>"Une exigence est l’expression d’une condition ou d’une fonctionnalité à laquelle doit répondre un système ou un logiciel."</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; http://specief.org
+</div>
+</div>
+<div class="paragraph">
+<p>Néanmoins, à ce stade, peu peuvent être directement utilisée car, par exemple,
+elles ne sont pas mesurables (et donc pas vérifiables), ce qui est une caractéristique
+cruciale pour une exigence.
+Nous avons volontairement décrit les exigences initiales sous cette forme pour
+permettre d&#8217;illustrer le support de <a href="http://www.omgsysml.org/">SysML&#8482;</a> en terme de raffinement d&#8217;exigences.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_quelques_exemples_de_scénarios">2.4. Quelques exemples de scénarios</h3>
@@ -1206,9 +1261,25 @@ et que son état de santé nécessite un suivi particulier :</p>
 <ul>
 <li>
 <p>Chaque matin, quand Alice s&#8217;éveille, un guidage lumineux au sol lui permet de simplement
-atteindre la salle de bain pour sa toilette. Si elle a choisi l&#8217;option, elle peut même
-bénéficier d&#8217;un guidage audio complémentaire.</p>
+atteindre la salle de bain pour sa toilette.
+Si elle a choisi l&#8217;option, elle peut même bénéficier d&#8217;un guidage audio complémentaire.</p>
 </li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+JMB &#8658; Traduire en scénario
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Alice bénéficie d&#8217;un "majordome intelligent"<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</sup>,
 capable de :</p>
@@ -1245,7 +1316,7 @@ préalable dans le système.</p>
 <h3 id="_pour_aller_plus_loin">2.5. Pour aller plus loin</h3>
 <div class="paragraph">
 <p>Cette étude de cas a été utilisée dans le cadre d&#8217;un cours <a href="http://www.omgsysml.org/">SysML&#8482;</a> au <a href="http://www.master-developpement-logiciel.fr/">Master DL</a> ainsi
-que pour le workshop {mdetools}. Ces deux sources peuvent fournir nombre de modèles
+que pour le workshop <a href="http://mase.cs.queensu.ca/mdetools/">MDETools'17</a>. Ces deux sources peuvent fournir nombre de modèles
 complémentaires à ceux que vous trouverez dans ce livre.</p>
 </div>
 <div class="paragraph">
@@ -2307,7 +2378,7 @@ qu&#8217;il contient.
 </div>
 <div class="paragraph">
 <p>Le troisième pilier de toute approche de développement de système basée modèle
-concerne la méthodes de développement.</p>
+concerne les méthodes de développement.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2315,8 +2386,10 @@ concerne la méthodes de développement.</p>
 </div>
 <div class="title">Figure 18. Langages, méthodes et outils : 3 piliers complémentaires (inspiré par <a href="http://www.prfc.fr/">prfc Roques</a>)</div>
 </div>
+<div class="sect2">
+<h3 id="_notre_méthode_simplifiée">5.1. Notre méthode simplifiée</h3>
 <div class="paragraph">
-<p>Nous reprenons simplement dans cet ouvrage l&#8217;approcge simplifiée décrite par
+<p>Nous reprenons simplement dans cet ouvrage l&#8217;approche simplifiée décrite par
 <a href="#Friedenthal2016">[Friedenthal2016]</a> et illustrée dans la figure ci-dessous :</p>
 </div>
 <div class="imageblock">
@@ -2331,15 +2404,16 @@ concerne la méthodes de développement.</p>
 <dl>
 <dt class="hdlist1">Organiser les modèles</dt>
 <dd>
-<p>Il s&#8217;agit de &#8230;&#8203; Nous avons abordé ce point &#8230;&#8203;</p>
+<p>Il s&#8217;agit de &#8230;&#8203;
+Nous abordons ce point dans la section <a href="#org">Organisation</a>.</p>
 </dd>
 <dt class="hdlist1">Analyser les exigences clients</dt>
 <dd>
-<p>Il s&#8217;agit de &#8230;&#8203; Nous avons abordé ce point &#8230;&#8203;</p>
+<p>Il s&#8217;agit de &#8230;&#8203; Nous abordons ce point dans la section <a href="#reqs">Besoins clients et exigences</a>.</p>
 </dd>
 <dt class="hdlist1">Spécifier les exigences système</dt>
 <dd>
-<p>Il s&#8217;agit de &#8230;&#8203; Nous avons abordé ce point &#8230;&#8203;</p>
+<p>Il s&#8217;agit de &#8230;&#8203; Nous abordons ce point dans la section <a href="#reqs">Besoins clients et exigences</a>.</p>
 </dd>
 <dt class="hdlist1">Générer les solutions possibles</dt>
 <dd>
@@ -2354,6 +2428,29 @@ concerne la méthodes de développement.</p>
 <p>Il s&#8217;agit de &#8230;&#8203; Nous avons abordé ce point &#8230;&#8203;</p>
 </dd>
 </dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_compléments">5.2. Compléments</h3>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="title">Commentaire</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p>Systems Modeling Toolbox (<a href="https://model-based-systems-engineering.com/sysmod/">SYSMOD</a>), <a href="https://www.polarsys.org/capella/arcadia.html">Arcadia</a>, &#8230;&#8203; ??</p>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -7186,7 +7283,7 @@ cf. <a href="#niveauConcepts">Niveaux de concepts SysML</a></p>
 <div id="footer">
 <div id="footer-text">
 Version 1.2<br>
-Last updated 2017-08-28 12:06:00 CEST
+Last updated 2017-09-20 11:08:57 CEST
 </div>
 </div>
 </body>

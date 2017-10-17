@@ -15,12 +15,14 @@ Je sais plus ce qu'on voulait mettre là...
 endif::final[]
 
 Le troisième pilier de toute approche de développement de système basée modèle
-concerne la méthodes de développement.
+concerne les méthodes de développement.
 
 .Langages, méthodes et outils : 3 piliers complémentaires (inspiré par http://www.prfc.fr/[prfc Roques])
 image::SysML-PRFC.svg[width=50%,scaledwidth=50%]
 
-Nous reprenons simplement dans cet ouvrage l'approcge simplifiée décrite par
+== Notre méthode simplifiée
+
+Nous reprenons simplement dans cet ouvrage l'approche simplifiée décrite par
 <<Friedenthal2016>> et illustrée dans la figure ci-dessous :
 
 :imagesoutdir: images
@@ -43,14 +45,29 @@ Nous reprenons simplement dans cet ouvrage l'approcge simplifiée décrite par
 Les différentes étapes de cette méthode sont les suivantes.
 
 Organiser les modèles::
-Il s'agit de ... Nous avons abordé ce point ...
+Il s'agit de ...
+Nous abordons ce point dans la section <<org>>.
 Analyser les exigences clients::
-Il s'agit de ... Nous avons abordé ce point ...
+Il s'agit de ... Nous abordons ce point dans la section <<reqs>>.
 Spécifier les exigences système::
-Il s'agit de ... Nous avons abordé ce point ...
+Il s'agit de ... Nous abordons ce point dans la section <<reqs>>.
 Générer les solutions possibles::
 Il s'agit de ... Cette étape sort du cadre de ce livre.
 Analyses de performance::
 Il s'agit de ... Cette étape sort également du cadre de ce livre.
 Traçabilité des exigences::
 Il s'agit de ... Nous avons abordé ce point ...
+
+== Compléments
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Systems Modeling Toolbox ({SYSMOD}), {Arcadia}, ... ??
+*****
+====
+//-----------------------------------------------
+endif::final[]

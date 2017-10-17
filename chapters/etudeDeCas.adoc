@@ -160,6 +160,28 @@ en {papyrus} entre ces exigences et les artefacts de modélisation.
 | | Le _{projectShortName}_ doit donner la priorité aux énergies renouvelables.
 |======================
 
+[WARNING]
+====
+Cette liste contient des exigences de différentes sortes :
+
+- des contraintes
+- des besoins utilisateurs
+- des exigences de très haut niveau (métier)
+- des exigences techniques
+
+Elles respectent la définition canonique d'une exigence :
+[quote,http://specief.org]
+____
+"Une exigence est l’expression d’une condition ou d’une fonctionnalité à laquelle doit répondre un système ou un logiciel."
+____
+
+Néanmoins, à ce stade, peu peuvent être directement utilisée car, par exemple,
+elles ne sont pas mesurables (et donc pas vérifiables), ce qui est une caractéristique
+cruciale pour une exigence.
+Nous avons volontairement décrit les exigences initiales sous cette forme pour
+permettre d'illustrer le support de {sysml} en terme de raffinement d'exigences.
+====
+
 == Quelques exemples de scénarios
 
 Dans ce qui suit, nous imaginerons que l'habitante qui occupe la maison s'appelle Alice
