@@ -63,6 +63,7 @@ Pour l'organisation du système, on trouve le plus souvent :
 [[bddsec]]
 == _Block Definition Diagrams_
 
+ifdef::slides[:leveloffset: -1]
 
 === Principes de base
 
@@ -72,7 +73,7 @@ Un `{bdd}` peut représenter :
 - un bloc
 - un bloc de contrainte (_constraint block_)
 
-ifdef::backend-deckjs[==== Principes de base (suite)]
+ifdef::slides[=== Principes de base (suite)]
 
 Un diagramme de bloc décrit les relations entre les blocs (compositions, généralisations, ...).
 Ce diagramme utilise les mêmes éléments que le diagramme de classe {uml}.
@@ -100,7 +101,7 @@ _User defined_::
 .Exemple de définition de contraintes
 image::constraints.png[width="70%",scaledwidth=50%]
 
-
+/////
 ==== Propriétés
 
 On peut différencier 4 types de propriétés d'un bloc :
@@ -416,3 +417,4 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 
 . Quelles sont les différences entre une association dirigée (`->`), une composition (losange noir) et l'agrégation (losange blanc) ?
 . Puisqu'un `{bdd}` me donne souvent la liste des sous-systèmes (liens de composition), pourquoi ai-je besoin d'un `{ibd}` ?
+/////

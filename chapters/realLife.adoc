@@ -98,9 +98,20 @@ endif::final[]
 https://wiki.eclipse.org/Papyrus/UserGuide/Layers
 
 [[execution]]
-=== Model Execution
+=== Exécution de modèles
 
-Pour aller plus loin, consultez la documentation spécifique : https://wiki.eclipse.org/Papyrus/UserGuide/fUML_ALF.
+Pour bien concevoir un modèle, particulièrement s'il est dynamique (s'il représente un comportement),
+il est important de pouvoir le manipuler, l'animer.
+
+Les initiatives récentes de l'{omg} pour développer une sémantique exécutable à {UML},
+appelée {fuml}, ont été implémentées dans plusieurs outils :
+
+- Une implémentation récente de {fUML} est disponible ici :
+http://modeldriven.github.io/fUML-Reference-Implementation/
+- Une autre implémentation est disponible dans l'outil Cameo Simulation Toolkit de {MagicDraw}.
+- Pour aller plus loin avec {papyrus}, qui dispose aussi de son implémentatino de {fUML}, appelée {moka},
+consultez la documentation spécifique :
+https://wiki.eclipse.org/Papyrus/UserGuide/fUML_ALF.
 
 === Reverse Engineering
 

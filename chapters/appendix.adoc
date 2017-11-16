@@ -2,7 +2,7 @@
 [appendix]
 [[acro]]
 == Acronymes
-Liste (non exhaustive) des acronymes utilisés dans ce livre.
+Liste (non exhaustive) des acronymes utilisés dans ce livre :
 
 [horizontal]
 ACT::
@@ -16,6 +16,11 @@ DS::
 
 DSS::
 **D**iagramme de **S**équence **S**ystème (cf. <<seq>>)
+
+fUML::
+//_**f**oundational **UML**_, a subset of the standard Unified Modeling Language (UML) for which there are standard, precise execution semantics.
+_**f**oundational **UML**_, un sous-ensemble du standard {uml} pour lequel il existe une
+sémantique d'exécution standard et précise
 
 IBD::
 _**I**nternal **B**lock **D**iagram_, le diagramme de blocs internes  (cf. <<ibd>>)
