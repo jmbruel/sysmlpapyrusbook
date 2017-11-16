@@ -11,7 +11,7 @@ $(OUTPUT)/%.html: %.$(EXT)
 
 $(OUTPUT)/%.final.html: %.$(EXT)
 		@echo '==> Compiling asciidoc files to generate final HTML'
-		$(ASCIIDOCTOR) -a linkcss -a final -o $@ $<
+		$(ASCIIDOCTOR) -a linkcss -a data-uti -a final -o $@ $<
 
 $(OUTPUT)/%.pdf: %.$(EXT) $(DEP)
 	$(ASCIIDOCTOR) -a final \
