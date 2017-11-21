@@ -20,7 +20,7 @@
 <span id="author2" class="author">Sébastien Gérard</span><br>
 <span id="email2" class="email"><a href="mailto:Sebastien.Gerard@cea.fr">Sebastien.Gerard@cea.fr</a></span><br>
 <span id="revnumber">version 1.2,</span>
-<span id="revdate">2017-11-03</span>
+<span id="revdate">2017-11-21</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table des Matières</div>
@@ -117,10 +117,6 @@
 <li><a href="#_fondements_3">9.1. Fondements</a></li>
 <li><a href="#_organisation_du_système_et_des_modèles">9.2. Organisation du système et des modèles</a></li>
 <li><a href="#bddsec">9.3. <em>Block Definition Diagrams</em></a></li>
-<li><a href="#ibd">9.4. <em>Internal Block Diagrams</em></a></li>
-<li><a href="#param">9.5. <em>Parametric Diagrams</em></a></li>
-<li><a href="#_en_résumé_4">9.6. En résumé</a></li>
-<li><a href="#_questions_de_révision_4">9.7. Questions de révision</a></li>
 </ul>
 </li>
 <li><a href="#behavior">10. Comportement local</a>
@@ -137,8 +133,8 @@
 <li><a href="#act">11.3. Diagrammes d&#8217;activité</a></li>
 <li><a href="#_réutilisation">11.4. Réutilisation</a></li>
 <li><a href="#_À_vous_de_jouer_3">11.5. À vous de jouer</a></li>
-<li><a href="#_en_résumé_5">11.6. En résumé</a></li>
-<li><a href="#_questions_de_révision_5">11.7. Questions de révision</a></li>
+<li><a href="#_en_résumé_4">11.6. En résumé</a></li>
+<li><a href="#_questions_de_révision_4">11.7. Questions de révision</a></li>
 </ul>
 </li>
 <li><a href="#crossCuting">12. Préoccupations transverses de modélisation</a>
@@ -147,8 +143,8 @@
 <li><a href="#trace">12.2. La traçabilité des exigences</a></li>
 <li><a href="#allocation">12.3. Les mécanismes d&#8217;allocation</a></li>
 <li><a href="#paramt">12.4. Le diagramme paramétrique</a></li>
-<li><a href="#_en_résumé_6">12.5. En résumé</a></li>
-<li><a href="#_questions_de_révision_6">12.6. Questions de révision</a></li>
+<li><a href="#_en_résumé_5">12.5. En résumé</a></li>
+<li><a href="#_questions_de_révision_5">12.6. Questions de révision</a></li>
 </ul>
 </li>
 <li><a href="#realLife">13. Modéliser oui, mais&#8230;&#8203;</a>
@@ -3665,657 +3661,6 @@ Ce diagramme utilise les mêmes éléments que le diagramme de classe <a href="h
 </div>
 <div class="title">Figure 41. Exemple de définition de contraintes</div>
 </div>
-<div class="sect4">
-<h5 id="_propriétés">Propriétés</h5>
-<div class="paragraph">
-<p>On peut différencier 4 types de propriétés d&#8217;un bloc :</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1"><em>value properties</em></dt>
-<dd>
-<p>Des caractéristiques (quantifiables), aussi appelées simplement <em>values</em></p>
-</dd>
-<dt class="hdlist1"><em>parts</em></dt>
-<dd>
-<p>Les éléments qui composent le bloc (cf. <a href="#ibd"><em>Internal Block Diagrams</em></a>)</p>
-</dd>
-<dt class="hdlist1"><em>references</em></dt>
-<dd>
-<p>Les éléments auquel le bloc a accès (via des associations ou des agrégations)</p>
-</dd>
-<dt class="hdlist1"><em>constraint properties</em></dt>
-<dd>
-<p>Les contraintes que doivent respecter les propriétés (nous les verrons plus en détail, cf. <a href="#param"><em>Parametric Diagrams</em></a>).</p>
-</dd>
-</dl>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Les <em>values</em> sont ce qui se rapproche le plus des attributs de classes UML.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_em_value_types_em"><em>Value Types</em></h5>
-<div class="paragraph">
-<p>Pour associer un type aux valeurs, <a href="http://www.omgsysml.org/">SysML&#8482;</a> propose de définir des <em>Value Types</em>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/valueType.png" alt="valueType" width="60%">
-</div>
-<div class="title">Figure 42. Définition d&#8217;une <em>Value Types</em></div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_associations_entre_blocs">Associations entre blocs</h5>
-<div class="paragraph">
-<p>Il existe deux types de relations entre blocs :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>l’association (y compris l’agrégation et la composition)</p>
-</li>
-<li>
-<p>la généralisation/spécialisation</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Ces deux types de relations, bien connues en <a href="http://www.uml.org/">UML&#8482;</a>, permettent de matérialiser les liens qui existent entre les éléments du système. Avant d&#8217;aborder les associations, il est important de différencier la description d&#8217;éléments structurels sous la forme d&#8217;un bloc (au travers d&#8217;un <code><a href="#bdd">bdd</a></code> par exemple) et ces éléments pris individuellement. Ces derniers sont des <strong>instances</strong> individuelles du même bloc. Cette notion, très présente dans les approches orientées objets est souvent plus ardue à appréhender pour les ingénieurs systèmes. Il faut bien comprendre que la modélisation d&#8217;un bloc consiste à représenter l&#8217;ensemble des éléments qui caractérisent tout une série d&#8217;objets (des moteurs, des pompes, des données, etc.). Il serait fastidieux de les représenter tous (individuellement), et c&#8217;est donc leur "signature" que l&#8217;on représente. C&#8217;est pour cela qu&#8217;un bloc n&#8217;est pas un élément physique, mais simplement sa représentation, tandis qu&#8217;une instance de ce bloc représentera elle cet élément physique. C&#8217;est le cas notamment des participants d&#8217;un diagramme de séquence ou encore des parties d&#8217;un composé, qui sont des instances et non des blocs.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_association">Association</h5>
-<div class="paragraph">
-<p>Une <strong>association</strong> est un ensemble de liens permanents existant entre les instances de deux ou plusieurs blocs.
-On dira qu’une association lie plusieurs blocs ou que les blocs <strong>participent</strong> à l’association.</p>
-</div>
-<div class="paragraph">
-<p>Une association possède plusieurs propriétés :</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Dimension d’une association</dt>
-<dd>
-<p>Nombre de blocs mis en jeu par l’association
-(binaire : 2, ternaire : 3, n-aire : n).</p>
-</dd>
-</dl>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="title">Exemple d’association binaire</div>
-<div class="paragraph">
-<p>Soient les bloc <code>Fournisseurs</code> et <code>Produits</code>.
-On veut indiquer quels sont les produits susceptibles d’être fournis par chaque fournisseur et quels sont les fournisseurs susceptibles de fournir chaque produit.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/prod-fourn.png" alt="prod fourn" width="40%">
-</div>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Nom d’une association</dt>
-<dd>
-<p>Afin de clarifier les informations, il est important de nommer les associations.
-Il existe trois façons de nommer une association :</p>
-<div class="ulist">
-<ul>
-<li>
-<p>un verbe à l’infinitif (e.g., <code>Fournir</code>)</p>
-</li>
-<li>
-<p>un verbe conjugué avec un sens de lecture : <code>Fournit &gt;</code>  ou  <code>&lt; Est fourni par</code></p>
-</li>
-<li>
-<p>un rôle (placé à une extrémité de l’association)</p>
-</li>
-</ul>
-</div>
-</dd>
-<dt class="hdlist1">Cardinalité</dt>
-<dd>
-<p>Indique à combien d’instances minimum et maximum du bloc d’en face est lié toute instance du bloc de départ.
-Elle est représentée par un couple <code>(M..N)</code>.</p>
-</dd>
-</dl>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Attention, dans une cardinalité <code>M..N</code>, <code>M</code> doit toujours être inférieur ou égal à <code>N</code>.  Exemple : <code>3..10</code>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/cardinalite.png" alt="cardinalite" width="50%">
-</div>
-<div class="title">Figure 43. Exemple d&#8217;associtaion</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Notez que le terme anglais est <em>multiplicity</em>, mais que le terme français multiplicité est
-moins souvent utilisé. Nous le réserverons pour les nombre de parties d&#8217;un bloc par exemple.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_vers_le_code_que_signifie_vraiment_une_association">Vers le code : que signifie vraiment une association?</h5>
-<div class="paragraph">
-<p>En terme de logiciel, une <strong>association</strong> représente une contrainte sur la suite du développement : que ce soit un <strong>code</strong> (en langage orienté objet la plupart du temps) ou une <strong>base de donnée</strong>.</p>
-</div>
-<div class="paragraph">
-<p>Pour reprendre l&#8217;exemple précédent, cela signifie concrètement au niveau d&#8217;un code par exemple
-que depuis une variable <code>Produits</code> on doit être capable d&#8217;accéder à une variable (correspondante)
-de type tableau (ou liste, ou &#8230;&#8203;) de <code>Fournisseurs</code>.</p>
-</div>
-<div class="paragraph">
-<p>Ce qui peut donner en java :</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">public class Produits
-{
-//Produits Attributes
-private String idPro;
-private String designation;
-private float poids;
-
-//Produits Associations
-private List&lt;Fournisseurs&gt; fournisseurs;
-...</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>En terme d&#8217;ingénierie système, on utilisera plutôt des associations spécifiques (surtout la composition).</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="http://stackoverflow.com/questions/7718035/uml-association-and-dependency"><img src="images/aggreg-comp.png" alt="aggreg comp" width="60%"></a>
-</div>
-<div class="title">Figure 44. Deux façon de représenter une propriété de type <code>B</code></div>
-</div>
-<div class="paragraph">
-<p>En terme d&#8217;Ingénierie Système, une composition indique que l&#8217;élément est une partie intégrante (on parle de <em>part</em>) du tout (un composant, comme le moteur d&#8217;une voiture par exemple) tandis q&#8217;une agrégation indique que l&#8217;élément est une partie "externe" (on parle de <em>reference</em>) comme la batterie d&#8217;un portable.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Un moyen simple en terme logiciel de déterminer si une association <code>A&#8594;B</code> est une association dirigée (navigable dans un sens), une agrégation ou une composition est de raisonner en terme d&#8217;implémentation :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>c&#8217;est une agrégation si <code>b</code> est initialisé dans le constructeur de <code>A</code> ;</p>
-</li>
-<li>
-<p>c&#8217;est une composition si il est aussi détruit dans le destructeur de <code>A</code> ;</p>
-</li>
-<li>
-<p>c&#8217;est une association dirigée simple si aucun des deux cas précédent ne s&#8217;applique.</p>
-</li>
-</ul>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/compo.png" alt="compo" width="50%">
-</div>
-<div class="title">Figure 45. Exemple de composition</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_généralisation_spécialisation">Généralisation/Spécialisation</h5>
-<div class="paragraph">
-<p>Lorsque plusieurs blocs ont des caractéristiques en communs (propriétés, associations, comportement), il peut être utile de "factoriser" ces éléments en un bloc dont les autres vont "hériter".
-Quand on réalise ces liens hiérarchiques (on utilise souvent le terme "est un") en partant des blocs différents pour établir un nouveau bloc contenant les points communs on parle de <strong>généralisation</strong>.
-À l&#8217;inverse, quand on constate qu&#8217;un bloc possède réellement plusieurs déclinaisons différentes et que l&#8217;on créé alors des blocs spécifiques, on parle alors de <strong>spécialisation</strong>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/genspec.png" alt="genspec" width="50%">
-</div>
-<div class="title">Figure 46. Exemple de lien de généralisation/spécialisation</div>
-</div>
-<div class="paragraph">
-<p>On retrouve cette association entre blocs, mais aussi entre acteurs, cas d&#8217;utilisation, etc.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="ibd">9.4. <em>Internal Block Diagrams</em></h3>
-<div class="paragraph">
-<p>Un <code><a href="#ibd">ibd</a></code> décrit la structure interne d’un bloc sous forme de :</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">parts</dt>
-<dd>
-<p>Les parties qui constituent le système (ses sous-systèmes)</p>
-</dd>
-<dt class="hdlist1">ports</dt>
-<dd>
-<p>Elément d&#8217;interaction avec un bloc</p>
-</dd>
-<dt class="hdlist1">connecteurs</dt>
-<dd>
-<p>Liens entre ports</p>
-</dd>
-</dl>
-</div>
-<div class="sect3">
-<h4 id="_parts">9.4.1. Parts</h4>
-<div class="paragraph">
-<p>Les parties sont représentés par les éléments au bout d&#8217;une composition dans un <code><a href="#bdd">bdd</a></code>.
-Elles sont créés à la création du bloc qui les contient et sont détruites avec lui s&#8217;il
-est détruit (dépendance de vie).</p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Il ne s&#8217;agit pas de redessiner le BDD. Les <em>parts</em> sont des instances et non des classes (au sens objet).</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>On représente les <em>parts</em> comme des bloc en traits pleins
-et les <em>references</em> comme des blocs en trait pointillés.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/parts.png" alt="parts" width="40%">
-</div>
-<div class="title">Figure 47. Exemple de <em>Parts</em></div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/parts2.png" alt="parts2" width="60%">
-</div>
-<div class="title">Figure 48. Autre exemple de <em>Parts</em></div>
-</div>
-<div class="sect4">
-<h5 id="_ports_sysml_1_2">Ports (SysML 1.2)</h5>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>La dernière version de la spécification <a href="http://www.omg.org/spec/SysML/1.5/PDF/">SysML&#160;1.5</a> préconise l&#8217;abandon des ports tels que définis
-dans la version 1.2. Nous présentons les nouvelles notions dans la <a href="#port13">section qui suit</a>.</p>
-</div>
-<div class="paragraph">
-<p>Néanmoins, de par l&#8217;importance des exemples qui utilisent les notions habituelles de ports,
-et vu que tous les outils ne supportent pas encore les nouveaux ports, nous indiquons ici
-leur définition et recommandons pour l&#8217;instant de les utiliser.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Les ports :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>préservent l&#8217;encapsulation du bloc</p>
-</li>
-<li>
-<p>matérialise le fait que les interactions avec l&#8217;extérieur (via un port)
-sont transmise à une partie (via un connecteur)</p>
-</li>
-<li>
-<p>les ports connectés doivent correspondre (<em>kind</em>, <em>type</em>, <em>direction</em>, etc.)</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Les ports définissent les points d’interaction offerts (<code>«provided»</code>) et requis (<code>«required»</code>) entre les blocs.
-Les connecteurs peuvent traverser les "frontières" sans exiger de ports à chaque hiérarchie.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/ports-flots.png" alt="ports flots" width="60%">
-</div>
-<div class="title">Figure 49. Exemples de flots</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="./images/icons/sysml.jpeg" alt="Note">
-</td>
-<td class="content">
-<div class="title">Définition : Ports (OMG SysML v1.5, p. 75)</div>
-<div class="paragraph">
-<p><em>Ports are points at which external entities can connect to and interact with a block in different or more limited ways than connecting directly to the block itself.</em></p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/flots.png" alt="flots" width="90%">
-</div>
-<div class="title">Figure 50. Exemples de flots multi-physique entre ports</div>
-</div>
-<div class="paragraph">
-<p>Les ports peuvent être de nature classique (comme en <a href="http://www.uml.org/">UML&#8482;</a>) et représenter la fourniture ou le besoin de services. On parle alors
-de <em>*standard flows*</em>.</p>
-</div>
-<div class="paragraph">
-<p>Ils peuvent aussi être de nature "flux physique", on parle de <em>*flow ports*</em>.</p>
-</div>
-<div class="paragraph">
-<p>Les <code>Flux</code> peuvent être :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>atomiques (un seul flux),</p>
-</li>
-<li>
-<p>composites (agrégation de flux de natures différentes).</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Un <em>flow port</em> atomique ne spécifie qu’un seul type de flux en entrée ou en sortie (ou les deux),
-la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un bloc ou un <em>Value Type</em> représentant le type d’élément pouvant circuler en entrée ou en sortie du port.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="port13">9.4.2. Ports (SysML 1.3)</h4>
-<div class="paragraph">
-<p>La version 1.3 de la spécification <a href="http://www.omgsysml.org/">SysML&#8482;</a> introduit les concepts de :</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1"><em>proxy port</em></dt>
-<dd>
-<p>Ils doivent remplacer les ports <code>1.2</code> (ports de flots et ports standards) en en reprenant les caractéristiques
-et en ajoutant la possibilité d&#8217;imbrication et de spécification renforcée.</p>
-</dd>
-<dt class="hdlist1"><em>full port</em></dt>
-<dd>
-<p>En fait il s&#8217;agit du même concept qu&#8217;une partie qui serait exposée à l&#8217;extérieur.</p>
-</dd>
-</dl>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Pour une discussion sur les différences entre les deux ports : <a href="http://model-based-systems-engineering.com/2013/09/23/sysml-full-ports-versus-proxy-ports/" class="bare">http://model-based-systems-engineering.com/2013/09/23/sysml-full-ports-versus-proxy-ports/</a></p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="port14">9.4.3. Ports (SysML 1.4)</h4>
-<div class="paragraph">
-<p>La version <a href="http://www.omg.org/spec/SysML/1.5/PDF/">SysML&#160;1.5</a>&#8230;&#8203;</p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="title">Commentaire</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Check if this is still true in 1.4</p>
-</div>
-</div>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="param">9.5. <em>Parametric Diagrams</em></h3>
-<div class="paragraph">
-<p>Afin de capturer de manière précise les contraintes entre valeurs, ou encore les liens entre les sorties et les entrées d&#8217;un bloc, <a href="http://www.omgsysml.org/">SysML&#8482;</a> utilise trois concepts clefs :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><em>Constraints</em> (un type de bloc)</p>
-</li>
-<li>
-<p><em>Parametric diagram</em> (un type d'<a href="#ibd">ibd</a> )</p>
-</li>
-<li>
-<p><em>Value binding</em></p>
-</li>
-</ul>
-</div>
-<div class="sect3">
-<h4 id="_contraintes">9.5.1. Contraintes</h4>
-<div class="paragraph">
-<p>C&#8217;est un bloc particulier :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>avec un stéréotype <code><a href="#constraint">[constraint]</a></code> (au lieu de bloc)</p>
-</li>
-<li>
-<p>des paramètres en guise d&#8217;attributs</p>
-</li>
-<li>
-<p>des relations liant (contraignant) ces paramètres</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/constraints.png" alt="constraints" width="80%">
-</div>
-<div class="title">Figure 51. Exemple de contraintes</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="./images/icons/sysml.jpeg" alt="Note">
-</td>
-<td class="content">
-<div class="title">Définition : <em>ConstraintBlock</em> (OMG SysML v1.5, p. 105)</div>
-<div class="paragraph">
-<p><em>A constraint block is a block that packages the statement of a constraint so it may be applied in a reusable way to constrain properties of other blocks.</em></p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_diagramme_paramétrique_2">9.5.2. Diagramme paramétrique</h4>
-<div class="paragraph">
-<p>C&#8217;est une forme particulière de <em>Internal Block Definition</em></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/param.png" alt="param" width="90%">
-</div>
-<div class="title">Figure 52. Exemple de diagramme paramétrique</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_em_value_binding_em">9.5.3. <em>Value Binding</em></h4>
-<div class="paragraph">
-<p>Une fois les contraintes exprimées, il faut lier les paramètres (formels) à des valeurs (paramètre réel).
-C&#8217;est l&#8217;objet des <em>Value Binding</em>.</p>
-</div>
-<div class="paragraph">
-<p>Pour assigner des valeurs spécifiques, on utilise des <em>Block Configurations</em>;</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="http://books.google.fr/books?id=8KY2YZIiXv0C&pg=PA174&lpg=PA174&dq=SYSml+%22block+configuration%22&source=bl&ots=ZdxokRYj6l&sig=PlDHvR8qGZC97W-C_08Yk9Xb1RY&hl=fr&sa=X&ei=1jizUOXKBsXAhAeinYHACg&ved=0CEEQ6AEwAg#v=onepage&q=SYSml%20%22block%20configuration%22&f=false"><img src="images/blockconf.png" alt="blockconf" width="90%"></a>
-</div>
-<div class="title">Figure 53. Exemple de bloc de configuration</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_en_résumé_4">9.6. En résumé</h3>
-<div class="paragraph">
-<p>En résumé, il existe plusieurs diagrammes permettant d&#8217;exprimer la structure du système à concevoir. En fonction du niveau de détail nécessaire on peut voir les sous-systèmes comme des boîtes noires (des blocs) ou comme des boîtes blanches (grâce à l'`<a href="#ibd">ibd</a>` correspondant).</p>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 6. Place des aspects structurels</caption>
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"><a href="#reqs">Exigences</a></th>
-<th class="tableblock halign-left valign-top"><strong class="red"><a href="#archi">Structure</a></strong></th>
-<th class="tableblock halign-left valign-top"><a href="#behavior">Comportement</a></th>
-<th class="tableblock halign-left valign-top"><a href="#transvers">Transverse</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Organisation</p></th>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>package</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Analyse</p></th>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#bdd">bdd</a></code> <code><a href="#par">par</a></code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Conception</p></th>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#bdd">bdd</a></code> <code><a href="#par">par</a></code> <code><a href="#ibd">ibd</a></code> <code><a href="#dss">dss</a></code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Implémentation</p></th>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#bdd">bdd</a></code> <code><a href="#par">par</a></code> <code><a href="#ibd">ibd</a></code> <code><a href="#dss">dss</a></code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="_questions_de_révision_4">9.7. Questions de révision</h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Quelles sont les différences entre une association dirigée (<code>&#8594;</code>), une composition (losange noir) et l&#8217;agrégation (losange blanc) ?</p>
-</li>
-<li>
-<p>Puisqu&#8217;un <code><a href="#bdd">bdd</a></code> me donne souvent la liste des sous-systèmes (liens de composition), pourquoi ai-je besoin d&#8217;un <code><a href="#ibd">ibd</a></code> ?</p>
-</li>
-</ol>
 </div>
 </div>
 </div>
@@ -4347,7 +3692,7 @@ Utilisation OpaqueBehavior ?</p>
 <div class="sect2">
 <h3 id="_fondements_4">10.1. Fondements</h3>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 7. Place des comportements</caption>
+<caption class="title">Table 6. Place des comportements</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -4462,7 +3807,7 @@ les concepts disponibles.</p>
 <div class="content">
 <img src="images/transEditor.png" alt="transEditor" width="40%">
 </div>
-<div class="title">Figure 54. Editeur de transition "intelligent"</div>
+<div class="title">Figure 42. Editeur de transition "intelligent"</div>
 </div>
 </td>
 </tr>
@@ -4509,7 +3854,7 @@ sinon on se retrouvera avec une machine dite "<strong>indéterministe</strong>".
 <div class="content">
 <img src="images/dessins/initState.png" alt="initState" width="20%">
 </div>
-<div class="title">Figure 55. Etat initial</div>
+<div class="title">Figure 43. Etat initial</div>
 </div>
 </li>
 <li>
@@ -4518,7 +3863,7 @@ sinon on se retrouvera avec une machine dite "<strong>indéterministe</strong>".
 <div class="content">
 <img src="images/dessins/finalState.png" alt="finalState" width="20%">
 </div>
-<div class="title">Figure 56. Etat final</div>
+<div class="title">Figure 44. Etat final</div>
 </div>
 </li>
 </ul>
@@ -4542,7 +3887,7 @@ Nous verrons d&#8217;autres pseudo-états un peu plus tard.
 <div class="content">
 <img src="images/stm1.png" alt="stm1" width="70%">
 </div>
-<div class="title">Figure 57. Un exemple de diagramme d&#8217;états</div>
+<div class="title">Figure 45. Un exemple de diagramme d&#8217;états</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4607,7 +3952,7 @@ Il est également possible d&#8217;attacher un diagramme d&#8217;états à un é
 <div class="content">
 <img src="images/todo.jpg" alt="todo" width="50%">
 </div>
-<div class="title">Figure 58. Exemple d&#8217;état composite</div>
+<div class="title">Figure 46. Exemple d&#8217;état composite</div>
 </div>
 </div>
 <div class="sect3">
@@ -4621,7 +3966,7 @@ Chaque région contient ses propres états et transitions.</p>
 <div class="content">
 <img src="images/todo.jpg" alt="todo" width="30%">
 </div>
-<div class="title">Figure 59. Exemple de régions concurrentes</div>
+<div class="title">Figure 47. Exemple de régions concurrentes</div>
 </div>
 </div>
 <div class="sect3">
@@ -4641,7 +3986,7 @@ choice
 <div class="content">
 <img src="images/choice.png" alt="choice" width="40%">
 </div>
-<div class="title">Figure 60. Exemple d&#8217;utilisation du <em>choice</em></div>
+<div class="title">Figure 48. Exemple d&#8217;utilisation du <em>choice</em></div>
 </div>
 </td>
 </tr>
@@ -4774,7 +4119,7 @@ Nous revoyons le lecteur au chapitre <a href="#act">Diagrammes d&#8217;activité
 <div class="sect2">
 <h3 id="_fondements_5">11.1. Fondements</h3>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 8. Place des interactions</caption>
+<caption class="title">Table 7. Place des interactions</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -4961,13 +4306,13 @@ conditions sous lesquelles cette partie du scénario s&#8217;exécute.</p>
 <div class="content">
 <img src="images/fowl1.png" alt="Un algorithme" width="30%">
 </div>
-<div class="title">Figure 61. Exemple d' algorithme&#8230;&#8203; (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 49. Exemple d' algorithme&#8230;&#8203; (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/fowl2.png" alt="Sa modélisation" width="60%">
 </div>
-<div class="title">Figure 62. Et le diagramme correpondant (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 50. Et le diagramme correpondant (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div class="sect4">
 <h5 id="_exemple_de_conceptions">Exemple de conceptions</h5>
@@ -4983,13 +4328,13 @@ fonctionnalité. On mesure visuellement assez bien la différence entre la versi
 <div class="content">
 <img src="images/fowl3.png" alt="Conception 'centralisée'" width="60%">
 </div>
-<div class="title">Figure 63. Conception "centralisée" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 51. Conception "centralisée" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div id="fowler2" class="imageblock">
 <div class="content">
 <img src="images/fowl4.png" alt="Conception 'objet'" width="60%">
 </div>
-<div class="title">Figure 64. Conception "objet" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 52. Conception "objet" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -5021,19 +4366,19 @@ fonctionnalité. On mesure visuellement assez bien la différence entre la versi
 <div class="content">
 <img src="images/ucexp1.png" alt="Diagramme d&#8217;UC" width="30%">
 </div>
-<div class="title">Figure 65. Diagramme d&#8217;UC</div>
+<div class="title">Figure 53. Diagramme d&#8217;UC</div>
 </div>
 <div id="exp1-dss" class="imageblock">
 <div class="content">
 <img src="images/dssexp1.png" alt="Le DSS correspondant" width="50%">
 </div>
-<div class="title">Figure 66. Le DSS correspondant</div>
+<div class="title">Figure 54. Le DSS correspondant</div>
 </div>
 <div id="exp1-ds" class="imageblock">
 <div class="content">
 <img src="images/dsexp1.png" alt="Le DS correspondant" width="70%">
 </div>
-<div class="title">Figure 67. Le DS correspondant</div>
+<div class="title">Figure 55. Le DS correspondant</div>
 </div>
 </div>
 <div class="sect4">
@@ -5047,7 +4392,7 @@ en programmation). L&#8217;opérateur <em>ref</em> est alors utilisé.</p>
 <div class="content">
 <img src="images/todo.jpg" alt="todo">
 </div>
-<div class="title">Figure 68. Exemple de diagramme de séquence référençant un autre diagramme de séquence</div>
+<div class="title">Figure 56. Exemple de diagramme de séquence référençant un autre diagramme de séquence</div>
 </div>
 </div>
 <div class="sect4">
@@ -5069,7 +4414,7 @@ en programmation). L&#8217;opérateur <em>ref</em> est alors utilisé.</p>
 <div class="content">
 <img src="images/todo.jpg" alt="todo">
 </div>
-<div class="title">Figure 69. Exemple de contrainte de durée dans un diagramme de séquence</div>
+<div class="title">Figure 57. Exemple de contrainte de durée dans un diagramme de séquence</div>
 </div>
 </div>
 <div class="sect4">
@@ -5131,7 +4476,7 @@ mais aussi ce qui est produit, consommé, ou transformé, au cours de l’exécu
 <div class="content">
 <img src="images/act-pcmk1.png" alt="act pcmk1" width="70%">
 </div>
-<div class="title">Figure 70. Exemple de diagramme d&#8217;activité (tiré de <a href="#SeeBook2012">[SeeBook2012]</a>)</div>
+<div class="title">Figure 58. Exemple de diagramme d&#8217;activité (tiré de <a href="#SeeBook2012">[SeeBook2012]</a>)</div>
 </div>
 <div class="paragraph">
 <p>Les éléments de base du diagramme d’activité sont :</p>
@@ -5188,7 +4533,7 @@ Les actions sont contenues dans les activités, qui leur servent alors de contex
 <div class="content">
 <img src="images/action.png" alt="action" width="40%">
 </div>
-<div class="title">Figure 71. Transmission d&#8217;objet entre 2 actions</div>
+<div class="title">Figure 59. Transmission d&#8217;objet entre 2 actions</div>
 </div>
 <div class="paragraph">
 <p>Il existe un certain nombre de types d&#8217;actions prédéfinies en <a href="http://www.omgsysml.org/">SysML&#8482;</a> (héritées d&#8217;<a href="http://www.uml.org/">UML&#8482;</a>) :</p>
@@ -5288,7 +4633,7 @@ Les <em>object flow</em>, associés aux broches d&#8217;entrée/sortie (<em>inpu
 <div class="content">
 <img src="images/act-flow-continuous.png" alt="Un flot continu" width="30%">
 </div>
-<div class="title">Figure 72. Un exemple de flot continu</div>
+<div class="title">Figure 60. Un exemple de flot continu</div>
 </div>
 <div class="paragraph">
 <p>Pour permettre la modélisation des <strong>flots continus</strong>, <a href="http://www.omgsysml.org/">SysML&#8482;</a> ajoute à <a href="http://www.uml.org/">UML&#8482;</a> la possibilité de caractériser la nature du débit qui circule sur le flot : continu (par exemple, courant électrique, fluide, etc.) ou discret (par exemple, évenements, requêtes, etc.).
@@ -5342,7 +4687,7 @@ Elle est représentée par un losange qui possède un arc entrant et plusieurs a
 <div class="content">
 <img src="images/flow-ctrl.png" alt="flow ctrl" width="20%">
 </div>
-<div class="title">Figure 73. Les différents contrôles de flow SysML</div>
+<div class="title">Figure 61. Les différents contrôles de flow SysML</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -5385,7 +4730,7 @@ L’action d’appel est représentée graphiquement par une fourche à droite d
 <div class="content">
 <img src="images/act-call.png" alt="act call" width="20%">
 </div>
-<div class="title">Figure 74. Exemple de <em>callBehaviorAction</em> (UK)</div>
+<div class="title">Figure 62. Exemple de <em>callBehaviorAction</em> (UK)</div>
 </div>
 </div>
 <div class="sect2">
@@ -5411,12 +4756,12 @@ L’action d’appel est représentée graphiquement par une fourche à droite d
 </div>
 </div>
 <div class="sect2">
-<h3 id="_en_résumé_5">11.6. En résumé</h3>
+<h3 id="_en_résumé_4">11.6. En résumé</h3>
 <div class="paragraph">
 <p>Il existe de nombreux diagrammes pour exprimer les comportements. Ces modèles sont importants dans la mesure où ils peuvent servir à valider le futur système vis-à-vis de ces comportements exprimés. Ils ne sont donc véritablement utiles que lorsqu&#8217;ils sont couplés à des outils de simulation ou d&#8217;analyse (cf. <a href="#Analyse">[Analyse]</a>).</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 9. Place du Comportement</caption>
+<caption class="title">Table 8. Place du Comportement</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -5466,7 +4811,7 @@ L’action d’appel est représentée graphiquement par une fourche à droite d
 </table>
 </div>
 <div class="sect2">
-<h3 id="_questions_de_révision_5">11.7. Questions de révision</h3>
+<h3 id="_questions_de_révision_4">11.7. Questions de révision</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -5698,13 +5043,13 @@ vue (un <em>packetage</em> particulier, stéréotypé <code><a href="#view">[vie
 <div class="content">
 <img src="images/pkg-organisation2.png" alt="pkg organisation2" width="70%">
 </div>
-<div class="title">Figure 75. Exemple d&#8217;organisation simple</div>
+<div class="title">Figure 63. Exemple d&#8217;organisation simple</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/pkg-organisation-modelview.png" alt="pkg organisation modelview" width="40%">
 </div>
-<div class="title">Figure 76. Représentation de cette organisation dans un outil</div>
+<div class="title">Figure 64. Représentation de cette organisation dans un outil</div>
 </div>
 </div>
 <div class="sect3">
@@ -5815,7 +5160,7 @@ représentée par le stéréotype <code><a href="#allocate">[allocate]</a></code
 Nous les regroupons ici dans une matrice spécifique (qui se lit dans le sens des relations, par exemple un élément de structure comme un bloc <code>&lt;&lt;satisfy&gt;&gt;</code> une exigence).</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 10. Traçabilité</caption>
+<caption class="title">Table 9. Traçabilité</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -5885,14 +5230,14 @@ Il est possible d&#8217;exprimer cette allocation de plusieurs manières.</p>
 <div class="sect2">
 <h3 id="paramt">12.4. Le diagramme paramétrique</h3>
 <div class="paragraph">
-<p>C&#8217;est une forme particulière d'<em>Internal Block Definition</em> (cf. <a href="#param"><em>Parametric Diagrams</em></a>).
+<p>C&#8217;est une forme particulière d'<em>Internal Block Definition</em> (cf. <a href="#param">[param]</a>).
 On y retrouve les contraintes, déjà vues (cf. <a href="#contraintes">Exemple de définition de contraintes</a>), mais cette fois-ci on a la représentation graphique des liens entre les données.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/param.png" alt="param" width="90%">
 </div>
-<div class="title">Figure 77. Exemple de diagramme paramétrique</div>
+<div class="title">Figure 65. Exemple de diagramme paramétrique</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -5908,7 +5253,7 @@ On y retrouve les contraintes, déjà vues (cf. <a href="#contraintes">Exemple d
 <div class="content">
 <a class="image" href="http://www.omgsysml.org/SysML_2009_RFI_Response_Summary-bone-cloutier.pdf"><img src="images/survey4.png" alt="survey4" width="80%"></a>
 </div>
-<div class="title">Figure 78. Diagrammes les plus utilisés (tiré de <a href="#OMG2009">[OMG2009]</a>)</div>
+<div class="title">Figure 66. Diagrammes les plus utilisés (tiré de <a href="#OMG2009">[OMG2009]</a>)</div>
 </div>
 </td>
 </tr>
@@ -5930,14 +5275,14 @@ On y retrouve les contraintes, déjà vues (cf. <a href="#contraintes">Exemple d
 </div>
 </div>
 <div class="sect2">
-<h3 id="_en_résumé_6">12.5. En résumé</h3>
+<h3 id="_en_résumé_5">12.5. En résumé</h3>
 <div class="paragraph">
 <p><a href="http://www.omgsysml.org/">SysML&#8482;</a> propose un certain nombre de mécanismes pour organiser les différents modèles,
 tirés pour la plupart d&#8217;<a href="http://www.uml.org/">UML&#8482;</a>. Ces mécanismes seront plus faciles à comprendre au travers
 de leur utilisation concrète dans la suite.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 11. Organisation</caption>
+<caption class="title">Table 10. Organisation</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -5973,7 +5318,7 @@ de leur utilisation concrète dans la suite.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_questions_de_révision_6">12.6. Questions de révision</h3>
+<h3 id="_questions_de_révision_5">12.6. Questions de révision</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -6097,7 +5442,7 @@ Dans cette section nous illustrons l&#8217;utilisation des plugins <a href="http
 <div class="content">
 <img src="images/mergestrategy.png" alt="Stratégie de Merge" width="60%">
 </div>
-<div class="title">Figure 79. Pensez à sélectionner la bonne stratégie de Merge</div>
+<div class="title">Figure 67. Pensez à sélectionner la bonne stratégie de Merge</div>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -6338,7 +5683,7 @@ sémantique d&#8217;exécution standard et précise</p>
 IBD
 </td>
 <td class="hdlist2">
-<p><em><strong>I</strong>nternal <strong>B</strong>lock <strong>D</strong>iagram</em>, le diagramme de blocs internes  (cf. <a href="#ibd"><em>Internal Block Diagrams</em></a>)</p>
+<p><em><strong>I</strong>nternal <strong>B</strong>lock <strong>D</strong>iagram</em>, le diagramme de blocs internes  (cf. <a href="#ibd">[ibd]</a>)</p>
 </td>
 </tr>
 <tr>
@@ -6371,7 +5716,7 @@ IS
 PAR
 </td>
 <td class="hdlist2">
-<p><em><strong>P</strong>arametric <strong>D</strong>iagram</em>, le diagramme paramétrique (cf. <a href="#param"><em>Parametric Diagrams</em></a>)</p>
+<p><em><strong>P</strong>arametric <strong>D</strong>iagram</em>, le diagramme paramétrique (cf. <a href="#param">[param]</a>)</p>
 </td>
 </tr>
 <tr>
@@ -6509,7 +5854,7 @@ Nous reprenons ici la liste des traductions françaises que nous avons utilisée
 <em>Internal Block Diagram</em>
 </td>
 <td class="hdlist2">
-<p>Diagramme de blocs internes  (cf. <a href="#ibd"><em>Internal Block Diagrams</em></a>)</p>
+<p>Diagramme de blocs internes  (cf. <a href="#ibd">[ibd]</a>)</p>
 </td>
 </tr>
 <tr>
@@ -6525,7 +5870,7 @@ Nous reprenons ici la liste des traductions françaises que nous avons utilisée
 <em>Parametric Diagram</em>
 </td>
 <td class="hdlist2">
-<p>Diagramme paramétrique (cf. <a href="#param"><em>Parametric Diagrams</em></a>)</p>
+<p>Diagramme paramétrique (cf. <a href="#param">[param]</a>)</p>
 </td>
 </tr>
 <tr>
@@ -7101,7 +6446,7 @@ cf. <a href="#niveauConcepts">Niveaux de concepts SysML</a></p>
 <div id="footer">
 <div id="footer-text">
 Version 1.2<br>
-Last updated 2017-08-28 12:06:00 CEST
+Last updated 2017-11-21 15:07:52 CET
 </div>
 </div>
 </body>
