@@ -73,7 +73,7 @@ Le site qui répertorie tous les matériels utiles en complément de ce livre
 (tutoriels, modèles, compléments, corrections, etc.) se trouve ici : {siteurl}.
 
 Si vous souhaitez vérifier que votre installation fonctionne en créant un premier projet {papyrus},
-vous pouvez consulter la section <<gettingStarted>>.
+vous pouvez consulter la section <<GettingStarted>>.
 
 == Pour ceux qui veulent aller vite
 
