@@ -27,7 +27,9 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 | {implementation}	|					|        		|				|
 |======================
 
-== Papyrus
+== Installation des logiciels
+
+=== Papyrus
 
 Vérifiez que vous possédez bien sur votre machine : {papyrus} `{papyrusversion}`
 (ou une version supérieure).
@@ -35,7 +37,23 @@ Vérifiez que vous possédez bien sur votre machine : {papyrus} `{papyrusversion
 .Papyrus au lancement
 image::launching.png[papyrus,width=50%,scaledwidth=50%]
 
+Si ce n'est pas le cas, installez-le ou mettez-le à jour.
+Nous vous conseillons d'installer {papyrus} de cette façon plutôt que de le rajouter
+comme un plugin de votre installetion {eclipse}.
+
 TIP: Pour plus d'information, consultez https://www.eclipse.org/papyrus/download.html[guide d’installation du site de Papyrus].
+
+=== SysML
+
+Il vous faut ensuite installer le profil {sysml} (version 1.4).
+Pour cela, allez dans le menu menu:Help[Install New Software > ...] puis utilisez l'URL suivante pour
+retrouver le plugin : {pluginsysml}.
+
+=== Compléments
+
+Si vous souhaitez travailler avec {git} pour versionner vos modèles ou travailler
+de manière collaborative, ou si vous souhaitez utiliser des éléments avancés de 
+{papyrus}, rendez-vous au chapitre dédié (<<realLife>>).
 
 == Matériel de formation en complément de ce livre
 

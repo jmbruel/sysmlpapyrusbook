@@ -48,9 +48,9 @@ Voici quelques instructions qui vous permettrons de gérer simplement les versio
 // Commande obsolète
 //- Si vous avez installé directement {papyrus} (sans passer par le plugin {eclipse}), installez le composant {Papyrus} complémentaire menu:Help[Install Papyrus Additional Components > Papyrus UML Compare Feature].
 - Installez également le plugin suivant en allant sur menu:Help[Install New Software > ...] :
-http://download.eclipse.org/modeling/emf/compare/updates/logical/emf.compare/integration
+{pluginCompare}
 +
-image::{papyrusversion}/EMFCompare.png[Ajout d'EMFCompare,width=60%,scaledwidth=60%]
+image::{papyrusversion}/PapyrusCompare.png[Ajout d'EMFCompare,width=60%,scaledwidth=60%]
 +
 - Allez dans menu:Préférences[Team > Git > Synchronize] et sélectionner `Recursive Model Merge Strategy` dans `Preferred merge strategy`
 

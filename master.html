@@ -20,7 +20,7 @@
 <span id="author2" class="author">Sébastien Gérard</span><br>
 <span id="email2" class="email"><a href="mailto:Sebastien.Gerard@cea.fr">Sebastien.Gerard@cea.fr</a></span><br>
 <span id="revnumber">version 1.2,</span>
-<span id="revdate">2017-11-21</span>
+<span id="revdate">2017-11-24</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table des Matières</div>
@@ -54,7 +54,7 @@
 </li>
 <li><a href="#install">3. Avant de démarrer</a>
 <ul class="sectlevel2">
-<li><a href="#_papyrus">3.1. Papyrus</a></li>
+<li><a href="#_installation_des_logiciels">3.1. Installation des logiciels</a></li>
 <li><a href="#_matériel_de_formation_en_complément_de_ce_livre">3.2. Matériel de formation en complément de ce livre</a></li>
 <li><a href="#_pour_ceux_qui_veulent_aller_vite">3.3. Pour ceux qui veulent aller vite</a></li>
 </ul>
@@ -1324,7 +1324,9 @@ Il aborde également la question de l&#8217;organisation des modèles (packages,
 </tbody>
 </table>
 <div class="sect2">
-<h3 id="_papyrus">3.1. Papyrus</h3>
+<h3 id="_installation_des_logiciels">3.1. Installation des logiciels</h3>
+<div class="sect3">
+<h4 id="_papyrus">3.1.1. Papyrus</h4>
 <div class="paragraph">
 <p>Vérifiez que vous possédez bien sur votre machine : <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> <code>3.0</code>
 (ou une version supérieure).</p>
@@ -1334,6 +1336,11 @@ Il aborde également la question de l&#8217;organisation des modèles (packages,
 <img src="images/3.0/launching.png" alt="papyrus" width="50%">
 </div>
 <div class="title">Figure 3. Papyrus au lancement</div>
+</div>
+<div class="paragraph">
+<p>Si ce n&#8217;est pas le cas, installez-le ou mettez-le à jour.
+Nous vous conseillons d&#8217;installer <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> de cette façon plutôt que de le rajouter
+comme un plugin de votre installetion <a href="http://www.eclipse.org">eclipse</a>.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1346,6 +1353,23 @@ Pour plus d&#8217;information, consultez <a href="https://www.eclipse.org/papyru
 </td>
 </tr>
 </table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sysml">3.1.2. SysML</h4>
+<div class="paragraph">
+<p>Il vous faut ensuite installer le profil <a href="http://www.omgsysml.org/">SysML&#8482;</a> (version 1.4).
+Pour cela, allez dans le menu <span class="menuseq"><b class="menu">Help</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Install New Software</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">&#8230;&#8203;</b></span> puis utilisez l&#8217;URL suivante pour
+retrouver le plugin : <a href="https://hudson.eclipse.org/papyrus/job/papyrus-sysml-oxygen/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/" class="bare">https://hudson.eclipse.org/papyrus/job/papyrus-sysml-oxygen/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_compléments">3.1.3. Compléments</h4>
+<div class="paragraph">
+<p>Si vous souhaitez travailler avec {git} pour versionner vos modèles ou travailler
+de manière collaborative, ou si vous souhaitez utiliser des éléments avancés de
+<a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, rendez-vous au chapitre dédié (<a href="#realLife">Modéliser oui, mais&#8230;&#8203;</a>).</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1683,7 +1707,7 @@ Néanmoins cette notation est peu adaptée pour l&#8217;Ingénierie Système :</
 <div class="content">
 <img src="images/diff.png" alt="SysML and UML" width="50%">
 </div>
-<div class="title">Figure 4. Liens entre UML et SysML (tiré de <a href="#SysML">SysML 1.5, p. 9</a>)</div>
+<div class="title">Figure 4. Liens entre UML et SysML (tiré de <a href="#_sysml">SysML 1.5, p. 9</a>)</div>
 </div>
 <div class="paragraph">
 <p><a href="http://www.omgsysml.org/">SysML&#8482;</a> et <a href="http://www.uml.org/">UML&#8482;</a> sont parfois utilisés de manière complémentaire, mais la plupart du temps, <a href="http://www.uml.org/">UML&#8482;</a> est utilisé pour modéliser les aspects logiciels et <a href="http://www.omgsysml.org/">SysML&#8482;</a> pour modéliser les systèmes.</p>
@@ -2501,7 +2525,7 @@ Cela peut en effet poser des problèmes plus tard (<a href="#execution">exécuti
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="SmartHomeUseCase/SmartHomeSystemProject/diagrams/Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.PNG" alt="Outline of the Smart Home System SHS modelling project organisation" width="80%">
+<img src="images/3.0/Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.PNG" alt="Outline of the Smart Home System SHS modelling project organisation" width="80%">
 </div>
 <div class="title">Figure 22. Vue d&#8217;ensemble de notre projet de SmartHomeSystem</div>
 </div>
@@ -5426,10 +5450,10 @@ Dans cette section nous illustrons l&#8217;utilisation des plugins <a href="http
 <ul>
 <li>
 <p>Installez également le plugin suivant en allant sur <span class="menuseq"><b class="menu">Help</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Install New Software</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">&#8230;&#8203;</b></span> :
-<a href="http://download.eclipse.org/modeling/emf/compare/updates/logical/emf.compare/integration" class="bare">http://download.eclipse.org/modeling/emf/compare/updates/logical/emf.compare/integration</a></p>
+<a href="https://hudson.eclipse.org/papyrus/job/Papyrus-Compare-Oxygen-Integration/lastSuccessfulBuild/artifact/repository/" class="bare">https://hudson.eclipse.org/papyrus/job/Papyrus-Compare-Oxygen-Integration/lastSuccessfulBuild/artifact/repository/</a></p>
 <div class="imageblock">
 <div class="content">
-<img src="images/3.0/EMFCompare.png" alt="Ajout d&#8217;EMFCompare" width="60%">
+<img src="images/3.0/PapyrusCompare.png" alt="Ajout d&#8217;EMFCompare" width="60%">
 </div>
 </div>
 </li>
@@ -6446,7 +6470,7 @@ cf. <a href="#niveauConcepts">Niveaux de concepts SysML</a></p>
 <div id="footer">
 <div id="footer-text">
 Version 1.2<br>
-Last updated 2017-11-21 15:07:52 CET
+Last updated 2017-11-21 15:40:02 CET
 </div>
 </div>
 </body>
