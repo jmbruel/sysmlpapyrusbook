@@ -56,7 +56,7 @@ machine à état. Quelques situations typiques peuvent faire penser qu'il peut �
 === Transitions
 
 Cette réaction (nommée *transition*) possède un événement déclencheur, une condition (garde), un effet et un état cible,
-comme illustré dans la <<transition,figure suivante>>, qui se lit :
+comme illustré dans la <<transition>>, qui se lit :
 "Si le bloc est dans l'état 'Etat1' et que survient l'événement `événement` et que la condition `guarde` est vraie,
 alors exécuter `effet` et se plaver dans l'état `Etat2`."
 

@@ -5,4 +5,4 @@ asciidoctor-epub3/
 asciidoctor-pdf/
 master.html
 master.pdf
-
+.DS_Store

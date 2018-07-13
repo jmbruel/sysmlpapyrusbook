@@ -2,7 +2,7 @@
 
 //Papyrus
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
-:papyrusversion: 3.0
+:papyrusversion: 4.0
 :siteurl: https://bit.ly/sysmlbook
 :githuburl: https://github.com/jmbruel/sysmlpapyrusbook
 :pdfurl: {githuburl}/PapyrusSysMLinAction.pdf
@@ -88,6 +88,7 @@ endif::[]
 :semco: http://www.semcomdt.org/[SEMCO]
 :simulink: http://fr.mathworks.com/products/simulink/?nocookie=true[Simulink]
 :sirius: link:https://www.eclipse.org/proposals/modeling.sirius/[Sirius]
+:smart: link:http://smart-researchteam.github.io/[SM@RT]
 :sosym: http://www.sosym.org/[SoSyM]
 :sym: http://www.omg.org/spec/SyM/[SysML-Modelica]
 :sysml: http://www.omgsysml.org/[SysML(TM)]indexterm:[SysML]
@@ -126,7 +127,7 @@ endif::[]
 :univ-tlse: http://www.univ-toulouse.fr[Université de Toulouse]
 :uppa: http://www.univ-pau.fr/[Université de Pau et des Pays de l'Adour]
 :ups: http://www.univ-tlse3.fr[UPS]
-:univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Le Mirail]
+:univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Jean Jaurès]
 :ut2j: {univ-tlse2}
 
 //------- Normes et R̩f̩rences

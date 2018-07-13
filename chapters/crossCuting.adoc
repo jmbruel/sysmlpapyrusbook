@@ -143,7 +143,7 @@ _Realization_::
 	représentée par le stéréotype `<<realize>>`
 _Allocation_::
 	l'élément (e.g., une activité ou un _requirement_) est "alloué" sur celui à l'autre
-  bout de la flèche (un `block` la plupart du temps),
+  bout de la flèche (un `bloc` la plupart du temps),
 	représentée par le stéréotype `<<allocate>>`
 
 [[trace]]
@@ -178,7 +178,7 @@ Il est possible d'exprimer cette allocation de plusieurs manières.
 [red]#XXX ToDO XXX#
 
 - Parler du `\<<AllocatedTo>>`, compartiments des blocs et autres annotations.
-- Parler des zones d'allocation dans les machines à états où les diagrammes d'activités par exemple.
+- Parler des zones d'allocation dans les machines à états où les diagrammes d'activité par exemple.
 - Parler des `\<<allocate>>`.
 
 [[paramt]]

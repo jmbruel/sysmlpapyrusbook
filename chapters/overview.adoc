@@ -15,7 +15,7 @@ Au travers de cette présentation, on introduira également les différents diag
 //-----------------------------------------------
 endif::final[]
 
-Si vous ne devez lire qu'un seul chapitre, c'est celui-ci.
+Pour être plus pratique, si vous ne devez lire qu'un seul chapitre, c'est celui-ci.
 L'objectif de ce chapitre est de présenter l'ensemble des diagrammes {SysML} et à
 quelles questions ils peuvent permettre de répondre par rapport à des problématique d'{IS}.
 
@@ -42,7 +42,8 @@ ifdef::slides[]
 ** Introduction du diagramme de structure composite
 endif::slides[]
 
-En conclusion {UML} est une bonne base :
+
+{UML} est une bonne base :
 
 * Standard _De facto_ en génie logiciel
 * Fournit beaucoup de concepts utiles pour décrire des systèmes (même complexes)
@@ -65,26 +66,50 @@ Voici à quoi pourrait ressembler la fiche d'identité de {sysml} :
 
 include::fiche.txt[]
 
+=== Qui est "derrière"?
+
+Les évolutions de {sysml} sont pilotées par deux consortiums : l'{omg} d'une part pour les liens avec {UML} et l'{incose} d'autre part pour les liens avec l'ingénierie système.
+
+Il est intéressant de rappeler que {sysml} est un standard qui vient des utilisateurs,
+qui participent à sa définition et à ses évolutions.
+Voici une liste non exhaustive des entreprises et des acteurs qui participent à son évolution :
+
+Industrie::
+American Systems, BAE Systems, Boeing, CEA, Deere & Company, EADS Astrium, Eurostep, Israel Aircraft Industries,  Lockheed Martin, Motorola, NIST, Northrop Grumman, oose.de, Raytheon, Thales, ...
+
+Vendeurs d'outils::
+Artisan, EmbeddedPlus, Gentleware, IBM, Mentor Graphics, PivotPoint Technology, Sparx Systems, Vitech, ...
+
+Autres organisations::
+AP-233, Georgia Institute of Technology, AFIS, ...
+
+[TIP]
+====
+La liste complète des membres de l'{omg} est accessible à l'URL : http://www.omg.org/cgi-bin/apps/membersearch.pl
+====
+
 === SysML, c'est...
 
-Un ensemble de 9 types de diagrammes (cf. <<diags>>)::
+{sysml} est un ensemble de 9 types de diagrammes (cf. <<diags>>)::
 * Diagrammes structuraux
 ** Diagrammes de définition de blocs (`{bdd}`)
 ** Diagrammes internes de blocs (`{ibd}`)
 ** Diagrammes paramétriques (`{par}`)
 ** Diagrammes de packages (`{pkg}`)
 * Diagrammes comportementaux
-** Diagrammes de séquence (`{seq}`)
+** Diagrammes de séquences (`{seq}`)
 ** Diagrammes d'activité (`{act}`)
 ** Diagrammes de cas d'utilisation (`{uc}`)
 ** Diagrammes d'états (`{stm}`)
-* Diagramme d'exigence (`{req}`)
-Un profil {uml}::
+* Diagramme des exigences (`{req}`)
+{sysml} est un profil {uml}::
 	C'est à dire une *extension* de cette notation, un ensemble de nouveaux concepts et éléments qui sont définis à partir des éléments de base d'{uml}. Un exemple : le `bloc` {sysml} n'est qu'une redéfinition de la `classe` {uml}.
-Une notation::
- 	Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de *référence* à la modélisation des systèmes.
+{sysml} est une notation::
+ 	Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de *référence* dans la modélisation des systèmes.
 
 === SysML, ce n'est pas...
+
+Nous l'avons déjà évoqué, mais il convient d'insister, {sysml} n'est pas :
 
 Une méthode::
 	 	En effet, contrairement à ce que beaucoup pensent en l'abordant, {sysml} ne propose pas de démarche particulière de développement de système. C'est à la fois sa force (votre méthode existante pourra continuer à être utilisée) comme sa faiblesse car cette absence de guide méthodologique fait souvent défaut à son utilisation.
@@ -98,7 +123,7 @@ Ne dites pas "le SysML" mais tout simplement "SysML".
 
 === Différence avec UML
 
-La figure <<liensdiag,suivante>>, tirée de la <<SysML,spécification>>, résume bien les liens entre {sysml} et {uml}, à savoir que {sysml} reprend une partie seulement des concepts d'{uml} (appelée `UML4SysML`) en y ajoutant des concepts nouveaux.
+La <<liensdiag>>, tirée de la <<SysML,documentation officielle>>, résume bien les liens entre {sysml} et {uml}, à savoir que {sysml} reprend une partie seulement des concepts d'{uml} (appelée `UML4SysML`) en y ajoutant des concepts nouveaux.
 
 [[liensdiag]]
 .Liens entre UML et SysML (tiré de <<SysML,SysML 1.5, p. 9>>)
@@ -106,32 +131,14 @@ image::diff.png[SysML and UML,width=50%,scaledwidth=50%]
 
 {sysml} et {uml} sont parfois utilisés de manière complémentaire, mais la plupart du temps, {uml} est utilisé pour modéliser les aspects logiciels et {sysml} pour modéliser les systèmes.
 
-=== Qui est "derrière"?
-
-Il est intéressant de se rappeler que {sysml} est un standard qui vient des utilisateurs,
-qui participent à sa définition et à ses évolutions.
-Voici une liste non exhaustive des entreprises et des acteurs qui participent à son évolution :
-
-Industrie::
-American Systems, BAE Systems, Boeing, Deere & Company, EADS Astrium, Eurostep, Israel Aircraft Industries,  Lockheed Martin, Motorola, NIST, Northrop Grumman, oose.de, Raytheon, Thales, ...
-
-Vendeurs d'outils::
-Artisan, EmbeddedPlus, Gentleware, IBM, Mentor Graphics, PivotPoint Technology, Sparx Systems, Vitech, ...
-
-Autres organisations::
-AP-233, INCOSE, Georgia Institute of Technology, AFIS, ...
-
-[TIP]
-====
-La liste complète des membres de l'{omg} est accessible à l'URL : http://www.omg.org/cgi-bin/apps/membersearch.pl
-====
 
 //---------------------------------------------------------------------------------
 [[Outils]]
 === 	Outils SysML
 //---------------------------------------------------------------------------------
 
-Il va de soit que le meilleur outil {sysml} à ce jour est {papyrus}footnote:[La partialité des auteurs peut être questionnée, mais d'un point de vue complétude et respect de la norme, cette affirmation est régulièrement admise par la communauté.], dont ce livre vous détaille l'utilisation, mais il existe un certain nombre d'autres outils
+Il va de soit que le meilleur outil {sysml} à ce jour est {papyrus}footnote:[La partialité des auteurs peut être questionnée, mais d'un point de vue complétude et respect de la norme, cette affirmation est régulièrement admise par la communauté.].
+Ce livre vous détaille l'utilisation, mais il existe un certain nombre d'autres outils
 permettant de réaliser des modèles {SysML}.
 En voici une liste non exhaustive :
 
@@ -141,11 +148,10 @@ include::outils.txt[]
 
 === Organisation des différents diagrammes
 
-Les ingénieurs systèmes ont l'habitude d'utiliser des représentations graphiques (plans,
-	graphes, ...).
+Les ingénieurs systèmes ont l'habitude d'utiliser des représentations graphiques (plans, graphes, ...).
 {sysml} propose de couvrir la modélisation d'un système au travers de 9 diagrammes.
 Ces diagrammes couvrent	les aspects structurels et comportementaux du système ainsi que les exigences.
-La figure suivante présente cette organisation en faisant, au passage, le lien avec ceux d'{uml} :
+La <<diags>> présente cette organisation en faisant, en même temps, le lien avec ceux d'{uml} :
 
 [[diags]]
 .Les 9 diagrammes SysML et leur lien (historique) avec UML
@@ -192,22 +198,21 @@ d'une machine à état, paramètres d'une activité, etc.).
 
 Comme nous l'avons vu précédemment les 2 grandes catégories de diagrammes
 {sysml} sont les diagrammes structuraux et les diagrammes comportementaux.
-Si l'on met à part le <<reqs,diagramme des exigences>> (représentation visuelle des exigences) et
-le <<package,diagramme de _packages_>> (représentation visuelle des _packages_), les autres diagrammes
+Mis à part les 2 diagrammes <<reqs, des exigences>> (`{req}`, représentation visuelle des exigences) et <<package, de _packages_>> (`{pkg}`, représentation visuelle des _packages_), les autres diagrammes
 nécessitent de préciser l'utilisation que nous préconisons d'en faire.
 
-Pour les diagrammes structuraux, quand il s'agira de représenter les architectures,
-nous utiliserons les <<bddsec,diagrammes de définition de blocs>>, et pour représenter l'intérieur d'un système,
-nous utiliserons le <<ibd,diagramme de blocs internes>>.
-Le <<param,diagramme paramétrique>> n'est qu'un diagramme de blocs internes dédié aux relations entre valeurs
+Pour les diagrammes structuraux (statiques), quand il s'agira de représenter les architectures,
+nous utiliserons les <<bddsec,diagrammes de définition de blocs>> (`{bdd}`), et pour représenter l'intérieur d'un système,
+nous utiliserons le <<ibd,diagramme de blocs internes>> (`{ibd}`).
+Le <<param,diagramme paramétrique>> (`{par}`) n'est qu'un diagramme de blocs internes dédié aux relations entre valeurs
 (pour représenter des lois physiques par exemple).
 
-Pour les diagrammes comportementaux, nous utilisons la distinction entre comportement
-global et local, comme indiqué dans la <<comportements,figure suivante>>.
-Ainsi les <<usecase,diagramme des cas d'utilisation>> et les <<seq,diagrammes de séquences>>
-seront plutôt utilisés pour représenter le coprtement global tel qu'attendu par les partie prenantes
+Pour les diagrammes comportementaux (dynamiques), nous utilisons la distinction entre comportement
+global et local, comme indiqué dans la  <<comportements>>.
+Ainsi les diagrammes <<usecase,des cas d'utilisation>> (`{uc}`) et <<seq,de séquences>> (`{sd}`)
+seront plutôt utilisés pour représenter le comprtement global tel qu'attendu par les parties prenantes
 du système.
-Tandis que les <<act,diagrammes d'activité>> et les <<stm,diagrammes d'état>> seront plutôt
+Tandis que les <<act,diagrammes d'activité>> (`{act}`) et les <<stm,diagrammes d'état>> (`{stm}`) seront plutôt
 utilisés en phase de conception.
 
 [[comportements]]
@@ -234,24 +239,26 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 // Sebastien
 //---------------------------------------------------------------------------------
 
-La gestion des exigences est une activité cruciale pour le développement correct de tout système.
+La gestion des exigences est une activité cruciale pour la réussite de la conception et le développement de tout système.
 Dans {sysml} les exigences peuvent être représentées sous deux formes complémentaires :
 
 - Diagramme des exigences ({req} ), utile pour représenter les relations entre exigences
-- Table d'exigences, utile dès qu'il y a un grand nombre d'exigences
+- Table des exigences, utile dès qu'il y a un grand nombre d'exigences
 
 === Diagramme des exigences
 
 Ce diagramme permet de représenter graphiquement les exigences et leurs relations.
-Il sera vu plus en détail dans la section <<reqs>>, mais en voici un exemple.
+Il sera vu plus en détail dans la section <<reqs>>, mais en voici un exemple appliqué à la {mib} : une exigence (`Security`) est complsée de plusieurs sous-exigences.
 
-.Exemple de diagramme d'exigences
+.Exemple de diagramme des exigences
 image::{papyrusversion}/lierExigences.png[width="70%",scaledwidth=70%]
 
 === Table des exigences
 //- Import d'exigences => dans la section détaillée correspondante
 
-.Exemple de table d'exigence pour le {projectName}
+Il est souvent plus pratique de lister les exigences sous forme de table.
+
+.Exemple de table des exigences pour le {projectName}
 image::{papyrusversion}/table.png[width=70%,scaledwidth=70%]
 
 == Diagramme des cas d'utilisation
@@ -259,15 +266,15 @@ image::{papyrusversion}/table.png[width=70%,scaledwidth=70%]
 .Exemple de diagramme de cas d'utilisation
 image::{diagrams}/SHS_Use_Cases_Description.PNG[width=70%,scaledwidth=70%]
 
-== Diagramme de blocks
+== Diagramme de blocs
 
-.Exemple de diagramme de blocks
+.Exemple de diagramme de blocs
 image::todo.jpg[]
 
 .Diagramme de contexte
 [NOTE]
 =====
-Un diagramme de blocks un peu particulier consiste à représenter le système dans son environnement.
+Un diagramme de blocs un peu particulier consiste à représenter le système dans son environnement.
 Ce "diagramme de contexte" est pratique d'un point de vue modélisation car le système et les autres éléments en interaction avec lui, sont très tôt identifiés et "référençables" (des `connectableElement` en termes {sysml}).
 
 .Exemple de diagramme de contexte
@@ -281,7 +288,7 @@ image::{diagrams}/Context_Diagram.PNG[width=70%,scaledwidth=70%]
 [NOTE]
 =====
 // Sebastien
-Nous avons parlé du diagramme de contexte dans la section précédente sur le diagramme de block.
+Nous avons parlé du diagramme de contexte dans la section précédente sur le diagramme de bloc.
 Une autre façon de représenter le système dans son environnement est d'utiliser le diagramme de bloc interne :
 
 .Exemple de diagramme de contexte (vue interne)
@@ -289,18 +296,18 @@ image::{diagrams}/Context_description_of_the_SHS.PNG[width=70%,scaledwidth=70%]
 
 =====
 
-== Diagrammes de séquence (sd)
+== Diagrammes de séquences (sd)
 // JMB
 //---------------------------------------------------------------------------------
 //Participants, acteurs, ligne de vie, etc.
 
-Le diagramme de séquence est un diagramme populaire pour représenter les
-participants d'une interaction.
+Le diagramme de séquences est un diagramme populaire pour représenter les
+participants et leurs interactions.
 
 Il est souvent intéressant de procéder par étapes, en définissant un premier
 diagramme représentant les interactions entre le système (vue comme une boîte
 noire) et les différents acteurs impliqués dans ces interactions.
-Dans ce diagramme, appelé diagramme de séquence système (<<dss,DSS>>), le seul
+Dans ce diagramme, appelé diagramme de séquences système (<<dss,DSS>>), le seul
 participant (en dehors des acteurs) est le système lui-même.
 
 Il est ensuite possible de représenter le même cas d'utilisation, mais en
@@ -308,14 +315,14 @@ considérant cette fois-ci le système comme une "boîte blanche", c'est à dire
 en précisant les différents participants impliqués par ce cas.
 
 [[dss]]
-=== Diagrammes de séquence système
+=== Diagrammes de séquences système
 
-Les diagrammes de séquence système (DSS) sont des _Sequence Diagrams_ {uml}
+Les diagrammes de séquences système (DSS) sont des _Sequence Diagrams_ {uml}
 classiques où seul le système est représenté comme une boîte noire en
-interaction avec son environnement (les utilisateurs généralement).
+interaction avec son environnement (les utilisateurs ou les périphériques généralement).
 
 Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails.
-Il convient donc mieux à l'ingénierie système qu'un diagramme de séquence
+Il convient donc mieux à l'ingénierie système qu'un diagramme de séquences
 classique.
 
 
@@ -326,11 +333,11 @@ image::dss.png[width="50%",scaledwidth="40%"]
 
 === Diagramme de séquences
 
-Le diagramme de séquence permet de représenter les différents participants
+Le diagramme de séquences permet de représenter les différents participants
 (dont la ligne de vie représente une chronologie des événements) et les échanges
 de messages entre eux.
 
-.Exemple de diagramme de séquence
+.Exemple de diagramme de séquences
 image::todo.jpg[]
 
 Pour plus de détails, cf. <<seq>>.
@@ -353,7 +360,7 @@ Pour plus de détails, cf. <<seq>>.
 Ce type de diagramme permet d'organiser les éléments de modèle.
 Un _package_ peut contenir d'autres _package_, des blocs, des diagrammes, etc.
 
-NOTE: Un _package_ n'est pas un composant mais une unité d'organisation du modèle.
+NOTE: Un _package_ n'est pas un composant mais une unité d'organisation du modèle.
 Un _package_ constitue un espace de nommage (_namespace_) pour les éléments
 qu'il contient.
 

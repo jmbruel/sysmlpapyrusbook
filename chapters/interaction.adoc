@@ -105,7 +105,7 @@ image::fowl2.png["Sa modélisation",width="60%",scaledwidth=50%]
 
 ==== Exemple de conceptions
 
-Le diagramme de séquences est un diagramme utile pour montrer les "responsabilités" de
+Le diagramme de séquence est un diagramme utile pour montrer les "responsabilités" de
 certains objets par rapport aux autres. Dans un code logiciel, on peut y déceler plus
 facilement que tel objet est plus chargé que d'autres. Les deux diagrammes suivants
 (tirés de <<Fowler2004>>) montrent deux conceptions différentes possibles pour l'implémentation d'une même

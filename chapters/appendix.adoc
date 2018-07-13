@@ -45,7 +45,7 @@ REQ::
 _**REQ**uirements **D**iagram_, le diagramme des exigences (cf. <<reqs>>)
 
 SD::
-_**S**equence **D**iagram_, le diagramme de séquence (cf. <<seq>>)
+_**S**equence **D**iagram_, le diagramme de séquences (cf. <<seq>>)
 
 STM::
 _**ST**ate **M**achine Diagram_, le diagramme d'états (cf. <<stm>>)
@@ -94,7 +94,7 @@ du moins en informatique.
 _Package Diagram_:: Diagramme des paquetages (cf. <<package>>)
 _Requirements_:: Exigences
 _Requirements Diagram_:: Diagramme des exigences (cf. <<reqs>>)
-_Sequence Diagram_:: Diagramme de Séquence (cf. <<seq>>)
+_Sequence Diagram_:: Diagramme de séquences (cf. <<seq>>)
 _Stakeholders_:: Parties prenantes (du système)
 _State Machine_:: Machine à état
 _State Machine Diagram_:: Diagramme d'états (cf. <<stm>>)
@@ -164,7 +164,7 @@ et où ils sont abordés dans le livre.
 |	Concept         |   Lien
 | Exigences       |		<<reqs>>
 | derive, verify, satisfy, refine, trace, containment | <<reqs>>
-| Diagramme d'exigences | <<reqs>>
+| Diagramme des exigences | <<reqs>>
 | Diagramme des cas d'utilisation | <<usecase>>
 | use case, actor, and subject | <<usecase>>
 | association, include, extend, generalization | <<usecase>>
