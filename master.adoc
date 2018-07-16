@@ -1,6 +1,6 @@
 = SysML par la pratique avec Papyrus
 Jean-Michel Bruel <bruel@irit.fr>; Sébastien Gérard <Sebastien.Gerard@cea.fr>
-v1.2, {localdate}
+v1.4, {localdate}
 :myinitials: JMB
 :doctype: book
 :toc: left

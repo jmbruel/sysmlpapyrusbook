@@ -10,8 +10,11 @@
 :specUseCase: http://bit.ly/SmartHomeUseCase
 :diagrams: ../../SmartHomeUseCase/SmartHomeSystemProject/diagrams
 //:pluginsysml: https://hudson.eclipse.org/papyrus/job/papyrus-sysml-oxygen/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/
-:pluginsysml: https://hudson.eclipse.org/papyrus/job/papyrus-sysml-photon/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/
-:pluginCompare: https://hudson.eclipse.org/papyrus/job/Papyrus-Compare-Oxygen-Integration/lastSuccessfulBuild/artifact/repository/
+:pluginsysml: http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/photon/
+:pluginsysmlnightly: https://hudson.eclipse.org/papyrus/job/papyrus-sysml-photon/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/
+//:pluginCompare: https://hudson.eclipse.org/papyrus/job/Papyrus-Compare-Oxygen-Integration/lastSuccessfulBuild/artifact/repository/
+:pluginCompare: http://download.eclipse.org/modeling/mdt/papyrus/components/compare/updates/integration
+:papyruscompare: https://wiki.eclipse.org/Papyrus_Compare[Papyrus Compare]
 
 //Layouts
 :standHeight: 250

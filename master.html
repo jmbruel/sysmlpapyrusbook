@@ -19,7 +19,7 @@
 <span id="email" class="email"><a href="mailto:bruel@irit.fr">bruel@irit.fr</a></span><br>
 <span id="author2" class="author">Sébastien Gérard</span><br>
 <span id="email2" class="email"><a href="mailto:Sebastien.Gerard@cea.fr">Sebastien.Gerard@cea.fr</a></span><br>
-<span id="revnumber">version 1.2,</span>
+<span id="revnumber">version 1.4,</span>
 <span id="revdate">2018-07-16</span>
 </div>
 <div id="toc" class="toc2">
@@ -1371,8 +1371,18 @@ Pour plus d&#8217;information, consultez <a href="https://www.eclipse.org/papyru
 <h4 id="_sysml">3.1.2. SysML</h4>
 <div class="paragraph">
 <p>Il vous faut ensuite installer le profil <a href="http://www.omgsysml.org/">SysML&#8482;</a> (version 1.4).
-Pour cela, allez dans le menu <span class="menuseq"><b class="menu">Help</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Install New Software</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">&#8230;&#8203;</b></span> puis utilisez l&#8217;URL suivante pour
-retrouver le plugin : <a href="https://hudson.eclipse.org/papyrus/job/papyrus-sysml-photon/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/" class="bare">https://hudson.eclipse.org/papyrus/job/papyrus-sysml-photon/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/</a>.</p>
+Pour cela, deux possibilités :</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Aller dans le menu <span class="menuseq"><b class="menu">Help</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Install New Software</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">&#8230;&#8203;</b></span> puis utilisez l&#8217;URL suivante pour
+retrouver le plugin officiel : <a href="http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/photon/" class="bare">http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/photon/</a>.</p>
+</li>
+<li>
+<p>Récupérer directement depuis l&#8217;<a href="https://marketplace.eclipse.org/content/papyrus-sysml-14">eclipse market place</a></p>
+</li>
+</ol>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1381,14 +1391,21 @@ retrouver le plugin : <a href="https://hudson.eclipse.org/papyrus/job/papyrus-sy
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-<div class="paragraph">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
 <p>Pour vérifier les éléments installés allez dans <span class="menuseq"><b class="menu">About&#8230;&#8203;</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Installation Details</b></span> :</p>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="images/4.0/installation-details.png" alt="launching" width="40%">
 </div>
 <div class="title">Figure 4. Détails d&#8217;installation [v.4.0]</div>
+</div>
+</li>
+<li>
+<p>Si vous souhaitez utiliser la toute dernière version (non stable), utilisez plutôt l&#8217;URL suivante : <a href="https://hudson.eclipse.org/papyrus/job/papyrus-sysml-photon/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/" class="bare">https://hudson.eclipse.org/papyrus/job/papyrus-sysml-photon/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/</a>.</p>
+</li>
+</ol>
 </div>
 </td>
 </tr>
@@ -5483,7 +5500,7 @@ Par exemple et en vrac :</p>
 </div>
 <div class="paragraph">
 <p>Pour pouvoir collaborer à plusieurs autour du même modèle, il est nécessaire d&#8217;utiliser des outils appropriés.
-Dans cette section nous illustrons l&#8217;utilisation des plugins <a href="http://www.eclipse.org">eclipse</a> : <a href="http://wiki.eclipse.org/EGit">EGit</a> et <a href="https://www.eclipse.org/emf/compare/">EMFCompare</a>.</p>
+Dans cette section nous illustrons l&#8217;utilisation des plugins <a href="http://www.eclipse.org">eclipse</a> : <a href="http://wiki.eclipse.org/EGit">EGit</a> (qui doit déjà être intégré à votre <a href="http://www.eclipse.org">eclipse</a> et <a href="https://wiki.eclipse.org/Papyrus_Compare">Papyrus Compare</a>.</p>
 </div>
 <div class="sect3">
 <h4 id="_vade_mecum">13.1.1. Vade Mecum</h4>
@@ -5493,12 +5510,24 @@ Dans cette section nous illustrons l&#8217;utilisation des plugins <a href="http
 <div class="ulist">
 <ul>
 <li>
-<p>Installez également le plugin suivant en allant sur <span class="menuseq"><b class="menu">Help</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Install New Software</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">&#8230;&#8203;</b></span> :
-<a href="https://hudson.eclipse.org/papyrus/job/Papyrus-Compare-Oxygen-Integration/lastSuccessfulBuild/artifact/repository/" class="bare">https://hudson.eclipse.org/papyrus/job/Papyrus-Compare-Oxygen-Integration/lastSuccessfulBuild/artifact/repository/</a></p>
+<p>Installez également le plugin <a href="https://wiki.eclipse.org/Papyrus_Compare">Papyrus Compare</a> en allant sur <span class="menuseq"><b class="menu">Help</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Install New Software</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">&#8230;&#8203;</b></span> et en entrant l&#8217;URL :
+<a href="http://download.eclipse.org/modeling/mdt/papyrus/components/compare/updates/integration" class="bare">http://download.eclipse.org/modeling/mdt/papyrus/components/compare/updates/integration</a></p>
 <div class="imageblock">
 <div class="content">
 <img src="images/4.0/PapyrusCompare.png" alt="Ajout de PapyrusCompare" width="60%">
 </div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Ne marche pas encore avec la V4 de Papyrus Photon
+</td>
+</tr>
+</table>
 </div>
 </li>
 <li>
@@ -6513,8 +6542,8 @@ cf. <a href="#niveauConcepts">Niveaux de concepts SysML</a></p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.2<br>
-Last updated 2018-07-13 17:24:55 CEST
+Version 1.4<br>
+Last updated 2018-07-16 18:50:35 CEST
 </div>
 </div>
 </body>

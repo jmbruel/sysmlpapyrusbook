@@ -46,15 +46,20 @@ TIP: Pour plus d'information, consultez https://www.eclipse.org/papyrus/download
 === SysML
 
 Il vous faut ensuite installer le profil {sysml} (version 1.4).
-Pour cela, allez dans le menu menu:Help[Install New Software > ...] puis utilisez l'URL suivante pour
-retrouver le plugin : {pluginsysml}.
+Pour cela, deux possibilités :
+
+. Aller dans le menu menu:Help[Install New Software > ...] puis utilisez l'URL suivante pour
+retrouver le plugin officiel : {pluginsysml}.
+. Récupérer directement depuis l'https://marketplace.eclipse.org/content/papyrus-sysml-14[eclipse market place]  
 
 [TIP]
 =====
-Pour vérifier les éléments installés allez dans menu:About...[Installation Details] :
-
+. Pour vérifier les éléments installés allez dans menu:About...[Installation Details] :
++
 .Détails d'installation [v.{papyrusversion}]
 image::installation-details.png[launching,width=40%,scaledwidth=40%]
++
+. Si vous souhaitez utiliser la toute dernière version (non stable), utilisez plutôt l'URL suivante : {pluginsysmlnightly}.
 =====
 
 === Compléments
