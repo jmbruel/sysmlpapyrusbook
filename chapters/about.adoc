@@ -1,6 +1,6 @@
 = À propos des auteurs
 
-image::jmb.jpg[width=10%] 
+image::jmb.jpg[width=10%,scaledwidth=15%] 
 mailto:{email}[{author}] est
 Professeur des Universités à l'{univ-tlse},
 en poste à l'{iut} depuis 2008,
@@ -15,7 +15,7 @@ ifndef::book[co-responsable de l'axe Systèmes Ambiants de l'{IRIT} de 2009 à 2
 co-animateur du comité technique <<MBSE,MBSE>> de l'{afis},
 et enseigne la modélisation depuis 1995.
 
-image::seb.jpg[width=10%] 
+image::seb.jpg[width=10%,scaledwidth=15%] 
 mailto:{email_2}[{author_2}] est ... (Papa de Papyrus :-)
 //English version:
 /////

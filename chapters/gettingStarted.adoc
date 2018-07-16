@@ -177,7 +177,7 @@ voter sur : https://bugs.eclipse.org/bugs/show_bug.cgi?id=354296.
 
 === Gen2Doc
 
-image::../todo.jpg[width=50%,scalewidth=50%]
+image::../todo.jpg[width=50%,scaledwidth=50%]
 
 == {resume}
 
