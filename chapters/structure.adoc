@@ -47,7 +47,7 @@ On abordera :
 - les _Block Definition Diagrams_
 - les _Internal Block Diagrams_
 - les _Parametric Diagrams_ (pour les contraintes physiques)
-- les _Sequence Diagrams_ (diagramme de séquence système)
+- les _Sequence Diagrams_ (diagramme de séquences système)
 
 == Organisation du système et des modèles
 
@@ -134,7 +134,7 @@ Il existe deux types de relations entre blocs :
 - l’association (y compris l’agrégation et la composition)
 - la généralisation/spécialisation
 
-Ces deux types de relations, bien connues en {uml}, permettent de matérialiser les liens qui existent entre les éléments du système. Avant d'aborder les associations, il est important de différencier la description d'éléments structurels sous la forme d'un bloc (au travers d'un `{bdd}` par exemple) et ces éléments pris individuellement. Ces derniers sont des *instances* individuelles du même bloc. Cette notion, très présente dans les approches orientées objets est souvent plus ardue à appréhender pour les ingénieurs systèmes. Il faut bien comprendre que la modélisation d'un bloc consiste à représenter l'ensemble des éléments qui caractérisent tout une série d'objets (des moteurs, des pompes, des données, etc.). Il serait fastidieux de les représenter tous (individuellement), et c'est donc leur "signature" que l'on représente. C'est pour cela qu'un bloc n'est pas un élément physique, mais simplement sa représentation, tandis qu'une instance de ce bloc représentera elle cet élément physique. C'est le cas notamment des participants d'un diagramme de séquence ou encore des parties d'un composé, qui sont des instances et non des blocs.
+Ces deux types de relations, bien connues en {uml}, permettent de matérialiser les liens qui existent entre les éléments du système. Avant d'aborder les associations, il est important de différencier la description d'éléments structurels sous la forme d'un bloc (au travers d'un `{bdd}` par exemple) et ces éléments pris individuellement. Ces derniers sont des *instances* individuelles du même bloc. Cette notion, très présente dans les approches orientées objets est souvent plus ardue à appréhender pour les ingénieurs systèmes. Il faut bien comprendre que la modélisation d'un bloc consiste à représenter l'ensemble des éléments qui caractérisent tout une série d'objets (des moteurs, des pompes, des données, etc.). Il serait fastidieux de les représenter tous (individuellement), et c'est donc leur "signature" que l'on représente. C'est pour cela qu'un bloc n'est pas un élément physique, mais simplement sa représentation, tandis qu'une instance de ce bloc représentera elle cet élément physique. C'est le cas notamment des participants d'un diagramme de séquences ou encore des parties d'un composé, qui sont des instances et non des blocs.
 
 ====  Association
 

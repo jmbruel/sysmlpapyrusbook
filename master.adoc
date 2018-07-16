@@ -1,6 +1,6 @@
 = SysML par la pratique avec Papyrus
 Jean-Michel Bruel <bruel@irit.fr>; Sébastien Gérard <Sebastien.Gerard@cea.fr>
-v1.2, {localdate}
+v1.4, {localdate}
 :myinitials: JMB
 :doctype: book
 :toc: left
@@ -14,7 +14,8 @@ v1.2, {localdate}
 :linkcss:
 :title-page-background-image: image:papyrus-logo.png[pdfwidth=25%]
 :defs: defs
-
+:xrefstyle: short
+// short full basic
 include::definitions.txt[]
 
 ifndef::backend-pdf[]

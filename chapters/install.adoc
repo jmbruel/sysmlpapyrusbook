@@ -34,8 +34,8 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 Vérifiez que vous possédez bien sur votre machine : {papyrus} `{papyrusversion}`
 (ou une version supérieure).
 
-.Papyrus au lancement
-image::launching.png[papyrus,width=50%,scaledwidth=50%]
+.Papyrus au lancement [v.{papyrusversion}]
+image::launching.png[launching,width=40%,scaledwidth=40%]
 
 Si ce n'est pas le cas, installez-le ou mettez-le à jour.
 Nous vous conseillons d'installer {papyrus} de cette façon plutôt que de le rajouter
@@ -46,8 +46,21 @@ TIP: Pour plus d'information, consultez https://www.eclipse.org/papyrus/download
 === SysML
 
 Il vous faut ensuite installer le profil {sysml} (version 1.4).
-Pour cela, allez dans le menu menu:Help[Install New Software > ...] puis utilisez l'URL suivante pour
-retrouver le plugin : {pluginsysml}.
+Pour cela, deux possibilités :
+
+. Aller dans le menu menu:Help[Install New Software > ...] puis utilisez l'URL suivante pour
+retrouver le plugin officiel : {pluginsysml}.
+. Récupérer directement depuis l'https://marketplace.eclipse.org/content/papyrus-sysml-14[eclipse market place]  
+
+[TIP]
+=====
+. Pour vérifier les éléments installés allez dans menu:About...[Installation Details] :
++
+.Détails d'installation [v.{papyrusversion}]
+image::installation-details.png[launching,width=40%,scaledwidth=40%]
++
+. Si vous souhaitez utiliser la toute dernière version (non stable), utilisez plutôt l'URL suivante : {pluginsysmlnightly}.
+=====
 
 === Compléments
 
@@ -70,7 +83,7 @@ Information sur le matériel disponible autour du livre (site web, exemples, for
 endif::final[]
 
 Le site qui répertorie tous les matériels utiles en complément de ce livre
-(tutoriels, modèles, compléments, corrections, etc.) se trouve ici : {siteurl}.
+(tutoriels, modèles, compléments, corrections, etc.) se trouve ici : {githuburl}.
 
 Si vous souhaitez vérifier que votre installation fonctionne en créant un premier projet {papyrus},
 vous pouvez consulter la section <<GettingStarted>>.

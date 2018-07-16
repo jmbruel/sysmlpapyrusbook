@@ -9,7 +9,7 @@ ifndef::final[]
 [CAUTION]
 ====
 *****
-Introduit SysML Req, les diagrammes/tables d'exigences et les diagrammes de cas d’utilisation, les diagrammes de séquence « système » pour décrire les scénarios d'usage associés.
+Introduit SysML Req, les diagrammes/tables des exigences et les diagrammes de cas d’utilisation, les diagrammes de séquences « système » pour décrire les scénarios d'usage associés.
 Après avoir parlé des concepts SysML pour traiter de ce sujet, dire qu'il peut être nécessaire d’organiser les exigences => diagramme de paquetage.
 *****
 ====
@@ -148,13 +148,13 @@ _The tabular format is used to represent the requirements, their properties and 
 ====
 
 // L'exemple a disparu de la 1.5
-.Exemples de tableaux d'exigences (OMG SysML v1.4, p. 163)
+.Exemples de tableaux des exigences (OMG SysML v1.4, p. 163)
 image::req-table.png[Tableaux,width=70%,scaledwidth=70%]
 
 La plupart des outils modernes permettent le passage entre outils classiques de gestion des exigences (comme {doors})
 et outils de modélisation {sysml}.
 
-.Import Papyrus de tableau d'exigences
+.Import Papyrus de tableau des exigences
 image::todo.jpg[width="50%",scaledwidth="50%"]
 
 [red]#XXX Parler des imports/exports ReqIf, de l'import/export excel etc.#
@@ -260,9 +260,9 @@ Un acteur représente un rôle joué par un utilisateur humain. Il faut donc plu
 [[A-vous-exigences]]
 == À vous de jouer...
 
-=== Tables d'exigences
+=== Tables des exigences
 
-=== Diagramme d'exigences
+=== Diagramme des exigences
 
 Réalisons maintenant un diagramme d'exigence.
 

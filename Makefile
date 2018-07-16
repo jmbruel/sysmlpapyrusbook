@@ -3,9 +3,10 @@ ASCIIDOCTOR=asciidoctor
 EXT=adoc
 OUTPUT=.
 DESSINS=images/dessins
+DEP=definitions.txt chapters/*.adoc
 #-----------------------------------------------------
 
-$(OUTPUT)/%.html: %.$(EXT)
+$(OUTPUT)/%.html: %.$(EXT) $(DEP)
 	@echo '==> Compiling asciidoc files to generate HTML'
 	$(ASCIIDOCTOR) -a linkcss -o $@ $<
 

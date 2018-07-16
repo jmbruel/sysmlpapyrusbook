@@ -5,6 +5,5 @@ asciidoctor-epub3/
 asciidoctor-pdf/
 master.html
 master.pdf
-.DS_Store
-images/.DS_Store
+.DS_Storeimages/.DS_Store
 

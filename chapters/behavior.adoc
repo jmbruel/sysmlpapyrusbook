@@ -56,13 +56,13 @@ machine à état. Quelques situations typiques peuvent faire penser qu'il peut �
 === Transitions
 
 Cette réaction (nommée *transition*) possède un événement déclencheur, une condition (garde), un effet et un état cible,
-comme illustré dans la <<transition,figure suivante>>, qui se lit :
+comme illustré dans la <<transition>>, qui se lit :
 "Si le bloc est dans l'état 'Etat1' et que survient l'événement `événement` et que la condition `guarde` est vraie,
 alors exécuter `effet` et se plaver dans l'état `Etat2`."
 
 [[transition]]
 //.Une transition entre états
-image::dessins/state.png[width=40%,scalewidth=80%]
+image::dessins/state.png[width=40%,scaledwidth=80%]
 
 [TIP]
 ====
@@ -71,7 +71,7 @@ le texte de la transition peut vous assister. En tapant btn:[Ctrl-Space], vous o
 les concepts disponibles.
 
 .Editeur de transition "intelligent"
-image::transEditor.png[width=40%,scalewidth=40%]
+image::transEditor.png[width=40%,scaledwidth=40%]
 ====
 
 [IMPORTANT]
@@ -91,11 +91,11 @@ Le diagramme d’états comprend également deux états particuliers (appelés p
 (à la création d’une instance par exemple);
 +
 .Etat initial
-image::dessins/initState.png[width=20%,scalewidth=20%]
+image::dessins/initState.png[width=20%,scaledwidth=20%]
 - l’état final du diagramme d’états correspond à la destruction de l’instance.
 +
 .Etat final
-image::dessins/finalState.png[width=20%,scalewidth=20%]
+image::dessins/finalState.png[width=20%,scaledwidth=20%]
 
 NOTE: Nous verrons d'autres pseudo-états un peu plus tard.
 
@@ -103,7 +103,7 @@ Voici un exemple complet de machine à état :
 
 [[complet]]
 .Un exemple de diagramme d'états
-image::stm1.png[width=70%,scalewidth=70%]
+image::stm1.png[width=70%,scaledwidth=70%]
 
 NOTE: Notez que cette machine à état n'a pas d'état final, son exécution est infinie.
 
@@ -128,7 +128,7 @@ tout en spécifiant des transitions particulières entre les sous-états.
 Il est également possible d'attacher un diagramme d'états à un état (composite du coup) pour garder une représentation hiérarchique.
 
 .Exemple d'état composite
-image::todo.jpg[width=50%,scalewidth=50%]
+image::todo.jpg[width=50%,scaledwidth=50%]
 
 === Régions concurrentes
 
@@ -137,7 +137,7 @@ graphiquement représentées par des zones séparées par des traits pointillés
 Chaque région contient ses propres états et transitions.
 
 .Exemple de régions concurrentes
-image::todo.jpg[width=30%,scalewidth=30%]
+image::todo.jpg[width=30%,scaledwidth=30%]
 
 === Pseudo-états complémentaires
 
@@ -147,7 +147,7 @@ Il existe d'autres concepts utiles :
 choice:: permet de représenter un branchement conditionnel (sur les guardes) d'une même transition.
 +
 .Exemple d'utilisation du _choice_
-image::choice.png[width=40%,scalewidth=40%]
+image::choice.png[width=40%,scaledwidth=40%]
 fork:: permet de paralléliser une transition vers deux (ou plus) états de sortie.
 join:: permet de synchroniser deux (ou plus) transitions d'entrée. Par défaut il faut que toutes
 les transitions entrantes soit tirées (`ET`), mais il est possible de définir plus précisément le

@@ -62,7 +62,7 @@ image::newPProject.png[width="60%",scaledwidth="60%"]
 . Choisissez les éléments dont vous savez déjà que vous allez avoir besoin
 +
 image::newPProject2.png[width="60%",scaledwidth="60%"]
-. Cliquez sur btn:[Finish]. Vous y êtes.
+. Cliquez sur btn:[Finish]. avez créé votre 1er projet .
 
 [TIP]
 ====
@@ -85,7 +85,7 @@ Les éléments principaux de cette organisation sont :
 (pas seulement {papyrus})
 . Le _Model Explorer_, qui permet d'accéder à vos modèles et à tous vos artefacts de modélisation  (cf. section <<mod-art>>).
 . L'_Outline_, sorte de vue d'ensemble du diagramme ouvert (utile pour les très grands diagrammes)
-. L'éditeur de diagramme (_Multi diagram editor_), l'élément principale dans lequel vous ouvrirez et concevrez vos diagrammes.
+. L'éditeur de diagramme (_Multi diagram editor_), l'élément principal  dans lequel vous ouvrirez et concevrez vos diagrammes.
 . La _Palette_, qui dépend du type de diagramme ouvert dans l'éditeur de diagramme et qui vous permet de "copier/coller"
 des éléments dans votre diagramme (cf. section <<mod-diag>>)
 . La _Properties view_, qui permet d'accéder à des informations détaillées. Généralement, l'onglet le plus utilisé est l'onglet
@@ -124,7 +124,7 @@ Cela peut en effet poser des problèmes plus tard (<<execution,exécution de mod
 Pour notre modélisation du {projectName}, nous utilisons l'organisation suivantefootnote:[Issue du {CEA}.] :
 
 .Vue d'ensemble de notre projet de {projectName}
-image::Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.PNG[width=80%,scaledwidth=80%]
+image::../../../SmartHomeUseCase/SmartHomeSystemProject/diagrams/Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.PNG[width=80%,scaledwidth=80%]
 
 Comme vous pouvez le constater, nous annotons les éléments de modèles avec des commentaires, et
 pas seulement parce qu'il s'agit d'un exemple illustratif pour un livre, comme nous le détaillons
@@ -172,17 +172,19 @@ image::Model_Smart_Home_System_Outline_of_the_Smart_Home_System_SHS_modelling_pr
 
 IMPORTANT: Vous constaterez que l'export ne conserve pas l'entête (cartouche).
 C'est une des fonctionnalités attendues des utilisateurs et en cours de prise en compte
-par les développeurs du {cea}. Nous vous invitons à soutenir pour cette _feature_ en allant
+par les développeurs du {cea}. Nous vous invitons à soutenir cette évolution en allant
 voter sur : https://bugs.eclipse.org/bugs/show_bug.cgi?id=354296.
 
 === Gen2Doc
 
+image::../todo.jpg[width=50%,scaledwidth=50%]
+
 == {resume}
 
 La prise en main d'un outil comme {papyrus} n'est pas quelque chose que l'on
-peut facilement résumer en quelques pages dans un livre.
+peut facilement résumer en quelques pages.
 Néanmoins, le fait qu'il soit basé sur {eclipse} permettra à ceux qui ont déjà
-l'habitude de cet IDE de ne pas être dépaysé.
+l'habitude de cet IDE de ne pas être dépaysés.
 
 Pour ceux qui veulent véritablement maîtriser l'outil,
 nous renvoyons le lecteur aux tutoriels disponibles sur le site :
