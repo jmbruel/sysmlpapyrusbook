@@ -35,6 +35,9 @@ IS::
 [[MBSE]] MBSE::
 _**M**odel-**B**ased **S**ystems **E**ngineering_, Ingénierie systèmes basée modèles
 
+OOSEM:: 
+_**O**bject-**O**riented **S**ystems **E**ngineering **M**ethod_)
+
 PAR::
 _**P**arametric **D**iagram_, le diagramme paramétrique (cf. <<param>>)
 

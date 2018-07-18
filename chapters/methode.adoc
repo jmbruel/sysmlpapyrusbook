@@ -79,12 +79,20 @@ Dans la suite nous présentons rapidement deux démarches plus complètes qui fo
 
 == OOSEM
 
+OOSEM (_Object-Oriented Systems Engineering Method_) est certainement la méthode <<MBSE>> la plus utilisée en combinaison de {sysml}, puisqu'elle est promue par Stanford Friedenthal, le principal leader de {sysml}.
+Pour plus d'information sur cette méthode, cf. <<Friedenthal2016>>.
+
 == SYSMOD
 
 /////
 The Systems Modeling Toolbox (SYSMOD) is a pragmatic approach to model the requirements and the system architecture of a system. It provides a toolbox of tasks with input and output work products, guidelines and best practices. SYSMOD uses the OMG Systems Modeling Language (OMG SysML), but could also be used with other languages.
 /////
 
-La méthode {sysmod} (_Systems Modeling Toolbox_) is a pragmatic approach to model the requirements and the system architecture of a system. It provides a toolbox of tasks with input and output work products, guidelines and best practices. SYSMOD uses the OMG Systems Modeling Language (OMG SysML), but could also be used with other languages.
-Références sur les méthodos : <<Estefan>>, <<Ramos>>, <<Dickerson>>,
-CESAME, Arcadia, SEBOK, OOSE, Tim Wilkiens, CORE (EFFB), Merise?
+La méthode {sysmod} (_Systems Modeling Toolbox_) est une approche pragmatique pour modéliser les exigences et l'architecture d'un système. 
+Elle fournit une boîte à outil et des étapes précises, ainsi que des guides et des "bonnes pratiques".
+Pour plus d'information sur cette méthode, cf. <<Wielkins20XX>>.
+
+== Autres méthodes et démarches
+
+Pour plus de renseignements sur les différentes démarches de <<MBSE>> nous renvoyons le lecteur à l'étude menée par l'{incose} par <<Estefan>>.
+Voir aussi <<Ramos>> ou <<Dickerson>>.
