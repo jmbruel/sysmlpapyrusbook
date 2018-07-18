@@ -37,8 +37,7 @@ https://wiki.eclipse.org/Papyrus_User_Guide.
 == Configuration
 
 Comme indiqué au chapitre <<install>>, nous considérons que vous avez la
-version `{papyrusversion}` (ou plus) de {papyrus}, pour la version _Oxygen_ (`4.7`)
-d'{eclipse}.
+version `{papyrusversion}` (ou plus) de {papyrus}, pour la version _Photon_ (`4.8`) d'{eclipse}.
 
 image::about.png[width=60%,scaledwidth=60%]
 
