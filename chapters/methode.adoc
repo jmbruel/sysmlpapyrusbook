@@ -16,7 +16,7 @@ endif::final[]
 
 [[prfc]]
 .Langages, méthodes et outils : 3 piliers complémentaires (inspiré par <<Roques>>)
-image::SysML-PRFC.svg[width=50%,scaledwidth=50%]
+image::SysML-PRFC.png[width=50%,scaledwidth=50%]
 
 Comme illustré par la <<prfc>>, comprendre {sysml} c'est primordiale, savoir utiliser {papyrus} c'est important, mais tout ceci n'est rien sans une démarche ou une méthode concrète pour mettre les deux en musique.
 
