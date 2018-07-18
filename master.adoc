@@ -16,6 +16,10 @@ v1.4, {localdate}
 :defs: defs
 :xrefstyle: short
 // short full basic
+:chapter-refsig: Chapitre
+:section-refsig: Section
+:appendix-refsig: Annexe
+
 include::definitions.txt[]
 
 ifndef::backend-pdf[]

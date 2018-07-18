@@ -8,11 +8,83 @@ ifndef::final[]
 [CAUTION]
 ====
 *****
-Je sais plus ce qu'on voulait mettre là...
+Je sais plus ce qu'on voulait mettre là, mais je pense qu'on voulait traiter des aspects méthodologiques.
 *****
 ====
 //-----------------------------------------------
 endif::final[]
 
-.Langages, méthodes et outils : 3 piliers complémentaires (inspiré par http://www.prfc.fr/[prfc Roques])
+[[prfc]]
+.Langages, méthodes et outils : 3 piliers complémentaires (inspiré par <<Roques>>)
 image::SysML-PRFC.svg[width=50%,scaledwidth=50%]
+
+Comme illustré par la <<prfc>>, comprendre {sysml} c'est primordiale, savoir utiliser {papyrus} c'est important, mais tout ceci n'est rien sans une démarche ou une méthode concrète pour mettre les deux en musique.
+
+Nous l'avons anoncé dès l'introduction, nous allons utiliser pour les besoins de ce livre une démarche minimaliste, préconisée par <<Friedenthal2016>>.
+
+== La méthode MBSE simplifiée utilisée dans ce livre
+
+La <<FriedenthalSimplifiedMethod>> résume (dans un diagramme d'activité) la démarche simplifiée que nous allons suivre.
+
+[[FriedenthalSimplifiedMethod]]
+.Une démarche MBSE simplifiée (tirée de <<Friedenthal2016>>)
+image::FriedenthalSimplifiedMethod.png[width="40%",scaledwidth="40%"]
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Seb, peux-tu vérifier que la démarche que tu as utilisée pour les modèles est compatible avec cette démarche ?
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+Organiser les modèles::
+Comme présenté dans notre <<Matrice, matrice des concepts>>, cette phase d'organisation est primordiale.
+Il s'agit de définir des _packages_ qui vont premettre de retrouver facilement les éléments de modélisation.
+
+Analyser les besoins des _stakeholders_::
+Il convient de démarrer par les besoins des parties prenantes.
+Comprendre le problème à résoudre est déjà un pas énorme vers la solution.
+Il s'agit dans cette phase de définir les acteurs, de cerner le domaine précis à modéliser, le contexte du système, les cas d'utilisation de haut niveau.
+Si possible, c'est aussi dans cette phase qu'il faut déterminer les éléments de mesure de satisfaction qui permettront de déterminer la pertinence des solutions proposées.
+
+Spécifier les exigences système::
+Phase incontournable de toute approche d'<<IS>>, l'expression des exigences, qu'elles soient textuelles ou graphiques est primordiale.
+Cette phase permettra de concrétiser et documenter les résultats de la phase précédente.
+Il s'agira de définir des diagrammes d'exigences, mais aussi des précisions (diagrammes d'activités ou de séquences système) pour les cas d'utilisation, et de préciser le diagramme de contexte.
+
+Synthétiser des solutions alternatives::
+Il s'agit de la phase de conception à proprement parlé.
+On décompose le système en sous-systèmes (diagrammes de blocs).
+On définit les interactions entre les éléments (diagrammes d'activité)
+ainsi que leurs connexions (diagrammes de blocs internes).
+
+Analyser les modèles::
+Il s'agit ici de modéliser les éléments utiles aux analyses et simulations (phases non traitées dans ce livre) au travers des
+détails dans les diagrammes de blocs ou encore au travers des diagrammes paramétriques.
+
+Maintenir la traçabilité des exigences::
+Phase souvent négligée, il conviendra de bien veiller à systématiquement lier les modèles entre eux.
+Certains liens seront obtenus "par construction".
+Par exemple, réaliser un diagramme d'état à partir d'un click droit sur un bloc menu:New Diagram[SysML 1.4 State Machine Diagram] insèrera directement ce diagramme "dans" le bloc au niveau du _model explorer_.
+Mais pour tous les autres liens (une interaction qui `\<<satisfy>>` une exigence, etc.) il vous faudra rigoureusement les ajouter manuellement.
+
+Il s'agit d'une démarche simplifiée, qui fait abstraction d'étapes importantes comme la plannification, les analyses de risques, la gestion des configurations, etc.
+
+Dans la suite nous présentons rapidement deux démarches plus complètes qui font référence en matière de <<MBSE>> utilisant {sysml}.
+
+== OOSEM
+
+== SYSMOD
+
+/////
+The Systems Modeling Toolbox (SYSMOD) is a pragmatic approach to model the requirements and the system architecture of a system. It provides a toolbox of tasks with input and output work products, guidelines and best practices. SYSMOD uses the OMG Systems Modeling Language (OMG SysML), but could also be used with other languages.
+/////
+
+La méthode {sysmod} (_Systems Modeling Toolbox_) is a pragmatic approach to model the requirements and the system architecture of a system. It provides a toolbox of tasks with input and output work products, guidelines and best practices. SYSMOD uses the OMG Systems Modeling Language (OMG SysML), but could also be used with other languages.
+Références sur les méthodos : <<Estefan>>, <<Ramos>>, <<Dickerson>>,
+CESAME, Arcadia, SEBOK, OOSE, Tim Wilkiens, CORE (EFFB), Merise?
