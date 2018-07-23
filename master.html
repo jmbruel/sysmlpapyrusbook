@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.6.1">
+<meta name="generator" content="Asciidoctor 1.5.7.1">
 <meta name="author" content="Jean-Michel Bruel, Sébastien Gérard">
 <title>SysML par la pratique avec Papyrus</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <link rel="stylesheet" href="./asciidoctor.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
@@ -28,9 +28,9 @@
 <li><a href="#_À_propos_des_auteurs">À propos des auteurs</a></li>
 <li><a href="#AvantPropos">Avant-propos</a>
 <ul class="sectlevel2">
-<li><a href="#_ce_que_strong_n_est_pas_strong_ce_livre">Ce que <strong>n&#8217;est pas</strong> ce livre :</a></li>
+<li><a href="#_ce_que_nest_pas_ce_livre">Ce que <strong>n&#8217;est pas</strong> ce livre :</a></li>
 <li><a href="#_pourquoi_lire_ce_livre">Pourquoi lire ce livre ?</a></li>
-<li><a href="#_À_qui_s_adresse_le_livre">À qui s&#8217;adresse le livre ?</a></li>
+<li><a href="#_À_qui_sadresse_le_livre">À qui s&#8217;adresse le livre ?</a></li>
 <li><a href="#_conventions_typographiques_et_symboles_récurrents">Conventions typographiques et symboles récurrents</a></li>
 <li><a href="#_historique">Historique</a></li>
 </ul>
@@ -64,12 +64,12 @@
 <li><a href="#notation">4.1. Pourquoi une nouvelle notation (par rapport à UML)</a></li>
 <li><a href="#_introduction_à_sysml">4.2. Introduction à SysML</a></li>
 <li><a href="#_diagramme_et_table_des_exigences">4.3. Diagramme et table des exigences</a></li>
-<li><a href="#_diagramme_des_cas_d_utilisation">4.4. Diagramme des cas d&#8217;utilisation</a></li>
+<li><a href="#_diagramme_des_cas_dutilisation">4.4. Diagramme des cas d&#8217;utilisation</a></li>
 <li><a href="#_diagramme_de_blocs">4.5. Diagramme de blocs</a></li>
 <li><a href="#_ibd">4.6. IBD</a></li>
 <li><a href="#_diagrammes_de_séquences_sd">4.7. Diagrammes de séquences (sd)</a></li>
-<li><a href="#_diagramme_d_états">4.8. Diagramme d&#8217;états</a></li>
-<li><a href="#_diagramme_d_activité">4.9. Diagramme d&#8217;activité</a></li>
+<li><a href="#_diagramme_détats">4.8. Diagramme d&#8217;états</a></li>
+<li><a href="#_diagramme_dactivité">4.9. Diagramme d&#8217;activité</a></li>
 <li><a href="#_diagramme_paramétrique">4.10. Diagramme paramétrique</a></li>
 <li><a href="#_diagramme_de_packages">4.11. Diagramme de packages</a></li>
 <li><a href="#_allocation_traçabilité_et_autres_points_de_cohérences">4.12. Allocation, traçabilité et autres points de cohérences</a></li>
@@ -90,7 +90,7 @@
 <li><a href="#_fondements">6.1. Fondements</a></li>
 <li><a href="#_configuration">6.2. Configuration</a></li>
 <li><a href="#_préparation_et_organisation">6.3. Préparation et organisation</a></li>
-<li><a href="#_l_environnement_de_modélisation">6.4. L&#8217;environnement de modélisation</a></li>
+<li><a href="#_lenvironnement_de_modélisation">6.4. L&#8217;environnement de modélisation</a></li>
 <li><a href="#mod-diag">6.5. Modélisation par les diagrammes</a></li>
 <li><a href="#mod-art">6.6. Modélisation par les artefacts</a></li>
 <li><a href="#_en_résumé_2">6.7. En résumé</a></li>
@@ -100,14 +100,14 @@
 <li><a href="#reqs">7. Besoins clients et exigences</a>
 <ul class="sectlevel2">
 <li><a href="#_fondements_2">7.1. Fondements</a></li>
-<li><a href="#_l_organisation_des_em_requirements_em">7.2. L&#8217;organisation des <em>Requirements</em></a></li>
-<li><a href="#_les_em_requirements_properties_em">7.3. Les <em>Requirements properties</em></a></li>
-<li><a href="#_les_em_requirements_links_em">7.4. Les <em>Requirements links</em></a></li>
-<li><a href="#_les_em_requirements_diagrams_em">7.5. Les <em>Requirements Diagrams</em></a></li>
+<li><a href="#_lorganisation_des_requirements">7.2. L&#8217;organisation des <em>Requirements</em></a></li>
+<li><a href="#_les_requirements_properties">7.3. Les <em>Requirements properties</em></a></li>
+<li><a href="#_les_requirements_links">7.4. Les <em>Requirements links</em></a></li>
+<li><a href="#_les_requirements_diagrams">7.5. Les <em>Requirements Diagrams</em></a></li>
 <li><a href="#reqStereotypes">7.6. Stéréotyper les <em>Requirements</em></a></li>
 <li><a href="#reqAnnot">7.7. Annotations des <em>Requirements</em></a></li>
 <li><a href="#_les_considérations_sur_la_traçabilité">7.8. Les considérations sur la traçabilité</a></li>
-<li><a href="#_les_em_use_case_diagrams_em">7.9. Les <em>Use Case Diagrams</em></a></li>
+<li><a href="#_les_use_case_diagrams">7.9. Les <em>Use Case Diagrams</em></a></li>
 <li><a href="#A-vous-exigences">7.10. À vous de jouer&#8230;&#8203;</a></li>
 <li><a href="#_en_résumé_3">7.11. En résumé</a></li>
 <li><a href="#_questions_de_révision_3">7.12. Questions de révision</a></li>
@@ -130,7 +130,7 @@
 <ul class="sectlevel2">
 <li><a href="#_fondements_4">10.1. Fondements</a></li>
 <li><a href="#stm">10.2. Diagramme d&#8217;états</a></li>
-<li><a href="#_diagramme_d_activité_2">10.3. Diagramme d&#8217;activité</a></li>
+<li><a href="#_diagramme_dactivité_2">10.3. Diagramme d&#8217;activité</a></li>
 </ul>
 </li>
 <li><a href="#interaction">11. Interaction</a>
@@ -166,7 +166,7 @@
 <li><a href="#_notation">Appendix C: Notation</a>
 <ul class="sectlevel2">
 <li><a href="#_diagramme_des_exigences_3">Diagramme des exigences</a></li>
-<li><a href="#_diagramme_d_état">Diagramme d&#8217;état</a></li>
+<li><a href="#_diagramme_détat">Diagramme d&#8217;état</a></li>
 </ul>
 </li>
 <li><a href="#histoire">Appendix D: Les histoires de SysML et de Papyrus</a>
@@ -237,7 +237,7 @@ et enseigne la modélisation depuis 1995.</p>
 <h2 id="AvantPropos">Avant-propos</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_ce_que_strong_n_est_pas_strong_ce_livre">Ce que <strong>n&#8217;est pas</strong> ce livre :</h3>
+<h3 id="_ce_que_nest_pas_ce_livre">Ce que <strong>n&#8217;est pas</strong> ce livre :</h3>
 <div class="paragraph">
 <p>Ce livre <strong>n&#8217;est pas</strong> un livre :</p>
 </div>
@@ -296,20 +296,20 @@ Et vous aurez, avec <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>,
 </dd>
 <dt class="hdlist1">Je veux gagner du temps</dt>
 <dd>
-<p>Nous avons essayer de concevoir ce livre comme un manuel<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup>, outil et pratique, en travaillant l&#8217;organisation des concepts
+<p>Nous avons essayer de concevoir ce livre comme un manuel<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>, outil et pratique, en travaillant l&#8217;organisation des concepts
 et des pratiques.</p>
 </dd>
 </dl>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_À_qui_s_adresse_le_livre">À qui s&#8217;adresse le livre ?</h3>
+<h3 id="_À_qui_sadresse_le_livre">À qui s&#8217;adresse le livre ?</h3>
 <div class="paragraph">
 <p>En fonction de votre profil, vous pourrez avoir une lecture plus ou moins complète de cet ouvrage.
 Loin de nous l&#8217;idée de forcer la façon d&#8217;en aborder les chapitres, nous vous recommandons néanmoins
 les pistes de lectures suivantes selon la situation :</p>
 </div>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 1. Conseils de lecture en fonction de votre niveau en SysML (en ligne) et en Papyrus (en colonne)</caption>
 <colgroup>
 <col style="width: 25%;">
@@ -683,7 +683,7 @@ Il existe une représentation graphique des éléments modélisés en <a href="h
 Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c&#8217;est <strong>le modèle</strong> qui importe le plus.</p>
 </div>
 <div class="paragraph">
-<p>C&#8217;est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes <a href="http://www.omgsysml.org/">SysML&#8482;</a> <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup>, mais d&#8217;utiliser des outils dédiés comme <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.
+<p>C&#8217;est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes <a href="http://www.omgsysml.org/">SysML&#8482;</a> <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>, mais d&#8217;utiliser des outils dédiés comme <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.
 Ils respectent en général la norme <a href="http://www.omg.org/spec/SysML/1.5/PDF/">SysML&#160;1.5</a> (bien qu&#8217;il faille se méfier).</p>
 </div>
 <div class="admonitionblock note">
@@ -732,7 +732,7 @@ Il ne s&#8217;agit donc pas pour nous de rappeler les grandes démarches de dév
 Nous renvoyons pour cela le lecteur aux publications de l&#8217;<a href="http://www.incose.org/">INCOSE</a> ou de l&#8217;<a href="http://www.afis.fr/">AFIS</a>.</p>
 </div>
 <div class="paragraph">
-<p>Concernant les démarches de développement de systèmes en lien avec le <a href="#MBSE">[MBSE]</a>, <a href="http://www.omgsysml.org/">SysML&#8482;</a> n&#8217;en impose aucune.
+<p>Concernant les démarches de développement de systèmes en lien avec le <a href="#MBSE">MBSE</a>, <a href="http://www.omgsysml.org/">SysML&#8482;</a> n&#8217;en impose aucune.
 C&#8217;est à la fois une faiblesse car cela pourrait servir de guide à l&#8217;utilisation de la notation elle-même, mais aussi une force car vous pouvez utiliser <a href="http://www.omgsysml.org/">SysML&#8482;</a> sans changer de méthode.</p>
 </div>
 <div class="paragraph">
@@ -765,7 +765,7 @@ Cette méthode ainsi que les références aux démarches principales seront abor
 <p>La matrice qui nous servira de "carte de base" pour placer les activités
 ou les modèles, sera celle-ci :</p>
 </div>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -1072,7 +1072,7 @@ la composition d&#8217;exigences.
 <h4 id="_adaptation">2.1.2. Adaptation</h4>
 <div class="paragraph">
 <p>Le <em>SmartHomeSystem</em> doit pouvoir s&#8217;adapter aux conditions physiques et mentales
-de l&#8217;occupant<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnote_3" title="View footnote.">3</a>]</sup>.
+de l&#8217;occupant<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>.
 Par exemple, la hauteur des équipements de cuisine (meubles, éviers) s&#8217;abaissent
 automatiquement si l&#8217;occupant est en fauteuil roulant.
 Un autre exemple, qui concerne les personnes atteintes de troubles cognitifs, est
@@ -1111,7 +1111,7 @@ pour le <em>SmartHomeSystem</em>.
 Cette liste est bien sûr non-exhaustive et nous permettra simplement de montrer le lien
 en <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> entre ces exigences et les artefacts de modélisation.</p>
 </div>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 2. Une liste initiale d&#8217;exigences</caption>
 <colgroup>
 <col style="width: 14.2857%;">
@@ -1228,7 +1228,7 @@ atteindre la salle de bain pour sa toilette. Si elle a choisi l&#8217;option, el
 bénéficier d&#8217;un guidage audio complémentaire.</p>
 </li>
 <li>
-<p>Alice bénéficie d&#8217;un "majordome intelligent"<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</sup>,
+<p>Alice bénéficie d&#8217;un "majordome intelligent"<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup>,
 capable de :</p>
 <div class="ulist">
 <ul>
@@ -1605,7 +1605,7 @@ Néanmoins cette notation est peu adaptée pour l&#8217;Ingénierie Système :</
 <div class="sect2">
 <h3 id="_introduction_à_sysml">4.2. Introduction à SysML</h3>
 <div class="sect3">
-<h4 id="_fiche_d_identité">4.2.1. Fiche d&#8217;identité</h4>
+<h4 id="_fiche_didentité">4.2.1. Fiche d&#8217;identité</h4>
 <div class="paragraph">
 <p>Voici à quoi pourrait ressembler la fiche d&#8217;identité de <a href="http://www.omgsysml.org/">SysML&#8482;</a> :</p>
 </div>
@@ -1707,7 +1707,7 @@ Voici une liste non exhaustive des entreprises et des acteurs qui participent à
 </div>
 </div>
 <div class="sect3">
-<h4 id="_sysml_c_est">4.2.3. SysML, c&#8217;est&#8230;&#8203;</h4>
+<h4 id="_sysml_cest">4.2.3. SysML, c&#8217;est&#8230;&#8203;</h4>
 <div class="dlist">
 <dl>
 <dt class="hdlist1"><a href="http://www.omgsysml.org/">SysML&#8482;</a> est un ensemble de 9 types de diagrammes (cf. <a href="#diags">Figure 6</a>)</dt>
@@ -1770,7 +1770,7 @@ Voici une liste non exhaustive des entreprises et des acteurs qui participent à
 </div>
 </div>
 <div class="sect3">
-<h4 id="_sysml_ce_n_est_pas">4.2.4. SysML, ce n&#8217;est pas&#8230;&#8203;</h4>
+<h4 id="_sysml_ce_nest_pas">4.2.4. SysML, ce n&#8217;est pas&#8230;&#8203;</h4>
 <div class="paragraph">
 <p>Nous l&#8217;avons déjà évoqué, mais il convient d&#8217;insister, <a href="http://www.omgsysml.org/">SysML&#8482;</a> n&#8217;est pas :</p>
 </div>
@@ -1819,7 +1819,7 @@ Voici une liste non exhaustive des entreprises et des acteurs qui participent à
 <div class="sect3">
 <h4 id="Outils">4.2.6. Outils SysML</h4>
 <div class="paragraph">
-<p>Il va de soit que le meilleur outil <a href="http://www.omgsysml.org/">SysML&#8482;</a> à ce jour est <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a><sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</sup>.
+<p>Il va de soit que le meilleur outil <a href="http://www.omgsysml.org/">SysML&#8482;</a> à ce jour est <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a><sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup>.
 Ce livre vous détaille l&#8217;utilisation, mais il existe un certain nombre d&#8217;autres outils
 permettant de réaliser des modèles <a href="http://www.omgsysml.org/">SysML&#8482;</a>.
 En voici une liste non exhaustive :</p>
@@ -2001,7 +2001,7 @@ cette section (nous utilisons ici le "plan" vu lors de l&#8217;introduction de l
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Analyse, Conception, Implémentation <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnote_6" title="View footnote.">6</a>]</sup></p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Analyse, Conception, Implémentation <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p></th>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#reqs">req</a>, <a href="#uc">uc</a>, <a href="#sd">sd</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#bdd">bdd</a>, <a href="#ibd">ibd</a>, <a href="#par">par</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#uc">uc</a>, <a href="#sd">sd</a>, <a href="#stm">stm</a>, <a href="#act">act</a></p></td>
@@ -2054,7 +2054,7 @@ Il sera vu plus en détail dans la section <a href="#reqs">Chapitre 7</a>, mais 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_des_cas_d_utilisation">4.4. Diagramme des cas d&#8217;utilisation</h3>
+<h3 id="_diagramme_des_cas_dutilisation">4.4. Diagramme des cas d&#8217;utilisation</h3>
 <div class="imageblock">
 <div class="content">
 <img src="../SmartHomeUseCase/SmartHomeSystemProject/diagrams/SHS_Use_Cases_Description.PNG" alt="SHS Use Cases Description" width="70%">
@@ -2177,11 +2177,11 @@ de messages entre eux.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_d_états">4.8. Diagramme d&#8217;états</h3>
+<h3 id="_diagramme_détats">4.8. Diagramme d&#8217;états</h3>
 
 </div>
 <div class="sect2">
-<h3 id="_diagramme_d_activité">4.9. Diagramme d&#8217;activité</h3>
+<h3 id="_diagramme_dactivité">4.9. Diagramme d&#8217;activité</h3>
 
 </div>
 <div class="sect2">
@@ -2248,7 +2248,7 @@ qu&#8217;il contient.
 </li>
 </ol>
 </div>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -2408,13 +2408,13 @@ Mais pour tous les autres liens (une interaction qui <code>&lt;&lt;satisfy&gt;&g
 <p>Il s&#8217;agit d&#8217;une démarche simplifiée, qui fait abstraction d&#8217;étapes importantes comme la plannification, les analyses de risques, la gestion des configurations, etc.</p>
 </div>
 <div class="paragraph">
-<p>Dans la suite nous présentons rapidement deux démarches plus complètes qui font référence en matière de <a href="#MBSE">[MBSE]</a> utilisant <a href="http://www.omgsysml.org/">SysML&#8482;</a>.</p>
+<p>Dans la suite nous présentons rapidement deux démarches plus complètes qui font référence en matière de <a href="#MBSE">MBSE</a> utilisant <a href="http://www.omgsysml.org/">SysML&#8482;</a>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_oosem">5.2. OOSEM</h3>
 <div class="paragraph">
-<p>OOSEM (<em>Object-Oriented Systems Engineering Method</em>) est certainement la méthode <a href="#MBSE">[MBSE]</a> la plus utilisée en combinaison de <a href="http://www.omgsysml.org/">SysML&#8482;</a>, puisqu&#8217;elle est promue par Stanford Friedenthal, le principal leader de <a href="http://www.omgsysml.org/">SysML&#8482;</a>.
+<p>OOSEM (<em>Object-Oriented Systems Engineering Method</em>) est certainement la méthode <a href="#MBSE">MBSE</a> la plus utilisée en combinaison de <a href="http://www.omgsysml.org/">SysML&#8482;</a>, puisqu&#8217;elle est promue par Stanford Friedenthal, le principal leader de <a href="http://www.omgsysml.org/">SysML&#8482;</a>.
 Pour plus d&#8217;information sur cette méthode, cf. <a href="#Friedenthal2016">[Friedenthal2016]</a>.</p>
 </div>
 </div>
@@ -2429,7 +2429,7 @@ Pour plus d&#8217;information sur cette méthode, cf. <a href="#Wielkins20XX">[W
 <div class="sect2">
 <h3 id="_autres_méthodes_et_démarches">5.4. Autres méthodes et démarches</h3>
 <div class="paragraph">
-<p>Pour plus de renseignements sur les différentes démarches de <a href="#MBSE">[MBSE]</a> nous renvoyons le lecteur à l&#8217;étude menée par l&#8217;<a href="http://www.incose.org/">INCOSE</a> par <a href="#Estefan">[Estefan]</a>.
+<p>Pour plus de renseignements sur les différentes démarches de <a href="#MBSE">MBSE</a> nous renvoyons le lecteur à l&#8217;étude menée par l&#8217;<a href="http://www.incose.org/">INCOSE</a> par <a href="#Estefan">[Estefan]</a>.
 Voir aussi <a href="#Ramos">[Ramos]</a> ou <a href="#Dickerson">[Dickerson]</a>.</p>
 </div>
 </div>
@@ -2599,7 +2599,7 @@ et en sélectionnant <b class="menuref">Switch Architecture Context</b> puis en 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_l_environnement_de_modélisation">6.4. L&#8217;environnement de modélisation</h3>
+<h3 id="_lenvironnement_de_modélisation">6.4. L&#8217;environnement de modélisation</h3>
 <div class="paragraph">
 <p>Comme de nombreux outils basés sur <a href="http://www.eclipse.org">eclipse</a>, <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> propose une
 organisation type des fenêtres et panneaux, appelée <em>perspective</em>.</p>
@@ -2693,7 +2693,7 @@ Cela peut en effet poser des problèmes plus tard (<a href="#execution">exécuti
 </table>
 </div>
 <div class="paragraph">
-<p>Pour notre modélisation du SmartHomeSystem, nous utilisons l&#8217;organisation suivante<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnote_7" title="View footnote.">7</a>]</sup> :</p>
+<p>Pour notre modélisation du SmartHomeSystem, nous utilisons l&#8217;organisation suivante<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup> :</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2981,7 +2981,7 @@ plus de détails (<a href="#Sommerville1997">[Sommerville1997]</a>) ou le guide 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_l_organisation_des_em_requirements_em">7.2. L&#8217;organisation des <em>Requirements</em></h3>
+<h3 id="_lorganisation_des_requirements">7.2. L&#8217;organisation des <em>Requirements</em></h3>
 <div class="paragraph">
 <p>Il ne s&#8217;agit pas ici de revenir sur les exigences elles-même, mais plutôt de voir comment <a href="http://www.omgsysml.org/">SysML&#8482;</a> permet
 de les exprimer, de les manipuler et surtout de les lier avec le reste du système.</p>
@@ -3049,7 +3049,7 @@ changer la signification par défaut.
 </div>
 </div>
 <div class="sect3">
-<h4 id="_différents_types_d_organisation">7.2.3. Différents types d&#8217;organisation</h4>
+<h4 id="_différents_types_dorganisation">7.2.3. Différents types d&#8217;organisation</h4>
 <div class="paragraph">
 <p>L&#8217;ingénierie des exigences aboutit généralement à une liste organisée d&#8217;exigences, que ce soit en terme
 de fonctionnelles/non fonctionnelles, de prioritaires/secondaires, etc.
@@ -3158,7 +3158,7 @@ Ceci facilite le travail d&#8217;organisation des exigences pour les ingénieurs
 </div>
 </div>
 <div class="sect3">
-<h4 id="_tableaux_de_em_requirements_em">7.2.4. Tableaux de <em>Requirements</em></h4>
+<h4 id="_tableaux_de_requirements">7.2.4. Tableaux de <em>Requirements</em></h4>
 <div class="paragraph">
 <p>Les <em>requirements</em> sont habituellement stockés dans des tableaux (feuilles Excel le plus souvent!).
 Il est donc recommandé par la norme, et possible dans de nombreux outils, de représenter les exigences sous forme tabulaire.</p>
@@ -3198,9 +3198,19 @@ et outils de modélisation <a href="http://www.omgsysml.org/">SysML&#8482;</a>.<
 <p><span class="red">XXX Parler des imports/exports ReqIf, de l&#8217;import/export excel etc.</span></p>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_papyrus_for_requirements">7.2.5. Papyrus for Requirements</h4>
+<div class="paragraph">
+<p>Ce composant spécifique de <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> traite des exigences.</p>
+</div>
+<div class="paragraph">
+<p>Pour l&#8217;installer, procéder comme l&#8217;installation de <a href="http://www.omgsysml.org/">SysML&#8482;</a> (cf. <a href="#GettingStarted">Chapitre 6</a>)
+mais en utilisant l&#8217;url suivante : <a href="https://hudson.eclipse.org/papyrus/view/Requirements/job/Requirements-Master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.requirements.p2/target/repository/" class="bare">https://hudson.eclipse.org/papyrus/view/Requirements/job/Requirements-Master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.requirements.p2/target/repository/</a>.</p>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_les_em_requirements_properties_em">7.3. Les <em>Requirements properties</em></h3>
+<h3 id="_les_requirements_properties">7.3. Les <em>Requirements properties</em></h3>
 <div class="paragraph">
 <p>Il est possible d&#8217;indiquer un certain nombre de propriétés sur un <em>requirement</em> :</p>
 </div>
@@ -3225,7 +3235,7 @@ et outils de modélisation <a href="http://www.omgsysml.org/">SysML&#8482;</a>.<
 </div>
 </div>
 <div class="sect2">
-<h3 id="_les_em_requirements_links_em">7.4. Les <em>Requirements links</em></h3>
+<h3 id="_les_requirements_links">7.4. Les <em>Requirements links</em></h3>
 <div class="paragraph">
 <p>Les principales relations entre <em>requirement</em> sont :</p>
 </div>
@@ -3291,7 +3301,7 @@ dans la partie <a href="#transvers">transverse</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_les_em_requirements_diagrams_em">7.5. Les <em>Requirements Diagrams</em></h3>
+<h3 id="_les_requirements_diagrams">7.5. Les <em>Requirements Diagrams</em></h3>
 <div class="paragraph">
 <p>Voici un exemple de <code><a href="#reqs">req</a></code> un peu plus étoffé, tiré de <a href="http://www.uml-sysml.org/sysml" class="bare">http://www.uml-sysml.org/sysml</a> (voir aussi <a href="#rationale">Figure 38</a>) :</p>
 </div>
@@ -3349,7 +3359,7 @@ sera abordé dans la partie sur les concepts <a href="#transvers">transverses</a
 <td class="content">
 <div class="paragraph">
 <p>Par exemple, en général, chaque <em>requirement</em> devrait être relié à au moins un
-artefact de conception (ne serait-ce qu&#8217;un <em>use case</em>)<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnote_8" title="View footnote.">8</a>]</sup>.</p>
+artefact de conception (ne serait-ce qu&#8217;un <em>use case</em>)<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup>.</p>
 </div>
 </td>
 </tr>
@@ -3357,7 +3367,7 @@ artefact de conception (ne serait-ce qu&#8217;un <em>use case</em>)<sup class="f
 </div>
 </div>
 <div class="sect2">
-<h3 id="_les_em_use_case_diagrams_em">7.9. Les <em>Use Case Diagrams</em></h3>
+<h3 id="_les_use_case_diagrams">7.9. Les <em>Use Case Diagrams</em></h3>
 <div class="paragraph">
 <p>Bien que nous traitions les cas d&#8217;utilisation dans la partie <a href="#usecase">interface</a>, nous les abordons
 	ici du fait de leur proximité avec les <em>requirements</em>.</p>
@@ -3741,7 +3751,7 @@ Parler de l&#8217;exemple du diagramme de contexte pour illustrer la différence
 initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User</a></em>) de la certification <em>Certified Systems Modeling Professional</em>&#8482;:
 Package Diagram, ownership, namespace, containment, dependency, view, viewpoint,
 Block definition, Block usage, valuetype (with units), value properties, parts, references, operations,
-Block Definition Diagram, compartments, specialization, associations (including composite<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnote_9" title="View footnote.">9</a>]</sup>), multiplicities,
+Block Definition Diagram, compartments, specialization, associations (including composite<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup>), multiplicities,
 Internal Block Diagram, enclosing block, flow ports and standard ports, connectors and item flows, representation of parts, constraint blocks,
 Parametric Diagram, constraint properties, constraint parameters, constraint expressions</p>
 </div>
@@ -4102,7 +4112,7 @@ Notez que cette machine à état n&#8217;a pas d&#8217;état final, son exécuti
 </div>
 </div>
 <div class="sect3">
-<h4 id="_activités_d_un_état">10.2.4. Activités d&#8217;un état</h4>
+<h4 id="_activités_dun_état">10.2.4. Activités d&#8217;un état</h4>
 <div class="paragraph">
 <p>Un état, outre l&#8217;intérêt conceptuel de représenter un situation particulièrement intéressante
 de l&#8217;élément qu&#8217;elle décrit (comme l&#8217;état <code>Full</code> de la pile de la <a href="#complet">Stack de la figure précédente</a>),
@@ -4282,7 +4292,7 @@ Exemple <code><strong class="red">when</strong> "t==10"</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_d_activité_2">10.3. Diagramme d&#8217;activité</h3>
+<h3 id="_diagramme_dactivité_2">10.3. Diagramme d&#8217;activité</h3>
 <div class="paragraph">
 <p>Le diagramme d&#8217;activité est étudié dans ce livre plus en détail au chapitre
 <a href="#act">Section 11.3</a>, dans la partie sur les interactions.
@@ -5154,7 +5164,7 @@ L’action d’appel est représentée graphiquement par une fourche à droite d
 </div>
 </div>
 <div class="sect3">
-<h4 id="_les_différent_types_de_em_packages_em">12.1.3. Les différent types de <em>packages</em></h4>
+<h4 id="_les_différent_types_de_packages">12.1.3. Les différent types de <em>packages</em></h4>
 <div class="paragraph">
 <p>Il existe plusieurs types de <em>packages</em> :</p>
 </div>
@@ -5669,9 +5679,9 @@ Si vous n&#8217;avez pas cette option à cocher, vous n&#8217;avez pas la bonne 
 </div>
 </div>
 <div class="sect3">
-<h4 id="_exemple_concret_d_utilisation">13.1.2. Exemple concret d&#8217;utilisation</h4>
+<h4 id="_exemple_concret_dutilisation">13.1.2. Exemple concret d&#8217;utilisation</h4>
 <div class="paragraph">
-<p>Nous avons expérimenté avec succès<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnote_10" title="View footnote.">10</a>]</sup>,
+<p>Nous avons expérimenté avec succès<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup>,
 l&#8217;utilisation de cette solution avec 24 étudiants collaborant sur le même modèle <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.</p>
 </div>
 <div class="paragraph">
@@ -5769,7 +5779,7 @@ consultez la documentation spécifique :
 
 </div>
 <div class="sect3">
-<h4 id="_papyrus_for_requirements">13.2.6. Papyrus for Requirements</h4>
+<h4 id="_papyrus_for_requirements_2">13.2.6. Papyrus for Requirements</h4>
 
 </div>
 </div>
@@ -6174,7 +6184,7 @@ du moins en informatique.</p>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_diagramme_des_exigences_3">Diagramme des exigences</h3>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 33.3333%;">
@@ -6198,8 +6208,8 @@ du moins en informatique.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_d_état">Diagramme d&#8217;état</h3>
-<table class="tableblock frame-all grid-all spread">
+<h3 id="_diagramme_détat">Diagramme d&#8217;état</h3>
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 33.3333%;">
@@ -6280,8 +6290,8 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 et où ils sont abordés dans le livre.</p>
 </div>
 <div class="sect3">
-<h4 id="_modèles_d_exigences">Modèles d&#8217;exigences</h4>
-<table class="tableblock frame-all grid-all spread">
+<h4 id="_modèles_dexigences">Modèles d&#8217;exigences</h4>
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 75%;">
 <col style="width: 25%;">
@@ -6322,7 +6332,7 @@ et où ils sont abordés dans le livre.</p>
 </div>
 <div class="sect3">
 <h4 id="_modèles_structurels">Modèles structurels</h4>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 75%;">
 <col style="width: 25%;">
@@ -6371,7 +6381,7 @@ et où ils sont abordés dans le livre.</p>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">specialization, associations (including composite<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnote_11" title="View footnote.">11</a>]</sup>), multiplicities</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">specialization, associations (including composite<sup class="footnote">[<a id="_footnoteref_11" class="footnote" href="#_footnotedef_11" title="View footnote.">11</a>]</sup>), multiplicities</p></td>
 <td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
@@ -6415,7 +6425,7 @@ et où ils sont abordés dans le livre.</p>
 </div>
 <div class="sect3">
 <h4 id="_modèles_comportementaux">Modèles comportementaux</h4>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 75%;">
 <col style="width: 25%;">
@@ -6488,7 +6498,7 @@ et où ils sont abordés dans le livre.</p>
 </div>
 <div class="sect3">
 <h4 id="_eléments_transverses">Eléments transverses</h4>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 75%;">
 <col style="width: 25%;">
@@ -6628,37 +6638,37 @@ cf. <a href="#niveauConcepts">Niveaux de concepts SysML</a></p>
 </div>
 <div id="footnotes">
 <hr>
-<div class="footnote" id="_footnote_1">
+<div class="footnote" id="_footnotedef_1">
 <a href="#_footnoteref_1">1</a>. Au sens latin du terme : "que l&#8217;on peut avoir toujours à portée de main".
 </div>
-<div class="footnote" id="_footnote_2">
+<div class="footnote" id="_footnotedef_2">
 <a href="#_footnoteref_2">2</a>. Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.
 </div>
-<div class="footnote" id="_footnote_3">
+<div class="footnote" id="_footnotedef_3">
 <a href="#_footnoteref_3">3</a>. Pour des raisons de simplicité, et pour coller à la réalité de la <a href="http://mi.iut-blagnac.fr/">MIB</a>, nous ne considérons qu&#8217;il n&#8217;y a qu&#8217;un(e) seul(e) habitant(e).
 </div>
-<div class="footnote" id="_footnote_4">
+<div class="footnote" id="_footnotedef_4">
 <a href="#_footnoteref_4">4</a>. Scénario tiré du Projet ESIR3 NSOC donné par <a href="http://www.combemale.fr">Benoît Combemale</a> à l&#8217;<a href="https://esir.univ-rennes1.fr/">ESIR</a>.
 </div>
-<div class="footnote" id="_footnote_5">
+<div class="footnote" id="_footnotedef_5">
 <a href="#_footnoteref_5">5</a>. La partialité des auteurs peut être questionnée, mais d&#8217;un point de vue complétude et respect de la norme, cette affirmation est régulièrement admise par la communauté.
 </div>
-<div class="footnote" id="_footnote_6">
+<div class="footnote" id="_footnotedef_6">
 <a href="#_footnoteref_6">6</a>. En fonction du niveau de détail.
 </div>
-<div class="footnote" id="_footnote_7">
+<div class="footnote" id="_footnotedef_7">
 <a href="#_footnoteref_7">7</a>. Issue du <a href="http://www-list.cea.fr/">CEA LIST</a>.
 </div>
-<div class="footnote" id="_footnote_8">
+<div class="footnote" id="_footnotedef_8">
 <a href="#_footnoteref_8">8</a>. et vice-versa!
 </div>
-<div class="footnote" id="_footnote_9">
+<div class="footnote" id="_footnotedef_9">
 <a href="#_footnoteref_9">9</a>. but not shared aggregation
 </div>
-<div class="footnote" id="_footnote_10">
+<div class="footnote" id="_footnotedef_10">
 <a href="#_footnoteref_10">10</a>. dans le cadre du cours <a href="http://www.omgsysml.org/">SysML&#8482;</a> du <a href="http://www.master-developpement-logiciel.fr/">Master DL</a>
 </div>
-<div class="footnote" id="_footnote_11">
+<div class="footnote" id="_footnotedef_11">
 <a href="#_footnoteref_11">11</a>. but not shared aggregation
 </div>
 </div>
