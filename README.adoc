@@ -10,7 +10,7 @@
 Ce dépôt est un dépôt de travail pour construire un livre sur la notation {SysML}
 au travers de l'utilisation de l'outil {Papyrus} version {papyrusversion}.
 
-- La version web du livre est disponible {githuburl}[ici].
+- La version web du livre est disponible {siteurl}[ici].
 - La version PDF du livre est disponible {pdfurl}[ici].
 - Les modèles sont disponibles {siteUseCase}[ici]
 
