@@ -3,7 +3,7 @@
 :papyrusversion: 4.0
 :siteurl: https://bit.ly/sysmlbook
 :githuburl: https://github.com/jmbruel/sysmlpapyrusbook
-:pdfurl: {githuburl}/PapyrusSysMLinAction.pdf
+:pdfurl: https://github.com/jmbruel/sysmlpapyrusbook/blob/gh-pages/PapyrusSysMLinAction.pdf
 :siteUseCase: https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
 :sysml: http://www.omgsysml.org/[SysML(TM)]
 
