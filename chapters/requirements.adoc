@@ -166,8 +166,7 @@ helps you to specify and analyze requirements in the context of systems modeling
 
 Ce composant spécifique de {papyrus} traite des exigences.
 
-Pour l'installer, procéder comme l'installation de {sysml} (cf. <<GettingStarted>>)
-mais en utilisant l'url suivante : {pluginreqs}.
+Pour l'installer, procéder comme l'installation de {sysml} (cf. <<GettingStarted>>) mais en utilisant l'url suivante : {pluginreqs}.
 
 == Les _Requirements properties_
 
