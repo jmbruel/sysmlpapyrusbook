@@ -124,7 +124,7 @@ Ceci facilite le travail d'organisation des exigences pour les ingénieurs <<Nep
 Dans le {projectName}, nous avons organisé les exigences en paquetages par grands types :
 
 .Notre organisation des exigences pour le cas d'étude
-image::{diagrams}/Description_of_the_SHS_requirements_organisation.PNG[width=50%,scaledwidth=50%]
+image::{diagrams}/Outlines_of_the_system_requirements_model_organisation.PNG[width=50%,scaledwidth=50%]
 
 [NOTE]
 ====
@@ -137,9 +137,8 @@ image::{diagrams}/SecurityRequirementDiagram.PNG[width=70%,scaledwidth=70%]
 ====
 === Tableaux de _Requirements_
 
-Les _requirements_ sont habituellement stockés dans des tableaux (feuilles excel le plus souvent!).
-Il est donc recommandé par le norme et possible dans de nombreux outils de représenter les exigences
-sous forme tabulaire.
+Les _requirements_ sont habituellement stockés dans des tableaux (feuilles Excel le plus souvent!).
+Il est donc recommandé par la norme, et possible dans de nombreux outils, de représenter les exigences sous forme tabulaire.
 
 .Définition : _Requirements Table_ (OMG SysML v1.5, p. 167)
 [NOTE,icon=sysml.jpeg]
@@ -158,6 +157,17 @@ et outils de modélisation {sysml}.
 image::todo.jpg[width="50%",scaledwidth="50%"]
 
 [red]#XXX Parler des imports/exports ReqIf, de l'import/export excel etc.#
+
+=== Papyrus for Requirements 
+
+/////
+helps you to specify and analyze requirements in the context of systems modeling. It aims to cover the Specification, Management, Analysis and Validation-Verification activities of Requirements Engineering. Papyrus for Requirements depends on the components Papyrus for SysML and Papyrus for Metrics. 
+/////
+
+Ce composant spécifique de {papyrus} traite des exigences.
+
+Pour l'installer, procéder comme l'installation de {sysml} (cf. <<GettingStarted>>)
+mais en utilisant l'url suivante : {pluginreqs}.
 
 == Les _Requirements properties_
 
