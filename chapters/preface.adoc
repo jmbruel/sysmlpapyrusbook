@@ -35,7 +35,7 @@ C'est un des avantages de {papyrus} : c'est un logiciel ouvert, auxquels de nomb
 permettant ainsi la prise en compte rapide des remarques utilisateurs, la disponibilité d'un forum riche, etc.
 
 Je veux utiliser des normes d'{IS}::
-Si, comme généralement en {is}, vous basez vos processus et outils sur des standards, vous aurez
+Si, comme généralement en {is}, vous basez vos processus et outils sur des standards (cf. <<standards>>), vous aurez
 avec {sysml}, une notation standard pour vos modèles (apprise en filière technologique STI-2D des Lycées,
 en classes préparatoires et dans beaucoup d'écoles d'ingénieurs).
 Et vous aurez, avec {papyrus}, un outils 100% conforme à la spécification.

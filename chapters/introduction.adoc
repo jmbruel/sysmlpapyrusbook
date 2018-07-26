@@ -96,7 +96,11 @@ Il ne s'agit donc pas pour nous de rappeler les grandes démarches de développe
 Nous renvoyons pour cela le lecteur aux publications de l'{incose} ou de l'{afis}.
 
 Concernant les démarches de développement de systèmes en lien avec le <<MBSE>>, {sysml} n'en impose aucune. 
-C'est à la fois une faiblesse car cela pourrait servir de guide à l'utilisation de la notation elle-même, mais aussi une force car vous pouvez utiliser {sysml} sans changer de méthode. 
+C'est à la fois une faiblesse car cela pourrait servir de guide à l'utilisation de la notation elle-même, mais aussi une force car vous pouvez utiliser {sysml} sans changer de méthode, y compris si vos développements et pratiques s'inscrivent dans le cadre d'utilisation de standards, nombreux en {is} comme l'illustre la <<standards>>. 
+
+[[standards]]
+.Taxonomie (partielle) des standards principaux en Ingénierie Système <<Friedenthal2016>>
+image::standards.png[width="60%",scaledwidth="60%"]
 
 Nous utiliserons dans ce livre une démarche minimaliste préconisée par <<Friedenthal2016>>.
 Cette méthode ainsi que les références aux démarches principales seront abordées au <<methode>>.

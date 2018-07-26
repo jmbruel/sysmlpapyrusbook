@@ -166,11 +166,11 @@ et où ils sont abordés dans le livre.
 |======================
 |	Concept         |   Lien
 | Exigences       |		<<reqs>>
-| derive, verify, satisfy, refine, trace, containment | <<reqs>>
-| Diagramme des exigences | <<reqs>>
-| Diagramme des cas d'utilisation | <<usecase>>
-| use case, actor, and subject | <<usecase>>
-| association, include, extend, generalization | <<usecase>>
+| derive, verify, satisfy, refine, trace, containment | <<reqLinks>>
+| Diagramme des exigences | <<reqDiags>>
+| Diagramme des cas d'utilisation | <<ucDiags>>, <<uc-concepts>>
+| use case, actor, and subject | <<uc-concepts>>
+| association, include, extend, generalization | <<uc-concepts>>
 |======================
 
 ==== Modèles structurels

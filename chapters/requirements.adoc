@@ -179,6 +179,7 @@ Il est possible d'indiquer un certain nombre de propriétés sur un _requirement
 - _verification method_ (`analysis`, `tests`, ...)
 
 
+[[reqLinks]]
 == Les _Requirements links_
 
 Les principales relations entre _requirement_ sont :
@@ -207,6 +208,7 @@ dans la partie <<transvers,transverse>>.
 .Relations liées au _requirements_ dans {papyrus}
 image::req-connections.png[width="20%",scaledwidth="20%"]
 
+[[reqDiags]]
 == Les _Requirements Diagrams_
 
 Voici un exemple de `{req}` un peu plus étoffé, tiré de http://www.uml-sysml.org/sysml (voir aussi <<rationale>>) :
@@ -246,6 +248,7 @@ Par exemple, en général, chaque _requirement_ devrait être relié à au moins
 artefact de conception (ne serait-ce qu'un _use case_)footnote:[et vice-versa!].
 ====
 
+[[ucDiags]]
 == Les _Use Case Diagrams_
 
 Bien que nous traitions les cas d'utilisation dans la partie <<usecase,interface>>, nous les abordons
