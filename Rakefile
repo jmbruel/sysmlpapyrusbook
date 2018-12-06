@@ -1,3 +1,7 @@
+require 'rubygems'
+require 'cucumber'
+require 'cucumber/rake/task'
+
 desc "Install necessary pdf, epub3 asciidoctor gems"
 task :default do
   install_plugin("asciidoctor-epub3")
@@ -26,4 +30,14 @@ def build_gem
   sh('bundle')
   sh('rake', 'build')
   system('gem install pkg/*.gem')
+end
+
+desc "Launch tests before CI"
+task :test  do
+  system("ruby test/figures_test.rb")
+end
+
+
+Cucumber::Rake::Task.new(:features) do |t|
+  t.cucumber_opts = "--format pretty" # Any valid command line option can go here.
 end

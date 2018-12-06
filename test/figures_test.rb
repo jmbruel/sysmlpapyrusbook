@@ -1,9 +1,11 @@
+# encoding: UTF-8
+
 #require 'minitest/spec'
 require 'minitest/autorun'
+Output = "."
+re = Regexp.new("\.html$") # asciidoc target file
 
-re = Regexp.new("\.html$") # asciidoc source file
-
-dir = Dir.new('./output')
+dir = Dir.new(Output)
 dir.each  {|fn|
     if ( fn =~ re ) then
         print "asciidoc source : " + fn + "\n"
@@ -20,7 +22,7 @@ dir.each  {|fn|
           # remove from test every online figure (such as Github status)
           if path != "https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master"
             describe File do
-              it "should exist " + path + " in the {images} directory" do
+              it " should exist " + path + " in the {images} directory" do
                 assert_equal File.file?(path), true
               end
             end
