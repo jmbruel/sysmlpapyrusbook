@@ -100,7 +100,7 @@ C'est à la fois une faiblesse car cela pourrait servir de guide à l'utilisatio
 
 [[standards]]
 .Taxonomie (partielle) des standards principaux en Ingénierie Système <<Friedenthal2016>>
-image::standards.png[width="60%",scaledwidth="60%"]
+image::dessins/standards.svg[width="60%",scaledwidth="60%"]
 
 Nous utiliserons dans ce livre une démarche minimaliste préconisée par <<Friedenthal2016>>.
 Cette méthode ainsi que les références aux démarches principales seront abordées au <<methode>>.

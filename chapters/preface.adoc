@@ -66,6 +66,8 @@ Le livre n'aborde pas directement les concepts systèmes.
 //== Comment lire ce livre ?
 
 //-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
 ifndef::final[]
 .Commentaire
 [CAUTION]
@@ -76,8 +78,8 @@ SysML par la pratique, le chapitre "Bien démarrer" est primordiale.
 - Ajouter des ordres de chapitres en fonction des publiques (étudiants, ingénieur, etc.)
 *****
 ====
-//-----------------------------------------------
 endif::final[]
+//-----------------------------------------------
 
 Ce document a été réalisé de manière à être lu de préférence
 dans sa version électronique, ce qui permet de

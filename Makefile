@@ -25,3 +25,7 @@ plant: $(DESSINS)/*.png
 $(DESSINS)/%.png: $(DESSINS)/%.plantuml
 	@echo '==> Compiling plantUML files to generate PNG'
 	java -jar ../plantuml.jar $<
+
+$(DESSINS)/%.svg: $(DESSINS)/%.plantuml
+	@echo '==> Compiling plantUML files to generate SVG'
+	java -jar ../plantuml.jar -tsvg $<

@@ -22,12 +22,28 @@ v1.4, {localdate}
 
 include::definitions.txt[]
 
+//-----------------------------------------------
+//-- Affichage du statut GitHub d'intégration continue
+//-----------------------------------------------
 ifndef::backend-pdf[]
 image:https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
 (Fork me on https://github.com/jmbruel/sysmlpapyrusbook[icon:github[] GitHub])
 endif::backend-pdf[]
 
+
+
 [preface]
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Si vous lisez ce commentaire, c'est que cette version est en cours de construction!
+====
+endif::final[]
+//-----------------------------------------------
 include::chapters/about.adoc[leveloffset=+1]
 include::chapters/preface.adoc[leveloffset=+1]
 
