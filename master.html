@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.9">
+<meta name="generator" content="Asciidoctor 1.5.8">
 <meta name="author" content="Jean-Michel Bruel, Sébastien Gérard">
 <title>SysML par la pratique avec Papyrus</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -20,7 +20,7 @@
 <span id="author2" class="author">Sébastien Gérard</span><br>
 <span id="email2" class="email"><a href="mailto:Sebastien.Gerard@cea.fr">Sebastien.Gerard@cea.fr</a></span><br>
 <span id="revnumber">version 1.4,</span>
-<span id="revdate">2019-05-29</span>
+<span id="revdate">2019-06-25</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table des Matières</div>
@@ -1397,6 +1397,18 @@ Pour plus d&#8217;information, consultez <a href="https://www.eclipse.org/papyru
 </tr>
 </table>
 </div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Si vous voulez mettre à jour une ancienne version de <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, il vous faut non seulement ajouter l&#8217;update site de <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, mais aussi celui d&#8217;<a href="http://www.eclipse.org">eclipse</a> (par exemple <code>download.eclipse.org/releases/2019-06</code>).
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_sysml">3.1.2. SysML</h4>
@@ -1411,7 +1423,7 @@ Pour cela, deux possibilités :</p>
 retrouver le plugin officiel : <a href="http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/photon/" class="bare">http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/photon/</a>.</p>
 </li>
 <li>
-<p>Récupérer directement depuis l&#8217;<a href="https://marketplace.eclipse.org/content/papyrus-sysml-14">eclipse market place</a></p>
+<p>Récupérer directement depuis l&#8217;<a href="https://marketplace.eclipse.org/content/papyrus-sysml-16">eclipse market place</a></p>
 </li>
 </ol>
 </div>
@@ -1428,7 +1440,7 @@ retrouver le plugin officiel : <a href="http://download.eclipse.org/modeling/mdt
 <p>Pour vérifier les éléments installés allez dans <span class="menuseq"><b class="menu">About&#8230;&#8203;</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Installation Details</b></span> :</p>
 <div class="imageblock">
 <div class="content">
-<img src="images/4.0/installation-details.png" alt="launching" width="40%">
+<img src="images/4.0/installation-details.png" alt="détails" width="70%">
 </div>
 <div class="title">Figure 5. Détails d&#8217;installation [v.4.0]</div>
 </div>
@@ -1831,7 +1843,7 @@ Voici une liste non exhaustive des entreprises et des acteurs qui participent à
 <div class="content">
 <img src="images/diff.png" alt="SysML and UML" width="50%">
 </div>
-<div class="title">Figure 6. Liens entre UML et SysML (tiré de <a href="#SysML">SysML 1.5, p. 9</a>)</div>
+<div class="title">Figure 6. Liens entre UML et SysML (tiré de <a href="#_sysml">SysML 1.5, p. 9</a>)</div>
 </div>
 <div class="paragraph">
 <p><a href="http://www.omgsysml.org/">SysML&#8482;</a> et <a href="http://www.uml.org/">UML&#8482;</a> sont parfois utilisés de manière complémentaire, mais la plupart du temps, <a href="http://www.uml.org/">UML&#8482;</a> est utilisé pour modéliser les aspects logiciels et <a href="http://www.omgsysml.org/">SysML&#8482;</a> pour modéliser les systèmes.</p>
@@ -3317,7 +3329,7 @@ dans la partie <a href="#transvers">transverse</a>.</p>
 <div class="content">
 <img src="images/req-connections.png" alt="req connections" width="20%">
 </div>
-<div class="title">Figure 37. Relations liées au <em>requirements</em> dans <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a></div>
+<div class="title">Figure 37. Relations liées au <em>requirements</em> dans http://www.eclipse.org/papyrus/[Papyrus-SysML]</div>
 </div>
 </div>
 <div class="sect2">
