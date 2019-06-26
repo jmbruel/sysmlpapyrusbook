@@ -29,7 +29,7 @@ ifndef::backend-pdf[[align="center",cols="<40%,^10%,^50%",options="header",width
 |======================
 | Produits | Section | Illustration
 | stakeholder hierarchy diagram  | <<visionProjectStake>> | image:diagrams/SHS_stakeholder_hierarchy_diagram.SVG[width="90%",scaledwidth=20%]
-| environment diagram | <<visionProjectEnv>>  | image:visionProjectEnvFig.png[width="90%",scaledwidth=20%]
+| environment diagram | <<visionProjectEnv>>  | image:diagrams/SHS_environment_diagram.SVG[width="90%",scaledwidth=20%]
 | need architecture diagram | <<visionOpReqs>>  |
 image:visionOpReqsFig.png[width="90%",scaledwidth=20%]
 | life-cycle diagram | <<visionOpState>> |

@@ -145,7 +145,7 @@ ifdef::FR[.Exemple de Diagramme de Décomposition Organique (tirée de <<CESAM17
 ifdef::UK[.Example of Constructional Decomposition Diagram (taken from <<CESAM17>>)]
 image::visionConstStatFig.png[width="80%",scaledwidth=80%]
 
-[[visionConstStatFig]]
+[[visionConstStatFig2]]
 ifdef::FR[.Exemple de Diagramme d'Interaction Organique (tirée de <<CESAM17>>)]
 ifdef::UK[.Example of Constructional Interaction Diagram (taken from <<CESAM17>>)]
 image::visionConstStatFig2.png[width="80%",scaledwidth=80%]

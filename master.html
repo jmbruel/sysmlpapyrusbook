@@ -2933,7 +2933,7 @@ nous renvoyons le lecteur aux tutoriels disponibles sur le site :
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">environment diagram</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#visionProjectEnv">7.2.2.2</a></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/visionProjectEnvFig.png" alt="visionProjectEnvFig" width="90%"></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="images/diagrams/SHS_environment_diagram.SVG" alt="SHS environment diagram" width="90%"></span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">need architecture diagram</p></td>
@@ -3243,6 +3243,9 @@ La question du "Qui" porte ici sur le "<em>What</em>", c&#8217;est à dire "quel
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_mise_en_œuvre_en_sysml">7.2.2. Mise en œuvre en SysML</h4>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -3254,9 +3257,7 @@ La question du "Qui" porte ici sur le "<em>What</em>", c&#8217;est à dire "quel
 <div class="paragraph">
 <p>Nous aborderons dans cette partie les concepts du niveau
 initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User</a></em>) de la certification <em>Certified Systems Modeling Professional</em>&#8482;:
-requirement, requirement diagram, derive, verify, satisfy, refine, trace, containment.
-use case diagram, use case, actor, subject, generalization, package, internal block diagram,
-parts, connectors, item flows.</p>
+use case diagram, actor, generalization, package,  block definition diagram, block, item flows, comment.</p>
 </div>
 </td>
 </tr>
@@ -3277,38 +3278,38 @@ parts, connectors, item flows.</p>
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p>Les acteurs sont bien connus de <a href="http://www.omgsysml.org/">SysML&#8482;</a> / <a href="http://www.uml.org/">UML&#8482;</a>.
+Nous allons donc utilise un diagramme des cas d&#8217;utilisation pour lister les parties prenantes et leur hiérarchie éventuelle.
+Nous placerons ensuite dans un <em>Block Definition Diagrams</em> le système (le SmartHomeSystem dans notre exemple) et ses interactions avec les parties prenantes.
+Pour représenter les flux, <a href="http://www.omgsysml.org/">SysML&#8482;</a> possède le concept d'<em>Item Flow</em>, qui correspond parfaitement à ce besoin.</p>
 </div>
-<div class="sect3">
-<h4 id="_mise_en_œuvre_en_sysml">7.2.2. Mise en œuvre en SysML</h4>
 <div class="sect4">
-<h5 id="visionProjectStake">Stakeholder Hierarchy Diagram</h5>
+<h5 id="visionProjectStake">Diagramme des parties prenantes (<em>Stakeholder Hierarchy Diagram</em>)</h5>
 <div id="visionProjectStakeFig" class="imageblock">
 <div class="content">
 <img src="images/diagrams/SHS_stakeholder_hierarchy_diagram.SVG" alt="SHS stakeholder hierarchy diagram" width="80%">
 </div>
 <div class="title">Figure 33. Exemple de Diagramme des parties prenantes</div>
 </div>
-</div>
-<div class="sect4">
-<h5 id="visionProjectEnv">Environment Diagram</h5>
-<div class="admonitionblock caution">
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-<div class="title">Commentaire</div>
-<div class="paragraph">
-<p>Figure à changer pour du <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>!</p>
-</div>
+Il existe un stéréotype <a href="http://www.omgsysml.org/">SysML&#8482;</a> &lt;&lt;Stakeholder&gt;&gt; qui peut être utilisé pour clairement accentuer le rôle de ces acteurs.
 </td>
 </tr>
 </table>
 </div>
+</div>
+<div class="sect4">
+<h5 id="visionProjectEnv">Environment Diagram</h5>
 <div id="visionProjectEnvFig" class="imageblock">
 <div class="content">
-<img src="images/visionProjectEnvFig.png" alt="visionProjectEnvFig" width="80%">
+<img src="images/diagrams/SHS_environment_diagram.SVG" alt="SHS environment diagram" width="80%">
 </div>
 <div class="title">Figure 34. Exemple de Diagramme d&#8217;environnement projet (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
@@ -3323,13 +3324,13 @@ parts, connectors, item flows.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Quelles sont les différences entre <strong>besoins</strong> et <strong>exigences</strong> ?</p>
+<p>Quelles sont les différences entre <strong>utilisateurs</strong> et <strong>parties prenantes</strong> ?</p>
 </li>
 <li>
-<p>En quoi les cas d&#8217;utilisation sont-ils complémentaires des exigences?</p>
+<p>Pourquoi regrouper les parties prenantes en "en lien avec le Projet" ou "en lien avec le Produit" ?</p>
 </li>
 <li>
-<p>Quelle est la différence entre un <em>package</em> de type <strong><em>model</em></strong> et un <em>package</em> de type <strong><em>package</em></strong>?</p>
+<p>Quelle est la différence entre un <em>package</em> de type <strong><em>model</em></strong> et un <em>package</em> de type <strong><em>package</em></strong> ?</p>
 </li>
 </ol>
 </div>
@@ -4773,7 +4774,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 </div>
 <div class="title">Figure 48. Exemple de Diagramme de Décomposition Organique (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
-<div id="visionConstStatFig" class="imageblock">
+<div id="visionConstStatFig2" class="imageblock">
 <div class="content">
 <img src="images/visionConstStatFig2.png" alt="visionConstStatFig2" width="80%">
 </div>
