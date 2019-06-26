@@ -1,0 +1,129 @@
+[[visionFunc]]
+= Vision Fonctionnelle
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Vision Fonctionnelle.
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+//---------------------------------------------------------------------------------
+== Principes
+
+Blabla sur cette partie en générale.
+
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis} | | | | |
+| {design} 5+| {here}
+| {implementation}	| | | | | 
+|======================
+
+.Concepts définis dans cette section
+[NOTE,icon=sysml.jpeg]
+=====
+Nous aborderons les concepts du niveau
+initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM):
+...
+=====
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Lister les concepts abordés!
+====
+endif::final[]
+//-----------------------------------------------
+
+== Mise en œuvre en SysML
+
+[[visionFuncReqs]]
+=== Exigences
+
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis}	| |  | | |  
+| {design}	| {here} | | | | 
+| {implementation}	| | | | | 
+|======================
+
+
+[[visionFuncState]]
+=== États
+
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis}	| |  | | |  
+| {design}	| | {here} | | | 
+| {implementation}	| | | | | 
+|======================
+
+[[visionFuncStat]]
+=== Structures
+
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis}	| | | | |  
+| {design}	| | | {here} | | 
+| {implementation}	| | | | | 
+|======================
+
+[[visionFuncDyn]]
+=== Interactions
+
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis}	| | | | |  
+| {design}	| | | | {here} | 
+| {implementation}	| | | | | 
+|======================
+
+[[visionFuncFlow]]
+=== Flux
+
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis}	| | | |  | 
+| {design}	| | | | |  {here}
+| {implementation}	| | | | | 
+|======================
+
+== {resume}
+
+== {revisions}
+
+. Quelles sont les différences entre ...

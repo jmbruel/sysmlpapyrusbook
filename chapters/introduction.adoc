@@ -123,7 +123,7 @@ endif::final[]
 La matrice qui nous servira de "carte de base" pour placer les activités
 ou les modèles, sera celle-ci :
 
-include::matrice-base.asc[]
+include::matrice-cesame.asc[]
 
 Cette matrice permet de situer les différents éléments qui seront vus dans ce cours dans un cadre utile pour comparer ces éléments les uns aux autres.
 Nous vous conseillons de vous faire votre propre matrice.

@@ -1,6 +1,6 @@
 = SysML par la pratique avec Papyrus
 Jean-Michel Bruel <bruel@irit.fr>; Sébastien Gérard <Sebastien.Gerard@cea.fr>
-v1.4, {localdate}
+v1.6, {localdate}
 :myinitials: JMB
 :doctype: book
 :toc: left
@@ -68,19 +68,24 @@ include::chapters/methode.adoc[leveloffset=+1]
 include::chapters/gettingStarted.adoc[leveloffset=+1]
 // SEB
 
-include::chapters/requirements.adoc[leveloffset=+1]
+include::chapters/cesam.adoc[leveloffset=+1]
+
+[[avances]]
+== Concepts SysML avancés
+
+include::chapters/requirements.adoc[leveloffset=+2]
 // SEB
 
-include::chapters/usages.adoc[leveloffset=+1]
+include::chapters/usages.adoc[leveloffset=+2]
 // SEB
 
-include::chapters/structure.adoc[leveloffset=+1]
+include::chapters/structure.adoc[leveloffset=+2]
 // JMB
 
-include::chapters/behavior.adoc[leveloffset=+1]
+include::chapters/behavior.adoc[leveloffset=+2]
 // SEB
 
-include::chapters/interaction.adoc[leveloffset=+1]
+include::chapters/interaction.adoc[leveloffset=+2]
 //JMB
 
 include::chapters/crossCuting.adoc[leveloffset=+1]

@@ -1,0 +1,148 @@
+
+[[cesam]]
+= Mise en oeuvre de CESAM
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Déclinaison de la méthode {CESAM} avec SysML et Papyrus.
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+Pour ceux qui sont familiarisés avec {CESAM}, la <<cesamDeliverables>> présente la liste des principaux produits (_deliverables_) de {CESAM} et les sous-sections correspondantes, où nous abordons comment les réaliser en {sysml} :
+
+
+
+:old-section-refsig: {section-refsig}
+:!section-refsig:
+
+[[cesamDeliverables]]
+ifdef::FR[.Les produits CESAM]
+ifdef::UK[.The CESAM deliverables]
+ifdef::backend-pdf[[align="center",cols="<40%,^10%,^50",options="header"]]
+ifndef::backend-pdf[[align="center",cols="<40%,^10%,^50%",options="header",width=100]]
+|======================
+| Produits | Section | Illustration
+| stakeholder hierarchy diagram  | <<visionProjectStake>> | image:diagrams/SHS_stakeholder_hierarchy_diagram.SVG[width="90%",scaledwidth=20%]
+| environment diagram | <<visionProjectEnv>>  | image:visionProjectEnvFig.png[width="90%",scaledwidth=20%]
+| need architecture diagram | <<visionOpReqs>>  |
+image:visionOpReqsFig.png[width="90%",scaledwidth=20%]
+| life-cycle diagram | <<visionOpState>> |
+image:visionOpStateFig.png[width="90%",scaledwidth=20%]
+| use case diagrams | <<visionOpStat>> |
+image:visionOpStatFig.png[width="90%",scaledwidth=20%]
+| operational scenarios diagrams | <<visionOpDyn>> |
+image:visionOpDynFig.png[width="90%",scaledwidth=20%]
+| operational flow diagrams | <<visionOpFlow>> |
+image:visionOpFlowFig.png[width="90%",scaledwidth=20%]
+| functional requirement architecture diagram | <<visionFuncReqs>> |
+| functional mode diagram | <<visionFuncState>> |
+| functional decomposition & interaction diagrams | <<visionFuncStat>> |
+| functional scenario diagrams | <<visionFuncDyn>> |
+| functional flow diagrams | <<visionFuncFlow>> |
+| constructional requirement architecture | <<visionConstReqs>>  |
+| constructional mode diagram | <<visionConstState>>  |
+| constructional decomposition & interaction diagrams | <<visionConstStat>>  |
+| constructional scenario diagrams | <<visionConstDyn>> |
+| constructional flow diagrams | <<visionConstFlow>> |
+|======================
+
+
+
+:section-refsig: {old-section-refsig}
+
+//---------------------------------------------------------------------------------
+== Fondements
+
+Comme abordé en <<cesamOverview>>, {CESAM} (_CESAMES Architecture Method_) est un _framework_ d'architecture et de modélisation développé par {CESAMES} et dédié à la collaboration entre les arhitectes systèmes, les ingénieurs, pour les aider à maîtriser la complexité des systèmes intégrés. 
+
+/////
+CESAM is a systems architecting & modelling framework, developed since 2003 in close interaction with many industrial leading companies. It is dedicated to the working systems architects, engineers or modelers to help them to better master the complex integrated systems they are dealing with.
+/////
+
+Nous avons choisi dans ce livre de suivre cette démarche, en l'applicant sur notre cas d'étude et en utilisant la notation {sysml} pour implémenter les produits et diagrammes préconisés.
+
+Le principal intérêt de cette approche est qu'elle est conforme aux standards de l'{incose}, qu'elle est suivie par de nombreux membres industriels français de l'{afis} et que nous avons rencontré une attente auprès des utilisteurs de {sysml} de pouvoir suivre une démarche standard.
+Elle possède également l'avantage de proposer un cadre simple et complet en terme de points de vues abordés et de couverture des éléments à modéliser.
+
+Les principaux éléments de l'architecture sont :
+
+- Une organisation hiérarchique des préoccupations (Quoi ? / Qui ? / Où ?), représentée par une "Pyramide d'Architecture Système" (cf. <<cesamPyramid>>).
++
+NOTE: La question du "Qui" porte ici sur le "_What_", c'est à dire "quelle partie du système". Pour la question du "qui est concerné par le système", elle est traitée en amont de ces éléments architecturaux, dans ce que {CESAM} appelle le _Environment Architecture_, que nous avons appelé le Contexte (cf. <<visionEnv>>).
+- Une organisation en 9 vues du système, représentée par une matrice (cf. <<cesamMatrix>>).
+- Une démarche guidant m'architecture du système, représenté par un processus (cf. <<cesamProcess>>).
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figures à refaire pour les aspects (C)!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[cesamPyramid]]
+ifdef::FR[.La Pyramide d'Architecture Systèmes de CESAM (tirée de <<CESAM17>>)]
+ifdef::UK[.The CESAM Systems Architecture Pyramid (taken from <<CESAM17>>)]
+image::cesamPyramid.png[width="80%",scaledwidth=80%]
+
+[[cesamMatrix]]
+ifdef::FR[.La Matrice d'Architecture Systèmes de CESAM (tirée de <<CESAM17>>)]
+ifdef::UK[.The CESAM Systems Architecture Matrix (taken from <<CESAM17>>)]
+image::cesamMatrix.png[width="80%",scaledwidth=80%]
+
+
+[[cesamProcess]]
+ifdef::FR[.Le Processus d'Architecture des Systèmes de CESAM (tirée de <<CESAM17>>)]
+ifdef::UK[.The CESAM Systems Architecting Process (taken from <<CESAM17>>)]
+image::cesamProcess.png[width="80%",scaledwidth=80%]
+
+Comme abordé en <<Matrice>>, nous avons choisi de synthétiser ces différents points de vue dans une matrice qui nous servira de "carte de base" pour placer les activités ou les modèles (cf. <<ourMatrix>>).
+
+[[ourMatrix]]
+include::matrice-cesame.asc[]
+
+Cette matrice permet de situer les différents éléments qui seront abordés dans un cadre utile pour comparer ces éléments les uns aux autres.
+
+include::cesam-contexte.adoc[leveloffset=+1]
+
+include::cesam-operation.adoc[leveloffset=+1]
+
+include::cesam-function.adoc[leveloffset=+1]
+
+include::cesam-construct.adoc[leveloffset=+1]
+
+////
+.Concepts définis dans cette section
+[NOTE,icon=sysml.jpeg]
+=====
+Nous aborderons dans cette partie les concepts du niveau
+initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM):
+requirement, requirement diagram, derive, verify, satisfy, refine, trace, containment.
+use case diagram, use case, actor, subject, association, include, extend, generalization.
+=====
+////
+
+== Pour aller plus loin
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Référencer la question du WHO, abordée en <<visionEnv>> et à aborder dans la partie transverse aussi!
+Mentionner aussi Papyrus-CESAM.
+====
+endif::final[]
+//-----------------------------------------------

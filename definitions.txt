@@ -1,5 +1,7 @@
 :definitions:
 
+:FR:
+
 //Papyrus
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
 :papyrusversion: 4.0
@@ -159,13 +161,16 @@ endif::[]
 
 // data divers
 :Requirements: <<reqs,Exigences>>
-:Structure: <<archi,Structure>>
-:Behavior: <<behavior,Comportement>>
-:Crosscutting: <<transvers,Transverse>>
+:Structure: <<archi,Structures>>
+:State: <<cesState,États>>
+:Behavior: <<behavior,Interactions>>
+:Flows: <<cesFlows,Flux>>
+:Crosscutting: <<transvers,Transversalités>>
+:context: Environnement
 :organisation: Organisation
-:analysis: Analyse
-:design: Conception
-:implementation: Implémentation
+:analysis: Vision Opérationelle
+:design: Vision Fonctionnelle
+:implementation: Vision Organique
 :resume: En résumé
 :revisions: Questions de révision
 :is: Ingénierie Système(((IS)))
@@ -174,3 +179,10 @@ endif::[]
 :ModelUser: link:http://www.omg.org/ocsmp/coveragemap-user.htm[Model User]
 :projectName: SmartHomeSystem
 :projectShortName: SHS
+
+:glossaire: https://lite.framacalc.org/RUTTQQpyUM`
+
+
+// CESAM
+:CESAM: http://www.cesames.net/academy/cesam/[CESAM]
+:CESAMES: http://www.cesames.net/[CESAMES(TM)]

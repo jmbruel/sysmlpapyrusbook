@@ -22,8 +22,10 @@ Available http://www.omg.org/spec/SysML/1.5/[here].
 - [[[Jézéquel]]] Le bouquin sur l'ingénierie des modèles de Benoit et al.
 - [[[Cabot]]] Le bouquin de Jordi
 - [[[Roques]]] Le bouquin de Pascal
+- [[[CESAM17]]] CESAM: CESAMES Systems Architecting Method -- A Pocket Guide. Daniel KROB, January 2017. Available http://www.cesames.net/wp-content/uploads/2017/09/CESAM-guide_-_V12092017.pdf[here].
 
 .Websites
 
 [bibliography]
 - https://www.eclipse.org/papyrus/[Papyrus]
+- http://www.cesames.net/academy/cesam/[CESAM]

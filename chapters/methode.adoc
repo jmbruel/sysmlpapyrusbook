@@ -92,6 +92,12 @@ La méthode {sysmod} (_Systems Modeling Toolbox_) est une approche pragmatique p
 Elle fournit une boîte à outil et des étapes précises, ainsi que des guides et des "bonnes pratiques".
 Pour plus d'information sur cette méthode, cf. <<Wielkins20XX>>.
 
+[[cesamOverview]]
+== CESAM
+
+{CESAM} (CESAMES Architecture Method) ...
+
+
 == Autres méthodes et démarches
 
 Pour plus de renseignements sur les différentes démarches de <<MBSE>> nous renvoyons le lecteur à l'étude menée par l'{incose} par <<Estefan>>.
