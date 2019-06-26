@@ -62,23 +62,25 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {context} 5+| .4+<.>m|
 | {analysis}	| |  | | |  
 | {design}	| | | | | 
-| {implementation}	{here} | | | | | 
+| {implementation}	| {here}  | | | | 
 |======================
 
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figure à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
 
-[[visionConstReq]]
-=== États
-
-ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
-ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
-|======================
-|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
-| {organisation} 6+|
-| {context} 5+| .4+<.>m|
-| {analysis}	| | | | |  
-| {design}	| | | | | 
-| {implementation}	| {here} | | | | 
-|======================
+[[visionConstReqsFig]]
+ifdef::FR[.Exemple de Diagramme des Exigences Organiques (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Constructional Requirement Architecture Diagram (taken from <<CESAM17>>)]
+image::visionConstReqsFig.png[width="80%",scaledwidth=80%]
 
 [[visionConstState]]
 === États
@@ -94,6 +96,24 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | {here} | | | 
 |======================
 
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figure à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[visionConstStateFig]]
+ifdef::FR[.Exemple de Diagramme de Configuration (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Configuration Diagram (taken from <<CESAM17>>)]
+image::visionConstStateFig.png[width="80%",scaledwidth=80%]
+
 [[visionConstStat]]
 === Structures
 
@@ -107,6 +127,28 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {design}	| | | | | 
 | {implementation}	| | | {here} | | 
 |======================
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figures à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[visionConstStatFig]]
+ifdef::FR[.Exemple de Diagramme de Décomposition Organique (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Constructional Decomposition Diagram (taken from <<CESAM17>>)]
+image::visionConstStatFig.png[width="80%",scaledwidth=80%]
+
+[[visionConstStatFig]]
+ifdef::FR[.Exemple de Diagramme d'Interaction Organique (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Constructional Interaction Diagram (taken from <<CESAM17>>)]
+image::visionConstStatFig2.png[width="80%",scaledwidth=80%]
 
 [[visionConstDyn]]
 === Interactions
@@ -122,6 +164,23 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | | | {here} | 
 |======================
 
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figures à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[visionConstDynFig]]
+ifdef::FR[.Exemple de Diagramme de Décomposition Organique (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Constructional Decomposition Diagram (taken from <<CESAM17>>)]
+image::visionConstDynFig.png[width="80%",scaledwidth=80%]
+
 [[visionConstFlow]]
 === Flux
 
@@ -135,6 +194,23 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {design}	| | | | | 
 | {implementation}	| | | | | {here}
 |======================
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figures à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[visionConstFlowFig]]
+ifdef::FR[.Exemple de Diagramme de Flux Organiques (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Constructional Flow Diagram (taken from <<CESAM17>>)]
+image::visionConstFlowFig.png[width="80%",scaledwidth=80%]
 
 == {resume}
 

@@ -65,6 +65,22 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | | | | 
 |======================
 
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figure à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[visionFuncReqsFig]]
+ifdef::FR[.Exemple de Diagramme des exigences fonctionnelles (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Functional Requirement Architecture Diagram (taken from <<CESAM17>>)]
+image::visionFuncReqsFig.png[width="80%",scaledwidth=80%]
 
 [[visionFuncState]]
 === États
@@ -80,6 +96,23 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | | | | 
 |======================
 
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figure à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[visionFuncStateFig]]
+ifdef::FR[.Exemple de Diagramme des Modes Fonctionnels (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Functional Mode Diagram (taken from <<CESAM17>>)]
+image::visionFuncStateFig.png[width="80%",scaledwidth=80%]
+
 [[visionFuncStat]]
 === Structures
 
@@ -93,6 +126,41 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {design}	| | | {here} | | 
 | {implementation}	| | | | | 
 |======================
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figure à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[visionFuncStatFig]]
+ifdef::FR[.Exemple de Diagramme de Décomposition Fonctionnelle (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Functional Decomposition Diagram (taken from <<CESAM17>>)]
+image::visionFuncStatFig.png[width="80%",scaledwidth=80%]
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figure à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[visionFuncStatFig2]]
+ifdef::FR[.Exemple de Diagramme d'Interaction Fonctionnelle (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Functional Interaction Diagram (taken from <<CESAM17>>)]
+image::visionFuncStatFig2.png[width="80%",scaledwidth=80%]
+
 
 [[visionFuncDyn]]
 === Interactions
@@ -108,6 +176,23 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | | | | 
 |======================
 
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figure à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[visionFuncDynFig]]
+ifdef::FR[.Exemple de Diagramme de Scénario Fonctionnel (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Functional Scenario Diagram (taken from <<CESAM17>>)]
+image::visionFuncDynFig.png[width="80%",scaledwidth=80%]
+
 [[visionFuncFlow]]
 === Flux
 
@@ -121,6 +206,23 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {design}	| | | | |  {here}
 | {implementation}	| | | | | 
 |======================
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Figure à changer pour du {Papyrus}!
+====
+endif::final[]
+//-----------------------------------------------
+
+[[visionFuncFlowFig]]
+ifdef::FR[.Exemple de Diagramme de Flux Fonctionnels (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Functional Flow Diagram (taken from <<CESAM17>>)]
+image::visionFuncFlowFig.png[width="80%",scaledwidth=80%]
 
 == {resume}
 

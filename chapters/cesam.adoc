@@ -40,16 +40,28 @@ image:visionOpStatFig.png[width="90%",scaledwidth=20%]
 image:visionOpDynFig.png[width="90%",scaledwidth=20%]
 | operational flow diagrams | <<visionOpFlow>> |
 image:visionOpFlowFig.png[width="90%",scaledwidth=20%]
-| functional requirement architecture diagram | <<visionFuncReqs>> |
+| functional requirement architecture diagram | <<visionFuncReqs>> | image:visionFuncReqsFig.png[width="90%",scaledwidth=20%]
 | functional mode diagram | <<visionFuncState>> |
-| functional decomposition & interaction diagrams | <<visionFuncStat>> |
+image:visionFuncStateFig.png[width="90%",scaledwidth=20%]
+| functional decomposition diagrams | <<visionFuncStat>> |
+image:visionFuncStatFig.png[width="90%",scaledwidth=20%]
+| functional interaction diagrams | <<visionFuncStat>> | image:visionFuncStatFig2.png[width="90%",scaledwidth=20%]
 | functional scenario diagrams | <<visionFuncDyn>> |
+image:visionFuncDynFig.png[width="90%",scaledwidth=20%]
 | functional flow diagrams | <<visionFuncFlow>> |
+image:visionFuncFlowFig.png[width="90%",scaledwidth=20%]
 | constructional requirement architecture | <<visionConstReqs>>  |
+image:visionConstReqsFig.png[width="90%",scaledwidth=20%]
 | constructional mode diagram | <<visionConstState>>  |
-| constructional decomposition & interaction diagrams | <<visionConstStat>>  |
+image:visionConstStateFig.png[width="90%",scaledwidth=20%]
+| constructional decomposition | <<visionConstStat>>  |
+image:visionConstStatFig.png[width="90%",scaledwidth=20%]
+| constructional interaction diagrams | <<visionConstStat>>  |
+image:visionConstStatFig2.png[width="90%",scaledwidth=20%]
 | constructional scenario diagrams | <<visionConstDyn>> |
+image:visionConstDynFig.png[width="90%",scaledwidth=20%]
 | constructional flow diagrams | <<visionConstFlow>> |
+image:visionConstFlowFig.png[width="90%",scaledwidth=20%]
 |======================
 
 
