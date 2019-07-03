@@ -28,40 +28,40 @@ ifdef::backend-pdf[[align="center",cols="<40%,^10%,^50",options="header"]]
 ifndef::backend-pdf[[align="center",cols="<40%,^10%,^50%",options="header",width=100]]
 |======================
 | Produits | Section | Illustration
-| stakeholder hierarchy diagram  | <<visionProjectStake>> | image:diagrams/SHS_stakeholder_hierarchy_diagram.SVG[width="90%",scaledwidth=20%]
-| environment diagram | <<visionProjectEnv>>  | image:diagrams/SHS_environment_diagram.SVG[width="90%",scaledwidth=20%]
+| stakeholder hierarchy diagram  | <<visionProjectStake>> | image:diagrams/SHS_stakeholder_hierarchy_diagram.SVG[width="90%",scaledwidth=30%]
+| environment diagram | <<visionProjectEnv>>  | image:diagrams/SHS_environment_diagram.SVG[width="90%",scaledwidth=30%]
 | need architecture diagram | <<visionOpReqs>>  |
-image:visionOpReqsFig.png[width="90%",scaledwidth=20%]
+image:visionOpReqsFig.png[width="90%",scaledwidth=30%]
 | life-cycle diagram | <<visionOpState>> |
-image:visionOpStateFig.png[width="90%",scaledwidth=20%]
+image:visionOpStateFig.png[width="90%",scaledwidth=30%]
 | use case diagrams | <<visionOpStat>> |
-image:visionOpStatFig.png[width="90%",scaledwidth=20%]
+image:visionOpStatFig.png[width="90%",scaledwidth=30%]
 | operational scenarios diagrams | <<visionOpDyn>> |
-image:visionOpDynFig.png[width="90%",scaledwidth=20%]
+image:visionOpDynFig.png[width="90%",scaledwidth=30%]
 | operational flow diagrams | <<visionOpFlow>> |
-image:visionOpFlowFig.png[width="90%",scaledwidth=20%]
-| functional requirement architecture diagram | <<visionFuncReqs>> | image:visionFuncReqsFig.png[width="90%",scaledwidth=20%]
+image:visionOpFlowFig.png[width="90%",scaledwidth=30%]
+| functional requirement architecture diagram | <<visionFuncReqs>> | image:visionFuncReqsFig.png[width="90%",scaledwidth=30%]
 | functional mode diagram | <<visionFuncState>> |
-image:visionFuncStateFig.png[width="90%",scaledwidth=20%]
+image:visionFuncStateFig.png[width="90%",scaledwidth=30%]
 | functional decomposition diagrams | <<visionFuncStat>> |
-image:visionFuncStatFig.png[width="90%",scaledwidth=20%]
-| functional interaction diagrams | <<visionFuncStat>> | image:visionFuncStatFig2.png[width="90%",scaledwidth=20%]
+image:visionFuncStatFig.png[width="90%",scaledwidth=30%]
+| functional interaction diagrams | <<visionFuncStat>> | image:visionFuncStatFig2.png[width="90%",scaledwidth=30%]
 | functional scenario diagrams | <<visionFuncDyn>> |
-image:visionFuncDynFig.png[width="90%",scaledwidth=20%]
+image:visionFuncDynFig.png[width="90%",scaledwidth=30%]
 | functional flow diagrams | <<visionFuncFlow>> |
-image:visionFuncFlowFig.png[width="90%",scaledwidth=20%]
+image:visionFuncFlowFig.png[width="90%",scaledwidth=30%]
 | constructional requirement architecture | <<visionConstReqs>>  |
-image:visionConstReqsFig.png[width="90%",scaledwidth=20%]
+image:visionConstReqsFig.png[width="90%",scaledwidth=30%]
 | constructional mode diagram | <<visionConstState>>  |
-image:visionConstStateFig.png[width="90%",scaledwidth=20%]
+image:visionConstStateFig.png[width="90%",scaledwidth=30%]
 | constructional decomposition | <<visionConstStat>>  |
-image:visionConstStatFig.png[width="90%",scaledwidth=20%]
+image:visionConstStatFig.png[width="90%",scaledwidth=30%]
 | constructional interaction diagrams | <<visionConstStat>>  |
-image:visionConstStatFig2.png[width="90%",scaledwidth=20%]
+image:visionConstStatFig2.png[width="90%",scaledwidth=30%]
 | constructional scenario diagrams | <<visionConstDyn>> |
-image:visionConstDynFig.png[width="90%",scaledwidth=20%]
+image:visionConstDynFig.png[width="90%",scaledwidth=30%]
 | constructional flow diagrams | <<visionConstFlow>> |
-image:visionConstFlowFig.png[width="90%",scaledwidth=20%]
+image:visionConstFlowFig.png[width="90%",scaledwidth=30%]
 |======================
 
 
@@ -124,6 +124,8 @@ Comme abordé en <<Matrice>>, nous avons choisi de synthétiser ces différents 
 include::matrice-cesame.asc[]
 
 Cette matrice permet de situer les différents éléments qui seront abordés dans un cadre utile pour comparer ces éléments les uns aux autres.
+
+include::cesam-organisation.adoc[leveloffset=+1]
 
 include::cesam-contexte.adoc[leveloffset=+1]
 

@@ -39,6 +39,16 @@ requirement, requirement diagram, derive, verify, satisfy, refine, trace, contai
 
 == Mise en œuvre en SysML
 
+[[visionOpOrg]]
+=== Organisation
+
+Pour aborder la vision organisationnelle en {papyrus} il nous faut  tout d'abord récupérer les parties prenantes en lien direct avec le système parmi les celles définies à l'étape précédente (cf. <<visionProjectStake>>) :
+
+. Copiez tout le package `SHS Project Stakeholders` dans `SHS_OperationalVision`
+. Renommez-le en `SHS_ProductStakeholders`
+. Supprimez toutes les parties prenantes qui ne sont liées qu'au projet et non au produit directement
+. Réalisez une matrice de dépendance (cf. <<dependencyMatrix>>) qui fera correspondre en colonne les parties prenantes de project avec en ligne les parties prenantes du produit.
+
 [[visionOpReqs]]
 === Exigences
 
@@ -53,23 +63,33 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | | | | 
 |======================
 
-//-----------------------------------------------
-//-- Commentaire
-//-----------------------------------------------
-ifndef::final[]
-.Commentaire
-[CAUTION]
-====
-Figure à changer pour du {Papyrus}!
-====
-endif::final[]
-//-----------------------------------------------
+À ce niveau d'abstraction il s'agit d'énumérer les besoins utilisateurs (`Needs`).
+Pour cela nous allons utiliser un diagramme d'exigences {sysml}.
+Il s'agit d'organiser les besoins en en proposant une décomposition hiérarchique (cf. <<visionOpReqsFig>>).
+Nous en profiterons pour associer les besoins aux parties prenantes (d'où l'importance de les avoir préalablement "importés", cf. <<visionOpOrg>>).
 
 [[visionOpReqsFig]]
-ifdef::FR[.Exemple de Diagramme des parties prenantes (tirée de <<CESAM17>>)]
-ifdef::UK[.Example of Stakeholder Hierarchy Diagram (taken from <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme des besoins (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Need Architecture Diagram (taken from <<CESAM17>>)]
 image::visionOpReqsFig.png[width="80%",scaledwidth=80%]
 
+Pour réaliser un tel diagramme en {papyrus}, nous proposons la démarche suivante :
+
+. Placez-vous dans le _package_ `SHS_Needs` dans `SHS_OperationalVision`
+. Créez un _package_ par parties prenantes concrètes
+. Pour chaque _package_, créez un nouveau diagramme d'exigences
+. Organisez les besoins en les décompants (cf. discussions sur les exigences en <<reqs>>)
++
+TIP: Cette activité est bien plus facile si vous la faites en mode modèle plutôt qu'en mode diagramme (cf. <<mod-diag>>). 
++
+. Réalisez la traçabilité entre les besoins et les parties prenantes (cf. <<dependencyMatrix>>)
+
+On obtient la <<visionOpReqsFigPapyrus>>.
+
+[[visionOpReqsFigPapyrus]]
+ifdef::FR[.Exemple de Diagramme des besoins]
+ifdef::UK[.Example of Need Architecture Diagram]
+image::{papyrusversion}/visionOpReqsFig.png[width="80%",scaledwidth=80%]
 
 [[visionOpState]]
 === États
@@ -85,22 +105,30 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | | | | 
 |======================
 
-//-----------------------------------------------
-//-- Commentaire
-//-----------------------------------------------
-ifndef::final[]
-.Commentaire
-[CAUTION]
-====
-Figure à changer pour du {Papyrus}!
-====
-endif::final[]
-//-----------------------------------------------
+Il s'agit dans cette partie de définir les grandes étapes du cycle de vie du système.
+Cela permet de définir :
+
+- les contextes opérationels du système (parfois appelés mode dans certains domaines) ainsi que leur relations temporelles (de précédance, de concurrence, d'inclusion, ...
+- les événements qui provoquent les différentes transitions entre ces contextes.
+
+En voici un exemple :
 
 [[visionOpStateFig]]
 ifdef::FR[.Exemple de Diagramme des cycles de vie (tirée de <<CESAM17>>)]
 ifdef::UK[.Example of Lifecycle Diagram (taken from <<CESAM17>>)]
 image::visionOpStateFig.png[width="80%",scaledwidth=80%]
+
+Pour réaliser un tel diagramme en {papyrus}, nous proposons la démarche suivante :
+
+. Placez-vous dans le _package_ `SHS_OperationalDescription` dans `SHS_OperationalVision`
+. Repérez le `SmartHomeSystem` et créez un diagramme d'état en cliquant-droit sur `SmartHomeSystem` : menu:New_Diagram[SysML {sysmlversionlast} State Machine Diagram]
+
+On obtient le diagramme des cycles de vie du système comme illustré à la <<visionOpStateFigPapyrus>>.
+
+[[visionOpStateFigPapyrus]]
+ifdef::FR[.Exemple de Diagramme des cycles de vie]
+ifdef::UK[.Example of Lifecycle Diagram]
+image::{papyrusversion}/Lifecycle_diagram_of_the_SHS.SVG[width="80%",scaledwidth=80%]
 
 [[visionOpStat]]
 === Structures
@@ -116,22 +144,25 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | | | | 
 |======================
 
-//-----------------------------------------------
-//-- Commentaire
-//-----------------------------------------------
-ifndef::final[]
-.Commentaire
-[CAUTION]
-====
-Figure à changer pour du {Papyrus}!
-====
-endif::final[]
-//-----------------------------------------------
+Dans cette étape, nous allons représenter de manière statique l'ensemble des missions du système à développer en précisant les collaborations entre le système et son environnement, ainsi que les relations entre ces missions (cf. <<visionOpStatFig>>).
 
 [[visionOpStatFig]]
 ifdef::FR[.Exemple de Diagramme des cas d'utilisation (tirée de <<CESAM17>>)]
 ifdef::UK[.Example of Use Case Diagram (taken from <<CESAM17>>)]
 image::visionOpStatFig.png[width="80%",scaledwidth=80%]
+
+Pour recenser ces éléments de modélisation, nous allons réaliser un diagramme des cas d'utilisation en {papyrus}, selon la démarche suivante :
+
+. Toujours dans le _package_ `SHS_OperationalDescription` de `SHS_OperationalVision`, placez vous dans le _package_ `SHS_Missions`
+. Créez éventuellement une structure en _packages_ pour organiser les missions.
+. Créez un ou plusieurs diagrammes des cas d'utilisation dans ces _packages_ : menu:New_Diagram[SysML {sysmlversionlast} Use Case Diagram]
+
+On obtient des diagrammes de cas d'utilisation comme illustré à la <<visionOpStatFigPapyrus>>.
+
+[[visionOpStatFigPapyrus]]
+ifdef::FR[.Exemple de Diagramme des cas d'utilisation]
+ifdef::UK[.Example of Use Case Diagram]
+image::{papyrusversion}/System_security_use_cases_diagram.SVG[width="80%",scaledwidth=80%]
 
 
 [[visionOpDyn]]
@@ -148,6 +179,24 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | | | | 
 |======================
 
+Nous allons maintenant nous intéresser à la description de scénarios opérationnels qui vont représenter la dynamique des missions dans des contextes différents (cf. exemple de la <<visionOpDynFig>>).
+
+[[visionOpDynFig]]
+ifdef::FR[.Exemple de Diagramme de scénario opérationnel (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Operational Scenario Diagram (taken from <<CESAM17>>)]
+image::visionOpDynFig.png[width="60%",scaledwidth=60%]
+
+Pour recenser définir ces scénarios en {papyrus}, nous allons réaliser des diagrammes de séquence système dans lequel le participant principal sera le système (en vue boîte noire donc).
+Ne serons représentées que ces interactions avec les parties prenantes. 
+
+. Toujours dans le _package_ `SHS_Missions`, repérez le cas d'utilisation dont vous voulez préciser le scénario
+. Créez une intéraction : menu:New_UML_for_SysML_1.6[Interaction]
+. Créez le scénario correspondant : menu:New_Diagram[SysML {sysmlversionlast} Sequence Diagram]
+. Placez-y les participants en allant chercher le système dans le diagramme de contexte et les acteurs dans les parties prenantes du niveau opérationel.
+. Ajoutez sus forme de message échangés les interactions entre les participants du diagramme de séquence.
+
+Nous obtenons des diagrammes de séquence système comme illustré à la <<visionOpDynFigPapyrus>>.
+
 //-----------------------------------------------
 //-- Commentaire
 //-----------------------------------------------
@@ -160,10 +209,10 @@ Figure à changer pour du {Papyrus}!
 endif::final[]
 //-----------------------------------------------
 
-[[visionOpDynFig]]
+[[visionOpDynFigPapyrus]]
 ifdef::FR[.Exemple de Diagramme de scénario opérationnel (tirée de <<CESAM17>>)]
 ifdef::UK[.Example of Operational Scenario Diagram (taken from <<CESAM17>>)]
-image::visionOpDynFig.png[width="80%",scaledwidth=80%]
+image::{papyrusversion}/Operational_scenario_description_for_manageRightAccess.SVG[width="80%",scaledwidth=80%]
 
 [[visionOpFlow]]
 === Flux
@@ -179,6 +228,31 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | | | | 
 |======================
 
+Le diagramme des flux operationnels (cf. <<visionOpFlowFig>>) vise à répertorier tous les flux en lien avec le système en détaillant :
+
+* leur relations logiques (fournir, mesurer, requérir, ...)
+* leur relations d'abstraction
+
+[[visionOpFlowFig]]
+ifdef::FR[.Exemple de Diagramme de flux opérationnels (tirée de <<CESAM17>>)]
+ifdef::UK[.Example of Operational Flow Diagram (taken from <<CESAM17>>)]
+image::visionOpFlowFig.png[width="80%",scaledwidth=80%]
+
+////
+We must therefore emphasize that such a diagram is of high importance since it rationally describes in a consolidated and organized way all inputs and all outputs of a given system. Hence it gives the operational “dictionary” of the system, that is to say the list of all objects that are operationally manipulated by the system. This dictionary is of high value for ensuring a common vision between all project actors involved in the operational architecting process: these actors shall normally – in an ideal world – only use the terms of that dictionary when discussing of an operational object. One may easily understand that such a principle allows to avoid any ambiguity between the system designers and the project system stakeholders, but also within the different specialty engineers. It is thus key for ensuring a good collaboration between all these actors.
+////
+
+{CESAM} insiste sur l'importance de cette phase pour l'élaboration du dictionnaire du système, c'est-à-dire la liste des objets qui seront manipulés par le système.
+Cela peut être en effet primordiale dans un contexte multi-domaines pour se coordonner sur les termes employés. 
+
+Pour réaliser ce dictionnaire en {papyrus}, plutôt que de réaliser un diagramme de blocs avec des associations entre les blocs, nous avons choisis de réaliser une matrice de dépendance entre flux qui indique les relations précises (_from_ et _to_).
+Pour cela :
+
+. bla
+. bli
+
+Nous obtenons une table illustrée à la <<visionOpFlowFigPapyrus>>.
+
 //-----------------------------------------------
 //-- Commentaire
 //-----------------------------------------------
@@ -191,10 +265,11 @@ Figure à changer pour du {Papyrus}!
 endif::final[]
 //-----------------------------------------------
 
-[[visionOpFlowFig]]
+[[visionOpFlowFigPapyrus]]
 ifdef::FR[.Exemple de Diagramme de flux opérationnels (tirée de <<CESAM17>>)]
 ifdef::UK[.Example of Operational Flow Diagram (taken from <<CESAM17>>)]
 image::visionOpFlowFig.png[width="80%",scaledwidth=80%]
+
 
 == {resume}
 
@@ -203,3 +278,13 @@ image::visionOpFlowFig.png[width="80%",scaledwidth=80%]
 . Quelles sont les différences entre *besoins* et *exigences* ?
 . En quoi les cas d'utilisation sont-ils complémentaires des exigences?
 . Quelle est la différence entre un _package_ de type *_model_* et un _package_ de type *_package_*?
+
+ifdef::correction[]
+
+== Éléments de réponses :
+
+. Quelles sont les différences entre *besoins* et *exigences* ?
+Les besoins sont exprimés du point de vue extérieur au système, dans le langage de l'environnement tandis que les exigences sont exprimés du point de vue interne du système, dans le langage du système.
+. En quoi les cas d'utilisation sont-ils complémentaires des exigences?
+. Quelle est la différence entre un _package_ de type *_model_* et un _package_ de type *_package_*?
+endif::correction[]

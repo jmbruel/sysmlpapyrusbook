@@ -6,6 +6,7 @@
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
 :papyrusversion: 4.0
 :sysmlversion: 1.4
+:sysmlversionlast: 1.6
 :siteurl: https://bit.ly/sysmlbook
 :githuburl: https://github.com/jmbruel/sysmlpapyrusbook
 :pdfurl: {githuburl}/PapyrusSysMLinAction.pdf

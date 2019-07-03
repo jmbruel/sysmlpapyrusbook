@@ -296,6 +296,9 @@ image::{diagrams}/Context_description_of_the_SHS.PNG[width=70%,scaledwidth=70%]
 
 =====
 
+TIP: Nous recommandons fortement de ne faire l'{ibd} d'un bloc qu'après avoir fait le {bdd} de ce bloc.
+En effet les _parts_ et autres associations avec les éléments internes et externes de se bloc seront ainsi déjà définis.
+
 == Diagrammes de séquences (sd)
 // JMB
 //---------------------------------------------------------------------------------

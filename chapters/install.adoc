@@ -114,7 +114,11 @@ image::voila.png[width="70%",scaledwidth="70%"]
 +
 image::explore.png[width="60%",scaledwidth="60%"]
 
+== Pour ceux qui veulent aller plus loin
 
+Nous vous conseillons d'installer également les plug-ins suivants qui peuvent s'avérer utiles :
+
+- http://build.eclipse.org/modeling/elk/updates/nightly/[Eclipse Layout Kernel] pour faire des diagrammes plus jolis sous {eclipse}
 
 
 //-----------------------------------------------

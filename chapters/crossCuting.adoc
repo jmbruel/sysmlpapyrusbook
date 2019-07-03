@@ -45,6 +45,7 @@ On abordera :
 - Les organisations possibles
 - La notion de _Namespaces_
 - Les _Dependencies_
+- Les adaptations graphiques
 
 [[package]]
 === Le _Package Diagram_
@@ -146,6 +147,48 @@ _Allocation_::
   bout de la flèche (un `bloc` la plupart du temps),
 	représentée par le stéréotype `<<allocate>>`
 
+[[dependencyMatrix]]
+//---------------------------------------------------------------------------------
+== Matrices de dépendances
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Expliquer ici comment réaliser une matrice de dépendance
+====
+endif::final[]
+//-----------------------------------------------
+
+TIP: Nous vous conseillons de créer (si ce n'est déjà fait) un _package_ pour rassembler vos modèles de traçabilité.
+Vous pouvez même avoir des _packages_ dédiés (par exemple `Stakeholder Traceability Model`).
+
+Pour créer une matrice de traçabilité avec {papurys} :
+. Placez-vous dans le _package_ où vous souhaitez votre table
+. menu:ClickDroit[New Table > Relationship Generic Matrix]
+. Sélectionnez les données d'entrée des lignes et des colonnes dans l'onglet `Matrix` de la table (dans ses `Properties`)
+. Ajoutez éventuellement un filtre. 
+Par exemple pour n'avoir que les éléments possédant le stéréotype `<<stakeholder>> :
+
+* Clickez sur le image:papyrusPlus.png[width=3%] du champs `filter` des lignes (`row`) ou des colonnes (`columns`)
+* Sélectionnez un filtre (`HasAppliedStereotypesExpression` pour notre exemple)
++
+.Sélection d'un filtre sur les entrées d'une table
+image::{papyrusversion}/papyrusTableFilter.png[width="80%",scaledwidth=80%]
+* Donnez le nom du stéréotype recherché dans le champs `Name` (`stakeholder` pour notre exemple)
+. Sélectionnez le `Relation Owner` où seront générés les relations correspondantes aux cases cochées dans la matrice.
+Par exemple `Table Root Element` mettra les relations dans le même _package_ que la table.
+. Vous n'avez plus qu'à cocher les cases et observer les relations nouvelles créées dans le _package_.
++
+TIP: Vous puvez même réaliser un diagramme de bloc en glissant-déposant les relations pour obtenir directement un diagramme de traces.
++
+.Exemple de diagramme de traces
+image::{papyrusversion}/papyrusTableRelationDiagram.png[width="80%",scaledwidth=80%]
+
+
 [[trace]]
 //---------------------------------------------------------------------------------
 == La traçabilité des exigences
@@ -203,6 +246,22 @@ image::survey4.png[link="http://www.omgsysml.org/SysML_2009_RFI_Response_Summary
 ====
 Certaines approches (cf. <<MeDICIS>>) utilisent des feuilles excel pour traduire les diagrammes paramétriques et contrôler l'impact des changements de valeurs de tel ou tel paramètre.
 ====
+
+=== Les adaptations graphiques
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Parler des feuilles de style.
+Associer les couleurs CESAM par exemple.
+====
+endif::final[]
+//-----------------------------------------------
+
 
 == {resume}
 {sysml} propose un certain nombre de mécanismes pour organiser les différents modèles,

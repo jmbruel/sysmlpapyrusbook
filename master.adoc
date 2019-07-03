@@ -44,7 +44,9 @@ Si vous lisez ce commentaire, c'est que cette version est en cours de constructi
 ====
 endif::final[]
 //-----------------------------------------------
+
 include::chapters/about.adoc[leveloffset=+1]
+
 include::chapters/preface.adoc[leveloffset=+1]
 
 :numbered:

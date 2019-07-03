@@ -70,8 +70,8 @@ TIP: Il existe un stéréotype {sysml} +<<Stakeholder>>+ qui peut être utilisé
 === Environment Diagram
 
 [[visionProjectEnvFig]]
-ifdef::FR[.Exemple de Diagramme d'environnement projet (tirée de <<CESAM17>>)]
-ifdef::UK[.Example of Environment Diagram (taken from <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme d'environnement projet]
+ifdef::UK[.Example of Environment Diagram]
 image::diagrams/SHS_environment_diagram.SVG[width="80%",scaledwidth=80%]
 
 == {resume}
