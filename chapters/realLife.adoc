@@ -119,3 +119,12 @@ https://wiki.eclipse.org/Papyrus/UserGuide/fUML_ALF.
 === Fragmenter un modèle
 
 === Papyrus for Requirements
+
+=== Scripter Papyrus
+
+Il est possible d'exécuter des scripts...
+
+. Ajouter le complément EASE à {papyrus} en utilisant l'update-site suivant : {easeURL}.
+. Ouvrir l'exemple qui vient avec (menu:File[New > Example... > Papyrus EASE > Papyrus EASE Jupyter Example]).
+TIP: Cela crée un projet dans votre workspace, lisez le fichier `Readme.MD` qui donne quelques instructions.
+
