@@ -3,17 +3,17 @@
 image::jmb.jpg[width=10%,scaledwidth=15%] 
 mailto:{email}[{author}] est
 Professeur des Universités à l'{univ-tlse},
-en poste à l'{iut} depuis 2008,
-après avoir été Maître de Conférences à l'{uppa} de 1997 à 2008.
-Responsable du site {ut2j} de l'{irit} et
+en poste à l'{iut} depuis 2008.
+Il a été Maître de Conférences à l'{uppa} de 1997 à 2008 après avoir obtenu son doctorat en informatique de l'{univ-tlse} en 1996.
+Il est actuellement responsable du site {ut2j} de l'{irit} et
 de l'équipe {smart}.
 Il est l'un des co-fondateurs de l'association {sysmlfrance} (depuis intégrée à l'{afis}),
 membre du comité éditorial de la revue _{sosym}_ depuis sa création en 2002,
 membre du _Steering Committee_ de la conférence ACM/IEEE {models} de 2008 à 2017,
 ifndef::book[chef du département informatique de l'{iut} de 2009 à 2012,]
-ifndef::book[co-responsable de l'axe Systèmes Ambiants de l'{IRIT} de 2009 à 2018,]
-co-animateur du comité technique <<MBSE,MBSE>> de l'{afis},
-et enseigne la modélisation depuis 1995.
+ifndef::book[co-responsable de l'axe Systèmes Ambiants de l'{IRIT} de 2009 à 2018 et]
+co-animateur du comité technique <<MBSE,MBSE>> de l'{afis}.
+Il enseigne la modélisation depuis 1995.
 
 image::seb.jpg[width=10%,scaledwidth=15%] 
 mailto:{email_2}[{author_2}] est ... (Papa de Papyrus :-)
@@ -21,5 +21,4 @@ mailto:{email_2}[{author_2}] est ... (Papa de Papyrus :-)
 /////
 Sébastien Gérard is research director at CEA and he is leading the LISE laboratory (Laboratory of Model Driven Engineering for Embedded Systems) at CEA LIST (http://www-list.cea.fr/page-_en.html). Working on research issues related to complex and critical system and software design for more than 15 years, his research interests include correct-by-construction specification and design of complex systems, model-based engineering of RT/E systems and visual modeling language engineering. He is the CEA representative at OMG for more than 15 years. In particular, he is the chair of the MARTE standardization task force. He is also leading the open-source project, Papyrus (www.eclipse.org/papyrus), the UML modeling tools of Eclipse. In 1995, he has a diploma in mechanics and aeronautics from the ENSMA high-school, in 2000 he obtained a PhD diploma in Computer Science from the Evry university and in 2013 he got his “habilitation à diriger des recherches” diploma in the domain of computer science from the Orsay univiersity.
 /////
-[.right]
-{myinitials} & {authorinitials_2}
+
