@@ -174,9 +174,14 @@ C'est une des fonctionnalités attendues des utilisateurs et en cours de prise e
 par les développeurs du {cea}. Nous vous invitons à soutenir cette évolution en allant
 voter sur : https://bugs.eclipse.org/bugs/show_bug.cgi?id=354296.
 
-=== Gen2Doc
+=== Model2Doc
+
+Le meilleur moyen de générer une documentation à partir des modèles {papyrus} est d'utiliser le complément {model2doc}.
+Pour cela installez le complément {eclipse} en utilisant le site suivant : {model2docURL}.
+
 
 image::../todo.jpg[width=50%,scaledwidth=50%]
+
 
 == {resume}
 

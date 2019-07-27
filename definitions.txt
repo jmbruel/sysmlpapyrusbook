@@ -19,6 +19,8 @@
 //:pluginreqs: https://download.eclipse.org/modeling/mdt/papyrus/view/Requirements/job/requirements-photon/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.requirements.p2/target/repository/
 :pluginreqs: https://hudson.eclipse.org/papyrus/view/Requirements/job/Requirements-Master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.requirements.p2/target/repository/
 :easeURL: https://download.eclipse.org/modeling/mdt/papyrus/components/ease/2019-03/
+:model2docURL: https://download.eclipse.org/modeling/mdt/papyrus/components/model2doc/
+:model2doc: link:{model2doc}[Model2Doc]
 
 //:pluginCompare: https://hudson.eclipse.org/papyrus/job/Papyrus-Compare-Oxygen-Integration/lastSuccessfulBuild/artifact/repository/
 :pluginCompare: http://download.eclipse.org/modeling/mdt/papyrus/components/compare/updates/nightly/
