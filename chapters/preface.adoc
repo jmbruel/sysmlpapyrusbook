@@ -12,10 +12,11 @@ Ce livre *n'est pas* un livre :
 
 == Pourquoi lire ce livre ?
 
-Il peut y avoir plusieurs raisons pour lire ce livre, même partiellement.
-Voici les différentes raisons qui peuvent vous y avoir amené :
+Il peut y avoir plusieurs raisons de lire ce livre, même partiellement.
+//Voici les différentes raisons qui peuvent vous y avoir amené :
+Vous pouvez vous reconnaître dans l'une des situations suivantes :
 
-Je veux fiabiliser mon processus d'{IS}::
+Je veux améliorer mon processus d'{IS}::
 Vous êtes un professionnel, dans le domaine de l'{is}, et vous êtes intéressé par la modélisation.
 Nous espérons que les conseils pratiques, appliqués et appuyés sur l'outil {papyrus},
 vous permettront de tester l'intérêt de {sysml} pour votre domaine.
@@ -31,7 +32,7 @@ Si vous utilisez déjà Papyrus comme modeleur {uml}, et que vous souhaitiez app
 ce livre, réalisé en collaboration avec l'équipe du {list} en charge du développement de {papyrus}, devrait vous y aider.
 
 Je veux utiliser des solutions _open-source_ pour l'{IS}::
-C'est un des avantages de {papyrus} : c'est un logiciel ouvert, auxquels de nombreux programmeurs contribuent,
+C'est un des avantages de {papyrus} : c'est un logiciel ouvert, auquel de nombreux programmeurs contribuent,
 permettant ainsi la prise en compte rapide des remarques utilisateurs, la disponibilité d'un forum riche, etc.
 
 Je veux utiliser des normes d'{IS}::
@@ -41,7 +42,7 @@ en classes préparatoires et dans beaucoup d'écoles d'ingénieurs).
 Et vous aurez, avec {papyrus}, un outils 100% conforme à la spécification.
 
 Je veux gagner du temps::
-Nous avons essayer de concevoir ce livre comme un manuelfootnote:[Au sens latin du terme : "que l'on peut
+Nous avons essayé de concevoir ce livre comme un manuelfootnote:[Au sens latin du terme : "que l'on peut
 avoir toujours à portée de main".], outil et pratique, en travaillant l'organisation des concepts
 et des pratiques.
 
