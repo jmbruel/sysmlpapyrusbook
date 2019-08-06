@@ -15,10 +15,10 @@ En revanche, on en choisit une (simplifié) pour l'illustration pour la mise en 
 //-----------------------------------------------
 endif::final[]
 
-{SysML} est un langage de modélisation, certains diraient une notation.
-La principale difficulté, avec {SysML}, c'est que cette notation n'est associée a aucune méthode en particulier, ni aucun outil en particulier (cf. <<Roques>>).
-Il s'agit là d'une volonté délibérée des concepteurs, l'{OMG} et l'{INCOSE}, pour permettre la plus grande adoption de la notation dans les entreprises.
-Il vous sera donc possible d'appliquer votre propre démarche, votre propre processus interne de développement.
+{SysML} est un langage de modélisation, souvent considéré comme une notation.
+La principale difficulté, avec {SysML}, c'est que cette notation n'est associée à aucune méthode en particulier, ni aucun outil en particulier (cf. <<Roques>>).
+Il s'agit là d'une volonté délibérée des concepteurs, l'{OMG} et l'{INCOSE}, pour permettre la plus grande adoption de la notation en entreprise.
+Il vous est donc possible d'appliquer votre propre démarche, votre propre processus interne de développement.
 Contrairement à l'outil {capella} par exemple, fortement couplé à la méthode {Arcadia}, l'outil {papyrus} n'impose aucune démarche particulière.
 Nous allons aborder au <<methode>> les processus connus et courants en Ingénierie Système basé sur les Modèles généralement associés à {SysML}.
 
@@ -26,7 +26,7 @@ Nous allons aborder au <<methode>> les processus connus et courants en Ingénier
 .Langages, méthodes et outils : 3 piliers complémentaires (inspiré par http://www.prfc.fr/[prfc Roques])
 image::SysML-PRFC.svg[width=50%,scaledwidth=50%]
 
-Comme le résume la <<piliers,figure précédente>>, nous allons aborder dans ce livre aussi bien les éléments de notation ({sysml}), de méthodologie, et d'outillage ({papyrus}).
+Comme le résume la <<piliers,figure précédente>>, nous allons aborder dans la pratique aussi bien les éléments de notation ({sysml}), de méthodologie et d'outillage ({papyrus}).
 
 == Pourquoi et quoi modéliser ?
 
@@ -59,12 +59,12 @@ Les modèles permettent de communiquer (entre personnes, entre outils) et d'appr
 
 === Différences entre modèle et dessin
 
-{SysML} n'est pas une palette de dessins et d'éléments de base servant à faire des diagrammes.
-Il existe une représentation graphique des éléments modélisés en {SysML}.
+Ne considérez pas {SysML} comme une palette de dessins et d'éléments de base servant à faire des diagrammes.
+{SysML} permet de définir des éléments conceptuels et d'en faire une représentation graphique.
 Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c'est *le modèle* qui importe le plus.
 
 C'est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes {SysML} footnote:[Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.], mais d'utiliser des outils dédiés comme {Papyrus}.
-Ils respectent en général la norme {norme} (bien qu'il faille se méfier).
+Ils respectent en général la norme {norme}.
 
 [NOTE]
 ====
@@ -125,7 +125,7 @@ ou les modèles, sera celle-ci :
 
 include::matrice-cesame.asc[]
 
-Cette matrice permet de situer les différents éléments qui seront vus dans ce cours dans un cadre utile pour comparer ces éléments les uns aux autres.
+Cette matrice permet de situer les différents éléments qui seront vus par la suite dans un cadre utile pour les comparer les uns aux autres.
 Nous vous conseillons de vous faire votre propre matrice.
 L'essentiel est de toujours bien se représenter les différents éléments qu'on aborde dans une carte mentale précise. Cela permet une meilleure mémorisation.
 
@@ -134,10 +134,8 @@ L'essentiel est de toujours bien se représenter les différents éléments qu'o
 Dans un axe horizontal, nous avons différencié quatre grands points de vue :
 
 {Requirements}::
-Les exigences et leur prises en compte sont un éléments critique pour le
-  succès du développement de tout système.
-  Sans explorer l'ensemble des activités d'ingénierie système (ce qui
-  nécessiterait tout un volume du type de <<reqs>>) nous insisterons sur cet aspect.
+La définition des exigences et leur prise en compte en modélisation sont des éléments critiques pour le succès du développement de tout système.
+Sans couvrir l'ensemble des activités d'ingénierie système (ce qui nécessiterait tout un volume du type de <<Sommerville1997>>) nous insisterons sur cet aspect.
 
 {Structure}::
 La description de l'architecture et des éléments constitutifs du système, avec les blocs, leurs relations, organisations internes, etc. constituera un point de vue important.
@@ -145,11 +143,11 @@ C'est souvent la partie de modélisation qui pose le moins de problème aux déb
 
 {Behavior}::
 Le comportement d'un système est du point de vue de l'utilisateur final beaucoup plus important que la structure elle-même.
-C'est la partie qu'il est la plus à même d'exprimer, de comprendre (via les modèles) et de valider.
+L'utilisateur est la plus à même d'exprimer, de comprendre (via les modèles) et de valider.
 Nous distinguons dans ce livre le comportement global (du système) du comportement local (des éléments constitutifs).
 
 {Crosscutting}::
-Un certains nombre de concepts sont transverses aux trois points de vue précédents.
+Un certain nombre de concepts sont transverses aux trois points de vue précédents.
 Il s'agira principalement de parler de cohérence ou de traçabilité entre les phases de développement ou entre les points de vue.
 
 
@@ -164,7 +162,7 @@ Ces trois points de vue n'étant pas indépendants les uns des autres, nous avon
 [[devphase]]
 === Phase de développement
 
-Dans un axe vertical, nous avons différencié quatre grandes phases du cycle de vie du développement :
+Dans un axe vertical, nous différencions quatre grandes phases du cycle de vie du développement :
 
 {organisation}::
 Une étape indépendante du type de cycle de développement envisagé (en V, agile, etc.) mais qui concerne la mise en place
@@ -207,12 +205,9 @@ endif::final[]
 Suite à cette introduction, nous allons présenter l'étude de cas qui nous servira de "fil rouge" (chapitre <<etudeCas>>).
 Nous donnons ensuite les instructions pour installer l'environnement minimal pour réaliser les exercices de ce livre (chapitre <<install>>).
 Nous donnons ensuite un aperçu de tous les diagrammes {sysml}, pour que le lecteur ait une bonne vue d'ensemble et puisse faire les connexions nécessaires entre tous les diagrammes.
-Nous abordons ensuite quelques éléments méthodologiques (chapitre <<methode>>).
-Nous attaquons ensuite la manipulation proprement dite de {papyrus} (chapitre <<start>>).
-Nous rentrons dans le détail de {sysml} avec les chapitres suivants.
-Nous commençons par les exigences (chapitre <<reqs>>).
-Nous poursuivons par l'utilisation du système (cas d'utilisation et interfaces, chapitre <<Usages>>).
-Ensuite nous traitons des éléments structurels (chapitre <<archi>>) et
+Après la définition de quelques éléments méthodologiques (chapitre <<methode>>), nous attaquons la manipulation proprement dite de {papyrus} (chapitre <<start>>).
+Nous rentrons dans le détail de {sysml} avec les chapitres suivants :
+en commençant par les exigences (chapitre <<reqs>>), nous poursuivons par l'utilisation du système (cas d'utilisation et interfaces, chapitre <<Usages>>), puis traitons des éléments structurels (chapitre <<archi>>) et
 comportementaux (chapitre <<behavior>>).
 Puis des interaction (chapitre <<interaction>>) et des préoccupations transverses (chapitre <<crossCuting>>).
 Nous terminons par différents aspects complémentaires (chapitre <<realLife>>).

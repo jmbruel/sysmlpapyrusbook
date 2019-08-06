@@ -1,10 +1,13 @@
-= À propos des auteurs
+= À propos...
+
+:numbered!:
+== Des auteurs
 
 image::jmb.jpg[width=10%,scaledwidth=15%] 
 mailto:{email}[{author}] est
 Professeur des Universités à l'{univ-tlse},
 en poste à l'{iut} depuis 2008.
-Il a été Maître de Conférences à l'{uppa} de 1997 à 2008 après avoir obtenu son doctorat en informatique de l'{univ-tlse} en 1996.
+Il a été Maître de Conférences à l'{uppa} de 1997 à 2008 après avoir obtenu son doctorat en informatique de l'{ups} en 1996.
 Il est actuellement responsable du site {ut2j} de l'{irit} et
 de l'équipe {smart}.
 Il est l'un des co-fondateurs de l'association {sysmlfrance} (depuis intégrée à l'{afis}),
@@ -22,3 +25,44 @@ mailto:{email_2}[{author_2}] est ... (Papa de Papyrus :-)
 Sébastien Gérard is research director at CEA and he is leading the LISE laboratory (Laboratory of Model Driven Engineering for Embedded Systems) at CEA LIST (http://www-list.cea.fr/page-_en.html). Working on research issues related to complex and critical system and software design for more than 15 years, his research interests include correct-by-construction specification and design of complex systems, model-based engineering of RT/E systems and visual modeling language engineering. He is the CEA representative at OMG for more than 15 years. In particular, he is the chair of the MARTE standardization task force. He is also leading the open-source project, Papyrus (www.eclipse.org/papyrus), the UML modeling tools of Eclipse. In 1995, he has a diploma in mechanics and aeronautics from the ENSMA high-school, in 2000 he obtained a PhD diploma in Computer Science from the Evry university and in 2013 he got his “habilitation à diriger des recherches” diploma in the domain of computer science from the Orsay univiersity.
 /////
 
+== Historique
+
+Ce document est la compilation de plusieurs années d'enseignement de {sysml}
+ou de {papyrus} par les auteurs depuis plus de dix ans, que ce soit :
+
+- au http://dep-informatique.univ-pau.fr/live/masterTI[Master TI], de l'{uppa} (avec {nico}),
+- au http://spiderman-2.laas.fr/M2R-SAID/[Master Recherche SAID], de l'{UPS},
+- au http://mathsinfo.univ-tlse2.fr/accueil/formations/master-ice/[Master ICE] de l'{ut2j} (avec {pdss}),
+- au _Master of Science_ de Göteborg, Suède (introduction réalisée par {nico}),
+- à {uag}, au Mexique (40h de formation professionnelle à des employés de Continental Mexique),
++
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+To be completed by Seb!!!
+====
+//-----------------------------------------------
+endif::final[]
+- ou plus récemment au {dl} de l'{ups} (avec {christelle}) ou du master ICE de l'{ut2j} (avec {bc}).
+
+Vous trouverez en référence (cf. <<refs>>) les ouvrages et autres documents utilisés et affectionnés par les auteurs.
+
+== Remerciements
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+À faire au dernier moment !
+
+Penser à remercier : {rf}, {prfc}, {nico}, Nicolas Hili, Jo, ... 
+
+
+====
+//-----------------------------------------------
+endif::final[]
+
+:numbered:

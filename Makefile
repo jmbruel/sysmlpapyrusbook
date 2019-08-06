@@ -1,5 +1,6 @@
 #-----------------------------------------------------
 ASCIIDOCTOR=asciidoctor
+ASCIIDOCTORPDF=asciidoctor-pdf
 EXT=adoc
 OUTPUT=.
 DESSINS=images/dessins
@@ -15,9 +16,7 @@ $(OUTPUT)/%.final.html: %.$(EXT)
 		$(ASCIIDOCTOR) -a linkcss -a data-uri -a final -o $@ $<
 
 $(OUTPUT)/%.pdf: %.$(EXT) $(DEP)
-	$(ASCIIDOCTOR) -a final \
-		-b pdf \
-		-r asciidoctor-pdf \
+	$(ASCIIDOCTORPDF) \
 		-o $@ $<
 
 plant: $(DESSINS)/*.png

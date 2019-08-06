@@ -17,8 +17,8 @@ Il peut y avoir plusieurs raisons de lire ce livre, même partiellement.
 Vous pouvez vous reconnaître dans l'une des situations suivantes :
 
 Je veux améliorer mon processus d'{IS}::
-Vous êtes un professionnel, dans le domaine de l'{is}, et vous êtes intéressé par la modélisation.
-Nous espérons que les conseils pratiques, appliqués et appuyés sur l'outil {papyrus},
+Vous êtes un professionnel dans le domaine de l'{is} et vous êtes intéressé par la modélisation.
+Nous espérons que les conseils pratiques, appliqués avec l'outil {papyrus},
 vous permettront de tester l'intérêt de {sysml} pour votre domaine.
 
 Je veux apprendre {SysML} par la pratique::
@@ -43,10 +43,10 @@ Et vous aurez, avec {papyrus}, un outils 100% conforme à la spécification.
 
 Je veux gagner du temps::
 Nous avons essayé de concevoir ce livre comme un manuelfootnote:[Au sens latin du terme : "que l'on peut
-avoir toujours à portée de main".], outil et pratique, en travaillant l'organisation des concepts
-et des pratiques.
+avoir toujours à portée de main".] pratique, en organisant les concepts
+et les pratiques.
 
-== À qui s'adresse le livre ?
+== À qui s'adresse ce livre ?
 
 En fonction de votre profil, vous pourrez avoir une lecture plus ou moins complète de cet ouvrage.
 Loin de nous l'idée de forcer la façon d'en aborder les chapitres, nous vous recommandons néanmoins
@@ -62,7 +62,7 @@ les pistes de lectures suivantes selon la situation :
 |======================
 
 Si vous êtes débutant en {IS}, nous vous conseillons en parallèle de vous initier.
-Le livre n'aborde pas directement les concepts systèmes.
+Le livre n'aborde pas directement les aux concepts systèmes.
 
 //== Comment lire ce livre ?
 
@@ -121,12 +121,22 @@ ceux du programme de certification de l'{OMG} <<OCSMP>>.
 
 == Conventions typographiques et symboles récurrents
 
-Nous avons utilisé un certain nombre de conventions personnelles pour rendre ce document le plus agréable à lire et le plus
-utile possible, grâce notamment à la puissance d'{asciidoc} :
+Nous avons défini et utilisé un certain nombre de conventions pour rendre ce document le plus agréable à lire et le plus
+utile possible (grâce notamment à la puissance d'{asciidoc}) :
 
 - des mises en formes particulières (e.g., `NomDeBloc` pour un élément de modèle),
 - des références bibliographiques (comme la spécification <<SysML>>), présentées en fin de document (cf. <<refs>>),
-- tous les flottants (figures, tableaux) sont listés à la suite de la table des matière, [red yellow-background]#XXX check this XXX#
+- tous les flottants (figures, tableaux) sont listés à la suite de la table des matière,
++
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Check this!!
+====
+//-----------------------------------------------
+endif::final[]
 - les termes anglais (souvent incontournables) sont repérés en _italique_, non pas pour indiquer qu'il s'agit d'un
 mot anglais, mais pour indiquer au lecteur que nous employons volontairement ces termes (e.g., _Requirements_),
 - un certain nombre de symboles viennent identifier les notes :
@@ -164,26 +174,3 @@ Dans ces notes, nous distillerons des conseils, des bonnes pratiques ou des conv
 Ces notes concernent des définitions tirées de la spécification {sysml} et sont donc précisément référencées.
 ====
 
-== Historique
-
-Ce document est la compilation de plusieurs années d'enseignement de {sysml}
-ou de {papyrus} par les auteurs depuis plus de dix ans, que ce soit :
-
-- au http://dep-informatique.univ-pau.fr/live/masterTI[Master TI], de l'{uppa} (avec {nico}),
-- au http://spiderman-2.laas.fr/M2R-SAID/[Master Recherche SAID], de l'{UPS},
-- au http://mathsinfo.univ-tlse2.fr/accueil/formations/master-ice/[Master ICE] de l'{ut2j} (avec {pdss}),
-- au _Master of Science_ de Göteborg, Suède (introduction réalisée par {nico}),
-- à {uag}, au Mexique (40h de formation professionnelle à des employés de Continental Mexique),
-- [red yellow-background]#XXX to be completed by Seb XXX#
-- ou plus récemment au {dl} de {ups} (avec {christelle}).
-
-Vous trouverez en référence (cf. <<refs>>) les ouvrages et autres documents utilisés pour la réalisation de ce livre.
-
-/////
-== Remerciements
-
-XXX Penser à remercier : {rf}, {pr}, {nico}, Nicolas Hili, ... XXX
-
-/////
-
-:icons: font

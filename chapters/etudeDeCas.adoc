@@ -35,11 +35,10 @@ Pour permettre de démarrer la modélisation, nous partirons d'un {FichierExigen
 . Nous ne nous intéresserons qu'à la partie intelligente de la maison (et non à ses caractéristiques architecturales par exemple).
 . Nous avons pris quelques libertés sur les caractéristiques de la maison réelle
 pour parfois les enrichir (comme l'exigence `SH_ACO_030` ci-dessous) ou parfois les simplifier.
-. Cette base d'exigences sert de base pour étudier la partie _elicitation_ des exigences.
-Elles ne sont donc pas parfaites...
+. Cette liste d'exigences sert de base pour étudier la partie d'analyse (_elicitation_ en anglais) des exigences.
+Elles ne sont donc pas parfaites mais sont le reflet de la réalité.
 . Les exemples de modèles réalisés, pour des soucis de partage plus large avec la communauté, sont
-réalisés à partir de la version anglaise de cette description (disponible {siteUseCase}[ici]) et sont donc
-en anglais.
+réalisés en anglais à partir de la version anglaise des exigences (disponible {siteUseCase}[ici]).
 =====
 
 == Description
@@ -53,7 +52,7 @@ réaliser un ensemble de tâches comme :
 - Surveiller les données collectées par des capteurs (_sensors_) comme la temperature, la luminosité, etc.
 
 L'objectif principal de la {mib} est d'être un support à l'assistance et au monitoring de
-personne à domicile qui sont autonome mais qui doivent être suivies ou aidées.
+personnes à domicile qui sont autonomes mais qui doivent être suivies ou aidées.
 Les éléments de conforts mais surtout de sécurité sont donc primordiaux et doivent
 être fournis de manière continue, et potentiellement nécessiter des moyens humains d'assistance.
 
@@ -64,7 +63,7 @@ Dans ce qui suit nous décrivons plus précisément quelques services attendus d
 
 === Sécurité
 
-Comme n'importe quelle autre logement, la maison intelligente doit être sécurisée.
+Comme n'importe quel autre logement, la maison intelligente doit être sécurisée.
 Le _{projectName}_ doit donc fournir un certain niveau de protection contre les intrus et les voleurs.
 Ce niveau doit même être renforcé du fait de la vulnérabilité induite par l'ultra-connectivité du système.
 On profitera donc avantageusement du niveau d'équipement pour mettre en place les réponses adaptées
@@ -92,7 +91,7 @@ en fonction des préférences de l'occupant (par exemple, heure de fermeture des
 
 === Environnement et économie
 
-Une des caractéristique des maisons intelligentes modernes est leur prise en compte de
+Une des caractéristiques des maisons intelligentes modernes est leur prise en compte de
 l'environnement et donc des consommations énergétiques.
 L'objectif peut être économique, légal (suivre une norme ou un label), ou simplement social.
 Par exemple le _{projectName}_ pourra abaisser la température de la maison à certains moments
@@ -148,20 +147,20 @@ en {papyrus} entre ces exigences et les artefacts de modélisation.
 | SH_ACO_060
 | | Le _{projectShortName}_ doit permettre la connexion avec les équipements modernes de l'occupant (smartphone, montre, pèse-personne, etc.).
 | SH_ACO_070
-| | Le _{projectShortName}_ doit posséder un lit adaptés aux personnes à mobilité réduite.
+| | Le _{projectShortName}_ doit posséder un lit adapté aux personnes à mobilité réduite.
 //------------------
 | SH_ECO_010
 | Économique
 | Le _{projectShortName}_ doit économiser l'énergie.
 | SH_ECO_020
-| | Le domicile doit être économe en énergie et ayant une consommation globale inférieure aux normes constatées localement.
+| | Le domicile doit être économe en énergie et avoir une consommation globale inférieure aux normes constatées localement.
 | SH_ECO_030
 | | Le _{projectShortName}_ doit donner la priorité aux énergies renouvelables.
 |======================
 
 == Quelques exemples de scénarios
 
-Dans ce qui suit, nous imaginerons que l'habitante qui occupe la maison s'appelle Alice
+Dans ce qui suit, nous imaginons que l'habitante qui occupe la maison s'appelle Alice
 et que son état de santé nécessite un suivi particulier :
 
 - Chaque matin, quand Alice s'éveille, un guidage lumineux au sol lui permet de simplement
@@ -169,14 +168,14 @@ atteindre la salle de bain pour sa toilette. Si elle a choisi l'option, elle peu
 bénéficier d'un guidage audio complémentaire.
 
 - Alice bénéficie d'un "majordome intelligent"footnote:[Scénario tiré du Projet ESIR3 NSOC donné par {bc} à l'{esir}.],
-capable de :
-* afficher un indicateur de santé de la maison, qui combine les informations provenant de la mesure de plusieurs grandeurs physiques
+capable :
+* d'afficher un indicateur de santé de la maison, qui combine les informations provenant de la mesure de plusieurs grandeurs physiques
 (e.g., Température, Humidité, CO2, ...)
-* afficher des indicateurs détaillés sur différents domaines (en instantané et avec des graphiques) en le ramenant
+* d'afficher des indicateurs détaillés sur différents domaines (en instantané et avec des graphiques) en le ramenant
 à des indicateurs intelligibles pour l’humain (Qualité de l’air,  Consommation électrique, ...)
-* afficher des prévisions pour la journée / semaine (Consommation électrique prévue, Production d’énergie prévue,
-La voiture sera chargée pour faire votre trajet quotidien à 16h30, ...)
-* afficher des conseils / alertes pour bénéficier au mieux des capacités passives de la maison (Ouvrir la fenêtre pendant 10 minutes,
+* d'afficher des prévisions pour la journée / semaine (Consommation électrique prévue, Production d’énergie prévue,
+"La voiture sera chargée pour faire votre trajet quotidien à 16h30", ...)
+* d'afficher des conseils / alertes pour bénéficier au mieux des capacités passives de la maison (Ouvrir la fenêtre pendant 10 minutes,
 Ne pas faire entrer de nouveaux visiteurs, ...)
 
 - Quand Alice chute sur le sol et qu'elle reste immobile plus de 30s, et qu'elle ne répond pas à une première
@@ -186,8 +185,8 @@ préalable dans le système.
 == Pour aller plus loin
 
 Cette étude de cas a été utilisée dans le cadre d'un cours {sysml} au {DL} ainsi
-que pour le workshop {mdetools}. Ces deux sources peuvent fournir nombre de modèles
-complémentaires à ceux que vous trouverez dans ce livre.
+que pour le workshop {mdetools}. 
+Ces deux sources peuvent fournir des modèles complémentaires à ceux que vous trouverez dans ce livre.
 
 Pour une liste plus complète d'exigences, réalisée par les étudiants du {dl}, voir
 {FichierExigences}[ce lien].

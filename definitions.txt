@@ -81,7 +81,7 @@ endif::[]
 :modelio: http://www.modeliosoft.com/[Modelio]
 :models: http://www.modelsconference.org/[MODELS]
 :moka: https://wiki.eclipse.org/Papyrus/UserGuide/ModelExecution[Moka]
-:norme: http://www.omg.org/spec/SysML/1.5/PDF/[SysML{nbsp}1.5]
+:norme: https://www.omg.org/spec/SysML/1.6/Beta1/PDF[SysML(R){nbsp}1.6]
 :omg: link:http://www.omg.org[OMG(TM)]indexterm:[OMG]
 :OSLC: http://open-services.net/[OSCL]
 :obeo: link:http://www.obeo.fr/[Obeo]
@@ -106,7 +106,7 @@ endif::[]
 :smart: link:http://smart-researchteam.github.io/[SM@RT]
 :sosym: http://www.sosym.org/[SoSyM]
 :sym: http://www.omg.org/spec/SyM/[SysML-Modelica]
-:sysml: http://www.omgsysml.org/[SysML(TM)]indexterm:[SysML]
+:sysml: http://www.omgsysml.org/[SysML(R)]indexterm:[SysML]
 :sysmod: https://model-based-systems-engineering.com/sysmod/[SYSMOD]
 :topcased: http://www.topcased.org[TOPCASED]indexterm:[Topcased]
 :uml: http://www.uml.org/[UML(TM)]indexterm:[UML(TM)]
@@ -128,6 +128,7 @@ endif::[]
 :dl: http://www.master-developpement-logiciel.fr/[Master DL]
 :m2dl: {dl}
 :esir: link:https://esir.univ-rennes1.fr/[ESIR]
+:ice: link:https://www.univ-tlse2.fr/master-miashs-parcours-informatique-collaborative-en-entreprise-ice--386373.kjsp?RH=composantes[Master ICE]
 :incose: link:http://www.incose.org/[INCOSE]indexterm:[INCOSE](((INCOSE)))
 :iso: http://www.iso.org/[ISO](((ISO)))
 :irit: http://www.irit.fr[IRIT](((IRIT)))
@@ -142,8 +143,8 @@ endif::[]
 :uag: http://www.uag.mx/[Universitad Autónoma de Guadalajara]
 :univ-tlse: http://www.univ-toulouse.fr[Université de Toulouse]
 :uppa: http://www.univ-pau.fr/[Université de Pau et des Pays de l'Adour]
-:ups: http://www.univ-tlse3.fr[UPS]
-:univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Jean Jaurès]
+:ups: http://www.univ-tlse3.fr[Université Toulouse III - Paul Sabatier]
+:univ-tlse2: http://www.univ-tlse2.fr[Université Toulouse II - Jean Jaurès]
 :ut2j: {univ-tlse2}
 
 //------- Normes et R̩f̩rences
