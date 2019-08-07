@@ -381,7 +381,7 @@ Nous fournissons également un site web d&#8217;accompagnement à cet ouvrage co
 Loin de nous l&#8217;idée de forcer la façon d&#8217;en aborder les chapitres, nous vous recommandons néanmoins
 les pistes de lectures suivantes selon la situation :</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+<table id="GrilleLecture" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 1. Conseils de lecture en fonction de votre niveau en SysML (en ligne) et en Papyrus (en colonne)</caption>
 <colgroup>
 <col style="width: 25%;">
@@ -421,33 +421,6 @@ les pistes de lectures suivantes selon la situation :</p>
 <div class="paragraph">
 <p>Si vous êtes débutant en Ingénierie Système, nous vous conseillons en parallèle de vous initier.
 Le livre n&#8217;aborde pas directement les concepts systèmes.</p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="title">Commentaire</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Préciser ici que l&#8217;objectif du livre étant de fournir un support de formation à
-SysML par la pratique, le chapitre "Bien démarrer" est primordiale.</p>
-</li>
-<li>
-<p>Ajouter des ordres de chapitres en fonction des publiques (étudiants, ingénieur, etc.)</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p>Ce document a été réalisé de manière à être lu de préférence
@@ -628,7 +601,7 @@ Ceci est un point important.
 <img src="./images/icons/sysml.jpeg" alt="Note">
 </td>
 <td class="content">
-<div class="title">Définition : Exemple (OMG SysML v1.5, p. 152)</div>
+<div class="title">Définition : Exemple (OMG SysML&#174; v1.6, p. 152)</div>
 <div class="paragraph">
 <p>Ces notes concernent des définitions tirées de la spécification <a href="http://www.omgsysml.org/">SysML&#174;</a> et sont donc précisément référencées.</p>
 </div>
@@ -642,67 +615,25 @@ Ceci est un point important.
 <div class="sect1">
 <h2 id="Intro">2. Introduction</h2>
 <div class="sectionbody">
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="title">Commentaire</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Aborder le fait qu&#8217;il y a bcp de méthodes qui existent et que ici on est agnostique.
-En revanche, on en choisit une (simplifié) pour l&#8217;illustration pour la mise en pratique de SysML dans Papyrus.</p>
-</div>
-</div>
-</div>
-</td>
-</tr>
-</table>
-</div>
 <div class="paragraph">
 <p><a href="http://www.omgsysml.org/">SysML&#174;</a> est un langage de modélisation, souvent considéré comme une notation.
 La principale difficulté, avec <a href="http://www.omgsysml.org/">SysML&#174;</a>, c&#8217;est que cette notation n&#8217;est associée à aucune méthode en particulier, ni aucun outil en particulier (cf. <a href="#Roques">[Roques]</a>).
 Il s&#8217;agit là d&#8217;une volonté délibérée des concepteurs, l&#8217;<a href="http://www.omg.org">OMG&#8482;</a> et l&#8217;<a href="http://www.incose.org/">INCOSE</a>, pour permettre la plus grande adoption de la notation en entreprise.
 Il vous est donc possible d&#8217;appliquer votre propre démarche, votre propre processus interne de développement.
 Contrairement à l&#8217;outil <a href="https://polarsys.org/capella/">Capella</a> par exemple, fortement couplé à la méthode <a href="https://www.polarsys.org/capella/arcadia.html">Arcadia</a>, l&#8217;outil <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> n&#8217;impose aucune démarche particulière.
-Nous allons aborder au <a href="#methode">Chapitre 6</a> les processus connus et courants en Ingénierie Système basé sur les Modèles généralement associés à <a href="http://www.omgsysml.org/">SysML&#174;</a>.</p>
+Nous allons aborder au <a href="#methode">Chapitre 6</a> les démarches connues et courantes en Ingénierie Système basé sur les Modèles généralement associés à <a href="http://www.omgsysml.org/">SysML&#174;</a> et nous expliquerons celle que nous avons retenue pour cet ouvrage, et qui sera explicitée au <a href="#cesam">Chapitre 8</a>.</p>
 </div>
 <div id="pilies" class="imageblock">
 <div class="content">
-<img src="images/SysML-PRFC.svg" alt="SysML PRFC" width="50%">
+<img src="images/SysML-PRFC.svg" alt="SysML PRFC" width="70%">
 </div>
-<div class="title">Figure 1. Langages, méthodes et outils : 3 piliers complémentaires (inspiré par <a href="http://www.prfc.fr/">prfc Roques</a>)</div>
+<div class="title">Figure 1. Langages, méthodes et outils : 3 piliers complémentaires (inspiré par <a href="http://www.prfc.fr/">Pascal Roques</a>)</div>
 </div>
 <div class="paragraph">
-<p>Comme le résume la <a href="#piliers">figure précédente</a>, nous allons aborder dans la pratique aussi bien les éléments de notation (<a href="http://www.omgsysml.org/">SysML&#174;</a>), de méthodologie et d&#8217;outillage (<a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>).</p>
+<p>Comme le résume la <a href="#piliers">figure précédente</a>, nous allons aborder dans la pratique aussi bien les éléments de notation (<a href="http://www.omgsysml.org/">SysML&#174;</a>), de méthodologie (<a href="http://www.cesames.net/academy/cesam/">CESAM</a>) et d&#8217;outillage (<a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>).</p>
 </div>
 <div class="sect2">
 <h3 id="_pourquoi_et_quoi_modéliser">2.1. Pourquoi et quoi modéliser ?</h3>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="title">Commentaire</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Parler de l&#8217;importance de modéliser, des points forts du MBSE, etc.
-Différences entre diagrammes, tables, vues, etc.
-Aborder l&#8217;importance de la différence entre les éléments de modèles et leur représentation.
-Aborder la "philosophie" de Papyrus en la matière.</p>
-</div>
-</div>
-</div>
-</td>
-</tr>
-</table>
-</div>
 <div class="sect3">
 <h4 id="_pourquoi_modéliser">2.1.1. Pourquoi modéliser ?</h4>
 <div class="quoteblock">
@@ -728,25 +659,11 @@ Les modèles permettent de communiquer (entre personnes, entre outils) et d&#821
 <div class="paragraph">
 <p>Ne considérez pas <a href="http://www.omgsysml.org/">SysML&#174;</a> comme une palette de dessins et d&#8217;éléments de base servant à faire des diagrammes.
 <a href="http://www.omgsysml.org/">SysML&#174;</a> permet de définir des éléments conceptuels et d&#8217;en faire une représentation graphique.
-Elle est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c&#8217;est <strong>le modèle</strong> qui importe le plus.</p>
+Cette dernière est importante car elle permet de communiquer visuellement sur le système en développement, mais du point de vue du concepteur, c&#8217;est <strong>le modèle</strong> qui importe le plus.</p>
 </div>
 <div class="paragraph">
 <p>C&#8217;est pourquoi nous vous recommandons de ne jamais "dessiner" des diagrammes <a href="http://www.omgsysml.org/">SysML&#174;</a> <sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>, mais d&#8217;utiliser des outils dédiés comme <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.
 Ils respectent en général la norme <a href="https://www.omg.org/spec/SysML/1.6/Beta1/PDF">SysML&#174;&#160;1.6</a>.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Notez que la norme permet de faire des adaptations graphiques (cf. la discussion <a href="http://www.realtimeatwork.com/2011/08/is-sysml-too-abstract/" class="bare">http://www.realtimeatwork.com/2011/08/is-sysml-too-abstract/</a>).</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div class="paragraph">
 <p>Un des intérêts de la modélisation est de faciliter la communication, notamment au travers des diagrammes et leur aspect graphique et synthétique.
@@ -785,13 +702,14 @@ C&#8217;est à la fois une faiblesse car cela pourrait servir de guide à l&#821
 </div>
 <div id="standards" class="imageblock">
 <div class="content">
-<img src="images/dessins/standards.svg" alt="standards" width="60%">
+<img src="images/dessins/standards.svg" alt="standards" width="100%">
 </div>
 <div class="title">Figure 2. Taxonomie (partielle) des standards principaux en Ingénierie Système <a href="#Friedenthal2016">[Friedenthal2016]</a></div>
 </div>
 <div class="paragraph">
-<p>Nous utiliserons dans ce livre une démarche minimaliste préconisée par <a href="#Friedenthal2016">[Friedenthal2016]</a>.
-Cette méthode ainsi que les références aux démarches principales seront abordées au <a href="#methode">Chapitre 6</a>.</p>
+<p>Nous utiliserons dans ce livre une démarche minimaliste
+et très utilisée en France : <a href="http://www.cesames.net/academy/cesam/">CESAM</a>.
+Cette méthode ainsi que les références aux démarches principales seront abordées au <a href="#methode">Chapitre 6</a> et l&#8217;explication de la démarche elle-même, illustrée avec des modèles <a href="http://www.omgsysml.org/">SysML&#174;</a> réalisés avec <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> sera détaillée au <a href="#cesam">Chapitre 8</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -892,7 +810,11 @@ L&#8217;essentiel est de toujours bien se représenter les différents élément
 <dt class="hdlist1"><a href="#reqs">Exigences</a></dt>
 <dd>
 <p>La définition des exigences et leur prise en compte en modélisation sont des éléments critiques pour le succès du développement de tout système.
-Sans couvrir l&#8217;ensemble des activités d&#8217;ingénierie système (ce qui nécessiterait tout un volume du type de <a href="#Sommerville1997">[Sommerville1997]</a>) nous insisterons sur cet aspect.</p>
+Sans couvrir l&#8217;ensemble des activités d&#8217;ingénierie système (ce qui nécessiterait tout un volume du type de <a href="#Sommerville1997">[Sommerville1997]</a>) nous insisterons beaucoup sur les exigences dans cet ouvrage.</p>
+</dd>
+<dt class="hdlist1"><a href="#cesState">États</a></dt>
+<dd>
+<p>Les systèmes complexes se décrivent souvent bien par les différents états dans lequel ils se trouvent et qui vont faire que le système réagit différemment à un même stimulus extérieur.</p>
 </dd>
 <dt class="hdlist1"><a href="#archi">Structures</a></dt>
 <dd>
@@ -905,27 +827,28 @@ C&#8217;est souvent la partie de modélisation qui pose le moins de problème au
 L&#8217;utilisateur est la plus à même d&#8217;exprimer, de comprendre (via les modèles) et de valider.
 Nous distinguons dans ce livre le comportement global (du système) du comportement local (des éléments constitutifs).</p>
 </dd>
+<dt class="hdlist1"><a href="#cesFlows">Flux</a></dt>
+<dd>
+<p>Les flux (<em>Flows</em> en anglais) doivent être précisément identifiés en ingénierie système car ce sont eux que va consomer, contrôler, échanger, modifier, etc., le système en cours de développement.
+Il peut s&#8217;agir de matière, d&#8217;énergie, de données, etc.
+Ils seront plus ou moins concrets en fonction du niveau d&#8217;abstraction de la modélisation.</p>
+</dd>
 <dt class="hdlist1"><a href="#transvers">Transversalités</a></dt>
 <dd>
-<p>Un certain nombre de concepts sont transverses aux trois points de vue précédents.
+<p>Un certain nombre de concepts sont transverses aux points de vue précédents.
 Il s&#8217;agira principalement de parler de cohérence ou de traçabilité entre les phases de développement ou entre les points de vue.</p>
 </dd>
 </dl>
 </div>
 <div class="paragraph">
 <p>Ces différents points de vue ne doivent pas être confondus avec les différentes phases de développement (cf. <a href="#devphase">paragraphe suivant</a>).
-Ils sont plutôt à rapprocher de la notion de préoccupation.
-C&#8217;est ainsi que nous avons choisi de distinguer trois points de vue
-qui se retrouvent souvent en modélisation : le point de vue des exigences qui permet de se focaliser sur les besoins des clients ;
-le point de vue structurel qui permet de se focaliser sur les différents composants du système ;
-et le point de vue comportemental qui permet de se focaliser sur le comportement global et local.
-Ces trois points de vue n&#8217;étant pas indépendants les uns des autres, nous avons intégré un quatrième point de vue transversal.</p>
+Ils sont plutôt à rapprocher de la notion de préoccupation.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="devphase">2.3.2. Phase de développement</h4>
 <div class="paragraph">
-<p>Dans un axe vertical, nous différencions quatre grandes phases du cycle de vie du développement :</p>
+<p>Dans un axe vertical, nous différencions cinq grandes phases du cycle de vie du développement :</p>
 </div>
 <div class="dlist">
 <dl>
@@ -934,15 +857,36 @@ Ces trois points de vue n&#8217;étant pas indépendants les uns des autres, nou
 <p>Une étape indépendante du type de cycle de développement envisagé (en V, agile, etc.) mais qui concerne la mise en place
 d&#8217;un cadre de travail qui permette un développement de qualité (outils, éditeurs, gestionnaire de version, de tâches, etc.).</p>
 </dd>
+<dt class="hdlist1">Environnement</dt>
+<dd>
+<p>Aussi appelé le contexte du système.
+Souvent négligé (en informatique par exemple), il est primordial en Ingénierie Système.
+Les interactions entre le système et son environnement, les contraintes imposées par ce dernier sur le système, vont faire partie des premiers éléments à définir précisément.</p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+De nombreux accidents se produisent parce que l&#8217;environnement du système a été mal modélisé car souvent considéré comme connu.
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
 <dt class="hdlist1">Vision Opérationelle</dt>
 <dd>
 <p>Cette phase vise plutôt à examiner le domaine du problème. Elle se focalise sur les cahiers des charges et les exigences.
-	L&#8217;analyse débouche sur un dossier d&#8217;analyse qui décrit les grandes lignes (cas d&#8217;utilisation, architecture principale) du système.</p>
+L&#8217;analyse débouche sur un dossier d&#8217;analyse qui décrit les grandes lignes (cas d&#8217;utilisation, architecture principale) du système.</p>
 </dd>
 <dt class="hdlist1">Vision Fonctionnelle</dt>
 <dd>
-<p>Cette phase vise plutôt à examiner le domaine de la solution. Elle débouche sur un dossier de conception qui décrit les détails
-	conceptuels de la solution envisagée (structure détaillée, comportement, etc.)</p>
+<p>Cette phase vise plutôt à examiner le domaine de la solution. Elle débouche sur un dossier de conception qui décrit les détails conceptuels de la solution envisagée (structure détaillée, comportement, etc.).</p>
 </dd>
 <dt class="hdlist1">Vision Organique</dt>
 <dd>
@@ -953,46 +897,50 @@ d&#8217;un cadre de travail qui permette un développement de qualité (outils, 
 <div class="paragraph">
 <p>Il s&#8217;agit ici classiquement des grandes étapes de développement d&#8217;un système.
 On pourrait être surpris par l&#8217;étape que nous avons appelé "Organisation".
-C&#8217;est une étape que nous considérons importante, particulièrement pour l&#8217;enseignement.
-Avant toute activité de modélisation ou de même de développement, il convient en effet de s&#8217;organiser en termes de choix d&#8217;outils, choix d&#8217;environnement, etc.
+C&#8217;est une étape que nous considérons importante, particulièrement pour pour le travail en équipe (ou pour l&#8217;enseignement).
+Avant toute activité de modélisation ou même de développement, il convient en effet de s&#8217;organiser en termes de choix d&#8217;outils, choix d&#8217;environnements, conventions, etc.
 Cette étape est souvent négligée par les étudiants.
-C&#8217;est pour cela que nous avons décidé de faire figurer cette étape de manière explicite.
-Bien sûr dans une organisation existante cette étape sera contrainte par les habitudes "maison".</p>
+C&#8217;est pour cela que nous avons décidé de faire figurer cette étape de manière explicite.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Bien sûr dans une organisation existante cette étape sera contrainte par les habitudes "maison".
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_organisation_de_ce_livre">2.4. Organisation de ce livre</h3>
-<div class="admonitionblock caution">
+<div class="paragraph">
+<p>Suite à cette introduction, nous allons présenter l&#8217;étude de cas qui nous servira de "fil rouge" (<a href="#etudeCas">Chapitre 3</a>).
+Nous donnons ensuite les instructions pour installer l&#8217;environnement minimal pour réaliser les exercices de ce livre (<a href="#install">Chapitre 4</a>).
+Nous donnons ensuite un aperçu de tous les diagrammes <a href="http://www.omgsysml.org/">SysML&#174;</a>, pour que le lecteur ait une bonne vue d&#8217;ensemble et puisse faire les connexions nécessaires entre tous les diagrammes
+(<a href="#overview">Chapitre 5</a>).
+Après la définition de quelques éléments méthodologiques (chapitre <a href="#methode">Chapitre 6</a>), nous attaquons la manipulation proprement dite de <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> (<a href="#GettingStarted">Chapitre 7</a>).
+Nous rentrons ensuite dans le détail de <a href="http://www.omgsysml.org/">SysML&#174;</a> en présentant les concepts avancés (<a href="#avances">Chapitre 9</a>).
+Nous commençons par les exigences (<a href="#reqs">Section 9.1</a>), nous poursuivons par l&#8217;utilisation du système (cas d&#8217;utilisation et interfaces, <a href="#Usages">Section 9.2</a>), puis traitons des éléments structurels (<a href="#archi">Section 9.3</a>) et comportementaux (<a href="#behavior">Section 9.4</a>), puis des interaction (<a href="#interaction">Section 9.5</a>).
+De part leur importance, nous consacrons un chapitre entier aux concepts avancés en lien avec les préoccupations transverses (<a href="#crossCuting">Chapitre 10</a>).
+Nous terminons par différents aspects complémentaires qui permettent d&#8217;aller encore plus loin (<a href="#realLife">Chapitre 11</a>).
+Un certain nombres d'<a href="#acro">annexes</a> complètent le livre.</p>
+</div>
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
+<i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-<div class="title">Commentaire</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Décrire la suite&#8230;&#8203;</p>
-</div>
-</div>
-</div>
+Rappelez-vous de vous référer à la grille de lecture que nous proposons en <a href="#GrilleLecture">Table 1</a>.
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>Suite à cette introduction, nous allons présenter l&#8217;étude de cas qui nous servira de "fil rouge" (chapitre <a href="#etudeCas">Chapitre 3</a>).
-Nous donnons ensuite les instructions pour installer l&#8217;environnement minimal pour réaliser les exercices de ce livre (chapitre <a href="#install">Chapitre 4</a>).
-Nous donnons ensuite un aperçu de tous les diagrammes <a href="http://www.omgsysml.org/">SysML&#174;</a>, pour que le lecteur ait une bonne vue d&#8217;ensemble et puisse faire les connexions nécessaires entre tous les diagrammes.
-Après la définition de quelques éléments méthodologiques (chapitre <a href="#methode">Chapitre 6</a>), nous attaquons la manipulation proprement dite de <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> (chapitre <a href="#start">[start]</a>).
-Nous rentrons dans le détail de <a href="http://www.omgsysml.org/">SysML&#174;</a> avec les chapitres suivants :
-en commençant par les exigences (chapitre <a href="#reqs">Section 9.1</a>), nous poursuivons par l&#8217;utilisation du système (cas d&#8217;utilisation et interfaces, chapitre <a href="#Usages">Section 9.2</a>), puis traitons des éléments structurels (chapitre <a href="#archi">Section 9.3</a>) et
-comportementaux (chapitre <a href="#behavior">Section 9.4</a>).
-Puis des interaction (chapitre <a href="#interaction">Section 9.5</a>) et des préoccupations transverses (chapitre <a href="#crossCuting">Chapitre 10</a>).
-Nous terminons par différents aspects complémentaires (chapitre <a href="#realLife">Chapitre 11</a>).
-Un certain nombres d'<a href="#acro">annexes</a> complètent le livre.</p>
 </div>
 </div>
 </div>

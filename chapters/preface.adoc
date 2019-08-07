@@ -62,6 +62,7 @@ les pistes de lectures suivantes selon la situation :
 :old-section-refsig: {section-refsig}
 :!section-refsig:
 
+[[GrilleLecture]]
 .Conseils de lecture en fonction de votre niveau en SysML (en ligne) et en Papyrus (en colonne)
 [align="center",cols="h,3*^",options="header",width=100]
 |======================
@@ -77,24 +78,6 @@ les pistes de lectures suivantes selon la situation :
 
 Si vous êtes débutant en {IS}, nous vous conseillons en parallèle de vous initier.
 Le livre n'aborde pas directement les concepts systèmes.
-
-//== Comment lire ce livre ?
-
-//-----------------------------------------------
-//-- Commentaire
-//-----------------------------------------------
-ifndef::final[]
-.Commentaire
-[CAUTION]
-====
-*****
-- Préciser ici que l'objectif du livre étant de fournir un support de formation à
-SysML par la pratique, le chapitre "Bien démarrer" est primordiale.
-- Ajouter des ordres de chapitres en fonction des publiques (étudiants, ingénieur, etc.)
-*****
-====
-endif::final[]
-//-----------------------------------------------
 
 Ce document a été réalisé de manière à être lu de préférence
 dans sa version électronique, ce qui permet de
@@ -182,7 +165,7 @@ IMPORTANT: Ceci est un point important.
 Dans ces notes, nous distillerons des conseils, des bonnes pratiques ou des conventions que nous recommandons d'adopter.
 ====
 
-.Définition : Exemple (OMG SysML v1.5, p. 152)
+.Définition : Exemple (OMG SysML(R) v{sysmlversionlast}, p. 152)
 [NOTE,icon=sysml.jpeg]
 ====
 Ces notes concernent des définitions tirées de la spécification {sysml} et sont donc précisément référencées.
