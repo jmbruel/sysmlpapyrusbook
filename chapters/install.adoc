@@ -60,11 +60,9 @@ retrouver le plugin officiel : {pluginsysml}.
 +
 .Détails d'installation [v.{papyrusversion}]
 image::installation-details.png[détails,width=70%,scaledwidth=60%]
-+
-. Si vous souhaitez utiliser la toute dernière version (non stable), utilisez plutôt l'URL suivante : {pluginsysmlnightly}.
 =====
 
-WARNING: Pour la version `1.6` pour l'instant l'_update site_ est ici : https://hudson.eclipse.org/papyrus/job/papyrus-sysml16-master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml16.p2/target/repository/
+WARNING: Pour la version `1.6` pour l'instant l'_update site_ est link:{pluginsysmlnightly}[ici].
 
 === Compléments
 

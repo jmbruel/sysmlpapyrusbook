@@ -159,7 +159,7 @@ image::richtext-result.png[width="70%",scaledwidth=70%]
 
 === Export des diagrammes
 
-Si vous souhaitez simplement obtenir des figures de vos diagrammes :
+Si vous souhaitez simplement obtenir des figures à partir de vos diagrammes :
 
 . sélectionnez un modèle puis menu:File[Export > Export All Diagrams...]
 . choisissez le répertoire d'export et le format (PNG, GIF, SVG, PDF, ...)

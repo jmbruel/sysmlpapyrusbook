@@ -1,6 +1,6 @@
 
 [[cesam]]
-= Mise en oeuvre de CESAM
+= Mise en œuvre de CESAM
 
 //-----------------------------------------------
 ifndef::final[]
@@ -21,6 +21,9 @@ Pour ceux qui sont familiarisés avec {CESAM}, la <<cesamDeliverables>> présent
 :old-section-refsig: {section-refsig}
 :!section-refsig:
 
+:webWidth: 70%
+:pdfWidth: 30%
+
 [[cesamDeliverables]]
 ifdef::FR[.Les produits CESAM]
 ifdef::UK[.The CESAM deliverables]
@@ -28,40 +31,40 @@ ifdef::backend-pdf[[align="center",cols="<40%,^10%,^50",options="header"]]
 ifndef::backend-pdf[[align="center",cols="<40%,^10%,^50%",options="header",width=100]]
 |======================
 | Produits | Section | Illustration
-| stakeholder hierarchy diagram  | <<visionProjectStake>> | image:diagrams/SHS_stakeholder_hierarchy_diagram.SVG[width="90%",scaledwidth=30%]
-| environment diagram | <<visionProjectEnv>>  | image:diagrams/SHS_environment_diagram.SVG[width="90%",scaledwidth=30%]
+| stakeholder hierarchy diagram  | <<visionProjectStake>> | image:diagrams/SHS_stakeholder_hierarchy_diagram.SVG[width="{webWidth}",scaledwidth={pdfWidth}]
+| environment diagram | <<visionProjectEnv>>  | image:diagrams/SHS_environment_diagram.SVG[width="{webWidth}",scaledwidth={pdfWidth}]
 | need architecture diagram | <<visionOpReqs>>  |
-image:visionOpReqsFig.png[width="90%",scaledwidth=30%]
+image:visionOpReqsFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | life-cycle diagram | <<visionOpState>> |
-image:visionOpStateFig.png[width="90%",scaledwidth=30%]
+image:visionOpStateFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | use case diagrams | <<visionOpStat>> |
-image:visionOpStatFig.png[width="90%",scaledwidth=30%]
+image:visionOpStatFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | operational scenarios diagrams | <<visionOpDyn>> |
-image:visionOpDynFig.png[width="90%",scaledwidth=30%]
+image:visionOpDynFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | operational flow diagrams | <<visionOpFlow>> |
-image:visionOpFlowFig.png[width="90%",scaledwidth=30%]
-| functional requirement architecture diagram | <<visionFuncReqs>> | image:visionFuncReqsFig.png[width="90%",scaledwidth=30%]
+image:visionOpFlowFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
+| functional requirement architecture diagram | <<visionFuncReqs>> | image:visionFuncReqsFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | functional mode diagram | <<visionFuncState>> |
-image:visionFuncStateFig.png[width="90%",scaledwidth=30%]
+image:visionFuncStateFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | functional decomposition diagrams | <<visionFuncStat>> |
-image:visionFuncStatFig.png[width="90%",scaledwidth=30%]
-| functional interaction diagrams | <<visionFuncStat>> | image:visionFuncStatFig2.png[width="90%",scaledwidth=30%]
+image:visionFuncStatFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
+| functional interaction diagrams | <<visionFuncStat>> | image:visionFuncStatFig2.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | functional scenario diagrams | <<visionFuncDyn>> |
-image:visionFuncDynFig.png[width="90%",scaledwidth=30%]
+image:visionFuncDynFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | functional flow diagrams | <<visionFuncFlow>> |
-image:visionFuncFlowFig.png[width="90%",scaledwidth=30%]
+image:visionFuncFlowFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | constructional requirement architecture | <<visionConstReqs>>  |
-image:visionConstReqsFig.png[width="90%",scaledwidth=30%]
+image:visionConstReqsFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | constructional mode diagram | <<visionConstState>>  |
-image:visionConstStateFig.png[width="90%",scaledwidth=30%]
+image:visionConstStateFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | constructional decomposition | <<visionConstStat>>  |
-image:visionConstStatFig.png[width="90%",scaledwidth=30%]
+image:visionConstStatFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | constructional interaction diagrams | <<visionConstStat>>  |
-image:visionConstStatFig2.png[width="90%",scaledwidth=30%]
+image:visionConstStatFig2.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | constructional scenario diagrams | <<visionConstDyn>> |
-image:visionConstDynFig.png[width="90%",scaledwidth=30%]
+image:visionConstDynFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 | constructional flow diagrams | <<visionConstFlow>> |
-image:visionConstFlowFig.png[width="90%",scaledwidth=30%]
+image:visionConstFlowFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 |======================
 
 

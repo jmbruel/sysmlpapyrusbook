@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'guard'
+gem 'guard-shell'
+gem 'guard-livereload', '~> 2.5', require: false
 gem 'asciidoctor'
 gem 'asciidoctor-pdf', github: 'asciidoctor/asciidoctor-pdf'
 gem 'concurrent-ruby'
