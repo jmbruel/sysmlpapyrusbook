@@ -8,7 +8,6 @@ desc "Create different file outputs"
 task :ascii  do
   system("asciidoctor -o output/master.html master.adoc")
   system("asciidoctor-epub3 -D output master.adoc")
-
   system("asciidoctor-pdf -a final -o output/master.pdf master.adoc ")
 end
 
@@ -22,6 +21,7 @@ end
 def git_clone(repo)
   sh("git", "clone", repo)
 end
+
 def build_gem
   sh('bundle')
   sh('rake', 'build')
