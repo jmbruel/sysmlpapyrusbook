@@ -48,7 +48,7 @@ Je veux gagner du temps::
 Nous avons essayé de concevoir ce livre comme un manuelfootnote:[Au sens latin du terme : "que l'on peut
 avoir toujours à portée de main".] pratique, en organisant les concepts
 et les pratiques.
-Nous fournissons également un site web d'accompagnement à cet ouvrage contenant les liens pratiques, modèles, exemples et références utilisés dans cet ouvrage (cf. {siteurl}).
+Nous fournissons également un site web d'accompagnement à cet ouvrage contenant les liens pratiques, modèles, exemples et références utilisés dans cet ouvrage (cf. {githuburl}).
 
 == À qui s'adresse ce livre ?
 
@@ -123,7 +123,7 @@ utile possible (grâce notamment à la puissance d'{asciidoc}) :
 
 - des mises en formes particulières (e.g., `NomDeBloc` pour un élément de modèle),
 - des références bibliographiques (comme la spécification <<SysML>>), présentées en fin de document (cf. <<refs>>),
-- tous les flottants (figures, tableaux) sont listés à la suite de la table des matière,
+- tous les flottants (figures, tableaux) sont listés à la suite de la table des matière, mais les captures d'écran sont souvent sans numéro quand elles illustrent simplement des étapes d'un tutoriel par exemple.
 +
 //-----------------------------------------------
 ifndef::final[]

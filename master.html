@@ -61,7 +61,7 @@
 <ul class="sectlevel2">
 <li><a href="#_installation_des_logiciels">4.1. Installation des logiciels</a></li>
 <li><a href="#_matériel_de_formation_en_complément_de_ce_livre">4.2. Matériel de formation en complément de ce livre</a></li>
-<li><a href="#_pour_ceux_qui_veulent_aller_vite">4.3. Pour ceux qui veulent aller vite</a></li>
+<li><a href="#_pour_ceux_qui_veulent_aller_plus_vite">4.3. Pour ceux qui veulent aller plus vite</a></li>
 <li><a href="#_pour_ceux_qui_veulent_aller_plus_loin">4.4. Pour ceux qui veulent aller plus loin</a></li>
 </ul>
 </li>
@@ -69,15 +69,15 @@
 <ul class="sectlevel2">
 <li><a href="#notation">5.1. Pourquoi une nouvelle notation (par rapport à UML)</a></li>
 <li><a href="#_introduction_à_sysml">5.2. Introduction à SysML</a></li>
-<li><a href="#_diagramme_et_table_des_exigences">5.3. Diagramme et table des exigences</a></li>
-<li><a href="#_diagramme_des_cas_dutilisation">5.4. Diagramme des cas d&#8217;utilisation</a></li>
-<li><a href="#_diagramme_de_blocs">5.5. Diagramme de blocs</a></li>
-<li><a href="#_ibd">5.6. IBD</a></li>
+<li><a href="#_diagramme_et_table_des_exigences_req">5.3. Diagramme et table des exigences (req)</a></li>
+<li><a href="#_diagramme_des_cas_dutilisation_uc">5.4. Diagramme des cas d&#8217;utilisation (uc)</a></li>
+<li><a href="#_diagramme_de_blocs_bdd">5.5. Diagramme de blocs (bdd)</a></li>
+<li><a href="#_diagramme_de_blocs_internes_ibd">5.6. Diagramme de blocs internes (ibd)</a></li>
 <li><a href="#_diagrammes_de_séquences_sd">5.7. Diagrammes de séquences (sd)</a></li>
-<li><a href="#_diagramme_détats">5.8. Diagramme d&#8217;états</a></li>
-<li><a href="#_diagramme_dactivité">5.9. Diagramme d&#8217;activité</a></li>
-<li><a href="#_diagramme_paramétrique">5.10. Diagramme paramétrique</a></li>
-<li><a href="#_diagramme_de_packages">5.11. Diagramme de packages</a></li>
+<li><a href="#_diagramme_détats_stm">5.8. Diagramme d&#8217;états (stm)</a></li>
+<li><a href="#_diagramme_dactivité_act">5.9. Diagramme d&#8217;activité (act)</a></li>
+<li><a href="#_diagramme_paramétrique_par">5.10. Diagramme paramétrique (par)</a></li>
+<li><a href="#_diagramme_de_packages_pkg">5.11. Diagramme de <em>packages</em> (pkg)</a></li>
 <li><a href="#_allocation_traçabilité_et_autres_points_de_cohérences">5.12. Allocation, traçabilité et autres points de cohérences</a></li>
 <li><a href="#_en_résumé">5.13. En résumé</a></li>
 <li><a href="#_questions_de_révision">5.14. Questions de révision</a></li>
@@ -369,7 +369,7 @@ Et vous aurez, avec <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>,
 <dd>
 <p>Nous avons essayé de concevoir ce livre comme un manuel<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> pratique, en organisant les concepts
 et les pratiques.
-Nous fournissons également un site web d&#8217;accompagnement à cet ouvrage contenant les liens pratiques, modèles, exemples et références utilisés dans cet ouvrage (cf. <a href="https://bit.ly/sysmlbook" class="bare">https://bit.ly/sysmlbook</a>).</p>
+Nous fournissons également un site web d&#8217;accompagnement à cet ouvrage contenant les liens pratiques, modèles, exemples et références utilisés dans cet ouvrage (cf. <a href="https://github.com/jmbruel/sysmlpapyrusbook" class="bare">https://github.com/jmbruel/sysmlpapyrusbook</a>).</p>
 </dd>
 </dl>
 </div>
@@ -500,7 +500,7 @@ utile possible (grâce notamment à la puissance d&#8217;<a href="http://www.met
 <p>des références bibliographiques (comme la spécification <a href="#SysML">[SysML]</a>), présentées en fin de document (cf. <a href="#refs"><em>Références</em></a>),</p>
 </li>
 <li>
-<p>tous les flottants (figures, tableaux) sont listés à la suite de la table des matière,</p>
+<p>tous les flottants (figures, tableaux) sont listés à la suite de la table des matière, mais les captures d&#8217;écran sont souvent sans numéro quand elles illustrent simplement des étapes d&#8217;un tutoriel par exemple.</p>
 </li>
 </ul>
 </div>
@@ -1302,52 +1302,61 @@ Il aborde également la question de l&#8217;organisation des modèles (packages,
 </tr>
 </table>
 </div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 4. On s&#8217;organise&#8230;&#8203;</caption>
 <colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"><a href="#reqs">Exigences</a></th>
-<th class="tableblock halign-left valign-top"><a href="#archi">Structures</a></th>
-<th class="tableblock halign-left valign-top"><a href="#behavior">Interactions</a></th>
-<th class="tableblock halign-left valign-top"><a href="#transvers">Transversalités</a></th>
+<th class="tableblock halign-center valign-top"><a href="#reqs">Exigences</a></th>
+<th class="tableblock halign-center valign-top"><a href="#cesState">États</a></th>
+<th class="tableblock halign-center valign-top"><a href="#archi">Structures</a></th>
+<th class="tableblock halign-center valign-top"><a href="#behavior">Interactions</a></th>
+<th class="tableblock halign-center valign-top"><a href="#cesFlows">Flux</a></th>
+<th class="tableblock halign-center valign-top"><a href="#transvers">Transversalités</a></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Organisation</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-map-marker"></i></span> You are here!</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-map-marker"></i></span> You are here!</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-map-marker"></i></span> You are here!</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon red"><i class="fa fa-map-marker"></i></span> You are here!</p></td>
+<td class="tableblock halign-center valign-top" colspan="6"><p class="tableblock"><strong><span class="icon red"><i class="fa fa-map-marker"></i></span> You are here!</strong></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Environnement</p></th>
+<td class="tableblock halign-center valign-top" colspan="5"></td>
+<td class="tableblock halign-left valign-bottom" rowspan="4"></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Vision Opérationelle</p></th>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Vision Fonctionnelle</p></th>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Vision Organique</p></th>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
 </tr>
 </tbody>
 </table>
@@ -1356,19 +1365,19 @@ Il aborde également la question de l&#8217;organisation des modèles (packages,
 <div class="sect3">
 <h4 id="_papyrus">4.1.1. Papyrus</h4>
 <div class="paragraph">
-<p>Vérifiez que vous possédez bien sur votre machine : <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> <code>4.0</code>
+<p>Vérifiez que vous possédez bien sur votre machine : <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> <code>2019-06</code>
 (ou une version supérieure).</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/4.0/launching.png" alt="launching" width="40%">
+<img src="images/2019-06/launching.png" alt="launching" width="40%">
 </div>
-<div class="title">Figure 4. Papyrus au lancement [v.4.0]</div>
+<div class="title">Figure 4. Papyrus au lancement [v.2019-06]</div>
 </div>
 <div class="paragraph">
 <p>Si ce n&#8217;est pas le cas, installez-le ou mettez-le à jour.
 Nous vous conseillons d&#8217;installer <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> de cette façon plutôt que de le rajouter
-comme un plugin de votre installetion <a href="http://www.eclipse.org">eclipse</a>.</p>
+comme un plugin de votre installation <a href="http://www.eclipse.org">eclipse</a>.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -1398,14 +1407,14 @@ Si vous voulez mettre à jour une ancienne version de <a href="http://www.eclips
 <div class="sect3">
 <h4 id="_sysml">4.1.2. SysML</h4>
 <div class="paragraph">
-<p>Il vous faut ensuite installer le profil <a href="http://www.omgsysml.org/">SysML&#174;</a> (version 1.4).
+<p>Il vous faut ensuite installer le profil <a href="http://www.omgsysml.org/">SysML&#174;</a> (version 1.6).
 Pour cela, deux possibilités :</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
 <p>Aller dans le menu <span class="menuseq"><b class="menu">Help</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Install New Software</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">&#8230;&#8203;</b></span> puis utilisez l&#8217;URL suivante pour
-retrouver le plugin officiel : <a href="http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/photon/" class="bare">http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/photon/</a>.</p>
+retrouver le plugin officiel : <a href="https://download.eclipse.org/modeling/mdt/papyrus/components/sysml16/" class="bare">https://download.eclipse.org/modeling/mdt/papyrus/components/sysml16/</a>.</p>
 </li>
 <li>
 <p>Récupérer directement depuis l&#8217;<a href="https://marketplace.eclipse.org/content/papyrus-sysml-16">eclipse market place</a></p>
@@ -1425,25 +1434,13 @@ retrouver le plugin officiel : <a href="http://download.eclipse.org/modeling/mdt
 <p>Pour vérifier les éléments installés allez dans <span class="menuseq"><b class="menu">About&#8230;&#8203;</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Installation Details</b></span> :</p>
 <div class="imageblock">
 <div class="content">
-<img src="images/4.0/installation-details.png" alt="détails" width="70%">
+<img src="images/2019-06/installation-details.png" alt="détails" width="80%">
 </div>
-<div class="title">Figure 5. Détails d&#8217;installation [v.4.0]</div>
+<div class="title">Figure 5. Détails d&#8217;installation [v.2019-06]</div>
 </div>
 </li>
 </ol>
 </div>
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-Pour la version <code>1.6</code> pour l&#8217;instant l'<em>update site</em> est <a href="https://hudson.eclipse.org/papyrus/job/papyrus-sysml16-master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml16.p2/target/repository/">ici</a>.
 </td>
 </tr>
 </table>
@@ -1454,7 +1451,7 @@ Pour la version <code>1.6</code> pour l&#8217;instant l'<em>update site</em> est
 <div class="paragraph">
 <p>Si vous souhaitez travailler avec <a href="https://git-scm.com">Git</a> pour versionner vos modèles ou travailler
 de manière collaborative, ou si vous souhaitez utiliser des éléments avancés de
-<a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, rendez-vous au chapitre dédié (<a href="#realLife">Chapitre 11</a>).</p>
+<a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, rendez-vous au <a href="#realLife">Chapitre 11</a>.</p>
 </div>
 </div>
 </div>
@@ -1485,11 +1482,11 @@ de manière collaborative, ou si vous souhaitez utiliser des éléments avancés
 </div>
 <div class="paragraph">
 <p>Si vous souhaitez vérifier que votre installation fonctionne en créant un premier projet <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>,
-vous pouvez consulter la section <a href="#GettingStarted">Chapitre 7</a>.</p>
+vous pouvez consulter le <a href="#GettingStarted">Chapitre 7</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_pour_ceux_qui_veulent_aller_vite">4.3. Pour ceux qui veulent aller vite</h3>
+<h3 id="_pour_ceux_qui_veulent_aller_plus_vite">4.3. Pour ceux qui veulent aller plus vite</h3>
 <div class="paragraph">
 <p>Les modèles de ce livre (cf. <a href="#etudeCas">Chapitre 3</a>) sont disponibles ici :
 <a href="https://github.com/PapyrusSysMLinAction/SmartHomeUseCase" class="bare">https://github.com/PapyrusSysMLinAction/SmartHomeUseCase</a>.</p>
@@ -1507,7 +1504,7 @@ vous pouvez consulter la section <a href="#GettingStarted">Chapitre 7</a>.</p>
 <p><span class="menuseq"><b class="menu">File</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Import&#8230;&#8203;</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Git</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Projects from Git</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Next</b></span></p>
 <div class="imageblock">
 <div class="content">
-<img src="images/4.0/importGit.png" alt="importGit" width="60%">
+<img src="images/2019-06/importGit.png" alt="importGit" width="60%">
 </div>
 </div>
 </li>
@@ -1515,7 +1512,7 @@ vous pouvez consulter la section <a href="#GettingStarted">Chapitre 7</a>.</p>
 <p>choisir <span class="menuseq"><b class="menu">Clone URI</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Next</b></span> et entrez l&#8217;URL du projet (<a href="https://github.com/PapyrusSysMLinAction/SmartHomeUseCase" class="bare">https://github.com/PapyrusSysMLinAction/SmartHomeUseCase</a>)</p>
 <div class="imageblock">
 <div class="content">
-<img src="images/4.0/importGit2.png" alt="importGit2" width="60%">
+<img src="images/2019-06/importGit2.png" alt="importGit2" width="60%">
 </div>
 </div>
 </li>
@@ -1526,7 +1523,7 @@ vous pouvez consulter la section <a href="#GettingStarted">Chapitre 7</a>.</p>
 <p>Voilà!</p>
 <div class="imageblock">
 <div class="content">
-<img src="images/4.0/voila.png" alt="voila" width="70%">
+<img src="images/2019-06/voila.png" alt="voila" width="70%">
 </div>
 </div>
 </li>
@@ -1537,7 +1534,7 @@ vous pouvez consulter la section <a href="#GettingStarted">Chapitre 7</a>.</p>
 <p>Explorez le modèle via le <code>Model Explorer</code></p>
 <div class="imageblock">
 <div class="content">
-<img src="images/4.0/explore.png" alt="explore" width="60%">
+<img src="images/2019-06/explore.png" alt="explore" width="60%">
 </div>
 </div>
 </li>
@@ -1583,8 +1580,8 @@ Au travers de cette présentation, on introduira également les différents diag
 </table>
 </div>
 <div class="paragraph">
-<p>Pour être plus pratique, si vous ne devez lire qu&#8217;un seul chapitre, c&#8217;est celui-ci.
-L&#8217;objectif de ce chapitre est de présenter l&#8217;ensemble des diagrammes <a href="http://www.omgsysml.org/">SysML&#174;</a> et à
+<p>Si vous ne devez lire qu&#8217;un seul chapitre de ce livre, c&#8217;est celui-ci.
+L&#8217;objectif de ce chapitre est de présenter rapidement l&#8217;ensemble des diagrammes <a href="http://www.omgsysml.org/">SysML&#174;</a> et à
 quelles questions ils peuvent permettre de répondre par rapport à des problématique d&#8217;Ingénierie Système.</p>
 </div>
 <div class="sect2">
@@ -1666,7 +1663,7 @@ Néanmoins cette notation est peu adaptée pour l&#8217;Ingénierie Système :</
 <p>Première spécification adoptée à l&#8217;<a href="http://www.omg.org">OMG&#8482;</a> : 19 septembre 2007</p>
 </li>
 <li>
-<p>Version actuelle : <a href="http://www.omg.org/spec/SysML/1.5/"><code>1.5</code></a> (01/05/2017)</p>
+<p>Version actuelle : <a href="https://www.omg.org/spec/SysML/"><code>1.6 beta</code></a> (03/2019)</p>
 </li>
 <li>
 <p>ISO Standard ISO/IEC <a href="https://www.iso.org/standard/65231.html">19514:2017</a></p>
@@ -1750,7 +1747,7 @@ Voici une liste non exhaustive des entreprises et des acteurs qui participent à
 <h4 id="_sysml_cest">5.2.3. SysML, c&#8217;est&#8230;&#8203;</h4>
 <div class="dlist">
 <dl>
-<dt class="hdlist1"><a href="http://www.omgsysml.org/">SysML&#174;</a> est un ensemble de 9 types de diagrammes (cf. <a href="#diags">Figure 7</a>)</dt>
+<dt class="hdlist1">Neuf types de diagrammes (cf. <a href="#diags">Figure 7</a>)</dt>
 <dd>
 <div class="ulist">
 <ul>
@@ -1798,11 +1795,11 @@ Voici une liste non exhaustive des entreprises et des acteurs qui participent à
 </ul>
 </div>
 </dd>
-<dt class="hdlist1"><a href="http://www.omgsysml.org/">SysML&#174;</a> est un profil <a href="http://www.uml.org/">UML&#8482;</a></dt>
+<dt class="hdlist1">Un profil <a href="http://www.uml.org/">UML&#8482;</a></dt>
 <dd>
 <p>C&#8217;est à dire une <strong>extension</strong> de cette notation, un ensemble de nouveaux concepts et éléments qui sont définis à partir des éléments de base d&#8217;<a href="http://www.uml.org/">UML&#8482;</a>. Un exemple : le <code>bloc</code> <a href="http://www.omgsysml.org/">SysML&#174;</a> n&#8217;est qu&#8217;une redéfinition de la <code>classe</code> <a href="http://www.uml.org/">UML&#8482;</a>.</p>
 </dd>
-<dt class="hdlist1"><a href="http://www.omgsysml.org/">SysML&#174;</a> est une notation</dt>
+<dt class="hdlist1">Une notation</dt>
 <dd>
 <p>Une notation de plus en plus enseignée et connue et qui servira donc de plus en plus de <strong>référence</strong> dans la modélisation des systèmes.</p>
 </dd>
@@ -1848,35 +1845,54 @@ Voici une liste non exhaustive des entreprises et des acteurs qui participent à
 </div>
 <div id="liensdiag" class="imageblock">
 <div class="content">
-<img src="images/diff.png" alt="SysML and UML" width="50%">
+<img src="images/diff.png" alt="SysML and UML" width="60%">
 </div>
 <div class="title">Figure 6. Liens entre UML et SysML (tiré de <a href="#_sysml">SysML 1.5, p. 9</a>)</div>
 </div>
 <div class="paragraph">
 <p><a href="http://www.omgsysml.org/">SysML&#174;</a> et <a href="http://www.uml.org/">UML&#8482;</a> sont parfois utilisés de manière complémentaire, mais la plupart du temps, <a href="http://www.uml.org/">UML&#8482;</a> est utilisé pour modéliser les aspects logiciels et <a href="http://www.omgsysml.org/">SysML&#174;</a> pour modéliser les systèmes.</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+On retrouvera cette "paternité" entre <a href="http://www.uml.org/">UML&#8482;</a> et <a href="http://www.omgsysml.org/">SysML&#174;</a> dans <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.
+Par exemple les propriétés d&#8217;un élément de modélisation se retrouveront dans des onglets séparés selon que ces propriétés sont "natives" d&#8217;<a href="http://www.uml.org/">UML&#8482;</a> ou bien ajoutées par <a href="http://www.omgsysml.org/">SysML&#174;</a>.
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Outils">5.2.6. Outils SysML</h4>
 <div class="paragraph">
 <p>Il va de soit que le meilleur outil <a href="http://www.omgsysml.org/">SysML&#174;</a> à ce jour est <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a><sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup>.
-Ce livre vous détaille l&#8217;utilisation, mais il existe un certain nombre d&#8217;autres outils
+Ce livre vous en détaille l&#8217;utilisation, mais il existe un certain nombre d&#8217;autres outils
 permettant de réaliser des modèles <a href="http://www.omgsysml.org/">SysML&#174;</a>.
-En voici une liste non exhaustive :</p>
+En voici une liste non exhaustive (ils sont pour la plupart payants) :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://www.artisansw.com/">Artisan</a></p>
+<p><a href="https://www.sparxsystems.com/">Enterprise Architext</a> (Sparx System)</p>
 </li>
 <li>
-<p><a href="http://www-142.ibm.com/software/products/us/en/ratirhap">Rhapsody</a></p>
+<p><a href="https://www.nomagic.com/products/cameo-systems-modeler/">Cameo Systems Modeler</a> (NoMagic<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup>)</p>
 </li>
 <li>
-<p><a href="http://www.modeliosoft.com/">Modelio</a></p>
+<p><a href="http://www.nomagic.com/">MagicDraw</a>  (NoMagic)</p>
 </li>
 <li>
-<p><a href="http://www.nomagic.com/">MagicDraw</a></p>
+<p><a href="https://www.ibm.com/us-en/marketplace/systems-design-rhapsody">Rhapsody</a> (IBM)</p>
+</li>
+<li>
+<p><a href="https://www.visual-paradigm.com/">Visual Paradigm</a></p>
+</li>
+<li>
+<p><a href="http://www.modeliosoft.com/">Modelio</a> (Softeam)</p>
 </li>
 </ul>
 </div>
@@ -1897,7 +1913,7 @@ La <a href="#diags">Figure 7</a> présente cette organisation en faisant, en mê
 </div>
 <div class="paragraph">
 <p>Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons souvent leur version abrégée
-(<code><a href="#uc">uc</a></code> pour "diagramme des UC" par exemple). Ces abréviations, sont définies dans la spécification (cf. note suivante).</p>
+(<code><a href="#uc">uc</a></code> pour "diagramme des UC" par exemple). Ces abréviations, sont définies dans la spécification.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1914,7 +1930,7 @@ La <a href="#diags">Figure 7</a> présente cette organisation en faisant, en mê
 <td class="content">
 <div class="title">Définition : Types de diagrammes (OMG SysML v1.5, p. 196)</div>
 <div class="paragraph">
-<p><em>SysML diagram kinds should have the following names or (abbreviations) as part of the heading&#8230;&#8203;</em></p>
+<p><em>SysML diagram kinds should have the following names (or abbreviations) as part of the heading&#8230;&#8203;</em></p>
 </div>
 </td>
 </tr>
@@ -1933,6 +1949,18 @@ La <a href="#diags">Figure 7</a> présente cette organisation en faisant, en mê
 </li>
 <li>
 <p>chaque diagramme <a href="http://www.omgsysml.org/">SysML&#174;</a> doit être représenté à l&#8217;intérieur d&#8217;un cadre (<em>Diagram Frame</em>),</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Malheureusement, à l&#8217;heure où nous écrivons cet ouvrage, cette fonctionalité n&#8217;est pas encore supportée par <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>l&#8217;entête de ce cadre, appelé aussi <strong>cartouche</strong>, indique les informations sur le diagramme :</p>
@@ -1983,16 +2011,16 @@ d&#8217;une machine à état, paramètres d&#8217;une activité, etc.).
 <div class="sect3">
 <h4 id="_notre_présentation_des_diagrammes">5.2.9. Notre présentation des diagrammes</h4>
 <div class="paragraph">
-<p>Comme nous l&#8217;avons vu précédemment les 2 grandes catégories de diagrammes
+<p>Comme nous l&#8217;avons vu précédemment les deux grandes catégories de diagrammes
 <a href="http://www.omgsysml.org/">SysML&#174;</a> sont les diagrammes structuraux et les diagrammes comportementaux.
-Mis à part les 2 diagrammes <a href="#reqs">des exigences</a> (<code><a href="#reqs">req</a></code>, représentation visuelle des exigences) et <a href="#package">de <em>packages</em></a> (<code><a href="#pkg">pkg</a></code>, représentation visuelle des <em>packages</em>), les autres diagrammes
+Mis à part les deux diagrammes <a href="#reqs">des exigences</a> (<code><a href="#reqs">req</a></code>, représentation visuelle des exigences) et <a href="#package">de <em>packages</em></a> (<code><a href="#pkg">pkg</a></code>, représentation visuelle des <em>packages</em>), les autres diagrammes
 nécessitent de préciser l&#8217;utilisation que nous préconisons d&#8217;en faire.</p>
 </div>
 <div class="paragraph">
 <p>Pour les diagrammes structuraux (statiques), quand il s&#8217;agira de représenter les architectures,
 nous utiliserons les <a href="#bddsec">diagrammes de définition de blocs</a> (<code><a href="#bdd">bdd</a></code>), et pour représenter l&#8217;intérieur d&#8217;un système,
 nous utiliserons le <a href="#ibd">diagramme de blocs internes</a> (<code><a href="#ibd">ibd</a></code>).
-Le <a href="#param">diagramme paramétrique</a> (<code><a href="#par">par</a></code>) n&#8217;est qu&#8217;un diagramme de blocs internes dédié aux relations entre valeurs
+Le <a href="#param">diagramme paramétrique</a> (<code><a href="#par">par</a></code>) n&#8217;est qu&#8217;un diagramme de blocs internes particulier, dédié aux relations entre valeurs
 (pour représenter des lois physiques par exemple).</p>
 </div>
 <div class="paragraph">
@@ -2011,48 +2039,65 @@ utilisés en phase de conception.</p>
 <div class="title">Figure 10. Différents diagrammes pour repésenter le comportement</div>
 </div>
 <div class="paragraph">
-<p>Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan de
-cette section (nous utilisons ici le "plan" vu lors de l&#8217;introduction de la <a href="#Matrice">Section 2.3</a>) :</p>
+<p>Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan des
+sections qui suivent (nous utilisons ici le "plan" vu lors de l&#8217;introduction de la <a href="#Matrice">Section 2.3</a>) :</p>
 </div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
+<table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 5. Organisation</caption>
 <colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"><a href="#reqs">Exigences</a></th>
-<th class="tableblock halign-left valign-top"><a href="#archi">Structures</a></th>
-<th class="tableblock halign-left valign-top"><a href="#behavior">Interactions</a></th>
-<th class="tableblock halign-left valign-top"><a href="#transvers">Transversalités</a></th>
+<th class="tableblock halign-center valign-top"><a href="#reqs">Exigences</a></th>
+<th class="tableblock halign-center valign-top"><a href="#cesState">États</a></th>
+<th class="tableblock halign-center valign-top"><a href="#archi">Structures</a></th>
+<th class="tableblock halign-center valign-top"><a href="#behavior">Interactions</a></th>
+<th class="tableblock halign-center valign-top"><a href="#cesFlows">Flux</a></th>
+<th class="tableblock halign-center valign-top"><a href="#transvers">Transversalités</a></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Organisation</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#pkg">pkg</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#pkg">pkg</a>, <a href="#bdd">bdd</a>, <a href="#ibd">ibd</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#pkg">pkg</a></p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#pkg">pkg</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#pkg">pkg</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#pkg">pkg</a>, <a href="#bdd">bdd</a>, <a href="#ibd">ibd</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#pkg">pkg</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="#pkg">pkg</a></p></td>
+<td class="tableblock halign-left valign-bottom" rowspan="5"><p class="tableblock"><a href="#par">par</a>, <a href="#pkg">pkg</a></p></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Vision Opérationelle, Vision Fonctionnelle, Vision Organique <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#reqs">req</a>, <a href="#uc">uc</a>, <a href="#sd">sd</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#bdd">bdd</a>, <a href="#ibd">ibd</a>, <a href="#par">par</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#uc">uc</a>, <a href="#sd">sd</a>, <a href="#stm">stm</a>, <a href="#act">act</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#par">par</a>, <a href="#pkg">pkg</a></p></td>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Environnement</p></th>
+<td class="tableblock halign-center valign-top" colspan="5"><p class="tableblock"><a href="#pkg">pkg</a>, <a href="#bdd">bdd</a>, <a href="#ibd">ibd</a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Vision Opérationelle</p></th>
+<td class="tableblock halign-left valign-bottom" rowspan="3"><p class="tableblock"><a href="#reqs">req</a>, <a href="#uc">uc</a>, <a href="#sd">sd</a></p></td>
+<td class="tableblock halign-left valign-bottom" rowspan="3"><p class="tableblock"> <a href="#stm">stm</a></p></td>
+<td class="tableblock halign-left valign-bottom" rowspan="3"><p class="tableblock">  <a href="#bdd">bdd</a>, <a href="#ibd">ibd</a>, <a href="#par">par</a></p></td>
+<td class="tableblock halign-left valign-bottom" rowspan="3"><p class="tableblock"><a href="#uc">uc</a>, <a href="#sd">sd</a>, <a href="#stm">stm</a>, <a href="#act">act</a></p></td>
+<td class="tableblock halign-left valign-bottom" rowspan="3"><p class="tableblock"><a href="#ibd">ibd</a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Vision Fonctionnelle</p></th>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Vision Organique</p></th>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_et_table_des_exigences">5.3. Diagramme et table des exigences</h3>
+<h3 id="_diagramme_et_table_des_exigences_req">5.3. Diagramme et table des exigences (req)</h3>
 <div class="paragraph">
 <p>La gestion des exigences est une activité cruciale pour la réussite de la conception et le développement de tout système.
 Dans <a href="http://www.omgsysml.org/">SysML&#174;</a> les exigences peuvent être représentées sous deux formes complémentaires :</p>
@@ -2060,10 +2105,10 @@ Dans <a href="http://www.omgsysml.org/">SysML&#174;</a> les exigences peuvent ê
 <div class="ulist">
 <ul>
 <li>
-<p>Diagramme des exigences (<a href="#reqs">req</a> ), utile pour représenter les relations entre exigences</p>
+<p>le Diagramme des exigences (<a href="#reqs">req</a> ), utile pour représenter les relations entre exigences;</p>
 </li>
 <li>
-<p>Table des exigences, utile dès qu&#8217;il y a un grand nombre d&#8217;exigences</p>
+<p>la Table des exigences, utile dès qu&#8217;il y a un grand nombre d&#8217;exigences.</p>
 </li>
 </ul>
 </div>
@@ -2075,7 +2120,7 @@ Il sera vu plus en détail dans la section <a href="#reqs">Section 9.1</a>, mais
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/4.0/lierExigences.png" alt="lierExigences" width="70%">
+<img src="images/4.0/lierExigences.png" alt="lierExigences" width="100%">
 </div>
 <div class="title">Figure 11. Exemple de diagramme des exigences</div>
 </div>
@@ -2087,23 +2132,23 @@ Il sera vu plus en détail dans la section <a href="#reqs">Section 9.1</a>, mais
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/4.0/table.png" alt="table" width="70%">
+<img src="images/4.0/table.png" alt="table" width="100%">
 </div>
 <div class="title">Figure 12. Exemple de table des exigences pour le SmartHomeSystem</div>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_des_cas_dutilisation">5.4. Diagramme des cas d&#8217;utilisation</h3>
+<h3 id="_diagramme_des_cas_dutilisation_uc">5.4. Diagramme des cas d&#8217;utilisation (uc)</h3>
 <div class="imageblock">
 <div class="content">
-<img src="../SmartHomeUseCase/SmartHomeSystemProject/diagrams/SHS_Use_Cases_Description.PNG" alt="SHS Use Cases Description" width="70%">
+<img src="../SmartHomeUseCase/SmartHomeSystemProject/diagrams/SHS_Use_Cases_Description.PNG" alt="SHS Use Cases Description" width="100%">
 </div>
 <div class="title">Figure 13. Exemple de diagramme de cas d&#8217;utilisation</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_de_blocs">5.5. Diagramme de blocs</h3>
+<h3 id="_diagramme_de_blocs_bdd">5.5. Diagramme de blocs (bdd)</h3>
 <div class="imageblock">
 <div class="content">
 <img src="images/todo.jpg" alt="todo">
@@ -2134,7 +2179,13 @@ Ce "diagramme de contexte" est pratique d&#8217;un point de vue modélisation ca
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ibd">5.6. IBD</h3>
+<h3 id="_diagramme_de_blocs_internes_ibd">5.6. Diagramme de blocs internes (ibd)</h3>
+<div class="imageblock">
+<div class="content">
+<img src="images/todo.jpg" alt="todo">
+</div>
+<div class="title">Figure 16. Exemple de diagramme de blocs internes</div>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2151,7 +2202,7 @@ Une autre façon de représenter le système dans son environnement est d&#8217;
 <div class="content">
 <img src="../SmartHomeUseCase/SmartHomeSystemProject/diagrams/Context_description_of_the_SHS.PNG" alt="Context description of the SHS" width="70%">
 </div>
-<div class="title">Figure 16. Exemple de diagramme de contexte (vue interne)</div>
+<div class="title">Figure 17. Exemple de diagramme de contexte (vue interne)</div>
 </div>
 </td>
 </tr>
@@ -2205,10 +2256,10 @@ classique.</p>
 <div class="content">
 <img src="images/dss.png" alt="dss" width="50%">
 </div>
-<div class="title">Figure 17. Exemples de DSS</div>
+<div class="title">Figure 18. Exemples de DSS</div>
 </div>
 <div class="paragraph">
-<p><strong class="red">xxx à vérifier xxx</strong></p>
+<p><strong class="red">xxx à refaire xxx</strong></p>
 </div>
 </div>
 <div class="sect3">
@@ -2222,7 +2273,7 @@ de messages entre eux.</p>
 <div class="content">
 <img src="images/todo.jpg" alt="todo">
 </div>
-<div class="title">Figure 18. Exemple de diagramme de séquences</div>
+<div class="title">Figure 19. Exemple de diagramme de séquences</div>
 </div>
 <div class="paragraph">
 <p>Pour plus de détails, cf. <a href="#seq">Section 9.5.2</a>.</p>
@@ -2230,19 +2281,31 @@ de messages entre eux.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_détats">5.8. Diagramme d&#8217;états</h3>
-
+<h3 id="_diagramme_détats_stm">5.8. Diagramme d&#8217;états (stm)</h3>
+<div class="imageblock">
+<div class="content">
+<img src="images/todo.jpg" alt="todo">
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_dactivité">5.9. Diagramme d&#8217;activité</h3>
-
+<h3 id="_diagramme_dactivité_act">5.9. Diagramme d&#8217;activité (act)</h3>
+<div class="imageblock">
+<div class="content">
+<img src="images/todo.jpg" alt="todo">
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_paramétrique">5.10. Diagramme paramétrique</h3>
-
+<h3 id="_diagramme_paramétrique_par">5.10. Diagramme paramétrique (par)</h3>
+<div class="imageblock">
+<div class="content">
+<img src="images/todo.jpg" alt="todo">
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_diagramme_de_packages">5.11. Diagramme de packages</h3>
+<h3 id="_diagramme_de_packages_pkg">5.11. Diagramme de <em>packages</em> (pkg)</h3>
 <div class="paragraph">
 <p>Ce type de diagramme permet d&#8217;organiser les éléments de modèle.
 Un <em>package</em> peut contenir d&#8217;autres <em>package</em>, des blocs, des diagrammes, etc.</p>
@@ -2296,38 +2359,46 @@ qu&#8217;il contient.
 </ul>
 </div>
 </li>
-<li>
-<p><em>Placez dans la matrice ci-dessous les différents diagrammes <a href="http://www.omgsysml.org/">SysML&#174;</a> vus dans ce chapitre</em></p>
-</li>
 </ol>
 </div>
+<div class="paragraph">
+<p>Placez dans la matrice ci-dessous les différents diagrammes <a href="http://www.omgsysml.org/">SysML&#174;</a> vus dans ce chapitre :</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 6. Notre matrice des préoccupations</caption>
 <colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top"></th>
 <th class="tableblock halign-center valign-top"><a href="#reqs">Exigences</a></th>
+<th class="tableblock halign-center valign-top"><a href="#cesState">États</a></th>
 <th class="tableblock halign-center valign-top"><a href="#archi">Structures</a></th>
 <th class="tableblock halign-center valign-top"><a href="#behavior">Interactions</a></th>
+<th class="tableblock halign-center valign-top"><a href="#cesFlows">Flux</a></th>
 <th class="tableblock halign-center valign-top"><a href="#transvers">Transversalités</a></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Organisation</p></th>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top" colspan="6"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Environnement</p></th>
+<td class="tableblock halign-center valign-top" colspan="5"></td>
+<td class="tableblock halign-left valign-bottom" rowspan="4"></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Vision Opérationelle</p></th>
+<td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
@@ -2339,9 +2410,11 @@ qu&#8217;il contient.
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Vision Organique</p></th>
+<td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
@@ -2378,10 +2451,10 @@ qu&#8217;il contient.
 <div class="content">
 <img src="images/SysML-PRFC.png" alt="SysML PRFC" width="50%">
 </div>
-<div class="title">Figure 19. Langages, méthodes et outils : 3 piliers complémentaires (inspiré par <a href="#Roques">[Roques]</a>)</div>
+<div class="title">Figure 20. Langages, méthodes et outils : 3 piliers complémentaires (inspiré par <a href="#Roques">[Roques]</a>)</div>
 </div>
 <div class="paragraph">
-<p>Comme illustré par la <a href="#prfc">Figure 19</a>, comprendre <a href="http://www.omgsysml.org/">SysML&#174;</a> c&#8217;est primordiale, savoir utiliser <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> c&#8217;est important, mais tout ceci n&#8217;est rien sans une démarche ou une méthode concrète pour mettre les deux en musique.</p>
+<p>Comme illustré par la <a href="#prfc">Figure 20</a>, comprendre <a href="http://www.omgsysml.org/">SysML&#174;</a> c&#8217;est primordiale, savoir utiliser <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> c&#8217;est important, mais tout ceci n&#8217;est rien sans une démarche ou une méthode concrète pour mettre les deux en musique.</p>
 </div>
 <div class="paragraph">
 <p>Nous l&#8217;avons anoncé dès l&#8217;introduction, nous allons utiliser pour les besoins de ce livre une démarche minimaliste, préconisée par <a href="#Friedenthal2016">[Friedenthal2016]</a>.</p>
@@ -2389,13 +2462,13 @@ qu&#8217;il contient.
 <div class="sect2">
 <h3 id="_la_méthode_mbse_simplifiée_utilisée_dans_ce_livre">6.1. La méthode MBSE simplifiée utilisée dans ce livre</h3>
 <div class="paragraph">
-<p>La <a href="#FriedenthalSimplifiedMethod">Figure 20</a> résume (dans un diagramme d&#8217;activité) la démarche simplifiée que nous allons suivre.</p>
+<p>La <a href="#FriedenthalSimplifiedMethod">Figure 21</a> résume (dans un diagramme d&#8217;activité) la démarche simplifiée que nous allons suivre.</p>
 </div>
 <div id="FriedenthalSimplifiedMethod" class="imageblock">
 <div class="content">
 <img src="images/FriedenthalSimplifiedMethod.png" alt="FriedenthalSimplifiedMethod" width="40%">
 </div>
-<div class="title">Figure 20. Une démarche MBSE simplifiée (tirée de <a href="#Friedenthal2016">[Friedenthal2016]</a>)</div>
+<div class="title">Figure 21. Une démarche MBSE simplifiée (tirée de <a href="#Friedenthal2016">[Friedenthal2016]</a>)</div>
 </div>
 <div class="admonitionblock caution">
 <table>
@@ -2606,7 +2679,7 @@ ici : <a href="https://github.com/PapyrusSysMLinAction/SmartHomeUseCase" class="
 <div class="content">
 <img src="images/4.0/Model_Smart_Home_System_Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.SVG" alt="Model Smart Home System Outline of the Smart Home System SHS modelling project organisation" width="90%">
 </div>
-<div class="title">Figure 21. Organisation type d&#8217;un projet Papyrus</div>
+<div class="title">Figure 22. Organisation type d&#8217;un projet Papyrus</div>
 </div>
 <div class="paragraph">
 <p>Créez votre premier projet :</p>
@@ -2667,7 +2740,7 @@ organisation type des fenêtres et panneaux, appelée <em>perspective</em>.</p>
 <div class="content">
 <img src="images/4.0/panels.png" alt="panels" width="90%">
 </div>
-<div class="title">Figure 22. La perspective de base Papyrus-SysML</div>
+<div class="title">Figure 23. La perspective de base Papyrus-SysML</div>
 </div>
 <div class="paragraph">
 <p>Les éléments principaux de cette organisation sont :</p>
@@ -2709,20 +2782,20 @@ des éléments dans votre diagramme (cf. section <a href="#mod-diag">Section 7.5
 <td class="content">
 <div class="paragraph">
 <p>Pour retrouver la perspective <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> ou en changer : <span class="menuseq"><b class="menu">Window</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Perspective</b></span>
-(cf. <a href="#meu-perspective">Figure 23</a>)
-ou cliquez sur l&#8217;icône Papyrus en haut à droite (<a href="#papyrus-perspective">Figure 24</a>).</p>
+(cf. <a href="#meu-perspective">Figure 24</a>)
+ou cliquez sur l&#8217;icône Papyrus en haut à droite (<a href="#papyrus-perspective">Figure 25</a>).</p>
 </div>
 <div id="meu-perspective" class="imageblock">
 <div class="content">
 <img src="images/4.0/perspectives.png" alt="perspectives" width="30%">
 </div>
-<div class="title">Figure 23. Menu Window &gt; Perspective</div>
+<div class="title">Figure 24. Menu Window &gt; Perspective</div>
 </div>
 <div id="papyrus-perspective" class="imageblock">
 <div class="content">
 <img src="images/4.0/papyrus-perspective.png" alt="papyrus perspective" width="30%">
 </div>
-<div class="title">Figure 24. Pour activer la perspective Papyrus</div>
+<div class="title">Figure 25. Pour activer la perspective Papyrus</div>
 </div>
 </td>
 </tr>
@@ -2758,7 +2831,7 @@ Cela peut en effet poser des problèmes plus tard (<a href="#execution">exécuti
 <div class="content">
 <img src="../SmartHomeUseCase/SmartHomeSystemProject/diagrams/Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.PNG" alt="Outline of the Smart Home System SHS modelling project organisation" width="80%">
 </div>
-<div class="title">Figure 25. Vue d&#8217;ensemble de notre projet de SmartHomeSystem</div>
+<div class="title">Figure 26. Vue d&#8217;ensemble de notre projet de SmartHomeSystem</div>
 </div>
 <div class="paragraph">
 <p>Comme vous pouvez le constater, nous annotons les éléments de modèles avec des commentaires, et
@@ -2789,7 +2862,7 @@ note, contrôlez la partie <em>Annotated element</em> des propriétés (onglet U
 <div class="content">
 <img src="images/4.0/annotated.png" alt="annotated" width="70%">
 </div>
-<div class="title">Figure 26. Lien entre une note et les éléments de modèles</div>
+<div class="title">Figure 27. Lien entre une note et les éléments de modèles</div>
 </div>
 </li>
 <li>
@@ -2800,13 +2873,13 @@ Il faut pour cela activer l&#8217;éditeur enrichi :
 <div class="content">
 <img src="images/4.0/richtext.png" alt="richtext" width="70%">
 </div>
-<div class="title">Figure 27. Activation de l&#8217;éditeur interne enrichi</div>
+<div class="title">Figure 28. Activation de l&#8217;éditeur interne enrichi</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/4.0/richtext-result.png" alt="richtext result" width="70%">
 </div>
-<div class="title">Figure 28. Nouveaux menus disponibles dans l&#8217;éditeur interne</div>
+<div class="title">Figure 29. Nouveaux menus disponibles dans l&#8217;éditeur interne</div>
 </div>
 </li>
 </ol>
@@ -2847,7 +2920,7 @@ Nous vous recommandons de sélectionner <b class="menuref">Prefix with qualified
 <div class="content">
 <img src="images/4.0/Model_Smart_Home_System_Outline_of_the_Smart_Home_System_SHS_modelling_project_organisation.SVG" alt="Model Smart Home System Outline of the Smart Home System SHS modelling project organisation" width="60%">
 </div>
-<div class="title">Figure 29. Exemple d&#8217;export de diagrammes</div>
+<div class="title">Figure 30. Exemple d&#8217;export de diagrammes</div>
 </div>
 </li>
 </ol>
@@ -2930,10 +3003,10 @@ nous renvoyons le lecteur aux tutoriels disponibles sur le site :
 </table>
 </div>
 <div class="paragraph">
-<p>Pour ceux qui sont familiarisés avec <a href="http://www.cesames.net/academy/cesam/">CESAM</a>, la <a href="#cesamDeliverables">Table 6</a> présente la liste des principaux produits (<em>deliverables</em>) de <a href="http://www.cesames.net/academy/cesam/">CESAM</a> et les sous-sections correspondantes, où nous abordons comment les réaliser en <a href="http://www.omgsysml.org/">SysML&#174;</a> :</p>
+<p>Pour ceux qui sont familiarisés avec <a href="http://www.cesames.net/academy/cesam/">CESAM</a>, la <a href="#cesamDeliverables">Table 7</a> présente la liste des principaux produits (<em>deliverables</em>) de <a href="http://www.cesames.net/academy/cesam/">CESAM</a> et les sous-sections correspondantes, où nous abordons comment les réaliser en <a href="http://www.omgsysml.org/">SysML&#174;</a> :</p>
 </div>
 <table id="cesamDeliverables" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. Les produits CESAM</caption>
+<caption class="title">Table 7. Les produits CESAM</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 10%;">
@@ -3062,7 +3135,7 @@ Elle possède également l&#8217;avantage de proposer un cadre simple et complet
 <div class="ulist">
 <ul>
 <li>
-<p>Une organisation hiérarchique des préoccupations (Quoi ? / Qui ? / Où ?), représentée par une "Pyramide d&#8217;Architecture Système" (cf. <a href="#cesamPyramid">Figure 30</a>).</p>
+<p>Une organisation hiérarchique des préoccupations (Quoi ? / Qui ? / Où ?), représentée par une "Pyramide d&#8217;Architecture Système" (cf. <a href="#cesamPyramid">Figure 31</a>).</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -3077,10 +3150,10 @@ La question du "Qui" porte ici sur le "<em>What</em>", c&#8217;est à dire "quel
 </div>
 </li>
 <li>
-<p>Une organisation en 9 vues du système, représentée par une matrice (cf. <a href="#cesamMatrix">Figure 31</a>).</p>
+<p>Une organisation en 9 vues du système, représentée par une matrice (cf. <a href="#cesamMatrix">Figure 32</a>).</p>
 </li>
 <li>
-<p>Une démarche guidant m&#8217;architecture du système, représenté par un processus (cf. <a href="#cesamProcess">Figure 32</a>).</p>
+<p>Une démarche guidant m&#8217;architecture du système, représenté par un processus (cf. <a href="#cesamProcess">Figure 33</a>).</p>
 </li>
 </ul>
 </div>
@@ -3103,25 +3176,25 @@ La question du "Qui" porte ici sur le "<em>What</em>", c&#8217;est à dire "quel
 <div class="content">
 <img src="images/cesamPyramid.png" alt="cesamPyramid" width="80%">
 </div>
-<div class="title">Figure 30. La Pyramide d&#8217;Architecture Systèmes de CESAM (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 31. La Pyramide d&#8217;Architecture Systèmes de CESAM (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 <div id="cesamMatrix" class="imageblock">
 <div class="content">
 <img src="images/cesamMatrix.png" alt="cesamMatrix" width="80%">
 </div>
-<div class="title">Figure 31. La Matrice d&#8217;Architecture Systèmes de CESAM (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 32. La Matrice d&#8217;Architecture Systèmes de CESAM (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 <div id="cesamProcess" class="imageblock">
 <div class="content">
 <img src="images/cesamProcess.png" alt="cesamProcess" width="80%">
 </div>
-<div class="title">Figure 32. Le Processus d&#8217;Architecture des Systèmes de CESAM (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 33. Le Processus d&#8217;Architecture des Systèmes de CESAM (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 <div class="paragraph">
-<p>Comme abordé en <a href="#Matrice">Section 2.3</a>, nous avons choisi de synthétiser ces différents points de vue dans une matrice qui nous servira de "carte de base" pour placer les activités ou les modèles (cf. <a href="#ourMatrix">Table 7</a>).</p>
+<p>Comme abordé en <a href="#Matrice">Section 2.3</a>, nous avons choisi de synthétiser ces différents points de vue dans une matrice qui nous servira de "carte de base" pour placer les activités ou les modèles (cf. <a href="#ourMatrix">Table 8</a>).</p>
 </div>
 <table id="ourMatrix" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. Notre matrice des préoccupations</caption>
+<caption class="title">Table 8. Notre matrice des préoccupations</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 14.2857%;">
@@ -3311,7 +3384,7 @@ package,  model, dependency, comment.</p>
 <div class="content">
 <img src="images/diagrams/High-level_organisation_description_of_the_SmartHomeSystemProject_model.SVG" alt="High level organisation description of the SmartHomeSystemProject model" width="80%">
 </div>
-<div class="title">Figure 33. Exemple d&#8217;organisation principale</div>
+<div class="title">Figure 34. Exemple d&#8217;organisation principale</div>
 </div>
 <div class="paragraph">
 <p>Pour réaliser ce diagramme en <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> :</p>
@@ -3534,7 +3607,7 @@ Pour représenter les flux, <a href="http://www.omgsysml.org/">SysML&#174;</a> p
 <div class="content">
 <img src="images/diagrams/SHS_stakeholder_hierarchy_diagram.SVG" alt="SHS stakeholder hierarchy diagram" width="80%">
 </div>
-<div class="title">Figure 34. Exemple de Diagramme des parties prenantes</div>
+<div class="title">Figure 35. Exemple de Diagramme des parties prenantes</div>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -3555,7 +3628,7 @@ Il existe un stéréotype <a href="http://www.omgsysml.org/">SysML&#174;</a> &lt
 <div class="content">
 <img src="images/diagrams/SHS_environment_diagram.SVG" alt="SHS environment diagram" width="80%">
 </div>
-<div class="title">Figure 35. Exemple de Diagramme d&#8217;environnement projet</div>
+<div class="title">Figure 36. Exemple de Diagramme d&#8217;environnement projet</div>
 </div>
 </div>
 </div>
@@ -3763,14 +3836,14 @@ requirement, requirement diagram, derive, verify, satisfy, refine, trace, contai
 <div class="paragraph">
 <p>À ce niveau d&#8217;abstraction il s&#8217;agit d&#8217;énumérer les besoins utilisateurs (<code>Needs</code>).
 Pour cela nous allons utiliser un diagramme d&#8217;exigences <a href="http://www.omgsysml.org/">SysML&#174;</a>.
-Il s&#8217;agit d&#8217;organiser les besoins en en proposant une décomposition hiérarchique (cf. <a href="#visionOpReqsFig">Figure 36</a>).
+Il s&#8217;agit d&#8217;organiser les besoins en en proposant une décomposition hiérarchique (cf. <a href="#visionOpReqsFig">Figure 37</a>).
 Nous en profiterons pour associer les besoins aux parties prenantes (d&#8217;où l&#8217;importance de les avoir préalablement "importés", cf. <a href="#visionOpOrg">Section 8.4.2.1</a>).</p>
 </div>
 <div id="visionOpReqsFig" class="imageblock">
 <div class="content">
 <img src="images/visionOpReqsFig.png" alt="visionOpReqsFig" width="80%">
 </div>
-<div class="title">Figure 36. Exemple de Diagramme des besoins (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 37. Exemple de Diagramme des besoins (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 <div class="paragraph">
 <p>Pour réaliser un tel diagramme en <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, nous proposons la démarche suivante :</p>
@@ -3807,13 +3880,13 @@ Cette activité est bien plus facile si vous la faites en mode modèle plutôt q
 </ol>
 </div>
 <div class="paragraph">
-<p>On obtient la <a href="#visionOpReqsFigPapyrus">Figure 37</a>.</p>
+<p>On obtient la <a href="#visionOpReqsFigPapyrus">Figure 38</a>.</p>
 </div>
 <div id="visionOpReqsFigPapyrus" class="imageblock">
 <div class="content">
 <img src="images/4.0/visionOpReqsFig.png" alt="visionOpReqsFig" width="80%">
 </div>
-<div class="title">Figure 37. Exemple de Diagramme des besoins</div>
+<div class="title">Figure 38. Exemple de Diagramme des besoins</div>
 </div>
 </div>
 <div class="sect4">
@@ -3896,7 +3969,7 @@ Cela permet de définir :</p>
 <div class="content">
 <img src="images/visionOpStateFig.png" alt="visionOpStateFig" width="80%">
 </div>
-<div class="title">Figure 38. Exemple de Diagramme des cycles de vie (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 39. Exemple de Diagramme des cycles de vie (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 <div class="paragraph">
 <p>Pour réaliser un tel diagramme en <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, nous proposons la démarche suivante :</p>
@@ -3912,13 +3985,13 @@ Cela permet de définir :</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>On obtient le diagramme des cycles de vie du système comme illustré à la <a href="#visionOpStateFigPapyrus">Figure 39</a>.</p>
+<p>On obtient le diagramme des cycles de vie du système comme illustré à la <a href="#visionOpStateFigPapyrus">Figure 40</a>.</p>
 </div>
 <div id="visionOpStateFigPapyrus" class="imageblock">
 <div class="content">
 <img src="images/4.0/Lifecycle_diagram_of_the_SHS.SVG" alt="Lifecycle diagram of the SHS" width="80%">
 </div>
-<div class="title">Figure 39. Exemple de Diagramme des cycles de vie</div>
+<div class="title">Figure 40. Exemple de Diagramme des cycles de vie</div>
 </div>
 </div>
 <div class="sect4">
@@ -3981,13 +4054,13 @@ Cela permet de définir :</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Dans cette étape, nous allons représenter de manière statique l&#8217;ensemble des missions du système à développer en précisant les collaborations entre le système et son environnement, ainsi que les relations entre ces missions (cf. <a href="#visionOpStatFig">Figure 40</a>).</p>
+<p>Dans cette étape, nous allons représenter de manière statique l&#8217;ensemble des missions du système à développer en précisant les collaborations entre le système et son environnement, ainsi que les relations entre ces missions (cf. <a href="#visionOpStatFig">Figure 41</a>).</p>
 </div>
 <div id="visionOpStatFig" class="imageblock">
 <div class="content">
 <img src="images/visionOpStatFig.png" alt="visionOpStatFig" width="80%">
 </div>
-<div class="title">Figure 40. Exemple de Diagramme des cas d&#8217;utilisation (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 41. Exemple de Diagramme des cas d&#8217;utilisation (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 <div class="paragraph">
 <p>Pour recenser ces éléments de modélisation, nous allons réaliser un diagramme des cas d&#8217;utilisation en <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, selon la démarche suivante :</p>
@@ -4006,13 +4079,13 @@ Cela permet de définir :</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>On obtient des diagrammes de cas d&#8217;utilisation comme illustré à la <a href="#visionOpStatFigPapyrus">Figure 41</a>.</p>
+<p>On obtient des diagrammes de cas d&#8217;utilisation comme illustré à la <a href="#visionOpStatFigPapyrus">Figure 42</a>.</p>
 </div>
 <div id="visionOpStatFigPapyrus" class="imageblock">
 <div class="content">
 <img src="images/4.0/System_security_use_cases_diagram.SVG" alt="System security use cases diagram" width="80%">
 </div>
-<div class="title">Figure 41. Exemple de Diagramme des cas d&#8217;utilisation</div>
+<div class="title">Figure 42. Exemple de Diagramme des cas d&#8217;utilisation</div>
 </div>
 </div>
 <div class="sect4">
@@ -4075,13 +4148,13 @@ Cela permet de définir :</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Nous allons maintenant nous intéresser à la description de scénarios opérationnels qui vont représenter la dynamique des missions dans des contextes différents (cf. exemple de la <a href="#visionOpDynFig">Figure 42</a>).</p>
+<p>Nous allons maintenant nous intéresser à la description de scénarios opérationnels qui vont représenter la dynamique des missions dans des contextes différents (cf. exemple de la <a href="#visionOpDynFig">Figure 43</a>).</p>
 </div>
 <div id="visionOpDynFig" class="imageblock">
 <div class="content">
 <img src="images/visionOpDynFig.png" alt="visionOpDynFig" width="60%">
 </div>
-<div class="title">Figure 42. Exemple de Diagramme de scénario opérationnel (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 43. Exemple de Diagramme de scénario opérationnel (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 <div class="paragraph">
 <p>Pour recenser définir ces scénarios en <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, nous allons réaliser des diagrammes de séquence système dans lequel le participant principal sera le système (en vue boîte noire donc).
@@ -4107,7 +4180,7 @@ Ne serons représentées que ces interactions avec les parties prenantes.</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>Nous obtenons des diagrammes de séquence système comme illustré à la <a href="#visionOpDynFigPapyrus">Figure 43</a>.</p>
+<p>Nous obtenons des diagrammes de séquence système comme illustré à la <a href="#visionOpDynFigPapyrus">Figure 44</a>.</p>
 </div>
 <div class="admonitionblock caution">
 <table>
@@ -4128,7 +4201,7 @@ Ne serons représentées que ces interactions avec les parties prenantes.</p>
 <div class="content">
 <img src="images/4.0/Operational_scenario_description_for_manageRightAccess.SVG" alt="Operational scenario description for manageRightAccess" width="80%">
 </div>
-<div class="title">Figure 43. Exemple de Diagramme de scénario opérationnel (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 44. Exemple de Diagramme de scénario opérationnel (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 <div class="sect4">
@@ -4191,7 +4264,7 @@ Ne serons représentées que ces interactions avec les parties prenantes.</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Le diagramme des flux operationnels (cf. <a href="#visionOpFlowFig">Figure 44</a>) vise à répertorier tous les flux en lien avec le système en détaillant :</p>
+<p>Le diagramme des flux operationnels (cf. <a href="#visionOpFlowFig">Figure 45</a>) vise à répertorier tous les flux en lien avec le système en détaillant :</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4207,7 +4280,7 @@ Ne serons représentées que ces interactions avec les parties prenantes.</p>
 <div class="content">
 <img src="images/visionOpFlowFig.png" alt="visionOpFlowFig" width="80%">
 </div>
-<div class="title">Figure 44. Exemple de Diagramme de flux opérationnels (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 45. Exemple de Diagramme de flux opérationnels (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 <div class="paragraph">
 <p><a href="http://www.cesames.net/academy/cesam/">CESAM</a> insiste sur l&#8217;importance de cette phase pour l&#8217;élaboration du dictionnaire du système, c&#8217;est-à-dire la liste des objets qui seront manipulés par le système.
@@ -4228,7 +4301,7 @@ Pour cela :</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>Nous obtenons une table illustrée à la <a href="#visionOpFlowFigPapyrus">Figure 45</a>.</p>
+<p>Nous obtenons une table illustrée à la <a href="#visionOpFlowFigPapyrus">Figure 46</a>.</p>
 </div>
 <div class="admonitionblock caution">
 <table>
@@ -4249,7 +4322,7 @@ Pour cela :</p>
 <div class="content">
 <img src="images/visionOpFlowFig.png" alt="visionOpFlowFig" width="80%">
 </div>
-<div class="title">Figure 45. Exemple de Diagramme de flux opérationnels (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 46. Exemple de Diagramme de flux opérationnels (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 </div>
@@ -4466,7 +4539,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionFuncReqsFig.png" alt="visionFuncReqsFig" width="80%">
 </div>
-<div class="title">Figure 46. Exemple de Diagramme des exigences fonctionnelles (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 47. Exemple de Diagramme des exigences fonctionnelles (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 <div class="sect4">
@@ -4547,7 +4620,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionFuncStateFig.png" alt="visionFuncStateFig" width="80%">
 </div>
-<div class="title">Figure 47. Exemple de Diagramme des Modes Fonctionnels (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 48. Exemple de Diagramme des Modes Fonctionnels (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 <div class="sect4">
@@ -4628,7 +4701,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionFuncStatFig.png" alt="visionFuncStatFig" width="80%">
 </div>
-<div class="title">Figure 48. Exemple de Diagramme de Décomposition Fonctionnelle (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 49. Exemple de Diagramme de Décomposition Fonctionnelle (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 <div class="admonitionblock caution">
 <table>
@@ -4649,7 +4722,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionFuncStatFig2.png" alt="visionFuncStatFig2" width="80%">
 </div>
-<div class="title">Figure 49. Exemple de Diagramme d&#8217;Interaction Fonctionnelle (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 50. Exemple de Diagramme d&#8217;Interaction Fonctionnelle (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 <div class="sect4">
@@ -4730,7 +4803,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionFuncDynFig.png" alt="visionFuncDynFig" width="80%">
 </div>
-<div class="title">Figure 50. Exemple de Diagramme de Scénario Fonctionnel (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 51. Exemple de Diagramme de Scénario Fonctionnel (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 <div class="sect4">
@@ -4811,7 +4884,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionFuncFlowFig.png" alt="visionFuncFlowFig" width="80%">
 </div>
-<div class="title">Figure 51. Exemple de Diagramme de Flux Fonctionnels (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 52. Exemple de Diagramme de Flux Fonctionnels (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 </div>
@@ -5022,7 +5095,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionConstReqsFig.png" alt="visionConstReqsFig" width="80%">
 </div>
-<div class="title">Figure 52. Exemple de Diagramme des Exigences Organiques (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 53. Exemple de Diagramme des Exigences Organiques (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 <div class="sect4">
@@ -5103,7 +5176,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionConstStateFig.png" alt="visionConstStateFig" width="80%">
 </div>
-<div class="title">Figure 53. Exemple de Diagramme de Configuration (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 54. Exemple de Diagramme de Configuration (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 <div class="sect4">
@@ -5184,13 +5257,13 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionConstStatFig.png" alt="visionConstStatFig" width="80%">
 </div>
-<div class="title">Figure 54. Exemple de Diagramme de Décomposition Organique (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 55. Exemple de Diagramme de Décomposition Organique (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 <div id="visionConstStatFig2" class="imageblock">
 <div class="content">
 <img src="images/visionConstStatFig2.png" alt="visionConstStatFig2" width="80%">
 </div>
-<div class="title">Figure 55. Exemple de Diagramme d&#8217;Interaction Organique (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 56. Exemple de Diagramme d&#8217;Interaction Organique (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 <div class="sect4">
@@ -5271,7 +5344,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionConstDynFig.png" alt="visionConstDynFig" width="80%">
 </div>
-<div class="title">Figure 56. Exemple de Diagramme de Décomposition Organique (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 57. Exemple de Diagramme de Décomposition Organique (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 <div class="sect4">
@@ -5352,7 +5425,7 @@ initial (<em><a href="http://www.omg.org/ocsmp/coveragemap-user.htm">Model User<
 <div class="content">
 <img src="images/visionConstFlowFig.png" alt="visionConstFlowFig" width="80%">
 </div>
-<div class="title">Figure 57. Exemple de Diagramme de Flux Organiques (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
+<div class="title">Figure 58. Exemple de Diagramme de Flux Organiques (tirée de <a href="#CESAM17">[CESAM17]</a>)</div>
 </div>
 </div>
 </div>
@@ -5566,7 +5639,7 @@ A requirement is defined as a stereotype of UML Class&#8230;&#8203;</em></p>
 <div class="content">
 <img src="images/requirement.png" alt="SysML and UML" width="50%">
 </div>
-<div class="title">Figure 58. Un exemple de <em>Requirement</em> en SysML (source <a href="#SysML">[SysML]</a>, p. 159)</div>
+<div class="title">Figure 59. Un exemple de <em>Requirement</em> en SysML (source <a href="#SysML">[SysML]</a>, p. 159)</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -5595,7 +5668,7 @@ changer la signification par défaut.
 <div class="content">
 <img src="images/abstractReq.png" alt="AbstractRequirement" width="50%">
 </div>
-<div class="title">Figure 59. N&#8217;importe quel élément de modèle (qui a un nom) peut être une exigence (<a href="#SysML">[SysML]</a>, p.168)</div>
+<div class="title">Figure 60. N&#8217;importe quel élément de modèle (qui a un nom) peut être une exigence (<a href="#SysML">[SysML]</a>, p.168)</div>
 </div>
 </div>
 <div class="sect4">
@@ -5683,7 +5756,7 @@ Ceci facilite le travail d&#8217;organisation des exigences pour les ingénieurs
 <div class="content">
 <img src="../SmartHomeUseCase/SmartHomeSystemProject/diagrams/Outlines_of_the_system_requirements_model_organisation.PNG" alt="Outlines of the system requirements model organisation" width="50%">
 </div>
-<div class="title">Figure 60. Notre organisation des exigences pour le cas d&#8217;étude</div>
+<div class="title">Figure 61. Notre organisation des exigences pour le cas d&#8217;étude</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -5700,7 +5773,7 @@ Ceci facilite le travail d&#8217;organisation des exigences pour les ingénieurs
 <div class="content">
 <img src="../SmartHomeUseCase/SmartHomeSystemProject/diagrams/SecurityRequirementDiagram.PNG" alt="SecurityRequirementDiagram" width="70%">
 </div>
-<div class="title">Figure 61. Composition entre exigences</div>
+<div class="title">Figure 62. Composition entre exigences</div>
 </div>
 </td>
 </tr>
@@ -5732,7 +5805,7 @@ Il est donc recommandé par la norme, et possible dans de nombreux outils, de re
 <div class="content">
 <img src="images/req-table.png" alt="Tableaux" width="70%">
 </div>
-<div class="title">Figure 62. Exemples de tableaux des exigences (OMG SysML v1.4, p. 163)</div>
+<div class="title">Figure 63. Exemples de tableaux des exigences (OMG SysML v1.4, p. 163)</div>
 </div>
 <div class="paragraph">
 <p>La plupart des outils modernes permettent le passage entre outils classiques de gestion des exigences (comme <a href="http://www-03.ibm.com/software/products/fr/fr/ratidoor/">DOORS&#8482;</a>)
@@ -5742,7 +5815,7 @@ et outils de modélisation <a href="http://www.omgsysml.org/">SysML&#174;</a>.</
 <div class="content">
 <img src="images/todo.jpg" alt="todo" width="50%">
 </div>
-<div class="title">Figure 63. Import Papyrus de tableau des exigences</div>
+<div class="title">Figure 64. Import Papyrus de tableau des exigences</div>
 </div>
 <div class="paragraph">
 <p><span class="red">XXX Parler des imports/exports ReqIf, de l&#8217;import/export excel etc.</span></p>
@@ -5835,7 +5908,7 @@ entre un système et un de ses sous-systèmes.</p>
 <div class="content">
 <img src="images/req-exp.png" alt="req exp" width="40%">
 </div>
-<div class="title">Figure 64. Exemples de relations entre exigences</div>
+<div class="title">Figure 65. Exemples de relations entre exigences</div>
 </div>
 <div class="paragraph">
 <p>Il existe ensuite les relations entre les besoins et les autres éléments de modélisation
@@ -5846,19 +5919,19 @@ dans la partie <a href="#transvers">transverse</a>.</p>
 <div class="content">
 <img src="images/req-connections.png" alt="req connections" width="20%">
 </div>
-<div class="title">Figure 65. Relations liées au <em>requirements</em> dans http://www.eclipse.org/papyrus/[Papyrus-SysML]</div>
+<div class="title">Figure 66. Relations liées au <em>requirements</em> dans http://www.eclipse.org/papyrus/[Papyrus-SysML]</div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="reqDiags">9.1.5. Les <em>Requirements Diagrams</em></h4>
 <div class="paragraph">
-<p>Voici un exemple de <code><a href="#reqs">req</a></code> un peu plus étoffé, tiré de <a href="http://www.uml-sysml.org/sysml" class="bare">http://www.uml-sysml.org/sysml</a> (voir aussi <a href="#rationale">Figure 67</a>) :</p>
+<p>Voici un exemple de <code><a href="#reqs">req</a></code> un peu plus étoffé, tiré de <a href="http://www.uml-sysml.org/sysml" class="bare">http://www.uml-sysml.org/sysml</a> (voir aussi <a href="#rationale">Figure 68</a>) :</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/rationale.png" alt="rationale" width="90%">
 </div>
-<div class="title">Figure 66. Exemples de composition d&#8217;exigences</div>
+<div class="title">Figure 67. Exemples de composition d&#8217;exigences</div>
 </div>
 </div>
 <div class="sect3">
@@ -5889,7 +5962,7 @@ Quelques exemples de stéréotypes utiles :</p>
 <div class="content">
 <img src="images/rationale.png" alt="rationale" width="80%">
 </div>
-<div class="title">Figure 67. Exemples de <em>rationale</em> et <em>problem</em> (OMG SysML v1.5, p. 227)</div>
+<div class="title">Figure 68. Exemples de <em>rationale</em> et <em>problem</em> (OMG SysML v1.5, p. 227)</div>
 </div>
 </div>
 <div class="sect3">
@@ -5925,7 +5998,7 @@ artefact de conception (ne serait-ce qu&#8217;un <em>use case</em>)<sup class="f
 <div class="content">
 <img src="images/req-uc-relation.png" alt="req uc relation" width="40%">
 </div>
-<div class="title">Figure 68. Exemple de lien entre <em>use case</em> et <em>requirements</em></div>
+<div class="title">Figure 69. Exemple de lien entre <em>use case</em> et <em>requirements</em></div>
 </div>
 <div class="paragraph">
 <p>Ce diagramme est exactement identique à celui d&#8217;<a href="http://www.uml.org/">UML&#8482;</a>.</p>
@@ -5934,7 +6007,7 @@ artefact de conception (ne serait-ce qu&#8217;un <em>use case</em>)<sup class="f
 <div class="content">
 <img src="images/UCGestionNotes.png" alt="UCGestionNotes" width="70%">
 </div>
-<div class="title">Figure 69. Exemple de diagramme des cas d&#8217;utilisation</div>
+<div class="title">Figure 70. Exemple de diagramme des cas d&#8217;utilisation</div>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -6089,7 +6162,7 @@ avec qui les aspects contractuels seront souvent basés sur ces exigences. Il n&
 et des mécanismes dédiés aient été prévus en <a href="http://www.omgsysml.org/">SysML&#174;</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 8. Déclinaison des Exigences</caption>
+<caption class="title">Table 9. Déclinaison des Exigences</caption>
 <colgroup>
 <col style="width: 16.6666%;">
 <col style="width: 33.3333%;">
@@ -6139,13 +6212,13 @@ et des mécanismes dédiés aient été prévus en <a href="http://www.omgsysml.
 </table>
 <div class="paragraph">
 <p>En terme de démarche, il est classique d&#8217;avoir de nombreux aller-retour entre la modélisation
-des exigences et la modélisation du système lui-même (cf. <a href="#sysmod">Figure 70</a>).</p>
+des exigences et la modélisation du système lui-même (cf. <a href="#sysmod">Figure 71</a>).</p>
 </div>
 <div id="sysmod" class="imageblock">
 <div class="content">
 <a class="image" href="http://model-based-systems-engineering.com/2012/03/26/the-sysmod-zigzag-pattern/"><img src="images/zigzag.png" alt="zigzag" width="70%"></a>
 </div>
-<div class="title">Figure 70. Exemple de démarche (<em>SYSMOD Zigzag pattern</em>)</div>
+<div class="title">Figure 71. Exemple de démarche (<em>SYSMOD Zigzag pattern</em>)</div>
 </div>
 </div>
 <div class="sect3">
@@ -6340,7 +6413,7 @@ Nous aborderons plus en détail cette organisation en étudiant le <a href="#pac
 <div class="ulist">
 <ul>
 <li>
-<p>un diagramme décrivant le contexte (le système dans son environnement), décrit dans un <em>block definition diagram</em> (cf. <a href="#contextebdd">Figure 71</a>)</p>
+<p>un diagramme décrivant le contexte (le système dans son environnement), décrit dans un <em>block definition diagram</em> (cf. <a href="#contextebdd">Figure 72</a>)</p>
 </li>
 <li>
 <p>un diagramme décrivant les éléments internes principaux du système,  décrit dans un <em>internal block diagram</em></p>
@@ -6376,7 +6449,7 @@ Ce diagramme utilise les mêmes éléments que le diagramme de classe <a href="h
 <div class="content">
 <img src="images/pacemaker-context.png" alt="pacemaker context" width="80%">
 </div>
-<div class="title">Figure 71. bdd du système dans son environnement</div>
+<div class="title">Figure 72. bdd du système dans son environnement</div>
 </div>
 <div class="paragraph">
 <p>Un bloc est constitué d&#8217;un certain nombre de compartiments (<em>Compartments</em>) :</p>
@@ -6393,7 +6466,7 @@ Ce diagramme utilise les mêmes éléments que le diagramme de classe <a href="h
 </dd>
 <dt class="hdlist1"><em>Constraints</em></dt>
 <dd>
-<p>Les contraintes (cf. <a href="#contraintes">Figure 72</a>)</p>
+<p>Les contraintes (cf. <a href="#contraintes">Figure 73</a>)</p>
 </dd>
 <dt class="hdlist1"><em>Allocations</em></dt>
 <dd>
@@ -6413,7 +6486,7 @@ Ce diagramme utilise les mêmes éléments que le diagramme de classe <a href="h
 <div class="content">
 <img src="images/constraints.png" alt="constraints" width="70%">
 </div>
-<div class="title">Figure 72. Exemple de définition de contraintes</div>
+<div class="title">Figure 73. Exemple de définition de contraintes</div>
 </div>
 </div>
 </div>
@@ -6444,7 +6517,7 @@ Utilisation OpaqueBehavior ?</p>
 <div class="sect3">
 <h4 id="_fondements_5">9.4.1. Fondements</h4>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 9. Place des comportements</caption>
+<caption class="title">Table 10. Place des comportements</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -6559,7 +6632,7 @@ les concepts disponibles.</p>
 <div class="content">
 <img src="images/transEditor.png" alt="transEditor" width="40%">
 </div>
-<div class="title">Figure 73. Editeur de transition "intelligent"</div>
+<div class="title">Figure 74. Editeur de transition "intelligent"</div>
 </div>
 </td>
 </tr>
@@ -6606,7 +6679,7 @@ sinon on se retrouvera avec une machine dite "<strong>indéterministe</strong>".
 <div class="content">
 <img src="images/dessins/initState.png" alt="initState" width="20%">
 </div>
-<div class="title">Figure 74. Etat initial</div>
+<div class="title">Figure 75. Etat initial</div>
 </div>
 </li>
 <li>
@@ -6615,7 +6688,7 @@ sinon on se retrouvera avec une machine dite "<strong>indéterministe</strong>".
 <div class="content">
 <img src="images/dessins/finalState.png" alt="finalState" width="20%">
 </div>
-<div class="title">Figure 75. Etat final</div>
+<div class="title">Figure 76. Etat final</div>
 </div>
 </li>
 </ul>
@@ -6639,7 +6712,7 @@ Nous verrons d&#8217;autres pseudo-états un peu plus tard.
 <div class="content">
 <img src="images/stm1.png" alt="stm1" width="70%">
 </div>
-<div class="title">Figure 76. Un exemple de diagramme d&#8217;états</div>
+<div class="title">Figure 77. Un exemple de diagramme d&#8217;états</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -6704,7 +6777,7 @@ Il est également possible d&#8217;attacher un diagramme d&#8217;états à un é
 <div class="content">
 <img src="images/todo.jpg" alt="todo" width="50%">
 </div>
-<div class="title">Figure 77. Exemple d&#8217;état composite</div>
+<div class="title">Figure 78. Exemple d&#8217;état composite</div>
 </div>
 </div>
 <div class="sect4">
@@ -6718,7 +6791,7 @@ Chaque région contient ses propres états et transitions.</p>
 <div class="content">
 <img src="images/todo.jpg" alt="todo" width="30%">
 </div>
-<div class="title">Figure 78. Exemple de régions concurrentes</div>
+<div class="title">Figure 79. Exemple de régions concurrentes</div>
 </div>
 </div>
 <div class="sect4">
@@ -6738,7 +6811,7 @@ choice
 <div class="content">
 <img src="images/choice.png" alt="choice" width="40%">
 </div>
-<div class="title">Figure 79. Exemple d&#8217;utilisation du <em>choice</em></div>
+<div class="title">Figure 80. Exemple d&#8217;utilisation du <em>choice</em></div>
 </div>
 </td>
 </tr>
@@ -6835,7 +6908,7 @@ Exemple <code><strong class="red">when</strong> "t==10"</code></p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_diagramme_dactivité_2">9.4.3. Diagramme d&#8217;activité</h4>
+<h4 id="_diagramme_dactivité">9.4.3. Diagramme d&#8217;activité</h4>
 <div class="paragraph">
 <p>Le diagramme d&#8217;activité est étudié dans ce livre plus en détail au chapitre
 <a href="#act">Section 9.5.3</a>, dans la partie sur les interactions.
@@ -6869,7 +6942,7 @@ Nous revoyons le lecteur au chapitre <a href="#act">Section 9.5.3</a> pour plus 
 <div class="sect3">
 <h4 id="_fondements_6">9.5.1. Fondements</h4>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 10. Place des interactions</caption>
+<caption class="title">Table 11. Place des interactions</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -7056,13 +7129,13 @@ conditions sous lesquelles cette partie du scénario s&#8217;exécute.</p>
 <div class="content">
 <img src="images/fowl1.png" alt="Un algorithme" width="30%">
 </div>
-<div class="title">Figure 80. Exemple d' algorithme&#8230;&#8203; (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 81. Exemple d' algorithme&#8230;&#8203; (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/fowl2.png" alt="Sa modélisation" width="60%">
 </div>
-<div class="title">Figure 81. Et le diagramme correpondant (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 82. Et le diagramme correpondant (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div class="sect5">
 <h6 id="_exemple_de_conceptions">Exemple de conceptions</h6>
@@ -7072,19 +7145,19 @@ certains objets par rapport aux autres. Dans un code logiciel, on peut y décele
 facilement que tel objet est plus chargé que d&#8217;autres. Les deux diagrammes suivants
 (tirés de <a href="#Fowler2004">[Fowler2004]</a>) montrent deux conceptions différentes possibles pour l&#8217;implémentation d&#8217;une même
 fonctionnalité. On mesure visuellement assez bien la différence entre la version "centralisée"
-(<a href="#fowler1">Figure 82</a>) et la version "objet" (<a href="#fowler2">Figure 83</a>).</p>
+(<a href="#fowler1">Figure 83</a>) et la version "objet" (<a href="#fowler2">Figure 84</a>).</p>
 </div>
 <div id="fowler1" class="imageblock">
 <div class="content">
 <img src="images/fowl3.png" alt="Conception 'centralisée'" width="60%">
 </div>
-<div class="title">Figure 82. Conception "centralisée" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 83. Conception "centralisée" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div id="fowler2" class="imageblock">
 <div class="content">
 <img src="images/fowl4.png" alt="Conception 'objet'" width="60%">
 </div>
-<div class="title">Figure 83. Conception "objet" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
+<div class="title">Figure 84. Conception "objet" (source <a href="#Fowler2004">[Fowler2004]</a>)</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -7116,19 +7189,19 @@ fonctionnalité. On mesure visuellement assez bien la différence entre la versi
 <div class="content">
 <img src="images/ucexp1.png" alt="Diagramme d&#8217;UC" width="30%">
 </div>
-<div class="title">Figure 84. Diagramme d&#8217;UC</div>
+<div class="title">Figure 85. Diagramme d&#8217;UC</div>
 </div>
 <div id="exp1-dss" class="imageblock">
 <div class="content">
 <img src="images/dssexp1.png" alt="Le DSS correspondant" width="50%">
 </div>
-<div class="title">Figure 85. Le DSS correspondant</div>
+<div class="title">Figure 86. Le DSS correspondant</div>
 </div>
 <div id="exp1-ds" class="imageblock">
 <div class="content">
 <img src="images/dsexp1.png" alt="Le DS correspondant" width="70%">
 </div>
-<div class="title">Figure 86. Le DS correspondant</div>
+<div class="title">Figure 87. Le DS correspondant</div>
 </div>
 </div>
 <div class="sect5">
@@ -7142,7 +7215,7 @@ en programmation). L&#8217;opérateur <em>ref</em> est alors utilisé.</p>
 <div class="content">
 <img src="images/todo.jpg" alt="todo">
 </div>
-<div class="title">Figure 87. Exemple de diagramme de séquence référençant un autre diagramme de séquence</div>
+<div class="title">Figure 88. Exemple de diagramme de séquence référençant un autre diagramme de séquence</div>
 </div>
 </div>
 <div class="sect5">
@@ -7164,7 +7237,7 @@ en programmation). L&#8217;opérateur <em>ref</em> est alors utilisé.</p>
 <div class="content">
 <img src="images/todo.jpg" alt="todo">
 </div>
-<div class="title">Figure 88. Exemple de contrainte de durée dans un diagramme de séquence</div>
+<div class="title">Figure 89. Exemple de contrainte de durée dans un diagramme de séquence</div>
 </div>
 </div>
 <div class="sect5">
@@ -7226,7 +7299,7 @@ mais aussi ce qui est produit, consommé, ou transformé, au cours de l’exécu
 <div class="content">
 <img src="images/act-pcmk1.png" alt="act pcmk1" width="70%">
 </div>
-<div class="title">Figure 89. Exemple de diagramme d&#8217;activité (tiré de <a href="#SeeBook2012">[SeeBook2012]</a>)</div>
+<div class="title">Figure 90. Exemple de diagramme d&#8217;activité (tiré de <a href="#SeeBook2012">[SeeBook2012]</a>)</div>
 </div>
 <div class="paragraph">
 <p>Les éléments de base du diagramme d’activité sont :</p>
@@ -7283,7 +7356,7 @@ Les actions sont contenues dans les activités, qui leur servent alors de contex
 <div class="content">
 <img src="images/action.png" alt="action" width="40%">
 </div>
-<div class="title">Figure 90. Transmission d&#8217;objet entre 2 actions</div>
+<div class="title">Figure 91. Transmission d&#8217;objet entre 2 actions</div>
 </div>
 <div class="paragraph">
 <p>Il existe un certain nombre de types d&#8217;actions prédéfinies en <a href="http://www.omgsysml.org/">SysML&#174;</a> (héritées d&#8217;<a href="http://www.uml.org/">UML&#8482;</a>) :</p>
@@ -7383,7 +7456,7 @@ Les <em>object flow</em>, associés aux broches d&#8217;entrée/sortie (<em>inpu
 <div class="content">
 <img src="images/act-flow-continuous.png" alt="Un flot continu" width="30%">
 </div>
-<div class="title">Figure 91. Un exemple de flot continu</div>
+<div class="title">Figure 92. Un exemple de flot continu</div>
 </div>
 <div class="paragraph">
 <p>Pour permettre la modélisation des <strong>flots continus</strong>, <a href="http://www.omgsysml.org/">SysML&#174;</a> ajoute à <a href="http://www.uml.org/">UML&#8482;</a> la possibilité de caractériser la nature du débit qui circule sur le flot : continu (par exemple, courant électrique, fluide, etc.) ou discret (par exemple, évenements, requêtes, etc.).
@@ -7411,7 +7484,7 @@ Flow properties are listed in a compartment labeled flow properties.</em></p>
 <h5 id="_décision">Décision</h5>
 <div class="paragraph">
 <p>Une décision est un noeud de contrôle représentant un choix dynamique entre plusieurs conditions (mutuellement exclusives).
-Elle est représentée par un losange qui possède un arc entrant et plusieurs arcs sortants. Il existe plusieurs noeuds de contrôle (cf. <a href="#Control">Figure 92</a>) :</p>
+Elle est représentée par un losange qui possède un arc entrant et plusieurs arcs sortants. Il existe plusieurs noeuds de contrôle (cf. <a href="#Control">Figure 93</a>) :</p>
 </div>
 <div class="dlist">
 <dl>
@@ -7437,7 +7510,7 @@ Elle est représentée par un losange qui possède un arc entrant et plusieurs a
 <div class="content">
 <img src="images/flow-ctrl.png" alt="flow ctrl" width="20%">
 </div>
-<div class="title">Figure 92. Les différents contrôles de flow SysML</div>
+<div class="title">Figure 93. Les différents contrôles de flow SysML</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -7480,7 +7553,7 @@ L’action d’appel est représentée graphiquement par une fourche à droite d
 <div class="content">
 <img src="images/act-call.png" alt="act call" width="20%">
 </div>
-<div class="title">Figure 93. Exemple de <em>callBehaviorAction</em> (UK)</div>
+<div class="title">Figure 94. Exemple de <em>callBehaviorAction</em> (UK)</div>
 </div>
 </div>
 <div class="sect3">
@@ -7511,7 +7584,7 @@ L’action d’appel est représentée graphiquement par une fourche à droite d
 <p>Il existe de nombreux diagrammes pour exprimer les comportements. Ces modèles sont importants dans la mesure où ils peuvent servir à valider le futur système vis-à-vis de ces comportements exprimés. Ils ne sont donc véritablement utiles que lorsqu&#8217;ils sont couplés à des outils de simulation ou d&#8217;analyse (cf. <a href="#Analyse">[Analyse]</a>).</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 11. Place du Comportement</caption>
+<caption class="title">Table 12. Place du Comportement</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -7797,13 +7870,13 @@ vue (un <em>packetage</em> particulier, stéréotypé <code><a href="#view">[vie
 <div class="content">
 <img src="images/pkg-organisation2.png" alt="pkg organisation2" width="70%">
 </div>
-<div class="title">Figure 94. Exemple d&#8217;organisation simple</div>
+<div class="title">Figure 95. Exemple d&#8217;organisation simple</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/pkg-organisation-modelview.png" alt="pkg organisation modelview" width="40%">
 </div>
-<div class="title">Figure 95. Représentation de cette organisation dans un outil</div>
+<div class="title">Figure 96. Représentation de cette organisation dans un outil</div>
 </div>
 </div>
 <div class="sect3">
@@ -7956,7 +8029,7 @@ Par exemple pour n&#8217;avoir que les éléments possédant le stéréotype `<a
 <div class="content">
 <img src="images/4.0/papyrusTableFilter.png" alt="papyrusTableFilter" width="80%">
 </div>
-<div class="title">Figure 96. Sélection d&#8217;un filtre sur les entrées d&#8217;une table</div>
+<div class="title">Figure 97. Sélection d&#8217;un filtre sur les entrées d&#8217;une table</div>
 </div>
 </li>
 <li>
@@ -7985,7 +8058,7 @@ Vous puvez même réaliser un diagramme de bloc en glissant-déposant les relati
 <div class="content">
 <img src="images/4.0/papyrusTableRelationDiagram.png" alt="papyrusTableRelationDiagram" width="80%">
 </div>
-<div class="title">Figure 97. Exemple de diagramme de traces</div>
+<div class="title">Figure 98. Exemple de diagramme de traces</div>
 </div>
 </li>
 </ol>
@@ -8001,7 +8074,7 @@ Vous puvez même réaliser un diagramme de bloc en glissant-déposant les relati
 Nous les regroupons ici dans une matrice spécifique (qui se lit dans le sens des relations, par exemple un élément de structure comme un bloc <code>&lt;&lt;satisfy&gt;&gt;</code> une exigence).</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 12. Traçabilité</caption>
+<caption class="title">Table 13. Traçabilité</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -8072,13 +8145,13 @@ Il est possible d&#8217;exprimer cette allocation de plusieurs manières.</p>
 <h3 id="paramt">10.5. Le diagramme paramétrique</h3>
 <div class="paragraph">
 <p>C&#8217;est une forme particulière d'<em>Internal Block Definition</em> (cf. <a href="#param">[param]</a>).
-On y retrouve les contraintes, déjà vues (cf. <a href="#contraintes">Figure 72</a>), mais cette fois-ci on a la représentation graphique des liens entre les données.</p>
+On y retrouve les contraintes, déjà vues (cf. <a href="#contraintes">Figure 73</a>), mais cette fois-ci on a la représentation graphique des liens entre les données.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/param.png" alt="param" width="90%">
 </div>
-<div class="title">Figure 98. Exemple de diagramme paramétrique</div>
+<div class="title">Figure 99. Exemple de diagramme paramétrique</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -8094,7 +8167,7 @@ On y retrouve les contraintes, déjà vues (cf. <a href="#contraintes">Figure 72
 <div class="content">
 <a class="image" href="http://www.omgsysml.org/SysML_2009_RFI_Response_Summary-bone-cloutier.pdf"><img src="images/survey4.png" alt="survey4" width="80%"></a>
 </div>
-<div class="title">Figure 99. Diagrammes les plus utilisés (tiré de <a href="#OMG2009">[OMG2009]</a>)</div>
+<div class="title">Figure 100. Diagrammes les plus utilisés (tiré de <a href="#OMG2009">[OMG2009]</a>)</div>
 </div>
 </td>
 </tr>
@@ -8142,7 +8215,7 @@ tirés pour la plupart d&#8217;<a href="http://www.uml.org/">UML&#8482;</a>. Ces
 de leur utilisation concrète dans la suite.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 13. Organisation</caption>
+<caption class="title">Table 14. Organisation</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -8314,7 +8387,7 @@ Dans cette section nous illustrons l&#8217;utilisation des plugins <a href="http
 <div class="content">
 <img src="images/mergestrategy.png" alt="Stratégie de Merge" width="60%">
 </div>
-<div class="title">Figure 100. Pensez à sélectionner la bonne stratégie de Merge</div>
+<div class="title">Figure 101. Pensez à sélectionner la bonne stratégie de Merge</div>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -9523,7 +9596,7 @@ cf. <a href="#niveauConcepts">Niveaux de concepts SysML</a></p>
 <a href="#_footnoteref_5">5</a>. La partialité des auteurs peut être questionnée, mais d&#8217;un point de vue complétude et respect de la norme, cette affirmation est régulièrement admise par la communauté.
 </div>
 <div class="footnote" id="_footnotedef_6">
-<a href="#_footnoteref_6">6</a>. En fonction du niveau de détail.
+<a href="#_footnoteref_6">6</a>. rachetée récemment par Dassault Systems
 </div>
 <div class="footnote" id="_footnotedef_7">
 <a href="#_footnoteref_7">7</a>. Issue du <a href="http://www-list.cea.fr/">CEA LIST</a>.

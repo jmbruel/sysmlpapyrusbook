@@ -1,7 +1,9 @@
 
 //* {TopCased}
 //* {papyrus}
-* {artisan}
-* {Rhapsody}
-* {Modelio}
-* {magicdraw}
+* {sparxEA} (Sparx System)
+* {cameo} (NoMagicfootnote:[rachetée récemment par Dassault Systems])
+* {magicdraw}  (NoMagic)
+* {Rhapsody} (IBM)
+* {visualP}
+* {Modelio} (Softeam)

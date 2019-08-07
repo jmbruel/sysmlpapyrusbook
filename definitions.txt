@@ -13,7 +13,7 @@
 :siteUseCase: https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
 :specUseCase: http://bit.ly/SmartHomeUseCase
 :diagrams: ../../SmartHomeUseCase/SmartHomeSystemProject/diagrams
-:pluginsysml: http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/photon/
+:pluginsysml: https://download.eclipse.org/modeling/mdt/papyrus/components/sysml16/
 :pluginsysmlnightly: https://hudson.eclipse.org/papyrus/job/papyrus-sysml16-master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml16.p2/target/repository/
 //:pluginreqs: https://download.eclipse.org/modeling/mdt/papyrus/view/Requirements/job/requirements-photon/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.requirements.p2/target/repository/
 :pluginreqs: https://hudson.eclipse.org/papyrus/view/Requirements/job/Requirements-Master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.requirements.p2/target/repository/
@@ -46,6 +46,7 @@ endif::[]
 :asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]indexterm:[AsciiDoc]
 :bouml: http://www.bouml.fr[BOUML]
 :asciidoctorlink: http://asciidoctor.org/[Asciidoctor]indexterm:[Asciidoctor]
+:cameo: https://www.nomagic.com/products/cameo-systems-modeler/[Cameo Systems Modeler]
 :cea: http://www-list.cea.fr/[CEA LIST]
 :list: {cea}
 :cdo: http://www.eclipse.org/cdo/[CDO]
@@ -95,7 +96,7 @@ endif::[]
 :reqif: http://www.omg.org/spec/ReqIF/[ReqIF]
 :reqcycle: http://www.eclipse.org/community/eclipse_newsletter/2014/april/article3.php[ReqCycle]
 :reqtify: Reqtify
-:rhapsody: http://www-142.ibm.com/software/products/us/en/ratirhap[Rhapsody]indexterm:[Rhapsody]
+:rhapsody: https://www.ibm.com/us-en/marketplace/systems-design-rhapsody[Rhapsody]indexterm:[Rhapsody]
 :robotml: http://en.wikipedia.org/wiki/RobotML[RobotML]
 :rtaw: http://www.realtimeatwork.com/[RTaW]indexterm:[RTaW]
 :sart: http://fr.wikipedia.org/wiki/Structured_Analysis_for_Real_Time[SADT/SART]
@@ -104,6 +105,7 @@ endif::[]
 :sirius: link:https://www.eclipse.org/proposals/modeling.sirius/[Sirius]
 :smart: link:http://smart-researchteam.github.io/[SM@RT]
 :sosym: http://www.sosym.org/[SoSyM]
+:sparxEA: https://www.sparxsystems.com/[Enterprise Architext]
 :sym: http://www.omg.org/spec/SyM/[SysML-Modelica]
 :sysml: http://www.omgsysml.org/[SysML(R)]indexterm:[SysML]
 :sysmod: https://model-based-systems-engineering.com/sysmod/[SYSMOD]
@@ -111,6 +113,7 @@ endif::[]
 :uml: http://www.uml.org/[UML(TM)]indexterm:[UML(TM)]
 :umlspec: http://www.omg.org/spec/UML/2.4.1/Infrastructure/PDF/[UML 2.4.2 Specifictation]
 :umple: http://cruise.eecs.uottawa.ca/umple/[Umple]
+:visualP: https://www.visual-paradigm.com/[Visual Paradigm]
 :vle: http://www.vle-project.org/wiki/Main_Page[VLE]
 :wikirover: https://polarsys.org/wiki/Rover_Demo_Master_DL_UPS[Rover Demo Wiki]
 :xtext: http://www.eclipse.org/Xtext/[Xtext]
