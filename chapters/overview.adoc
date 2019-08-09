@@ -93,15 +93,15 @@ La liste complète des membres de l'{omg} est accessible à l'URL : http://www.o
 
 Neuf types de diagrammes (cf. <<diags>>)::
 * Diagrammes structuraux
-** Diagrammes de définition de blocs (`{bdd}`)
-** Diagrammes internes de blocs (`{ibd}`)
-** Diagrammes paramétriques (`{par}`)
-** Diagrammes de packages (`{pkg}`)
+** Diagrammes de définition de blocs (`<<bdd-init,bdd>>`)
+** Diagrammes internes de blocs (`<<ibd-init,ibd>>`)
+** Diagrammes paramétriques (`<<par-init,par>>`)
+** Diagrammes de packages (`<<pkg-init,pkg>>`)
 * Diagrammes comportementaux
-** Diagrammes de séquences (`{seq}`)
-** Diagrammes d'activité (`{act}`)
-** Diagrammes de cas d'utilisation (`{uc}`)
-** Diagrammes d'états (`{stm}`)
+** Diagrammes de séquences (`<<sd-init,sd>>`)
+** Diagrammes d'activité (`<<act-init,act>>`)
+** Diagrammes de cas d'utilisation (`<<uc-init,uc>>`)
+** Diagrammes d'états (`<<stm-init,stm>>`)
 * Diagramme des exigences (`{req}`)
 
 Un profil {uml}::
@@ -165,7 +165,7 @@ La <<diags>> présente cette organisation en faisant, en même temps, le lien av
 image::Figure4-1.png[9 diagrammes,width=90%,scaledwidth=90%]
 
 Le nom de ces diagrammes revenant souvent dans ce document, nous utiliserons souvent leur version abrégée
-(`{uc}` pour "diagramme des UC" par exemple). Ces abréviations, sont définies dans la spécification.
+(`<<uc-init,uc>>` pour "diagramme des UC" par exemple). Ces abréviations, sont définies dans la spécification.
 
 .Version abrégée des diagrammes
 image::Figure4-1-bis.png[Version abrégée,width=90%,scaledwidth=90%]
@@ -188,12 +188,12 @@ Abordons quelques principes généraux de {sysml}, c'est à dire des éléments 
 +
 IMPORTANT: Malheureusement, à l'heure où nous écrivons cet ouvrage, cette fonctionalité n'est pas encore supportée par {papyrus}.
 - l'entête de ce cadre, appelé aussi *cartouche*, indique les informations sur le diagramme :
-* le *type* de diagramme (`{req}`, `{act}`, `{bdd}`, `{ibd}`, `{stm}`, etc. en gras) qui donne immédiatement une indication sur le point de vue porté à l'élément de modélisation (comportement, structure, etc.)
+* le *type* de diagramme (`{req}`, `<<act-init,act>>`, `<<bdd-init,bdd>>`, `<<ibd-init,ibd>>`, `<<stm-init,stm>>`, etc. en gras) qui donne immédiatement une indication sur le point de vue porté à l'élément de modélisation (comportement, structure, etc.)
 * le type de l'élément (par exemple _package_, _block_, _activity_, etc.), optionnel
 * le nom de l'élément modélisé (unique)
 * le nom du diagramme ou de la vue, optionnel.
 
-Dans l'exemple ci-dessous, le diagramme "_Context_Overview_" est un _Block Definition Diagram_ (type `{bdd}`)
+Dans l'exemple ci-dessous, le diagramme "_Context_Overview_" est un _Block Definition Diagram_ (type `<<bdd-init,bdd>>`)
 qui représente un _package_, nommé "Context".
 
 .Exemple de diagramme SysML (source <<Kordon>>)
@@ -207,21 +207,21 @@ d'une machine à état, paramètres d'une activité, etc.).
 
 Comme nous l'avons vu précédemment les deux grandes catégories de diagrammes
 {sysml} sont les diagrammes structuraux et les diagrammes comportementaux.
-Mis à part les deux diagrammes <<reqs, des exigences>> (`{req}`, représentation visuelle des exigences) et <<package, de _packages_>> (`{pkg}`, représentation visuelle des _packages_), les autres diagrammes
+Mis à part les deux diagrammes <<reqs, des exigences>> (`{req}`, représentation visuelle des exigences) et <<package, de _packages_>> (`<<pkg-init,pkg>>`, représentation visuelle des _packages_), les autres diagrammes
 nécessitent de préciser l'utilisation que nous préconisons d'en faire.
 
 Pour les diagrammes structuraux (statiques), quand il s'agira de représenter les architectures,
-nous utiliserons les <<bddsec,diagrammes de définition de blocs>> (`{bdd}`), et pour représenter l'intérieur d'un système,
-nous utiliserons le <<ibd,diagramme de blocs internes>> (`{ibd}`).
-Le <<param,diagramme paramétrique>> (`{par}`) n'est qu'un diagramme de blocs internes particulier, dédié aux relations entre valeurs
+nous utiliserons les <<bddsec,diagrammes de définition de blocs>> (`<<bdd-init,bdd>>`), et pour représenter l'intérieur d'un système,
+nous utiliserons le <<ibd,diagramme de blocs internes>> (`<<ibd-init,ibd>>`).
+Le <<param,diagramme paramétrique>> (`<<par-init,par>>`) n'est qu'un diagramme de blocs internes particulier, dédié aux relations entre valeurs
 (pour représenter des lois physiques par exemple).
 
 Pour les diagrammes comportementaux (dynamiques), nous utilisons la distinction entre comportement
 global et local, comme indiqué dans la  <<comportements>>.
-Ainsi les diagrammes <<usecase,des cas d'utilisation>> (`{uc}`) et <<seq,de séquences>> (`{sd}`)
+Ainsi les diagrammes <<usecase,des cas d'utilisation>> (`<<uc-init,uc>>`) et <<seq,de séquences>> (`{sd}`)
 seront plutôt utilisés pour représenter le comprtement global tel qu'attendu par les parties prenantes
 du système.
-Tandis que les <<act,diagrammes d'activité>> (`{act}`) et les <<stm,diagrammes d'état>> (`{stm}`) seront plutôt
+Tandis que les <<act,diagrammes d'activité>> (`<<act-init,act>>`) et les <<stm,diagrammes d'état>> (`<<stm-init,stm>>`) seront plutôt
 utilisés en phase de conception.
 
 [[comportements]]
@@ -231,21 +231,26 @@ image::behavior.png[width="80%",scaledwidth="80%"]
 Pour ceux qui cherchent à étudier un diagramme en particulier voici un plan des
 sections qui suivent (nous utilisons ici le "plan" vu lors de l'introduction de la <<Matrice>>) :
 
+
+[[orga-diags]]
 .Organisation
 ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
 ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 |======================
 |  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
-| {organisation} | {pkg} | {pkg} | {pkg}, {bdd}, {ibd} | {pkg} | {pkg} .5+<.>| {par}, {pkg}
-| {context} 5+| {pkg}, {bdd}, {ibd}
-| {analysis} .3+<.>| {req}, {uc}, {seq} .3+<.>| {stm} .3+<.>|  {bdd}, {ibd}, {par} .3+<.>|  {uc}, {seq}, {stm}, {act} .3+<.>|  {ibd}
+| {organisation} | <<pkg-init,pkg>> | <<pkg-init,pkg>> | <<pkg-init,pkg>>, <<bdd-init,bdd>>, <<ibd-init,ibd>> | <<pkg-init,pkg>> | <<pkg-init,pkg>> .5+<.>| <<par-init,par>>, <<pkg-init,pkg>>
+| {context} 5+| <<pkg-init,pkg>>, <<bdd-init,bdd>>, <<ibd-init,ibd>>
+| {analysis} .3+<.>| <<reqs-init,req>>, <<uc-init,uc>>, <<sd-init,sd>> .3+<.>| <<stm-init,stm>> .3+<.>|  <<bdd-init,bdd>>, <<ibd-init,ibd>>, <<par-init,par>> .3+<.>|  <<uc-init,uc>>, <<sd-init,sd>>, <<stm-init,stm>>, <<act-init,act>> .3+<.>|  <<ibd-init,ibd>>
 | {design}
 | {implementation}	|
 |======================
 
 
-//== Introduction à la démarche
+//=========================
+//==== EXIGENCES ==========
+//=========================
 
+[[reqs-init]]
 == Diagramme et table des exigences (req)
 // Sebastien
 //---------------------------------------------------------------------------------
@@ -272,15 +277,54 @@ Il est souvent plus pratique de lister les exigences sous forme de table.
 .Exemple de table des exigences pour le {projectName}
 image::{papyrusversion}/table.png[width=100%,scaledwidth=70%]
 
+Tous ces éléments seront détaillés à la <<reqs>>.
+
+//=========================
+//==== UC        ==========
+//=========================
+
+[[uc-init]]
 == Diagramme des cas d'utilisation (uc)
 
-.Exemple de diagramme de cas d'utilisation
-image::{diagrams}/SHS_Use_Cases_Description.PNG[width=100%,scaledwidth=70%]
+Le Diagramme des Cas d'Utilisation est un modèle {UML} permettant de représenter :
 
+- les cas d’Utilisation (_Use Case_)
+- les acteurs (_Actors__)
+- les interactions entre acteurs et cas d’Utilisation
+- les relations entre cas d’Utilisation
+
+Le travail sur les exigences (cf. <<reqs-init>> et <<reqs>>) permet, en plus de lister précisément les exigences, d'identifier les éléments (humains ou non) qui intéragissent avec le système. 
+En {sysml}, on parlera de manière globale d'_Acteurs_ (les "bonhommes" dans la <<uc-exp-init>>).
+De plus les grandes fonctionalités du système, du point de vue de ces acteurs, seront matérialisés sous la forme de _Cas d'utilisation_ (les "patates" dans la <<uc-exp-init>>).
+Enfin le diagramme précise quel(s) acteur(s) intéragit avec quel cas d'utilisation (les traits enre acteurs et cas) et les relations éventuelles en les cas d'utilisation (extension, inclusion, en pointillé dans la <<uc-exp-init>>).
+
+[[uc-exp-init]]
+.Exemple de diagramme de cas d'utilisation
+image::{diagrams}/svg/System_security_use_cases_diagram.SVG[width=100%,scaledwidth=70%]
+
+Tous ces éléments seront détaillés à la <<uc>>.
+
+//=========================
+//==== BDD ==========
+//=========================
+
+[[bdd-init]]
 == Diagramme de blocs (bdd)
 
+Le diagramme de blocs (ou diagramme de définition de blocs) permet de principalement de représenter la structure en terme de composés/composants.
+Il permet de définir des relations (très souvent de composition) entre des éléments de base, appelés "blocs" et qui généralement représentent des éléments concrets.
+Ainsi ce diagramme permettra de préciser des éléments comme des propriétés, des associations, des multiplicités, etc.
+
+La <<bdd-init-fig>> illustre un diagramme de bloc précisant ...
+
+[[bdd-init-fig]]
 .Exemple de diagramme de blocs
 image::todo.jpg[]
+
+//-------------------------------
+IMPORTANT: Pour les lecteurs familiers d'{uml}, le concept {sysml} de _block_ est à rapprocher du concept {uml} de _class_ (cf. <<bddsec>>).
+D'ailleurs vous constaterez que les blocs sont des rectables (comme les classes en {uml}) étiquetés avec le stéréotype +<<Block>>+. 
+//-------------------------------
 
 .Diagramme de contexte
 [NOTE]
@@ -289,12 +333,30 @@ Un diagramme de blocs un peu particulier consiste à représenter le système da
 Ce "diagramme de contexte" est pratique d'un point de vue modélisation car le système et les autres éléments en interaction avec lui, sont très tôt identifiés et "référençables" (des `connectableElement` en termes {sysml}).
 
 .Exemple de diagramme de contexte
-image::{diagrams}/Context_Diagram.PNG[width=70%,scaledwidth=70%]
+image::{diagrams}/svg/Description_of_the_SystemContext_BDD_view.SVG[width=70%,scaledwidth=70%]
 
 =====
 
+Tous ces éléments seront détaillés à la <<bdd>>.
+
+//=========================
+//==== IBD ==========
+//=========================
+
+[[ibd-init]]
 == Diagramme de blocs internes (ibd)
 
+Complémentaire au diagramme de blocs vu à l'instant, le diagramme de blocs internes permet de représenter comment les composants d'un bloc sont précisément reliés à ce bloc, voire reliés entre eux.
+Ainsi ce diagramme permettra de préciser des éléments comme des propriétés, des parties, des ports, des flux, etc.
+
+//-------------------------------
+TIP: Nous recommandons fortement de ne faire l'<<ibd-init,ibd>> d'un bloc qu'après avoir fait le <<bdd-init,bdd>> de ce bloc.
+En effet les _parts_ et autres associations avec les éléments internes et externes de ce bloc seront ainsi déjà définis.
+//-------------------------------
+
+La <<ibd-init-fig>> illustre un diagramme de bloc précisant ...
+
+[[ibd-init-fig]]
 .Exemple de diagramme de blocs internes
 image::todo.jpg[]
 
@@ -303,16 +365,20 @@ image::todo.jpg[]
 =====
 // Sebastien
 Nous avons parlé du diagramme de contexte dans la section précédente sur le diagramme de bloc.
-Une autre façon de représenter le système dans son environnement est d'utiliser le diagramme de bloc interne :
+Une autre façon de représenter le système dans son environnement est d'utiliser le diagramme de blocs internes :
 
 .Exemple de diagramme de contexte (vue interne)
-image::{diagrams}/Context_description_of_the_SHS.PNG[width=70%,scaledwidth=70%]
+image::{diagrams}/svg/Structural_description_of_the_SHS_Environment_IBD_view.SVG[width=90%,scaledwidth=70%]
 
 =====
 
-TIP: Nous recommandons fortement de ne faire l'{ibd} d'un bloc qu'après avoir fait le {bdd} de ce bloc.
-En effet les _parts_ et autres associations avec les éléments internes et externes de se bloc seront ainsi déjà définis.
+Tous ces éléments seront détaillés à la <<ibd>>.
 
+//=========================
+//==== SD ==========
+//=========================
+
+[[sd-init]]
 == Diagrammes de séquences (sd)
 // JMB
 //---------------------------------------------------------------------------------
@@ -321,20 +387,17 @@ En effet les _parts_ et autres associations avec les éléments internes et exte
 Le diagramme de séquences est un diagramme populaire pour représenter les
 participants et leurs interactions.
 
-Il est souvent intéressant de procéder par étapes, en définissant un premier
-diagramme représentant les interactions entre le système (vue comme une boîte
-noire) et les différents acteurs impliqués dans ces interactions.
-Dans ce diagramme, appelé diagramme de séquences système (<<dss,DSS>>), le seul
-participant (en dehors des acteurs) est le système lui-même.
+Après que les grandes fonctionalités du système aient été identifiées et classifiées (cf. <<uc-init>>), il convient de préciser les cas d'utilisation en décrivant des scénarios concrets qui précisent, de manière chronologique, les interactions entre acteurs et les différents éléments du systèmes qui collaborent à la réalisation d'un service ou d'une fonctionalité donnée.
 
-Il est ensuite possible de représenter le même cas d'utilisation, mais en
-considérant cette fois-ci le système comme une "boîte blanche", c'est à dire
-en précisant les différents participants impliqués par ce cas.
+Il est souvent intéressant de procéder par étapes, en définissant un premier diagramme représentant les interactions entre le système (vue comme une boîte noire) et les différents acteurs impliqués dans ces interactions.
+Dans ce diagramme, appelé diagramme de séquences système (<<dss,dss>>), le seul participant (en dehors des acteurs) est le système lui-même.
+
+Il est ensuite possible de représenter le même cas d'utilisation, mais en considérant cette fois-ci le système comme une "boîte blanche", c'est-à-dire en précisant les différents participants impliqués par ce cas.
 
 [[dss]]
 === Diagrammes de séquences système
 
-Les diagrammes de séquences système (DSS) sont des _Sequence Diagrams_ {uml}
+Les diagrammes de séquences système (`dss`) sont des _Sequence Diagrams_ {uml}
 classiques où seul le système est représenté comme une boîte noire en
 interaction avec son environnement (les utilisateurs ou les périphériques généralement).
 
@@ -342,11 +405,10 @@ Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les 
 Il convient donc mieux à l'ingénierie système qu'un diagramme de séquences
 classique.
 
-
 .Exemples de DSS
 image::dss.png[width="50%",scaledwidth="40%"]
 
-[red]*xxx à refaire xxx*
+[red]*xxx à refaire à partir de SHS xxx*
 
 === Diagramme de séquences
 
@@ -357,13 +419,34 @@ de messages entre eux.
 .Exemple de diagramme de séquences
 image::todo.jpg[]
 
-Pour plus de détails, cf. <<seq>>.
+Les éléments graphiques utilisés dans ce diagramme sont principalement :
 
+- les _participants_ (les boîtes en haut qui représentent soit des acteurs soit des blocs)
+- les _lignes de vie_  (les traits verticaux pointillés sous les participants.
++
+NOTE: Le temps se déroule de haut en bas, sans notion particulière d'échelle de temps.
++
+- les _messages_ (les flèches horizontales) qui matérialisent les interactions et qui pourront être des événements, des appels de fonction, des signaux, etc.
+
+Tous ces éléments seront détaillés à la <<seq>>.
+
+//=========================
+//==== STATEMACHINES ==========
+//=========================
+
+[[stm-init]]
 == Diagramme d'états (stm)
 // Sebastien
 //---------------------------------------------------------------------------------
 
 image::todo.jpg[]
+
+Tous ces éléments seront détaillés à la <<stm>>.
+
+[[act-init]]
+//=========================
+//==== ACTIVITY ==========
+//=========================
 
 == Diagramme d'activité (act)
 // Sebastien
@@ -371,11 +454,25 @@ image::todo.jpg[]
 
 image::todo.jpg[]
 
+Tous ces éléments seront détaillés à la <<act>>.
+
+[[par-init]]
+//=========================
+//==== PARAMETRIC ==========
+//=========================
+
 == Diagramme paramétrique (par)
 // Sebastien
 //---------------------------------------------------------------------------------
 
 image::todo.jpg[]
+
+Tous ces éléments seront détaillés à la <<param>>.
+
+[[pkg-init,pkg]]
+//=========================
+//==== PACKAGES ==========
+//=========================
 
 == Diagramme de _packages_ (pkg)
 //---------------------------------------------------------------------------------
@@ -387,22 +484,35 @@ NOTE: Un _package_ n'est pas un composant mais une unité d'organisation du mod�
 Un _package_ constitue un espace de nommage (_namespace_) pour les éléments
 qu'il contient.
 
+Tous ces éléments seront détaillés à la <<package>>.
+
+[[crosscut-init]]
+//=========================
+//==== TRANSVERSE =========
+//=========================
+
 == Allocation, traçabilité et autres points de cohérences
 //---------------------------------------------------------------------------------
 
+Tous ces éléments seront détaillés au <<crossCuting>>.
+
 == {resume}
+
+Nous avons survolé dans ce chapitre les différents diagrammes {sysml} et ce qu'ils permettent de modéliser.
+Certains termes peuvent avoir paru flous ou complexe, mais nous allons revenir en profondeur sur chacun de ces diagrammes dans les chapitres suivants, pas d'inquiétude.
+
+Vous n'utiliserez que rarement tous les diagrammes, mais il convient de bien les avoir tous en tête pour apréhender l'utilisation de {sysml} dans son ensemble.
 
 == {revisions}
 
-[qanda]
-Associez les diagrammes suivants avec leurs acronymes (`{sd}`, `{dc}`, `{uc}`, `{pkg}`, `{dss}`)::
+. Associez les diagrammes suivants avec leurs acronymes (`{sd}`, `<<bdd-init,bdd>>`, `<<uc-init,uc>>`, `<<pkg-init,pkg>>`, `{dss}`) :
 - Diagramme de paquetages
 - Diagramme des cas d'utilisation
 - Diagramme de séquences système
-- Diagramme de classes
+- Diagramme de blocs
 - Diagramme de séquences
 
-Placez dans la matrice ci-dessous les différents diagrammes {sysml} vus dans ce chapitre :
+. Placez dans la matrice ci-dessous les différents diagrammes {sysml} vus dans ce chapitre : 
 
 include::matrice-cesame.asc[]
 
@@ -412,17 +522,14 @@ ifdef::correction[]
 [CAUTION]
 ====
 
-image::acronymes-cor.png[width=70%,scaledwidth=70%]
+. Acronymes :
+- Diagramme de paquetages `<<pkg-init,pkg>>`
+- Diagramme des cas d'utilisation `<<uc-init,uc>>`
+- Diagramme de séquences système `{dss}`
+- Diagramme de blocs `<<bdd-init,bdd>>`
+- Diagramme de séquences `{sd}`
 
-[align="center",cols="h,3*^,1",options="header",width=100]
-|======================
-|					| {Requirements} 	| {Structure}	| {Behavior} | ...
-| {organisation}	|					|        `{pkg}`	| |
-| {analysis}		|		`{uc}`		|       `{dc}`	|	`{dss}` |
-| {design}			|					|       `{dc}`	|	`{sd}` |
-| ... | | | |
-|======================
-
+. Cf. <<orga-diags>>
 ====
 
 endif::correction[]

@@ -14,7 +14,7 @@ Déclinaison de la méthode {CESAM} avec SysML et Papyrus.
 //-----------------------------------------------
 endif::final[]
 
-Pour ceux qui sont familiarisés avec {CESAM}, la <<cesamDeliverables>> présente la liste des principaux produits (_deliverables_) de {CESAM} et les sous-sections correspondantes, où nous abordons comment les réaliser en {sysml} :
+Pour ceux qui sont familiarisés avec {CESAM} et qui voudraient directement aller voir comment nous proposons de la mettre en œuvre avec {sysml}, la <<cesamDeliverables>> présente la liste des principaux produits (_deliverables_) de {CESAM} et les sous-sections correspondantes, où nous abordons comment les réaliser en {sysml} :
 
 
 
@@ -25,45 +25,45 @@ Pour ceux qui sont familiarisés avec {CESAM}, la <<cesamDeliverables>> présent
 :pdfWidth: 30%
 
 [[cesamDeliverables]]
-ifdef::FR[.Les produits CESAM]
+ifdef::FR[.Les "produits" CESAM]
 ifdef::UK[.The CESAM deliverables]
 ifdef::backend-pdf[[align="center",cols="<40%,^10%,^50",options="header"]]
 ifndef::backend-pdf[[align="center",cols="<40%,^10%,^50%",options="header",width=100]]
 |======================
-| Produits | Section | Illustration
-| stakeholder hierarchy diagram  | <<visionProjectStake>> | image:diagrams/SHS_stakeholder_hierarchy_diagram.SVG[width="{webWidth}",scaledwidth={pdfWidth}]
-| environment diagram | <<visionProjectEnv>>  | image:diagrams/SHS_environment_diagram.SVG[width="{webWidth}",scaledwidth={pdfWidth}]
-| need architecture diagram | <<visionOpReqs>>  |
+| Produits | Section | Illustration (from <<CESAM17>>)
+| Stakeholder hierarchy diagram  | <<visionProjectStake>> | image:diagrams/SHS_stakeholder_hierarchy_diagram.SVG[width="{webWidth}",scaledwidth={pdfWidth}]
+| Environment diagram | <<visionProjectEnv>>  | image:diagrams/SHS_environment_diagram.SVG[width="{webWidth}",scaledwidth={pdfWidth}]
+| Need architecture diagram | <<visionOpReqs>>  |
 image:visionOpReqsFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| life-cycle diagram | <<visionOpState>> |
+| Life-cycle diagram | <<visionOpState>> |
 image:visionOpStateFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| use case diagrams | <<visionOpStat>> |
+| Use case diagrams | <<visionOpStat>> |
 image:visionOpStatFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| operational scenarios diagrams | <<visionOpDyn>> |
+| Operational scenarios diagrams | <<visionOpDyn>> |
 image:visionOpDynFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| operational flow diagrams | <<visionOpFlow>> |
+| Operational flow diagrams | <<visionOpFlow>> |
 image:visionOpFlowFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| functional requirement architecture diagram | <<visionFuncReqs>> | image:visionFuncReqsFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| functional mode diagram | <<visionFuncState>> |
+| Functional requirement architecture diagram | <<visionFuncReqs>> | image:visionFuncReqsFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
+| Functional mode diagram | <<visionFuncState>> |
 image:visionFuncStateFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| functional decomposition diagrams | <<visionFuncStat>> |
+| Functional decomposition diagrams | <<visionFuncStat>> |
 image:visionFuncStatFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| functional interaction diagrams | <<visionFuncStat>> | image:visionFuncStatFig2.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| functional scenario diagrams | <<visionFuncDyn>> |
+| Functional interaction diagrams | <<visionFuncStat>> | image:visionFuncStatFig2.png[width="{webWidth}",scaledwidth={pdfWidth}]
+| Functional scenario diagrams | <<visionFuncDyn>> |
 image:visionFuncDynFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| functional flow diagrams | <<visionFuncFlow>> |
+| Functional flow diagrams | <<visionFuncFlow>> |
 image:visionFuncFlowFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| constructional requirement architecture | <<visionConstReqs>>  |
+| Constructional requirement architecture | <<visionConstReqs>>  |
 image:visionConstReqsFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| constructional mode diagram | <<visionConstState>>  |
+| Constructional mode diagram | <<visionConstState>>  |
 image:visionConstStateFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| constructional decomposition | <<visionConstStat>>  |
+| Constructional decomposition | <<visionConstStat>>  |
 image:visionConstStatFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| constructional interaction diagrams | <<visionConstStat>>  |
+| Constructional interaction diagrams | <<visionConstStat>>  |
 image:visionConstStatFig2.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| constructional scenario diagrams | <<visionConstDyn>> |
+| Constructional scenario diagrams | <<visionConstDyn>> |
 image:visionConstDynFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
-| constructional flow diagrams | <<visionConstFlow>> |
+| Constructional flow diagrams | <<visionConstFlow>> |
 image:visionConstFlowFig.png[width="{webWidth}",scaledwidth={pdfWidth}]
 |======================
 
@@ -84,14 +84,15 @@ Nous avons choisi dans ce livre de suivre cette démarche, en l'applicant sur no
 
 Le principal intérêt de cette approche est qu'elle est conforme aux standards de l'{incose}, qu'elle est suivie par de nombreux membres industriels français de l'{afis} et que nous avons rencontré une attente auprès des utilisteurs de {sysml} de pouvoir suivre une démarche standard.
 Elle possède également l'avantage de proposer un cadre simple et complet en terme de points de vues abordés et de couverture des éléments à modéliser.
+Enfin, elle est tout à fait compatible avec la méthode simplifiée présentée à la <<methodeSimplifie>>.
 
 Les principaux éléments de l'architecture sont :
 
 - Une organisation hiérarchique des préoccupations (Quoi ? / Qui ? / Où ?), représentée par une "Pyramide d'Architecture Système" (cf. <<cesamPyramid>>).
 +
-NOTE: La question du "Qui" porte ici sur le "_What_", c'est à dire "quelle partie du système". Pour la question du "qui est concerné par le système", elle est traitée en amont de ces éléments architecturaux, dans ce que {CESAM} appelle le _Environment Architecture_, que nous avons appelé le Contexte (cf. <<visionEnv>>).
+NOTE: La question du "Qui" porte ici sur le "_What_", c'est à dire "quelle partie du système". Pour la question du "qui est concerné par le système", elle est traitée en amont de ces éléments architecturaux, dans ce que {CESAM} appelle l'_Environment Architecture_, que nous avons appelé le Contexte du système (cf. <<visionEnv>>).
 - Une organisation en 9 vues du système, représentée par une matrice (cf. <<cesamMatrix>>).
-- Une démarche guidant m'architecture du système, représenté par un processus (cf. <<cesamProcess>>).
+- Une démarche guidant l'architecture du système, représentée par un processus (cf. <<cesamProcess>>).
 
 //-----------------------------------------------
 //-- Commentaire
@@ -100,7 +101,7 @@ ifndef::final[]
 .Commentaire
 [CAUTION]
 ====
-Figures à refaire pour les aspects (C)!
+Figures à refaire pour les aspects (C) et pour plus de lisibilité!
 ====
 endif::final[]
 //-----------------------------------------------

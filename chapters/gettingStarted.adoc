@@ -194,11 +194,34 @@ Pour ceux qui veulent véritablement maîtriser l'outil,
 nous renvoyons le lecteur aux tutoriels disponibles sur le site :
 https://www.eclipse.org/papyrus/documentation.html.
 
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Ce site n'est pas un ebonne vitrine, les tutos datent un peu. On met quoi ?
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
 == {revisions}
 
 . Quelle est la version actuelle de {papyrus} ?
+. Pourquoi y-a-t'il plusieurs façon de supprimer un élément dans {papyrus} ? 
+. Quel est l'intérêt d'avoir un outil de modélisation basé sur {eclipse} ?
 
+ifdef::correction[]
 
+== Éléments de réponses
+
+. `{papyrusversionlast}`
+. Car on peut supprimer un élément d'un diagramme ou supprimer définitivement l'élément de modèle (et donc le supprimer de tous les diagrammes où il apparaissait).
+. Parce qu'on peut alors bénéficier d'un certain nombre de plug-ins (génération de code, versionnage). 
+De plus on conserve ses habitudes (raccourcis claviers, etc.) si on est déjà familier avec {eclipse} (ce qui est le cas de nombreux développeurs informatiques par exemple).
+
+endif::correction[]
 
 //-----------------------------------------------
 :imagesdir: {imageold}
