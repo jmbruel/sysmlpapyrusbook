@@ -129,6 +129,15 @@ include::matrice-cesame.asc[]
 
 Cette matrice permet de situer les différents éléments qui seront abordés dans un cadre utile pour comparer ces éléments les uns aux autres.
 
+Les étapes {Requirements}, {Structure}, {Behavior} ou{Crosscutting} ont des chapitres ou sections dédiés, tandisque les étapes {State} et {Flows} sont distilées comme des sous-section systématiques dans les sections qui suivent.
+
+Voici un schéma qui présente le processus {CESAM} :
+
+[[cesamSysMLProcess]]
+ifdef::FR[.Les grandes étapes de {CESAM}]
+image::dessins/CESAMmethod.svg[width="80%",scaledwidth=80%]
+
+
 include::cesam-organisation.adoc[leveloffset=+1]
 
 include::cesam-contexte.adoc[leveloffset=+1]

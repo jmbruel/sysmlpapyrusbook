@@ -19,7 +19,7 @@ La <<FriedenthalSimplifiedMethod>> résume (dans un diagramme d'activité) une d
 
 [[FriedenthalSimplifiedMethod]]
 .Une démarche MBSE simplifiée (tirée de <<Friedenthal2016>>)
-image::FriedenthalSimplifiedMethod.png[width="40%",scaledwidth="40%"]
+image::simpleFridenthalmethod.svg[width="40%",scaledwidth="40%"]
 
 //-----------------------------------------------
 ifndef::final[]

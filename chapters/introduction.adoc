@@ -195,7 +195,7 @@ Nous donnons ensuite un aperçu de tous les diagrammes {sysml}, pour que le lect
 Après la définition de quelques éléments méthodologiques (chapitre <<methode>>), nous attaquons la manipulation proprement dite de {papyrus} (<<GettingStarted>>).
 Nous rentrons ensuite dans le détail de {sysml} en présentant les concepts avancés (<<avances>>).
 Nous commençons par les exigences (<<reqs>>), nous poursuivons par l'utilisation du système (cas d'utilisation et interfaces, <<Usages>>), puis traitons des éléments structurels (<<archi>>) et comportementaux (<<behavior>>), puis des interaction (<<interaction>>).
-De part leur importance, nous consacrons un chapitre entier aux concepts avancés en lien avec les préoccupations transverses (<<crossCuting>>).
+De part leur importance, nous consacrons un chapitre entier aux concepts avancés en lien avec les préoccupations transverses (<<crossCutting>>).
 Nous terminons par différents aspects complémentaires qui permettent d'aller encore plus loin (<<realLife>>).
 Un certain nombres d'<<acro,annexes>> complètent le livre.
 

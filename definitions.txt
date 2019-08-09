@@ -170,10 +170,10 @@ endif::[]
 // data divers
 :Requirements: <<reqs,Exigences>>
 :Structure: <<archi,Structures>>
-:State: <<cesState,États>>
+:State: États
 :Behavior: <<behavior,Interactions>>
-:Flows: <<cesFlows,Flux>>
-:Crosscutting: <<transvers,Transversalités>>
+:Flows: Flux
+:Crosscutting: <<crossCutting,Transversalités>>
 :context: Environnement
 :organisation: Organisation
 :analysis: Vision Opérationelle

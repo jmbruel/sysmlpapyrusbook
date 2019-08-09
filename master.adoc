@@ -90,7 +90,7 @@ include::chapters/behavior.adoc[leveloffset=+2]
 include::chapters/interaction.adoc[leveloffset=+2]
 //JMB
 
-include::chapters/crossCuting.adoc[leveloffset=+1]
+include::chapters/crossCutting.adoc[leveloffset=+1]
 // SEB
 
 include::chapters/realLife.adoc[leveloffset=+1]

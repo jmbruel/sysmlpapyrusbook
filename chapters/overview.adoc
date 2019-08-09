@@ -494,7 +494,7 @@ Tous ces éléments seront détaillés à la <<package>>.
 == Allocation, traçabilité et autres points de cohérences
 //---------------------------------------------------------------------------------
 
-Tous ces éléments seront détaillés au <<crossCuting>>.
+Tous ces éléments seront détaillés au <<crossCutting>>.
 
 == {resume}
 

@@ -1,5 +1,5 @@
 
-[[crossCuting]]
+[[crossCutting]]
 = Préoccupations transverses de modélisation
 
 //-----------------------------------------------
