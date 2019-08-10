@@ -15,10 +15,12 @@ hide methods
 ' Attribute and name values (for translation purpose). Add anything you need, but don't modify!
 '-----------------------------------
 !define ACTOR ":Actor"
+!define BLOCK <<Block>>
 !define EXTENDS << extends >>
 !define INCLUDE << include >>
-!define SYSTEM ":System"
 !define REQ <<requirement>>
+!define SYSTEM ":System"
+!define TEST <<test>>
 
 ' Usefull functions
 '-----------------------------------

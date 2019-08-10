@@ -53,7 +53,7 @@ On abordera :
 
 En terme d'organisation, le mécanisme clef est celui de _package_.
 Celui-ci va permettre d'organiser les modèles, pas le système lui-même.
-Nous aborderons plus en détail cette organisation en étudiant le <<package,diagramme de paquetage>>.
+Nous aborderons plus en détail cette organisation en étudiant le <<package,diagramme de _packages_>>.
 
 Pour l'organisation du système, on trouve le plus souvent :
 
@@ -91,7 +91,7 @@ _Operations_::
 _Constraints_::
 	Les contraintes (cf. <<contraintes>>)
 _Allocations_::
-	Les allocations (cf. <<transvers>>)
+	Les allocations (cf. <<crossCutting>>)
 _Requirements_::
 	Les exigences liées à ce bloc.
 _User defined_::
@@ -239,7 +239,7 @@ On retrouve cette association entre blocs, mais aussi entre acteurs, cas d'utili
 
 
 [[param]]
-== _Parametric Diagrams_
+== Diagramme paramétrique (par)
 
 Afin de capturer de manière précise les contraintes entre valeurs, ou encore les liens entre les sorties et les entrées d'un bloc, {sysml} utilise trois concepts clefs :
 
@@ -251,7 +251,7 @@ Afin de capturer de manière précise les contraintes entre valeurs, ou encore l
 
 C'est un bloc particulier :
 
-- avec un stéréotype `<<constraint>>` (au lieu de bloc)
+- avec un stéréotype +<<constraint>>+ (au lieu de bloc)
 - des paramètres en guise d'attributs
 - des relations liant (contraignant) ces paramètres
 
@@ -266,10 +266,24 @@ _A constraint block is a block that packages the statement of a constraint so it
 
 === Diagramme paramétrique
 
-C'est une forme particulière de _Internal Block Definition_
+C'est une forme particulière d'_Internal Block Definition_ (cf. <<ibd>>).
+On y retrouve les contraintes, vues à l'instant, mais cette fois-ci on a la représentation graphique des liens entre les données.
 
 .Exemple de diagramme paramétrique
 image::param.png[width="90%",scaledwidth="50%"]
+
+[NOTE]
+====
+Il est regrettable que ce diagramme soit le moins utilisé (cf. <<OMG2009>>).
+
+.Diagrammes les plus utilisés (tiré de <<OMG2009>>)
+image::survey4.png[link="http://www.omgsysml.org/SysML_2009_RFI_Response_Summary-bone-cloutier.pdf",width="80%",scaledwidth=50%]
+====
+
+[NOTE]
+====
+Certaines approches (cf. <<MeDICIS>>) utilisent des feuilles excel pour traduire les diagrammes paramétriques et contrôler l'impact des changements de valeurs de tel ou tel paramètre.
+====
 
 === _Value Binding_
 
@@ -280,6 +294,9 @@ Pour assigner des valeurs spécifiques, on utilise des _Block Configurations_;
 
 .Exemple de bloc de configuration
 image::blockconf.png[width="90%",scaledwidth="50%", link="http://books.google.fr/books?id=8KY2YZIiXv0C&pg=PA174&lpg=PA174&dq=SYSml+%22block+configuration%22&source=bl&ots=ZdxokRYj6l&sig=PlDHvR8qGZC97W-C_08Yk9Xb1RY&hl=fr&sa=X&ei=1jizUOXKBsXAhAeinYHACg&ved=0CEEQ6AEwAg#v=onepage&q=SYSml%20%22block%20configuration%22&f=false"]
+
+
+
 
 == {resume}
 En résumé, il existe plusieurs diagrammes permettant d'exprimer la structure du système à concevoir. En fonction du niveau de détail nécessaire on peut voir les sous-systèmes comme des boîtes noires (des blocs) ou comme des boîtes blanches (grâce à l'`{ibd}` correspondant).

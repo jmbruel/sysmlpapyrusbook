@@ -34,7 +34,7 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 =====
 Nous aborderons les concepts du niveau
 initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM):
-requirement, requirement diagram, derive, verify, satisfy, refine, trace, containment.
+requirement, requirement diagram, deriveRqt, verify, satisfy, refine, trace, containment.
 =====
 
 Les exigences sont prises en compte à différent niveaux en {SysML}.
@@ -64,7 +64,7 @@ de les exprimer, de les manipuler et surtout de les lier avec le reste du systè
 
 Un _Requirement_ en {sysml} permet de représenter une exigence, généralement
 référencée dans un document à part (ou dans un logiciel dédié).
-Une exigence est donc représentée par un bloc particulier (stéréotypé `<< requirement >>`), avec deux attributs
+Une exigence est donc représentée par un bloc particulier (stéréotypé +<< requirement >>+), avec deux attributs
 obligatoires : _Id_ qui représente une référence unique (généralement reprise du
 	document initiale d'où a été importée l'exigence), et _text_ qui reprend le texte
 	descriptif de l'exigence.
@@ -203,7 +203,7 @@ image::req-exp.png[width="40%",scaledwidth="40%"]
 
 Il existe ensuite les relations entre les besoins et les autres éléments de modélisation
 (les _block_ principalement) comme `\<<satisfy>>` ou `\<<verify>>`, mais nous les aborderons
-dans la partie <<transvers,transverse>>.
+dans la partie <<crossCutting,transverse>>.
 
 .Relations liées au _requirements_ dans {papyrus}
 image::req-connections.png[width="20%",scaledwidth="20%"]
@@ -240,7 +240,7 @@ image::rationale.png[width="80%",scaledwidth="80%"]
 
 Une fois que les _requirements_ ont été définis et organisés, il est utile de les lier au moins aux _use cases_
 (en utilisant `\<<refine>>` par exemple) et aux éléments structurels (en utilisant `\<<satisfy>>` par exemple), mais ceci
-sera abordé dans la partie sur les concepts <<transvers,transverses>>.
+sera abordé dans la partie sur les concepts <<crossCutting,transverses>>.
 
 [NOTE]
 ====
@@ -323,7 +323,7 @@ image::{papyrusversion}/containment.png[width="30%",scaledwidth=30%]
 On voit que la notion de _Containment_ n'est pas juste une métaphore.
 Cela peut poser des problèmes d'organisation. C'est pour cela  que nous vous conseillons
 plutôt de réaliser vos modèles <<mod-art,à partir des artefacts>>.
-On pourra solutionner ce problème en utilisant le lien de `<< copy>>` fait pour cela.
+On pourra solutionner ce problème en utilisant le lien de +<< copy>>+ fait pour cela.
 +
 image::{papyrusversion}/copy.png[width="30%",scaledwidth=30%]
 

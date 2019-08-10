@@ -72,23 +72,7 @@ include::chapters/gettingStarted.adoc[leveloffset=+1]
 
 include::chapters/cesam.adoc[leveloffset=+1]
 
-[[avances]]
-== Concepts SysML avancés
-
-include::chapters/requirements.adoc[leveloffset=+2]
-// SEB
-
-include::chapters/usages.adoc[leveloffset=+2]
-// SEB
-
-include::chapters/structure.adoc[leveloffset=+2]
-// JMB
-
-include::chapters/behavior.adoc[leveloffset=+2]
-// SEB
-
-include::chapters/interaction.adoc[leveloffset=+2]
-//JMB
+include::chapters/conceptsAvances.adoc[leveloffset=+1]
 
 include::chapters/crossCutting.adoc[leveloffset=+1]
 // SEB
@@ -105,12 +89,18 @@ include::chapters/appendix.adoc[]
 ifdef::backend-docbook[]
 [index]
 Index
------
 endif::backend-docbook[]
 
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
 
 == Divers (notes et ToDoList)
 
+.Commentaire
+[CAUTION]
+====
 - Au sujet de SysML
 [options=interactive]
 * [*] s'appuyer sur les niveaux tels que définit dans le certificat SysML de l'OMG
@@ -125,3 +115,7 @@ endif::backend-docbook[]
 ***	Deux parties dédiés.
 ***	Pour chaque chapitre (quand cela fait du sens), avoir deux niveaux de présentation, débutant et avancé.
 ***	Des parties bien marquées « avancé » au fil de l'eau.
+
+====
+endif::final[]
+//-----------------------------------------------

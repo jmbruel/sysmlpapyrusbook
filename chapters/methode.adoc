@@ -106,3 +106,30 @@ To be completed!!
 ====
 //-----------------------------------------------
 endif::final[]
+
+== {resume}
+...
+
+.Organisation
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis}	| | | | |  
+| {design}	| | | | | 
+| {implementation}	| | | | | 
+|======================
+
+== {revisions}
+
+. ...
+
+ifdef::correction[]
+
+== Éléments de réponses :
+
+. ...
+
+endif::correction[]

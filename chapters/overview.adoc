@@ -211,7 +211,7 @@ Mis à part les deux diagrammes <<reqs, des exigences>> (`{req}`, représentatio
 nécessitent de préciser l'utilisation que nous préconisons d'en faire.
 
 Pour les diagrammes structuraux (statiques), quand il s'agira de représenter les architectures,
-nous utiliserons les <<bddsec,diagrammes de définition de blocs>> (`<<bdd-init,bdd>>`), et pour représenter l'intérieur d'un système,
+nous utiliserons les <<bdd,diagrammes de définition de blocs>> (`<<bdd-init,bdd>>`), et pour représenter l'intérieur d'un système,
 nous utiliserons le <<ibd,diagramme de blocs internes>> (`<<ibd-init,ibd>>`).
 Le <<param,diagramme paramétrique>> (`<<par-init,par>>`) n'est qu'un diagramme de blocs internes particulier, dédié aux relations entre valeurs
 (pour représenter des lois physiques par exemple).
@@ -322,7 +322,7 @@ La <<bdd-init-fig>> illustre un diagramme de bloc précisant ...
 image::todo.jpg[]
 
 //-------------------------------
-IMPORTANT: Pour les lecteurs familiers d'{uml}, le concept {sysml} de _block_ est à rapprocher du concept {uml} de _class_ (cf. <<bddsec>>).
+IMPORTANT: Pour les lecteurs familiers d'{uml}, le concept {sysml} de _block_ est à rapprocher du concept {uml} de _class_ (cf. <<bdd>>).
 D'ailleurs vous constaterez que les blocs sont des rectables (comme les classes en {uml}) étiquetés avec le stéréotype +<<Block>>+. 
 //-------------------------------
 
@@ -384,8 +384,8 @@ Tous ces éléments seront détaillés à la <<ibd>>.
 //---------------------------------------------------------------------------------
 //Participants, acteurs, ligne de vie, etc.
 
-Le diagramme de séquences est un diagramme populaire pour représenter les
-participants et leurs interactions.
+Le diagramme de séquences (`sd`) est emprunté à {uml} (_Sequence Diagram_) et
+est utilisé pour représenter les participants et leurs interactions.
 
 Après que les grandes fonctionalités du système aient été identifiées et classifiées (cf. <<uc-init>>), il convient de préciser les cas d'utilisation en décrivant des scénarios concrets qui précisent, de manière chronologique, les interactions entre acteurs et les différents éléments du systèmes qui collaborent à la réalisation d'un service ou d'une fonctionalité donnée.
 
@@ -393,22 +393,6 @@ Il est souvent intéressant de procéder par étapes, en définissant un premier
 Dans ce diagramme, appelé diagramme de séquences système (<<dss,dss>>), le seul participant (en dehors des acteurs) est le système lui-même.
 
 Il est ensuite possible de représenter le même cas d'utilisation, mais en considérant cette fois-ci le système comme une "boîte blanche", c'est-à-dire en précisant les différents participants impliqués par ce cas.
-
-[[dss]]
-=== Diagrammes de séquences système
-
-Les diagrammes de séquences système (`dss`) sont des _Sequence Diagrams_ {uml}
-classiques où seul le système est représenté comme une boîte noire en
-interaction avec son environnement (les utilisateurs ou les périphériques généralement).
-
-Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails.
-Il convient donc mieux à l'ingénierie système qu'un diagramme de séquences
-classique.
-
-.Exemples de DSS
-image::dss.png[width="50%",scaledwidth="40%"]
-
-[red]*xxx à refaire à partir de SHS xxx*
 
 === Diagramme de séquences
 
@@ -430,6 +414,23 @@ NOTE: Le temps se déroule de haut en bas, sans notion particulière d'échelle 
 
 Tous ces éléments seront détaillés à la <<seq>>.
 
+[[dss]]
+=== Diagrammes de séquences système
+
+Les diagrammes de séquences système (`dss`) sont des diagrammes de séquences
+classiques où seul le système est représenté comme une boîte noire en
+interaction avec son environnement (les utilisateurs ou les périphériques généralement).
+
+Il permet de décrire les scénarios des cas d'utilisation sans entrer dans les détails.
+Il convient donc mieux à l'ingénierie système qu'un diagramme de séquences
+classique.
+
+.Exemples de dss
+image::dss.png[width="50%",scaledwidth="40%"]
+
+[red]*xxx à refaire à partir de SHS xxx*
+
+
 //=========================
 //==== STATEMACHINES ==========
 //=========================
@@ -438,6 +439,15 @@ Tous ces éléments seront détaillés à la <<seq>>.
 == Diagramme d'états (stm)
 // Sebastien
 //---------------------------------------------------------------------------------
+
+Les diagrammes d'états-transitions (plus simplement diagramme d'états) sont empruntés à {UML} et décrivent le comportement interne d'un objet à l'aide d'un automate à états finis.
+
+Les notions importantes de ce diagramme sont :
+
+[%step]
+- états
+- actions
+- événements déclencheurs
 
 image::todo.jpg[]
 
@@ -452,6 +462,10 @@ Tous ces éléments seront détaillés à la <<stm>>.
 // Sebastien
 //---------------------------------------------------------------------------------
 
+Le diagramme d’activités, lui aussi empruntés à {UML}, est un diagramme comportemental qui permet de représenter le déroulement d’un processus.
+Il combine donc des informations concernant la chronologie d'événements mais également le circuit et le traitement d'informations, objets ou flux en fonction de ces événements.
+Il sera par exemple utilisé pour préciser des cas d'utilisation.
+
 image::todo.jpg[]
 
 Tous ces éléments seront détaillés à la <<act>>.
@@ -465,11 +479,14 @@ Tous ces éléments seront détaillés à la <<act>>.
 // Sebastien
 //---------------------------------------------------------------------------------
 
+Le diagramme paramétrique est un diagramme structurel qui permet d'exprimer des contraintes sur des éléments (des lois physiques par exemple). 
+Ce diagramme est une extension du diagramme de blocs internes ({ibd}, cf. <<ibd>>) mais permet de relier les blocs existants à des blocs particuliers (appelés "de contraintes").
+
 image::todo.jpg[]
 
 Tous ces éléments seront détaillés à la <<param>>.
 
-[[pkg-init,pkg]]
+[[pkg-init]]
 //=========================
 //==== PACKAGES ==========
 //=========================
@@ -483,6 +500,10 @@ Un _package_ peut contenir d'autres _package_, des blocs, des diagrammes, etc.
 NOTE: Un _package_ n'est pas un composant mais une unité d'organisation du modèle.
 Un _package_ constitue un espace de nommage (_namespace_) pour les éléments
 qu'il contient.
+
+.Exemples de diagramme de _packages_
+image::dss.png[width="50%",scaledwidth="40%"]
+
 
 Tous ces éléments seront détaillés à la <<package>>.
 

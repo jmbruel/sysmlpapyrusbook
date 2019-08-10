@@ -128,3 +128,7 @@ Il est possible d'exécuter des scripts...
 . Ouvrir l'exemple qui vient avec (menu:File[New > Example... > Papyrus EASE > Papyrus EASE Jupyter Example]).
 TIP: Cela crée un projet dans votre workspace, lisez le fichier `Readme.MD` qui donne quelques instructions.
 
+[[Analyse]]
+=== Analyser les modèles
+
+

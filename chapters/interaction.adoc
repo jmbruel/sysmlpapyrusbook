@@ -321,7 +321,7 @@ _Control flow may be notated with a dashed line and stick arrowhead..._
 Les activités peuvent être réutilisées à travers des actions d’appel (_callBehaviorAction_).
 L’action d’appel est représentée graphiquement par une fourche à droite de la boîte d’action, ainsi que par la chaîne : `nom d’action : nom d’activité`. {SysML} propose encore bien d’autres concepts et notations, comme la région interruptible, la région d’expansion ou encore les flots de type _stream_ qui sortent du cadre de ce livre d'introduction.
 
-.Exemple de _callBehaviorAction_ (UK)
+.Exemple de _callBehaviorAction_
 image::act-call.png[width="20%",scaledwidth=50%]
 
 == À vous de jouer

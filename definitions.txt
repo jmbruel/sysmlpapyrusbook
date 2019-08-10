@@ -7,6 +7,7 @@
 :papyrusversion: 4.0
 :sysmlversion: 1.4
 :papyrusversionlast: 2019-06
+:umlversion: 2.5.1
 :sysmlversionlast: 1.6
 :siteurl: https://bit.ly/sysmlbook
 :githuburl: https://github.com/jmbruel/sysmlpapyrusbook
@@ -111,7 +112,7 @@ endif::[]
 :sysml: http://www.omgsysml.org/[SysML(R)]indexterm:[SysML]
 :sysmod: https://model-based-systems-engineering.com/sysmod/[SYSMOD]
 :topcased: http://www.topcased.org[TOPCASED]indexterm:[Topcased]
-:uml: http://www.uml.org/[UML(TM)]indexterm:[UML(TM)]
+:uml: http://www.uml.org/[UML(R)]indexterm:[UML(R)]
 :umlspec: http://www.omg.org/spec/UML/2.4.1/Infrastructure/PDF/[UML 2.4.2 Specifictation]
 :umple: http://cruise.eecs.uottawa.ca/umple/[Umple]
 :visualP: https://www.visual-paradigm.com/[Visual Paradigm]

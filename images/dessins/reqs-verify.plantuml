@@ -1,17 +1,13 @@
 '-----------------------------------
 ' SysML basic concepts illustrated
-' JMB 2017
+' JMB 2019
 '-----------------------------------
 @startuml
 ' File where const and functions are defined:
 !include Defs.txt
 '-----------------------------------
 
-:Etat;
-if (test) then (yes)
-  :EtatYes;
-else (no)
-  :EtatNo;
-endif
-
+class Req REQ
+class Test TEST
+Req <. Test : <<verify>>
 @enduml

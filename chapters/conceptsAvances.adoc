@@ -1,0 +1,46 @@
+[[avances]]
+= Concepts SysML avancés
+
+include::requirements.adoc[leveloffset=+1]
+// SEB
+
+include::usages.adoc[leveloffset=+1]
+// SEB
+
+include::structure.adoc[leveloffset=+1]
+// JMB
+
+include::behavior.adoc[leveloffset=+1]
+// SEB
+
+include::interaction.adoc[leveloffset=+1]
+//JMB
+
+== {resume}
+{sysml} est une notation complexe et souvent la difficulté pour un débutant n'est pas tant la notation elle-même, que déterminer à quel endroit, avec quel diagramme et quels éléments la modélisation d'un concept particulier va poivoir être réalisé.
+
+
+.Organisation
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis}	| | | | |  
+| {design}	| | | | | 
+| {implementation}	| | | | | 
+|======================
+
+== {revisions}
+
+. ...
+
+ifdef::correction[]
+
+== Éléments de réponses :
+
+. ...
+
+endif::correction[]
+

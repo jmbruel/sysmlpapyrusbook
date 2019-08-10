@@ -57,8 +57,7 @@ Néanmoins, il ne faut pas se contenter d'un simple dessin pour au moins deux ra
 
 Un modèle est une sorte de base de donnée qui regroupe des éléments issues de différents points de vue (saisis le plus souvent au travers de diagrammes).
 Un diagramme est une vue partielle du modèle (donc incomplète).
-Le modèle est la vraie plus value car il va permettre de détecter les incohérences sur les exigences, les problèmes de complétude,
-lancer des analyses, faire des transformations vers d'autres langages ou formats, etc.
+Le modèle est la vraie plus value car il va permettre de détecter les incohérences sur les exigences, les problèmes de complétude, lancer des analyses, faire des transformations vers d'autres langages ou formats, etc.
 Par exemple dans un outil de modélisation il y a une grande différence entre supprimer un élément d'un diagramme (on parlera alors de "masquer" un élément d'un diagramme) et supprimer un élément de modèle (ce qui aura pour effet de supprimer cet élément de tous les diagrammes où il était présent).
 
 //=== Quoi modéliser
