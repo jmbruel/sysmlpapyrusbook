@@ -281,7 +281,7 @@ image::visionOpFlowFig.png[width="80%",scaledwidth=80%]
 
 ifdef::correction[]
 
-== Éléments de réponses :
+== Éléments de réponses
 
 . Quelles sont les différences entre *besoins* et *exigences* ?
 Les besoins sont exprimés du point de vue extérieur au système, dans le langage de l'environnement tandis que les exigences sont exprimés du point de vue interne du système, dans le langage du système.

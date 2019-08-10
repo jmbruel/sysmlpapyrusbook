@@ -36,7 +36,7 @@ On abordera :
 
 NOTE: Les _State Machines_ sont vues dans la partie sur les <<behavior,comportements>>.
 
-[[seq]]
+[[sd]]
 //-----------------------------------------------
 == Diagrammes de séquence
 //-----------------------------------------------

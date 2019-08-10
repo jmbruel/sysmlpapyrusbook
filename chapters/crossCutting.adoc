@@ -283,7 +283,7 @@ ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
 
 ifdef::correction[]
 
-== Éléments de réponses :
+== Éléments de réponses
 
 . Quelles sont les différences entre `\<<satisfy>>+ et `\<<allocate>>+ ?
 La satisfaction concerne une propriété (d'une solution vis à vis d'un problème) quand l'allocation permet de rajouter un information sur qui fait quoi.

@@ -175,28 +175,27 @@ endif::final[]
 //-----------------------------------------------
 
 == {resume}
-...
 
-.Organisation
-ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
-ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
-|======================
-|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
-| {organisation} 6+|
-| {context} 5+| .4+<.>m|
-| {analysis}	| | | | |  
-| {design}	| | | | | 
-| {implementation}	| | | | | 
-|======================
+Nous avons présenté dans ce chapitre une façon organisée et structurée de réaliser la modélisation d'un système en suivant la méthode {cesam}, en utilisant la notation {sysml}. 
+Nous avons mis cela en pratique en modélisant notre étude de cas en utilisant {papyrus}.
+
+Ce chapitre est un véritable tutoriel concernant à la fois la méthode, la notation, et l'outil.
+Nous invitons le lecteur à utiliser le matériel d'accompagnement de cet ouvrage (vidéos, tutoriels, modèles à télécharger, etc.) sur le site d'accopagnement : {siteurl}.
 
 == {revisions}
 
-. ...
+. Qu'appelle-t'on la "Matrice d'Architecture Systèmes" de {cesam} ?
+. Quelles sont les 3 principales "visions" de {cesam} ?
+. Qu'est-ce qui les différencie principalement ?
+. Quels sont les principaux diagrammes utilisés dans la mise en œuvre en {sysml} de {cesam} ?
 
 ifdef::correction[]
 
-== Éléments de réponses :
+== Éléments de réponses
 
-. ...
+. Cf. <<cesamMatrix>>
+. Opérationnelle, Fonctionnelle et Organique.
+. Leur niveau d'abstraction.
+. {uc}, {bdd}, {ibd}, {stm}, {seq} 
 
 endif::correction[]

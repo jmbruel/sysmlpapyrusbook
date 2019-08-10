@@ -168,7 +168,7 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 
 ifdef::correction[]
 
-== Éléments de réponses :
+== Éléments de réponses
 
 . ...
 
