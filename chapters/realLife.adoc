@@ -126,7 +126,13 @@ Il est possible d'exécuter des scripts...
 
 . Ajouter le complément EASE à {papyrus} en utilisant l'update-site suivant : {easeURL}.
 . Ouvrir l'exemple qui vient avec (menu:File[New > Example... > Papyrus EASE > Papyrus EASE Jupyter Example]).
+Cf. <<jupyter>>.
++
 TIP: Cela crée un projet dans votre workspace, lisez le fichier `Readme.MD` qui donne quelques instructions.
+
+[[jupyter]]
+.Exemple de scripting de Papyrus
+image::ease.png[EASE in Papyrus,width=100%,scaledwidth=100%]
 
 [[Analyse]]
 === Analyser les modèles
