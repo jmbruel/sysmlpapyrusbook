@@ -3,11 +3,11 @@
 
 == Ce que *n'est pas* ce livre :
 
-Ce livre *n'est pas* un livre :
+Ce livre *n'est pas* :
 
-- de référence (pour cela, même s'il est en anglais, nous conseillons <<Friedenthal2016>>)
-- sur la meilleure approche méthodologique possible avec {sysml} (car il n'y en a pas d'absolue)
-- pour réviser l'examen de certification de l'{OMG} ou de l'{incose}, comme <<OCSMP>>
+- un livre de référence sur {sysml} (pour cela, même s'il est en anglais, nous conseillons <<Friedenthal2016>>)
+- un livre sur la meilleure approche méthodologique possible avec {sysml}. Il n'en existe pas. Une méthode est bonne si elle vous est adaptée, en particulier si elle prend en compte les besoins et les contraintes  de votre niveau d'experise, ou encore de vos préoccupations.
+- un livre pour réviser l'examen de certification de l'{OMG} ou de l'{incose}, comme <<OCSMP>>
  (mieux vaut vous plonger dans la spécification de référence <<SysML>>)
 
 == Pourquoi lire ce livre ?
@@ -16,35 +16,37 @@ Il peut y avoir plusieurs raisons de lire ce livre, même partiellement.
 //Voici les différentes raisons qui peuvent vous y avoir amené :
 Vous pouvez vous reconnaître dans l'une des situations suivantes :
 
-Je veux améliorer mon processus d'{IS}::
-Vous êtes un professionnel dans le domaine de l'{is} et vous êtes intéressé par la modélisation.
+Je souhaite améliorer mon processus d'ingénierie système {IS}::
+Vous êtes un professionnel dans le domaine de l'ingénierie système et vous êtes intéressé par la modélisation.
 Nous espérons que les conseils pratiques, appliqués avec l'outil {papyrus},
 vous permettront de tester l'intérêt de {sysml} pour votre domaine.
 
-Je veux apprendre {SysML} par la pratique::
-Ce livre est entièrement réalisé dans cet objectif : apprendre les concepts et la notation en les mettant en oeuvre.
-Nous allons à l'essentiel des concepts et surtout nous vous permettons de les
-manipuler de manière concrète dans l'outil {papyrus}.
+Je souhaite m'initier à {SysML} par la pratique::
+Ce livre est entièrement réalisé dans cet objectif : apprendre les concepts principaux et la notation du langage en les mettant en oeuvre.
+Nous allons à l'essentiel des concepts et surtout nous vous permettons de les manipuler de manière concrète dans l'outil {papyrus} au travers d'un exemple concret.
 
-Je veux maîtriser {Papyrus}::
-Le logiciel prend une part de plus en plus importante dans le développement de systèmes complexes.
+Je souhaite savoir utiliser {Papyrus}::
+Les outils logiciel prennent une part de plus en plus importante dans le développement de systèmes complexes.
 Si vous utilisez déjà Papyrus comme modeleur {uml}, et que vous souhaitiez apprendre {sysml} en conservant vos habitudes,
 ce livre, réalisé en collaboration avec l'équipe du {list} en charge du développement de {papyrus}, devrait vous y aider.
 
-Je veux utiliser des solutions _open-source_ pour l'{IS}::
+Je souhaite utiliser des solutions _open-source_ pour l'{IS}::
 C'est un des avantages de {papyrus} : c'est un logiciel ouvert, auquel de nombreux programmeurs contribuent,
 permettant ainsi la prise en compte rapide des remarques utilisateurs, la disponibilité d'un forum riche, etc.
 
-Je veux utiliser des normes d'{IS}::
-Si, comme généralement en {is}, vous basez vos processus et outils sur des standards (cf. <<standards>>), vous aurez
+Je souhaite utiliser des normes d'ingénierie systeme{IS}::
+Si, comme il est généralement préconisé en {IS}, vos processus et vos outils s'appuient sur des normes et des standards de fait (cf. <<standards>>), vous aurez
 avec {sysml}, une notation standard pour vos modèles (apprise en filière technologique STI-2D des Lycées,
-en classes préparatoires et dans beaucoup d'écoles d'ingénieurs).
+en classes préparatoires et dans la plus part des d'écoles d'ingénieurs et des universités et cela a l'échelle du mon entier).
 Et vous aurez, avec {papyrus}, un outils 100% conforme à la spécification.
 
-Je veux appliquer la démarche {cesam} en utilisant la notation {SysML}::
+Je souhaite appliquer la démarche {cesam} en utilisant la notation {SysML}::
 {cesam} est une démarche très répandue en France, et c'est une des raisons qui nous ont poussé à utiliser cette démarche comme exemple dans cet ouvrage. 
 
-Je veux gagner du temps::
+Je souhaite préparé un cours ou une formation pratique à {sysml}::
+Blala...
+
+Je souhaite gagner du temps::
 Nous avons essayé de concevoir ce livre comme un manuelfootnote:[Au sens latin du terme : "que l'on peut
 avoir toujours à portée de main".] pratique, en organisant les concepts
 et les pratiques.
@@ -86,7 +88,7 @@ directement les documents référencés par une URL, etc.
 
 [NOTE]
 ====
-Si vous lisez la version papier de ce document, ces liens clickables ne
+Si vous lisez la version papier de ce document, ses hyperliens clickables ne
 vous servent à rien, mais n'hésitez pas à en consulter la version {siteurl}[électronique]!
 ====
 
