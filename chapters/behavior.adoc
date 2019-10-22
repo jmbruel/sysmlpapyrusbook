@@ -161,7 +161,7 @@ mais cette fois y compris dans tous les sous-états.
 
 Les événements déclencheurs d'une transition peuvent être de nature différente :
 
-Call Event:: déclenché par l'invocation d'une méthode, c'est à dire d'une opération fournie
+Call Event:: déclenché par l'invocation d'une méthode, c'est-à-dire d'une opération fournie
 par l'élément considéré (le nom de l'opération est utilisé)
 Signal Event:: déclenché par l'arrivée d'un signal asynchrone (le nom du signal est utilisé)
 Time Event:: déclenché à un certain moment, que ce soit absolu (mot-clef `*at*`) ou relativement

@@ -211,7 +211,7 @@ image::req-connections.png[width="20%",scaledwidth="20%"]
 [[reqDiags]]
 == Les _Requirements Diagrams_
 
-Voici un exemple de `{req}` un peu plus étoffé, tiré de http://www.uml-sysml.org/sysml (voir aussi <<rationale>>) :
+Voici un exemple de `{req}` un peu plus étoffé, extrait de http://www.uml-sysml.org/sysml (voir aussi <<rationale>>) :
 
 .Exemples de composition d'exigences
 image::rationale.png[width="90%",scaledwidth="80%"]
@@ -314,7 +314,7 @@ image::{papyrusversion}/arrange.png[width="30%",scaledwidth=30%]
 À ce stade il nous faut faire plusieurs observations :
 
 - Notre exigence `Secutity`, se retrouve au même niveau que le diagramme lui-même
-(c'est à dire dans le modèle `SHS Requirements`).
+(c'est-à-dire dans le modèle `SHS Requirements`).
 - Les exigences qui composent notre exigence `Security` ont "disparues" de leur _package_
 initial et sont maintenant "dans" notre exigence.
 +

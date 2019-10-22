@@ -46,7 +46,7 @@ Reste à faire :
 
 * [ ] Changer le site du livre par https://github.com/ PapyrusSysMLinAction/SmartHomeUseCase
 * [ ] Ajouter le lien vers le standalone de Papyrus-SysML si disponible
-
+* [ ] Revoir les commentaires de Seb (Cadres, Outils, etc.)
 ====
 endif::final[]
 //-----------------------------------------------

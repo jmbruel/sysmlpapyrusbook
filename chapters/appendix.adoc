@@ -50,6 +50,9 @@ _**P**ac**k**a**g**e Diagram_, le diagramme des paquetages (cf. <<package>>)
 REQ::
 _**REQ**uirements Diagram_, le diagramme des exigences (cf. <<reqs>>)
 
+RTF::
+_**R**evision **T**ask **F**orce_
+
 SD::
 _**S**equence **D**iagram_, le diagramme de séquences (cf. <<seq>>)
 

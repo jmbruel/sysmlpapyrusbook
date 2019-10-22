@@ -4,6 +4,7 @@
 
 //Papyrus
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
+:papyrusUML: http://www.eclipse.org/papyrus/[Papyrus]
 :papyrusversion: 4.0
 :sysmlversion: 1.4
 :papyrusversionlast: 2019-06
@@ -87,6 +88,8 @@ endif::[]
 :omg: link:http://www.omg.org[OMG(TM)]indexterm:[OMG]
 :OSLC: http://open-services.net/[OSCL]
 :obeo: link:http://www.obeo.fr/[Obeo]
+:pscs: https://www.omg.org/spec/PSCS/About-PSCS/[PSCS]
+:pssm: https://www.omg.org/spec/PSSM/About-PSSM/[PSSM]
 :plantumlweb: http://plantuml.sourceforge.net/[plantUML]
 :plantuml: http://plantuml.sourceforge.net/[plantUML]
 :polarsys: http://polarsys.org/[Polarsys]
@@ -101,11 +104,13 @@ endif::[]
 :rhapsody: https://www.ibm.com/us-en/marketplace/systems-design-rhapsody[Rhapsody]indexterm:[Rhapsody]
 :robotml: http://en.wikipedia.org/wiki/RobotML[RobotML]
 :rtaw: http://www.realtimeatwork.com/[RTaW]indexterm:[RTaW]
+:RTF: https://www.omg.org/spec/SysML/#spec-versions-in-process[RTF]
 :sart: http://fr.wikipedia.org/wiki/Structured_Analysis_for_Real_Time[SADT/SART]
 :semco: http://www.semcomdt.org/[SEMCO]
 :simulink: http://fr.mathworks.com/products/simulink/?nocookie=true[Simulink]
 :sirius: link:https://www.eclipse.org/proposals/modeling.sirius/[Sirius]
 :smart: link:http://smart-researchteam.github.io/[SM@RT]
+:soaml: link:https://www.omg.org/spec/SoaML/About-SoaML/[SoaML]
 :sosym: http://www.sosym.org/[SoSyM]
 :sparxEA: https://www.sparxsystems.com/[Enterprise Architext]
 :sym: http://www.omg.org/spec/SyM/[SysML-Modelica]

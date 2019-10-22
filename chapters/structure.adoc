@@ -276,7 +276,7 @@ image::param.png[width="90%",scaledwidth="50%"]
 ====
 Il est regrettable que ce diagramme soit le moins utilisé (cf. <<OMG2009>>).
 
-.Diagrammes les plus utilisés (tiré de <<OMG2009>>)
+.Diagrammes les plus utilisés (extrait de <<OMG2009>>)
 image::survey4.png[link="http://www.omgsysml.org/SysML_2009_RFI_Response_Summary-bone-cloutier.pdf",width="80%",scaledwidth=50%]
 ====
 

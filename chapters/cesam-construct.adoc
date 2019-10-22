@@ -78,7 +78,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionConstReqsFig]]
-ifdef::FR[.Exemple de Diagramme des Exigences Organiques (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme des Exigences Organiques (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Constructional Requirement Architecture Diagram (taken from <<CESAM17>>)]
 image::visionConstReqsFig.png[width="80%",scaledwidth=80%]
 
@@ -110,7 +110,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionConstStateFig]]
-ifdef::FR[.Exemple de Diagramme de Configuration (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de Configuration (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Configuration Diagram (taken from <<CESAM17>>)]
 image::visionConstStateFig.png[width="80%",scaledwidth=80%]
 
@@ -141,12 +141,12 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionConstStatFig]]
-ifdef::FR[.Exemple de Diagramme de Décomposition Organique (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de Décomposition Organique (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Constructional Decomposition Diagram (taken from <<CESAM17>>)]
 image::visionConstStatFig.png[width="80%",scaledwidth=80%]
 
 [[visionConstStatFig2]]
-ifdef::FR[.Exemple de Diagramme d'Interaction Organique (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme d'Interaction Organique (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Constructional Interaction Diagram (taken from <<CESAM17>>)]
 image::visionConstStatFig2.png[width="80%",scaledwidth=80%]
 
@@ -177,7 +177,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionConstDynFig]]
-ifdef::FR[.Exemple de Diagramme de Décomposition Organique (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de Décomposition Organique (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Constructional Decomposition Diagram (taken from <<CESAM17>>)]
 image::visionConstDynFig.png[width="80%",scaledwidth=80%]
 
@@ -208,7 +208,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionConstFlowFig]]
-ifdef::FR[.Exemple de Diagramme de Flux Organiques (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de Flux Organiques (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Constructional Flow Diagram (taken from <<CESAM17>>)]
 image::visionConstFlowFig.png[width="80%",scaledwidth=80%]
 

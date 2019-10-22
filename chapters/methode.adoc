@@ -18,7 +18,7 @@ Nous l'avons anoncé dès l'introduction, nous allons utiliser pour les besoins 
 La <<FriedenthalSimplifiedMethod>> résume (dans un diagramme d'activité) une démarche simplifiée que vous pouvez suivre.
 
 [[FriedenthalSimplifiedMethod]]
-.Une démarche MBSE simplifiée (tirée de <<Friedenthal2016>>)
+.Une démarche MBSE simplifiée (extrait de <<Friedenthal2016>>)
 image::simpleFridenthalmethod.svg[width="40%",scaledwidth="40%"]
 
 //-----------------------------------------------

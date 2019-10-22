@@ -13,6 +13,7 @@
 - [[[SysML]]] OMG Systems Modeling Language (OMG SysML).
 Version 1.5. formal/2017-05-01.
 Available http://www.omg.org/spec/SysML/1.5/[here].
+- [[[UML]]] ISO/IEC 19501:2005 - Information technology - Open Distributed Processing - Unified Modeling Language (UML) Version 1.4.2". Iso.org. 1 April 2005. Retrieved 7 May 2015.
 - [[[Kordon]]] Embedded Systems Analysis and Modeling with SysML, UML and AADL, F. Kordon, J. Hugues, A. Canals, A. Dohet, Wiley, 2013.
 - [[[REQ2012]]] Guide Bonnes Pratiques en Ingénierie des Exigences, AFIS 2012.
 - [[[Sommerville1997]]] Ian Sommerville, Pete Sawyer. Requirements Engineering: A Good Practice Guide. Wiley, 1997.
@@ -23,6 +24,7 @@ Available http://www.omg.org/spec/SysML/1.5/[here].
 - [[[Cabot]]] Le bouquin de Jordi
 - [[[Roques]]] Le bouquin de Pascal
 - [[[CESAM17]]] CESAM: CESAMES Systems Architecting Method -- A Pocket Guide. Daniel KROB, January 2017. Available http://www.cesames.net/wp-content/uploads/2017/09/CESAM-guide_-_V12092017.pdf[here].
+
 
 .Websites
 

@@ -69,7 +69,7 @@ Il s'agit d'organiser les besoins en en proposant une décomposition hiérarchiq
 Nous en profiterons pour associer les besoins aux parties prenantes (d'où l'importance de les avoir préalablement "importés", cf. <<visionOpOrg>>).
 
 [[visionOpReqsFig]]
-ifdef::FR[.Exemple de Diagramme des besoins (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme des besoins (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Need Architecture Diagram (taken from <<CESAM17>>)]
 image::visionOpReqsFig.png[width="80%",scaledwidth=80%]
 
@@ -114,7 +114,7 @@ Cela permet de définir :
 En voici un exemple :
 
 [[visionOpStateFig]]
-ifdef::FR[.Exemple de Diagramme des cycles de vie (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme des cycles de vie (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Lifecycle Diagram (taken from <<CESAM17>>)]
 image::visionOpStateFig.png[width="80%",scaledwidth=80%]
 
@@ -147,7 +147,7 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 Dans cette étape, nous allons représenter de manière statique l'ensemble des missions du système à développer en précisant les collaborations entre le système et son environnement, ainsi que les relations entre ces missions (cf. <<visionOpStatFig>>).
 
 [[visionOpStatFig]]
-ifdef::FR[.Exemple de Diagramme des cas d'utilisation (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme des cas d'utilisation (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Use Case Diagram (taken from <<CESAM17>>)]
 image::visionOpStatFig.png[width="80%",scaledwidth=80%]
 
@@ -182,7 +182,7 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 Nous allons maintenant nous intéresser à la description de scénarios opérationnels qui vont représenter la dynamique des missions dans des contextes différents (cf. exemple de la <<visionOpDynFig>>).
 
 [[visionOpDynFig]]
-ifdef::FR[.Exemple de Diagramme de scénario opérationnel (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de scénario opérationnel (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Operational Scenario Diagram (taken from <<CESAM17>>)]
 image::visionOpDynFig.png[width="60%",scaledwidth=60%]
 
@@ -210,7 +210,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionOpDynFigPapyrus]]
-ifdef::FR[.Exemple de Diagramme de scénario opérationnel (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de scénario opérationnel (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Operational Scenario Diagram (taken from <<CESAM17>>)]
 image::{papyrusversion}/Operational_scenario_description_for_manageRightAccess.SVG[width="80%",scaledwidth=80%]
 
@@ -234,7 +234,7 @@ Le diagramme des flux operationnels (cf. <<visionOpFlowFig>>) vise à répertori
 * leur relations d'abstraction
 
 [[visionOpFlowFig]]
-ifdef::FR[.Exemple de Diagramme de flux opérationnels (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de flux opérationnels (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Operational Flow Diagram (taken from <<CESAM17>>)]
 image::visionOpFlowFig.png[width="80%",scaledwidth=80%]
 
@@ -266,7 +266,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionOpFlowFigPapyrus]]
-ifdef::FR[.Exemple de Diagramme de flux opérationnels (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de flux opérationnels (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Operational Flow Diagram (taken from <<CESAM17>>)]
 image::visionOpFlowFig.png[width="80%",scaledwidth=80%]
 

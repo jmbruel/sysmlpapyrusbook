@@ -212,7 +212,7 @@ Il est utilisé pour l’expression de la logique de contrôle et d’entrées/s
 Le diagramme d’activité sert non seulement à préciser la séquence d’actions à réaliser,
 mais aussi ce qui est produit, consommé, ou transformé, au cours de l’exécution de cette activité.
 
-.Exemple de diagramme d'activité (tiré de <<SeeBook2012>>)
+.Exemple de diagramme d'activité (extrait de <<SeeBook2012>>)
 image::act-pcmk1.png[width="70%",scaledwidth=60%]
 
 Les éléments de base du diagramme d’activité sont :

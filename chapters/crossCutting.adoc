@@ -127,7 +127,7 @@ _The package defines a namespace for the packageable elements._
 ====
 
 Pour éviter toute ambiguïté dans les diagrammes, on peut utiliser pour les éléments de modèles leur nom complet (_Qualified name_),
-c'est à dire le nom de l'élément préfixé par son (ou ses) _package(s)_
+c'est-à-dire le nom de l'élément préfixé par son (ou ses) _package(s)_
 (e.g., `Structure::Products::Clock`).
 
 [TIP]

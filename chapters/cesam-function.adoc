@@ -78,7 +78,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionFuncReqsFig]]
-ifdef::FR[.Exemple de Diagramme des exigences fonctionnelles (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme des exigences fonctionnelles (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Functional Requirement Architecture Diagram (taken from <<CESAM17>>)]
 image::visionFuncReqsFig.png[width="80%",scaledwidth=80%]
 
@@ -109,7 +109,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionFuncStateFig]]
-ifdef::FR[.Exemple de Diagramme des Modes Fonctionnels (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme des Modes Fonctionnels (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Functional Mode Diagram (taken from <<CESAM17>>)]
 image::visionFuncStateFig.png[width="80%",scaledwidth=80%]
 
@@ -140,7 +140,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionFuncStatFig]]
-ifdef::FR[.Exemple de Diagramme de Décomposition Fonctionnelle (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de Décomposition Fonctionnelle (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Functional Decomposition Diagram (taken from <<CESAM17>>)]
 image::visionFuncStatFig.png[width="80%",scaledwidth=80%]
 
@@ -157,7 +157,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionFuncStatFig2]]
-ifdef::FR[.Exemple de Diagramme d'Interaction Fonctionnelle (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme d'Interaction Fonctionnelle (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Functional Interaction Diagram (taken from <<CESAM17>>)]
 image::visionFuncStatFig2.png[width="80%",scaledwidth=80%]
 
@@ -189,7 +189,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionFuncDynFig]]
-ifdef::FR[.Exemple de Diagramme de Scénario Fonctionnel (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de Scénario Fonctionnel (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Functional Scenario Diagram (taken from <<CESAM17>>)]
 image::visionFuncDynFig.png[width="80%",scaledwidth=80%]
 
@@ -220,7 +220,7 @@ endif::final[]
 //-----------------------------------------------
 
 [[visionFuncFlowFig]]
-ifdef::FR[.Exemple de Diagramme de Flux Fonctionnels (tirée de <<CESAM17>>)]
+ifdef::FR[.Exemple de Diagramme de Flux Fonctionnels (extrait de <<CESAM17>>)]
 ifdef::UK[.Example of Functional Flow Diagram (taken from <<CESAM17>>)]
 image::visionFuncFlowFig.png[width="80%",scaledwidth=80%]
 

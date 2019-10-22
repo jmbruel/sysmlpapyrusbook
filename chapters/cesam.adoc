@@ -90,7 +90,7 @@ Les principaux éléments de l'architecture sont :
 
 - Une organisation hiérarchique des préoccupations (Quoi ? / Qui ? / Où ?), représentée par une "Pyramide d'Architecture Système" (cf. <<cesamPyramid>>).
 +
-NOTE: La question du "Qui" porte ici sur le "_What_", c'est à dire "quelle partie du système". Pour la question du "qui est concerné par le système", elle est traitée en amont de ces éléments architecturaux, dans ce que {CESAM} appelle l'_Environment Architecture_, que nous avons appelé le Contexte du système (cf. <<visionEnv>>).
+NOTE: La question du "Qui" porte ici sur le "_What_", c'est-à-dire "quelle partie du système". Pour la question du "qui est concerné par le système", elle est traitée en amont de ces éléments architecturaux, dans ce que {CESAM} appelle l'_Environment Architecture_, que nous avons appelé le Contexte du système (cf. <<visionEnv>>).
 - Une organisation en 9 vues du système, représentée par une matrice (cf. <<cesamMatrix>>).
 - Une démarche guidant l'architecture du système, représentée par un processus (cf. <<cesamProcess>>).
 
@@ -107,18 +107,18 @@ endif::final[]
 //-----------------------------------------------
 
 [[cesamPyramid]]
-ifdef::FR[.La Pyramide d'Architecture Systèmes de CESAM (tirée de <<CESAM17>>)]
+ifdef::FR[.La Pyramide d'Architecture Systèmes de CESAM (extrait de <<CESAM17>>)]
 ifdef::UK[.The CESAM Systems Architecture Pyramid (taken from <<CESAM17>>)]
 image::cesamPyramid.png[width="80%",scaledwidth=80%]
 
 [[cesamMatrix]]
-ifdef::FR[.La Matrice d'Architecture Systèmes de CESAM (tirée de <<CESAM17>>)]
+ifdef::FR[.La Matrice d'Architecture Systèmes de CESAM (extrait de <<CESAM17>>)]
 ifdef::UK[.The CESAM Systems Architecture Matrix (taken from <<CESAM17>>)]
 image::cesamMatrix.png[width="80%",scaledwidth=80%]
 
 
 [[cesamProcess]]
-ifdef::FR[.Le Processus d'Architecture des Systèmes de CESAM (tirée de <<CESAM17>>)]
+ifdef::FR[.Le Processus d'Architecture des Systèmes de CESAM (extrait de <<CESAM17>>)]
 ifdef::UK[.The CESAM Systems Architecting Process (taken from <<CESAM17>>)]
 image::cesamProcess.png[width="80%",scaledwidth=80%]
 
