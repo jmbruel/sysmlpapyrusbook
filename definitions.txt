@@ -78,7 +78,7 @@ endif::[]
 :mdetools: http://mase.cs.queensu.ca/mdetools/[MDETOOLS'17]
 :mediawiki: https://www.mediawiki.org[MediaWiki]
 :miburl: http://mi.iut-blagnac.fr/
-:mib: {miburl}[MIB]
+:mib: {miburl}[Maison Intelligente de Blagnac]
 :modelica: https://www.modelica.org/[Modelica(R)]
 :modelio: http://www.modeliosoft.com/[Modelio]
 :models: http://www.modelsconference.org/[MODELS]

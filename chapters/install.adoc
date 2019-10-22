@@ -29,7 +29,7 @@ ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 | {implementation}	| | | | | 
 |======================
 
-== Installation des logiciels
+== Installation de Papyrus-SysML
 
 === Papyrus
 

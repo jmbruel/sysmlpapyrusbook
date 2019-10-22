@@ -20,7 +20,7 @@
 <span id="author2" class="author">Sébastien Gérard</span><br>
 <span id="email2" class="email"><a href="mailto:Sebastien.Gerard@cea.fr">Sebastien.Gerard@cea.fr</a></span><br>
 <span id="revnumber">version 1.6,</span>
-<span id="revdate">2019-08-10</span>
+<span id="revdate">2019-10-21</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table des Matières</div>
@@ -52,14 +52,14 @@
 <ul class="sectlevel2">
 <li><a href="#_description">3.1. Description</a></li>
 <li><a href="#_plateforme_expérimentale">3.2. Plateforme expérimentale</a></li>
-<li><a href="#_liste_des_exigences">3.3. Liste des exigences</a></li>
+<li><a href="#mibreqliste">3.3. Liste des exigences</a></li>
 <li><a href="#_quelques_exemples_de_scénarios">3.4. Quelques exemples de scénarios</a></li>
 <li><a href="#_pour_aller_plus_loin">3.5. Pour aller plus loin</a></li>
 </ul>
 </li>
 <li><a href="#install">4. Avant de démarrer</a>
 <ul class="sectlevel2">
-<li><a href="#_installation_des_logiciels">4.1. Installation des logiciels</a></li>
+<li><a href="#_installation_de_papyrus_sysml">4.1. Installation de Papyrus-SysML</a></li>
 <li><a href="#_matériel_de_formation_en_complément_de_ce_livre">4.2. Matériel de formation en complément de ce livre</a></li>
 <li><a href="#_pour_ceux_qui_veulent_aller_plus_vite">4.3. Pour ceux qui veulent aller plus vite</a></li>
 <li><a href="#_pour_ceux_qui_veulent_aller_plus_loin">4.4. Pour ceux qui veulent aller plus loin</a></li>
@@ -199,6 +199,19 @@
 <div class="title">Commentaire</div>
 <div class="paragraph">
 <p>Si vous lisez ce commentaire, c&#8217;est que cette version est en cours de construction!</p>
+</div>
+<div class="paragraph">
+<p>Reste à faire :</p>
+</div>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-square-o"></i> Changer le site du livre par <a href="https://github.com/" class="bare">https://github.com/</a> PapyrusSysMLinAction/SmartHomeUseCase</p>
+</li>
+<li>
+<p><i class="fa fa-square-o"></i> Ajouter le lien vers le standalone de Papyrus-SysML si disponible</p>
+</li>
+</ul>
 </div>
 </td>
 </tr>
@@ -976,8 +989,7 @@ Dans un second temps, détail de chaque diagramme.</p>
 </table>
 </div>
 <div class="paragraph">
-<p>Nous allons modéliser dans cet ouvrage un système complexe, réel : la Maison
-Intelligente de Blagnac (<a href="http://mi.iut-blagnac.fr/">MIB</a>).
+<p>Nous allons modéliser dans cet ouvrage un système complexe, réel : la <a href="http://mi.iut-blagnac.fr/">Maison Intelligente de Blagnac</a> (MIB).
 Nous avons volontairement choisi un domaine qui prend de l&#8217;ampleur : l&#8217;Internet des Objets (IoT - <em>Internet of Thing</em>).</p>
 </div>
 <div class="imageblock">
@@ -987,9 +999,9 @@ Nous avons volontairement choisi un domaine qui prend de l&#8217;ampleur : l&#82
 <div class="title">Figure 3. La "Maison Intelligente" de Blagnac</div>
 </div>
 <div class="paragraph">
-<p>La <a href="http://mi.iut-blagnac.fr/">MIB</a> est un appartement permettant la supervision de personnes dépendantes (patients, personnes âgées, &#8230;&#8203;) à domicile.
-La description de ce système (notre spécification initiale) est disponible sur le site <a href="http://mi.iut-blagnac.fr/" class="bare">http://mi.iut-blagnac.fr/</a>.
-Pour permettre de démarrer la modélisation, nous partirons d&#8217;un <a href="https://docs.google.com/spreadsheets/d/1-yaW8fZHG9i6r7vJ7NOU9-66-hnDYY66Vd9cmZTYs2A/edit?usp=sharing">fichier partagé</a> des exigences initiales.</p>
+<p>La <a href="http://mi.iut-blagnac.fr/">Maison Intelligente de Blagnac</a> est un appartement permettant l&#8217;assistance de personnes dépendantes à leur domicile.
+La spécification initiale de ce système est disponible sur le site <a href="http://mi.iut-blagnac.fr/" class="bare">http://mi.iut-blagnac.fr/</a>.
+La modélisation dans <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> que nous allons faire ensemble tout au long de ce livre s’appuiera sur une spécification initiale issue de ce projet et que vous pourrez voir à la <a href="#mibreqliste">Section 3.3</a>.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -1004,16 +1016,14 @@ Pour permettre de démarrer la modélisation, nous partirons d&#8217;un <a href=
 <p>Nous ne nous intéresserons qu&#8217;à la partie intelligente de la maison (et non à ses caractéristiques architecturales par exemple).</p>
 </li>
 <li>
-<p>Nous avons pris quelques libertés sur les caractéristiques de la maison réelle
-pour parfois les enrichir (comme l&#8217;exigence <code>SH_ACO_030</code> ci-dessous) ou parfois les simplifier.</p>
+<p>Nous avons pris quelques libertés sur les caractéristiques de la maison réelle pour parfois les enrichir (comme l&#8217;exigence <code>SH_ACO_030</code> ci-dessous) ou parfois les simplifier.</p>
 </li>
 <li>
-<p>Cette liste d&#8217;exigences sert de base pour étudier la partie d&#8217;analyse (<em>elicitation</em> en anglais) des exigences.
-Elles ne sont donc pas parfaites mais sont le reflet de la réalité.</p>
+<p>Cette spécification initiale des besoins sert de base pour étudier la partie <em>elicitation</em> des exigences.
+Elles ne sont donc ni parfaites, ni complètes.</p>
 </li>
 <li>
-<p>Les exemples de modèles réalisés, pour des soucis de partage plus large avec la communauté, sont
-réalisés en anglais à partir de la version anglaise des exigences (disponible <a href="https://github.com/PapyrusSysMLinAction/SmartHomeUseCase">ici</a>).</p>
+<p>Enfin, pour des soucis de partage plus large avec la communauté internationale, les exemples de modèles réalisés dans le livre le seront en anglais et à partir de la version anglaise des exigences (disponible <a href="https://github.com/PapyrusSysMLinAction/SmartHomeUseCase">ici</a>).</p>
 </li>
 </ol>
 </div>
@@ -1024,45 +1034,46 @@ réalisés en anglais à partir de la version anglaise des exigences (disponible
 <div class="sect2">
 <h3 id="_description">3.1. Description</h3>
 <div class="paragraph">
-<p>La variété des équipements disponibles dans la <a href="http://mi.iut-blagnac.fr/">MIB</a> permet à son occupant de
+<p>La variété des équipements disponibles dans la <a href="http://mi.iut-blagnac.fr/">Maison Intelligente de Blagnac</a> permet à ses occupants de
 réaliser un ensemble de tâches comme :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Surveiller (<em>Monitoring</em>) ma consommation énergétique (globale ou d&#8217;un équipement en particulier)</p>
+<p>Surveiller (<em>Monitoring</em>) sa consommation énergétique (globale ou d&#8217;un équipement en particulier)</p>
 </li>
 <li>
-<p>Activer des dispositifs (<em>actuators</em>) comme l&#8217;intensité d&#8217;une ampoule (<em>light bulb</em>), l&#8217;ouverture d&#8217;un rideau (<em>shutter</em>)</p>
+<p>Activer des dispositifs (<em>Actuators</em>) comme l&#8217;intensité d&#8217;une ampoule (<em>light bulb</em>), ou l&#8217;ouverture d&#8217;un rideau (<em>shutter</em>)</p>
 </li>
 <li>
-<p>Surveiller les données collectées par des capteurs (<em>sensors</em>) comme la temperature, la luminosité, etc.</p>
+<p>Surveiller les données collectées par des capteurs (<em>Sensors</em>) comme la température,ou la luminosité.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>L&#8217;objectif principal de la <a href="http://mi.iut-blagnac.fr/">MIB</a> est d&#8217;être un support à l&#8217;assistance et au monitoring de
-personnes à domicile qui sont autonomes mais qui doivent être suivies ou aidées.
+<p>L&#8217;objectif principal de la <a href="http://mi.iut-blagnac.fr/">Maison Intelligente de Blagnac</a> est d&#8217;être un support à l&#8217;assistance de
+personnes autonomes à leur domicile qui sont autonomes mais qui doivent être suivies et aidées en cas de problème.
 Les éléments de conforts mais surtout de sécurité sont donc primordiaux et doivent
-être fournis de manière continue, et potentiellement nécessiter des moyens humains d&#8217;assistance.</p>
+être fournis de manière continue, et peuvent potentiellement nécessiter l&#8217;intervention de moyens humains d&#8217;assistance.</p>
 </div>
 <div class="paragraph">
 <p>L&#8217;intérêt de ce cas d&#8217;étude (que nous appèlerons <em>SmartHomeSystem</em>, ou SHS dans ce livre)
-est qu&#8217;elle nécessite de prendre en compte les aspects sécurité (<em>security</em>), adaptation (<em>accommodation</em>),
-sociaux (<em>societal</em>), légaux (<em>legislative</em>), économiques (<em>economical</em>), et écologiques (<em>ecological</em>).
-Dans ce qui suit nous décrivons plus précisément quelques services attendus d&#8217;un tel système.</p>
+est qu&#8217;elle nécessite de prendre en compte des préoccupations diverses, parfois contradictoire, comme sécurité (<em>security</em>), adaptabilité (<em>adaptability</em>),
+sociétaux (<em>societal</em>), légaux (<em>legal</em>), économiques (<em>economical</em>), et écologiques (<em>ecological</em>).
+Dans ce qui suit nous décrivons plus précisément quelques services attendus du système à concevoir pour chacune de ces préoccupations.</p>
 </div>
 <div class="sect3">
 <h4 id="_sécurité">3.1.1. Sécurité</h4>
 <div class="paragraph">
-<p>Comme n&#8217;importe quel autre logement, la maison intelligente doit être sécurisée.
-Le <em>SmartHomeSystem</em> doit donc fournir un certain niveau de protection contre les intrus et les voleurs.
+<p>Comme n&#8217;importe quel autre logement, la <a href="http://mi.iut-blagnac.fr/">Maison Intelligente de Blagnac</a> doit être sécurisée.
+Notre système à concevoir doit donc fournir un certain niveau de protection contre les intrus et les voleurs.
 Ce niveau doit même être renforcé du fait de la vulnérabilité induite par l&#8217;ultra-connectivité du système.
 On profitera donc avantageusement du niveau d&#8217;équipement pour mettre en place les réponses adaptées
 (alarmes, alertes automatiques, etc.) sans pour autant oublier de donner un accès privilégié
 aux différents acteurs de la supervision (pompiers, médecins, etc.).
-L&#8217;accès aux données personnelles (notamment de santé) via les différents dispositifs connectés
-sera fortement contrôlé. Les notions d&#8217;identification, de certification ou de cryptage seront donc primordiales.</p>
+L&#8217;accès aux données personnelles, notamment de santé, via les différents dispositifs connectés
+sera fortement contrôlé.
+Les notions d&#8217;identification, de certification ou de cryptage seront donc primordiales.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -1072,7 +1083,7 @@ sera fortement contrôlé. Les notions d&#8217;identification, de certification 
 </td>
 <td class="content">
 Cette description mélange des aspects différents de sécurité : la sureté, la sécurité et la cybersécurité.
-Nous avons laissé volontairement ces ambiguités pour illustrer comment <a href="http://www.omgsysml.org/">SysML&#174;</a> peut être utilisé pour exprimer
+Nous avons conservé volontairement cette ambiguïté  pour illustrer comment <a href="http://www.omgsysml.org/">SysML&#174;</a> peut être utilisé pour exprimer
 la composition d&#8217;exigences.
 </td>
 </tr>
@@ -1082,14 +1093,14 @@ la composition d&#8217;exigences.
 <div class="sect3">
 <h4 id="_adaptation">3.1.2. Adaptation</h4>
 <div class="paragraph">
-<p>Le <em>SmartHomeSystem</em> doit pouvoir s&#8217;adapter aux conditions physiques et mentales
+<p>Le système à concevoir doit également pouvoir s&#8217;adapter aux conditions physiques et mentales
 de l&#8217;occupant<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>.
-Par exemple, la hauteur des équipements de cuisine (meubles, éviers) s&#8217;abaissent
+Par exemple, la hauteur des équipements de cuisine (meubles, éviers) s&#8217;abaisse
 automatiquement si l&#8217;occupant est en fauteuil roulant.
 Un autre exemple, qui concerne les personnes atteintes de troubles cognitifs, est
 la possibilité de guider l&#8217;occupant par la voix ou par un signal lumineux au sol,
-d&#8217;un point à un autre de la maison (par exemple le matin de son lit à la salle de bain).
-Le <em>SmartHomeSystem</em> doit également permettre de configurer les nombreux équipements
+d&#8217;un point à un autre de la maison, par exemple le matin pour guider l’habitant(e) de son lit à la salle de bain.
+Le système doit également permettre de configurer les nombreux équipements
 en fonction des préférences de l&#8217;occupant (par exemple, heure de fermeture des volets ou du réveil, etc.).</p>
 </div>
 </div>
@@ -1098,10 +1109,11 @@ en fonction des préférences de l&#8217;occupant (par exemple, heure de fermetu
 <div class="paragraph">
 <p>Une des caractéristiques des maisons intelligentes modernes est leur prise en compte de
 l&#8217;environnement et donc des consommations énergétiques.
-L&#8217;objectif peut être économique, légal (suivre une norme ou un label), ou simplement social.
-Par exemple le <em>SmartHomeSystem</em> pourra abaisser la température de la maison à certains moments
-(programmés ou opportuns). Les dispositifs inutiles à certains moments de la journée pourront
-être mis en sommeil, idem pour les débits Internet, etc.
+L&#8217;objectif peut être économique, légal (conformité à une norme ou un label), ou simplement social.
+Par exemple le système pourra abaisser la température de la maison à certains moments
+(programmés ou opportuns).
+Les dispositifs inutiles à certains moments de la journée pourront
+être mis en sommeil sommeil à certains moments de la journée, ou bien encore les débits Internet réduits.
 La maison pourra aussi être autonome en énergie, ou tout le moins, produire dans une certaine
 mesure sa propre énergie (éolienne, panneaux solaires, etc.).</p>
 </div>
@@ -1110,20 +1122,19 @@ mesure sa propre énergie (éolienne, panneaux solaires, etc.).</p>
 <div class="sect2">
 <h3 id="_plateforme_expérimentale">3.2. Plateforme expérimentale</h3>
 <div class="paragraph">
-<p>Un véritable <em>SmartHomeSystem</em> est disponible à la <a href="http://mi.iut-blagnac.fr/">MIB</a>, sur le campus de l&#8217;<a href="http://www.iut-blagnac.fr/">IUT de Blagnac</a>, près de Toulouse.
+<p>Un tel système de maison intelligente est disponible en réel sur le site expérimental de la <a href="http://mi.iut-blagnac.fr/">Maison Intelligente de Blagnac</a>, sur le campus de l&#8217;<a href="http://www.iut-blagnac.fr/">IUT de Blagnac</a>, près de Toulouse.
 N&#8217;hésitez pas à nous contacter si vous êtes intéressé par des expérimentations réelles.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_liste_des_exigences">3.3. Liste des exigences</h3>
+<h3 id="mibreqliste">3.3. Liste des exigences</h3>
 <div class="paragraph">
-<p>Nous fournissons ci-dessous une liste précise d&#8217;exigences (<em>requirements</em>)
-pour le <em>SmartHomeSystem</em>.
-Cette liste est bien sûr non-exhaustive et nous permettra simplement de montrer le lien
-en <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> entre ces exigences et les artefacts de modélisation.</p>
+<p>Nous fournissons ci-dessous une liste précise des exigences (<em>requirements</em>)
+que nous allons considérer pour notre système à développer.
+Cette liste est bien sûr non-exhaustive, mais elle nous permettra d’illustrer comment faire de l’ingénierie système avec <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Une liste initiale d&#8217;exigences</caption>
+<caption class="title">Table 3. Une liste initiale d’exigences pour le système de la maison intelligente (SmartHomesystem)</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 14.2857%;">
@@ -1229,14 +1240,13 @@ en <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a> entre ces exigenc
 <h3 id="_quelques_exemples_de_scénarios">3.4. Quelques exemples de scénarios</h3>
 <div class="paragraph">
 <p>Dans ce qui suit, nous imaginons que l&#8217;habitante qui occupe la maison s&#8217;appelle Alice
-et que son état de santé nécessite un suivi particulier :</p>
+et que son état de santé nécessite un suivi particulier.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Chaque matin, quand Alice s&#8217;éveille, un guidage lumineux au sol lui permet de simplement
-atteindre la salle de bain pour sa toilette. Si elle a choisi l&#8217;option, elle peut même
-bénéficier d&#8217;un guidage audio complémentaire.</p>
+<p>Chaque matin, quand Alice s&#8217;éveille, un signal lumineux au sol la guide pour mermettre d&#8217;atteindre la salle de bain pour sa toilette.
+Si elle a choisi l&#8217;option, ou qu&#8217;elle le demande, elle peut même bénéficier d&#8217;un guidage audio complémentaire.</p>
 </li>
 <li>
 <p>Alice bénéficie d&#8217;un "majordome intelligent"<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup>,
@@ -1263,8 +1273,8 @@ Ne pas faire entrer de nouveaux visiteurs, &#8230;&#8203;)</p>
 </div>
 </li>
 <li>
-<p>Quand Alice chute sur le sol et qu&#8217;elle reste immobile plus de 30s, et qu&#8217;elle ne répond pas à une première
-série de messages audio diffusés dans la maison, le SHS appelle les secours avec les informations rentrées au
+<p>Si Alice chute sur le sol et qu&#8217;elle reste immobile plus de 30s, et qu&#8217;elle ne répond pas à une première
+série de messages audio diffusés dans la maison, le système à concevoir appelle les secours avec les informations rentrées au
 préalable dans le système.</p>
 </li>
 </ul>
@@ -1279,7 +1289,7 @@ Ces deux sources peuvent fournir des modèles complémentaires à ceux que vous 
 </div>
 <div class="paragraph">
 <p>Pour une liste plus complète d&#8217;exigences, réalisée par les étudiants du <a href="http://www.master-developpement-logiciel.fr/">Master DL</a>, voir
-<a href="https://docs.google.com/spreadsheets/d/1-yaW8fZHG9i6r7vJ7NOU9-66-hnDYY66Vd9cmZTYs2A/edit?usp=sharing">ce lien</a>.</p>
+<a href="https://lite.framacalc.org/blagnac-smart-house-specification">ce lien</a>.</p>
 </div>
 </div>
 </div>
@@ -1366,7 +1376,7 @@ Il aborde également la question de l&#8217;organisation des modèles (packages,
 </tbody>
 </table>
 <div class="sect2">
-<h3 id="_installation_des_logiciels">4.1. Installation des logiciels</h3>
+<h3 id="_installation_de_papyrus_sysml">4.1. Installation de Papyrus-SysML</h3>
 <div class="sect3">
 <h4 id="_papyrus">4.1.1. Papyrus</h4>
 <div class="paragraph">
@@ -2121,7 +2131,7 @@ Dans <a href="http://www.omgsysml.org/">SysML&#174;</a> les exigences peuvent ê
 <h4 id="_diagramme_des_exigences">5.3.1. Diagramme des exigences</h4>
 <div class="paragraph">
 <p>Ce diagramme permet de représenter graphiquement les exigences et leurs relations.
-Il sera vu plus en détail dans la section <a href="#reqs">Section 9.1</a>, mais en voici un exemple appliqué à la <a href="http://mi.iut-blagnac.fr/">MIB</a> : une exigence (<code>Security</code>) est complsée de plusieurs sous-exigences.</p>
+Il sera vu plus en détail dans la section <a href="#reqs">Section 9.1</a>, mais en voici un exemple appliqué à la <a href="http://mi.iut-blagnac.fr/">Maison Intelligente de Blagnac</a> : une exigence (<code>Security</code>) est complsée de plusieurs sous-exigences.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -9405,7 +9415,7 @@ appelée <a href="http://www.omg.org/spec/FUML/">fUML</a>, ont été implément�
 <p>Une autre implémentation est disponible dans l&#8217;outil Cameo Simulation Toolkit de <a href="http://www.nomagic.com/">MagicDraw</a>.</p>
 </li>
 <li>
-<p>Pour aller plus loin avec <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, qui dispose aussi de son implémentatino de <a href="http://www.omg.org/spec/FUML/">fUML</a>, appelée <a href="https://wiki.eclipse.org/Papyrus/UserGuide/ModelExecution">Moka</a>,
+<p>Pour aller plus loin avec <a href="http://www.eclipse.org/papyrus/">Papyrus-SysML</a>, qui dispose aussi de sa propre implémentation de <a href="http://www.omg.org/spec/FUML/">fUML</a>, appelée <a href="https://wiki.eclipse.org/Papyrus/UserGuide/ModelExecution">Moka</a>,
 consultez la documentation spécifique :
 <a href="https://wiki.eclipse.org/Papyrus/UserGuide/fUML_ALF" class="bare">https://wiki.eclipse.org/Papyrus/UserGuide/fUML_ALF</a>.</p>
 </li>
@@ -10561,7 +10571,7 @@ cf. <a href="#niveauConcepts">Niveaux de concepts SysML</a></p>
 <a href="#_footnoteref_2">2</a>. Sauf bien sûr au brouillon ou sur un tableau, notamment quand on travaille en équipe.
 </div>
 <div class="footnote" id="_footnotedef_3">
-<a href="#_footnoteref_3">3</a>. Pour des raisons de simplicité, et pour coller à la réalité de la <a href="http://mi.iut-blagnac.fr/">MIB</a>, nous ne considérons qu&#8217;il n&#8217;y a qu&#8217;un(e) seul(e) habitant(e).
+<a href="#_footnoteref_3">3</a>. Pour des raisons de simplicité, et pour coller à la réalité de la <a href="http://mi.iut-blagnac.fr/">Maison Intelligente de Blagnac</a>, nous considérons qu&#8217;il n&#8217;y a qu&#8217;un(e) seul(e) habitant(e).
 </div>
 <div class="footnote" id="_footnotedef_4">
 <a href="#_footnoteref_4">4</a>. Scénario tiré du Projet ESIR3 NSOC donné par <a href="http://www.combemale.fr">Benoît Combemale</a> à l&#8217;<a href="https://esir.univ-rennes1.fr/">ESIR</a>.
@@ -10591,7 +10601,7 @@ cf. <a href="#niveauConcepts">Niveaux de concepts SysML</a></p>
 <div id="footer">
 <div id="footer-text">
 Version 1.6<br>
-Last updated 2019-08-10 17:20:19 +0200
+Last updated 2019-10-21 22:55:32 +0200
 </div>
 </div>
 </body>

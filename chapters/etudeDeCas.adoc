@@ -2,7 +2,8 @@
 [[etudeCas]]
 //[reftext="Étude de cas"]
 = Étude de cas
-:FichierExigences: https://docs.google.com/spreadsheets/d/1-yaW8fZHG9i6r7vJ7NOU9-66-hnDYY66Vd9cmZTYs2A/edit?usp=sharing
+:FichierExigences: https://lite.framacalc.org/blagnac-smart-house-specification 
+//https://docs.google.com/spreadsheets/d/1-yaW8fZHG9i6r7vJ7NOU9-66-hnDYY66Vd9cmZTYs2A/edit?usp=sharing
 
 //-----------------------------------------------
 ifndef::final[]
@@ -19,100 +20,99 @@ Dans un second temps, détail de chaque diagramme.
 //-----------------------------------------------
 endif::final[]
 
-Nous allons modéliser dans cet ouvrage un système complexe, réel : la Maison
-Intelligente de Blagnac ({MIB}).
+Nous allons modéliser dans cet ouvrage un système complexe, réel : la {MIB} (MIB).
 Nous avons volontairement choisi un domaine qui prend de l'ampleur : l'Internet des Objets (IoT - _Internet of Thing_).
 
 .La "Maison Intelligente" de Blagnac
 image::mib.png[MIB,width=90%,scaledwidth=90%]
 
-La {mib} est un appartement permettant la supervision de personnes dépendantes (patients, personnes âgées, ...) à domicile.
-La description de ce système (notre spécification initiale) est disponible sur le site {miburl}.
-Pour permettre de démarrer la modélisation, nous partirons d'un {FichierExigences}[fichier partagé] des exigences initiales.
+La {mib} est un appartement permettant l'assistance de personnes dépendantes à leur domicile.
+La spécification initiale de ce système est disponible sur le site {miburl}.
+La modélisation dans {Papyrus} que nous allons faire ensemble tout au long de ce livre s’appuiera sur une spécification initiale issue de ce projet et que vous pourrez voir à la <<mibreqliste>>.
 
 [WARNING]
 =====
 . Nous ne nous intéresserons qu'à la partie intelligente de la maison (et non à ses caractéristiques architecturales par exemple).
-. Nous avons pris quelques libertés sur les caractéristiques de la maison réelle
-pour parfois les enrichir (comme l'exigence `SH_ACO_030` ci-dessous) ou parfois les simplifier.
-. Cette liste d'exigences sert de base pour étudier la partie d'analyse (_elicitation_ en anglais) des exigences.
-Elles ne sont donc pas parfaites mais sont le reflet de la réalité.
-. Les exemples de modèles réalisés, pour des soucis de partage plus large avec la communauté, sont
-réalisés en anglais à partir de la version anglaise des exigences (disponible {siteUseCase}[ici]).
+. Nous avons pris quelques libertés sur les caractéristiques de la maison réelle pour parfois les enrichir (comme l'exigence `SH_ACO_030` ci-dessous) ou parfois les simplifier.
+. Cette spécification initiale des besoins sert de base pour étudier la partie _elicitation_ des exigences.
+Elles ne sont donc ni parfaites, ni complètes.
+. Enfin, pour des soucis de partage plus large avec la communauté internationale, les exemples de modèles réalisés dans le livre le seront en anglais et à partir de la version anglaise des exigences (disponible {siteUseCase}[ici]).
 =====
 
 == Description
 
 //merci Nicolas Hili
-La variété des équipements disponibles dans la {mib} permet à son occupant de
+La variété des équipements disponibles dans la {mib} permet à ses occupants de
 réaliser un ensemble de tâches comme :
 
-- Surveiller (_Monitoring_) ma consommation énergétique (globale ou d'un équipement en particulier)
-- Activer des dispositifs (_actuators_) comme l'intensité d'une ampoule (_light bulb_), l'ouverture d'un rideau (_shutter_)
-- Surveiller les données collectées par des capteurs (_sensors_) comme la temperature, la luminosité, etc.
+- Surveiller (_Monitoring_) sa consommation énergétique (globale ou d'un équipement en particulier)
+- Activer des dispositifs (_Actuators_) comme l'intensité d'une ampoule (_light bulb_), ou l'ouverture d'un rideau (_shutter_)
+- Surveiller les données collectées par des capteurs (_Sensors_) comme la température,ou la luminosité.
 
-L'objectif principal de la {mib} est d'être un support à l'assistance et au monitoring de
-personnes à domicile qui sont autonomes mais qui doivent être suivies ou aidées.
+L'objectif principal de la {mib} est d'être un support à l'assistance de
+personnes autonomes à leur domicile qui sont autonomes mais qui doivent être suivies et aidées en cas de problème.
 Les éléments de conforts mais surtout de sécurité sont donc primordiaux et doivent
-être fournis de manière continue, et potentiellement nécessiter des moyens humains d'assistance.
+être fournis de manière continue, et peuvent potentiellement nécessiter l'intervention de moyens humains d'assistance.
 
 L'intérêt de ce cas d'étude (que nous appèlerons _{projectName}_, ou {projectShortName} dans ce livre)
-est qu'elle nécessite de prendre en compte les aspects sécurité (_security_), adaptation (_accommodation_),
-sociaux (_societal_), légaux (_legislative_), économiques (_economical_), et écologiques (_ecological_).
-Dans ce qui suit nous décrivons plus précisément quelques services attendus d'un tel système.
+est qu'elle nécessite de prendre en compte des préoccupations diverses, parfois contradictoire, comme sécurité (_security_), adaptabilité (_adaptability_),
+sociétaux (_societal_), légaux (_legal_), économiques (_economical_), et écologiques (_ecological_).
+Dans ce qui suit nous décrivons plus précisément quelques services attendus du système à concevoir pour chacune de ces préoccupations.
 
 === Sécurité
 
-Comme n'importe quel autre logement, la maison intelligente doit être sécurisée.
-Le _{projectName}_ doit donc fournir un certain niveau de protection contre les intrus et les voleurs.
+Comme n'importe quel autre logement, la {mib} doit être sécurisée.
+Notre système à concevoir doit donc fournir un certain niveau de protection contre les intrus et les voleurs.
 Ce niveau doit même être renforcé du fait de la vulnérabilité induite par l'ultra-connectivité du système.
 On profitera donc avantageusement du niveau d'équipement pour mettre en place les réponses adaptées
 (alarmes, alertes automatiques, etc.) sans pour autant oublier de donner un accès privilégié
 aux différents acteurs de la supervision (pompiers, médecins, etc.).
-L'accès aux données personnelles (notamment de santé) via les différents dispositifs connectés
-sera fortement contrôlé. Les notions d'identification, de certification ou de cryptage seront donc primordiales.
+L'accès aux données personnelles, notamment de santé, via les différents dispositifs connectés
+sera fortement contrôlé. 
+Les notions d'identification, de certification ou de cryptage seront donc primordiales.
 
 WARNING: Cette description mélange des aspects différents de sécurité : la sureté, la sécurité et la cybersécurité.
-Nous avons laissé volontairement ces ambiguités pour illustrer comment {sysml} peut être utilisé pour exprimer
+Nous avons conservé volontairement cette ambiguïté  pour illustrer comment {sysml} peut être utilisé pour exprimer
 la composition d'exigences.
 
 === Adaptation
 
-Le _{projectName}_ doit pouvoir s'adapter aux conditions physiques et mentales
-de l'occupantfootnote:[Pour des raisons de simplicité, et pour coller à la réalité de la {mib}, nous ne considérons
+Le système à concevoir doit également pouvoir s'adapter aux conditions physiques et mentales
+de l'occupantfootnote:[Pour des raisons de simplicité, et pour coller à la réalité de la {mib}, nous considérons
 qu'il n'y a qu'un(e) seul(e) habitant(e).].
-Par exemple, la hauteur des équipements de cuisine (meubles, éviers) s'abaissent
+Par exemple, la hauteur des équipements de cuisine (meubles, éviers) s'abaisse
 automatiquement si l'occupant est en fauteuil roulant.
 Un autre exemple, qui concerne les personnes atteintes de troubles cognitifs, est
 la possibilité de guider l'occupant par la voix ou par un signal lumineux au sol,
-d'un point à un autre de la maison (par exemple le matin de son lit à la salle de bain).
-Le _{projectName}_ doit également permettre de configurer les nombreux équipements
+d'un point à un autre de la maison, par exemple le matin pour guider l’habitant(e) de son lit à la salle de bain.
+Le système doit également permettre de configurer les nombreux équipements
 en fonction des préférences de l'occupant (par exemple, heure de fermeture des volets ou du réveil, etc.).
 
 === Environnement et économie
 
 Une des caractéristiques des maisons intelligentes modernes est leur prise en compte de
 l'environnement et donc des consommations énergétiques.
-L'objectif peut être économique, légal (suivre une norme ou un label), ou simplement social.
-Par exemple le _{projectName}_ pourra abaisser la température de la maison à certains moments
-(programmés ou opportuns). Les dispositifs inutiles à certains moments de la journée pourront
-être mis en sommeil, idem pour les débits Internet, etc.
+L'objectif peut être économique, légal (conformité à une norme ou un label), ou simplement social.
+Par exemple le système pourra abaisser la température de la maison à certains moments
+(programmés ou opportuns). 
+Les dispositifs inutiles à certains moments de la journée pourront
+être mis en sommeil sommeil à certains moments de la journée, ou bien encore les débits Internet réduits.
 La maison pourra aussi être autonome en énergie, ou tout le moins, produire dans une certaine
 mesure sa propre énergie (éolienne, panneaux solaires, etc.).
 
 == Plateforme expérimentale
 
-Un véritable _{projectName}_ est disponible à la {mib}, sur le campus de l'{iut}, près de Toulouse.
+Un tel système de maison intelligente est disponible en réel sur le site expérimental de la {mib}, sur le campus de l'{iut}, près de Toulouse.
 N'hésitez pas à nous contacter si vous êtes intéressé par des expérimentations réelles.
 
+[[mibreqliste]]
 == Liste des exigences
 
-Nous fournissons ci-dessous une liste précise d'exigences (_requirements_)
-pour le _{projectName}_.
-Cette liste est bien sûr non-exhaustive et nous permettra simplement de montrer le lien
-en {papyrus} entre ces exigences et les artefacts de modélisation.
+Nous fournissons ci-dessous une liste précise des exigences (_requirements_)
+que nous allons considérer pour notre système à développer.
+Cette liste est bien sûr non-exhaustive, mais elle nous permettra d’illustrer comment faire de l’ingénierie système avec {papyrus}.
 
-.Une liste initiale d'exigences
+.Une liste initiale d’exigences pour le système de la maison intelligente (SmartHomesystem)
 [align="center",cols="1,1,5",options="header",width=100]
 |======================
 | ID  | Categorie | Description
@@ -161,11 +161,10 @@ en {papyrus} entre ces exigences et les artefacts de modélisation.
 == Quelques exemples de scénarios
 
 Dans ce qui suit, nous imaginons que l'habitante qui occupe la maison s'appelle Alice
-et que son état de santé nécessite un suivi particulier :
+et que son état de santé nécessite un suivi particulier.
 
-- Chaque matin, quand Alice s'éveille, un guidage lumineux au sol lui permet de simplement
-atteindre la salle de bain pour sa toilette. Si elle a choisi l'option, elle peut même
-bénéficier d'un guidage audio complémentaire.
+- Chaque matin, quand Alice s'éveille, un signal lumineux au sol la guide pour mermettre d'atteindre la salle de bain pour sa toilette. 
+Si elle a choisi l'option, ou qu'elle le demande, elle peut même bénéficier d'un guidage audio complémentaire.
 
 - Alice bénéficie d'un "majordome intelligent"footnote:[Scénario tiré du Projet ESIR3 NSOC donné par {bc} à l'{esir}.],
 capable :
@@ -178,8 +177,8 @@ capable :
 * d'afficher des conseils / alertes pour bénéficier au mieux des capacités passives de la maison (Ouvrir la fenêtre pendant 10 minutes,
 Ne pas faire entrer de nouveaux visiteurs, ...)
 
-- Quand Alice chute sur le sol et qu'elle reste immobile plus de 30s, et qu'elle ne répond pas à une première
-série de messages audio diffusés dans la maison, le {projectShortName} appelle les secours avec les informations rentrées au
+- Si Alice chute sur le sol et qu'elle reste immobile plus de 30s, et qu'elle ne répond pas à une première
+série de messages audio diffusés dans la maison, le système à concevoir appelle les secours avec les informations rentrées au
 préalable dans le système.
 
 == Pour aller plus loin

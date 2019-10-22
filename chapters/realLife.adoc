@@ -110,7 +110,7 @@ appelée {fuml}, ont été implémentées dans plusieurs outils :
 - Une implémentation récente de {fUML} est disponible ici :
 http://modeldriven.github.io/fUML-Reference-Implementation/
 - Une autre implémentation est disponible dans l'outil Cameo Simulation Toolkit de {MagicDraw}.
-- Pour aller plus loin avec {papyrus}, qui dispose aussi de son implémentatino de {fUML}, appelée {moka},
+- Pour aller plus loin avec {papyrus}, qui dispose aussi de sa propre implémentation de {fUML}, appelée {moka},
 consultez la documentation spécifique :
 https://wiki.eclipse.org/Papyrus/UserGuide/fUML_ALF.
 
