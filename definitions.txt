@@ -7,7 +7,7 @@
 :papyrusUML: http://www.eclipse.org/papyrus/[Papyrus]
 :papyrusversion: 4.0
 :sysmlversion: 1.4
-:papyrusversionlast: 2019-06
+:papyrusversionlast: 2019-09
 :umlversion: 2.5.1
 :sysmlversionlast: 1.6
 :siteurl: https://bit.ly/sysmlbook
