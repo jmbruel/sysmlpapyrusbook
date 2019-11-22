@@ -1,6 +1,6 @@
 = SysML par la pratique avec Papyrus image:https://travis-ci.org/jmbruel/sysmlpapyrusbook.svg?branch=master["Build Status", link="https://travis-ci.org/jmbruel/sysmlpapyrusbook"]
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
-:papyrusversion: 4.0
+:papyrusversion: 2019-09 (4.5.X)
 :siteurl: https://bit.ly/sysmlbook
 :githuburl: https://github.com/jmbruel/sysmlpapyrusbook
 :pdfurl: https://github.com/jmbruel/sysmlpapyrusbook/blob/gh-pages/PapyrusSysMLinAction.pdf
