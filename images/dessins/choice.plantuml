@@ -8,9 +8,10 @@
 '-----------------------------------
 
 :Etat;
-if () then (yes)
+if (test) then (yes)
   :EtatYes;
 else (no)
   :EtatNo;
+endif
 
 @enduml

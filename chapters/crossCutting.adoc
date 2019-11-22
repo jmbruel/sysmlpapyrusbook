@@ -1,0 +1,295 @@
+
+[[crossCutting]]
+= Préoccupations transverses de modélisation
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Traçabilité, allocation etc.
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+On abordera :
+
+- Les <<org,aspects organisationnels>>
+- La <<trace,traçabilité des exigences>>
+- Les <<allocation,mécanismes d'allocation>>
+- Le <<paramt,diagramme paramétrique>> (aspects transveres)
+
+[[org]]
+//---------------------------------------------------------------------------------
+== Organisation
+//---------------------------------------------------------------------------------
+
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
+|======================
+|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	|					|        		|		| {here}
+| {analysis}		|					|        		|				|
+| {design}			|					|        		|				|
+| {implementation}	|					|        		|				|
+|======================
+
+=== Fondements
+
+On abordera :
+
+- Le diagramme de paquetages (_Package Diagram_)
+- Les différent types de _packages_
+- Les organisations possibles
+- La notion de _Namespaces_
+- Les _Dependencies_
+- Les adaptations graphiques
+
+[[package]]
+=== Le diagramme de paquetages (pkg)
+
+Le diagramme de paquetages (_Package Diagram_) permet de représenter l'organisation des modèles en paquetages.
+Nous dirons plus volontiers 'diagramme de _package_' dans cet ouvrage. 
+Le terme "paquetage" est en effet très peu utilisé dans les communautés de développement et de modélisation.
+
+.Concepts définis dans cette section
+[NOTE,icon=sysml.jpeg]
+=====
+Nous aborderons les concepts du niveau
+initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM):
+Package Diagram, ownership, namespace, containment, dependency, view, viewpoint
+=====
+
+ifndef::backend-pdf[]
+* Il est identique à {uml}, et classique pour les développeurs (java notamment)
+* Il permet d'organiser les modèles en créant un espace de nommage (cf <<namespace>>)
+endif::backend-pdf[]
+ifdef::backend-pdf[]
+Ce diagramme est identique à celui d'{uml}, et le concept de paquetage (_package_) est classique pour les développeurs (java notamment).
+Il permet d'organiser les modèles en créant un espace de nommage (cf <<namespace>>).
+endif::backend-pdf[]
+
+[[pkg-types]]
+=== Les différent types de _packages_
+
+Il existe plusieurs types de _packages_ :
+
+[horizontal]
+`models`::
+	un _package_ "top-level" dans une hiérarchie de _packages_
+`packages`::
+	le type le plus classique : un ensemble d'éléments de modèles
+`model librairies`::
+	un _package_ prévu pour être réutilisé (importé) par d'autres éléments
+`views`::
+	un _package_ spécial pour représenter les points de vue
+
+[TIP]
+====
+Un point de vue (_viewpoint_) est utilisé pour matérialiser une perspective particulière de modélisation.
+Il possède des propriétés standardisés (_concerns_, _language_, _purpose_, etc.) et permet d'indiquer qu'une
+vue (un _packetage_ particulier, stéréotypé +<<view>>+) est conforme (dépendance +<<conform>>+) à un point de vue.
+====
+
+[[organisation]]
+=== Les organisations possibles
+
+Les modèles peuvent être organisés selon toutes sortes de considération :
+
+- par hiérarchie "système" (e.g., entreprise, système, composant, ...)
+- par types de diagrammes (e.g., besoins, structure, comportements, ...)
+- par cycle de vie (e.g., analyse, conception, ...)
+- par équipes (e.g., architectes, <<IPT>>, ...)
+- par points de vue (e.g., sécurité, performance, ...)
+- etc.
+
+.Exemple d'organisation simple
+image::pkg-organisation2.png[width="70%",scaledwidth="80%"]
+
+.Représentation de cette organisation dans un outil
+image::pkg-organisation-modelview.png[width="40%",scaledwidth="40%"]
+
+[[namespace]]
+=== La notion de _Namespaces_
+
+Un _package_ permet de créer un espace de nommage pour tous les éléments qu'il contient.
+//Package hierarchies are based on the concept of containment or ownership of packageable elements
+En effet une hiérarchie de _packages_ est basée sur la notion d'appartenance (ou de contenance, _containment_), c'est-à-dire de possession (_ownership_).
+Ainsi dans un _package_ on n'a pas à se soucier des noms des éléments.
+Même si d'autres utilisent les mêmes noms, il n'y aura pas ambiguïté.
+
+.Définition : _Namespace_ (OMG SysML v1.5, p. 23)
+[NOTE,icon=sysml.jpeg]
+====
+_The package defines a namespace for the packageable elements._
+====
+
+Pour éviter toute ambiguïté dans les diagrammes, on peut utiliser pour les éléments de modèles leur nom complet (_Qualified name_),
+c'est-à-dire le nom de l'élément préfixé par son (ou ses) _package(s)_
+(e.g., `Structure::Products::Clock`).
+
+[TIP]
+====
+Dans les outils {sysml}, il faut souvent demander explicitement à voir les noms complets (_Qualified names_)
+des éléments (la plupart du temps dans les options graphiques).
+
+Pour {papyrus}, il suffit sur l'émément sélectionné d'aller dans l'onglet menu:Property[Appearance > Qualified name Depth] et de modifier la valeur par défaut, comme illustré ci-dessous.
+
+image::qualifiedNames.png[width="100%",scaledwidth="100%"]
+
+====
+
+[[pkg-dep]]
+=== Les dépendances
+
+Un certain nombre de dépendances peuvent exister entre des éléments de _package_
+ou entre les _packages_ eux-mêmes :
+
+[horizontal]
+_Dependency_::
+	une dépendance "générale", non précisée,
+	représentée par une simple flèche pointillée +----->+
+_Use_::
+	l'élément "utilise" celui à l'autre bout de la flèche (un type par exemple),
+	représentée par le stéréotype +<<use>>+
+_Refine_::
+	l'élément est un raffinage (plus détaillé) de celui à l'autre bout de la flèche,
+	représentée par le stéréotype +<<refine>>+
+_Realization_::
+	l'élément est une "réalisation" (implémentation) de celui à l'autre bout de la flèche,
+	représentée par le stéréotype +<<realize>>+
+_Allocation_::
+	l'élément (e.g., une activité ou un _requirement_) est "alloué" sur celui à l'autre
+  bout de la flèche (un `bloc` la plupart du temps),
+	représentée par le stéréotype +<<allocate>>+
+
+[[dependencyMatrix]]
+//---------------------------------------------------------------------------------
+== Matrices de dépendances
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Expliquer ici comment réaliser une matrice de dépendance
+====
+endif::final[]
+//-----------------------------------------------
+
+TIP: Nous vous conseillons de créer (si ce n'est déjà fait) un _package_ pour rassembler vos modèles de traçabilité.
+Vous pouvez même avoir des _packages_ dédiés (par exemple `Stakeholder Traceability Model`).
+
+Pour créer une matrice de traçabilité avec {papurys} :
+. Placez-vous dans le _package_ où vous souhaitez votre table
+. menu:ClickDroit[New Table > Relationship Generic Matrix]
+. Sélectionnez les données d'entrée des lignes et des colonnes dans l'onglet `Matrix` de la table (dans ses `Properties`)
+. Ajoutez éventuellement un filtre. 
+Par exemple pour n'avoir que les éléments possédant le stéréotype +<<stakeholder>> :
+
+* Clickez sur le image:papyrusPlus.png[width=3%] du champs `filter` des lignes (`row`) ou des colonnes (`columns`)
+* Sélectionnez un filtre (`HasAppliedStereotypesExpression` pour notre exemple)
++
+.Sélection d'un filtre sur les entrées d'une table
+image::{papyrusversion}/papyrusTableFilter.png[width="80%",scaledwidth=80%]
+* Donnez le nom du stéréotype recherché dans le champs `Name` (`stakeholder` pour notre exemple)
+. Sélectionnez le `Relation Owner` où seront générés les relations correspondantes aux cases cochées dans la matrice.
+Par exemple `Table Root Element` mettra les relations dans le même _package_ que la table.
+. Vous n'avez plus qu'à cocher les cases et observer les relations nouvelles créées dans le _package_.
++
+TIP: Vous puvez même réaliser un diagramme de bloc en glissant-déposant les relations pour obtenir directement un diagramme de traces.
++
+.Exemple de diagramme de traces
+image::{papyrusversion}/papyrusTableRelationDiagram.png[width="80%",scaledwidth=80%]
+
+
+[[trace]]
+//---------------------------------------------------------------------------------
+== La traçabilité des exigences
+
+Nous avons vu déjà un certain nombre de mécanismes {sysml} qui permettent de tracer les exigences.
+Nous les regroupons ici dans une matrice spécifique (qui se lit dans le sens des relations, par exemple un élément de structure comme un bloc `\<<satisfy>>+ une exigence).
+
+.Traçabilité
+ifdef::book[[cols="h,3*",options="header"]]
+ifndef::book[[cols="h,3*",options="header",width="50%"]]
+|======================
+|					| {Requirements} 							| {Structure}	| {Behavior}
+| {Requirements}	| +<<deriveRqt>>+, +<<refine>>+, +<<copy>>+ |    			|
+| {Structure}		| +<<allocate>>+, +<<satisfy>>+				| 				| +<<allocate>>+
+| {Behavior}		| +<<refine>>+								|				|
+|======================
+
+Comme indiqué dans le tableau ci-dessus, en général, le lien de raffinement est utilisé entre une exigence et un élément comportemental (état, activité, `{uc}`, etc.) tandis que l'allocation concerne principalement les éléments de structures.
+
+[red]#XXX Mettre un exemple avec tous ces liens. XXX#
+
+[[allocation]]
+//---------------------------------------------------------------------------------
+== Les mécanismes d'allocation
+
+Un mécanisme nouveau en {sysml} et important pour l{is} est le mécanisme d'*allocation*.
+Il permet de préciser quel élément conceptuel (comme un comportement ou une activité) est alloué sur quel élément physique.
+Il est possible d'exprimer cette allocation de plusieurs manières.
+
+[red]#XXX ToDO XXX#
+
+- Parler du `\<<AllocatedTo>>+, compartiments des blocs et autres annotations.
+- Parler des zones d'allocation dans les machines à états où les diagrammes d'activité par exemple.
+- Parler des `\<<allocate>>+.
+
+
+== Les adaptations graphiques
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Parler des feuilles de style.
+Associer les couleurs CESAM par exemple.
+====
+endif::final[]
+//-----------------------------------------------
+
+
+== {resume}
+{sysml} propose un certain nombre de mécanismes pour organiser les différents modèles,
+tirés pour la plupart d'{uml}. Ces mécanismes seront plus faciles à comprendre au travers
+de leur utilisation concrète dans la suite.
+
+.Organisation
+ifdef::backend-pdf[[cols="h,4*",options="header"]]
+ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
+|======================
+|						| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
+| {organisation}	| `package`			| `package`		| `package`		| `dependencies`
+| ...					|					|        		|				|
+|======================
+
+== {revisions}
+
+. Quels sont les 5 types de dépendances entre _packageable elements_ ?
+. À quoi cela peut-il servir de définir les dépendances (donnez des exemples concrets) ?
+. Quelles sont les différences entre `\<<satisfy>>+ et `\<<allocate>>+ ?
+. Pourquoi est-il important de relier un _use case_ à au moins un _requirement_ ?
+. L'inverse est-il aussi important ?
+
+ifdef::correction[]
+
+== Éléments de réponses
+
+. Quelles sont les différences entre `\<<satisfy>>+ et `\<<allocate>>+ ?
+La satisfaction concerne une propriété (d'une solution vis à vis d'un problème) quand l'allocation permet de rajouter un information sur qui fait quoi.
+. Pourquoi est-il important de relier un _use case_ à au moins un _requirement_ ?
+Sinon on peut se demander s'il s'agit vraiment d'une utilisation du système qui nous concerne (une exigence a-t'elle été oubliée?).
+. L'inverse est-il aussi important ?
+Encore plus je dirais, au sens où une exigence n'est couverte par aucune utilisation du système (cela peut arriver lors d'une exigence non satisfiable!)
+
+endif::correction[]

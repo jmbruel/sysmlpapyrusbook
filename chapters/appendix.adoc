@@ -9,7 +9,10 @@ ACT::
 _**ACT**ivity Diagram_, le diagramme d'activité  (cf. <<act>>)
 
 BDD::
-_**B**lock **D**efinition **D**iagram_, le diagramme de définition de bloc (cf. <<bddsec>>)
+_**B**lock **D**efinition **D**iagram_, le diagramme de définition de blocs (cf. <<bdd>>)
+
+CESAM::
+_**CES**AMES **A**rchitecture **M**ethod_, le _framework_ d'architecture et de modélisation de {CESAMES} (cf. <<cesamOverview>>)
 
 DS::
 **D**iagramme de **S**équence (cf. <<seq>>)
@@ -39,13 +42,16 @@ OOSEM::
 _**O**bject-**O**riented **S**ystems **E**ngineering **M**ethod_)
 
 PAR::
-_**P**arametric **D**iagram_, le diagramme paramétrique (cf. <<param>>)
+_**Par**ametric Diagram_, le diagramme paramétrique (cf. <<param>>)
 
 PKG::
-_**P**ackage **D**iagram_, le diagramme des paquetages (cf. <<package>>)
+_**P**ac**k**a**g**e Diagram_, le diagramme des paquetages (cf. <<package>>)
 
 REQ::
-_**REQ**uirements **D**iagram_, le diagramme des exigences (cf. <<reqs>>)
+_**REQ**uirements Diagram_, le diagramme des exigences (cf. <<reqs>>)
+
+RTF::
+_**R**evision **T**ask **F**orce_
 
 SD::
 _**S**equence **D**iagram_, le diagramme de séquences (cf. <<seq>>)
@@ -53,13 +59,13 @@ _**S**equence **D**iagram_, le diagramme de séquences (cf. <<seq>>)
 STM::
 _**ST**ate **M**achine Diagram_, le diagramme d'états (cf. <<stm>>)
 
-SysML::
-_**S**ystems **M**odeling **L**anguage_
+SysML(R)::
+_**Sys**tems **M**odeling **L**anguage_
 
 UC::
 _**U**se **C**ase Diagram_, le diagramme des cas d'utilisation (cf. <<uc>>)
 
-UML::
+UML(R)::
 _**U**nified **M**odeling **L**anguage_
 
 [appendix]
@@ -80,17 +86,39 @@ endif::final[]
 
 De nombreux utilisateur de {sysml} sont habitués aux termes anglais de
 cette notation.
+Idem pour les utilisateurs de {CESAM}.
 Nous reprenons ici la liste des traductions françaises que nous avons utilisées
-(et qui ne sont pas standard) pour permettre au lecteur de faire une correspondance.
+(et qui ne sont pas nécessairement standards) pour permettre au lecteur de faire une correspondance.
 
 [horizontal]
 _Activity Diagram_:: Diagramme d'activité  (cf. <<act>>)
 _Actor_:: Acteur
-_Block Definition Diagram_:: Diagramme de définition de bloc (cf. <<bddsec>>)
+_Block Definition Diagram_:: Diagramme de définition de blocs (cf. <<bdd>>)
+_Constructional flows or objects_:: 	Flux ou objets organiques
+_Constructional requirements_:: 	Exigences organiques
+_Constructional scenarios_:: 	Scénarios organiques
+_Constructional vision_:: 	Vision organique
+_Components_::	Composants
 _Composite State_:: État composite (ou super-état)
 _Diagram Frame_ (et _Header_):: Cadre (et cartouche) (cf. <<cadre>>)
+_Dynamics_:: 	Comportement
+_Environment Architecture_::	Contexte
+_Expected properties_::	Propriétés attendues
+_Flows_:: 	Flux
+_Functional flows or objects_:: 	Flux ou objets fonctionnels
+_Functional modes_:: 	Modes fonctionnels
+_Functional requirements_:: 	Exigences fonctionnelles
+_Functional scenarios_:: 	Scénarios fonctionnels
+_Functional vision_:: 	Vision fonctionnelle
+_Functions_::	Fonctions
 _Internal Block Diagram_:: Diagramme de blocs internes  (cf. <<ibd>>)
+_Missions_::	Missions
 _Multiplicity_:: Cardinalité (ou Multiplicité)
+_Needs_:: 	Besoins
+_Operational contexts_:: 	Contextes opérationnels (cf. <<visionOpState>>)
+_Operational vision_:: 	Vision opérationnelle  (cf. <<visionOp>>)
+_Operational flows or objects_:: 	Flux ou objets opérationnels (cf. <<visionOpFlow>>)
+_Operational scenarios_:: 	Scénarios opérationnels (cf. <<visionOpDyn>>)
 _Parametric Diagram_:: Diagramme paramétrique (cf. <<param>>)
 _Package_:: Paquetages, mais nous préférons garder Package, admis dans le vocabulaire courant,
 du moins en informatique.
@@ -99,8 +127,10 @@ _Requirements_:: Exigences
 _Requirements Diagram_:: Diagramme des exigences (cf. <<reqs>>)
 _Sequence Diagram_:: Diagramme de séquences (cf. <<seq>>)
 _Stakeholders_:: Parties prenantes (du système)
+_States_:: 	États
 _State Machine_:: Machine à état
 _State Machine Diagram_:: Diagramme d'états (cf. <<stm>>)
+_Static elements_:: 	Structure
 _Use Case Diagram_:: Diagramme des cas d'utilisation (cf. <<uc>>)
 
 [appendix]
@@ -150,38 +180,43 @@ et la révision courante {SysML} v1.5 a été publiée en mai 2017.
 
 {Papyrus} est né...
 
-=== Couverture des concepts
+[appendix]
+== Couverture des concepts
 
 Comme indiqué en avant-propos de ce livre, nous n'abordons qu'une partie des concepts {sysml}, les plus importants.
 Nous nous sommes basés sur la classification du système de certification de l'{omg} <<OCSMP>>.
 
-Nous indiquons dans le tableau ci-dessous le différents concepts du niveau
-initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM)
-et où ils sont abordés dans le livre.
+Nous indiquons dans le tableau ci-dessous le différents concepts du niveau initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM) (c'est pour cela qu'ils sont listés ici en anglais) et où ils sont abordés dans le livre.
 
 
-==== Modèles d'exigences
+//Pour enlever le mot "Chapitre" des références dans le tableau
+:old-chapter-refsig: {chapter-refsig}
+:!chapter-refsig:
+:old-section-refsig: {section-refsig}
+:!section-refsig:
 
-[align="center",cols="3,1*^",options="header",width=100]
-|======================
-|	Concept         |   Lien
-| Exigences       |		<<reqs>>
-| derive, verify, satisfy, refine, trace, containment | <<reqLinks>>
-| Diagramme des exigences | <<reqDiags>>
-| Diagramme des cas d'utilisation | <<ucDiags>>, <<uc-concepts>>
-| use case, actor, and subject | <<uc-concepts>>
-| association, include, extend, generalization | <<uc-concepts>>
-|======================
-
-==== Modèles structurels
+=== Modèles d'exigences
 
 [align="center",cols="3,1*^",options="header",width=100]
 |======================
 |	Concept         |   Lien
-| Package Diagram       |
-| ownership, namespace |
-| containment, dependency |
-| view, viewpoint |
+| Requirements       |		<<reqs-init>>, <<reqs>>
+| deriveRqt, verify, satisfy, refine, trace, containment | <<reqLinks>>
+| Requirements Diagram | <<reqs-init>>, <<reqDiags>>
+| Use Case Diagram | <<uc-init>>, <<ucDiags>>, <<uc>>
+| use case, actor, and subject | <<uc>>
+| association, include, extend, generalization | <<uc>>
+|======================
+
+=== Modèles structurels
+
+[align="center",cols="3,1*^",options="header",width=100]
+|======================
+|	Concept         |   Lien
+| Package Diagram       | <<pkg-init>>, <<package>>
+| ownership, namespace, containment | <<namespace>>
+| dependency | <<pkg-dep>>
+| view, viewpoint | <<pkg-types>>
 | Block definition, Block usage |
 | valuetype (with units) |
 | value properties, parts, references, and operations |
@@ -199,10 +234,11 @@ et où ils sont abordés dans le livre.
 | connecting constraint properties and value properties with binding connectors |
 |======================
 
-==== Modèles comportementaux
+=== Modèles comportementaux
 
 [align="center",cols="3,1*^",options="header",width=100]
 |======================
+|	Concept         |   Lien
 | Activity Diagram |
 | I/O flow including object flow, parameters and parameter nodes, and pins |
 |  control flow including control nodes |
@@ -211,7 +247,7 @@ et où ils sont abordés dans le livre.
 | send signal action |
 | accept event action |
 | Sequence Diagram|
-| lifelines; asynchronous and synchronous messages |
+| lifelines, asynchronous and synchronous messages |
 | interaction references |
 | State Machine Diagram |
 | states and regions |
@@ -220,24 +256,29 @@ et où ils sont abordés dans le livre.
 | behaviors (entry, exit, and do)|
 |======================
 
-==== Eléments transverses
+=== Eléments transverses
 
 [align="center",cols="3,1*^",options="header",width=100]
 |======================
-| Allocation |
+|	Concept         |   Lien
+| Allocation | <<allocation>>
 |  AllocatedFrom and AllocatedTo|
 | representation (callouts, compartments, allocate activity partitions, and tables) |
 | special notations for comment, rationale, problem, and constraint |
 |  diagram frames, ports, parameters, and anchors on diagram frames |
-| diagram header, and diagram description |
+| diagram header, and diagram description | <<cadre>>
 | Stereotype |
 |======================
 
+//Pour remettre le mot "Chapitre" des références dans le tableau
+:chapter-refsig: {old-chapter-refsig}
+:section-refsig: {old-section-refsig}
+
 [appendix]
 [[sysml15]]
-== Nouveautés de SysML 1.5
+== Nouveautés de SysML {sysmlversionlast}
 
-Pour les lecteurs habitués à {sysml} `1.4` nous résumons ici les principales nouveautés de la version `1.5`.
+Pour les lecteurs habitués à {sysml} `1.4` nous résumons ici les principales nouveautés de la version `{sysmlversionlast}`.
 
 === Exigences
 

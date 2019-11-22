@@ -1,18 +1,30 @@
 
 = Notation
-:conceptsize: 90%
+:conceptsize: 100%
 :imageold: {imagesdir}
 :imagesdir: {imagesdir}/dessins
+
+Comme indiqué en avant-propos de ce livre, nous n'abordons qu'une partie des concepts {sysml}, les plus importants.
+Nous indiquons dans le tableau ci-dessous le différents concepts du niveau initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM) de l'{omg} <<OCSMP>>.
+
 
 == Diagramme des exigences
 
 //[align="center",cols="1,3,1,3",options="header",width=100]
-[align="center",cols="1,2,1,2",width=100]
+[align="center",cols="1,3,1,3",width=100]
 |======================
-| Exigence     |		image:reqs.png[width={conceptsize},scaledwidth={conceptsize}]
-| Composition  |		image:reqs.png[width={conceptsize},scaledwidth={conceptsize}]
-| Dépendance   |		image:reqs.png[width={conceptsize},scaledwidth={conceptsize}]
-| Traçabilité  |		image:reqs.png[width={conceptsize},scaledwidth={conceptsize}]
+| Exigence     |		image:reqs.svg[width={conceptsize},scaledwidth={conceptsize}]
+| Composition  |		image:reqs-comp.svg[width={conceptsize},scaledwidth={conceptsize}]
+| Dépendance   |		image:reqs-dep.svg[width={conceptsize},scaledwidth={conceptsize}]
+| Traçabilité  |		image:reqs-trace.svg[width={conceptsize},scaledwidth={conceptsize}]
+| Dérive |
+image:reqs-derive.svg[width={conceptsize},scaledwidth={conceptsize}]
+| Vérifie |
+image:reqs-verify.svg[width={conceptsize},scaledwidth={conceptsize}]
+| Satisfait |
+image:reqs-satisfy.svg[width={conceptsize},scaledwidth={conceptsize}]
+| Rafine |
+image:reqs-refines.svg[width={conceptsize},scaledwidth={conceptsize}]
 |======================
 
 == Diagramme d'état
@@ -20,10 +32,10 @@
 //[align="center",cols="1,3,1,3",options="header",width=100]
 [align="center",cols="1,2,1,2",width=100]
 |======================
-| Etats, transition     |		image:state.png[width={conceptsize},scaledwidth={conceptsize}]
-| Etat initial     |		image:initState.png[width={conceptsize},scaledwidth={conceptsize}]
-| Etat final     |		image:finalState.png[width={conceptsize},scaledwidth={conceptsize}]
-| Choice     |		image:../choice.png[width={conceptsize},scaledwidth={conceptsize}]
+| États, transition     |		image:state.svg[width={conceptsize},scaledwidth={conceptsize}]
+| État initial     |		image:initState.svg[width={conceptsize},scaledwidth={conceptsize}]
+| État final     |		image:finalState.svg[width={conceptsize},scaledwidth={conceptsize}]
+| Choix     |		image:choice.svg[width={conceptsize},scaledwidth={conceptsize}]
 |======================
 
 //-----------------------------------------------

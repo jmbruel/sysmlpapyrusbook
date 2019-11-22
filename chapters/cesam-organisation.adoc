@@ -1,0 +1,88 @@
+[[visionOrga]]
+= Organisation des modèles
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Avant les visions, question du contexte et du WHO.
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+//---------------------------------------------------------------------------------
+== Principes
+
+Blabla sur cette partie en générale.
+
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 5+| {here} .5+<.>m|
+| {context} | | | | | 
+| {analysis}	| | | | |  
+| {design}	| | | | | 
+| {implementation}	| | | | | 
+|======================
+
+== Mise en œuvre en SysML
+
+.Concepts définis dans cette section
+[NOTE,icon=sysml.jpeg]
+=====
+Nous aborderons dans cette partie les concepts du niveau
+initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM):
+package,  model, dependency, comment.
+=====
+
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+Vérifier les termes (absents ou en trop)!
+====
+endif::final[]
+//-----------------------------------------------
+
+Nous proposons d'organiser le modèle en 2 _packages_ séparant clairement les aspects développement (projet) et les aspects produit (système), conformément aux préconisations de {CESAM}.
+
+[[visionOrgaFig]]
+ifdef::FR[.Exemple d'organisation principale]
+image::diagrams/High-level_organisation_description_of_the_SmartHomeSystemProject_model.SVG[width="80%",scaledwidth=80%]
+
+Pour réaliser ce diagramme en {papyrus} :
+
+. Créez votre projet {papyrus} si ce n'est déjà fait :
+* menu:File[New > Papyrus Project]
+* Cochez la case btn:[SysML {sysmlversionlast}] puis btn:[Next]
+* Donnez un nom à votre projet puis btn:[Next]
+* Choisissez votre premier diagramme : un btn:[SysML {sysmlversionlast} Block Definition Diagram]  puis btn:[Finish]
++
+CAUTION: Parler du template`
+. Double-cliquez dans votre `Project Explorer` sur le modèle portant le même nom que le projet
+. Ouvrez le `Model Explorer` puis Double-cliquez sur le modèle
+. Glissez-Déposez deux `Model` depuis la palette
++
+TIP: Notez la création des éléments de modèle correspondants dans le `Model Explorer`
++
+. Renommez les en conséquence
+. Reliez-les par une `Dependency` (dans l'onglet `General Annotaions` de la palette)
+. Etc.
+
+Suite de l'organisation ...
+
+Parlez de l'organisation des stakeholders en _packages_ (`Key blabla`).
+TIP: Parler des `ElementGroup` => organisation logique (adopté par SysML 2.0)
+
+== {resume}
+
+== {revisions}
+
+. Quelle est la différence entre un _package_ de type *_model_* et un _package_ de type *_package_* ?

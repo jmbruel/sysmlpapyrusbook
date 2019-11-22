@@ -21,9 +21,155 @@ Avant de développer un système il faut définir le système => IBD
 - Soit par IBD pour insister sur le système clos (tout ce qui est à l'extérieur n'est pas pris en compte). => SystemClos
 - Soit par BDD => Context
 
-[[uc-concepts]]
+[[ibd]]
+== _Internal Block Diagrams_
+
+Un `{ibd}` décrit la structure interne d’un bloc sous forme de :
+
+parts::
+	Les parties qui constituent le système (ses sous-systèmes)
+ports::
+	Elément d'interaction avec un bloc
+connecteurs::
+	Liens entre ports
+
+=== Parts
+
+Les parties sont représentés par les éléments au bout d'une composition dans un `{bdd}`.
+Elles sont créés à la création du bloc qui les contient et sont détruites avec lui s'il
+est détruit (dépendance de vie).
+
+[CAUTION]
+====
+Il ne s'agit pas de redessiner le BDD. Les _parts_ sont des instances et non des classes (au sens objet).
+====
+
+On représente les _parts_ comme des bloc en traits pleins
+et les _references_ comme des blocs en trait pointillés.
+
+.Exemple de _Parts_
+image::parts.png[width="40%",scaledwidth="50%"]
+
+.Autre exemple de _Parts_
+image::parts2.png[width="60%",scaledwidth="50%"]
+
+==== Ports (SysML 1.2)
+
+[CAUTION]
+====
+La dernière version de la spécification {norme} préconise l'abandon des ports tels que définis
+dans la version 1.2. Nous présentons les nouvelles notions dans la <<port13,section qui suit>>.
+
+Néanmoins, de par l'importance des exemples qui utilisent les notions habituelles de ports,
+et vu que tous les outils ne supportent pas encore les nouveaux ports, nous indiquons ici
+leur définition et recommandons pour l'instant de les utiliser.
+====
+
+Les ports :
+
+- préservent l'encapsulation du bloc
+- matérialise le fait que les interactions avec l'extérieur (via un port)
+sont transmise à une partie (via un connecteur)
+- les ports connectés doivent correspondre (_kind_, _type_, _direction_, etc.)
+
+[NOTE]
+====
+Les ports définissent les points d’interaction offerts (`«provided»`) et requis (`«required»`) entre les blocs.
+Les connecteurs peuvent traverser les "frontières" sans exiger de ports à chaque hiérarchie.
+====
+
+.Exemples de flots
+image::ports-flots.png[width="60%",scaledwidth="50%"]
+
+.Définition : Ports (OMG SysML v1.5, p. 75)
+[NOTE,icon=sysml.jpeg]
+====
+_Ports are points at which external entities can connect to and interact with a block in different or more limited ways than connecting directly to the block itself._
+====
+
+.Exemples de flots multi-physique entre ports
+image::flots.png[width="90%",scaledwidth="50%"]
+
+Les ports peuvent être de nature classique (comme en {UML}) et représenter la fourniture ou le besoin de services. On parle alors
+de _*standard flows*_.
+
+Ils peuvent aussi être de nature "flux physique", on parle de _*flow ports*_.
+
+Les `Flux` peuvent être :
+
+- atomiques (un seul flux),
+- composites (agrégation de flux de natures différentes).
+
+[NOTE]
+====
+Un _flow port_ atomique ne spécifie qu’un seul type de flux en entrée ou en sortie (ou les deux),
+la direction étant simplement indiquée par une flèche à l’intérieur du carré représentant le port. Il peut être typé par un bloc ou un _Value Type_ représentant le type d’élément pouvant circuler en entrée ou en sortie du port.
+====
+
+[[port13]]
+=== Ports (SysML 1.3)
+
+La version 1.3 de la spécification {sysml} introduit les concepts de :
+
+_proxy port_::
+Ils doivent remplacer les ports `1.2` (ports de flots et ports standards) en en reprenant les caractéristiques
+et en ajoutant la possibilité d'imbrication et de spécification renforcée.
+
+_full port_::
+En fait il s'agit du même concept qu'une partie qui serait exposée à l'extérieur.
+
+[NOTE]
+====
+Pour une discussion sur les différences entre les deux ports : http://model-based-systems-engineering.com/2013/09/23/sysml-full-ports-versus-proxy-ports/
+====
+
+[[port14]]
+=== Ports (SysML 1.4)
+
+La version {norme}...
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+Check if this is still true in 1.4
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+[[uc]]
 == Diagramme des Uses Cases
 
 Nous aborderons les concepts du niveau
 initial (_{ModelUser}_) de la certification _Certified Systems Modeling Professional_(TM):
 use case, actor, subject, association, include, extend, et generalization.
+
+== {resume}
+...
+
+.Organisation
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis}	| | | | |  
+| {design}	| | | | | 
+| {implementation}	| | | | | 
+|======================
+
+== {revisions}
+
+. ...
+
+ifdef::correction[]
+
+== Éléments de réponses
+
+. ...
+
+endif::correction[]

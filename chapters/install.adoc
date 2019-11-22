@@ -1,6 +1,8 @@
+:papyrusversion: 2019-09
 
 [[install]]
 = Avant de démarrer
+// switching to the current version directory
 :imageold: {imagesdir}
 :imagesdir: {imagesdir}/{papyrusversion}
 //-----------------------------------------------
@@ -17,17 +19,18 @@ Il aborde également la question de l'organisation des modèles (packages, etc.)
 endif::final[]
 
 .On s'organise...
-ifdef::backend-pdf[[cols="h,4*",options="header"]]
-ifndef::backend-pdf[[cols="h,4*",options="header",width="90%"]]
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
 |======================
-|					| {Requirements} 	| {Structure}	| {Behavior} 	| {Crosscutting}
-| {organisation}	|	{here}	| {here} |	{here} | {here}
-| {analysis}		|					|        		|				|
-| {design}			|					|        		|				|
-| {implementation}	|					|        		|				|
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+| *{here}*
+| {context} 5+| .4+<.>m|
+| {analysis}	| | | | |  
+| {design}	| | | | | 
+| {implementation}	| | | | | 
 |======================
 
-== Installation des logiciels
+== Installation de Papyrus-SysML
 
 === Papyrus
 
@@ -39,7 +42,7 @@ image::launching.png[launching,width=40%,scaledwidth=40%]
 
 Si ce n'est pas le cas, installez-le ou mettez-le à jour.
 Nous vous conseillons d'installer {papyrus} de cette façon plutôt que de le rajouter
-comme un plugin de votre installetion {eclipse}.
+comme un plugin de votre installation {eclipse}.
 
 TIP: Pour plus d'information, consultez https://www.eclipse.org/papyrus/download.html[guide d’installation du site de Papyrus].
 
@@ -47,7 +50,7 @@ WARNING: Si vous voulez mettre à jour une ancienne version de {papyrus}, il vou
 
 === SysML
 
-Il vous faut ensuite installer le profil {sysml} (version {sysmlversion}).
+Il vous faut ensuite installer le profil {sysml} (version {sysmlversionlast}).
 Pour cela, deux possibilités :
 
 . Aller dans le menu menu:Help[Install New Software > ...] puis utilisez l'URL suivante pour
@@ -59,16 +62,14 @@ retrouver le plugin officiel : {pluginsysml}.
 . Pour vérifier les éléments installés allez dans menu:About...[Installation Details] :
 +
 .Détails d'installation [v.{papyrusversion}]
-image::installation-details.png[détails,width=70%,scaledwidth=60%]
-+
-. Si vous souhaitez utiliser la toute dernière version (non stable), utilisez plutôt l'URL suivante : {pluginsysmlnightly}.
+image::installation-details.png[détails,width=80%,scaledwidth=60%]
 =====
 
 === Compléments
 
 Si vous souhaitez travailler avec {git} pour versionner vos modèles ou travailler
 de manière collaborative, ou si vous souhaitez utiliser des éléments avancés de 
-{papyrus}, rendez-vous au chapitre dédié (<<realLife>>).
+{papyrus}, rendez-vous au <<realLife>>.
 
 == Matériel de formation en complément de ce livre
 
@@ -88,9 +89,9 @@ Le site qui répertorie tous les matériels utiles en complément de ce livre
 (tutoriels, modèles, compléments, corrections, etc.) se trouve ici : {githuburl}.
 
 Si vous souhaitez vérifier que votre installation fonctionne en créant un premier projet {papyrus},
-vous pouvez consulter la section <<GettingStarted>>.
+vous pouvez consulter le <<GettingStarted>>.
 
-== Pour ceux qui veulent aller vite
+== Pour ceux qui veulent aller plus vite
 
 Les modèles de ce livre (cf. <<etudeCas>>) sont disponibles ici :
 {siteUseCase}.
@@ -112,8 +113,13 @@ image::voila.png[width="70%",scaledwidth="70%"]
 +
 image::explore.png[width="60%",scaledwidth="60%"]
 
+== Pour ceux qui veulent aller plus loin
 
+Nous vous conseillons d'installer également les plug-ins suivants qui peuvent s'avérer utiles :
+
+- http://build.eclipse.org/modeling/elk/updates/nightly/[Eclipse Layout Kernel] pour faire des diagrammes plus jolis sous {eclipse}
 
 
 //-----------------------------------------------
+// switching back
 :imagesdir: {imageold}

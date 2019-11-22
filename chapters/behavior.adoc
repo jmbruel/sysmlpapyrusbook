@@ -62,7 +62,7 @@ alors exécuter `effet` et se plaver dans l'état `Etat2`."
 
 [[transition]]
 //.Une transition entre états
-image::dessins/state.png[width=40%,scaledwidth=80%]
+image::dessins/state.svg[width=40%,scaledwidth=80%]
 
 [TIP]
 ====
@@ -91,11 +91,11 @@ Le diagramme d’états comprend également deux états particuliers (appelés p
 (à la création d’une instance par exemple);
 +
 .Etat initial
-image::dessins/initState.png[width=20%,scaledwidth=20%]
+image::dessins/initState.svg[width=20%,scaledwidth=20%]
 - l’état final du diagramme d’états correspond à la destruction de l’instance.
 +
 .Etat final
-image::dessins/finalState.png[width=20%,scaledwidth=20%]
+image::dessins/finalState.svg[width=20%,scaledwidth=20%]
 
 NOTE: Nous verrons d'autres pseudo-états un peu plus tard.
 
@@ -161,7 +161,7 @@ mais cette fois y compris dans tous les sous-états.
 
 Les événements déclencheurs d'une transition peuvent être de nature différente :
 
-Call Event:: déclenché par l'invocation d'une méthode, c'est à dire d'une opération fournie
+Call Event:: déclenché par l'invocation d'une méthode, c'est-à-dire d'une opération fournie
 par l'élément considéré (le nom de l'opération est utilisé)
 Signal Event:: déclenché par l'arrivée d'un signal asynchrone (le nom du signal est utilisé)
 Time Event:: déclenché à un certain moment, que ce soit absolu (mot-clef `*at*`) ou relativement
@@ -191,3 +191,30 @@ Le diagramme d'activité est étudié dans ce livre plus en détail au chapitre
 Il s'agit d'un diagramme souvent utilisé pour représenter le comportement
 du système, notamment des scénarios des cas d'utilisation.
 Nous revoyons le lecteur au chapitre <<act>> pour plus de détails.
+
+== {resume}
+...
+
+.Organisation
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis}	| | | | |  
+| {design}	| | | | | 
+| {implementation}	| | | | | 
+|======================
+
+== {revisions}
+
+. ...
+
+ifdef::correction[]
+
+== Éléments de réponses
+
+. ...
+
+endif::correction[]

@@ -1,0 +1,56 @@
+@startuml
+
+'-----------------------------------
+' SysML Simple Method (taken from Fridenthal 2016)
+' JMB 2018
+'-----------------------------------
+
+' Default settings
+'-----------------------------------
+' left to right direction 'does not work for sequence diagrams :-(
+hide circle
+hide empty members
+hide methods
+' Colors & Fonts
+'-----------------------------------
+'Colors => see http://plantuml.com/color
+'skinparam monochrome true
+'skinparam monochrome reverse
+'skinparam handwritten true
+skinparam activity {
+	BackgroundColor LemonChiffon
+	BorderColor DarkSlateGray
+	ArrowColor Black
+	FontColor Black
+	FontSize 12
+	FontName TrebuchetMS
+}
+
+' Attribute and name values (for translation purpose). Add anything you need, but don't modify!
+'-----------------------------------
+!define X "blabla"
+
+' Usefull functions
+'-----------------------------------
+!define objet(nom,type) class "<u>nom : type"
+
+(*) ..> ===B1=== 
+..> "Maintenir\nla traçabilité\ndes exigences"
+-[hidden]> "Organiser les \nmodèles"
+
+"Maintenir\nla traçabilité\ndes exigences" ..> ===B2===
+
+
+===B1=== ..> "Organiser les \nmodèles" 
+-[hidden]> "Analyser\nles modèles"
+
+"Organiser les \nmodèles" ..> "Analyser\nles besoins\ndes stakeholders"
+..> "Spécifier\nles exigences\nsystème"
+..> "Synthétiser\ndes solutions\nalternatives"
+..> ===B2===
+
+===B1=== ..> "Analyser\nles modèles"
+..> ===B2===
+
+..> (*)
+@enduml

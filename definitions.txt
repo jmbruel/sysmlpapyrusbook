@@ -1,20 +1,28 @@
 :definitions:
 
+:FR:
+
 //Papyrus
 :papyrus: http://www.eclipse.org/papyrus/[Papyrus-SysML]
+:papyrusUML: http://www.eclipse.org/papyrus/[Papyrus]
 :papyrusversion: 4.0
 :sysmlversion: 1.4
+:papyrusversionlast: 2019-09
+:umlversion: 2.5.1
+:sysmlversionlast: 1.6
 :siteurl: https://bit.ly/sysmlbook
 :githuburl: https://github.com/jmbruel/sysmlpapyrusbook
 :pdfurl: {githuburl}/PapyrusSysMLinAction.pdf
 :siteUseCase: https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
 :specUseCase: http://bit.ly/SmartHomeUseCase
 :diagrams: ../../SmartHomeUseCase/SmartHomeSystemProject/diagrams
-//:pluginsysml: https://hudson.eclipse.org/papyrus/job/papyrus-sysml-oxygen/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/
-:pluginsysml: http://download.eclipse.org/modeling/mdt/papyrus/components/sysml14/photon/
-:pluginsysmlnightly: https://hudson.eclipse.org/papyrus/job/papyrus-sysml-photon/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml14.p2/target/repository/
+:pluginsysml: https://download.eclipse.org/modeling/mdt/papyrus/components/sysml16/
+:pluginsysmlnightly: https://hudson.eclipse.org/papyrus/job/papyrus-sysml16-master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml16.p2/target/repository/
 //:pluginreqs: https://download.eclipse.org/modeling/mdt/papyrus/view/Requirements/job/requirements-photon/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.requirements.p2/target/repository/
 :pluginreqs: https://hudson.eclipse.org/papyrus/view/Requirements/job/Requirements-Master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.requirements.p2/target/repository/
+:easeURL: https://download.eclipse.org/modeling/mdt/papyrus/components/ease/2019-03/
+:model2docURL: https://download.eclipse.org/modeling/mdt/papyrus/components/model2doc/
+:model2doc: link:{model2doc}[Model2Doc]
 
 //:pluginCompare: https://hudson.eclipse.org/papyrus/job/Papyrus-Compare-Oxygen-Integration/lastSuccessfulBuild/artifact/repository/
 :pluginCompare: http://download.eclipse.org/modeling/mdt/papyrus/components/compare/updates/nightly/
@@ -41,6 +49,7 @@ endif::[]
 :asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]indexterm:[AsciiDoc]
 :bouml: http://www.bouml.fr[BOUML]
 :asciidoctorlink: http://asciidoctor.org/[Asciidoctor]indexterm:[Asciidoctor]
+:cameo: https://www.nomagic.com/products/cameo-systems-modeler/[Cameo Systems Modeler]
 :cea: http://www-list.cea.fr/[CEA LIST]
 :list: {cea}
 :cdo: http://www.eclipse.org/cdo/[CDO]
@@ -70,15 +79,17 @@ endif::[]
 :mdetools: http://mase.cs.queensu.ca/mdetools/[MDETOOLS'17]
 :mediawiki: https://www.mediawiki.org[MediaWiki]
 :miburl: http://mi.iut-blagnac.fr/
-:mib: {miburl}[MIB]
+:mib: {miburl}[Maison Intelligente de Blagnac]
 :modelica: https://www.modelica.org/[Modelica(R)]
 :modelio: http://www.modeliosoft.com/[Modelio]
 :models: http://www.modelsconference.org/[MODELS]
 :moka: https://wiki.eclipse.org/Papyrus/UserGuide/ModelExecution[Moka]
-:norme: http://www.omg.org/spec/SysML/1.5/PDF/[SysML{nbsp}1.5]
+:norme: https://www.omg.org/spec/SysML/1.6/Beta1/PDF[SysML(R){nbsp}1.6]
 :omg: link:http://www.omg.org[OMG(TM)]indexterm:[OMG]
 :OSLC: http://open-services.net/[OSCL]
 :obeo: link:http://www.obeo.fr/[Obeo]
+:pscs: https://www.omg.org/spec/PSCS/About-PSCS/[PSCS]
+:pssm: https://www.omg.org/spec/PSSM/About-PSSM/[PSSM]
 :plantumlweb: http://plantuml.sourceforge.net/[plantUML]
 :plantuml: http://plantuml.sourceforge.net/[plantUML]
 :polarsys: http://polarsys.org/[Polarsys]
@@ -90,22 +101,26 @@ endif::[]
 :reqif: http://www.omg.org/spec/ReqIF/[ReqIF]
 :reqcycle: http://www.eclipse.org/community/eclipse_newsletter/2014/april/article3.php[ReqCycle]
 :reqtify: Reqtify
-:rhapsody: http://www-142.ibm.com/software/products/us/en/ratirhap[Rhapsody]indexterm:[Rhapsody]
+:rhapsody: https://www.ibm.com/us-en/marketplace/systems-design-rhapsody[Rhapsody]indexterm:[Rhapsody]
 :robotml: http://en.wikipedia.org/wiki/RobotML[RobotML]
 :rtaw: http://www.realtimeatwork.com/[RTaW]indexterm:[RTaW]
+:RTF: https://www.omg.org/spec/SysML/#spec-versions-in-process[RTF]
 :sart: http://fr.wikipedia.org/wiki/Structured_Analysis_for_Real_Time[SADT/SART]
 :semco: http://www.semcomdt.org/[SEMCO]
 :simulink: http://fr.mathworks.com/products/simulink/?nocookie=true[Simulink]
 :sirius: link:https://www.eclipse.org/proposals/modeling.sirius/[Sirius]
 :smart: link:http://smart-researchteam.github.io/[SM@RT]
+:soaml: link:https://www.omg.org/spec/SoaML/About-SoaML/[SoaML]
 :sosym: http://www.sosym.org/[SoSyM]
+:sparxEA: https://www.sparxsystems.com/[Enterprise Architext]
 :sym: http://www.omg.org/spec/SyM/[SysML-Modelica]
-:sysml: http://www.omgsysml.org/[SysML(TM)]indexterm:[SysML]
+:sysml: http://www.omgsysml.org/[SysML(R)]indexterm:[SysML]
 :sysmod: https://model-based-systems-engineering.com/sysmod/[SYSMOD]
 :topcased: http://www.topcased.org[TOPCASED]indexterm:[Topcased]
-:uml: http://www.uml.org/[UML(TM)]indexterm:[UML(TM)]
+:uml: http://www.uml.org/[UML(R)]indexterm:[UML(R)]
 :umlspec: http://www.omg.org/spec/UML/2.4.1/Infrastructure/PDF/[UML 2.4.2 Specifictation]
 :umple: http://cruise.eecs.uottawa.ca/umple/[Umple]
+:visualP: https://www.visual-paradigm.com/[Visual Paradigm]
 :vle: http://www.vle-project.org/wiki/Main_Page[VLE]
 :wikirover: https://polarsys.org/wiki/Rover_Demo_Master_DL_UPS[Rover Demo Wiki]
 :xtext: http://www.eclipse.org/Xtext/[Xtext]
@@ -122,6 +137,7 @@ endif::[]
 :dl: http://www.master-developpement-logiciel.fr/[Master DL]
 :m2dl: {dl}
 :esir: link:https://esir.univ-rennes1.fr/[ESIR]
+:ice: link:https://www.univ-tlse2.fr/master-miashs-parcours-informatique-collaborative-en-entreprise-ice--386373.kjsp?RH=composantes[Master ICE]
 :incose: link:http://www.incose.org/[INCOSE]indexterm:[INCOSE](((INCOSE)))
 :iso: http://www.iso.org/[ISO](((ISO)))
 :irit: http://www.irit.fr[IRIT](((IRIT)))
@@ -136,8 +152,8 @@ endif::[]
 :uag: http://www.uag.mx/[Universitad Autónoma de Guadalajara]
 :univ-tlse: http://www.univ-toulouse.fr[Université de Toulouse]
 :uppa: http://www.univ-pau.fr/[Université de Pau et des Pays de l'Adour]
-:ups: http://www.univ-tlse3.fr[UPS]
-:univ-tlse2: http://www.univ-tlse2.fr[Université de Toulouse II - Jean Jaurès]
+:ups: http://www.univ-tlse3.fr[Université Toulouse III - Paul Sabatier]
+:univ-tlse2: http://www.univ-tlse2.fr[Université Toulouse II - Jean Jaurès]
 :ut2j: {univ-tlse2}
 
 //------- Normes et R̩f̩rences
@@ -159,13 +175,16 @@ endif::[]
 
 // data divers
 :Requirements: <<reqs,Exigences>>
-:Structure: <<archi,Structure>>
-:Behavior: <<behavior,Comportement>>
-:Crosscutting: <<transvers,Transverse>>
+:Structure: <<archi,Structures>>
+:State: États
+:Behavior: <<behavior,Interactions>>
+:Flows: Flux
+:Crosscutting: <<crossCutting,Transversalités>>
+:context: Environnement
 :organisation: Organisation
-:analysis: Analyse
-:design: Conception
-:implementation: Implémentation
+:analysis: Vision Opérationelle
+:design: Vision Fonctionnelle
+:implementation: Vision Organique
 :resume: En résumé
 :revisions: Questions de révision
 :is: Ingénierie Système(((IS)))
@@ -174,3 +193,10 @@ endif::[]
 :ModelUser: link:http://www.omg.org/ocsmp/coveragemap-user.htm[Model User]
 :projectName: SmartHomeSystem
 :projectShortName: SHS
+
+:glossaire: https://lite.framacalc.org/RUTTQQpyUM`
+
+
+// CESAM
+:CESAM: http://www.cesames.net/academy/cesam/[CESAM]
+:CESAMES: http://www.cesames.net/[CESAMES(TM)]

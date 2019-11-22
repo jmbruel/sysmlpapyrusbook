@@ -1,6 +1,6 @@
 = SysML par la pratique avec Papyrus
 Jean-Michel Bruel <bruel@irit.fr>; Sébastien Gérard <Sebastien.Gerard@cea.fr>
-v1.4, {localdate}
+v1.6, {localdate}
 :myinitials: JMB
 :doctype: book
 :toc: left
@@ -41,10 +41,18 @@ ifndef::final[]
 [CAUTION]
 ====
 Si vous lisez ce commentaire, c'est que cette version est en cours de construction!
+
+Reste à faire :
+
+* [ ] Changer le site du livre par https://github.com/ PapyrusSysMLinAction/SmartHomeUseCase
+* [ ] Ajouter le lien vers le standalone de Papyrus-SysML si disponible
+* [ ] Revoir les commentaires de Seb (Cadres, Outils, etc.)
 ====
 endif::final[]
 //-----------------------------------------------
+
 include::chapters/about.adoc[leveloffset=+1]
+
 include::chapters/preface.adoc[leveloffset=+1]
 
 :numbered:
@@ -68,22 +76,11 @@ include::chapters/methode.adoc[leveloffset=+1]
 include::chapters/gettingStarted.adoc[leveloffset=+1]
 // SEB
 
-include::chapters/requirements.adoc[leveloffset=+1]
-// SEB
+include::chapters/cesam.adoc[leveloffset=+1]
 
-include::chapters/usages.adoc[leveloffset=+1]
-// SEB
+include::chapters/conceptsAvances.adoc[leveloffset=+1]
 
-include::chapters/structure.adoc[leveloffset=+1]
-// JMB
-
-include::chapters/behavior.adoc[leveloffset=+1]
-// SEB
-
-include::chapters/interaction.adoc[leveloffset=+1]
-//JMB
-
-include::chapters/crossCuting.adoc[leveloffset=+1]
+include::chapters/crossCutting.adoc[leveloffset=+1]
 // SEB
 
 include::chapters/realLife.adoc[leveloffset=+1]
@@ -98,12 +95,18 @@ include::chapters/appendix.adoc[]
 ifdef::backend-docbook[]
 [index]
 Index
------
 endif::backend-docbook[]
 
+//-----------------------------------------------
+//-- Commentaire
+//-----------------------------------------------
+ifndef::final[]
 
 == Divers (notes et ToDoList)
 
+.Commentaire
+[CAUTION]
+====
 - Au sujet de SysML
 [options=interactive]
 * [*] s'appuyer sur les niveaux tels que définit dans le certificat SysML de l'OMG
@@ -118,3 +121,7 @@ endif::backend-docbook[]
 ***	Deux parties dédiés.
 ***	Pour chaque chapitre (quand cela fait du sens), avoir deux niveaux de présentation, débutant et avancé.
 ***	Des parties bien marquées « avancé » au fil de l'eau.
+
+====
+endif::final[]
+//-----------------------------------------------

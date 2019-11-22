@@ -36,7 +36,7 @@ On abordera :
 
 NOTE: Les _State Machines_ sont vues dans la partie sur les <<behavior,comportements>>.
 
-[[seq]]
+[[sd]]
 //-----------------------------------------------
 == Diagrammes de séquence
 //-----------------------------------------------
@@ -212,7 +212,7 @@ Il est utilisé pour l’expression de la logique de contrôle et d’entrées/s
 Le diagramme d’activité sert non seulement à préciser la séquence d’actions à réaliser,
 mais aussi ce qui est produit, consommé, ou transformé, au cours de l’exécution de cette activité.
 
-.Exemple de diagramme d'activité (tiré de <<SeeBook2012>>)
+.Exemple de diagramme d'activité (extrait de <<SeeBook2012>>)
 image::act-pcmk1.png[width="70%",scaledwidth=60%]
 
 Les éléments de base du diagramme d’activité sont :
@@ -321,7 +321,7 @@ _Control flow may be notated with a dashed line and stick arrowhead..._
 Les activités peuvent être réutilisées à travers des actions d’appel (_callBehaviorAction_).
 L’action d’appel est représentée graphiquement par une fourche à droite de la boîte d’action, ainsi que par la chaîne : `nom d’action : nom d’activité`. {SysML} propose encore bien d’autres concepts et notations, comme la région interruptible, la région d’expansion ou encore les flots de type _stream_ qui sortent du cadre de ce livre d'introduction.
 
-.Exemple de _callBehaviorAction_ (UK)
+.Exemple de _callBehaviorAction_
 image::act-call.png[width="20%",scaledwidth=50%]
 
 == À vous de jouer

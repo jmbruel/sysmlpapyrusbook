@@ -2,33 +2,24 @@
 [[methode]]
 = Langages vs Méthode
 
-//-----------------------------------------------
-ifndef::final[]
-.Commentaire
-[CAUTION]
-====
-*****
-Je sais plus ce qu'on voulait mettre là, mais je pense qu'on voulait traiter des aspects méthodologiques.
-*****
-====
-//-----------------------------------------------
-endif::final[]
-
 [[prfc]]
 .Langages, méthodes et outils : 3 piliers complémentaires (inspiré par <<Roques>>)
-image::SysML-PRFC.png[width=50%,scaledwidth=50%]
+image::SysML-PRFC.png[width=70%,scaledwidth=50%]
 
 Comme illustré par la <<prfc>>, comprendre {sysml} c'est primordiale, savoir utiliser {papyrus} c'est important, mais tout ceci n'est rien sans une démarche ou une méthode concrète pour mettre les deux en musique.
 
+////
 Nous l'avons anoncé dès l'introduction, nous allons utiliser pour les besoins de ce livre une démarche minimaliste, préconisée par <<Friedenthal2016>>.
+////
 
-== La méthode MBSE simplifiée utilisée dans ce livre
+[[methodeSimplifie]]
+== Une méthode MBSE simplifiée 
 
-La <<FriedenthalSimplifiedMethod>> résume (dans un diagramme d'activité) la démarche simplifiée que nous allons suivre.
+La <<FriedenthalSimplifiedMethod>> résume (dans un diagramme d'activité) une démarche simplifiée que vous pouvez suivre.
 
 [[FriedenthalSimplifiedMethod]]
-.Une démarche MBSE simplifiée (tirée de <<Friedenthal2016>>)
-image::FriedenthalSimplifiedMethod.png[width="40%",scaledwidth="40%"]
+.Une démarche MBSE simplifiée (extrait de <<Friedenthal2016>>)
+image::simpleFridenthalmethod.svg[width="40%",scaledwidth="40%"]
 
 //-----------------------------------------------
 ifndef::final[]
@@ -75,7 +66,7 @@ Mais pour tous les autres liens (une interaction qui `\<<satisfy>>` une exigence
 
 Il s'agit d'une démarche simplifiée, qui fait abstraction d'étapes importantes comme la plannification, les analyses de risques, la gestion des configurations, etc.
 
-Dans la suite nous présentons rapidement deux démarches plus complètes qui font référence en matière de <<MBSE>> utilisant {sysml}.
+Dans la suite nous présentons rapidement deux démarches plus complètes qui font référence en matière de <<MBSE>> utilisant {sysml}, puis nous présenterons la méthodes que nous allons suivre dans cet ouvrage, en l'adaptant à {sysml}.
 
 == OOSEM
 
@@ -92,7 +83,53 @@ La méthode {sysmod} (_Systems Modeling Toolbox_) est une approche pragmatique p
 Elle fournit une boîte à outil et des étapes précises, ainsi que des guides et des "bonnes pratiques".
 Pour plus d'information sur cette méthode, cf. <<Wielkins20XX>>.
 
+[[cesamOverview]]
+== CESAM
+
+{CESAM} (CESAMES Architecture Method) est un framework d’architecture et de modélisation  très connue en France. 
+Nous allons la détailler au <<cesam>> en l'adaptant à {sysml} et en la plaçant dans l'esprit de la méthode simplifiée présentée en <<methodeSimplifie>>.
+
+
 == Autres méthodes et démarches
 
 Pour plus de renseignements sur les différentes démarches de <<MBSE>> nous renvoyons le lecteur à l'étude menée par l'{incose} par <<Estefan>>.
 Voir aussi <<Ramos>> ou <<Dickerson>>.
+
+//-----------------------------------------------
+ifndef::final[]
+.Commentaire
+[CAUTION]
+====
+*****
+To be completed!!
+*****
+====
+//-----------------------------------------------
+endif::final[]
+
+== {resume}
+...
+
+.Organisation
+ifdef::backend-pdf[[align="center",cols="h,6*^",options="header"]]
+ifndef::backend-pdf[[align="center",cols="h,6*^",options="header",width=100]]
+|======================
+|  | {Requirements} | {State}| {Structure} | {Behavior}	| {Flows} | {Crosscutting}
+| {organisation} 6+|
+| {context} 5+| .4+<.>m|
+| {analysis}	| | | | |  
+| {design}	| | | | | 
+| {implementation}	| | | | | 
+|======================
+
+== {revisions}
+
+. ...
+
+ifdef::correction[]
+
+== Éléments de réponses
+
+. ...
+
+endif::correction[]

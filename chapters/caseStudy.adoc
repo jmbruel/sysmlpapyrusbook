@@ -26,12 +26,16 @@ Nous avons volontairement choisi un domaine qui prend de l'ampleur : l'Internet 
 .La Maison Intelligente de Blagnac
 image::mib.png[MIB,width=90%,scaledwidth=90%]
 
-La {mib} est un appartement permettant la supervision de personnes dépendantes (patients, personnes âgées, ...) à domicile.
-La description de ce système (notre spécification initiale) sont disponible sur le site {miburl}.
-Pour permettre de démarrer la modélisation, nous partirons d'un {FichierExigences}[fichier partagé] des exigences initiales.
+La {mib} est un appartement permettant l'assistance de personnes dépendantes à leur domicile.
+La spécification initiale de ce système est disponible sur le site {miburl}.
+La modélisation dans {Papyrus} que nous allons faire ensemble tout au long de ce livre s’appuiera sur une spécification initiale issue de ce projet et que vous pourrez voir à la <<mibreqliste>>.
 
-NOTE: Nous ne nous intéresserons qu'à la partie intelligente de la maison, et non à ses caractéristiques architecturales.
+[NOTE]
+====
+. Nous ne nous intéresserons qu'à la partie intelligente de la maison, et non à ses caractéristiques architecturales.
+. Un http://intercax.com/2015/09/21/smart-home-iot-1/[blog récent] a également utilisé cette étude de cas, vous y trouverez des informations complémentaires : .
 
+====
 == Description
 
 XXX A traduire (merci Nicolas Hili)!! XXX

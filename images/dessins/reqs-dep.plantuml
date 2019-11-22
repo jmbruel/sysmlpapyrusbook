@@ -1,0 +1,13 @@
+'-----------------------------------
+' SysML basic concepts illustrated
+' JMB 2019
+'-----------------------------------
+@startuml
+' File where const and functions are defined:
+!include Defs.txt
+'-----------------------------------
+
+class Req REQ
+class OtherReq REQ
+Req <. OtherReq
+@enduml
