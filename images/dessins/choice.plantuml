@@ -1,0 +1,17 @@
+'-----------------------------------
+' SysML basic concepts illustrated
+' JMB 2017
+'-----------------------------------
+@startuml
+' File where const and functions are defined:
+!include Defs.txt
+'-----------------------------------
+
+:Etat;
+if (test) then (yes)
+  :EtatYes;
+else (no)
+  :EtatNo;
+endif
+
+@enduml

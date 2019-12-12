@@ -1,0 +1,94 @@
+@startuml
+
+'-----------------------------------
+' Standards Taxonomy (taken from Friedenthal 2016)
+' JMB 2018
+'-----------------------------------
+
+' Default settings
+'-----------------------------------
+' left to right direction 'does not work for sequence diagrams :-(
+hide circle
+hide empty members
+hide methods
+' Colors & Fonts
+'-----------------------------------
+'Colors => see http://plantuml.com/color
+'skinparam monochrome true
+'skinparam monochrome reverse
+'skinparam handwritten true
+skinparam package {
+	BackgroundColor empty
+	BorderColor DarkSlateGray
+	ArrowColor Black
+	FontColor Black
+	FontSize 12
+	FontName TrebuchetMS
+}
+skinparam class {
+	BorderColor DarkSlateGray
+	ArrowColor Black
+	FontColor Black
+	FontSize 12
+	FontName TrebuchetMS
+}
+skinparam arrow {
+    MessageAlign center
+}
+
+' Attribute and name values (for translation purpose).
+'-----------------------------------
+
+' Usefull functions
+'-----------------------------------
+!define objet(nom,type) class "<u>nom : type"
+
+package "Process Standards" {
+class "ISO 15288" as A
+class "CMMI" as B
+class "IEEE 1220"
+class "EIA 632"
+A -[hidden]> B
+}
+package "Modeling Methods" {
+class "Object\nOriented"
+class "Structured\nAnalysis"
+}
+package "Architecture Description & Frameworks" {
+class "ISO 42010" as C
+class "Zachmann" as D
+class "MODAF"
+class "DoDAF"
+C -[hidden]> D
+}
+package "Modeling & Simulation Standards" {
+class "IDEF0" as G1
+class "SysML" as G2
+class "UPDM" as G3
+class "OWL" as G4
+class "Modelica" as G5
+class "HLA" as E
+class "MathML" as F
+E -[hidden]> F
+F -[hidden]> G1
+G1 -[hidden]> G2
+G2 -[hidden]> G3
+G3 -[hidden]> G4
+G4 -[hidden]> G5
+}
+package "Metamodeling & Data Exchange Standards" {
+class "QVT"
+class "MOF"
+class "XMI" as K
+class "STEP/AP233" as I
+class "OSLC" as J
+I -[hidden]> J
+J -[hidden]> K
+}
+
+"Process Standards" --> "Modeling Methods"
+"Modeling Methods" --> "Architecture Descriptino & Frameworks"
+ "Architecture Descriptino & Frameworks" --> "Modeling & Simulation Standards"
+"Modeling & Simulation Standards" --> "Metamodeling & Data Exchange Standards"
+
+@enduml

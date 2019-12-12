@@ -1,0 +1,120 @@
+@startuml
+
+'-----------------------------------
+' CESAM (taken from http://www.cesames.net/wp-content/uploads/2017/05/CESAM-guide.pdf)
+' JMB 2018
+'-----------------------------------
+
+' Default settings
+'-----------------------------------
+' left to right direction 'does not work for sequence diagrams :-(
+hide circle
+hide empty members
+hide methods
+' Colors & Fonts
+'-----------------------------------
+'Colors => see http://plantuml.com/color
+'skinparam monochrome true
+'skinparam monochrome reverse
+'skinparam handwritten true
+skinparam activity {
+	BackgroundColor LemonChiffon
+	BorderColor DarkSlateGray
+	ArrowColor Black
+	FontColor Black
+	FontSize 12
+	FontName TrebuchetMS
+}
+skinparam arrow {
+    MessageAlign center
+}
+
+' Attribute and name values (for translation purpose).
+'-----------------------------------
+!define IDS "Identifier les Stakeholders"
+!define IDS "Indentifying Stakeholders"
+!define SHD "Stakeholders Hierarchy\n Diagram"
+!define ED "Environment \nDiagram"
+'
+!define AO "Architecture Opérationnelle"
+!define AO "Operational Architecture"
+!define NAD "Need Architecture \nDiagram"
+!define LD "Lifecycle \nDiagram"
+!define UC "Use Case \nDiagram"
+!define OSD "Operational Scenario \nDiagram"
+!define OFD "Operational Flow \nDiagram"
+'
+!define AF "Architecture Fonctionnelle"
+!define AF "Functional Architecture"
+!define FRA "Functional requirement \narchitecture Diagram"
+!define FM "Functional mode \nDiagram"
+!define FDI "Functional \ndecomposition & interaction \nDiagrams"
+!define FS "Functional scenario \nDiagrams"
+!define FF "Functional flow  \nDiagrams"
+'
+!define AL "Architecture Logique"
+!define AL "Constructinal Architecture"
+!define CRA "Constructional requirement \narchitecture Diagram"
+!define CM "Constructional mode \nDiagram"
+!define CDI "Constructional \ndecomposition & interaction \nDiagrams"
+!define CS "Constructional scenario \nDiagrams"
+!define CF "Constructional flow \nDiagrams"
+'
+!define TR "Trade-off"
+
+' Usefull functions
+'-----------------------------------
+!define objet(nom,type) class "<u>nom : type"
+
+partition IDS {
+  (*) ..> === S1 ===
+  ..> SHD
+  ..> === S2 ===
+  === S1 === ..> ED
+  ..> === S2 ===
+}
+
+partition AO {
+  === S2 === ..> === S3 ===
+  ..> NAD
+  ..> === S4 ===
+  === S3 === ..> LD 
+  ..> === S4 ===
+  === S3 === ..> UC
+  ..> === S4 ===
+  === S3 === ..> OSD
+  ..> === S4 ===
+  === S3 === ..> OFD
+  ..> === S4 ===
+}
+partition AF {
+  === S4 === ..> === S5 ===
+  ..> FRA
+  ..> === S6 ===
+  === S5 === ..> FM
+  ..> === S6 ===
+  === S5 === ..> FDI
+  ..> === S6 ===
+  === S5 === ..> FS
+  ..> === S6 ===
+  === S5 === ..> FF
+  ..> === S6 ===
+}
+partition AL {
+  === S6 === ..> === S7 ===
+  ..> CRA
+  ..> === S8 ===
+  === S7 === ..> CM
+  ..> === S8 ===
+  === S7 === ..> CDI
+  ..> === S8 ===
+  === S7 === ..> CS
+  ..> === S8 ===
+  === S7 === ..> CF
+  ..> === S8 ===
+}
+partition TR {
+	=== S8 === ..> TR
+}
+
+@enduml
