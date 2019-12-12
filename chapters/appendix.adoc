@@ -278,7 +278,7 @@ Nous indiquons dans le tableau ci-dessous le différents concepts du niveau init
 [[sysml15]]
 == Nouveautés de SysML {sysmlversionlast}
 
-Pour les lecteurs habitués à {sysml} `1.4` nous résumons ici les principales nouveautés de la version `{sysmlversionlast}`.
+Pour les lecteurs habitués à {sysml} `1.4` nous résumons ici les principales nouveautés de la version `1.5`.
 
 === Exigences
 
@@ -288,6 +288,17 @@ Nous avons traité en détail cet aspect dans la section <<req15>>.
 
 http://model-based-systems-engineering.com/2017/05/17/whats-new-in-sysml-1-5-miscellaneous/
 
+== Nouveautés de SysML {sysmlversionlast}
+//https://mbse4u.com/2019/12/05/whats-new-in-sysml-1-6/
+
+{sysml} `1.6` a été publié le 6 décembre 2019!
+Nous en résumons ici les principales nouveautés.
+
+=== Block-typed Properties without Associations
+
+=== Property-specific Type
+
+=== 
 [appendix]
 [[sysml2]]
 == Et le futur? SysML 2!
